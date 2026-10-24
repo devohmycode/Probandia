@@ -1,0 +1,153 @@
+schema: 1
+research: 2026-09-04-birth-of-henri-marchand
+updated: '2026-09-04T11:00:00Z'
+questions:
+- id: Q1
+  type: birth
+  status: answered
+  window:
+    from: 1869
+    to: 1871
+  unknown: []
+  notes: []
+  rows:
+  - type: civil_registers
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    - name: Archives communales de Bourg-Vert
+      archive: ac_bourg_vert
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC03
+    gaps: []
+  - type: decennial_tables
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC04
+    gaps: []
+  - type: census
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1870
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC05
+    gaps: []
+- id: Q2
+  type: parents
+  status: answered
+  window:
+    from: 1869
+    to: 1871
+  unknown: []
+  notes: []
+  rows:
+  - type: civil_registers
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    - name: Archives communales de Bourg-Vert
+      archive: ac_bourg_vert
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC03
+    gaps: []
+  - type: decennial_tables
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC04
+    gaps: []
+  - type: census
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1870
+    repositories:
+    - name: Archives départementales de Valombre
+      archive: ad_valombre
+    state: consulted
+    searches:
+    - s-01JA00000000000000000SRC05
+    gaps: []
+  - type: notarial
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories: []
+    state: not_applicable
+    reason: l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né
+    searches: []
+    gaps: []
+  - type: military_registers
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories: []
+    state: not_applicable
+    reason: Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871
+    searches: []
+    gaps: []
+  - type: registration
+    places:
+    - bourg-vert
+    years:
+    - 1869
+    - 1871
+    repositories: []
+    state: not_applicable
+    reason: aucune mutation ni succession n'est attendue pour la naissance d'un enfant
+    searches: []
+    gaps: []
+not_applicable:
+- question: Q2
+  type: notarial
+  reason: l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né
+  ts: '2026-09-04T10:55:00Z'
+  agent: session
+- question: Q2
+  type: military_registers
+  reason: Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871
+  ts: '2026-09-04T10:56:00Z'
+  agent: session
+- question: Q2
+  type: registration
+  reason: aucune mutation ni succession n'est attendue pour la naissance d'un enfant
+  ts: '2026-09-04T10:57:00Z'
+  agent: session

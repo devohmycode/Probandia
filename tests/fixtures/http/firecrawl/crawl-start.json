@@ -1,0 +1,16 @@
+{
+  "_source": "made from docs.firecrawl.dev/api-reference/endpoint/crawl-post, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/crawl",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"url": "https://registres.example.org/naissances", "limit": 3}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "success": true,
+    "id": "0b6e1f9a-3c41-4d2e-9b7a-5f2c8d1e4a10",
+    "url": "https://api.firecrawl.dev/v2/crawl/0b6e1f9a-3c41-4d2e-9b7a-5f2c8d1e4a10"
+  }
+}

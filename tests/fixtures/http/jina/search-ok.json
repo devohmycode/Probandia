@@ -1,0 +1,64 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://s.jina.ai/?q=%22Hugo%22+Besan%C3%A7on+1802&num=5&gl=lu&hl=fr",
+    "headers": {
+      "Authorization": "Bearer KEY",
+      "Accept": "application/json"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "x-usage-tokens": "10000"
+  },
+  "body": {
+    "code": 200,
+    "status": 20000,
+    "data": [
+      {
+        "title": "Victor Hugo (1802-1885) - Genealogy - Example Genealogy",
+        "url": "https://genealogy.example.org/people/Victor-Hugo/6000000012345678901",
+        "description": "Victor Hugo was born on 26 February 1802 in Besançon, France, son of Léopold Hugo and Sophie Trébuchet. He married Adèle Foucher on 12 October 1822 in Paris.",
+        "content": "# Victor Hugo (1802-1885) - Genealogy - Example Genealogy\n\nVictor Hugo was born on 26 February 1802 in Besançon, France, son of Léopold Hugo and Sophie Trébuchet. He married Adèle Foucher on 12 October 1822 in Paris.\n",
+        "usage": {
+          "tokens": 2500
+        }
+      },
+      {
+        "title": "Hugo family tree - Besançon - Example Trees",
+        "url": "https://tree.example.org/hugo?lang=en&n=hugo&p=victor",
+        "description": "Family tree of the Hugo family of Besançon (Doubs): Victor Hugo, born 1802, writer; parents Léopold Hugo (1773-1828) and Sophie Trébuchet.",
+        "content": "# Hugo family tree - Besançon - Example Trees\n\nFamily tree of the Hugo family of Besançon (Doubs): Victor Hugo, born 1802, writer; parents Léopold Hugo (1773-1828) and Sophie Trébuchet.\n",
+        "usage": {
+          "tokens": 2500
+        }
+      },
+      {
+        "title": "France, Civil Registration - Besançon, Naissances an X",
+        "url": "https://records.example.org/ark:/61903/3:1:S3HT-6Q9L-7Z2?cc=1709358",
+        "description": "Image browse: French civil registration, Besançon (Doubs), births (naissances) an X. Hugo, Victor Marie, 7 ventôse an X (26 février 1802).",
+        "content": "# France, Civil Registration - Besançon, Naissances an X\n\nImage browse: French civil registration, Besançon (Doubs), births (naissances) an X. Hugo, Victor Marie, 7 ventôse an X (26 février 1802).\n",
+        "usage": {
+          "tokens": 2500
+        }
+      },
+      {
+        "title": "Victor Hugo à Vianden - Luxemburger Wort, 1871 - press archive",
+        "url": "https://press.example.org/periodicals/luxwort/issue/1871-06-01",
+        "description": "Luxemburger Wort, 1 June 1871: notes on the visitors of the Grand Duchy, among them Victor Hugo, staying at Vianden.",
+        "content": "# Victor Hugo à Vianden - Luxemburger Wort, 1871 - press archive\n\nLuxemburger Wort, 1 June 1871: notes on the visitors of the Grand Duchy, among them Victor Hugo, staying at Vianden.\n",
+        "date": "Jun 1, 1871",
+        "usage": {
+          "tokens": 2500
+        }
+      }
+    ],
+    "meta": {
+      "usage": {
+        "tokens": 10000
+      }
+    }
+  }
+}

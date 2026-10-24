@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.staan.ai/v2/search/web?q=%22Hugo%22+Besan%C3%A7on+1802&market=fr-fr",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "search_id": "019a2f4e-9a07-7b11-8c3e-2d4f6a7b8c90",
+    "query": {
+      "q": "\"Hugo\" Besançon 1802",
+      "market": "fr-fr",
+      "count": 0,
+      "offset": 0
+    },
+    "web": {
+      "results": []
+    }
+  }
+}

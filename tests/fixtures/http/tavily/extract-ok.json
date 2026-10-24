@@ -1,0 +1,23 @@
+{
+  "_source": "made from docs.tavily.com/documentation/api-reference/endpoint/extract, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/extract",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"urls": "https://families.example.org/hugo", "extract_depth": "basic", "format": "markdown", "include_usage": true}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "results": [
+      {
+        "url": "https://families.example.org/hugo",
+        "raw_content": "# Registre des naissances de Besançon, an X\n\nLe sept ventôse an X (26 février 1802) est né Victor Marie Hugo, fils de Joseph Léopold Sigisbert Hugo, chef de bataillon, et de Sophie Françoise Trébuchet, son épouse, demeurant à Besançon, Grande Rue. Témoins : Jean Martin, cordonnier, et Pierre Girard, tailleur. L'acte est dressé en présence du père, qui a signé avec les témoins après lecture faite. Mention marginale : néant. Le registre de l'an X compte cent douze actes de naissance pour la section de la ville, tenus par l'officier public de la commune."
+      }
+    ],
+    "failed_results": [],
+    "response_time": 0.82,
+    "usage": {"credits": 0},
+    "request_id": "123e4567-e89b-12d3-a456-426614174113"
+  }
+}

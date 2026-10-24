@@ -1,0 +1,6 @@
+✓ 1 negative
+
+Negatives
+  search                        family    state  query                  engine       window
+  ────────────────────────────────────────────────────────────────────────────────────────────
+  s-01JA00000000000000000SRC02  marchand  valid  PERRIN Les Ormes 1818  ad-valombre  1815-1821

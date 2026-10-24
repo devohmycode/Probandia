@@ -1,0 +1,18 @@
+# expect: $.places[0].type
+schema: 1
+places:
+- id: besancon
+  names_as_written:
+  - Bisanz
+  - Vesontio
+  - Besançon
+  current_name: Besançon
+  type: city
+  parent: null
+  insee: null
+  gov: null
+  geonames: '3033123'
+  wikidata: Q37776
+  whg: null
+  lat: 47.24
+  lon: 6.02

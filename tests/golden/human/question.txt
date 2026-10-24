@@ -1,0 +1,9 @@
+✓ 2 questions · 1 open · 2026-09-01-ancestors-of-louis-marchand
+
+  ? Q1  open · general
+    Who were the ancestors of Louis MARCHAND?
+
+  ⚠ Q2  unresolved · death
+    Where was Louis Marchand buried?
+    persons  louis-marchand-1898
+    reason   the registers of 1940-1975 are closed

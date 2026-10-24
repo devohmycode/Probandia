@@ -1,0 +1,20 @@
+new: 1
+  + sophie-trebuchet-1772.death (sophie-trebuchet-1772, deces)
+      {date: "27 juin 1821", annee: 1821, lieu: "Paris", statut: acte, volet: III, chapitre: I,
+       rapport: paris-1822}
+same: 4
+  = victor-hugo-1802.birth (victor-hugo-1802, naissance)
+  = leopold-hugo-1773.birth (leopold-hugo-1773, naissance)
+  = leopold-hugo-1773.marriage (leopold-hugo-1773, unions[0])
+  = sophie-trebuchet-1772.birth (sophie-trebuchet-1772, naissance)
+divergent: 1
+  ~ victor-hugo-1802.death (victor-hugo-1802, deces) precision: date, statut
+    Probandia:
+      {date: "22 mai 1885", annee: 1885, lieu: "Paris", statut: acte, volet: II, chapitre: II,
+       source: "Index des décès de Paris, 1885.", note: "LECTURE INCERTAINE : ligne 4, « Hugo » ou « Hugot »"}
+    workshop:
+      {date: "vers 1885", annee: 1885, lieu: "Paris", statut: index, volet: II, chapitre: II,
+       source: "Index des décès de Paris, 1885.", note: "LECTURE INCERTAINE : ligne 4, « Hugo » ou « Hugot »"}
+in the workshop only: 1
+  < victor-hugo-1802.inhumation (victor-hugo-1802, inhumation)
+      {date: "1er juin 1885", annee: 1885, lieu: "Paris", statut: acte, volet: II, chapitre: II}

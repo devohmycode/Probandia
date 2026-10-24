@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.searchapi.io/api/v1/me",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "account": {
+      "current_month_usage": 4800,
+      "monthly_allowance": 10000,
+      "remaining_credits": 5200
+    },
+    "api_usage": {
+      "searches_this_hour": 12,
+      "hourly_rate_limit": 2000
+    },
+    "subscription": {
+      "period_start": "2026-09-04T00:34:59Z",
+      "period_end": "2026-10-04T00:34:59Z"
+    }
+  }
+}

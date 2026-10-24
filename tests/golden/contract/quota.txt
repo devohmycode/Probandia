@@ -1,0 +1,28 @@
+STATUS=OK
+PROVIDERS=23
+- platform=serpapi key=SERPAPI_API_KEY entries=serpapi,serpapi_bing
+- provider=serpapi ready used=0 of=250 left=225 period=monthly searches=225 source=local reset=2026-11-01
+- provider=serpapi_bing not-enabled used=0 of=250 left=225 period=monthly searches=225 source=local reset=2026-11-01
+- provider=serper ready used=0 of=2500 left=2250 period=once searches=2250 source=local reset=first-use+6m
+- provider=searchapi no-key used=0 of=100 left=90 period=once searches=90 source=local reset=never
+- platform=openwebninja key=OPENWEBNINJA_API_KEY entries=openwebninja_search,openwebninja_news,openwebninja_books
+- provider=openwebninja_search ready used=0 of=100 left=90 period=monthly searches=90 source=local reset=2026-11-01
+- provider=openwebninja_news ready used=0 of=100 left=90 period=monthly searches=90 source=local reset=2026-11-01
+- provider=openwebninja_books ready used=0 of=100 left=90 period=monthly searches=90 source=local reset=2026-11-01
+- provider=gemini_grounding content-reuse used=0 of=500 left=450 period=daily searches=450 source=local reset=2026-10-03
+- provider=brave card-required used=0 of=1000 left=900 period=monthly searches=900 source=local reset=2026-11-01
+- provider=staan no-key used=0 of=1000 left=900 period=monthly searches=900 source=local reset=2026-11-01
+- provider=marginalia ready used=0 of=unlimited left=unlimited period=daily searches=unlimited source=local reset=2026-10-03
+- provider=exa content-reuse used=0 of=10 left=9 period=monthly searches=529 source=local reset=2026-11-01
+- provider=parallel content-reuse used=0 of=5 left=4.5 period=monthly searches=4500 pages=4500 source=local reset=2026-11-01
+- provider=tavily content-reuse used=0 of=1000 left=900 period=monthly searches=900 pages=4500 source=local reset=2026-11-01
+- provider=linkup content-reuse used=0 of=20 left=18 period=monthly searches=3600 source=local reset=2026-11-01
+- provider=jina ready used=0 of=10000000 left=9000000 period=once searches=900 pages=3000 source=local reset=never
+- provider=firecrawl ready used=0 of=1000 left=900 period=monthly searches=450 pages=900 source=local reset=2026-11-01
+- provider=scrapegraph content-reuse used=0 of=500 left=450 period=once source=local reset=never
+- provider=zenrows ready used=0 of=5000 left=4500 period=monthly pages=4500 source=local reset=2026-11-01
+- provider=scraperapi ready used=0 of=1000 left=900 period=monthly pages=900 source=local reset=2026-11-01
+- platform=apify key=APIFY_TOKEN entries=apify,apify_reader
+- provider=apify ready used=0 of=5 left=4.5 period=monthly searches=989 source=local reset=2026-11-01
+- provider=apify_reader ready used=0 of=5 left=4.5 period=monthly pages=1730 source=local reset=2026-11-01
+- provider=openrouter no-key used=0 of=50 left=45 period=daily source=local reset=2026-10-03

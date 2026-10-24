@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://google.serper.dev/search?q=%22Hugotov%C3%A1%22+Besan%C3%A7on+1802+Vianden&gl=lu&hl=fr&num=10",
+    "headers": {
+      "X-API-KEY": "KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "searchParameters": {
+      "q": "\"Hugotová\" Besançon 1802 Vianden",
+      "gl": "lu",
+      "hl": "fr",
+      "num": 10,
+      "type": "search",
+      "engine": "google"
+    },
+    "organic": [],
+    "credits": 1
+  }
+}

@@ -1,0 +1,26 @@
+## 4 Arguments de preuve
+
+<a id="s-proof-pf-q1-2026-09-30-parents-of-victor-hugo"></a>
+
+### 4.1 Argument de preuve pour Q1
+
+**Question.** Who were the parents of Victor Hugo?
+
+**Sources.** The birth record of 1802.
+
+**Analyse.** An original, made by the father.
+
+**Corrélation.** No other evidence disagrees.
+
+**Conflits résolus.** None.
+
+**Conclusion.** Léopold Hugo is the father.
+
+[§ 5.1](#s-analysis-an-victor-hugo-1802-birth)
+
+*Relu par le contradicteur, de façon indépendante.*
+
+> **Objection 1** (`victor-hugo-1802.birth`) — A namesake was born in Nancy in 1801. Réponse : He died in 1803 (death record, act 14).
+>
+> **Objection 2** — The father's name is spelled Hugot. Écartée : a known variant
+

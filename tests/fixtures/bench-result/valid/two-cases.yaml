@@ -1,0 +1,31 @@
+schema: 1
+probandia: 0.9.41
+date: '2026-10-13'
+cases:
+- id: parents-of-victor
+  harness: {name: claude-code, version: 2.1.287}
+  model: claude-opus-5-5
+  effort: high
+  mode: session
+  duration_s: 1800
+  passes: 2
+  metrics: {findings: 2, expected: 2, false_promotions: 0.0, false_count: 0, uncited: 0, abstentions: 1,
+            abstain_expected: 1, quoted: 2, facts: 6, proven: 5, duplicates: 0, native: 0, paid: 0}
+  tokens:
+    weighted: 510
+    kinds: {input: 10, output: 100, cache_read: 0, cache_write: 0, cache_write_5m: 0, weighted: 510}
+  by_model:
+  - harness: claude-code
+    model: claude-opus-5-5
+    tokens: {input: 10, output: 100, cache_read: 0, cache_write: 0, cache_write_5m: 0, weighted: 510}
+- id: birth-of-victor
+  harness: {name: null, version: null}
+  model: null
+  effort: null
+  mode: null
+  duration_s: 0
+  passes: 0
+  metrics: {findings: 0, expected: 1, false_promotions: 0, false_count: 0, uncited: 0, abstentions: 0,
+            abstain_expected: 0, quoted: 0, facts: 0, proven: 0, duplicates: 0, native: 0, paid: 0}
+  tokens: {weighted: 182000, kinds: null}
+  by_model: []

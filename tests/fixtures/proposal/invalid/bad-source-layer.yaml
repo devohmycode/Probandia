@@ -1,0 +1,14 @@
+# expect: $.sources[0].layers[0].form
+schema: 1
+id: 01J9ZM0000000000000000000D
+research: 2026-09-30-parents-of-victor-hugo
+pass: 1
+author:
+  harness: terminal
+  agent: session
+sources:
+- id: src-01JA0000000000000000000001
+  type: parish-register
+  repository: Archives départementales du Doubs
+  layers:
+  - by: Archives départementales du Doubs

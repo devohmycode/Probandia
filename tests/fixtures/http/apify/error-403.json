@@ -1,0 +1,17 @@
+{
+  "note": "not a live answer: built from the Apify documentation read on 2 October 2026; to check against a real call once an account is open. The type and message come from a third-party report, not from the docs",
+  "request": {
+    "method": "POST",
+    "url": "https://api.apify.com/v2/acts/apify~google-search-scraper/runs"
+  },
+  "status": 403,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "error": {
+      "type": "platform-feature-disabled",
+      "message": "Monthly usage hard limit exceeded"
+    }
+  }
+}

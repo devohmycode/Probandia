@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/proofs-1.json",
+  "title": "proofs.yaml",
+  "description": "The proof arguments of a family (GPS5): for a question answered by indirect or conflicting evidence, or by an identity, the written argument in six parts, and its review by the contradictor, objection by objection.",
+  "type": "object",
+  "required": [
+    "schema",
+    "proofs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "proofs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/proof"
+      }
+    }
+  },
+  "$defs": {
+    "proof": {
+      "type": "object",
+      "required": [
+        "id",
+        "research",
+        "question",
+        "parts",
+        "review"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug",
+          "description": "pf-<question>-<research>, or any slug"
+        },
+        "research": {
+          "$ref": "#/$defs/slug"
+        },
+        "question": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]*$"
+        },
+        "conclusion": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/factid"
+          }
+        },
+        "analyses": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/slug"
+          }
+        },
+        "parts": {
+          "type": "object",
+          "required": [
+            "question",
+            "sources",
+            "analysis",
+            "correlation",
+            "conflicts",
+            "conclusion"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "question": {
+              "type": "string"
+            },
+            "sources": {
+              "type": "string"
+            },
+            "analysis": {
+              "type": "string"
+            },
+            "correlation": {
+              "type": "string"
+            },
+            "conflicts": {
+              "type": "string"
+            },
+            "conclusion": {
+              "type": "string"
+            }
+          }
+        },
+        "review": {
+          "type": "object",
+          "required": [
+            "state",
+            "rounds"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "enum": [
+                "draft",
+                "submitted",
+                "objected",
+                "accepted"
+              ]
+            },
+            "rounds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/round"
+              }
+            }
+          }
+        }
+      }
+    },
+    "round": {
+      "type": "object",
+      "required": [
+        "date",
+        "reviewer",
+        "objections"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+        },
+        "objections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/objection"
+          }
+        },
+        "reviewer": {
+          "enum": [
+            "contradictor",
+            "session"
+          ],
+          "description": "who reviewed: the contradictor subagent, independent, or the same session in a later turn"
+        },
+        "returned": {
+          "type": "string",
+          "description": "the reviewer's return, verbatim, as the engine read it"
+        }
+      }
+    },
+    "objection": {
+      "type": "object",
+      "required": [
+        "n",
+        "text",
+        "state"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "its number, across the rounds"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fact": {
+          "type": "string"
+        },
+        "would_settle": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "open",
+            "answered",
+            "dismissed"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "description": "why it was dismissed"
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 128
+    },
+    "factid": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"
+    }
+  }
+}

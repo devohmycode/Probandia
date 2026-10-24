@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/bench-case-1.json",
+  "title": "case.yaml",
+  "description": "A case of the public benchmark (TRUST5): a solved research on persons dead for more than a hundred years, from open sources. The case folder holds case.yaml, project/ (the starting project, without the answer) and solution/ (the research carried out).",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "title",
+    "question",
+    "family",
+    "research",
+    "expected",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "the case's id, its folder's name"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the starting question, as a person asks it"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+    },
+    "family": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "the family of project/ and solution/"
+    },
+    "research": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the research of solution/ that answers the question"
+    },
+    "expected": {
+      "type": "array",
+      "minItems": 1,
+      "description": "the known answers, as bench/run.py scores them",
+      "items": {
+        "type": "object",
+        "required": [
+          "person",
+          "type"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "person": {
+            "type": "string",
+            "minLength": 1,
+            "description": "a person id of solution/, or Given SURNAME"
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": "integer"
+          },
+          "place": {
+            "description": "the expected place, or the names of a commune known under several",
+            "oneOf": [
+              {"type": "string"},
+              {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1}
+            ]
+          },
+          "abstain": {
+            "type": "boolean",
+            "description": "the right answer is: not found"
+          },
+          "fact": {
+            "type": "string",
+            "description": "the fact of solution/ that gives it"
+          },
+          "label": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "a name for this answer, that distinct refers to"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+            "description": "check: the date the fact must carry, the same text or within tolerance_days"
+          },
+          "tolerance_days": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "with date: how many days the fact's full date may be off; 0 when absent"
+          },
+          "axes": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "check: the axes the fact must carry in its evidence (those given)",
+            "properties": {
+              "source": {"enum": ["original", "derivative", "authored"]},
+              "information": {"enum": ["primary", "secondary", "undetermined"]},
+              "evidence": {"enum": ["direct", "indirect", "negative"]}
+            }
+          },
+          "confidence_max": {
+            "enum": ["unsupported", "possible", "probable", "proved"],
+            "description": "check: the highest confidence a question answered on the fact may reach"
+          },
+          "uncertain_reading": {
+            "type": "boolean",
+            "description": "check: true, the fact must carry an uncertain_reading; false, it must not"
+          },
+          "distinct": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "check: the label of another answer, whose person must be another person (homonyms)"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "every source the solution cites, with the terms that let it be reused",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "licence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^src-[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+          },
+          "licence": {
+            "type": "string",
+            "minLength": 1,
+            "description": "the licence or the terms of reuse, such as Licence Ouverte 2.0, CC BY 4.0, public domain"
+          },
+          "terms": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "where the terms are written"
+          }
+        }
+      }
+    },
+    "reviewed": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "description": "who read the solution and agreed to its publication",
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+      }
+    },
+    "note": {
+      "type": "string"
+    },
+    "observed": {
+      "type": "boolean",
+      "description": "the case informs and blocks nothing: its scores are reported, never held against a release threshold"
+    },
+    "offline": {
+      "type": "boolean",
+      "description": "the acts the research needs are in project/ (sources.yaml and their transcriptions): it needs no search, and a bench may play it without web tools"
+    }
+  }
+}

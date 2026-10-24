@@ -1,0 +1,1024 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://www.archives-manche.fr/_recherche-api/search/11?arko_default_635b873d1f4a7--filtreGroupes%5Bmode%5D=simple&arko_default_635b873d1f4a7--filtreGroupes%5Bop%5D=AND&arko_default_635b873d1f4a7--filtreGroupes%5Bgroupes%5D%5B0%5D%5Barko_default_635fe0c23fd4c%5D%5Bop%5D=AND&arko_default_635b873d1f4a7--filtreGroupes%5Bgroupes%5D%5B0%5D%5Barko_default_635fe0c23fd4c%5D%5Bq%5D%5B%5D=Octeville&arko_default_635b873d1f4a7--filtreGroupes%5Bgroupes%5D%5B0%5D%5Barko_default_635fe0c23fd4c%5D%5Bextras%5D%5Bmode%5D=popup&arko_default_635b873d1f4a7--from=0&arko_default_635b873d1f4a7--resultSize=100&arko_default_635b873d1f4a7--modeRestit=arko_default_635b8783b6c86"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json"
+ },
+ "body": {
+  "total": 63,
+  "results": [
+   {
+    "id": 607624,
+    "intitule": "",
+    "refUnique": "arko_fiche_657724793f6ed",
+    "left": 0,
+    "key": "[fiche:arko_fiche_657724793f6ed:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607625,
+    "intitule": "5 Mi 1908",
+    "refUnique": "arko_fiche_6577247946004",
+    "left": 0,
+    "key": "5 Mi 1908[fiche:arko_fiche_6577247946004:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607626,
+    "intitule": "5 Mi 1908",
+    "refUnique": "arko_fiche_657724794a095",
+    "left": 0,
+    "key": "5 Mi 1908[fiche:arko_fiche_657724794a095:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607627,
+    "intitule": "5 Mi 1908",
+    "refUnique": "arko_fiche_6577247950b42",
+    "left": 0,
+    "key": "5 Mi 1908[fiche:arko_fiche_6577247950b42:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607628,
+    "intitule": "5 Mi 1908",
+    "refUnique": "arko_fiche_657724795513b",
+    "left": 0,
+    "key": "5 Mi 1908[fiche:arko_fiche_657724795513b:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607629,
+    "intitule": "5 Mi 1908",
+    "refUnique": "arko_fiche_657724795ad8d",
+    "left": 0,
+    "key": "5 Mi 1908[fiche:arko_fiche_657724795ad8d:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607630,
+    "intitule": "5 Mi 1908-1909",
+    "refUnique": "arko_fiche_6577247962059",
+    "left": 0,
+    "key": "5 Mi 1908-1909[fiche:arko_fiche_6577247962059:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607648,
+    "intitule": "5 Mi 422",
+    "refUnique": "arko_fiche_6577247d4f434",
+    "left": 0,
+    "key": "5 Mi 422[fiche:arko_fiche_6577247d4f434:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607631,
+    "intitule": "5 Mi 714",
+    "refUnique": "arko_fiche_6577247967ff7",
+    "left": 0,
+    "key": "5 Mi 714[fiche:arko_fiche_6577247967ff7:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607632,
+    "intitule": "5 Mi 714",
+    "refUnique": "arko_fiche_657724796cbb7",
+    "left": 0,
+    "key": "5 Mi 714[fiche:arko_fiche_657724796cbb7:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607633,
+    "intitule": "5 Mi 714",
+    "refUnique": "arko_fiche_657724797682c",
+    "left": 0,
+    "key": "5 Mi 714[fiche:arko_fiche_657724797682c:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607649,
+    "intitule": "5 Mi 422",
+    "refUnique": "arko_fiche_6577247d52615",
+    "left": 0,
+    "key": "5 Mi 422[fiche:arko_fiche_6577247d52615:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607634,
+    "intitule": "5 Mi 714",
+    "refUnique": "arko_fiche_657724797ee26",
+    "left": 0,
+    "key": "5 Mi 714[fiche:arko_fiche_657724797ee26:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607650,
+    "intitule": "5 Mi 422",
+    "refUnique": "arko_fiche_6577247d560cc",
+    "left": 0,
+    "key": "5 Mi 422[fiche:arko_fiche_6577247d560cc:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607635,
+    "intitule": "5 Mi 715",
+    "refUnique": "arko_fiche_65772479853cf",
+    "left": 0,
+    "key": "5 Mi 715[fiche:arko_fiche_65772479853cf:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607651,
+    "intitule": "5 Mi 423",
+    "refUnique": "arko_fiche_6577247d59296",
+    "left": 0,
+    "key": "5 Mi 423[fiche:arko_fiche_6577247d59296:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607636,
+    "intitule": "5 Mi 715",
+    "refUnique": "arko_fiche_6577247cd7235",
+    "left": 0,
+    "key": "5 Mi 715[fiche:arko_fiche_6577247cd7235:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607637,
+    "intitule": "5 Mi 715",
+    "refUnique": "arko_fiche_6577247ce724b",
+    "left": 0,
+    "key": "5 Mi 715[fiche:arko_fiche_6577247ce724b:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607652,
+    "intitule": "5 Mi 423",
+    "refUnique": "arko_fiche_6577247d5bf21",
+    "left": 0,
+    "key": "5 Mi 423[fiche:arko_fiche_6577247d5bf21:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607638,
+    "intitule": "5 Mi 715",
+    "refUnique": "arko_fiche_6577247cf3e1c",
+    "left": 0,
+    "key": "5 Mi 715[fiche:arko_fiche_6577247cf3e1c:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607653,
+    "intitule": "5 Mi 423",
+    "refUnique": "arko_fiche_6577247d5e6e8",
+    "left": 0,
+    "key": "5 Mi 423[fiche:arko_fiche_6577247d5e6e8:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607639,
+    "intitule": "5 Mi 715",
+    "refUnique": "arko_fiche_6577247d0849a",
+    "left": 0,
+    "key": "5 Mi 715[fiche:arko_fiche_6577247d0849a:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607640,
+    "intitule": "5 Mi 716",
+    "refUnique": "arko_fiche_6577247d0fe66",
+    "left": 0,
+    "key": "5 Mi 716[fiche:arko_fiche_6577247d0fe66:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607654,
+    "intitule": "5 Mi 425",
+    "refUnique": "arko_fiche_6577247d61a40",
+    "left": 0,
+    "key": "5 Mi 425[fiche:arko_fiche_6577247d61a40:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607641,
+    "intitule": "5 Mi 716",
+    "refUnique": "arko_fiche_6577247d1b397",
+    "left": 0,
+    "key": "5 Mi 716[fiche:arko_fiche_6577247d1b397:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607642,
+    "intitule": "5 Mi 716",
+    "refUnique": "arko_fiche_6577247d262ab",
+    "left": 0,
+    "key": "5 Mi 716[fiche:arko_fiche_6577247d262ab:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607643,
+    "intitule": "5 Mi 716",
+    "refUnique": "arko_fiche_6577247d2bb77",
+    "left": 0,
+    "key": "5 Mi 716[fiche:arko_fiche_6577247d2bb77:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607655,
+    "intitule": "5 Mi 427",
+    "refUnique": "arko_fiche_6577247d6527d",
+    "left": 0,
+    "key": "5 Mi 427[fiche:arko_fiche_6577247d6527d:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607644,
+    "intitule": "5 Mi 716",
+    "refUnique": "arko_fiche_6577247d38966",
+    "left": 0,
+    "key": "5 Mi 716[fiche:arko_fiche_6577247d38966:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607645,
+    "intitule": "5 Mi 717",
+    "refUnique": "arko_fiche_6577247d3f335",
+    "left": 0,
+    "key": "5 Mi 717[fiche:arko_fiche_6577247d3f335:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607656,
+    "intitule": "5 Mi 428",
+    "refUnique": "arko_fiche_6577247d6a7e3",
+    "left": 0,
+    "key": "5 Mi 428[fiche:arko_fiche_6577247d6a7e3:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607646,
+    "intitule": "5 Mi 717",
+    "refUnique": "arko_fiche_6577247d47e35",
+    "left": 0,
+    "key": "5 Mi 717[fiche:arko_fiche_6577247d47e35:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607647,
+    "intitule": "5 Mi 717",
+    "refUnique": "arko_fiche_6577247d4baf0",
+    "left": 0,
+    "key": "5 Mi 717[fiche:arko_fiche_6577247d4baf0:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607657,
+    "intitule": "",
+    "refUnique": "arko_fiche_6577247d6d08d",
+    "left": 0,
+    "key": "[fiche:arko_fiche_6577247d6d08d:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607658,
+    "intitule": "",
+    "refUnique": "arko_fiche_6577247d6fad2",
+    "left": 0,
+    "key": "[fiche:arko_fiche_6577247d6fad2:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607659,
+    "intitule": "",
+    "refUnique": "arko_fiche_6577247d72a98",
+    "left": 0,
+    "key": "[fiche:arko_fiche_6577247d72a98:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 607660,
+    "intitule": "",
+    "refUnique": "arko_fiche_6577247d75ae5",
+    "left": 0,
+    "key": "[fiche:arko_fiche_6577247d75ae5:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617769,
+    "intitule": "5 Mi 908",
+    "refUnique": "arko_fiche_65772e39698b5",
+    "left": 0,
+    "key": "5 Mi 908[fiche:arko_fiche_65772e39698b5:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617755,
+    "intitule": "5 Mi 431-432",
+    "refUnique": "arko_fiche_65772e36eef11",
+    "left": 0,
+    "key": "5 Mi 431-432[fiche:arko_fiche_65772e36eef11:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617770,
+    "intitule": "5 Mi 909",
+    "refUnique": "arko_fiche_65772e396d9fd",
+    "left": 0,
+    "key": "5 Mi 909[fiche:arko_fiche_65772e396d9fd:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617771,
+    "intitule": "5 Mi 909",
+    "refUnique": "arko_fiche_65772e3974cd1",
+    "left": 0,
+    "key": "5 Mi 909[fiche:arko_fiche_65772e3974cd1:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617772,
+    "intitule": "5 Mi 909",
+    "refUnique": "arko_fiche_65772e397bb61",
+    "left": 0,
+    "key": "5 Mi 909[fiche:arko_fiche_65772e397bb61:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617756,
+    "intitule": "5 Mi 431-432",
+    "refUnique": "arko_fiche_65772e3702d80",
+    "left": 0,
+    "key": "5 Mi 431-432[fiche:arko_fiche_65772e3702d80:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617773,
+    "intitule": "5 Mi 909",
+    "refUnique": "arko_fiche_65772e3983a8b",
+    "left": 0,
+    "key": "5 Mi 909[fiche:arko_fiche_65772e3983a8b:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617757,
+    "intitule": "5 Mi 433-434",
+    "refUnique": "arko_fiche_65772e370bc91",
+    "left": 0,
+    "key": "5 Mi 433-434[fiche:arko_fiche_65772e370bc91:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617774,
+    "intitule": "5 Mi 909",
+    "refUnique": "arko_fiche_65772e39892d0",
+    "left": 0,
+    "key": "5 Mi 909[fiche:arko_fiche_65772e39892d0:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617758,
+    "intitule": "5 Mi 435",
+    "refUnique": "arko_fiche_65772e3716161",
+    "left": 0,
+    "key": "5 Mi 435[fiche:arko_fiche_65772e3716161:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617775,
+    "intitule": "5 Mi 910",
+    "refUnique": "arko_fiche_65772e3991022",
+    "left": 0,
+    "key": "5 Mi 910[fiche:arko_fiche_65772e3991022:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617759,
+    "intitule": "5 Mi 437-438",
+    "refUnique": "arko_fiche_65772e3718d2a",
+    "left": 0,
+    "key": "5 Mi 437-438[fiche:arko_fiche_65772e3718d2a:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617776,
+    "intitule": "5 Mi 910",
+    "refUnique": "arko_fiche_65772e3995a55",
+    "left": 0,
+    "key": "5 Mi 910[fiche:arko_fiche_65772e3995a55:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617760,
+    "intitule": "5 Mi 439",
+    "refUnique": "arko_fiche_65772e371d938",
+    "left": 0,
+    "key": "5 Mi 439[fiche:arko_fiche_65772e371d938:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617777,
+    "intitule": "5 Mi 910",
+    "refUnique": "arko_fiche_65772e399ae37",
+    "left": 0,
+    "key": "5 Mi 910[fiche:arko_fiche_65772e399ae37:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617761,
+    "intitule": "5 Mi 440-441",
+    "refUnique": "arko_fiche_65772e372087c",
+    "left": 0,
+    "key": "5 Mi 440-441[fiche:arko_fiche_65772e372087c:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617778,
+    "intitule": "5 Mi 910",
+    "refUnique": "arko_fiche_65772e399effe",
+    "left": 0,
+    "key": "5 Mi 910[fiche:arko_fiche_65772e399effe:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617762,
+    "intitule": "5 Mi 441-442",
+    "refUnique": "arko_fiche_65772e394635b",
+    "left": 0,
+    "key": "5 Mi 441-442[fiche:arko_fiche_65772e394635b:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617779,
+    "intitule": "5 Mi 910",
+    "refUnique": "arko_fiche_65772e39a3802",
+    "left": 0,
+    "key": "5 Mi 910[fiche:arko_fiche_65772e39a3802:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617763,
+    "intitule": "5 Mi 443",
+    "refUnique": "arko_fiche_65772e394b679",
+    "left": 0,
+    "key": "5 Mi 443[fiche:arko_fiche_65772e394b679:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617780,
+    "intitule": "5 Mi 911",
+    "refUnique": "arko_fiche_65772e39a7062",
+    "left": 0,
+    "key": "5 Mi 911[fiche:arko_fiche_65772e39a7062:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617764,
+    "intitule": "5 Mi 443",
+    "refUnique": "arko_fiche_65772e39542f5",
+    "left": 0,
+    "key": "5 Mi 443[fiche:arko_fiche_65772e39542f5:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617765,
+    "intitule": "",
+    "refUnique": "arko_fiche_65772e39585e7",
+    "left": 0,
+    "key": "[fiche:arko_fiche_65772e39585e7:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617766,
+    "intitule": "",
+    "refUnique": "arko_fiche_65772e395cc41",
+    "left": 0,
+    "key": "[fiche:arko_fiche_65772e395cc41:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617767,
+    "intitule": "",
+    "refUnique": "arko_fiche_65772e3961bfe",
+    "left": 0,
+    "key": "[fiche:arko_fiche_65772e3961bfe:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   },
+   {
+    "id": 617768,
+    "intitule": "",
+    "refUnique": "arko_fiche_65772e396473e",
+    "left": 0,
+    "key": "[fiche:arko_fiche_65772e396473e:arko_default_652fcdcf7d4b5-flat-0000000000]",
+    "hasChildren": false,
+    "parent": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "parentsRefUniques": [],
+    "arbre": [
+     "Etat civil[source:arko_default_652fcdcf7d4b5:arko_default_652fcdcf7d4b5-0-0000000000]"
+    ],
+    "dernierNiveau": true
+   }
+  ],
+  "html": "<table><tr><td><button data-detail=\"607624\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Cherbourg-Octeville</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">-</span></td></tr><tr><td><button data-detail=\"607625\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247946004/arko_default_635fc93dd76a6/image/1918310\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Baptêmes</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Sépultures</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1617 - 1667</span></td></tr><tr><td><button data-detail=\"607626\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724794a095/arko_default_635fc93dd76a6/image/1918311\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Baptêmes</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Sépultures</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1700 - 1720</span></td></tr><tr><td><button data-detail=\"607627\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247950b42/arko_default_635fc93dd76a6/image/1918312\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Baptêmes</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Sépultures</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1721 - 1750</span></td></tr><tr><td><button data-detail=\"607628\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724795513b/arko_default_635fc93dd76a6/image/1918313\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Baptêmes</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Sépultures</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1751 - 1780</span></td></tr><tr><td><button data-detail=\"607629\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724795ad8d/arko_default_635fc93dd76a6/image/1918314\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Baptêmes</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Sépultures</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1781 - 1791</span></td></tr><tr><td><button data-detail=\"607630\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247962059/arko_default_635fc93dd76a6/image/1918315\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 1908-1909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1792 - 1803</span></td></tr><tr><td><button data-detail=\"607648\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d4f434/arko_default_635fc93dd76a6/image/1918354\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 422</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1792 - 1802</span></td></tr><tr><td><button data-detail=\"607631\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247967ff7/arko_default_635fc93dd76a6/image/1918317\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 714</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1793 - 1801</span></td></tr><tr><td><button data-detail=\"607632\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724796cbb7/arko_default_635fc93dd76a6/image/1918318\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 714</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1801 - 1810</span></td></tr><tr><td><button data-detail=\"607633\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724797682c/arko_default_635fc93dd76a6/image/1918319\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 714</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1811 - 1819</span></td></tr><tr><td><button data-detail=\"607649\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d52615/arko_default_635fc93dd76a6/image/1918355\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 422</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1813 - 1822</span></td></tr><tr><td><button data-detail=\"607634\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_657724797ee26/arko_default_635fc93dd76a6/image/1918324\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 714</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1820 - 1828</span></td></tr><tr><td><button data-detail=\"607650\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d560cc/arko_default_635fc93dd76a6/image/1918356\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 422</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1823 - 1832</span></td></tr><tr><td><button data-detail=\"607635\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772479853cf/arko_default_635fc93dd76a6/image/1918327\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 715</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1829 - 1839</span></td></tr><tr><td><button data-detail=\"607651\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d59296/arko_default_635fc93dd76a6/image/1918357\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 423</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1833 - 1842</span></td></tr><tr><td><button data-detail=\"607636\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247cd7235/arko_default_635fc93dd76a6/image/1918334\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 715</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1840 - 1842</span></td></tr><tr><td><button data-detail=\"607637\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247ce724b/arko_default_635fc93dd76a6/image/1918339\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 715</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1843 - 1849</span></td></tr><tr><td><button data-detail=\"607652\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d5bf21/arko_default_635fc93dd76a6/image/1918358\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 423</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1843 - 1852</span></td></tr><tr><td><button data-detail=\"607638\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247cf3e1c/arko_default_635fc93dd76a6/image/1918340\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 715</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1850 - 1855</span></td></tr><tr><td><button data-detail=\"607653\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d5e6e8/arko_default_635fc93dd76a6/image/1918359\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 423</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1853 - 1862</span></td></tr><tr><td><button data-detail=\"607639\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d0849a/arko_default_635fc93dd76a6/image/1918341\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 715</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1856 - 1859</span></td></tr><tr><td><button data-detail=\"607640\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d0fe66/arko_default_635fc93dd76a6/image/1918342\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 716</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1860 - 1863</span></td></tr><tr><td><button data-detail=\"607654\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d61a40/arko_default_635fc93dd76a6/image/1918360\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 425</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1863 - 1872</span></td></tr><tr><td><button data-detail=\"607641\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d1b397/arko_default_635fc93dd76a6/image/1918343\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 716</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1864 - 1867</span></td></tr><tr><td><button data-detail=\"607642\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d262ab/arko_default_635fc93dd76a6/image/1918346\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 716</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1868 - 1872</span></td></tr><tr><td><button data-detail=\"607643\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d2bb77/arko_default_635fc93dd76a6/image/1918347\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 716</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1873 - 1877</span></td></tr><tr><td><button data-detail=\"607655\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d6527d/arko_default_635fc93dd76a6/image/1918363\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 427</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1873 - 1882</span></td></tr><tr><td><button data-detail=\"607644\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d38966/arko_default_635fc93dd76a6/image/1918348\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 716</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1878 - 1881</span></td></tr><tr><td><button data-detail=\"607645\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d3f335/arko_default_635fc93dd76a6/image/1918349\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 717</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1882 - 1885</span></td></tr><tr><td><button data-detail=\"607656\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d6a7e3/arko_default_635fc93dd76a6/image/1918364\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 428</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1883 - 1892</span></td></tr><tr><td><button data-detail=\"607646\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d47e35/arko_default_635fc93dd76a6/image/1918350\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 717</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1886 - 1890</span></td></tr><tr><td><button data-detail=\"607647\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d4baf0/arko_default_635fc93dd76a6/image/1918353\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 717</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1891 - 1895</span></td></tr><tr><td><button data-detail=\"607657\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d6d08d/arko_default_635fc93dd76a6/image/1918365\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1893 - 1902</span></td></tr><tr><td><button data-detail=\"607658\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d6fad2/arko_default_635fc93dd76a6/image/1918366\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1903 - 1912</span></td></tr><tr><td><button data-detail=\"607659\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d72a98/arko_default_635fc93dd76a6/image/1918367\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1913 - 1922</span></td></tr><tr><td><button data-detail=\"607660\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d75ae5/arko_default_635fc93dd76a6/image/1918368\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1923 - 1932</span></td></tr><tr><td><button data-detail=\"617769\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39698b5/arko_default_635fc93dd76a6/image/1929854\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 908</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1781 - 1791</span></td></tr><tr><td><button data-detail=\"617755\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e36eef11/arko_default_635fc93dd76a6/image/1929840\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 431-432</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1792 - 1802</span></td></tr><tr><td><button data-detail=\"617770\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e396d9fd/arko_default_635fc93dd76a6/image/1929855\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1793 - 1797</span></td></tr><tr><td><button data-detail=\"617771\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3974cd1/arko_default_635fc93dd76a6/image/1929856\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1796 - 1802</span></td></tr><tr><td><button data-detail=\"617772\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e397bb61/arko_default_635fc93dd76a6/image/1929857\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1802 - 1812</span></td></tr><tr><td><button data-detail=\"617756\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3702d80/arko_default_635fc93dd76a6/image/1929841\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 431-432</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1802 - 1812</span></td></tr><tr><td><button data-detail=\"617773\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3983a8b/arko_default_635fc93dd76a6/image/1929858\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1813 - 1822</span></td></tr><tr><td><button data-detail=\"617757\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e370bc91/arko_default_635fc93dd76a6/image/1929842\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 433-434</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1813 - 1822</span></td></tr><tr><td><button data-detail=\"617774\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39892d0/arko_default_635fc93dd76a6/image/1929863\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 909</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1823 - 1832</span></td></tr><tr><td><button data-detail=\"617758\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3716161/arko_default_635fc93dd76a6/image/1929843\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 435</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1823 - 1832</span></td></tr><tr><td><button data-detail=\"617775\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3991022/arko_default_635fc93dd76a6/image/1929864\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 910</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1833 - 1842</span></td></tr><tr><td><button data-detail=\"617759\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3718d2a/arko_default_635fc93dd76a6/image/1929844\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 437-438</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1833 - 1842</span></td></tr><tr><td><button data-detail=\"617776\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3995a55/arko_default_635fc93dd76a6/image/1929867\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 910</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1843 - 1852</span></td></tr><tr><td><button data-detail=\"617760\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e371d938/arko_default_635fc93dd76a6/image/1929845\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 439</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1843 - 1852</span></td></tr><tr><td><button data-detail=\"617777\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e399ae37/arko_default_635fc93dd76a6/image/1929868\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 910</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1853 - 1862</span></td></tr><tr><td><button data-detail=\"617761\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e372087c/arko_default_635fc93dd76a6/image/1929846\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 440-441</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1853 - 1862</span></td></tr><tr><td><button data-detail=\"617778\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e399effe/arko_default_635fc93dd76a6/image/1929869\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 910</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1863 - 1872</span></td></tr><tr><td><button data-detail=\"617762\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e394635b/arko_default_635fc93dd76a6/image/1929847\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 441-442</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1863 - 1872</span></td></tr><tr><td><button data-detail=\"617779\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39a3802/arko_default_635fc93dd76a6/image/1929870\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 910</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1873 - 1882</span></td></tr><tr><td><button data-detail=\"617763\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e394b679/arko_default_635fc93dd76a6/image/1929848\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 443</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1873 - 1882</span></td></tr><tr><td><button data-detail=\"617780\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39a7062/arko_default_635fc93dd76a6/image/1929873\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 911</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Naissances</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Mariages</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Décès</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1883 - 1892</span></td></tr><tr><td><button data-detail=\"617764\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39542f5/arko_default_635fc93dd76a6/image/1929849\"></button><span style=\"pointer-events: none;\" data-champ=\"cote_tableau\" data-type-champ=\"varchar\">5 Mi 443</span><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1883 - 1892</span></td></tr><tr><td><button data-detail=\"617765\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e39585e7/arko_default_635fc93dd76a6/image/1929850\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1893 - 1902</span></td></tr><tr><td><button data-detail=\"617766\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e395cc41/arko_default_635fc93dd76a6/image/1929851\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1903 - 1912</span></td></tr><tr><td><button data-detail=\"617767\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e3961bfe/arko_default_635fc93dd76a6/image/1929852\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1913 - 1922</span></td></tr><tr><td><button data-detail=\"617768\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_65772e396473e/arko_default_635fc93dd76a6/image/1929853\"></button><span style=\"pointer-events: none;\" data-champ=\"geogname\" data-type-champ=\"varchar\">Octeville-l&#039;Avenel</span><span style=\"pointer-events: none;\" data-champ=\"type_acte\" data-type-champ=\"relation_fiche\">Table décennale</span><span style=\"pointer-events: none;\" data-champ=\"date\" data-type-champ=\"date\">1923 - 1932</span></td></tr></table>"
+ }
+}

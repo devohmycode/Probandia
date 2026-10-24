@@ -1,0 +1,42 @@
+# Real records of the Hugo family, the public example family of Probandia: each image with
+# where it comes from, its rights and its fingerprint (version-1.0.0 T255). Both may be shared:
+# a document of 1885 in the public domain, and a facsimile Paris Musées gives under CC0.
+# tests/unit/test_examples.py checks every file against this list.
+schema: 1
+records:
+- file: death-1885-paris-16-546.jpg
+  record: death of Victor Marie Hugo, act no. 546, Paris, 16th arrondissement, 23 May 1885
+  kind: original register   # the page of the civil register, as the archive digitised it
+  repository: Archives de Paris
+  reference: état civil, 16e arrondissement, décès 1885, acte n° 546 (call number not noted)
+  source: https://commons.wikimedia.org/wiki/File:Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg
+  url: https://upload.wikimedia.org/wikipedia/commons/6/66/Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg
+  rights: public domain (Wikimedia Commons, PD-old-70)
+  credit: Archives de Paris, via Wikimedia Commons
+  width: 1968
+  height: 2990
+  bytes: 1395920
+  sha256: e9f1f015edcf1aeef3ddbaba597073cee0fc1eb9bc7bbfa28e16158c668ef920
+  downloaded: '2026-10-14'
+  check: >-
+    The act is dated 23 May 1885 and says he died "hier au soir, à une heure et demie" (lines 1-12):
+    the day before, 22 May 1885.
+- file: birth-1802-besancon-facsimile.jpg
+  record: birth of Victor Marie Hugo, Besançon, act of 8 ventôse an X (27 February 1802)
+  kind: facsimile   # a photomechanical print of the register's act, late 19th century: a derivative
+  repository: Maison de Victor Hugo - Hauteville House (Paris Musées)
+  reference: inventory no. 2017.0.3553.1
+  source: https://commons.wikimedia.org/wiki/File:Extrait_de_Naissance_de_Victor_Hugo,_2017.0.3553.1.jpg
+  url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Extrait_de_Naissance_de_Victor_Hugo%2C_2017.0.3553.1.jpg
+  institution: https://www.parismuseescollections.paris.fr/fr/maison-de-victor-hugo/oeuvres/extrait-de-naissance-de-victor-hugo-1
+  iiif: https://apicollections.parismusees.paris.fr/iiif/240011747/manifest
+  rights: CC0 1.0 (Paris Musées, via Wikimedia Commons)
+  credit: Maison de Victor Hugo - Hauteville House, Paris Musées
+  width: 3000
+  height: 2360
+  bytes: 706167
+  sha256: c9741c1fdad4e08776b3de2a053a6fc8111713580f70492d5e1260dfcf987232
+  downloaded: '2026-10-14'
+  check: >-
+    The act is dated "huitième du mois de ventôse l'an Dix" and says he was born "le jour d'hier à dix
+    heures demie du soir": 7 ventôse an X, which probandia dates "7 ventôse an X" gives as 1802-02-26.

@@ -1,0 +1,14 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-web-search/search?q=x"
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "message": "Unauthorized"
+  }
+}

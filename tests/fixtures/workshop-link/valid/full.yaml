@@ -1,0 +1,19 @@
+schema: 1
+adapter: prototype
+root: .
+families:
+  hugo: [victor-hugo-1802, leopold-hugo-1773, sophie-trebuchet-1772]
+persons:
+  victor-hugo-1802: {workshop: victor-hugo-1802, generation: II, volet: I, chapitre: I}
+  leopold-hugo-1773: {workshop: leopold-hugo-1773, generation: III, volet: II, chapitre: II}
+  sophie-trebuchet-1772: {workshop: sophie-trebuchet-1772, generation: null, volet: null, chapitre: null}
+facts:
+  victor-hugo-1802.birth: {person: victor-hugo-1802, key: naissance, index: null, annee: 1802,
+                           date_text: "26 février 1802", volet: I, chapitre: I, rapport: null}
+  leopold-hugo-1773.marriage: {person: leopold-hugo-1773, key: unions, index: 0, annee: 1797,
+                               date_text: "1797", volet: II, chapitre: II, rapport: null}
+researches:
+  2026-10-06-hugo-besancon: {rapport: hugo-besancon, origine: true}
+  2026-10-06-marriage-of-victor-hugo: {rapport: paris-1822, origine: false, volet: III, chapitre: IV}
+synced: {sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef, at: "2026-10-06T10:00:00Z",
+         pushed: 0, pulled: 0}

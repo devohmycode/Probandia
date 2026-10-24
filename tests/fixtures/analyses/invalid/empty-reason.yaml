@@ -1,0 +1,10 @@
+# expect: $.analyses[0].reason
+schema: 1
+analyses:
+  - id: an-x-1800-birth
+    person: x-1800
+    fact_kind: birth
+    items:
+      - {asserts: "1800"}
+    status: divergent
+    reason: ""

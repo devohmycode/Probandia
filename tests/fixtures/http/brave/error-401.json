@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search?q=%22Hugo%22+Besan%C3%A7on+1802&country=ALL&search_lang=fr&count=10",
+    "headers": {
+      "X-Subscription-Token": "KEY",
+      "Accept": "application/json"
+    }
+  },
+  "status": 422,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "type": "ErrorResponse",
+    "error": {
+      "id": "9f1c2d3e-4b5a-6789-8abc-def012345678",
+      "status": 422,
+      "code": "SUBSCRIPTION_TOKEN_INVALID",
+      "detail": "The provided subscription token is invalid."
+    },
+    "time": 1790845200
+  }
+}

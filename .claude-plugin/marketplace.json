@@ -1,0 +1,16 @@
+{
+  "name": "probandia",
+  "owner": {
+    "name": "DevOhMyCode"
+  },
+  "metadata": {
+    "description": "Probandia: genealogy research for AI coding agents, on free resources only."
+  },
+  "plugins": [
+    {
+      "name": "probandia",
+      "source": "./",
+      "description": "Genealogy research for AI coding agents, on free resources only."
+    }
+  ]
+}

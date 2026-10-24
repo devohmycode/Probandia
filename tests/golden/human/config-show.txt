@@ -1,0 +1,15 @@
+✓ 8 settings · grade essential
+
+  setting              value      from     what it does
+  language             fr         user     Language of reports: auto, or a BCP-47 tag such as en or…
+  report.mode          journal    default  Report mode: a journal with errata, or a living report
+  report.numbering     arabic     default  Numbering of chapters and sections
+  report.formats       md,html    default  Formats of the report
+  tree.format          all        default  Format of the family tree: html, md or all
+  run.mode             ask        default  Who runs a research: ask, the session agent, a subagent …
+  search.max_parallel  3          default  Web searches run in parallel
+  grade                essential  project  Settings grade: how many settings are shown
+
+from: default < harness < user < project < local < environment < argument  · a higher layer wins
+
+→ probandia config explain <setting>

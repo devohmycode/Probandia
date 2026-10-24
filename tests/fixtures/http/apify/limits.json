@@ -1,0 +1,48 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.apify.com/v2/users/me/limits"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": {
+      "monthlyUsageCycle": {
+        "startAt": "2026-10-02T00:00:00.000Z",
+        "endAt": "2026-11-01T23:59:59.999Z"
+      },
+      "limits": {
+        "maxMonthlyUsageUsd": 10,
+        "maxMonthlyActorComputeUnits": 625,
+        "maxMonthlyExternalDataTransferGbytes": 1000,
+        "maxMonthlyProxySerps": 50000,
+        "maxMonthlyUnblockerUnits": 1000000,
+        "maxMonthlyResidentialProxyGbytes": 20,
+        "maxActorMemoryGbytes": 16,
+        "maxActorCount": 500,
+        "maxActorTaskCount": 5000,
+        "maxScheduleCount": 100,
+        "maxConcurrentActorJobs": 5,
+        "maxTeamAccountSeatCount": 9,
+        "dataRetentionDays": 7
+      },
+      "current": {
+        "monthlyUsageUsd": 0.003505772529029846,
+        "monthlyActorComputeUnits": 0,
+        "monthlyExternalDataTransferGbytes": 1.862645149230957e-06,
+        "monthlyProxySerps": 0,
+        "monthlyUnblockerUnits": 0,
+        "monthlyResidentialProxyGbytes": 0,
+        "actorMemoryGbytes": 0,
+        "actorCount": 0,
+        "actorTaskCount": 0,
+        "scheduleCount": 0,
+        "activeActorJobCount": 0,
+        "teamAccountSeatCount": 1
+      }
+    }
+  }
+}

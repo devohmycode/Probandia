@@ -1,0 +1,31 @@
+Free quotas · counted per key, across your projects
+2026-10-02 18:30 · reserve kept: 10 % of each quota (budget.reserve_percent)
+
+                                   left              units                  pays for                     starts again
+WEB SEARCH
+ ✓ SerpApi                         █████████████░░░  199 / 250              199 searches                 in 29 d
+     └ serpapi_bing: disabled
+ ✓ Serper                          ██████████████░░  2,250 / 2,500          2,250 searches               6 months after the first use
+ ✓ OpenWeb Ninja Real-Time Web S…  ████████████░░░░  78 / 100               78 searches                  in 29 d
+ ✓ OpenWeb Ninja Real-Time News …  ██████████████░░  90 / 100               90 searches                  in 29 d
+ ✓ OpenWeb Ninja Real-Time Books…  ██████████████░░  87 / 100               87 searches                  in 29 d
+ ✓ Marginalia Search                                 unlimited              unlimited searches           in 7 h
+ ✓ Exa                             ██████████████░░  $8.58 / $10.00         504 searches                 in 29 d
+ANSWERS WITH SOURCES
+ ✓ Tavily                          █████████████░░░  815 / 1,000            815 searches or 4,075 pages  in 29 d
+READING PAGES
+ ✓ Jina Reader                     ██████████████░░  8.8 M / 10.0 M tokens  881 searches or 2,938 pages  one-off tier
+ ✓ Firecrawl                       ██████████████░░  853 / 1,000            426 searches or 853 pages    in 29 d
+LAST RESORT · no anti-bot option, never on an archive portal
+ ✓ ZenRows Universal Scraper API   ██████████████░░  4,496 / 5,000          4,496 pages                  in 29 d
+ ✓ ScraperAPI                      ██████████████░░  900 / 1,000            900 pages                    in 29 d
+ ✓ Apify                           █████████████░░░  $4.19 / $5.00          920 searches or 1,611 pages  in 29 d
+
+Out of service
+  no key: SearchApi.io, Gemini grounding with Google Search, Staan, Parallel Search, Linkup, ScrapeGraphAI, OpenRouter
+  card required: Brave Search API (providers.allow_card_required)
+
+Web negatives: 2 index families usable (G, Ma), just the minimum required
+⚠ a key for Staan (STAAN_API_KEY) would add the index family E
+⚠ Exa, Jina Reader: no balance readable from the provider, local count only
+→ probandia -u --sync reads the balances from the accounts, at no cost

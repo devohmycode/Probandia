@@ -1,0 +1,143 @@
+# Citation models, in French (GPS6, GPS-D6, GPS-D7).
+#
+# Probandia follows the principles of Elizabeth Shown Mills, Evidence Explained:
+# Citing History Sources from Artifacts to Cyberspace (3rd ed., Baltimore, 2017):
+# three forms (source list entry, first reference note, subsequent short note), a
+# layered citation when a reproduction was consulted, the elements each type needs.
+# The models below are written by the Probandia project in its own words; no example
+# of the book is reproduced. The book stays the reference: cite it, do not copy it.
+#
+# The template syntax is described in en.yaml. The required fields are the same in
+# every language (a test checks it).
+schema: 1
+lang: fr
+dates:
+  months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre,
+           novembre, décembre]
+  day: '{d} {month} {y}'
+  month: '{month} {y}'
+  first_day: 1er
+terms:
+  birth: naissance
+  baptism: baptême
+  marriage: mariage
+  banns: bans
+  death: décès
+  burial: sépulture
+  divorce: divorce
+  recognition: reconnaissance
+  marriage contract: contrat de mariage
+  will: testament
+  inventory: inventaire après décès
+  sale: vente
+  succession: succession
+layer_join: ' ; '
+# page: what is proper to the record, for the PAGE of a GEDCOM citation (GPS6-T6).
+page: '[f° {folio}][, n° {act_no}][, {act}][, {name}][, {act_date}][, classe {class}][, matricule {matricule}][, p. {page}][, {item}][, vue {image_no}]'
+types:
+  civil-registration:
+    required: [jurisdiction, register, repository]
+    recommended: [act, act_date]
+    series: civil_registers
+    full: '{jurisdiction}. État civil, {register}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, état civil, {register}[, {reference}][, f° {folio}][, acte de {act}[ n° {act_no}][ de {name}]][, {act_date}] ; {repository}.'
+    short: '{jurisdiction}, {register}[, {act}[ n° {act_no}]][, {name}][, {act_date}].'
+  parish-register:
+    required: [jurisdiction, register, repository]
+    recommended: [act, act_date]
+    series: parish_registers
+    full: 'Paroisse de {jurisdiction}. {register}[, {reference}]. {repository}.'
+    first: 'Paroisse de {jurisdiction}, {register}[, {reference}][, f° {folio}][, n° {act_no}][, {act}[ de {name}]][, {act_date}] ; {repository}.'
+    short: 'Paroisse de {jurisdiction}, {register}[, f° {folio}][, {act}][, {name}][, {act_date}].'
+  decennial-table:
+    required: [jurisdiction, register, repository]
+    recommended: []
+    series: decennial_tables
+    full: '{jurisdiction}. Tables décennales, {register}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, tables décennales, {register}[, {reference}][, p. {page}][, mention de {name}] ; {repository}.'
+    short: '{jurisdiction}, tables décennales, {register}[, {name}].'
+  census:
+    required: [jurisdiction, act_date, repository]
+    recommended: []
+    series: census
+    full: '{jurisdiction}. Recensement de {act_date}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, recensement de {act_date}[, {reference}][, p. {page}][, ménage de {name}] ; {repository}.'
+    short: '{jurisdiction}, recensement de {act_date}[, p. {page}][, {name}].'
+  notarial-act:
+    required: [notary, repository]
+    recommended: [act, act_date, reference]
+    series: notarial
+    full: 'Minutes notariales, {notary}[, {reference}]. {repository}.'
+    first: '{notary}, notaire[, {act}[ de {names}]][, {act_date}][, {reference}][, n° {act_no}] ; {repository}.'
+    short: '{notary}[, {act}][, {name}][, {act_date}].'
+  military-register:
+    required: [jurisdiction, class, matricule, repository]
+    recommended: []
+    series: military_registers
+    full: 'Registres matricules, {jurisdiction}, classe {class}[, {reference}]. {repository}.'
+    first: 'Registre matricule, {jurisdiction}, classe {class}, matricule {matricule}[ ({name})][, {reference}] ; {repository}.'
+    short: 'Registre matricule, {jurisdiction}, classe {class}, n° {matricule}[, {name}].'
+  registration:
+    required: [jurisdiction, register, repository]
+    recommended: [act_date]
+    series: registration
+    full: 'Enregistrement, bureau de {jurisdiction}. {register}[, {reference}]. {repository}.'
+    first: 'Enregistrement, bureau de {jurisdiction}, {register}[, {reference}][, f° {folio}][, n° {act_no}][, {act}][ de {names}][, {act_date}] ; {repository}.'
+    short: 'Enregistrement, {jurisdiction}, {register}[, {name}][, {act_date}].'
+  newspaper:
+    required: [title, issue_date]
+    recommended: [page]
+    series: press
+    full: '{title}. Journal[, {jurisdiction}].'
+    first: '{title}[ ({jurisdiction})], {issue_date}[, p. {page}][, article sur {names}].'
+    short: '{title}, {issue_date}[, p. {page}].'
+  database:
+    required: [title, publisher]
+    recommended: [url, accessed]
+    series: null
+    full: '{publisher}. {title}. Base de données.[ {url}.]'
+    first: '{publisher}, {title}, base de données[, notice {item}][ ({url}[, consulté le {accessed}])].'
+    short: '{title}[, {item}].'
+  book:
+    required: [title, author]
+    recommended: [published, publisher]
+    series: null
+    full: '{author}. {title}[. {publisher}][, {published}].'
+    first: '{author}, {title}[ ([{publisher}, ]{published})][, p. {page}].'
+    short: '{author}, {title}[, p. {page}].'
+  online-tree:
+    required: [title, publisher]
+    recommended: [author, url, accessed]
+    series: null
+    full: '[{author}. ]{title}. Arbre en ligne, {publisher}.[ {url}.]'
+    first: '[{author}, ]{title}, arbre en ligne, {publisher}[ ({url}[, consulté le {accessed}])][, fiche de {name}].'
+    short: '[{author}, ]{title}[, {name}].'
+  other:
+    required: [title]
+    recommended: [repository]
+    series: null
+    full: '[{author}. ]{title}.[ {repository}.]'
+    first: '[{author}, ]{title}[, {reference}][, p. {page}][ ; {repository}].'
+    short: '{title}[, p. {page}].'
+layers:
+  online-image:
+    full: 'Images en ligne[, {title}][, {by}][, {url}].'
+    first: 'images en ligne[, {title}][, {by}][ ({url}[, consulté le {accessed}])][, vue {image_no}]'
+  microfilm:
+    full: 'Microfilm[, {reference}][, {by}].'
+    first: 'microfilm[ {reference}][, {by}][, article {item}][, vue {image_no}]'
+  database:
+    full: 'Base de données[, {title}][, {by}][, {url}].'
+    first: 'indexé dans[ {title}][, {by}][ ({url}[, consulté le {accessed}])][, notice {item}]'
+  index:
+    full: 'Index[, {title}][, {by}].'
+    first: 'index[, {title}][, {by}][, {reference}][, mention {item}]'
+  transcription:
+    full: 'Transcription[, {by}][, {title}].'
+    first: 'transcription[ par {by}][, {title}][, {note}]'
+  abstract:
+    full: 'Relevé[, {by}][, {title}].'
+    first: 'relevé[ par {by}][, {title}][, {reference}][, {note}]'
+  publication:
+    full: 'Publié dans[ {title}][, {by}].'
+    first: 'publié dans[ {title}][, {by}][, {reference}][, p. {item}]'

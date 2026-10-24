@@ -1,0 +1,390 @@
+/* The look of probandia tui (version-1.0.0 T94): the colours come from the theme in use, Probandia's
+   (probandia, probandia-light) or one of the user's (config.themes); the sizes hold in a terminal of
+   80 x 24. The layout of a theme sets classes on the application, below. */
+
+Pane {
+    padding: 0 1;
+}
+
+.title {
+    text-style: bold;
+    color: $primary;
+    background: $panel;
+    padding: 0 1;
+}
+
+/* A filter on one line: its cursor says where the keys go. */
+#filter {
+    height: 1;
+    border: none;
+    padding: 0 1;
+    background: $boost;
+}
+
+#filter:focus {
+    background: $panel;
+}
+
+DataTable {
+    height: auto;
+    max-height: 20;
+    margin: 0 0 1 0;
+}
+
+DataTable > .datatable--header {
+    text-style: bold;
+    color: $secondary;
+}
+
+.actions {
+    height: auto;
+}
+
+.actions Button {
+    margin: 0 1 0 0;
+}
+
+/* The choices that narrow a list of settings, on one line under its filter. */
+.filters {
+    height: auto;
+}
+
+.filters Select {
+    width: 22;
+    margin: 0 1 0 0;
+}
+
+.filters Checkbox {
+    width: auto;
+}
+
+/* The heads of a file, set apart from what follows them. */
+#research-head, #proposal-head, #person-head {
+    background: $surface;
+    border-left: tall $primary;
+    padding: 0 1;
+}
+
+/* The tabs inside a screen, of another colour than the screens'. */
+#screens TabbedContent Underline > .underline--bar {
+    color: $secondary;
+}
+
+/* Home: the researches and their events on the left, the accounts, alerts and next actions on the right. */
+#home-body, #home-left, #home-right {
+    height: auto;
+}
+
+#home-left {
+    width: 3fr;
+    margin: 0 1 0 0;
+}
+
+#home-right {
+    width: 2fr;
+}
+
+/* Narrower than 120 columns, one under the other. */
+Screen.-narrow #home-body, Screen.-narrow #theme-body {
+    layout: vertical;
+}
+
+Screen.-narrow #home-left, Screen.-narrow #home-right {
+    width: 1fr;
+    margin: 0;
+}
+
+#home-events-head, #quotas-history-head {
+    text-style: bold;
+}
+
+/* Quotas: the curve of the account chosen, a point a day over 30 days. */
+#quotas-history {
+    width: 30;
+    margin: 0 0 1 0;
+}
+
+#quotas-history > .sparkline--min-color {
+    color: $error;
+}
+
+#quotas-history > .sparkline--max-color {
+    color: $success;
+}
+
+/* Researches: the list above, the tabs of the file of the research chosen below it. */
+#researches-list {
+    max-height: 35%;
+}
+
+#research-tabs {
+    height: 1fr;
+    min-height: 8;
+}
+
+/* Family: what a search found, then the tree and the file of a person, side by side, a line between
+   them; the tree's width is the theme's (tree_width). */
+#family-found {
+    max-height: 8;
+}
+
+#family-choice {
+    width: 40;
+    max-width: 100%;
+}
+
+#family-body {
+    height: 1fr;
+    min-height: 10;
+}
+
+#family-tree {
+    width: 45%;
+    height: 100%;
+    border-right: vkey $panel;
+}
+
+#family-person {
+    width: 1fr;
+    height: 100%;
+    padding: 0 0 0 1;
+}
+
+#proposal-head {
+    margin: 0 0 1 0;
+}
+
+/* Config, Themes: the form of the theme chosen, and a sample of what it gives beside it. */
+#theme-body {
+    height: auto;
+}
+
+#theme-form {
+    width: 1fr;
+    height: auto;
+}
+
+#theme-sample {
+    width: 36;
+    height: auto;
+    margin: 0 0 0 1;
+    border: round $accent;
+    border-title-color: $accent;
+    padding: 0 1;
+}
+
+Screen.-narrow #theme-sample {
+    width: 1fr;
+    margin: 1 0 0 0;
+}
+
+.section {
+    text-style: bold;
+    color: $secondary;
+    margin: 1 0 0 0;
+}
+
+.theme-row {
+    height: auto;
+}
+
+.theme-row .theme-label {
+    width: 18;
+    padding: 0 1 0 0;
+}
+
+/* The entries of the form on one line each: ten colours and seven entries of layout. */
+.theme-row Input {
+    width: 12;
+    height: 1;
+    border: none;
+    padding: 0 1;
+    background: $boost;
+}
+
+.theme-row Input:focus {
+    background: $panel;
+}
+
+.theme-row #theme-name {
+    width: 30;
+}
+
+.theme-row Select {
+    width: 18;
+}
+
+.theme-row SelectCurrent {
+    height: 1;
+    border: none;
+    padding: 0 1;
+    background: $boost;
+}
+
+.theme-row Select:focus > SelectCurrent {
+    background: $panel;
+}
+
+.theme-row Checkbox, .theme-row Input.-layout {
+    width: 18;
+    height: 1;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.theme-row .swatch {
+    width: 4;
+    margin: 0 1;
+}
+
+.theme-row .theme-help {
+    width: 1fr;
+    color: $text-muted;
+}
+
+.theme-row Input.-invalid {
+    background: $error 40%;
+}
+
+/* ---- The layout of a theme (config.themes LAYOUT), as classes of the application ---- */
+
+/* buttons = compact: on one line, which saves two lines of each row of actions in 80 x 24. */
+.-compact-buttons .actions {
+    margin: 0 0 1 0;
+}
+
+.-compact-buttons .actions Button {
+    height: 1;
+    min-width: 0;
+    border: none;
+    padding: 0 2;
+}
+
+/* section_titles: a table of a section says what it is in its top line. */
+.-section-titles DataTable.-titled {
+    border-top: solid $panel;
+    border-title-color: $secondary;
+    border-title-style: bold;
+    border-title-align: left;
+}
+
+.-section-titles DataTable.-titled:focus {
+    border-top: solid $accent;
+    border-title-color: $accent;
+}
+
+/* focus_mark: where the keys go, a line on the left of the table that has the focus. */
+.-focus-mark DataTable {
+    border-left: blank;
+}
+
+.-focus-mark DataTable:focus {
+    border-left: tall $accent;
+}
+
+/* The keys of the help fill its 80 columns: no column for the mark. */
+.-focus-mark #help-keys, .-focus-mark #help-keys:focus {
+    border-left: none;
+}
+
+/* zebra = false: no line shaded in the lists. */
+.-no-zebra DataTable > .datatable--even-row {
+    background: transparent;
+}
+
+/* frames: the frame of the windows, round by default (their DEFAULT_CSS). */
+.-frames-solid HelpScreen > Vertical, .-frames-solid AskScreen > Vertical,
+.-frames-solid CommandHelp VerticalScroll, .-frames-solid #theme-sample {
+    border: solid $accent;
+}
+
+.-frames-solid ConfirmScreen > Vertical {
+    border: solid $warning;
+}
+
+.-frames-heavy HelpScreen > Vertical, .-frames-heavy AskScreen > Vertical,
+.-frames-heavy CommandHelp VerticalScroll, .-frames-heavy #theme-sample {
+    border: heavy $accent;
+}
+
+.-frames-heavy ConfirmScreen > Vertical {
+    border: heavy $warning;
+}
+
+.-frames-double HelpScreen > Vertical, .-frames-double AskScreen > Vertical,
+.-frames-double CommandHelp VerticalScroll, .-frames-double #theme-sample {
+    border: double $accent;
+}
+
+.-frames-double ConfirmScreen > Vertical {
+    border: double $warning;
+}
+
+.-frames-ascii HelpScreen > Vertical, .-frames-ascii AskScreen > Vertical,
+.-frames-ascii CommandHelp VerticalScroll, .-frames-ascii #theme-sample {
+    border: ascii $accent;
+}
+
+.-frames-ascii ConfirmScreen > Vertical {
+    border: ascii $warning;
+}
+
+/* Without colour (--no-color, NO_COLOR, --plain: T96), what colour said is said otherwise: the
+   tab shown and the line under the cursor in reverse video. */
+Tab.-active:nocolor {
+    text-style: reverse bold;
+}
+
+DataTable:nocolor > .datatable--cursor, Tree:nocolor > .tree--cursor {
+    text-style: reverse;
+}
+
+/* --plain: frames in ASCII, or none; no bar of box characters under the tabs, no scrollbar. */
+.-plain Underline {
+    display: none;
+}
+
+.-plain * {
+    scrollbar-size: 0 0;
+}
+
+.-plain Button, .-plain Input {
+    border: ascii $foreground;
+}
+
+.-plain #filter, .-plain .theme-row Input {
+    border: none;
+}
+
+.-plain SelectCurrent .arrow {
+    display: none;
+}
+
+.-plain FooterKey.-command-palette {
+    border-left: none;
+}
+
+.-plain ModalScreen > Vertical, .-plain #theme-sample {
+    border: ascii $foreground;
+}
+
+.-plain #family-tree {
+    border-right: ascii $foreground;
+}
+
+.-plain #research-head, .-plain #proposal-head, .-plain #person-head {
+    border-left: ascii $foreground;
+}
+
+.-plain.-section-titles DataTable.-titled, .-plain.-section-titles DataTable.-titled:focus {
+    border-top: ascii $foreground;
+}
+
+.-plain.-focus-mark DataTable:focus {
+    border-left: ascii $foreground;
+}
+
+.-plain.-compact-buttons .actions Button {
+    border: none;
+}

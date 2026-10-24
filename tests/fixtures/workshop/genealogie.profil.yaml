@@ -1,0 +1,10 @@
+famille: "HUGO"
+gisements:
+  - id: "ad25"
+    client: "outils/collecte/ad25.py"
+    hotes: ["archives.doubs.fr"]
+    note: "Archives du Doubs, état civil"
+  - id: "echo"
+    client: "outils/collecte/echo_index.py"
+    hotes: []
+    note: "Index d'essai"

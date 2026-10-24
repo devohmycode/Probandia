@@ -1,0 +1,22 @@
+{
+  "_source": "made from docs.tavily.com/documentation/api-reference/endpoint/map, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/map",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"url": "https://registres.example.org/", "limit": 100, "max_depth": 2, "allow_external": false, "include_usage": true}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "base_url": "registres.example.org",
+    "results": [
+      "https://registres.example.org/",
+      "https://registres.example.org/naissances/1802",
+      "https://registres.example.org/naissances/1803"
+    ],
+    "response_time": 1.23,
+    "usage": {"credits": 0},
+    "request_id": "123e4567-e89b-12d3-a456-426614174111"
+  }
+}

@@ -1,0 +1,12 @@
+schema = 1
+grade = "essential"
+
+# version-1.0.0 T254: the acts are in the project; no provider, no archive connector, no native search
+[providers]
+enabled = []
+
+[archives]
+enabled = []
+
+[search]
+native = false

@@ -1,0 +1,14 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. Free: requestCount did not move",
+  "request": {
+    "method": "GET",
+    "url": "https://api.scraperapi.com/account/urlcost?api_key=KEY&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLuxembourg_City"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "credits": 1
+  }
+}

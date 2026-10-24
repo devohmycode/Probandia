@@ -1,0 +1,1130 @@
+# The departmental archives of France (token-economy A2), loaded with archives.yaml.
+# Probed on 10 Oct. 2026: one request to each site's home page, under the engine's identity, a cookie
+# set by a plain redirect replayed (decision A1). `platform` is what the home page shows; the coverage
+# is the usual span of the online parish and civil registers, not checked department by department.
+schema: 1
+archives:
+  - id: ad01
+    name: "Archives départementales de l'Ain"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-01]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ain.fr, www.archives.ain.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad02
+    name: "Archives départementales de l'Aisne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-02]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.aisne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad03
+    name: "Archives départementales de l'Allier"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-03]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.allier.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad04
+    name: "Archives départementales des Alpes-de-Haute-Provence"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-04]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives04.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad05
+    name: "Archives départementales des Hautes-Alpes"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-05]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.hautes-alpes.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad06
+    name: "Archives départementales des Alpes-Maritimes"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-06]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives06.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad07
+    name: "Archives départementales de l'Ardèche"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-07]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ardeche.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad08
+    name: "Archives départementales des Ardennes"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-08]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.cd08.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad09
+    name: "Archives départementales de l'Ariège"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-09]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ariege.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad10
+    name: "Archives départementales de l'Aube"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-10]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives-aube.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad11
+    name: "Archives départementales de l'Aude"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-11]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesdepartementales.aude.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad12
+    name: "Archives départementales de l'Aveyron"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-12]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.aveyron.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad13
+    name: "Archives départementales des Bouches-du-Rhône"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-13]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives13.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "the search pages follow Ligeo's paths (/archive/recherche/etatcivil/n:64); Python does not verify its certificate chain"}
+  - id: ad14
+    name: "Archives départementales du Calvados"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-14]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.calvados.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad15
+    name: "Archives départementales du Cantal"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-15]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.cantal.fr, www.archives.cantal.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad16
+    name: "Archives départementales de la Charente"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-16]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.lacharente.fr, lasource.archives.lacharente.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad17
+    name: "Archives départementales de la Charente-Maritime"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-17]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.charente-maritime.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad18
+    name: "Archives départementales du Cher"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-18]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives18.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad19
+    name: "Archives départementales de la Corrèze"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-19]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives.correze.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad2a
+    name: "Archives départementales de la Corse-du-Sud"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-2A]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.isula.corsica]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; the archives are a service of the Collectivité de Corse: its site, archive pages to locate"}
+  - id: ad2b
+    name: "Archives départementales de la Haute-Corse"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-2B]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.isula.corsica]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; the archives are a service of the Collectivité de Corse: its site, archive pages to locate"}
+  - id: ad21
+    name: "Archives départementales de la Côte-d'Or"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-21]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.cotedor.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad22
+    name: "Archives départementales des Côtes-d'Armor"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-22]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.cotesdarmor.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad23
+    name: "Archives départementales de la Creuse"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-23]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.creuse.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad24
+    name: "Archives départementales de la Dordogne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-24]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.dordogne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad25
+    name: "Archives départementales du Doubs"
+    nature: image
+    reliability: "parish and civil registers, censuses (images)"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial, census], years: [1550, 1925], places: [FR-25]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.doubs.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad26
+    name: "Archives départementales de la Drôme"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-26]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ladrome.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "Python does not verify its certificate chain: platform not seen"}
+  - id: ad27
+    name: "Archives départementales de l'Eure"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-27]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.eure.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad28
+    name: "Archives départementales d'Eure-et-Loir"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-28]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives28.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad29
+    name: "Archives départementales du Finistère"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-29]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.finistere.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad30
+    name: "Archives départementales du Gard"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-30]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.gard.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad31
+    name: "Archives départementales de la Haute-Garonne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-31]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.haute-garonne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad32
+    name: "Archives départementales du Gers"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-32]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives32.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad33
+    name: "Archives départementales de la Gironde"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-33]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.gironde.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad34
+    name: "Archives départementales de l'Hérault"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-34]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives-pierresvives.herault.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad35
+    name: "Archives départementales d'Ille-et-Vilaine"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-35]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ille-et-vilaine.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad36
+    name: "Archives départementales de l'Indre"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-36]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives36.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad37
+    name: "Archives départementales d'Indre-et-Loire"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-37]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.touraine.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad38
+    name: "Archives départementales de l'Isère"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-38]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.isere.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "a shield page (challenge) answers the engine: read in the browser"}
+  - id: ad39
+    name: "Archives départementales du Jura"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-39]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives39.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad40
+    name: "Archives départementales des Landes"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-40]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.landes.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "answers 403 to the engine's identity: read in the browser"}
+  - id: ad41
+    name: "Archives départementales de Loir-et-Cher"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-41]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.culture41.fr, www.archives41.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad42
+    name: "Archives départementales de la Loire"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-42]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.loire.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad43
+    name: "Archives départementales de la Haute-Loire"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-43]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives43.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad44
+    name: "Archives départementales de la Loire-Atlantique"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-44]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.loire-atlantique.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad45
+    name: "Archives départementales du Loiret"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-45]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives-loiret.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad46
+    name: "Archives départementales du Lot"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-46]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.lot.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad47
+    name: "Archives départementales de Lot-et-Garonne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: eidopolis
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-47]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesdepartementales.lotetgaronne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; digitised archives portal by Eidopolis (site's announcement, March 2025)"}
+  - id: ad48
+    name: "Archives départementales de la Lozère"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-48]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.lozere.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad49
+    name: "Archives départementales de Maine-et-Loire"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-49]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.maine-et-loire.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad50
+    name: "Archives départementales de la Manche"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-50]}
+    access: {mode: html, third_party: forbidden, connector: ad50, hosts: [www.archives-manche.fr]}
+    witness: {operation: registers, args: {commune: Octeville}, expect: {min_results: 20}}
+    guide:
+      - "The registers of a commune: archive run ad50.registers --args '{\"commune\": \"<Commune>\", \"type\": \"<birth, marriage, death or decennial_tables>\", \"from\": <year>, \"to\": <year>}' — cote, act types, years and detail of each."
+      - "Decennial tables first (\"type\": \"decennial_tables\"), then the register of the year."
+      - "The act: ad50.sheet, \"from\" and \"to\": ten views' top bands; ad50.view, \"view\" and \"size\": 900: the view small; the same call with \"region\": \"x,y,w,h\" as seen on it: the act alone, at full size. No \"view\": the number of views."
+      - "In a browser: https://www.archives-manche.fr/recherche/registres-paroissiaux-et-detat-civil?detail=<detail> shows the register; never pose as a browser elsewhere."
+      - "The site sets bot_mitigation_cookie through a script redirect, renewed on its 307: the engine replays it under its own identity (decision A1). robots.txt disallows /_arkotheque/."
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "the registers of a commune, a register's page, its views and one view answer the engine's identity once the redirect cookie is replayed"}
+  - id: ad51
+    name: "Archives départementales de la Marne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-51]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.marne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad52
+    name: "Archives départementales de la Haute-Marne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-52]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.haute-marne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad53
+    name: "Archives départementales de la Mayenne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: pleade
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-53]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.lamayenne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad54
+    name: "Archives départementales de Meurthe-et-Moselle"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-54]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.meurthe-et-moselle.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad55
+    name: "Archives départementales de la Meuse"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-55]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.meuse.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad56
+    platform: other
+    name: "Archives départementales du Morbihan"
+    nature: image
+    reliability: "civil and parish registers, censuses (images)"
+    coverage: {types: [birth, baptism, marriage, death, burial, census], years: [1550, 1936], places: [FR-56]}
+    access: {mode: browser, third_party: forbidden, hosts: [patrimoines-archives.morbihan.fr, rechercher.patrimoines-archives.morbihan.fr]}
+    terms: "free consultation; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-01}
+  - id: ad57
+    name: "Archives départementales de la Moselle"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-57]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives57.com]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad58
+    name: "Archives départementales de la Nièvre"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-58]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.nievre.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad59
+    name: "Archives départementales du Nord"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-59]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesdepartementales.lenord.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad60
+    name: "Archives départementales de l'Oise"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-60]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.oise.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "answers 403 to the engine's identity: read in the browser"}
+  - id: ad61
+    name: "Archives départementales de l'Orne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-61]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.orne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad62
+    name: "Archives départementales du Pas-de-Calais"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-62]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesenligne.pasdecalais.fr, www.archivespasdecalais.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad63
+    name: "Archives départementales du Puy-de-Dôme"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-63]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesdepartementales.puy-de-dome.fr, www.archivesdepartementales.puy-de-dome.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad64
+    name: "Archives départementales des Pyrénées-Atlantiques"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-64]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.le64.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad65
+    name: "Archives départementales des Hautes-Pyrénées"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-65]}
+    access: {mode: browser, third_party: forbidden, hosts: [archivesenligne65.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad66
+    name: "Archives départementales des Pyrénées-Orientales"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-66]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.cd66.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad67
+    name: "Archives départementales du Bas-Rhin"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-67]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.bas-rhin.fr, archives67.alsace.eu]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad68
+    name: "Archives départementales du Haut-Rhin"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-68]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.haut-rhin.fr, archives68.alsace.eu]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad69
+    name: "Archives départementales du Rhône"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-69]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.rhone.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad70
+    name: "Archives départementales de la Haute-Saône"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-70]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.haute-saone.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad71
+    name: "Archives départementales de Saône-et-Loire"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-71]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives71.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad72
+    name: "Archives départementales de la Sarthe"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-72]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.sarthe.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad73
+    name: "Archives départementales de la Savoie"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-73]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.savoie.fr, patrimoines.savoie.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad74
+    name: "Archives départementales de la Haute-Savoie"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-74]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.hautesavoie.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad75
+    name: "Archives de Paris"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-75]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.paris.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad76
+    name: "Archives départementales de la Seine-Maritime"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-76]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archivesdepartementales76.net]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad77
+    name: "Archives départementales de Seine-et-Marne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-77]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.seine-et-marne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad78
+    name: "Archives départementales des Yvelines"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-78]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.yvelines.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad79
+    name: "Archives départementales des Deux-Sèvres"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-79]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives-deux-sevres-vienne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad80
+    name: "Archives départementales de la Somme"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-80]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.somme.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad81
+    name: "Archives départementales du Tarn"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-81]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.tarn.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad82
+    name: "Archives départementales de Tarn-et-Garonne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-82]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archives82.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "the TLS handshake fails from Python; http://www.archives82.fr answers"}
+  - id: ad83
+    name: "Archives départementales du Var"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-83]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.var.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad84
+    name: "Archives départementales de Vaucluse"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-84]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.vaucluse.fr, memento.vaucluse.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad85
+    name: "Archives départementales de la Vendée"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-85]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.vendee.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad86
+    name: "Archives départementales de la Vienne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-86]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives-deux-sevres-vienne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad87
+    name: "Archives départementales de la Haute-Vienne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-87]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.haute-vienne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad88
+    name: "Archives départementales des Vosges"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-88]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.vosges.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad89
+    name: "Archives départementales de l'Yonne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-89]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.yonne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad90
+    name: "Archives départementales du Territoire de Belfort"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-90]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.territoiredebelfort.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad91
+    name: "Archives départementales de l'Essonne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: mnesys
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-91]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.essonne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad92
+    platform: ligeo
+    name: "Archives départementales des Hauts-de-Seine"
+    nature: image
+    reliability: "civil registers (images)"
+    coverage: {types: [marriage], years: [1793, 1950], places: [FR-92]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.hauts-de-seine.fr]}
+    guide:
+      - "Search: https://archives.hauts-de-seine.fr/archive/recherche/etatcivil/n:92 — the commune, the type, the years; the register opens in the viewer."
+      - "Do not zoom in the viewer: it freezes the browser. Take the FIF path of its image (…/FRAD_092_4E_<COMMUNE>_<register>_<view>.JPG) and open each view by URL, in the tab already on the site."
+      - "The session of that tab is needed: a request without its cookie gets 403. Never curl."
+      - "One view: https://archives.hauts-de-seine.fr/cgi-bin/iipsrv.fcgi?FIF=<path>&HEI=800&QLT=80&CVT=JPG; a zoom: &WID=1450&RGN=<x>,<y>,<w>,<h> in fractions of the page."
+      - "The path of a view of marriages, as seen for one commune: FIF=/home/httpd/ad92/diffusion/prod/app//webroot/data/files/ad92.diffusion/images/ACTES7/<COMMUNE>/MARIAGES/1E_NUM_<COMMUNE>_M<YEAR>/FRAD_092_4E_<COMMUNE>_<register>_<view>.JPG"
+    terms: "free consultation; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-06, note: "marriages 1793-1950 seen on the site; births, deaths and the decennial tables to confirm"}
+  - id: ad93
+    name: "Archives départementales de la Seine-Saint-Denis"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-93]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.seinesaintdenis.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad94
+    name: "Archives départementales du Val-de-Marne"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: arkotheque
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-94]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.valdemarne.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity after a cookie redirect"}
+  - id: ad95
+    name: "Archives départementales du Val-d'Oise"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: ligeo
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-95]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.valdoise.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad971
+    name: "Archives départementales de la Guadeloupe"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: anaphore
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-971]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.archivesguadeloupe.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad972
+    name: "Archives territoriales de Martinique"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-972]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.collectivitedemartinique.mq]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; the archives are a service of the Collectivité territoriale: archive pages to locate"}
+  - id: ad973
+    name: "Archives territoriales de Guyane"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: avenio
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-973]}
+    access: {mode: browser, third_party: forbidden, hosts: [archives.ctguyane.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity"}
+  - id: ad974
+    name: "Archives départementales de La Réunion"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-974]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.departement974.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; the archives are a service of the Département: archive pages to locate"}
+  - id: ad976
+    name: "Archives départementales de Mayotte"
+    nature: image
+    reliability: "parish and civil registers (images): the image is the source"
+    platform: other
+    coverage: {types: [birth, baptism, marriage, death, burial], years: [1550, 1925], places: [FR-976]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.cg976.fr, www.mayotte.fr]}
+    terms: "free consultation; reuse under the department's rules; no automated harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-10, note: "home page answers the engine's identity; the archives are a service of the Département: archive pages to locate"}

@@ -1,0 +1,155 @@
+schema: 1
+places:
+- id: paris
+  names_as_written:
+  - Paris
+  current_name: Paris
+  lat: 48.8588897
+  lon: 2.320041
+  jurisdictions:
+  - level: department
+    name: Paris
+    from: null
+    to: null
+    source: gazetteer-label
+    note: department 75
+  repositories:
+  - name: Archives de Paris
+    archive: ad75
+    source: catalogue:archives
+    holdings:
+    - type: birth
+      years: &id001
+      - 1550
+      - 1925
+    - type: baptism
+      years: *id001
+    - type: marriage
+      years: *id001
+    - type: death
+      years: *id001
+    - type: burial
+      years: *id001
+    url: https://archives.paris.fr/
+    note: decennial tables of the commune first (ten years of births, marriages and deaths on one page),
+      then the register of the year; before 1793, the parish registers (baptisms, marriages, burials),
+      year by year
+  - name: Arolsen Archives
+    archive: arolsen
+    holdings:
+    - type: persecution
+      years: &id002
+      - 1933
+      - 1951
+    - type: displacement
+      years: *id002
+    - type: military
+      years: *id002
+    source: catalogue:archives
+    note: read in a browser
+  - name: Europeana newspapers and texts
+    archive: europeana
+    holdings:
+    - type: press
+      years: &id003
+      - 1600
+      - 1950
+    - type: book
+      years: *id003
+    source: catalogue:archives
+  - name: FamilySearch
+    archive: familysearch
+    holdings:
+    - type: birth
+      years: &id004
+      - 1500
+      - 1950
+    - type: baptism
+      years: *id004
+    - type: marriage
+      years: *id004
+    - type: death
+      years: *id004
+    - type: burial
+      years: *id004
+    - type: census
+      years: *id004
+    - type: notarial
+      years: *id004
+    source: catalogue:archives
+    note: read in a browser
+  - name: Gallica (Bibliothèque nationale de France)
+    archive: gallica
+    holdings:
+    - type: press
+      years: &id005
+      - 1500
+      - 1960
+    - type: book
+      years: *id005
+    - type: manuscript
+      years: *id005
+    - type: directory
+      years: *id005
+    source: catalogue:archives
+  - name: HathiTrust Digital Library
+    archive: hathitrust
+    holdings:
+    - type: book
+      years: &id006
+      - 1500
+      - 1960
+    - type: press
+      years: *id006
+    source: catalogue:archives
+    note: read in a browser
+  - name: Base Léonore (Archives nationales)
+    archive: leonore
+    holdings:
+    - type: military
+      years: &id007
+      - 1802
+      - 1976
+    - type: biography
+      years: *id007
+    source: catalogue:archives
+    note: read in a browser
+  - name: matchID (French deaths since 1970, INSEE files)
+    archive: matchid
+    holdings:
+    - type: death
+      years:
+      - 1970
+      - 2026
+    source: catalogue:archives
+  - name: Mémoire des hommes
+    archive: memoiredeshommes
+    holdings:
+    - type: military
+    - type: death
+    source: catalogue:archives
+    note: read in a browser
+  - name: Persée (scholarly journals)
+    archive: persee
+    holdings:
+    - type: press
+      years: &id008
+      - 1800
+      - 2020
+    - type: book
+      years: *id008
+    source: catalogue:archives
+    note: read in a browser
+  - name: SocFace name base (FranceArchives)
+    archive: socface
+    holdings:
+    - type: census
+      years:
+      - 1836
+      - 1936
+    source: catalogue:archives
+    note: read in a browser
+  guide:
+    built: '2026-10-22'
+    sources:
+    - catalogue:archives

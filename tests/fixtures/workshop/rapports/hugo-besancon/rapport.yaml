@@ -1,0 +1,8 @@
+# Déclaration du rapport d'essai « Les parents de Victor Hugo ».
+slug: les-parents-de-victor-hugo
+titre: Les parents de Victor Hugo
+visibilite: family
+
+# Les faits de commun/personnes.yaml sans champ `rapport` sont découverts ici.
+origine: true
+herite_de: []

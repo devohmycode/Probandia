@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/research-1.json",
+  "title": "research.yaml",
+  "description": "One research: a question under investigation, with its settings and its passes.",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "family",
+    "question",
+    "language",
+    "mode",
+    "numbering",
+    "formats",
+    "created",
+    "created_by",
+    "status",
+    "passes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/slug"
+    },
+    "family": {
+      "$ref": "#/$defs/slug"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "$ref": "#/$defs/language",
+      "description": "fixed when the research is created"
+    },
+    "mode": {
+      "enum": [
+        "journal",
+        "living"
+      ]
+    },
+    "numbering": {
+      "enum": [
+        "arabic",
+        "roman",
+        "roman-outline"
+      ]
+    },
+    "formats": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "md",
+          "html",
+          "json"
+        ]
+      }
+    },
+    "created": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "created_by": {
+      "type": "object",
+      "required": [
+        "harness",
+        "agent"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "harness": {
+          "enum": [
+            "claude-code",
+            "codex",
+            "cursor",
+            "droid",
+            "grok",
+            "antigravity",
+            "opencode",
+            "cli"
+          ]
+        },
+        "agent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "string"
+        }
+      }
+    },
+    "forked_from": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "research",
+            "pass"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "research": {
+              "$ref": "#/$defs/slug"
+            },
+            "pass": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      ]
+    },
+    "run": {
+      "type": "object",
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "session",
+            "subagent",
+            "team"
+          ]
+        },
+        "max_agents": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "max_passes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "model": {
+          "type": "string"
+        },
+        "effort": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      }
+    },
+    "instructions": {
+      "type": "array",
+      "description": "history of the instructions, oldest first",
+      "items": {
+        "type": "object",
+        "required": [
+          "pass",
+          "ts",
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "pass": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "ts": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "open",
+        "paused",
+        "closed"
+      ]
+    },
+    "passes": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "last completed pass"
+    },
+    "questions": {
+      "type": "array",
+      "description": "The research's questions (GPS1): each with its persons, window and places, answered by facts or analyses, or declared unresolved. Absent: the free-text question stands as Q1.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "type",
+          "status"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^Q[1-9][0-9]*$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "birth",
+              "marriage",
+              "death",
+              "parents",
+              "children",
+              "residence",
+              "migration",
+              "identity",
+              "negative",
+              "general"
+            ]
+          },
+          "persons": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/slug"
+            }
+          },
+          "window": {
+            "type": "object",
+            "required": [
+              "from",
+              "to"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "from": {
+                "type": "integer",
+                "minimum": 1000,
+                "maximum": 2999
+              },
+              "to": {
+                "type": "integer",
+                "minimum": 1000,
+                "maximum": 2999
+              }
+            }
+          },
+          "places": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/slug"
+            }
+          },
+          "status": {
+            "enum": [
+              "open",
+              "answered",
+              "unresolved"
+            ]
+          },
+          "conclusion": {
+            "type": "array",
+            "uniqueItems": true,
+            "description": "fact ids (persons.yaml) or analysis ids that answer the question",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z_]+(\\.[0-9]+)?)?$"
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "description": "why the question stays unresolved"
+          },
+          "standard": {
+            "type": "string",
+            "minLength": 1,
+            "description": "what will count as an answer (T249): the record, or the evidence, that would settle the question"
+          },
+          "updated": {
+            "$ref": "#/$defs/timestamp"
+          }
+        }
+      }
+    },
+    "template": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Report template id (optimize 4.3): a file templates/<id>.html of the project, the user's, or a built-in one"
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+      "description": "BCP-47 tag, for example en, fr, fr-CA"
+    }
+  }
+}

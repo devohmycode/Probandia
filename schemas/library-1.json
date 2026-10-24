@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/library-1.json",
+  "title": "library/manifest.yaml",
+  "description": "The project's store of learned scripts.",
+  "type": "object",
+  "required": [
+    "schema",
+    "scripts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "scripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "purpose",
+          "status",
+          "version"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/slug"
+          },
+          "kind": {
+            "enum": [
+              "connector",
+              "helper",
+              "recipe"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "outputs": {
+            "type": "string"
+          },
+          "target": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "hosts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "formats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "env": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "witness": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "author": {
+            "type": "object"
+          },
+          "created": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "updated": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "tested",
+              "trusted"
+            ]
+          },
+          "runs": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ok": {
+                "type": "integer"
+              },
+              "failed": {
+                "type": "integer"
+              },
+              "last_ok": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "query_template": {
+            "type": "string"
+          },
+          "question_type": {
+            "type": "string"
+          },
+          "archive": {
+            "type": "string"
+          },
+          "hits": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    }
+  }
+}

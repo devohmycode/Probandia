@@ -1,0 +1,235 @@
+# The kinds of records a question is expected to search (GPS3), France first (GPS-D6).
+# Written by the Probandia project; every rule and every exception cites its references:
+# the law that created the records, or a guide of the national or departmental archives.
+# No value without a reference. Other countries come through the contribution kit (6.21).
+# A cited source meets these ids through the "series" of its citation model
+# (catalogues/citations/, GPS-D12): parish-register -> parish_registers, newspaper -> press…
+#
+# coverage: the coverage types of catalogues/archives.yaml that carry these records.
+# answers: the question types (research.yaml) the records can answer.
+# rules[].from, to: the years the records were kept in the country (to: null, still kept).
+# exceptions[].effect: absent (not made) | destroyed (lost, in part rebuilt)
+#   | extended (kept there beyond the general years) | replaced (another type, "by", stands in)
+schema: 1
+types:
+  - id: parish_registers
+    names: {en: "parish registers", fr: "registres paroissiaux"}
+    coverage: [baptism, marriage, burial]
+    answers: [birth, marriage, death, parents, children, identity, negative, general]
+    rules:
+      - country: FR
+        from: 1539
+        to: 1792
+        held_by: ["departmental archives (the court's double, and the communes' deposits)",
+                  "town hall (the parish copy handed over in 1792)"]
+        note: >-
+          baptisms from 1539, marriages and burials from 1579; a double for the royal court
+          from 1667, two identical originals from 1736. Many parishes keep nothing before
+          the 17th century.
+        references:
+          - {title: "Ordonnance de Villers-Cotterêts, août 1539"}
+          - {title: "Ordonnance de Blois, 1579"}
+          - {title: "Ordonnance civile de Saint-Germain-en-Laye (Code Louis), avril 1667"}
+          - {title: "Archives départementales de la Mayenne, Présentation des registres paroissiaux et d'état civil",
+             url: "https://archives.lamayenne.fr/Etat_civil_Presentation"}
+        exceptions:
+          - places: [FR-75]
+            from: 1539
+            to: 1792
+            effect: destroyed
+            note: "burned with the Hôtel de Ville and the Palais de justice in May 1871; about a third rebuilt (état civil reconstitué)"
+            references:
+              - {title: "Archives de Paris, État civil reconstitué (XVIe siècle-1859)",
+                 url: "https://archives.paris.fr/archives-numerisees/etat-civil-de-paris/etat-civil-reconstitue-xvie-1859"}
+          - places: [FR-73, FR-74]
+            from: 1816
+            to: 1860
+            effect: extended
+            note: "under the Sardinian restoration the parish priests kept the civil registers again, from 1 January 1816 to the annexation of 1860"
+            references:
+              - {title: "Les Marmottes de Savoie, Sources spécifiques : l'état civil",
+                 url: "https://www.marmottesdesavoie.fr/index.php?page=sourc"}
+  - id: civil_registers
+    names: {en: "civil registers", fr: "état civil"}
+    coverage: [birth, marriage, death]
+    answers: [birth, marriage, death, parents, children, identity, negative, general]
+    rules:
+      - country: FR
+        from: 1792
+        to: null
+        held_by: ["town hall", "departmental archives (the court's double after 75 years)"]
+        note: >-
+          births and marriages may be read freely after 75 years, deaths at once. Marriages
+          are noted in the margin of the birth record from 1897, deaths from 1945.
+        references:
+          - {title: "Loi du 20 septembre 1792 qui détermine le mode de constater l'état civil des citoyens"}
+          - {title: "Code du patrimoine, article L213-2"}
+          - {title: "Archives départementales de la Mayenne, Présentation des registres paroissiaux et d'état civil",
+             url: "https://archives.lamayenne.fr/Etat_civil_Presentation"}
+        exceptions:
+          - places: [FR-75]
+            from: 1792
+            to: 1859
+            effect: destroyed
+            note: "burned in May 1871 with both copies; about a third of the eight million records rebuilt (état civil reconstitué)"
+            references:
+              - {title: "Archives de Paris, État civil reconstitué (XVIe siècle-1859)",
+                 url: "https://archives.paris.fr/archives-numerisees/etat-civil-de-paris/etat-civil-reconstitue-xvie-1859"}
+              - {title: "Geneawiki, Archives de Paris - Section I",
+                 url: "https://fr.geneawiki.com/wiki/Archives_de_Paris_-_Section_I"}
+          - places: [FR-73, FR-74]
+            from: 1816
+            to: 1860
+            effect: replaced
+            by: parish_registers
+            note: "Savoy was Sardinian again: the civil registers of 1792-1815 stayed in the communes, then the parish priests kept the registers until 1860"
+            references:
+              - {title: "Les Marmottes de Savoie, Sources spécifiques : l'état civil",
+                 url: "https://www.marmottesdesavoie.fr/index.php?page=sourc"}
+  - id: decennial_tables
+    names: {en: "ten-year indexes", fr: "tables décennales"}
+    coverage: [decennial_table]
+    answers: [birth, marriage, death, parents, children, negative]
+    rules:
+      - country: FR
+        from: 1793
+        to: null
+        held_by: ["departmental archives", "town hall"]
+        note: >-
+          one table of births, marriages and deaths per commune and per ten years, by
+          initial letter. Ordered in 1792 but seldom made at first: most series start with
+          1803-1812, when the courts' clerks were given the task.
+        references:
+          - {title: "Loi du 20 septembre 1792 qui détermine le mode de constater l'état civil des citoyens"}
+          - {title: "Archives départementales de la Mayenne, Présentation des registres paroissiaux et d'état civil",
+             url: "https://archives.lamayenne.fr/Etat_civil_Presentation"}
+        exceptions:
+          - places: [FR-75]
+            from: 1793
+            to: 1859
+            effect: destroyed
+            note: "the tables burned with the registers in May 1871; the rebuilt records have their own card index"
+            references:
+              - {title: "Geneawiki, Archives de Paris - Section I",
+                 url: "https://fr.geneawiki.com/wiki/Archives_de_Paris_-_Section_I"}
+          - places: [FR-73, FR-74]
+            from: 1816
+            to: 1860
+            effect: absent
+            note: "no French civil registers under Sardinian rule, hence no ten-year tables until the annexation of 1860"
+            references:
+              - {title: "Les Marmottes de Savoie, Sources spécifiques : l'état civil",
+                 url: "https://www.marmottesdesavoie.fr/index.php?page=sourc"}
+  - id: census
+    names: {en: "census lists", fr: "recensements"}
+    coverage: [census]
+    answers: [birth, parents, children, residence, migration, identity, general]
+    rules:
+      - country: FR
+        from: 1836
+        to: 1968
+        held_by: ["departmental archives (series M, then W from 1946)", "town hall (the second copy)"]
+        note: >-
+          a list of the inhabitants of each commune every five years until 1946, then in
+          1954, 1962 and 1968; ages until 1901, then dates of birth; place of birth missing
+          from 1856 to 1866. Free to read after 75 years.
+        references:
+          - {title: "Archives départementales des Côtes-d'Armor, Recensement de la population",
+             url: "https://archives.cotesdarmor.fr/recensement-de-la-population"}
+          - {title: "Code du patrimoine, article L213-2"}
+        exceptions:
+          - places: [FR]
+            from: 1871
+            to: 1871
+            effect: absent
+            note: "the census of 1871 was put off to 1872"
+            references:
+              - {title: "Archives départementales des Côtes-d'Armor, Recensement de la population",
+                 url: "https://archives.cotesdarmor.fr/recensement-de-la-population"}
+          - places: [FR]
+            from: 1916
+            to: 1916
+            effect: absent
+            note: "no census in 1916, during the war"
+            references:
+              - {title: "Archives départementales des Côtes-d'Armor, Recensement de la population",
+                 url: "https://archives.cotesdarmor.fr/recensement-de-la-population"}
+          - places: [FR]
+            from: 1941
+            to: 1941
+            effect: absent
+            note: "no census in 1941, during the war"
+            references:
+              - {title: "Archives départementales des Côtes-d'Armor, Recensement de la population",
+                 url: "https://archives.cotesdarmor.fr/recensement-de-la-population"}
+  - id: notarial
+    names: {en: "notarial records", fr: "minutes notariales"}
+    coverage: [notarial]
+    answers: [marriage, death, parents, children, residence, identity, general]
+    rules:
+      - country: FR
+        from: 1539
+        to: null
+        held_by: ["departmental archives (series E)", "Archives nationales, Minutier central (notaries of Paris)",
+                  "the notary's office (less than 75 years)"]
+        note: >-
+          marriage contracts, wills, inventories after death, divisions between heirs; found
+          through the notary of the place and his chronological index. Deposited and free
+          to read after 75 years.
+        references:
+          - {title: "Ordonnance de Villers-Cotterêts, août 1539"}
+          - {title: "Archives nationales, Notaires de Paris",
+             url: "https://www.archives-nationales.culture.gouv.fr/notaires-de-paris"}
+          - {title: "Code du patrimoine, article L213-2"}
+  - id: military_registers
+    names: {en: "military service registers", fr: "registres matricules"}
+    coverage: [military]
+    answers: [parents, residence, migration, identity, general]
+    rules:
+      - country: FR
+        from: 1867
+        to: null
+        held_by: ["departmental archives (series R)"]
+        note: >-
+          one entry per man of each class, made at twenty by the recruiting office of his
+          home: men born from 1847. Gives the parents and the successive addresses until
+          forty-five. Online in most departments up to the class of 1921.
+        references:
+          - {title: "La Revue française de Généalogie, Les registres matricules militaires en généalogie contemporaine (2022)",
+             url: "https://www.rfgenealogie.com/dossiers/les-registres-matricules-militaires-en-genealogie-contemporaine"}
+          - {title: "Geneawiki, Archives de Paris - Section I",
+             url: "https://fr.geneawiki.com/wiki/Archives_de_Paris_-_Section_I"}
+  - id: registration
+    names: {en: "registration and estates", fr: "enregistrement et successions"}
+    coverage: [succession]
+    answers: [death, parents, children, residence, identity, general]
+    rules:
+      - country: FR
+        from: 1693
+        to: 1970
+        held_by: ["departmental archives (series C before 1791, series Q after)"]
+        note: >-
+          the contrôle des actes from 1693, the enregistrement from 1791; the tables of
+          estates and absences (1825-1968), then death cards, lead to the full text of each
+          declaration of estate, which names the heirs. The offices became tax centres in
+          1970.
+        references:
+          - {title: "Édit de mars 1693 (contrôle des actes des notaires)"}
+          - {title: "Décret des 5-19 décembre 1790 relatif au droit d'enregistrement"}
+          - {title: "Archives départementales du Doubs, Fiche de recherche sur les archives des bureaux de l'Enregistrement",
+             url: "https://archives.doubs.fr/document/enregistrement"}
+  - id: press
+    names: {en: "newspapers", fr: "presse"}
+    coverage: [press]
+    answers: [marriage, death, residence, migration, identity, general]
+    rules:
+      - country: FR
+        from: 1631
+        to: null
+        held_by: ["Bibliothèque nationale de France (Gallica)", "departmental archives (local newspapers)"]
+        note: >-
+          notices of marriages and deaths, court reports, local news; a lead to the record
+          rather than a record.
+        references:
+          - {title: "Bibliothèque nationale de France, Gallica, Gazette (Paris, 1631)",
+             url: "https://gallica.bnf.fr/ark:/12148/cb32780022t/date"}

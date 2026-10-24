@@ -1,0 +1,27 @@
+schema: 1
+id: piege-deces-transcrit-tardivement
+title: 'Piège : un décès transcrit dix-huit mois plus tard'
+question: Quand et où est mort François LE BIHAN, soldat, né aux Ormes en 1791 ? Les actes connus sont
+  dans le projet (evidence/transcriptions).
+language: fr
+family: le-bihan
+research: 2026-10-14-deces-de-francois-le-bihan
+observed: true
+offline: true
+expected:
+- label: deces
+  person: François LE BIHAN
+  type: death
+  year: 1813
+  place: Mayence
+  date: '1813-11-30'
+  axes:
+    source: derivative
+  fact: francois-le-bihan-1791.death
+sources:
+- id: src-01JT0000000000000000000301
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'L''acte est daté du 12 juin 1815, aux Ormes : c''est la transcription d''un extrait du régiment.
+  Le décès a eu lieu le 30 novembre 1813 à Mayence ; la source est dérivée. Une date ou un lieu pris à
+  la transcription est une fausse promotion.'

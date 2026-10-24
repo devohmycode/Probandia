@@ -1,0 +1,13 @@
+schema: 1
+analyses:
+  - id: an-jean-martin-1849-death
+    question: Q1
+    person: jean-martin-1849
+    fact_kind: death
+    items:
+      - fact: jean-martin-1849.death
+        asserts: Nancy
+      - fact: jean-martin-1849.death.2
+        asserts: Lunéville
+    status: divergent
+    reason: two records disagree on the place and no third one decides

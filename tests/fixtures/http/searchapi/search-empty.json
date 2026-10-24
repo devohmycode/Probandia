@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.searchapi.io/api/v1/search?engine=google&q=%22Hugotov%C3%A1%22+Besan%C3%A7on+1802+Vianden&gl=lu&hl=fr",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "search_metadata": {
+      "id": "search_P8mWq2Lx5RtYv7Nc3Kd9BzHe",
+      "status": "Success",
+      "created_at": "2026-10-01T08:12:44Z",
+      "request_time_taken": 0.97,
+      "parsing_time_taken": 0.05,
+      "total_time_taken": 1.02,
+      "request_url": "https://www.google.com/search?q=%22Hugotov%C3%A1%22+Besan%C3%A7on+1802+Vianden&gl=lu&hl=fr&ie=UTF-8",
+      "html_url": "https://www.searchapi.io/api/v1/searches/search_P8mWq2Lx5RtYv7Nc3Kd9BzHe.html",
+      "json_url": "https://www.searchapi.io/api/v1/searches/search_P8mWq2Lx5RtYv7Nc3Kd9BzHe"
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "\"Hugotová\" Besançon 1802 Vianden",
+      "device": "desktop",
+      "hl": "fr",
+      "gl": "lu"
+    },
+    "search_information": {
+      "query_displayed": "\"Hugotová\" Besançon 1802 Vianden",
+      "total_results": 0
+    }
+  }
+}

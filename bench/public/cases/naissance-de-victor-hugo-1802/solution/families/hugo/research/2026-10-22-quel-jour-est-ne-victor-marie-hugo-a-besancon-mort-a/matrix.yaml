@@ -1,0 +1,96 @@
+schema: 1
+research: 2026-10-22-quel-jour-est-ne-victor-marie-hugo-a-besancon-mort-a
+updated: '2026-10-22T16:34:24Z'
+questions:
+- id: Q1
+  type: birth
+  status: open
+  window:
+    from: 1785
+    to: 1870
+  unknown: []
+  notes: []
+  rows:
+  - type: parish_registers
+    places:
+    - besancon
+    years:
+    - 1785
+    - 1792
+    repositories:
+    - name: Archives départementales du Doubs
+      archive: ad25
+    - name: FamilySearch
+      archive: familysearch
+    state: not_applicable
+    reason: en l'an X (1802), l'état civil a remplacé les registres paroissiaux depuis 1792 ; l'acte d'état
+      civil est celui qui donne le jour
+    searches: []
+    gaps: []
+  - type: civil_registers
+    places:
+    - besancon
+    years:
+    - 1792
+    - 1870
+    repositories:
+    - name: Archives départementales du Doubs
+      archive: ad25
+    - name: FamilySearch
+      archive: familysearch
+    state: not_applicable
+    reason: l'acte de l'état civil est lu sur son fac-similé imprimé (Maison de Victor Hugo) ; le projet
+      ne contient pas le registre de Besançon, qui reste à voir pour lire l'original
+    searches: []
+    gaps: []
+  - type: decennial_tables
+    places:
+    - besancon
+    years:
+    - 1793
+    - 1870
+    repositories: []
+    state: not_applicable
+    reason: une table décennale n'est qu'un index de l'acte, ici lu lui-même
+    searches: []
+    gaps: []
+  - type: census
+    places:
+    - besancon
+    years:
+    - 1836
+    - 1870
+    repositories:
+    - name: Archives départementales du Doubs
+      archive: ad25
+    - name: FamilySearch
+      archive: familysearch
+    - name: SocFace name base (FranceArchives)
+      archive: socface
+    state: not_applicable
+    reason: un recensement ne donne pas le jour de la naissance
+    searches: []
+    gaps: []
+not_applicable:
+- question: Q1
+  type: parish_registers
+  reason: en l'an X (1802), l'état civil a remplacé les registres paroissiaux depuis 1792 ; l'acte d'état
+    civil est celui qui donne le jour
+  ts: '2026-10-22T16:34:21Z'
+  agent: session
+- question: Q1
+  type: civil_registers
+  reason: l'acte de l'état civil est lu sur son fac-similé imprimé (Maison de Victor Hugo) ; le projet
+    ne contient pas le registre de Besançon, qui reste à voir pour lire l'original
+  ts: '2026-10-22T16:34:21Z'
+  agent: session
+- question: Q1
+  type: decennial_tables
+  reason: une table décennale n'est qu'un index de l'acte, ici lu lui-même
+  ts: '2026-10-22T16:34:22Z'
+  agent: session
+- question: Q1
+  type: census
+  reason: un recensement ne donne pas le jour de la naissance
+  ts: '2026-10-22T16:34:23Z'
+  agent: session

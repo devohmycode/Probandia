@@ -1,0 +1,25 @@
+persons:
+- id: eve-roy-1800
+  names:
+    surname: ROY
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: eve-roy-1800.birth
+    type: birth
+    date:
+      value: '1800'
+      qualifier: exact
+    status: record
+    source: null
+  - id: eve-roy-1800.marriage
+    type: marriage
+    date:
+      value: '1808'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- eve-roy-1800.marriage
+- eve-roy-1800.birth

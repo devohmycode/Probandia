@@ -1,0 +1,141 @@
+{
+  "note": "3 records in WHG asserted as skos:closeMatch",
+  "type": "FeatureCollection",
+  "pagesize": null,
+  "features": [
+    {
+      "type": "Feature",
+      "score": 43.50445,
+      "properties": {
+        "title": "Octeville",
+        "index_id": "12474326",
+        "index_role": "parent",
+        "place_id": 5732360,
+        "child_place_ids": [],
+        "dataset": "tgn_filtered_01",
+        "fclasses": [
+          "P"
+        ],
+        "placetypes": [
+          "inhabited place"
+        ],
+        "variants": [],
+        "links": [
+          {
+            "identifier": "tgn:7621065",
+            "type": "closeMatch"
+          }
+        ],
+        "timespans": [],
+        "minmax": [],
+        "ccodes": [
+          "FR"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -1.643486,
+          49.626118
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "score": 16.670658,
+      "properties": {
+        "title": "Octeville-la-Venelle",
+        "index_id": "12926053",
+        "index_role": "parent",
+        "place_id": 6184379,
+        "child_place_ids": [],
+        "dataset": "tgn_filtered_01",
+        "fclasses": [
+          "P"
+        ],
+        "placetypes": [
+          "inhabited place"
+        ],
+        "variants": [
+          "Octeville"
+        ],
+        "links": [
+          {
+            "identifier": "tgn:7621064",
+            "type": "closeMatch"
+          }
+        ],
+        "timespans": [],
+        "minmax": [],
+        "ccodes": [
+          "FR"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -1.35443,
+          49.544049
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "score": 16.670658,
+      "properties": {
+        "title": "Octeville-sur-Mer",
+        "index_id": "12967736",
+        "index_role": "parent",
+        "place_id": 6226082,
+        "child_place_ids": [],
+        "dataset": "tgn_filtered_01",
+        "fclasses": [
+          "P"
+        ],
+        "placetypes": [
+          "inhabited place"
+        ],
+        "variants": [
+          "Octeville"
+        ],
+        "links": [
+          {
+            "identifier": "tgn:7621063",
+            "type": "closeMatch"
+          }
+        ],
+        "timespans": [],
+        "minmax": [],
+        "ccodes": [
+          "FR"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          0.116603,
+          49.55496
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "attribution": {
+    "sources": {},
+    "whg": {
+      "spdx_id": "CC-BY-4.0",
+      "label": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "datasets": {
+      "tgn_filtered_01": {
+        "name": "Getty TGN (partial)",
+        "citation": "",
+        "rights_holder": "[Getty Research Institute]",
+        "source_url": "http://www.getty.edu/research/tools/vocabularies/tgn/",
+        "rights_statement": "",
+        "license": null,
+        "license_source": null
+      }
+    }
+  }
+}

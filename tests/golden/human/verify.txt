@@ -1,0 +1,26 @@
+✗ 1 of 20 rules failed · 2026-09-01-ancestors-of-louis-marchand
+
+  ✓ V-1   the steps of each pass happened in order
+  ✓ V-2   every fact has a status, and every record or index fact a citation
+  ✓ V-3   every negative has its window, variants, witness and source state
+  ✓ V-4   journal mode: earlier text unchanged, every correction an erratum
+  ✓ V-5   living mode: every change is in the revision history · journal mode
+  ✓ V-6   numbering continuous and unique, every anchor resolves
+  ✓ V-7   every fact of the report is in the index, and in a section of its pass
+  ✗ V-8   trees regenerated after a change of branch
+  ✓ V-9   presumed-living persons masked in the shared outputs
+  ✓ V-10  no provider used beyond its free tier
+  ✓ V-11  every learned script used had a passing witness
+  ✓ V-12  every search of the pass is in the search log
+  ✓ V-13  the HTML report was rendered with a template that still exists, unchanged
+  ✓ V-14  the dates of the research's facts are consistent (P-9)
+  ✓ V-15  every conflict between pieces of evidence is analysed, and resolved before its question is answered
+  ✓ V-16  every answered question that needs a proof argument has one, reviewed and accepted
+  ✓ V-17  every typed source a conclusion cites has the fields its citation model requires
+  ✓ V-18  every settled question has searched each source type it expects, or says why not
+  ✓ V-19  every excerpt a fact cites is found, word for word, in its transcription or the page kept
+  ✓ V-20  no answered question rests on a refuted fact
+
+V-8 · trees regenerated after a change of branch
+    concerned: trees missing or older than branch.added in passes 1
+    to correct: regenerate the trees: probandia tree

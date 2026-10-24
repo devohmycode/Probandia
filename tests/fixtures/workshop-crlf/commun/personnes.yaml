@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Source unique de vérité généalogique de l'atelier d'exemple « Recherche
+#  Famille HUGO ». Personnes, dates et lieux : les faits publics de la famille
+#  Hugo. Cotes, actes, vues, index, arbre en ligne et lectures incertaines :
+#  inventés pour l'exemple.
+#
+#  Tout fait porte trois marqueurs obligatoires :
+#    statut    acte | index | hypothese | refute
+#    volet     le volet où le fait entre au dossier
+#    chapitre  le chapitre qui l'établit
+#
+#  Après toute modification : python3 outils/build.py
+# ─────────────────────────────────────────────────────────────────────────────
+
+meta:
+  racine: victor-hugo-1802
+  mis_a_jour: 2026-08-10
+
+personnes:
+
+  # ═══ GÉNÉRATION II — Victor ═════════════════════════════════════════════
+
+  - id: victor-hugo-1802
+    nom: HUGO
+    prenoms: Victor Marie
+    sexe: M
+    generation: II
+    statut: acte
+    volet: I
+    chapitre: I
+    rapport: hugo-besancon
+    pere: leopold-hugo-1773
+    naissance: {date: "26 février 1802", annee: 1802, lieu: "Besançon", statut: acte, volet: I, chapitre: I,
+                source: "Archives municipales de Besançon, État civil, naissances an X, acte 112, vue 45.",
+                image: images/ec-1802-112.jpg}
+    deces: {date: "vers 1885", annee: 1885, lieu: "Paris", statut: index, volet: II, chapitre: II,
+            source: "Index des décès de Paris, 1885.",
+            note: "LECTURE INCERTAINE : ligne 4, « Hugo » ou « Hugot »"}
+    recherches:
+      - {date: "14 août 2026 à 10 h 30", annee: 2026, fait: "relevé de l'index des décès de Paris",
+         statut: index, volet: II, chapitre: II, source: "Index des décès de Paris, 1885."}
+
+  # ═══ GÉNÉRATION III — ses parents ═══════════════════════════════════════
+
+  - id: leopold-hugo-1773
+    nom: HUGOT
+    prenoms: Joseph Léopold Sigisbert
+    sexe: M
+    generation: III
+    statut: hypothese
+    volet: II
+    chapitre: II
+    naissance: {date: "vers 1773", annee: 1773, statut: hypothese, volet: II, chapitre: II,
+                note: "DIVERGENCE NON TRANCHÉE : né à Nancy selon l'index, à Besançon selon l'arbre en ligne"}
+    surnom: Léopold
+
+  - id: sophie-trebuchet-1772
+    nom: TRÉBUCHET
+    prenoms: Sophie Françoise
+    sexe: F
+    generation: III
+    statut: index
+    volet: II
+    chapitre: II
+    naissance: {annee: 1772, statut: index, volet: II, chapitre: II, source: "Index des naissances, Nantes, 1772."}
+
+unions:
+
+  - epoux: leopold-hugo-1773
+    epouse: sophie-trebuchet-1772
+    annee: 1797
+    date: "1797"
+    lieu: Paris
+    statut: hypothese
+    volet: II
+    chapitre: II

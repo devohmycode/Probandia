@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "query": "\"Hugozzq\" Besançon 1802",
+      "limit": 5,
+      "sources": [
+        "web"
+      ],
+      "country": "LU"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "success": true,
+    "data": {
+      "web": []
+    },
+    "warning": null,
+    "id": "019a2b3c-4d5e-7f60-8a9b-0c1d2e3f4a6c",
+    "creditsUsed": 2
+  }
+}

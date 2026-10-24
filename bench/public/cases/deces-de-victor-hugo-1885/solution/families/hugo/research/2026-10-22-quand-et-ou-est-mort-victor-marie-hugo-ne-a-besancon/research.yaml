@@ -1,0 +1,36 @@
+schema: 1
+id: 2026-10-22-quand-et-ou-est-mort-victor-marie-hugo-ne-a-besancon
+family: hugo
+question: Quand et où est mort Victor Marie HUGO, né à Besançon en 1802 ? L'acte de décès est dans le
+  projet (families/hugo/evidence/images).
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+- html
+created: '2026-10-22T16:30:46Z'
+created_by:
+  harness: claude-code
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: closed
+passes: 1
+questions:
+- id: Q1
+  text: Quand et où est mort Victor Marie HUGO, né à Besançon en 1802 ? L'acte de décès est dans le projet
+    (families/hugo/evidence/images).
+  type: death
+  status: answered
+  window:
+    from: 1802
+    to: 1902
+  places:
+  - paris
+  standard: l'acte de décès de Victor Marie HUGO, lu sur son image, avec la date et le lieu du décès
+  updated: '2026-10-22T16:30:55Z'
+  conclusion:
+  - victor-marie-hugo-1802.death

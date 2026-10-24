@@ -1,0 +1,144 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "POST",
+    "url": "https://api.apify.com/v2/acts/apify~rag-web-browser/runs?waitForFinish=60&maxItems=1&timeout=60&memory=1024&maxTotalChargeUsd=0.02",
+    "json": {
+      "query": "https://en.wikipedia.org/wiki/Luxembourg_City",
+      "maxResults": 1,
+      "outputFormats": [
+        "markdown"
+      ],
+      "scrapingTool": "raw-http",
+      "proxyConfiguration": {
+        "useApifyProxy": false
+      }
+    }
+  },
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": {
+      "id": "IbxfAfPTg5oPCOCUO",
+      "actId": "3ox4R101TgZz67sLr",
+      "startedAt": "2026-10-02T11:07:22.425Z",
+      "finishedAt": "2026-10-02T11:07:28.138Z",
+      "status": "SUCCEEDED",
+      "statusMessage": "Finished! Scraped 1 pages, 0 failed.",
+      "isStatusMessageTerminal": true,
+      "meta": {
+        "origin": "API"
+      },
+      "stats": {
+        "inputBodyLen": 633,
+        "migrationCount": 0,
+        "rebootCount": 0,
+        "restartCount": 0,
+        "durationMillis": 5454,
+        "resurrectCount": 0,
+        "runTimeSecs": 5.454,
+        "metamorph": 0,
+        "computeUnits": 0.001515,
+        "memAvgBytes": 244079294.95041478,
+        "memMaxBytes": 370311168,
+        "memCurrentBytes": 0,
+        "cpuAvgUsage": 117.82683082245016,
+        "cpuMaxUsage": 181.8937404580153,
+        "cpuCurrentUsage": 0,
+        "netRxBytes": 156935,
+        "netTxBytes": 57948
+      },
+      "options": {
+        "build": "version-1",
+        "timeoutSecs": 60,
+        "memoryMbytes": 1024,
+        "maxItems": 1,
+        "maxTotalChargeUsd": 0.02,
+        "isMaxTotalChargeUsdSetByUser": true,
+        "diskMbytes": 2048
+      },
+      "exitCode": 0,
+      "defaultKeyValueStoreId": "64zjcyz5q30bHwMiY",
+      "defaultDatasetId": "phDbiI8xzYC4Ox3jI",
+      "defaultRequestQueueId": "4m2rdyiuygHx8V8rt",
+      "storageIds": {
+        "keyValueStores": {
+          "default": "64zjcyz5q30bHwMiY"
+        },
+        "datasets": {
+          "default": "phDbiI8xzYC4Ox3jI"
+        },
+        "requestQueues": {
+          "default": "4m2rdyiuygHx8V8rt"
+        }
+      },
+      "pricingInfo": {
+        "minimalMaxTotalChargeUsd": null,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": false,
+        "reasonForChange": "We're setting more transparent and predictable price for each fetched page and search query.\nFeel free to reach out if the price changes too much for you.",
+        "startedAt": "2026-10-02T00:00:00.000Z",
+        "createdAt": "2026-09-18T19:21:46.182Z",
+        "apifyMarginPercentage": 0.2,
+        "notifiedAboutFutureChangeAt": "2026-09-18T19:46:55.146Z",
+        "notifiedAboutChangeAt": "2026-10-02T00:05:50.582Z",
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "fetch": {
+              "eventTitle": "Fetched page",
+              "eventDescription": "Returns content of a fetched page",
+              "isOneTimeEvent": false,
+              "isPrimaryEvent": true,
+              "eventPriceUsd": 0.00228
+            },
+            "search": {
+              "eventTitle": "Search result",
+              "eventDescription": "Returns a set of links to be fetched",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.00348
+            },
+            "apify-actor-start": {
+              "eventTitle": "Actor Start",
+              "eventDescription": "Charged when the Actor starts running. Number of events charged depends on Actor memory (one event per GB, minimum one event).",
+              "isOneTimeEvent": true,
+              "eventPriceUsd": 0.000225
+            }
+          }
+        }
+      },
+      "chargedEventCounts": {
+        "fetch": 0,
+        "search": 0,
+        "apify-actor-start": 1
+      },
+      "platformUsageBillingModel": "DEVELOPER",
+      "accountedChargedEventCounts": {
+        "fetch": 0,
+        "search": 0,
+        "apify-actor-start": 1
+      },
+      "standby": null,
+      "generalAccess": "FOLLOW_USER_SETTING",
+      "usageTotalUsd": 0.000225,
+      "eventUsage": {
+        "fetch": {
+          "eventTitle": "Fetched page",
+          "eventTotalUsd": 0
+        },
+        "search": {
+          "eventTitle": "Search result",
+          "eventTotalUsd": 0
+        },
+        "apify-actor-start": {
+          "eventTitle": "Actor Start",
+          "eventTotalUsd": 0.000225
+        }
+      },
+      "output": {
+        "crawlResults": "https://api.apify.com/v2/datasets/phDbiI8xzYC4Ox3jI/items?signature=MC4wLjhTTmlQS1ZDdkVwcGlDbE1CNW9Y"
+      }
+    }
+  }
+}

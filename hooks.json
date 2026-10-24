@@ -1,0 +1,35 @@
+{
+  "probandia": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python run_probandia.py hook guard --harness antigravity",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "search_web|send_message|mcp_.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python run_probandia.py hook log --harness antigravity",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python run_probandia.py hook digest --harness antigravity",
+        "timeout": 15
+      }
+    ]
+  }
+}

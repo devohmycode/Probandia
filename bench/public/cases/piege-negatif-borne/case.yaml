@@ -1,0 +1,40 @@
+schema: 1
+id: piege-negatif-borne
+title: 'Piège : un négatif qui ne vaut que pour son registre'
+question: Où et quand Guillaume HAMON a-t-il épousé Julienne COLLET ? Les actes connus sont dans le projet
+  (evidence/transcriptions).
+language: fr
+family: hamon
+research: 2026-10-14-mariage-de-guillaume-hamon
+observed: true
+offline: true
+expected:
+- person: Guillaume HAMON
+  type: marriage
+  abstain: true
+- person: Julienne COLLET
+  type: marriage
+  abstain: true
+- label: naissance-yves
+  person: Yves HAMON
+  type: birth
+  year: 1825
+  place: Saint-Aubry
+  date: '1825-03-02'
+  axes:
+    evidence: direct
+  fact: yves-hamon-1825.birth
+sources:
+- id: src-01JT0000000000000000000801
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000802
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000803
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'La table des mariages de Saint-Aubry ne couvre que 1813-1822 : son négatif ne dit rien des autres
+  paroisses ni des années d''avant ou d''après. La naissance d''Yves, en 1825, dit seulement que ses parents
+  étaient mariés. Aucun mariage ne se prouve ici ; la question reste ouverte ou non résolue. La notation
+  compte un mariage prouvé comme une fausse promotion ; elle ne lit pas encore la portée déclarée du négatif.'

@@ -1,0 +1,30 @@
+schema: 1
+places:
+- id: bourg-vert
+  names_as_written:
+  - Bourg-Vert
+  - Bourgvert
+  current_name: Bourg-Vert
+  type: commune
+- id: saint-aubry
+  names_as_written:
+  - Saint-Aubry
+  - St Aubry
+  current_name: Saint-Aubry
+  type: commune
+- id: les-ormes
+  names_as_written:
+  - Les Ormes
+  current_name: Les Ormes
+  type: parish
+- id: premoulin
+  names_as_written:
+  - Prémoulin
+  - Premoulin
+  current_name: Prémoulin
+  type: commune
+- id: valombre
+  names_as_written:
+  - Valombre
+  current_name: Valombre
+  type: county

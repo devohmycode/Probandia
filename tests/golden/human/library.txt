@@ -1,0 +1,8 @@
+✓ 2 learned scripts
+
+  script              level   kind       version  witness  runs ok  last run  what it does
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ad25-client         draft   connector        1  yes      0/0      never     Read the Doubs archiv…
+  hugo-births-recipe  recipe  recipe           2  yes      0/0      never     Births of the Hugos
+
+  ⚠ a draft runs only after the user agrees; library test checks it against its witness

@@ -1,0 +1,17 @@
+{
+  "note": "not a live answer: built from the Apify documentation read on 2 October 2026; to check against a real call once an account is open. 402 is the pay-per-request path, which Probandia never takes",
+  "request": {
+    "method": "POST",
+    "url": "https://api.apify.com/v2/acts/apify~google-search-scraper/runs"
+  },
+  "status": 402,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "error": {
+      "type": "x402-payment-required",
+      "message": "Payment required."
+    }
+  }
+}

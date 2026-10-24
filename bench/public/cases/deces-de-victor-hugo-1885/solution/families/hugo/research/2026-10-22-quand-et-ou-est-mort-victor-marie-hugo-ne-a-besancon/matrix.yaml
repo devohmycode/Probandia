@@ -1,0 +1,105 @@
+schema: 1
+research: 2026-10-22-quand-et-ou-est-mort-victor-marie-hugo-ne-a-besancon
+updated: '2026-10-22T16:30:55Z'
+questions:
+- id: Q1
+  type: death
+  status: open
+  window:
+    from: 1802
+    to: 1902
+  unknown: []
+  notes: []
+  rows:
+  - type: civil_registers
+    places:
+    - paris
+    years:
+    - 1802
+    - 1902
+    repositories:
+    - name: Archives de Paris
+      archive: ad75
+    - name: FamilySearch
+      archive: familysearch
+    - name: Mémoire des hommes
+      archive: memoiredeshommes
+    state: consulted
+    searches:
+    - s-01M5J76V2BZEB8G2DNZ5ZVWE9C
+    gaps: []
+  - type: decennial_tables
+    places:
+    - paris
+    years:
+    - 1802
+    - 1902
+    repositories: []
+    state: not_applicable
+    reason: une table décennale n'est qu'un index de l'acte, ici lu lui-même sur son image
+    searches: []
+    gaps: []
+  - type: notarial
+    places:
+    - paris
+    years:
+    - 1802
+    - 1902
+    repositories:
+    - name: FamilySearch
+      archive: familysearch
+    state: not_applicable
+    reason: la date et le lieu du décès sont donnés par l'acte d'état civil même, original et direct
+    searches: []
+    gaps: []
+  - type: registration
+    places:
+    - paris
+    years:
+    - 1802
+    - 1902
+    repositories: []
+    state: not_applicable
+    reason: les tables de l'enregistrement ne donneraient du décès que ce que l'acte original donne déjà
+    searches: []
+    gaps: []
+  - type: press
+    places:
+    - paris
+    years:
+    - 1802
+    - 1902
+    repositories:
+    - name: Europeana newspapers and texts
+      archive: europeana
+    - name: Gallica (Bibliothèque nationale de France)
+      archive: gallica
+    - name: HathiTrust Digital Library
+      archive: hathitrust
+    - name: Persée (scholarly journals)
+      archive: persee
+    state: not_applicable
+    reason: la presse est une source dérivée ; l'acte original, lu, donne la date et le lieu
+    searches: []
+    gaps: []
+not_applicable:
+- question: Q1
+  type: decennial_tables
+  reason: une table décennale n'est qu'un index de l'acte, ici lu lui-même sur son image
+  ts: '2026-10-22T16:30:52Z'
+  agent: session
+- question: Q1
+  type: notarial
+  reason: la date et le lieu du décès sont donnés par l'acte d'état civil même, original et direct
+  ts: '2026-10-22T16:30:53Z'
+  agent: session
+- question: Q1
+  type: registration
+  reason: les tables de l'enregistrement ne donneraient du décès que ce que l'acte original donne déjà
+  ts: '2026-10-22T16:30:53Z'
+  agent: session
+- question: Q1
+  type: press
+  reason: la presse est une source dérivée ; l'acte original, lu, donne la date et le lieu
+  ts: '2026-10-22T16:30:54Z'
+  agent: session

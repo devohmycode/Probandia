@@ -1,0 +1,11 @@
+STATUS=OK
+FAMILIES=1
+RESEARCHES=1
+LOCKS=0
+- family=marchand 1 researches
+- research=2026-09-01-ancestors-of-louis-marchand [open] 2 passes journal fr
+- quota=jina 9,000,000 left
+- quota=zenrows 4,500 left
+- quota=serper 2,250 left
+- quota=firecrawl 900 left
+- quota=scraperapi 900 left

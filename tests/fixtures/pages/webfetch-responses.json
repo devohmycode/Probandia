@@ -1,0 +1,69 @@
+{
+  "about": "Answers of Claude Code's WebFetch tool, in the shape its PostToolUse payload gives them (bytes, code, codeText, result, url), and what the log hook must say of each (T59).",
+  "cases": [
+    {
+      "name": "anubis",
+      "expect": "challenge",
+      "source": "Recorded on 14 Oct. 2026: the result is the real answer of Claude Code's WebFetch tool on this URL, which served an Anubis page (v1.24.0-pre1, 'Oh noes!'); code and bytes were read the same day with curl (200, 2114 bytes), the tool showing only its result.",
+      "tool_input": {
+        "url": "https://gov.genealogy.net/search/name?name=Hugo",
+        "prompt": "Reproduce the page's visible text as faithfully as possible, verbatim. Is it a challenge page (Anubis, proof of work, \"Making sure you're not a bot\")?"
+      },
+      "tool_response": {
+        "bytes": 2114,
+        "code": 200,
+        "codeText": "OK",
+        "result": "The page is an **Anubis block page**, not an active challenge. Anubis is a bot-protection tool, and this page shows a denial, not a proof-of-work step to complete. It says \"Access Denied\" with error code \"b3728715388cb593,\" and offers a link back to the home page. The page also notes it is running Anubis version v1.24.0-pre1.\n\nI won't reproduce the full visible text verbatim, but its main elements are a heading expressing dismay, a sad mascot image, the access-denied message with the error code, a \"Go home\" link, and attribution to Anubis and its developer, Techaro.",
+        "url": "https://gov.genealogy.net/search/name?name=Hugo"
+      }
+    },
+    {
+      "name": "empty template",
+      "expect": "template",
+      "source": "Made for the test: an application shell whose content never arrived.",
+      "tool_input": {
+        "url": "https://archives.example.org/recherche/etat-civil?commune=Besancon",
+        "prompt": "List the registers of births of Besançon for 1802."
+      },
+      "tool_response": {
+        "bytes": 18432,
+        "code": 200,
+        "codeText": "OK",
+        "result": "The page only shows a loading indicator and a site header. Its content requires JavaScript, so no list of registers is visible.",
+        "url": "https://archives.example.org/recherche/etat-civil?commune=Besancon"
+      }
+    },
+    {
+      "name": "404",
+      "expect": "blocked",
+      "source": "Made for the test: a page that is gone.",
+      "tool_input": {
+        "url": "https://example.org/besancon/ec-1802-n/45",
+        "prompt": "Who are the parents of Victor Hugo?"
+      },
+      "tool_response": {
+        "bytes": 1256,
+        "code": 404,
+        "codeText": "Not Found",
+        "result": "The page says it could not be found.",
+        "url": "https://example.org/besancon/ec-1802-n/45"
+      }
+    },
+    {
+      "name": "normal page",
+      "expect": "ok",
+      "source": "Made for the test: a page that loaded and does not answer the question, which is a page consulted.",
+      "tool_input": {
+        "url": "https://fr.wikipedia.org/wiki/Victor_Hugo",
+        "prompt": "Where was Victor Hugo baptised?"
+      },
+      "tool_response": {
+        "bytes": 412377,
+        "code": 200,
+        "codeText": "OK",
+        "result": "Victor Hugo was born on 26 February 1802 in Besançon, the son of Léopold Hugo and Sophie Trébuchet. The page does not say where he was baptised.",
+        "url": "https://fr.wikipedia.org/wiki/Victor_Hugo"
+      }
+    }
+  ]
+}

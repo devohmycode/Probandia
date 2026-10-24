@@ -1,0 +1,63 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "search_depth": "basic",
+      "max_results": 5,
+      "topic": "general",
+      "country": "luxembourg",
+      "include_answer": false,
+      "include_raw_content": false,
+      "include_usage": true
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "query": "\"Hugo\" Besançon 1802",
+    "answer": null,
+    "images": [],
+    "results": [
+      {
+        "title": "Victor Hugo (1802-1885) - Genealogy - Example Genealogy",
+        "url": "https://genealogy.example.org/people/Victor-Hugo/6000000012345678901",
+        "content": "Victor Hugo was born on 26 February 1802 in Besançon, France, son of Léopold Hugo and Sophie Trébuchet. He married Adèle Foucher on 12 October 1822 in Paris.",
+        "score": 0.81025416,
+        "raw_content": null
+      },
+      {
+        "title": "Hugo family tree - Besançon - Example Trees",
+        "url": "https://tree.example.org/hugo?lang=en&n=hugo&p=victor",
+        "content": "Family tree of the Hugo family of Besançon (Doubs): Victor Hugo, born 1802, writer; parents Léopold Hugo (1773-1828) and Sophie Trébuchet.",
+        "score": 0.7342191,
+        "raw_content": null
+      },
+      {
+        "title": "France, Civil Registration - Besançon, Naissances an X",
+        "url": "https://records.example.org/ark:/61903/3:1:S3HT-6Q9L-7Z2?cc=1709358",
+        "content": "Image browse: French civil registration, Besançon (Doubs), births (naissances) an X. Hugo, Victor Marie, 7 ventôse an X (26 février 1802).",
+        "score": 0.6620358,
+        "raw_content": null
+      },
+      {
+        "title": "Victor Hugo à Vianden - Luxemburger Wort, 1871 - press archive",
+        "url": "https://press.example.org/periodicals/luxwort/issue/1871-06-01",
+        "content": "Luxemburger Wort, 1 June 1871: notes on the visitors of the Grand Duchy, among them Victor Hugo, staying at Vianden.",
+        "score": 0.51877636,
+        "raw_content": null
+      }
+    ],
+    "response_time": 1.67,
+    "usage": {
+      "credits": 1
+    },
+    "request_id": "123e4567-e89b-12d3-a456-426614174111"
+  }
+}

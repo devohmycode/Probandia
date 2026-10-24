@@ -1,0 +1,12 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000301
+  type: civil-registration
+  repository: Archives départementales de Valombre
+  collection: État civil, Les Ormes, décès 1815
+  jurisdiction: Les Ormes
+  act_no: '23'
+  act_date: '1815-06-12'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000301.md
+  citation: Les Ormes, décès 1815, acte n° 23 (transcription)

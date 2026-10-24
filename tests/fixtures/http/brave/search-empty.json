@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search?q=%22Hugotov%C3%A1%22+Besan%C3%A7on+1802+Vianden&country=ALL&search_lang=fr&count=10",
+    "headers": {
+      "X-Subscription-Token": "KEY",
+      "Accept": "application/json"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "X-RateLimit-Limit": "1, 15000",
+    "X-RateLimit-Policy": "1;w=1, 15000;w=2592000",
+    "X-RateLimit-Remaining": "0, 14522",
+    "X-RateLimit-Reset": "1, 1234567"
+  },
+  "body": {
+    "type": "search",
+    "query": {
+      "original": "\"Hugotová\" Besançon 1802 Vianden",
+      "show_strict_warning": false,
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "all",
+      "bad_results": false,
+      "should_fallback": false,
+      "more_results_available": false
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    }
+  }
+}

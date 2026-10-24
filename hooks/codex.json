@@ -1,0 +1,78 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook session || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook session",
+            "timeout": 10,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook session"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook guard || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook guard",
+            "timeout": 10,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook guard"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook digest || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook digest",
+            "timeout": 15,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook digest"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "WebSearch|WebFetch|SendMessage|send_message|Skill|Agent|Task|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook log || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook log",
+            "timeout": 15,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook log"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify",
+            "timeout": 15,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify || python3 \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify",
+            "timeout": 15,
+            "commandWindows": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify"
+          }
+        ]
+      }
+    ]
+  }
+}

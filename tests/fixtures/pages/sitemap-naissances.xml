@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://registres.example.org/naissances/besancon/1802</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://registres.example.org/naissances/besancon/1803</loc></url>
+  <url><loc>https://www.registres.example.org/naissances/nancy/1802</loc></url>
+  <url><loc>https://other.example.net/elsewhere</loc></url>
+</urlset>

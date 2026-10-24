@@ -1,0 +1,17 @@
+persons:
+- id: marie-roy-1851
+  names:
+    surname: ROY
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: marie-roy-1851.birth
+    type: birth
+    date:
+      value: '1851-02-30'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- marie-roy-1851.birth

@@ -1,0 +1,158 @@
+schema: 1
+persons:
+- id: jean-martin-1758
+  names:
+    given: Jean
+    surname: MARTIN
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: jean-martin-1758.marriage
+    type: marriage
+    date:
+      value: '1784-02-10'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: record
+    source: src-01JT0000000000000000000201
+    excerpt:
+      kind: transcription
+      lines:
+      - 1
+      - 3
+      text: Le dix février mil sept cent quatre-vingt-quatre, après la publication d'un ban, ont reçu
+        la bénédiction nuptiale Jean Martin, âgé de vingt-six ans, fils de feu Mathurin Martin, de cette
+        paroisse, et Marie Leroy,
+      sha256: c90d6cde85353b79e2a0effc018cfe11cb0cc6b4a8f5659798c4287c3dc18bc2
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1
+  - id: jean-martin-1758.death
+    type: death
+    date:
+      value: '1820-04-14'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: index
+    source: src-01JT0000000000000000000204
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 2
+      text: Martin Jean, époux de Marie Leroy, 14 avril 1820
+      sha256: f891a0f33d4adef8fc95d4c4715a1f931e41269571297276aa4302f16b546873
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1
+- id: jean-martin-1761
+  names:
+    given: Jean
+    surname: MARTIN
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: jean-martin-1761.marriage
+    type: marriage
+    date:
+      value: '1787-06-02'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: record
+    source: src-01JT0000000000000000000202
+    excerpt:
+      kind: transcription
+      lines:
+      - 1
+      - 4
+      text: Le deux juin mil sept cent quatre-vingt-sept, ont été mariés Jean Martin, laboureur, de la
+        paroisse de Bourg-Vert, âgé de vingt-six ans, fils de Pierre Martin et de Anne Hamel, et Marie
+        Penhoat, de cette paroisse, fille de Louis Penhoat, laboureur, et de Perrine Guibert ; présents
+        Louis Penhoat, père,
+      sha256: f010dd14e4649190fd495d2854d82016b27a7385c465382fef8baf10820ebf71
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1
+  - id: jean-martin-1761.death
+    type: death
+    date:
+      value: '1831-09-02'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: index
+    source: src-01JT0000000000000000000204
+    excerpt:
+      kind: transcription
+      lines:
+      - 3
+      - 3
+      text: Martin Jean, veuf de Marie Penhoat, 2 septembre 1831
+      sha256: 9e1c29376473284ba2e3a6407a8912a8044db435d418b2fb95133c8e3f73d38b
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1
+- id: pierre-martin-1790
+  names:
+    given: Pierre
+    surname: MARTIN
+  sex: M
+  living: false
+  parents:
+    father: jean-martin-1761
+    mother: null
+  spouses: []
+  facts:
+  - id: pierre-martin-1790.baptism
+    type: baptism
+    date:
+      value: '1790-03-12'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: record
+    source: src-01JT0000000000000000000203
+    excerpt:
+      kind: transcription
+      lines:
+      - 1
+      - 3
+      text: Le douze mars mil sept cent quatre-vingt-dix, a été baptisé Pierre, né d'hier, fils de Jean
+        Martin, laboureur, et de Marie, sa femme ; parrain Louis Penhoat, aïeul maternel de l'enfant,
+        marraine Jeanne Martin,
+      sha256: 1e921299c1ec44cc1d4f6f4d51589d4a47673b0780434ec33b37e425b3a01ce3
+    note: 'la mère n''est nommée que « Marie » ; le parrain, Louis Penhoat, aïeul maternel, la désigne
+      : Marie PENHOAT (relation déduite)'
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1
+  - id: pierre-martin-1790.death
+    type: death
+    date:
+      value: '1855-01-09'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: index
+    source: src-01JT0000000000000000000204
+    excerpt:
+      kind: transcription
+      lines:
+      - 4
+      - 4
+      text: Martin Pierre, cultivateur, 9 janvier 1855
+      sha256: 44c69c5d043bd1c56192b384c2f88e95da36a7b2054826a6fe9fb3c3a8b74369
+    research: 2026-10-14-pere-de-pierre-martin
+    pass: 1

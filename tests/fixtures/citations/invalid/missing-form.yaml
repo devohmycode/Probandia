@@ -1,0 +1,15 @@
+# expect: $.types["civil-registration"].short
+schema: 1
+lang: en
+dates: {months: [a, b, c, d, e, f, g, h, i, j, k, l], day: "{d} {month} {y}", month: "{month} {y}"}
+terms: {}
+layer_join: '; '
+page: '{page}'
+types:
+  civil-registration:
+    required: [jurisdiction]
+    recommended: []
+    series: null
+    full: '{jurisdiction}.'
+    first: '{jurisdiction}.'
+layers: {}

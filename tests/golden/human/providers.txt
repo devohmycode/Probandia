@@ -1,0 +1,30 @@
+✓ 23 providers in the catalogue · 12 ready
+
+  provider             role        family  free tier               state               checked
+  ───────────────────────────────────────────────────────────────────────────────────────────────
+  serpapi              search      G       250 search · a month    ready               2 days ago
+  serpapi_bing         search      B       250 search · a month    disabled            2 days ago
+  serper               search      G       2500 credit · once      ready               2 days ago
+  searchapi            search      G       100 search · once       no key              2 days ago
+  openwebninja_search  search      G       100 request · a month   ready               2 days ago
+  openwebninja_news    search      G       100 request · a month   ready               2 days ago
+  openwebninja_books   search      G       100 request · a month   ready               2 days ago
+  gemini_grounding     search      G       500 search · a day      reuses the content  2 days ago
+  brave                search      Br      1000 request · a month  card required       2 days ago
+  staan                search      E       1000 request · a month  no key              2 days ago
+  marginalia           search      Ma      unlimited               ready               2 days ago
+  exa                  search      X       10 dollar · a month     reuses the content  2 days ago
+  parallel             search      P       5 dollar · a month      reuses the content  2 days ago
+  tavily               search      opaque  1000 credit · a month   reuses the content  2 days ago
+  linkup               search      opaque  20 dollar · a month     reuses the content  2 days ago
+  jina                 reading     opaque  10000000 token · once   ready               2 days ago
+  firecrawl            reading     opaque  1000 credit · a month   ready               2 days ago
+  scrapegraph          extraction  opaque  500 credit · once       reuses the content  2 days ago
+  zenrows              reading     opaque  5000 credit · a month   ready               2 days ago
+  scraperapi           reading     opaque  1000 credit · a month   ready               2 days ago
+  apify                search      G       5.0 dollar · a month    ready               2 days ago
+  apify_reader         reading     opaque  5.0 dollar · a month    ready               2 days ago
+  openrouter           model       opaque  50 request · a day      no key              2 days ago
+
+→ probandia providers show <id>
+→ probandia providers disable <id>

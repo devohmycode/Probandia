@@ -1,0 +1,18 @@
+✓ 14 archives cover Morbihan · 1850–1900
+
+  archive           nature       years      access     records
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ad56              images       1550–1936  browser    birth, baptism, marriage, death, burial, cen…
+  familysearch      images       1500–1950  browser    birth, baptism, marriage, death, burial, cen…
+  iiif              images       1000–2026  connector  image
+  leonore           index        1802–1976  browser    military, biography
+  memoiredeshommes  index        None–None  browser    military, death
+  socface           index        1836–1936  html       census
+  europeana         press        1600–1950  connector  press, book
+  gallica           press        1500–1960  connector  press, book, manuscript, directory
+  hathitrust        press        1500–1960  browser    book, press
+  persee            press        1800–2020  browser    press, book
+  geonames          catalogue    1900–2026  connector  place
+  gov               catalogue    800–2026   connector  place
+  geneanet          shared tree  1500–2026  browser    tree
+  wikitree          shared tree  1000–2026  connector  tree

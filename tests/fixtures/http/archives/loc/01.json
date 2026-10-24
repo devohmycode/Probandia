@@ -1,0 +1,12 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://www.loc.gov/collections/chronicling-america/?q=Victor+Hugo&fo=json&c=20"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json"
+ },
+ "note": "built from the documented loc.gov JSON API (www.loc.gov/apis/json-and-yaml/); the live answer was a Cloudflare challenge on 2026-10-01 and again on 2026-10-12, when the query became Victor Hugo",
+ "body": "{\"pagination\": {\"current\": 1, \"of\": 218, \"perpage\": 20, \"total\": 11}, \"results\": [{\"id\": \"https://www.loc.gov/resource/sn84027718/1882-03-16/ed-1/?sp=3\", \"url\": \"https://www.loc.gov/resource/sn84027718/1882-03-16/ed-1/?sp=3\", \"title\": \"Image 3 of Luxemburger Gazette (Dubuque, Iowa), March 16, 1882\", \"date\": \"1882-03-16\", \"description\": [\"... news of Victor Hugo, the French poet, arrived at Dubuque ...\"], \"partof\": [\"chronicling america\", \"iowa\"]}, {\"id\": \"https://www.loc.gov/resource/sn83045462/1871-05-02/ed-1/?sp=2\", \"url\": \"https://www.loc.gov/resource/sn83045462/1871-05-02/ed-1/?sp=2\", \"title\": \"Image 2 of Evening star (Washington, D.C.), May 2, 1871\", \"date\": \"1871-05-02\", \"description\": [\"... Victor Hugo leaves Brussels for Vianden ...\"], \"partof\": [\"chronicling america\"]}]}"
+}

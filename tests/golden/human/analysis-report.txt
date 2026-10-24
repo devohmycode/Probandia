@@ -1,0 +1,9 @@
+### 4.1 Victor HUGO : naissance
+
+| Affirme | Informateur | Source | Nature de la source | Information | Preuve | Fait, note |
+|---|---|---|---|---|---|---|
+| 1802-02-26 | the father | Archives municipales de Besançon, État civil, Besançon, E-1802-N, acte 112, image 45, https://example.org/amb/e-1802-n/45 (consulted on 2026-09-30). | originale | primaire | directe | `victor-hugo-1802.birth` |
+| 1800 | the declarant of the death | Archives municipales de Besançon, État civil, Besançon, E-1802-N, acte 112, image 45, https://example.org/amb/e-1802-n/45 (consulted on 2026-09-30). | dérivée | secondaire | directe | `victor-hugo-1802.birth.2` age at death |
+
+Résolution : 1802-02-26 (`victor-hugo-1802.birth`). the birth record was declared by the father
+

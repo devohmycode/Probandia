@@ -1,0 +1,8 @@
+✓ 1 proposal waiting
+
+  • read one with: probandia proposals show <proposal>
+
+Proposals
+  proposal              research              pass  author      facts  persons  sources  verdict
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  01JB000000000000000…  2026-09-01-ancestor…     3  researcher      1        0        0  would-apply

@@ -1,0 +1,9 @@
+# expect: $.places[0].repositories[0].holdings[0].years
+schema: 1
+places:
+- id: auxon-dessous
+  repositories:
+  - name: Archives départementales du Doubs
+    holdings:
+    - type: baptism
+      years: [1550]

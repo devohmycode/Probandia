@@ -1,0 +1,1133 @@
+{
+ "labels": {
+  "Age": {
+   "en": "Age",
+   "fr": "Âge"
+  },
+  "Agent": {
+   "en": "Agent",
+   "fr": "Agent"
+  },
+  "Analysis and correlation": {
+   "en": "Analysis and correlation",
+   "fr": "Analyse et corrélation"
+  },
+  "Ancestors of {name}": {
+   "en": "Ancestors of {name}",
+   "fr": "Ascendance de {name}"
+  },
+  "Answer: {text}": {
+   "en": "Answer: {text}",
+   "fr": "Réponse : {text}"
+  },
+  "Archive": {
+   "en": "Archive",
+   "fr": "Archive"
+  },
+  "Asserts": {
+   "en": "Asserts",
+   "fr": "Affirme"
+  },
+  "Born": {
+   "en": "Born",
+   "fr": "Naissance"
+  },
+  "Cause": {
+   "en": "Cause",
+   "fr": "Cause"
+  },
+  "Checked by {who} on {date}, against {looked}.": {
+   "en": "Checked by {who} on {date}, against {looked}.",
+   "fr": "Vérifié par {who} le {date}, sur {looked}."
+  },
+  "Complete and accurate citations": {
+   "en": "Complete and accurate citations",
+   "fr": "Citations complètes et exactes"
+  },
+  "Conclusion or reason": {
+   "en": "Conclusion or reason",
+   "fr": "Conclusion ou raison"
+  },
+  "Confidence": {
+   "en": "Confidence",
+   "fr": "Confiance"
+  },
+  "Confidence of the conclusion: {level}": {
+   "en": "Confidence of the conclusion: {level}",
+   "fr": "Confiance dans la conclusion : {level}"
+  },
+  "Conflicting evidence resolved": {
+   "en": "Conflicting evidence resolved",
+   "fr": "Preuves contradictoires résolues"
+  },
+  "Contents": {
+   "en": "Contents",
+   "fr": "Sommaire"
+  },
+  "Correction": {
+   "en": "Correction",
+   "fr": "Correction"
+  },
+  "Corrections": {
+   "en": "Corrections",
+   "fr": "Corrections"
+  },
+  "Dates that clash": {
+   "en": "Dates that clash",
+   "fr": "Dates en conflit"
+  },
+  "Descendants of {name}": {
+   "en": "Descendants of {name}",
+   "fr": "Descendance de {name}"
+  },
+  "Detected by": {
+   "en": "Detected by",
+   "fr": "Détecté par"
+  },
+  "Died": {
+   "en": "Died",
+   "fr": "Décès"
+  },
+  "Dismissed: {text}": {
+   "en": "Dismissed: {text}",
+   "fr": "Écartée : {text}"
+  },
+  "Divergence left unresolved: {reason}": {
+   "en": "Divergence left unresolved: {reason}",
+   "fr": "Divergence non tranchée : {reason}"
+  },
+  "Element": {
+   "en": "Element",
+   "fr": "Élément"
+  },
+  "Elements of the Genealogical Proof Standard established: {n} of {m}": {
+   "en": "Elements of the Genealogical Proof Standard established: {n} of {m}",
+   "fr": "Éléments du Genealogical Proof Standard établis : {n} sur {m}"
+  },
+  "Engine": {
+   "en": "Engine",
+   "fr": "Moteur"
+  },
+  "Errata": {
+   "en": "Errata",
+   "fr": "Errata"
+  },
+  "Erratum {id}": {
+   "en": "Erratum {id}",
+   "fr": "Erratum {id}"
+  },
+  "Erratum {id} — pass {n}: {wrong} → {correction}. Cause: {cause}. {detection}": {
+   "en": "Erratum {id} — pass {n}: {wrong} → {correction}. Cause: {cause}. {detection}",
+   "fr": "Erratum {id} — passe {n} : {wrong} → {correction}. Cause : {cause}. {detection}"
+  },
+  "Established": {
+   "en": "Established",
+   "fr": "Acquis"
+  },
+  "Event": {
+   "en": "Event",
+   "fr": "Événement"
+  },
+  "Evidence": {
+   "en": "Evidence",
+   "fr": "Preuve"
+  },
+  "Evidence and analysis": {
+   "en": "Evidence and analysis",
+   "fr": "Preuves et analyse"
+  },
+  "Fact, note": {
+   "en": "Fact, note",
+   "fr": "Fait, note"
+  },
+  "French Republican": {
+   "en": "French Republican",
+   "fr": "républicain"
+  },
+  "From": {
+   "en": "From",
+   "fr": "Du"
+  },
+  "Gaps": {
+   "en": "Gaps",
+   "fr": "Lacunes"
+  },
+  "Generated": {
+   "en": "Generated",
+   "fr": "Généré"
+  },
+  "Gregorian": {
+   "en": "Gregorian",
+   "fr": "grégorien"
+  },
+  "Guide built on {date} from: {sources}.": {
+   "en": "Guide built on {date} from: {sources}.",
+   "fr": "Guide établi le {date} à partir de : {sources}."
+  },
+  "Harness": {
+   "en": "Harness",
+   "fr": "Environnement"
+  },
+  "Holdings": {
+   "en": "Holdings",
+   "fr": "Fonds"
+  },
+  "Hypotheses": {
+   "en": "Hypotheses",
+   "fr": "Hypothèses"
+  },
+  "Hypothesis": {
+   "en": "Hypothesis",
+   "fr": "Hypothèse"
+  },
+  "Index": {
+   "en": "Index",
+   "fr": "Index"
+  },
+  "Informant": {
+   "en": "Informant",
+   "fr": "Informateur"
+  },
+  "Information": {
+   "en": "Information",
+   "fr": "Information"
+  },
+  "Instructions": {
+   "en": "Instructions",
+   "fr": "Consignes"
+  },
+  "Julian": {
+   "en": "Julian",
+   "fr": "julien"
+  },
+  "Jurisdictions": {
+   "en": "Jurisdictions",
+   "fr": "Juridictions"
+  },
+  "Kind": {
+   "en": "Kind",
+   "fr": "Nature"
+  },
+  "Known gaps": {
+   "en": "Known gaps",
+   "fr": "Lacunes connues"
+  },
+  "Level": {
+   "en": "Level",
+   "fr": "Niveau"
+  },
+  "Living person": {
+   "en": "Living person",
+   "fr": "Personne vivante"
+  },
+  "Locality guides": {
+   "en": "Locality guides",
+   "fr": "Guides de localité"
+  },
+  "Method": {
+   "en": "Method",
+   "fr": "Méthode"
+  },
+  "Model": {
+   "en": "Model",
+   "fr": "Modèle"
+  },
+  "Name": {
+   "en": "Name",
+   "fr": "Nom"
+  },
+  "Negative searches": {
+   "en": "Negative searches",
+   "fr": "Recherches négatives"
+  },
+  "No source type is catalogued yet for the country {country}.": {
+   "en": "No source type is catalogued yet for the country {country}.",
+   "fr": "Aucun type de source n'est encore catalogué pour le pays {country}."
+  },
+  "No.": {
+   "en": "No.",
+   "fr": "N°"
+  },
+  "Not resolved yet.": {
+   "en": "Not resolved yet.",
+   "fr": "Pas encore résolue."
+  },
+  "Note": {
+   "en": "Note",
+   "fr": "Note"
+  },
+  "Notes": {
+   "en": "Notes",
+   "fr": "Notes"
+  },
+  "Objection {n}": {
+   "en": "Objection {n}",
+   "fr": "Objection {n}"
+  },
+  "Open questions": {
+   "en": "Open questions",
+   "fr": "Questions ouvertes"
+  },
+  "Openings": {
+   "en": "Openings",
+   "fr": "Ouvertures"
+  },
+  "Part {n} — {title}": {
+   "en": "Part {n} — {title}",
+   "fr": "Volet {n} — {title}"
+  },
+  "Pass": {
+   "en": "Pass",
+   "fr": "Passe"
+  },
+  "Pass {n}": {
+   "en": "Pass {n}",
+   "fr": "Passe {n}"
+  },
+  "Persons": {
+   "en": "Persons",
+   "fr": "Personnes"
+  },
+  "Place": {
+   "en": "Place",
+   "fr": "Lieu"
+  },
+  "Places": {
+   "en": "Places",
+   "fr": "Lieux"
+  },
+  "Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.": {
+   "en": "Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.",
+   "fr": "Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste."
+  },
+  "Proof argument for {question}": {
+   "en": "Proof argument for {question}",
+   "fr": "Argument de preuve pour {question}"
+  },
+  "Proof arguments": {
+   "en": "Proof arguments",
+   "fr": "Arguments de preuve"
+  },
+  "Query": {
+   "en": "Query",
+   "fr": "Requête"
+  },
+  "Question": {
+   "en": "Question",
+   "fr": "Question"
+  },
+  "Question and scope": {
+   "en": "Question and scope",
+   "fr": "Question et périmètre"
+  },
+  "Questions": {
+   "en": "Questions",
+   "fr": "Questions"
+  },
+  "Reasonably exhaustive search": {
+   "en": "Reasonably exhaustive search",
+   "fr": "Recherche raisonnablement exhaustive"
+  },
+  "Record": {
+   "en": "Record",
+   "fr": "Acte"
+  },
+  "Reference": {
+   "en": "Reference",
+   "fr": "Cote"
+  },
+  "Refuted": {
+   "en": "Refuted",
+   "fr": "Réfuté"
+  },
+  "Refuted at pass {n}": {
+   "en": "Refuted at pass {n}",
+   "fr": "Réfuté à la passe {n}"
+  },
+  "Refuted in volet {volet}, pass {n}": {
+   "en": "Refuted in volet {volet}, pass {n}",
+   "fr": "Réfuté au volet {volet}, passe {n}"
+  },
+  "Repositories": {
+   "en": "Repositories",
+   "fr": "Dépôts"
+  },
+  "Repository": {
+   "en": "Repository",
+   "fr": "Dépôt"
+  },
+  "Resolution: {kept}. {reasoning}": {
+   "en": "Resolution: {kept}. {reasoning}",
+   "fr": "Résolution : {kept}. {reasoning}"
+  },
+  "Reviewed by {who}.": {
+   "en": "Reviewed by {who}.",
+   "fr": "Relu par {who}."
+  },
+  "Revision history": {
+   "en": "Revision history",
+   "fr": "Historique des révisions"
+  },
+  "Searches, gaps or reason": {
+   "en": "Searches, gaps or reason",
+   "fr": "Recherches, lacunes ou raison"
+  },
+  "Section": {
+   "en": "Section",
+   "fr": "Section"
+  },
+  "Soundly reasoned conclusion": {
+   "en": "Soundly reasoned conclusion",
+   "fr": "Conclusion argumentée"
+  },
+  "Source": {
+   "en": "Source",
+   "fr": "Source"
+  },
+  "Source coverage of {question}": {
+   "en": "Source coverage of {question}",
+   "fr": "Couverture des sources de {question}"
+  },
+  "Source kind": {
+   "en": "Source kind",
+   "fr": "Nature de la source"
+  },
+  "Source type": {
+   "en": "Source type",
+   "fr": "Type de source"
+  },
+  "Sources": {
+   "en": "Sources",
+   "fr": "Sources"
+  },
+  "State": {
+   "en": "State",
+   "fr": "État"
+  },
+  "Status": {
+   "en": "Status",
+   "fr": "Statut"
+  },
+  "Step": {
+   "en": "Step",
+   "fr": "Étape"
+  },
+  "Summary": {
+   "en": "Summary",
+   "fr": "Synthèse"
+  },
+  "Tab goes from person to person, the arrows to the nearest one, Enter puts the person at the centre.": {
+   "en": "Tab goes from person to person, the arrows to the nearest one, Enter puts the person at the centre.",
+   "fr": "Tab passe d'une personne à l'autre, les flèches à la plus proche, Entrée place la personne au centre."
+  },
+  "Taken from the family {family}.": {
+   "en": "Taken from the family {family}.",
+   "fr": "Repris de la famille {family}."
+  },
+  "The question has no window: the sources it calls for are not known yet.": {
+   "en": "The question has no window: the sources it calls for are not known yet.",
+   "fr": "La question n'a pas de fenêtre : les sources qu'elle appelle ne sont pas encore connues."
+  },
+  "The question names no place of known country: the sources it calls for are not known yet.": {
+   "en": "The question names no place of known country: the sources it calls for are not known yet.",
+   "fr": "La question ne nomme aucun lieu de pays connu : les sources qu'elle appelle ne sont pas encore connues."
+  },
+  "Timeline of {name}": {
+   "en": "Timeline of {name}",
+   "fr": "Chronologie de {name}"
+  },
+  "Timelines": {
+   "en": "Timelines",
+   "fr": "Chronologies"
+  },
+  "To": {
+   "en": "To",
+   "fr": "Au"
+  },
+  "To read by hand": {
+   "en": "To read by hand",
+   "fr": "À lire à la main"
+  },
+  "Tools": {
+   "en": "Tools",
+   "fr": "Outils"
+  },
+  "Tree": {
+   "en": "Tree",
+   "fr": "Arbre"
+  },
+  "Variants": {
+   "en": "Variants",
+   "fr": "Variantes"
+  },
+  "What changed": {
+   "en": "What changed",
+   "fr": "Modification"
+  },
+  "What is missing": {
+   "en": "What is missing",
+   "fr": "Ce qui manque"
+  },
+  "What will count as an answer": {
+   "en": "What will count as an answer",
+   "fr": "Ce qui vaudra réponse"
+  },
+  "Why": {
+   "en": "Why",
+   "fr": "Motif"
+  },
+  "Window": {
+   "en": "Window",
+   "fr": "Fenêtre"
+  },
+  "Written with the help of AI agents: each fact cites its source, and the engine checks the citations and the rules of proof; reading the sources again remains the reader's part.": {
+   "en": "Written with the help of AI agents: each fact cites its source, and the engine checks the citations and the rules of proof; reading the sources again remains the reader's part.",
+   "fr": "Rédigé avec l'aide d'agents d'IA : chaque fait cite sa source, et le moteur vérifie les citations et les règles de preuve ; relire les sources reste le travail du lecteur."
+  },
+  "Year": {
+   "en": "Year",
+   "fr": "Année"
+  },
+  "Years": {
+   "en": "Years",
+   "fr": "Années"
+  },
+  "a reading marked uncertain, not yet revised: at most probable ({ids})": {
+   "en": "a reading marked uncertain, not yet revised: at most probable ({ids})",
+   "fr": "une lecture marquée incertaine, pas encore revue : au plus probable ({ids})"
+  },
+  "a record fact does not quote its passage: at most probable ({ids})": {
+   "en": "a record fact does not quote its passage: at most probable ({ids})",
+   "fr": "un fait record ne cite pas son passage : au plus probable ({ids})"
+  },
+  "about {date}": {
+   "en": "about {date}",
+   "fr": "vers {date}"
+  },
+  "after {date}": {
+   "en": "after {date}",
+   "fr": "après {date}"
+  },
+  "an objection of the contradictor is still open: {ids}": {
+   "en": "an objection of the contradictor is still open: {ids}",
+   "fr": "une objection du contradicteur reste ouverte : {ids}"
+  },
+  "analyses not resolved: {ids}": {
+   "en": "analyses not resolved: {ids}",
+   "fr": "analyses non résolues : {ids}"
+  },
+  "analyses whose evidence lacks its three axes: {ids}": {
+   "en": "analyses whose evidence lacks its three axes: {ids}",
+   "fr": "analyses dont les preuves n'ont pas leurs trois axes : {ids}"
+  },
+  "answered": {
+   "en": "answered",
+   "fr": "répondue"
+  },
+  "arrondissement": {
+   "en": "arrondissement",
+   "fr": "arrondissement"
+  },
+  "bailliage": {
+   "en": "bailliage",
+   "fr": "bailliage"
+  },
+  "baptism": {
+   "en": "baptism",
+   "fr": "baptême"
+  },
+  "baptisms": {
+   "en": "baptisms",
+   "fr": "baptêmes"
+  },
+  "before {date}": {
+   "en": "before {date}",
+   "fr": "avant {date}"
+  },
+  "between {date} and {end}": {
+   "en": "between {date} and {end}",
+   "fr": "entre {date} et {end}"
+  },
+  "birth": {
+   "en": "birth",
+   "fr": "naissance"
+  },
+  "births": {
+   "en": "births",
+   "fr": "naissances"
+  },
+  "books": {
+   "en": "books",
+   "fr": "livres"
+  },
+  "burial": {
+   "en": "burial",
+   "fr": "inhumation"
+  },
+  "burials": {
+   "en": "burials",
+   "fr": "sépultures"
+  },
+  "calculated {date}": {
+   "en": "calculated {date}",
+   "fr": "calculé {date}"
+  },
+  "canton": {
+   "en": "canton",
+   "fr": "canton"
+  },
+  "census": {
+   "en": "census",
+   "fr": "recensement"
+  },
+  "censuses": {
+   "en": "censuses",
+   "fr": "recensements"
+  },
+  "child": {
+   "en": "child",
+   "fr": "enfant"
+  },
+  "church province": {
+   "en": "church province",
+   "fr": "province ecclésiastique"
+  },
+  "commune": {
+   "en": "commune",
+   "fr": "commune"
+  },
+  "concluding facts without their three axes (source, information, evidence): {ids}": {
+   "en": "concluding facts without their three axes (source, information, evidence): {ids}",
+   "fr": "faits concluants sans leurs trois axes (source, information, preuve) : {ids}"
+  },
+  "conflict": {
+   "en": "conflict",
+   "fr": "conflit"
+  },
+  "conflicts without an analysis: {ids}": {
+   "en": "conflicts without an analysis: {ids}",
+   "fr": "conflits sans analyse : {ids}"
+  },
+  "conform": {
+   "en": "conform",
+   "fr": "conforme"
+  },
+  "consulted": {
+   "en": "consulted",
+   "fr": "consulté"
+  },
+  "country": {
+   "en": "country",
+   "fr": "pays"
+  },
+  "court": {
+   "en": "court",
+   "fr": "juridiction"
+  },
+  "dates that cannot both be true: at most possible ({ids})": {
+   "en": "dates that cannot both be true: at most possible ({ids})",
+   "fr": "des dates qui ne peuvent être vraies ensemble : au plus possible ({ids})"
+  },
+  "dates that clash, unexplained: {ids}": {
+   "en": "dates that clash, unexplained: {ids}",
+   "fr": "dates incompatibles, sans explication : {ids}"
+  },
+  "deanery": {
+   "en": "deanery",
+   "fr": "doyenné"
+  },
+  "death": {
+   "en": "death",
+   "fr": "décès"
+  },
+  "deaths": {
+   "en": "deaths",
+   "fr": "décès"
+  },
+  "department": {
+   "en": "department",
+   "fr": "département"
+  },
+  "derived from a rule or a catalogue, not from a record of the place": {
+   "en": "derived from a rule or a catalogue, not from a record of the place",
+   "fr": "déduit d'une règle ou d'un catalogue, non d'un document du lieu"
+  },
+  "diocese": {
+   "en": "diocese",
+   "fr": "diocèse"
+  },
+  "directories": {
+   "en": "directories",
+   "fr": "annuaires"
+  },
+  "district": {
+   "en": "district",
+   "fr": "district"
+  },
+  "divergences left unresolved, for an answered question: {ids}": {
+   "en": "divergences left unresolved, for an answered question: {ids}",
+   "fr": "divergences non tranchées, pour une question résolue : {ids}"
+  },
+  "emigration": {
+   "en": "emigration",
+   "fr": "émigration"
+  },
+  "established": {
+   "en": "established",
+   "fr": "établi"
+  },
+  "event": {
+   "en": "event",
+   "fr": "événement"
+  },
+  "excerpts not found as quoted: {ids}": {
+   "en": "excerpts not found as quoted: {ids}",
+   "fr": "extraits introuvables tels que cités : {ids}"
+  },
+  "fact retracted": {
+   "en": "fact retracted",
+   "fr": "fait retiré"
+  },
+  "fact revised": {
+   "en": "fact revised",
+   "fr": "fait révisé"
+  },
+  "facts without a citation: {ids}": {
+   "en": "facts without a citation: {ids}",
+   "fr": "faits sans citation : {ids}"
+  },
+  "facts without a status: {ids}": {
+   "en": "facts without a status: {ids}",
+   "fr": "faits sans statut : {ids}"
+  },
+  "father": {
+   "en": "father",
+   "fr": "père"
+  },
+  "faulty index": {
+   "en": "faulty index",
+   "fr": "index fautif"
+  },
+  "from an index": {
+   "en": "from an index",
+   "fr": "tiré d'un index"
+  },
+  "gap": {
+   "en": "gap",
+   "fr": "lacune"
+  },
+  "generality": {
+   "en": "generality",
+   "fr": "généralité"
+  },
+  "group of parishes": {
+   "en": "group of parishes",
+   "fr": "groupement de paroisses"
+  },
+  "homonym": {
+   "en": "homonym",
+   "fr": "homonyme"
+  },
+  "hypothesis": {
+   "en": "hypothesis",
+   "fr": "hypothèse"
+  },
+  "identity": {
+   "en": "identity",
+   "fr": "identité"
+  },
+  "indirect evidence": {
+   "en": "indirect evidence",
+   "fr": "preuve indirecte"
+  },
+  "indirect evidence: {ids}": {
+   "en": "indirect evidence: {ids}",
+   "fr": "preuve indirecte : {ids}"
+  },
+  "lacking": {
+   "en": "lacking",
+   "fr": "manquant"
+  },
+  "line {a} of the transcription": {
+   "en": "line {a} of the transcription",
+   "fr": "ligne {a} de la transcription"
+  },
+  "lines {a}–{b} of the transcription": {
+   "en": "lines {a}–{b} of the transcription",
+   "fr": "lignes {a} à {b} de la transcription"
+  },
+  "living person, masked": {
+   "en": "living person, masked",
+   "fr": "personne vivante, masquée"
+  },
+  "manuscripts": {
+   "en": "manuscripts",
+   "fr": "manuscrits"
+  },
+  "marriage": {
+   "en": "marriage",
+   "fr": "mariage"
+  },
+  "marriages": {
+   "en": "marriages",
+   "fr": "mariages"
+  },
+  "merged": {
+   "en": "merged",
+   "fr": "fusionnée"
+  },
+  "military service": {
+   "en": "military service",
+   "fr": "service militaire"
+  },
+  "misreading": {
+   "en": "misreading",
+   "fr": "erreur de lecture"
+  },
+  "missing source": {
+   "en": "missing source",
+   "fr": "source manquante"
+  },
+  "mother": {
+   "en": "mother",
+   "fr": "mère"
+  },
+  "moved": {
+   "en": "moved",
+   "fr": "déplacée"
+  },
+  "municipality": {
+   "en": "municipality",
+   "fr": "municipalité"
+  },
+  "naturalisation": {
+   "en": "naturalisation",
+   "fr": "naturalisation"
+  },
+  "negative evidence": {
+   "en": "negative evidence",
+   "fr": "preuve négative"
+  },
+  "negative evidence, drawn from an absence: {ids}": {
+   "en": "negative evidence, drawn from an absence: {ids}",
+   "fr": "preuve négative, tirée d'une absence : {ids}"
+  },
+  "newspapers": {
+   "en": "newspapers",
+   "fr": "presse"
+  },
+  "no conclusion yet: the question is open": {
+   "en": "no conclusion yet: the question is open",
+   "fr": "pas encore de conclusion : la question est ouverte"
+  },
+  "no fact yet": {
+   "en": "no fact yet",
+   "fr": "aucun fait pour l'instant"
+  },
+  "no known end": {
+   "en": "no known end",
+   "fr": "sans fin connue"
+  },
+  "no known start": {
+   "en": "no known start",
+   "fr": "sans début connu"
+  },
+  "no proof argument accepted, though one is required ({ids})": {
+   "en": "no proof argument accepted, though one is required ({ids})",
+   "fr": "aucun argument de preuve accepté, alors qu'il en faut un ({ids})"
+  },
+  "no specific question of the research is answered": {
+   "en": "no specific question of the research is answered",
+   "fr": "aucune question précise de la recherche n'est répondue"
+  },
+  "not applicable": {
+   "en": "not applicable",
+   "fr": "sans objet"
+  },
+  "not conform": {
+   "en": "not conform",
+   "fr": "non conforme"
+  },
+  "not consulted ({status})": {
+   "en": "not consulted ({status})",
+   "fr": "non consulté ({status})"
+  },
+  "notarial records": {
+   "en": "notarial records",
+   "fr": "actes notariés"
+  },
+  "occupation": {
+   "en": "occupation",
+   "fr": "profession"
+  },
+  "open": {
+   "en": "open",
+   "fr": "ouverte"
+  },
+  "other": {
+   "en": "other",
+   "fr": "autre"
+  },
+  "outdated negative": {
+   "en": "outdated negative",
+   "fr": "négatif périmé"
+  },
+  "page read on {date}": {
+   "en": "page read on {date}",
+   "fr": "page lue le {date}"
+  },
+  "parish": {
+   "en": "parish",
+   "fr": "paroisse"
+  },
+  "partial": {
+   "en": "partial",
+   "fr": "partiel"
+  },
+  "partly conform": {
+   "en": "partly conform",
+   "fr": "en partie conforme"
+  },
+  "place of known country": {
+   "en": "place of known country",
+   "fr": "lieu de pays connu"
+  },
+  "possible": {
+   "en": "possible",
+   "fr": "possible"
+  },
+  "probable": {
+   "en": "probable",
+   "fr": "probable"
+  },
+  "proof argument not accepted yet: {ids}": {
+   "en": "proof argument not accepted yet: {ids}",
+   "fr": "argument de preuve pas encore accepté : {ids}"
+  },
+  "proof argument reviewed by the same session only: {ids}": {
+   "en": "proof argument reviewed by the same session only: {ids}",
+   "fr": "argument de preuve relu par la même session seulement : {ids}"
+  },
+  "proved": {
+   "en": "proved",
+   "fr": "prouvé"
+  },
+  "proven by a record": {
+   "en": "proven by a record",
+   "fr": "prouvé par un acte"
+  },
+  "province": {
+   "en": "province",
+   "fr": "province"
+  },
+  "record facts that do not quote their passage: {ids}": {
+   "en": "record facts that do not quote their passage: {ids}",
+   "fr": "faits record qui ne citent pas leur passage : {ids}"
+  },
+  "records destroyed": {
+   "en": "records destroyed",
+   "fr": "registres détruits"
+  },
+  "records incomplete": {
+   "en": "records incomplete",
+   "fr": "registres lacunaires"
+  },
+  "records missing": {
+   "en": "records missing",
+   "fr": "registres manquants"
+  },
+  "region": {
+   "en": "region",
+   "fr": "région"
+  },
+  "rejected": {
+   "en": "rejected",
+   "fr": "rejetée"
+  },
+  "residence": {
+   "en": "residence",
+   "fr": "résidence"
+  },
+  "rests on a fact without a status: {ids}": {
+   "en": "rests on a fact without a status: {ids}",
+   "fr": "repose sur un fait sans statut : {ids}"
+  },
+  "rests on a hypothesis: {ids}": {
+   "en": "rests on a hypothesis: {ids}",
+   "fr": "repose sur une hypothèse : {ids}"
+  },
+  "rests on a refuted fact: {ids}": {
+   "en": "rests on a refuted fact: {ids}",
+   "fr": "repose sur un fait réfuté : {ids}"
+  },
+  "rests on an index, not on the record itself: {ids}": {
+   "en": "rests on an index, not on the record itself: {ids}",
+   "fr": "repose sur un index, non sur l'acte lui-même : {ids}"
+  },
+  "retained": {
+   "en": "retained",
+   "fr": "retenue"
+  },
+  "rewritten": {
+   "en": "rewritten",
+   "fr": "réécrite"
+  },
+  "secondary information that no second source confirms: {ids}": {
+   "en": "secondary information that no second source confirms: {ids}",
+   "fr": "information secondaire qu'aucune seconde source ne confirme : {ids}"
+  },
+  "secondary information that only one informant gives, though in several sources: {ids}": {
+   "en": "secondary information that only one informant gives, though in several sources: {ids}",
+   "fr": "information secondaire qu'un seul informateur donne, même dans plusieurs sources : {ids}"
+  },
+  "secondary information whose second source copies the first, or is the same act: {ids}": {
+   "en": "secondary information whose second source copies the first, or is the same act: {ids}",
+   "fr": "information secondaire dont la seconde source recopie la première, ou est le même acte : {ids}"
+  },
+  "seneschalsy": {
+   "en": "seneschalsy",
+   "fr": "sénéchaussée"
+  },
+  "source types to search, or to justify: {ids}": {
+   "en": "source types to search, or to justify: {ids}",
+   "fr": "types de sources à chercher, ou à justifier : {ids}"
+  },
+  "sources without a type, whose citation cannot be checked: {ids}": {
+   "en": "sources without a type, whose citation cannot be checked: {ids}",
+   "fr": "sources sans type, dont la citation ne peut être contrôlée : {ids}"
+  },
+  "sources without the fields their model requires: {ids}": {
+   "en": "sources without the fields their model requires: {ids}",
+   "fr": "sources sans les champs que leur modèle exige : {ids}"
+  },
+  "spouse": {
+   "en": "spouse",
+   "fr": "conjoint"
+  },
+  "state": {
+   "en": "state",
+   "fr": "état"
+  },
+  "the contradictor, independently": {
+   "en": "the contradictor, independently",
+   "fr": "le contradicteur, de façon indépendante"
+  },
+  "the question conforms only partly to the GPS: {ids}": {
+   "en": "the question conforms only partly to the GPS: {ids}",
+   "fr": "la question n'est conforme au GPS qu'en partie : {ids}"
+  },
+  "the question does not conform to the GPS: at most possible ({ids})": {
+   "en": "the question does not conform to the GPS: at most possible ({ids})",
+   "fr": "la question n'est pas conforme au GPS : au plus possible ({ids})"
+  },
+  "the question has no {ids}": {
+   "en": "the question has no {ids}",
+   "fr": "la question n'a pas de {ids}"
+  },
+  "the same session that wrote it: not an independent review": {
+   "en": "the same session that wrote it: not an independent review",
+   "fr": "la session même qui l'a rédigé : ce n'est pas une relecture indépendante"
+  },
+  "to do": {
+   "en": "to do",
+   "fr": "à faire"
+  },
+  "tool failure": {
+   "en": "tool failure",
+   "fr": "défaillance d'outil"
+  },
+  "unjustified gap": {
+   "en": "unjustified gap",
+   "fr": "lacune non justifiée"
+  },
+  "unresolved": {
+   "en": "unresolved",
+   "fr": "non résolue"
+  },
+  "unsupported": {
+   "en": "unsupported",
+   "fr": "non étayé"
+  },
+  "web {web} · MCP {mcp} · archives {archive} · engine {engine}": {
+   "en": "web {web} · MCP {mcp} · archives {archive} · engine {engine}",
+   "fr": "web {web} · MCP {mcp} · archives {archive} · moteur {engine}"
+  },
+  "window": {
+   "en": "window",
+   "fr": "fenêtre"
+  },
+  "wrong inference": {
+   "en": "wrong inference",
+   "fr": "inférence erronée"
+  },
+  "{archive}: {url} — not consulted, a sign-in is required": {
+   "en": "{archive}: {url} — not consulted, a sign-in is required",
+   "fr": "{archive} : {url} — non consulté, une connexion est requise"
+  },
+  "{date}": {
+   "en": "{date}",
+   "fr": "{date}"
+  },
+  "{name}, today {current}": {
+   "en": "{name}, today {current}",
+   "fr": "{name}, aujourd'hui {current}"
+  },
+  "{name}: {kind}": {
+   "en": "{name}: {kind}",
+   "fr": "{name} : {kind}"
+  },
+  "{question}: the elements of the Genealogical Proof Standard": {
+   "en": "{question}: the elements of the Genealogical Proof Standard",
+   "fr": "{question} : les éléments du Genealogical Proof Standard"
+  },
+  "“{text}” ({where})": {
+   "en": "“{text}” ({where})",
+   "fr": "« {text} » ({where})"
+  }
+ },
+ "research": "2026-09-04-birth-of-henri-marchand",
+ "slots": {
+  "en": {
+   "chapter": {
+    "body": "<section id=\"s-pass-1\">\n<span id=\"s-01ja000000000000000000gps1\"></span>\n<h2>1 Pass 1 — La naissance d&#x27;Henri</h2>\n<p>L'acte de naissance d'Henri, au registre de la mairie, donne 1870<sup class=\"status-record\"><a href=\"#fn-1\">1</a></sup> ; la table décennale, recopiée après l'incendie de 1871, donne 1871<sup class=\"status-index\"><a href=\"#fn-2\">2</a></sup>. L'acte fait foi.</p>\n</section>\n<section class=\"notes chapter-notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-1\" class=\"status-record\">Record. Bourg-Vert, civil registration, naissances, 1870, 1 E 12, naissance no. 31, 14 March 1870; Archives communales de Bourg-Vert. “N° 31 Marchand Henri L'an mil huit cent soixante-dix, le quatorze mars, à dix heures du matin, par devant nous maire de Bourg-Vert, est comparu Pierre Marchand, cultivateur, âgé de vingt-neuf ans, lequel nous a présenté un enfant du sexe masculin né ce jour,” (lines 1–4 of the transcription)</li>\n<li id=\"fn-2\" class=\"status-index\">Index. Bourg-Vert, ten-year index, 1863-1872, 3 E 41/TD 7, page 4; Archives départementales de Valombre. “MARCHAND Henri, 14 mars 1871” (page read on 4 September 2026)</li>\n</ol></section>\n<section id=\"s-pass-2\">\n<span id=\"s-01ja000000000000000000dsg1\"></span>\n<h2>2 Pass 2 — Synthèse</h2>\n<p>Les faits établis : Louis MARCHAND, birth, 1898, Bourg-Vert<sup class=\"status-record\"><a href=\"#fn-3\">3</a></sup>, Louis MARCHAND, death, 1970<sup class=\"status-index\"><a href=\"#fn-4\">4</a></sup>, Louise PERRIN, birth, about 1818, Bourg-Vert<sup class=\"status-hypothesis\"><a href=\"#fn-5\">5</a></sup>.</p>\n<table>\n<thead>\n<tr>\n<th>Personne</th>\n<th>Statut</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Louis MARCHAND</td>\n<td>acte</td>\n</tr>\n<tr>\n<td>Henri MARCHAND</td>\n<td>index</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section class=\"notes chapter-notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-3\" class=\"status-record\">Record. Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li id=\"fn-4\" class=\"status-index\">Index. Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li id=\"fn-5\" class=\"status-hypothesis\">Hypothesis.</li>\n</ol></section>\n<section id=\"s-errata\">\n<h2>3 Errata</h2>\n<ul>\n<li><strong>Erratum E1</strong> — Pass 2: vers 1870 → 1871. Cause: misreading. Detected by: relecture de l'acte.</li>\n</ul>\n</section>\n<section id=\"s-method\">\n<h2>4 Method</h2>\n<p>Written with the help of AI agents: each fact cites its source, and the engine checks the citations and the rules of proof; reading the sources again remains the reader's part.</p>\n<table>\n<thead>\n<tr>\n<th>Pass</th>\n<th>Harness</th>\n<th>Agent</th>\n<th>Model</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n<tr>\n<td>2</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-coverage-q1\">\n<h3>4.1 Source coverage of Q1</h3>\n<table>\n<thead>\n<tr>\n<th>Source type</th>\n<th>Places</th>\n<th>Years</th>\n<th>State</th>\n<th>Searches, gaps or reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>civil registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>ten-year indexes</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>census lists</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-coverage-q2\">\n<h3>4.2 Source coverage of Q2</h3>\n<table>\n<thead>\n<tr>\n<th>Source type</th>\n<th>Places</th>\n<th>Years</th>\n<th>State</th>\n<th>Searches, gaps or reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>civil registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>ten-year indexes</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>census lists</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n<tr>\n<td>notarial records</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né</td>\n</tr>\n<tr>\n<td>military service registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871</td>\n</tr>\n<tr>\n<td>registration and estates</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>aucune mutation ni succession n'est attendue pour la naissance d'un enfant</td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-questions\">\n<h2>5 Questions</h2>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>Question</th>\n<th>Status</th>\n<th>Conclusion or reason</th>\n<th>Confidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Q1</td>\n<td>Quand et où est né Henri MARCHAND ?</td>\n<td>answered</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>proved</td>\n</tr>\n<tr>\n<td>Q2</td>\n<td>Qui sont les parents d'Henri MARCHAND ?</td>\n<td>answered</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>proved</td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-standard-q1\">\n<h3>5.1 Q1: the elements of the Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Elements of the Genealogical Proof Standard established: 5 of 5</strong></p>\n<p><em>Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.</em></p>\n<p>Confidence of the conclusion: proved</p>\n<table>\n<thead>\n<tr>\n<th>Element</th>\n<th>State</th>\n<th>What is missing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reasonably exhaustive search</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Complete and accurate citations</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Analysis and correlation</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Conflicting evidence resolved</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Soundly reasoned conclusion</td>\n<td>established</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n<section id=\"s-standard-q2\">\n<h3>5.2 Q2: the elements of the Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Elements of the Genealogical Proof Standard established: 5 of 5</strong></p>\n<p><em>Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.</em></p>\n<p>Confidence of the conclusion: proved</p>\n<table>\n<thead>\n<tr>\n<th>Element</th>\n<th>State</th>\n<th>What is missing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reasonably exhaustive search</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Complete and accurate citations</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Analysis and correlation</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Conflicting evidence resolved</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Soundly reasoned conclusion</td>\n<td>established</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n</section>\n<section id=\"s-proofs\">\n<h2>6 Proof arguments</h2>\n<section id=\"s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">\n<h3>6.1 Proof argument for Q1</h3>\n<p><strong>Question.</strong> Quand et où est né Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870) ; la table décennale 1863-1872.</p>\n<p><strong>Analysis.</strong> L'acte est un original dressé par l'officier d'état civil sur la déclaration du père ; la table est une copie dressée après l'incendie de 1871.</p>\n<p><strong>Correlation.</strong> Le recensement de 1872 donne à Henri deux ans, ce qui s'accorde avec 1870.</p>\n<p><strong>Conflicts resolved.</strong> La table donne 1871 : une erreur de copie, l'acte original fait foi.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est né à Bourg-Vert le 14 mars 1870.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Reviewed by the contradictor, independently.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n<section id=\"s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">\n<h3>6.2 Proof argument for Q2</h3>\n<p><strong>Question.</strong> Qui sont les parents d'Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870).</p>\n<p><strong>Analysis.</strong> Le père déclare lui-même la naissance et nomme la mère : information primaire.</p>\n<p><strong>Correlation.</strong> Le recensement de 1872 montre Henri au foyer de Pierre et de Marie.</p>\n<p><strong>Conflicts resolved.</strong> La table décennale ne contredit que l'année, pas la filiation.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est le fils de Pierre MARCHAND et de Marie LEBRUN.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Reviewed by the contradictor, independently.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n</section>\n<section id=\"s-evidence\">\n<h2>7 Evidence and analysis</h2>\n<section id=\"s-analysis-an-henri-marchand-1870-birth\">\n<h3>7.1 Henri MARCHAND: birth</h3>\n<table>\n<thead>\n<tr>\n<th>Asserts</th>\n<th>Informant</th>\n<th>Source</th>\n<th>Source kind</th>\n<th>Information</th>\n<th>Evidence</th>\n<th>Fact, note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td>le père, à la déclaration</td>\n<td>Bourg-Vert, civil registration, naissances, 1870, 1 E 12, naissance no. 31, 14 March 1870; Archives communales de Bourg-Vert.</td>\n<td>original</td>\n<td>primary</td>\n<td>direct</td>\n<td><code>henri-marchand-1870.birth</code></td>\n</tr>\n<tr>\n<td>1871</td>\n<td>le greffier qui dressa la table, après l'incendie</td>\n<td>Bourg-Vert, ten-year index, 1863-1872, 3 E 41/TD 7, page 4; Archives départementales de Valombre.</td>\n<td>derivative</td>\n<td>secondary</td>\n<td>direct</td>\n<td><code>henri-marchand-1870.birth.2</code></td>\n</tr>\n</tbody>\n</table>\n<p>Resolution: 1870 (<code>henri-marchand-1870.birth</code>). L'acte fut dressé à la mairie le jour de la déclaration, par le père ; la table, recopiée après l'incendie de 1871, est dérivée et se trompe d'année</p>\n</section>\n</section>\n<section id=\"s-timelines\">\n<h2>8 Timelines</h2>\n<section id=\"s-timeline-henri-marchand-1870\">\n<h3>8.1 Timeline of Henri MARCHAND</h3>\n<figure class=\"timeline\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"tl\" viewBox=\"0 0 760 166\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Timeline of Henri MARCHAND\">\n<style>\n  .tl { --record: #1d6b3a; --index: #2a5d9f; --hypothesis: #8a6100; --clash: #b00020; --ink: #1b1b1b;\n    --paper: #ffffff; --line: #555555; }\n  .tl text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .tl .axis { stroke: var(--line); stroke-width: 1.5; }\n  .tl .tick { stroke: var(--line); stroke-width: 1; }\n  .tl .tick-label, .tl .kin { font-size: 11px; fill: #444444; }\n  .tl .stem { stroke: #999999; stroke-width: 1; }\n  .tl .mark { stroke-width: 2; }\n  .tl .record .mark { fill: var(--record); stroke: var(--record); }\n  .tl .index .mark { fill: var(--paper); stroke: var(--index); }\n  .tl .hypothesis .mark { fill: var(--paper); stroke: var(--hypothesis); stroke-dasharray: 3 2; }\n  .tl .clash .mark { fill: var(--paper); stroke: var(--clash); stroke-width: 3; stroke-dasharray: none; }\n  .tl .clash text.sign { font-weight: bold; fill: var(--clash); }\n  .tl .clash text.label { fill: var(--clash); font-weight: 600; }\n  .tl .landmark { fill: #777777; }\n</style>\n<title>Timeline of Henri MARCHAND</title>\n<desc>birth 1870; birth 1871; marriage 1896; death 1931; child: birth 1898; father: death 1899; mother: death 1902; spouse: death 1950</desc>\n<line class=\"axis\" x1=\"36\" y1=\"72\" x2=\"724\" y2=\"72\"/>\n<line class=\"tick\" x1=\"63.8\" y1=\"68\" x2=\"63.8\" y2=\"76\"/><text class=\"tick-label\" x=\"63.8\" y=\"89\" text-anchor=\"middle\">1870</text>\n<line class=\"tick\" x1=\"142.9\" y1=\"68\" x2=\"142.9\" y2=\"76\"/><text class=\"tick-label\" x=\"142.9\" y=\"89\" text-anchor=\"middle\">1880</text>\n<line class=\"tick\" x1=\"221.9\" y1=\"68\" x2=\"221.9\" y2=\"76\"/><text class=\"tick-label\" x=\"221.9\" y=\"89\" text-anchor=\"middle\">1890</text>\n<line class=\"tick\" x1=\"301.0\" y1=\"68\" x2=\"301.0\" y2=\"76\"/><text class=\"tick-label\" x=\"301.0\" y=\"89\" text-anchor=\"middle\">1900</text>\n<line class=\"tick\" x1=\"380.0\" y1=\"68\" x2=\"380.0\" y2=\"76\"/><text class=\"tick-label\" x=\"380.0\" y=\"89\" text-anchor=\"middle\">1910</text>\n<line class=\"tick\" x1=\"459.0\" y1=\"68\" x2=\"459.0\" y2=\"76\"/><text class=\"tick-label\" x=\"459.0\" y=\"89\" text-anchor=\"middle\">1920</text>\n<line class=\"tick\" x1=\"538.1\" y1=\"68\" x2=\"538.1\" y2=\"76\"/><text class=\"tick-label\" x=\"538.1\" y=\"89\" text-anchor=\"middle\">1930</text>\n<line class=\"tick\" x1=\"617.1\" y1=\"68\" x2=\"617.1\" y2=\"76\"/><text class=\"tick-label\" x=\"617.1\" y=\"89\" text-anchor=\"middle\">1940</text>\n<line class=\"tick\" x1=\"696.2\" y1=\"68\" x2=\"696.2\" y2=\"76\"/><text class=\"tick-label\" x=\"696.2\" y=\"89\" text-anchor=\"middle\">1950</text>\n<g class=\"record\"><title>birth 1870</title><line class=\"stem\" x1=\"63.8\" y1=\"57\" x2=\"63.8\" y2=\"64\"/><circle class=\"mark\" cx=\"63.8\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"63.8\" y=\"54\" text-anchor=\"middle\">birth 1870</text></g>\n<g class=\"index\"><title>birth 1871</title><line class=\"stem\" x1=\"71.7\" y1=\"41\" x2=\"71.7\" y2=\"64\"/><circle class=\"mark\" cx=\"71.7\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"71.7\" y=\"38\" text-anchor=\"middle\">birth 1871</text></g>\n<g class=\"index\"><title>marriage 1896</title><line class=\"stem\" x1=\"269.3\" y1=\"57\" x2=\"269.3\" y2=\"64\"/><circle class=\"mark\" cx=\"269.3\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"269.3\" y=\"54\" text-anchor=\"middle\">marriage 1896</text></g>\n<g class=\"index\"><title>death 1931</title><line class=\"stem\" x1=\"546.0\" y1=\"57\" x2=\"546.0\" y2=\"64\"/><circle class=\"mark\" cx=\"546.0\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"546.0\" y=\"54\" text-anchor=\"middle\">death 1931</text></g>\n<g><title>child: birth 1898 — Louis MARCHAND</title><polygon class=\"landmark\" points=\"285.1,96 289.1,103 281.1,103\"/><text class=\"kin\" x=\"285.1\" y=\"118\" text-anchor=\"middle\">child: birth 1898</text></g>\n<g><title>father: death 1899 — Pierre MARCHAND</title><polygon class=\"landmark\" points=\"293.0,96 297.0,103 289.0,103\"/><text class=\"kin\" x=\"293.0\" y=\"132\" text-anchor=\"middle\">father: death 1899</text></g>\n<g><title>mother: death 1902 — Marie LEBRUN</title><polygon class=\"landmark\" points=\"316.8,96 320.8,103 312.8,103\"/><text class=\"kin\" x=\"316.8\" y=\"146\" text-anchor=\"middle\">mother: death 1902</text></g>\n<g><title>spouse: death 1950 — Jeanne ROUSSEL</title><polygon class=\"landmark\" points=\"696.2,96 700.2,103 692.2,103\"/><text class=\"kin\" x=\"696.2\" y=\"118\" text-anchor=\"middle\">spouse: death 1950</text></g>\n</svg>\n</figure>\n<table>\n<thead>\n<tr>\n<th>Year</th>\n<th>Age</th>\n<th>Event</th>\n<th>Place</th>\n<th>Dates that clash</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td></td>\n<td>birth</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1871</td>\n<td></td>\n<td>birth</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1896</td>\n<td>26</td>\n<td>marriage</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1898</td>\n<td></td>\n<td>child — Louis MARCHAND: birth</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1899</td>\n<td></td>\n<td>father — Pierre MARCHAND: death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1902</td>\n<td></td>\n<td>mother — Marie LEBRUN: death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1931</td>\n<td>61</td>\n<td>death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1950</td>\n<td></td>\n<td>spouse — Jeanne ROUSSEL: death</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-sources\">\n<h2>9 Sources</h2>\n<ul>\n<li>Bourg-Vert. Civil registration, naissances, 1870, 1 E 12. Archives communales de Bourg-Vert.</li>\n<li>Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li>Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li>Bourg-Vert. Ten-year index, 1863-1872, 3 E 41/TD 7. Archives départementales de Valombre.</li>\n</ul>\n</section>\n<section id=\"s-guides\">\n<h2>10 Locality guides</h2>\n<section id=\"s-guide-bourg-vert\">\n<h3>10.1 Bourg-Vert</h3>\n<figure class=\"timeline guide\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ju\" viewBox=\"0 0 760 112\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Jurisdictions — Bourg-Vert\">\n<style>\n  .ju { --bar: #2a5d9f; --derived: #8a6100; --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }\n  .ju text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .ju .axis { stroke: var(--line); stroke-width: 1.5; }\n  .ju .tick { stroke: var(--line); stroke-width: 1; }\n  .ju .grid { stroke: #dddddd; stroke-width: 1; }\n  .ju .tick-label { font-size: 11px; fill: #444444; }\n  .ju .bar { fill: var(--bar); fill-opacity: 0.25; stroke: var(--bar); stroke-width: 1.5; }\n  .ju .derived .bar { fill: var(--derived); stroke: var(--derived); stroke-dasharray: 5 3; }\n  .ju .open { fill: none; stroke: var(--line); stroke-width: 1.5; }\n</style>\n<title>Jurisdictions — Bourg-Vert</title>\n<desc>commune Bourg-Vert: 1790 – no known end (catalogue:invented); department Valombre: 1790 – no known end (catalogue:invented); country FR: no known start – no known end (catalogue:invented)</desc>\n<line class=\"grid\" x1=\"299.4\" y1=\"8\" x2=\"299.4\" y2=\"84\"/><line class=\"tick\" x1=\"299.4\" y1=\"84\" x2=\"299.4\" y2=\"89\"/><text class=\"tick-label\" x=\"299.4\" y=\"102\" text-anchor=\"middle\">1782</text>\n<line class=\"grid\" x1=\"348.8\" y1=\"8\" x2=\"348.8\" y2=\"84\"/><line class=\"tick\" x1=\"348.8\" y1=\"84\" x2=\"348.8\" y2=\"89\"/><text class=\"tick-label\" x=\"348.8\" y=\"102\" text-anchor=\"middle\">1784</text>\n<line class=\"grid\" x1=\"398.2\" y1=\"8\" x2=\"398.2\" y2=\"84\"/><line class=\"tick\" x1=\"398.2\" y1=\"84\" x2=\"398.2\" y2=\"89\"/><text class=\"tick-label\" x=\"398.2\" y=\"102\" text-anchor=\"middle\">1786</text>\n<line class=\"grid\" x1=\"447.6\" y1=\"8\" x2=\"447.6\" y2=\"84\"/><line class=\"tick\" x1=\"447.6\" y1=\"84\" x2=\"447.6\" y2=\"89\"/><text class=\"tick-label\" x=\"447.6\" y=\"102\" text-anchor=\"middle\">1788</text>\n<line class=\"grid\" x1=\"497.0\" y1=\"8\" x2=\"497.0\" y2=\"84\"/><line class=\"tick\" x1=\"497.0\" y1=\"84\" x2=\"497.0\" y2=\"89\"/><text class=\"tick-label\" x=\"497.0\" y=\"102\" text-anchor=\"middle\">1790</text>\n<line class=\"grid\" x1=\"546.4\" y1=\"8\" x2=\"546.4\" y2=\"84\"/><line class=\"tick\" x1=\"546.4\" y1=\"84\" x2=\"546.4\" y2=\"89\"/><text class=\"tick-label\" x=\"546.4\" y=\"102\" text-anchor=\"middle\">1792</text>\n<line class=\"grid\" x1=\"595.8\" y1=\"8\" x2=\"595.8\" y2=\"84\"/><line class=\"tick\" x1=\"595.8\" y1=\"84\" x2=\"595.8\" y2=\"89\"/><text class=\"tick-label\" x=\"595.8\" y=\"102\" text-anchor=\"middle\">1794</text>\n<line class=\"grid\" x1=\"645.2\" y1=\"8\" x2=\"645.2\" y2=\"84\"/><line class=\"tick\" x1=\"645.2\" y1=\"84\" x2=\"645.2\" y2=\"89\"/><text class=\"tick-label\" x=\"645.2\" y=\"102\" text-anchor=\"middle\">1796</text>\n<line class=\"grid\" x1=\"694.6\" y1=\"8\" x2=\"694.6\" y2=\"84\"/><line class=\"tick\" x1=\"694.6\" y1=\"84\" x2=\"694.6\" y2=\"89\"/><text class=\"tick-label\" x=\"694.6\" y=\"102\" text-anchor=\"middle\">1798</text>\n<line class=\"grid\" x1=\"744.0\" y1=\"8\" x2=\"744.0\" y2=\"84\"/><line class=\"tick\" x1=\"744.0\" y1=\"84\" x2=\"744.0\" y2=\"89\"/><text class=\"tick-label\" x=\"744.0\" y=\"102\" text-anchor=\"middle\">1800</text>\n<line class=\"axis\" x1=\"250\" y1=\"84\" x2=\"744\" y2=\"84\"/>\n<g class=\"row\"><title>commune Bourg-Vert: 1790 – no known end (catalogue:invented)</title><text x=\"242\" y=\"24\" text-anchor=\"end\">commune Bourg-Vert</text><rect class=\"bar\" x=\"497.0\" y=\"14\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,14 743.0,20 737.0,26\"/></g>\n<g class=\"row\"><title>department Valombre: 1790 – no known end (catalogue:invented)</title><text x=\"242\" y=\"46\" text-anchor=\"end\">department Valombre</text><rect class=\"bar\" x=\"497.0\" y=\"36\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,36 743.0,42 737.0,48\"/></g>\n<g class=\"row\"><title>country FR: no known start – no known end (catalogue:invented)</title><text x=\"242\" y=\"68\" text-anchor=\"end\">country FR</text><rect class=\"bar\" x=\"250.0\" y=\"58\" width=\"494.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"257.0,58 251.0,64 257.0,70\"/><polyline class=\"open\" points=\"737.0,58 743.0,64 737.0,70\"/></g>\n</svg>\n</figure>\n<p><strong>Jurisdictions</strong></p>\n<table>\n<thead>\n<tr>\n<th>Level</th>\n<th>Name</th>\n<th>From</th>\n<th>To</th>\n<th>Source</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>commune</td>\n<td>Bourg-Vert</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n<tr>\n<td>department</td>\n<td>Valombre</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented (department VB)</td>\n</tr>\n<tr>\n<td>country</td>\n<td>FR</td>\n<td>…</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Repositories</strong></p>\n<table>\n<thead>\n<tr>\n<th>Repository</th>\n<th>Holdings</th>\n<th>Note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Archives départementales de Valombre (<code>ad_valombre</code>)</td>\n<td>births 1792–1936 (3 E 41), decennial_table 1802–1932 (3 E 41/TD), censuses 1836–1936 (6 M)</td>\n<td></td>\n</tr>\n<tr>\n<td>Archives communales de Bourg-Vert (<code>ac_bourg_vert</code>)</td>\n<td>births 1792–1936 (1 E)</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Guide built on 4 September 2026 from: catalogue:invented, catalogue:archives.</p>\n</section>\n</section>",
+    "generated": "3 September 2026",
+    "head": "<meta name=\"generator\" content=\"Probandia\">\n<meta name=\"dcterms.modified\" content=\"2026-09-03T09:03:00Z\">\n<title>Quand et où est né Henri MARCHAND, et de qui ?</title>",
+    "manual": "<section class=\"manual\"><h2>To read by hand</h2><ul>\n<li>familysearch: https://www.familysearch.org/ark:/61903/3:1:EXAMPLE — not consulted, a sign-in is required</li>\n</ul></section>",
+    "research": "2026-09-04-birth-of-henri-marchand",
+    "title": "<h1>Quand et où est né Henri MARCHAND, et de qui ?</h1>",
+    "toc": "<nav aria-labelledby=\"toc-title\"><h2 id=\"toc-title\">Contents</h2>\n<ol>\n<li><a href=\"#s-pass-1\">1 Pass 1 — La naissance d&#x27;Henri</a>\n</li>\n<li><a href=\"#s-pass-2\">2 Pass 2 — Synthèse</a>\n</li>\n<li><a href=\"#s-errata\">3 Errata</a>\n</li>\n<li><a href=\"#s-method\">4 Method</a>\n<ol>\n<li><a href=\"#s-coverage-q1\">4.1 Source coverage of Q1</a>\n</li>\n<li><a href=\"#s-coverage-q2\">4.2 Source coverage of Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-questions\">5 Questions</a>\n<ol>\n<li><a href=\"#s-standard-q1\">5.1 Q1: the elements of the Genealogical Proof Standard</a>\n</li>\n<li><a href=\"#s-standard-q2\">5.2 Q2: the elements of the Genealogical Proof Standard</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-proofs\">6 Proof arguments</a>\n<ol>\n<li><a href=\"#s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">6.1 Proof argument for Q1</a>\n</li>\n<li><a href=\"#s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">6.2 Proof argument for Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-evidence\">7 Evidence and analysis</a>\n<ol>\n<li><a href=\"#s-analysis-an-henri-marchand-1870-birth\">7.1 Henri MARCHAND: birth</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-timelines\">8 Timelines</a>\n<ol>\n<li><a href=\"#s-timeline-henri-marchand-1870\">8.1 Timeline of Henri MARCHAND</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-sources\">9 Sources</a>\n</li>\n<li><a href=\"#s-guides\">10 Locality guides</a>\n<ol>\n<li><a href=\"#s-guide-bourg-vert\">10.1 Bourg-Vert</a>\n</li>\n</ol>\n</li>\n</ol>\n</nav>"
+   },
+   "end": {
+    "body": "<section id=\"s-pass-1\">\n<span id=\"s-01ja000000000000000000gps1\"></span>\n<h2>1 Pass 1 — La naissance d&#x27;Henri</h2>\n<p>L'acte de naissance d'Henri, au registre de la mairie, donne 1870<sup class=\"status-record\"><a href=\"#fn-1\">1</a></sup> ; la table décennale, recopiée après l'incendie de 1871, donne 1871<sup class=\"status-index\"><a href=\"#fn-2\">2</a></sup>. L'acte fait foi.</p>\n</section>\n<section id=\"s-pass-2\">\n<span id=\"s-01ja000000000000000000dsg1\"></span>\n<h2>2 Pass 2 — Synthèse</h2>\n<p>Les faits établis : Louis MARCHAND, birth, 1898, Bourg-Vert<sup class=\"status-record\"><a href=\"#fn-3\">3</a></sup>, Louis MARCHAND, death, 1970<sup class=\"status-index\"><a href=\"#fn-4\">4</a></sup>, Louise PERRIN, birth, about 1818, Bourg-Vert<sup class=\"status-hypothesis\"><a href=\"#fn-5\">5</a></sup>.</p>\n<table>\n<thead>\n<tr>\n<th>Personne</th>\n<th>Statut</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Louis MARCHAND</td>\n<td>acte</td>\n</tr>\n<tr>\n<td>Henri MARCHAND</td>\n<td>index</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-errata\">\n<h2>3 Errata</h2>\n<ul>\n<li><strong>Erratum E1</strong> — Pass 2: vers 1870 → 1871. Cause: misreading. Detected by: relecture de l'acte.</li>\n</ul>\n</section>\n<section id=\"s-method\">\n<h2>4 Method</h2>\n<p>Written with the help of AI agents: each fact cites its source, and the engine checks the citations and the rules of proof; reading the sources again remains the reader's part.</p>\n<table>\n<thead>\n<tr>\n<th>Pass</th>\n<th>Harness</th>\n<th>Agent</th>\n<th>Model</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n<tr>\n<td>2</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-coverage-q1\">\n<h3>4.1 Source coverage of Q1</h3>\n<table>\n<thead>\n<tr>\n<th>Source type</th>\n<th>Places</th>\n<th>Years</th>\n<th>State</th>\n<th>Searches, gaps or reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>civil registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>ten-year indexes</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>census lists</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-coverage-q2\">\n<h3>4.2 Source coverage of Q2</h3>\n<table>\n<thead>\n<tr>\n<th>Source type</th>\n<th>Places</th>\n<th>Years</th>\n<th>State</th>\n<th>Searches, gaps or reason</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>civil registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>ten-year indexes</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>census lists</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulted</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n<tr>\n<td>notarial records</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né</td>\n</tr>\n<tr>\n<td>military service registers</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871</td>\n</tr>\n<tr>\n<td>registration and estates</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>not applicable</td>\n<td>aucune mutation ni succession n'est attendue pour la naissance d'un enfant</td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-questions\">\n<h2>5 Questions</h2>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>Question</th>\n<th>Status</th>\n<th>Conclusion or reason</th>\n<th>Confidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Q1</td>\n<td>Quand et où est né Henri MARCHAND ?</td>\n<td>answered</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>proved</td>\n</tr>\n<tr>\n<td>Q2</td>\n<td>Qui sont les parents d'Henri MARCHAND ?</td>\n<td>answered</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>proved</td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-standard-q1\">\n<h3>5.1 Q1: the elements of the Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Elements of the Genealogical Proof Standard established: 5 of 5</strong></p>\n<p><em>Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.</em></p>\n<p>Confidence of the conclusion: proved</p>\n<table>\n<thead>\n<tr>\n<th>Element</th>\n<th>State</th>\n<th>What is missing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reasonably exhaustive search</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Complete and accurate citations</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Analysis and correlation</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Conflicting evidence resolved</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Soundly reasoned conclusion</td>\n<td>established</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n<section id=\"s-standard-q2\">\n<h3>5.2 Q2: the elements of the Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Elements of the Genealogical Proof Standard established: 5 of 5</strong></p>\n<p><em>Probandia checks that each element is documented in the data; whether the reasoning holds is the genealogist's judgement.</em></p>\n<p>Confidence of the conclusion: proved</p>\n<table>\n<thead>\n<tr>\n<th>Element</th>\n<th>State</th>\n<th>What is missing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reasonably exhaustive search</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Complete and accurate citations</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Analysis and correlation</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Conflicting evidence resolved</td>\n<td>established</td>\n<td></td>\n</tr>\n<tr>\n<td>Soundly reasoned conclusion</td>\n<td>established</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n</section>\n<section id=\"s-proofs\">\n<h2>6 Proof arguments</h2>\n<section id=\"s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">\n<h3>6.1 Proof argument for Q1</h3>\n<p><strong>Question.</strong> Quand et où est né Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870) ; la table décennale 1863-1872.</p>\n<p><strong>Analysis.</strong> L'acte est un original dressé par l'officier d'état civil sur la déclaration du père ; la table est une copie dressée après l'incendie de 1871.</p>\n<p><strong>Correlation.</strong> Le recensement de 1872 donne à Henri deux ans, ce qui s'accorde avec 1870.</p>\n<p><strong>Conflicts resolved.</strong> La table donne 1871 : une erreur de copie, l'acte original fait foi.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est né à Bourg-Vert le 14 mars 1870.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Reviewed by the contradictor, independently.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n<section id=\"s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">\n<h3>6.2 Proof argument for Q2</h3>\n<p><strong>Question.</strong> Qui sont les parents d'Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870).</p>\n<p><strong>Analysis.</strong> Le père déclare lui-même la naissance et nomme la mère : information primaire.</p>\n<p><strong>Correlation.</strong> Le recensement de 1872 montre Henri au foyer de Pierre et de Marie.</p>\n<p><strong>Conflicts resolved.</strong> La table décennale ne contredit que l'année, pas la filiation.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est le fils de Pierre MARCHAND et de Marie LEBRUN.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Reviewed by the contradictor, independently.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n</section>\n<section id=\"s-evidence\">\n<h2>7 Evidence and analysis</h2>\n<section id=\"s-analysis-an-henri-marchand-1870-birth\">\n<h3>7.1 Henri MARCHAND: birth</h3>\n<table>\n<thead>\n<tr>\n<th>Asserts</th>\n<th>Informant</th>\n<th>Source</th>\n<th>Source kind</th>\n<th>Information</th>\n<th>Evidence</th>\n<th>Fact, note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td>le père, à la déclaration</td>\n<td>Bourg-Vert, civil registration, naissances, 1870, 1 E 12, naissance no. 31, 14 March 1870; Archives communales de Bourg-Vert.</td>\n<td>original</td>\n<td>primary</td>\n<td>direct</td>\n<td><code>henri-marchand-1870.birth</code></td>\n</tr>\n<tr>\n<td>1871</td>\n<td>le greffier qui dressa la table, après l'incendie</td>\n<td>Bourg-Vert, ten-year index, 1863-1872, 3 E 41/TD 7, page 4; Archives départementales de Valombre.</td>\n<td>derivative</td>\n<td>secondary</td>\n<td>direct</td>\n<td><code>henri-marchand-1870.birth.2</code></td>\n</tr>\n</tbody>\n</table>\n<p>Resolution: 1870 (<code>henri-marchand-1870.birth</code>). L'acte fut dressé à la mairie le jour de la déclaration, par le père ; la table, recopiée après l'incendie de 1871, est dérivée et se trompe d'année</p>\n</section>\n</section>\n<section id=\"s-timelines\">\n<h2>8 Timelines</h2>\n<section id=\"s-timeline-henri-marchand-1870\">\n<h3>8.1 Timeline of Henri MARCHAND</h3>\n<figure class=\"timeline\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"tl\" viewBox=\"0 0 760 166\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Timeline of Henri MARCHAND\">\n<style>\n  .tl { --record: #1d6b3a; --index: #2a5d9f; --hypothesis: #8a6100; --clash: #b00020; --ink: #1b1b1b;\n    --paper: #ffffff; --line: #555555; }\n  .tl text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .tl .axis { stroke: var(--line); stroke-width: 1.5; }\n  .tl .tick { stroke: var(--line); stroke-width: 1; }\n  .tl .tick-label, .tl .kin { font-size: 11px; fill: #444444; }\n  .tl .stem { stroke: #999999; stroke-width: 1; }\n  .tl .mark { stroke-width: 2; }\n  .tl .record .mark { fill: var(--record); stroke: var(--record); }\n  .tl .index .mark { fill: var(--paper); stroke: var(--index); }\n  .tl .hypothesis .mark { fill: var(--paper); stroke: var(--hypothesis); stroke-dasharray: 3 2; }\n  .tl .clash .mark { fill: var(--paper); stroke: var(--clash); stroke-width: 3; stroke-dasharray: none; }\n  .tl .clash text.sign { font-weight: bold; fill: var(--clash); }\n  .tl .clash text.label { fill: var(--clash); font-weight: 600; }\n  .tl .landmark { fill: #777777; }\n</style>\n<title>Timeline of Henri MARCHAND</title>\n<desc>birth 1870; birth 1871; marriage 1896; death 1931; child: birth 1898; father: death 1899; mother: death 1902; spouse: death 1950</desc>\n<line class=\"axis\" x1=\"36\" y1=\"72\" x2=\"724\" y2=\"72\"/>\n<line class=\"tick\" x1=\"63.8\" y1=\"68\" x2=\"63.8\" y2=\"76\"/><text class=\"tick-label\" x=\"63.8\" y=\"89\" text-anchor=\"middle\">1870</text>\n<line class=\"tick\" x1=\"142.9\" y1=\"68\" x2=\"142.9\" y2=\"76\"/><text class=\"tick-label\" x=\"142.9\" y=\"89\" text-anchor=\"middle\">1880</text>\n<line class=\"tick\" x1=\"221.9\" y1=\"68\" x2=\"221.9\" y2=\"76\"/><text class=\"tick-label\" x=\"221.9\" y=\"89\" text-anchor=\"middle\">1890</text>\n<line class=\"tick\" x1=\"301.0\" y1=\"68\" x2=\"301.0\" y2=\"76\"/><text class=\"tick-label\" x=\"301.0\" y=\"89\" text-anchor=\"middle\">1900</text>\n<line class=\"tick\" x1=\"380.0\" y1=\"68\" x2=\"380.0\" y2=\"76\"/><text class=\"tick-label\" x=\"380.0\" y=\"89\" text-anchor=\"middle\">1910</text>\n<line class=\"tick\" x1=\"459.0\" y1=\"68\" x2=\"459.0\" y2=\"76\"/><text class=\"tick-label\" x=\"459.0\" y=\"89\" text-anchor=\"middle\">1920</text>\n<line class=\"tick\" x1=\"538.1\" y1=\"68\" x2=\"538.1\" y2=\"76\"/><text class=\"tick-label\" x=\"538.1\" y=\"89\" text-anchor=\"middle\">1930</text>\n<line class=\"tick\" x1=\"617.1\" y1=\"68\" x2=\"617.1\" y2=\"76\"/><text class=\"tick-label\" x=\"617.1\" y=\"89\" text-anchor=\"middle\">1940</text>\n<line class=\"tick\" x1=\"696.2\" y1=\"68\" x2=\"696.2\" y2=\"76\"/><text class=\"tick-label\" x=\"696.2\" y=\"89\" text-anchor=\"middle\">1950</text>\n<g class=\"record\"><title>birth 1870</title><line class=\"stem\" x1=\"63.8\" y1=\"57\" x2=\"63.8\" y2=\"64\"/><circle class=\"mark\" cx=\"63.8\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"63.8\" y=\"54\" text-anchor=\"middle\">birth 1870</text></g>\n<g class=\"index\"><title>birth 1871</title><line class=\"stem\" x1=\"71.7\" y1=\"41\" x2=\"71.7\" y2=\"64\"/><circle class=\"mark\" cx=\"71.7\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"71.7\" y=\"38\" text-anchor=\"middle\">birth 1871</text></g>\n<g class=\"index\"><title>marriage 1896</title><line class=\"stem\" x1=\"269.3\" y1=\"57\" x2=\"269.3\" y2=\"64\"/><circle class=\"mark\" cx=\"269.3\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"269.3\" y=\"54\" text-anchor=\"middle\">marriage 1896</text></g>\n<g class=\"index\"><title>death 1931</title><line class=\"stem\" x1=\"546.0\" y1=\"57\" x2=\"546.0\" y2=\"64\"/><circle class=\"mark\" cx=\"546.0\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"546.0\" y=\"54\" text-anchor=\"middle\">death 1931</text></g>\n<g><title>child: birth 1898 — Louis MARCHAND</title><polygon class=\"landmark\" points=\"285.1,96 289.1,103 281.1,103\"/><text class=\"kin\" x=\"285.1\" y=\"118\" text-anchor=\"middle\">child: birth 1898</text></g>\n<g><title>father: death 1899 — Pierre MARCHAND</title><polygon class=\"landmark\" points=\"293.0,96 297.0,103 289.0,103\"/><text class=\"kin\" x=\"293.0\" y=\"132\" text-anchor=\"middle\">father: death 1899</text></g>\n<g><title>mother: death 1902 — Marie LEBRUN</title><polygon class=\"landmark\" points=\"316.8,96 320.8,103 312.8,103\"/><text class=\"kin\" x=\"316.8\" y=\"146\" text-anchor=\"middle\">mother: death 1902</text></g>\n<g><title>spouse: death 1950 — Jeanne ROUSSEL</title><polygon class=\"landmark\" points=\"696.2,96 700.2,103 692.2,103\"/><text class=\"kin\" x=\"696.2\" y=\"118\" text-anchor=\"middle\">spouse: death 1950</text></g>\n</svg>\n</figure>\n<table>\n<thead>\n<tr>\n<th>Year</th>\n<th>Age</th>\n<th>Event</th>\n<th>Place</th>\n<th>Dates that clash</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td></td>\n<td>birth</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1871</td>\n<td></td>\n<td>birth</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1896</td>\n<td>26</td>\n<td>marriage</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1898</td>\n<td></td>\n<td>child — Louis MARCHAND: birth</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1899</td>\n<td></td>\n<td>father — Pierre MARCHAND: death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1902</td>\n<td></td>\n<td>mother — Marie LEBRUN: death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1931</td>\n<td>61</td>\n<td>death</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1950</td>\n<td></td>\n<td>spouse — Jeanne ROUSSEL: death</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-sources\">\n<h2>9 Sources</h2>\n<ul>\n<li>Bourg-Vert. Civil registration, naissances, 1870, 1 E 12. Archives communales de Bourg-Vert.</li>\n<li>Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li>Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li>Bourg-Vert. Ten-year index, 1863-1872, 3 E 41/TD 7. Archives départementales de Valombre.</li>\n</ul>\n</section>\n<section id=\"s-guides\">\n<h2>10 Locality guides</h2>\n<section id=\"s-guide-bourg-vert\">\n<h3>10.1 Bourg-Vert</h3>\n<figure class=\"timeline guide\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ju\" viewBox=\"0 0 760 112\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Jurisdictions — Bourg-Vert\">\n<style>\n  .ju { --bar: #2a5d9f; --derived: #8a6100; --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }\n  .ju text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .ju .axis { stroke: var(--line); stroke-width: 1.5; }\n  .ju .tick { stroke: var(--line); stroke-width: 1; }\n  .ju .grid { stroke: #dddddd; stroke-width: 1; }\n  .ju .tick-label { font-size: 11px; fill: #444444; }\n  .ju .bar { fill: var(--bar); fill-opacity: 0.25; stroke: var(--bar); stroke-width: 1.5; }\n  .ju .derived .bar { fill: var(--derived); stroke: var(--derived); stroke-dasharray: 5 3; }\n  .ju .open { fill: none; stroke: var(--line); stroke-width: 1.5; }\n</style>\n<title>Jurisdictions — Bourg-Vert</title>\n<desc>commune Bourg-Vert: 1790 – no known end (catalogue:invented); department Valombre: 1790 – no known end (catalogue:invented); country FR: no known start – no known end (catalogue:invented)</desc>\n<line class=\"grid\" x1=\"299.4\" y1=\"8\" x2=\"299.4\" y2=\"84\"/><line class=\"tick\" x1=\"299.4\" y1=\"84\" x2=\"299.4\" y2=\"89\"/><text class=\"tick-label\" x=\"299.4\" y=\"102\" text-anchor=\"middle\">1782</text>\n<line class=\"grid\" x1=\"348.8\" y1=\"8\" x2=\"348.8\" y2=\"84\"/><line class=\"tick\" x1=\"348.8\" y1=\"84\" x2=\"348.8\" y2=\"89\"/><text class=\"tick-label\" x=\"348.8\" y=\"102\" text-anchor=\"middle\">1784</text>\n<line class=\"grid\" x1=\"398.2\" y1=\"8\" x2=\"398.2\" y2=\"84\"/><line class=\"tick\" x1=\"398.2\" y1=\"84\" x2=\"398.2\" y2=\"89\"/><text class=\"tick-label\" x=\"398.2\" y=\"102\" text-anchor=\"middle\">1786</text>\n<line class=\"grid\" x1=\"447.6\" y1=\"8\" x2=\"447.6\" y2=\"84\"/><line class=\"tick\" x1=\"447.6\" y1=\"84\" x2=\"447.6\" y2=\"89\"/><text class=\"tick-label\" x=\"447.6\" y=\"102\" text-anchor=\"middle\">1788</text>\n<line class=\"grid\" x1=\"497.0\" y1=\"8\" x2=\"497.0\" y2=\"84\"/><line class=\"tick\" x1=\"497.0\" y1=\"84\" x2=\"497.0\" y2=\"89\"/><text class=\"tick-label\" x=\"497.0\" y=\"102\" text-anchor=\"middle\">1790</text>\n<line class=\"grid\" x1=\"546.4\" y1=\"8\" x2=\"546.4\" y2=\"84\"/><line class=\"tick\" x1=\"546.4\" y1=\"84\" x2=\"546.4\" y2=\"89\"/><text class=\"tick-label\" x=\"546.4\" y=\"102\" text-anchor=\"middle\">1792</text>\n<line class=\"grid\" x1=\"595.8\" y1=\"8\" x2=\"595.8\" y2=\"84\"/><line class=\"tick\" x1=\"595.8\" y1=\"84\" x2=\"595.8\" y2=\"89\"/><text class=\"tick-label\" x=\"595.8\" y=\"102\" text-anchor=\"middle\">1794</text>\n<line class=\"grid\" x1=\"645.2\" y1=\"8\" x2=\"645.2\" y2=\"84\"/><line class=\"tick\" x1=\"645.2\" y1=\"84\" x2=\"645.2\" y2=\"89\"/><text class=\"tick-label\" x=\"645.2\" y=\"102\" text-anchor=\"middle\">1796</text>\n<line class=\"grid\" x1=\"694.6\" y1=\"8\" x2=\"694.6\" y2=\"84\"/><line class=\"tick\" x1=\"694.6\" y1=\"84\" x2=\"694.6\" y2=\"89\"/><text class=\"tick-label\" x=\"694.6\" y=\"102\" text-anchor=\"middle\">1798</text>\n<line class=\"grid\" x1=\"744.0\" y1=\"8\" x2=\"744.0\" y2=\"84\"/><line class=\"tick\" x1=\"744.0\" y1=\"84\" x2=\"744.0\" y2=\"89\"/><text class=\"tick-label\" x=\"744.0\" y=\"102\" text-anchor=\"middle\">1800</text>\n<line class=\"axis\" x1=\"250\" y1=\"84\" x2=\"744\" y2=\"84\"/>\n<g class=\"row\"><title>commune Bourg-Vert: 1790 – no known end (catalogue:invented)</title><text x=\"242\" y=\"24\" text-anchor=\"end\">commune Bourg-Vert</text><rect class=\"bar\" x=\"497.0\" y=\"14\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,14 743.0,20 737.0,26\"/></g>\n<g class=\"row\"><title>department Valombre: 1790 – no known end (catalogue:invented)</title><text x=\"242\" y=\"46\" text-anchor=\"end\">department Valombre</text><rect class=\"bar\" x=\"497.0\" y=\"36\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,36 743.0,42 737.0,48\"/></g>\n<g class=\"row\"><title>country FR: no known start – no known end (catalogue:invented)</title><text x=\"242\" y=\"68\" text-anchor=\"end\">country FR</text><rect class=\"bar\" x=\"250.0\" y=\"58\" width=\"494.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"257.0,58 251.0,64 257.0,70\"/><polyline class=\"open\" points=\"737.0,58 743.0,64 737.0,70\"/></g>\n</svg>\n</figure>\n<p><strong>Jurisdictions</strong></p>\n<table>\n<thead>\n<tr>\n<th>Level</th>\n<th>Name</th>\n<th>From</th>\n<th>To</th>\n<th>Source</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>commune</td>\n<td>Bourg-Vert</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n<tr>\n<td>department</td>\n<td>Valombre</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented (department VB)</td>\n</tr>\n<tr>\n<td>country</td>\n<td>FR</td>\n<td>…</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Repositories</strong></p>\n<table>\n<thead>\n<tr>\n<th>Repository</th>\n<th>Holdings</th>\n<th>Note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Archives départementales de Valombre (<code>ad_valombre</code>)</td>\n<td>births 1792–1936 (3 E 41), decennial_table 1802–1932 (3 E 41/TD), censuses 1836–1936 (6 M)</td>\n<td></td>\n</tr>\n<tr>\n<td>Archives communales de Bourg-Vert (<code>ac_bourg_vert</code>)</td>\n<td>births 1792–1936 (1 E)</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Guide built on 4 September 2026 from: catalogue:invented, catalogue:archives.</p>\n</section>\n</section>",
+    "generated": "3 September 2026",
+    "head": "<meta name=\"generator\" content=\"Probandia\">\n<meta name=\"dcterms.modified\" content=\"2026-09-03T09:03:00Z\">\n<title>Quand et où est né Henri MARCHAND, et de qui ?</title>",
+    "manual": "<section class=\"manual\"><h2>To read by hand</h2><ul>\n<li>familysearch: https://www.familysearch.org/ark:/61903/3:1:EXAMPLE — not consulted, a sign-in is required</li>\n</ul></section>",
+    "notes": "<section class=\"notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-1\" class=\"status-record\">Record. Bourg-Vert, civil registration, naissances, 1870, 1 E 12, naissance no. 31, 14 March 1870; Archives communales de Bourg-Vert. “N° 31 Marchand Henri L'an mil huit cent soixante-dix, le quatorze mars, à dix heures du matin, par devant nous maire de Bourg-Vert, est comparu Pierre Marchand, cultivateur, âgé de vingt-neuf ans, lequel nous a présenté un enfant du sexe masculin né ce jour,” (lines 1–4 of the transcription)</li>\n<li id=\"fn-2\" class=\"status-index\">Index. Bourg-Vert, ten-year index, 1863-1872, 3 E 41/TD 7, page 4; Archives départementales de Valombre. “MARCHAND Henri, 14 mars 1871” (page read on 4 September 2026)</li>\n<li id=\"fn-3\" class=\"status-record\">Record. Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li id=\"fn-4\" class=\"status-index\">Index. Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li id=\"fn-5\" class=\"status-hypothesis\">Hypothesis.</li>\n</ol></section>",
+    "research": "2026-09-04-birth-of-henri-marchand",
+    "title": "<h1>Quand et où est né Henri MARCHAND, et de qui ?</h1>",
+    "toc": "<nav aria-labelledby=\"toc-title\"><h2 id=\"toc-title\">Contents</h2>\n<ol>\n<li><a href=\"#s-pass-1\">1 Pass 1 — La naissance d&#x27;Henri</a>\n</li>\n<li><a href=\"#s-pass-2\">2 Pass 2 — Synthèse</a>\n</li>\n<li><a href=\"#s-errata\">3 Errata</a>\n</li>\n<li><a href=\"#s-method\">4 Method</a>\n<ol>\n<li><a href=\"#s-coverage-q1\">4.1 Source coverage of Q1</a>\n</li>\n<li><a href=\"#s-coverage-q2\">4.2 Source coverage of Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-questions\">5 Questions</a>\n<ol>\n<li><a href=\"#s-standard-q1\">5.1 Q1: the elements of the Genealogical Proof Standard</a>\n</li>\n<li><a href=\"#s-standard-q2\">5.2 Q2: the elements of the Genealogical Proof Standard</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-proofs\">6 Proof arguments</a>\n<ol>\n<li><a href=\"#s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">6.1 Proof argument for Q1</a>\n</li>\n<li><a href=\"#s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">6.2 Proof argument for Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-evidence\">7 Evidence and analysis</a>\n<ol>\n<li><a href=\"#s-analysis-an-henri-marchand-1870-birth\">7.1 Henri MARCHAND: birth</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-timelines\">8 Timelines</a>\n<ol>\n<li><a href=\"#s-timeline-henri-marchand-1870\">8.1 Timeline of Henri MARCHAND</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-sources\">9 Sources</a>\n</li>\n<li><a href=\"#s-guides\">10 Locality guides</a>\n<ol>\n<li><a href=\"#s-guide-bourg-vert\">10.1 Bourg-Vert</a>\n</li>\n</ol>\n</li>\n</ol>\n</nav>"
+   }
+  },
+  "fr": {
+   "chapter": {
+    "body": "<section id=\"s-pass-1\">\n<span id=\"s-01ja000000000000000000gps1\"></span>\n<h2>1 Passe 1 — La naissance d&#x27;Henri</h2>\n<p>L'acte de naissance d'Henri, au registre de la mairie, donne 1870<sup class=\"status-record\"><a href=\"#fn-1\">1</a></sup> ; la table décennale, recopiée après l'incendie de 1871, donne 1871<sup class=\"status-index\"><a href=\"#fn-2\">2</a></sup>. L'acte fait foi.</p>\n</section>\n<section class=\"notes chapter-notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-1\" class=\"status-record\">Acte. Bourg-Vert, état civil, naissances, 1870, 1 E 12, acte de naissance n° 31, 14 mars 1870 ; Archives communales de Bourg-Vert. « N° 31 Marchand Henri L'an mil huit cent soixante-dix, le quatorze mars, à dix heures du matin, par devant nous maire de Bourg-Vert, est comparu Pierre Marchand, cultivateur, âgé de vingt-neuf ans, lequel nous a présenté un enfant du sexe masculin né ce jour, » (lignes 1 à 4 de la transcription)</li>\n<li id=\"fn-2\" class=\"status-index\">Index. Bourg-Vert, tables décennales, 1863-1872, 3 E 41/TD 7, p. 4 ; Archives départementales de Valombre. « MARCHAND Henri, 14 mars 1871 » (page lue le 4 septembre 2026)</li>\n</ol></section>\n<section id=\"s-pass-2\">\n<span id=\"s-01ja000000000000000000dsg1\"></span>\n<h2>2 Passe 2 — Synthèse</h2>\n<p>Les faits établis : Louis MARCHAND, naissance, 1898, Bourg-Vert<sup class=\"status-record\"><a href=\"#fn-3\">3</a></sup>, Louis MARCHAND, décès, 1970<sup class=\"status-index\"><a href=\"#fn-4\">4</a></sup>, Louise PERRIN, naissance, vers 1818, Bourg-Vert<sup class=\"status-hypothesis\"><a href=\"#fn-5\">5</a></sup>.</p>\n<table>\n<thead>\n<tr>\n<th>Personne</th>\n<th>Statut</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Louis MARCHAND</td>\n<td>acte</td>\n</tr>\n<tr>\n<td>Henri MARCHAND</td>\n<td>index</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section class=\"notes chapter-notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-3\" class=\"status-record\">Acte. Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li id=\"fn-4\" class=\"status-index\">Index. Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li id=\"fn-5\" class=\"status-hypothesis\">Hypothèse.</li>\n</ol></section>\n<section id=\"s-errata\">\n<h2>3 Errata</h2>\n<ul>\n<li><strong>Erratum E1</strong> — Passe 2: vers 1870 → 1871. Cause: erreur de lecture. Détecté par: relecture de l'acte.</li>\n</ul>\n</section>\n<section id=\"s-method\">\n<h2>4 Méthode</h2>\n<p>Rédigé avec l'aide d'agents d'IA : chaque fait cite sa source, et le moteur vérifie les citations et les règles de preuve ; relire les sources reste le travail du lecteur.</p>\n<table>\n<thead>\n<tr>\n<th>Passe</th>\n<th>Environnement</th>\n<th>Agent</th>\n<th>Modèle</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n<tr>\n<td>2</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-coverage-q1\">\n<h3>4.1 Couverture des sources de Q1</h3>\n<table>\n<thead>\n<tr>\n<th>Type de source</th>\n<th>Lieux</th>\n<th>Années</th>\n<th>État</th>\n<th>Recherches, lacunes ou raison</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>état civil</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>tables décennales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>recensements</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-coverage-q2\">\n<h3>4.2 Couverture des sources de Q2</h3>\n<table>\n<thead>\n<tr>\n<th>Type de source</th>\n<th>Lieux</th>\n<th>Années</th>\n<th>État</th>\n<th>Recherches, lacunes ou raison</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>état civil</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>tables décennales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>recensements</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n<tr>\n<td>minutes notariales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né</td>\n</tr>\n<tr>\n<td>registres matricules</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871</td>\n</tr>\n<tr>\n<td>enregistrement et successions</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>aucune mutation ni succession n'est attendue pour la naissance d'un enfant</td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-questions\">\n<h2>5 Questions</h2>\n<table>\n<thead>\n<tr>\n<th>N°</th>\n<th>Question</th>\n<th>Statut</th>\n<th>Conclusion ou raison</th>\n<th>Confiance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Q1</td>\n<td>Quand et où est né Henri MARCHAND ?</td>\n<td>répondue</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>prouvé</td>\n</tr>\n<tr>\n<td>Q2</td>\n<td>Qui sont les parents d'Henri MARCHAND ?</td>\n<td>répondue</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>prouvé</td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-standard-q1\">\n<h3>5.1 Q1 : les éléments du Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Éléments du Genealogical Proof Standard établis : 5 sur 5</strong></p>\n<p><em>Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste.</em></p>\n<p>Confiance dans la conclusion : prouvé</p>\n<table>\n<thead>\n<tr>\n<th>Élément</th>\n<th>État</th>\n<th>Ce qui manque</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Recherche raisonnablement exhaustive</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Citations complètes et exactes</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Analyse et corrélation</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Preuves contradictoires résolues</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Conclusion argumentée</td>\n<td>établi</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n<section id=\"s-standard-q2\">\n<h3>5.2 Q2 : les éléments du Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Éléments du Genealogical Proof Standard établis : 5 sur 5</strong></p>\n<p><em>Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste.</em></p>\n<p>Confiance dans la conclusion : prouvé</p>\n<table>\n<thead>\n<tr>\n<th>Élément</th>\n<th>État</th>\n<th>Ce qui manque</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Recherche raisonnablement exhaustive</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Citations complètes et exactes</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Analyse et corrélation</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Preuves contradictoires résolues</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Conclusion argumentée</td>\n<td>établi</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n</section>\n<section id=\"s-proofs\">\n<h2>6 Arguments de preuve</h2>\n<section id=\"s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">\n<h3>6.1 Argument de preuve pour Q1</h3>\n<p><strong>Question.</strong> Quand et où est né Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870) ; la table décennale 1863-1872.</p>\n<p><strong>Analyse.</strong> L'acte est un original dressé par l'officier d'état civil sur la déclaration du père ; la table est une copie dressée après l'incendie de 1871.</p>\n<p><strong>Corrélation.</strong> Le recensement de 1872 donne à Henri deux ans, ce qui s'accorde avec 1870.</p>\n<p><strong>Conflits résolus.</strong> La table donne 1871 : une erreur de copie, l'acte original fait foi.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est né à Bourg-Vert le 14 mars 1870.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Relu par le contradicteur, de façon indépendante.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Réponse : La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n<section id=\"s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">\n<h3>6.2 Argument de preuve pour Q2</h3>\n<p><strong>Question.</strong> Qui sont les parents d'Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870).</p>\n<p><strong>Analyse.</strong> Le père déclare lui-même la naissance et nomme la mère : information primaire.</p>\n<p><strong>Corrélation.</strong> Le recensement de 1872 montre Henri au foyer de Pierre et de Marie.</p>\n<p><strong>Conflits résolus.</strong> La table décennale ne contredit que l'année, pas la filiation.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est le fils de Pierre MARCHAND et de Marie LEBRUN.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Relu par le contradicteur, de façon indépendante.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Réponse : La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n</section>\n<section id=\"s-evidence\">\n<h2>7 Preuves et analyse</h2>\n<section id=\"s-analysis-an-henri-marchand-1870-birth\">\n<h3>7.1 Henri MARCHAND : naissance</h3>\n<table>\n<thead>\n<tr>\n<th>Affirme</th>\n<th>Informateur</th>\n<th>Source</th>\n<th>Nature de la source</th>\n<th>Information</th>\n<th>Preuve</th>\n<th>Fait, note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td>le père, à la déclaration</td>\n<td>Bourg-Vert, état civil, naissances, 1870, 1 E 12, acte de naissance n° 31, 14 mars 1870 ; Archives communales de Bourg-Vert.</td>\n<td>originale</td>\n<td>primaire</td>\n<td>directe</td>\n<td><code>henri-marchand-1870.birth</code></td>\n</tr>\n<tr>\n<td>1871</td>\n<td>le greffier qui dressa la table, après l'incendie</td>\n<td>Bourg-Vert, tables décennales, 1863-1872, 3 E 41/TD 7, p. 4 ; Archives départementales de Valombre.</td>\n<td>dérivée</td>\n<td>secondaire</td>\n<td>directe</td>\n<td><code>henri-marchand-1870.birth.2</code></td>\n</tr>\n</tbody>\n</table>\n<p>Résolution : 1870 (<code>henri-marchand-1870.birth</code>). L'acte fut dressé à la mairie le jour de la déclaration, par le père ; la table, recopiée après l'incendie de 1871, est dérivée et se trompe d'année</p>\n</section>\n</section>\n<section id=\"s-timelines\">\n<h2>8 Chronologies</h2>\n<section id=\"s-timeline-henri-marchand-1870\">\n<h3>8.1 Chronologie de Henri MARCHAND</h3>\n<figure class=\"timeline\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"tl\" viewBox=\"0 0 760 166\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Chronologie de Henri MARCHAND\">\n<style>\n  .tl { --record: #1d6b3a; --index: #2a5d9f; --hypothesis: #8a6100; --clash: #b00020; --ink: #1b1b1b;\n    --paper: #ffffff; --line: #555555; }\n  .tl text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .tl .axis { stroke: var(--line); stroke-width: 1.5; }\n  .tl .tick { stroke: var(--line); stroke-width: 1; }\n  .tl .tick-label, .tl .kin { font-size: 11px; fill: #444444; }\n  .tl .stem { stroke: #999999; stroke-width: 1; }\n  .tl .mark { stroke-width: 2; }\n  .tl .record .mark { fill: var(--record); stroke: var(--record); }\n  .tl .index .mark { fill: var(--paper); stroke: var(--index); }\n  .tl .hypothesis .mark { fill: var(--paper); stroke: var(--hypothesis); stroke-dasharray: 3 2; }\n  .tl .clash .mark { fill: var(--paper); stroke: var(--clash); stroke-width: 3; stroke-dasharray: none; }\n  .tl .clash text.sign { font-weight: bold; fill: var(--clash); }\n  .tl .clash text.label { fill: var(--clash); font-weight: 600; }\n  .tl .landmark { fill: #777777; }\n</style>\n<title>Chronologie de Henri MARCHAND</title>\n<desc>naissance 1870; naissance 1871; mariage 1896; décès 1931; enfant: naissance 1898; père: décès 1899; mère: décès 1902; conjoint: décès 1950</desc>\n<line class=\"axis\" x1=\"36\" y1=\"72\" x2=\"724\" y2=\"72\"/>\n<line class=\"tick\" x1=\"63.8\" y1=\"68\" x2=\"63.8\" y2=\"76\"/><text class=\"tick-label\" x=\"63.8\" y=\"89\" text-anchor=\"middle\">1870</text>\n<line class=\"tick\" x1=\"142.9\" y1=\"68\" x2=\"142.9\" y2=\"76\"/><text class=\"tick-label\" x=\"142.9\" y=\"89\" text-anchor=\"middle\">1880</text>\n<line class=\"tick\" x1=\"221.9\" y1=\"68\" x2=\"221.9\" y2=\"76\"/><text class=\"tick-label\" x=\"221.9\" y=\"89\" text-anchor=\"middle\">1890</text>\n<line class=\"tick\" x1=\"301.0\" y1=\"68\" x2=\"301.0\" y2=\"76\"/><text class=\"tick-label\" x=\"301.0\" y=\"89\" text-anchor=\"middle\">1900</text>\n<line class=\"tick\" x1=\"380.0\" y1=\"68\" x2=\"380.0\" y2=\"76\"/><text class=\"tick-label\" x=\"380.0\" y=\"89\" text-anchor=\"middle\">1910</text>\n<line class=\"tick\" x1=\"459.0\" y1=\"68\" x2=\"459.0\" y2=\"76\"/><text class=\"tick-label\" x=\"459.0\" y=\"89\" text-anchor=\"middle\">1920</text>\n<line class=\"tick\" x1=\"538.1\" y1=\"68\" x2=\"538.1\" y2=\"76\"/><text class=\"tick-label\" x=\"538.1\" y=\"89\" text-anchor=\"middle\">1930</text>\n<line class=\"tick\" x1=\"617.1\" y1=\"68\" x2=\"617.1\" y2=\"76\"/><text class=\"tick-label\" x=\"617.1\" y=\"89\" text-anchor=\"middle\">1940</text>\n<line class=\"tick\" x1=\"696.2\" y1=\"68\" x2=\"696.2\" y2=\"76\"/><text class=\"tick-label\" x=\"696.2\" y=\"89\" text-anchor=\"middle\">1950</text>\n<g class=\"record\"><title>naissance 1870</title><line class=\"stem\" x1=\"63.8\" y1=\"57\" x2=\"63.8\" y2=\"64\"/><circle class=\"mark\" cx=\"63.8\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"63.8\" y=\"54\" text-anchor=\"middle\">naissance 1870</text></g>\n<g class=\"index\"><title>naissance 1871</title><line class=\"stem\" x1=\"71.7\" y1=\"41\" x2=\"71.7\" y2=\"64\"/><circle class=\"mark\" cx=\"71.7\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"71.7\" y=\"38\" text-anchor=\"middle\">naissance 1871</text></g>\n<g class=\"index\"><title>mariage 1896</title><line class=\"stem\" x1=\"269.3\" y1=\"57\" x2=\"269.3\" y2=\"64\"/><circle class=\"mark\" cx=\"269.3\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"269.3\" y=\"54\" text-anchor=\"middle\">mariage 1896</text></g>\n<g class=\"index\"><title>décès 1931</title><line class=\"stem\" x1=\"546.0\" y1=\"57\" x2=\"546.0\" y2=\"64\"/><circle class=\"mark\" cx=\"546.0\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"546.0\" y=\"54\" text-anchor=\"middle\">décès 1931</text></g>\n<g><title>enfant: naissance 1898 — Louis MARCHAND</title><polygon class=\"landmark\" points=\"285.1,96 289.1,103 281.1,103\"/><text class=\"kin\" x=\"285.1\" y=\"118\" text-anchor=\"middle\">enfant: naissance 1898</text></g>\n<g><title>père: décès 1899 — Pierre MARCHAND</title><polygon class=\"landmark\" points=\"293.0,96 297.0,103 289.0,103\"/><text class=\"kin\" x=\"293.0\" y=\"132\" text-anchor=\"middle\">père: décès 1899</text></g>\n<g><title>mère: décès 1902 — Marie LEBRUN</title><polygon class=\"landmark\" points=\"316.8,96 320.8,103 312.8,103\"/><text class=\"kin\" x=\"316.8\" y=\"146\" text-anchor=\"middle\">mère: décès 1902</text></g>\n<g><title>conjoint: décès 1950 — Jeanne ROUSSEL</title><polygon class=\"landmark\" points=\"696.2,96 700.2,103 692.2,103\"/><text class=\"kin\" x=\"696.2\" y=\"118\" text-anchor=\"middle\">conjoint: décès 1950</text></g>\n</svg>\n</figure>\n<table>\n<thead>\n<tr>\n<th>Année</th>\n<th>Âge</th>\n<th>Événement</th>\n<th>Lieu</th>\n<th>Dates en conflit</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td></td>\n<td>naissance</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1871</td>\n<td></td>\n<td>naissance</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1896</td>\n<td>26</td>\n<td>mariage</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1898</td>\n<td></td>\n<td>enfant — Louis MARCHAND: naissance</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1899</td>\n<td></td>\n<td>père — Pierre MARCHAND: décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1902</td>\n<td></td>\n<td>mère — Marie LEBRUN: décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1931</td>\n<td>61</td>\n<td>décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1950</td>\n<td></td>\n<td>conjoint — Jeanne ROUSSEL: décès</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-sources\">\n<h2>9 Sources</h2>\n<ul>\n<li>Bourg-Vert. État civil, naissances, 1870, 1 E 12. Archives communales de Bourg-Vert.</li>\n<li>Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li>Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li>Bourg-Vert. Tables décennales, 1863-1872, 3 E 41/TD 7. Archives départementales de Valombre.</li>\n</ul>\n</section>\n<section id=\"s-guides\">\n<h2>10 Guides de localité</h2>\n<section id=\"s-guide-bourg-vert\">\n<h3>10.1 Bourg-Vert</h3>\n<figure class=\"timeline guide\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ju\" viewBox=\"0 0 760 112\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Juridictions — Bourg-Vert\">\n<style>\n  .ju { --bar: #2a5d9f; --derived: #8a6100; --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }\n  .ju text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .ju .axis { stroke: var(--line); stroke-width: 1.5; }\n  .ju .tick { stroke: var(--line); stroke-width: 1; }\n  .ju .grid { stroke: #dddddd; stroke-width: 1; }\n  .ju .tick-label { font-size: 11px; fill: #444444; }\n  .ju .bar { fill: var(--bar); fill-opacity: 0.25; stroke: var(--bar); stroke-width: 1.5; }\n  .ju .derived .bar { fill: var(--derived); stroke: var(--derived); stroke-dasharray: 5 3; }\n  .ju .open { fill: none; stroke: var(--line); stroke-width: 1.5; }\n</style>\n<title>Juridictions — Bourg-Vert</title>\n<desc>commune Bourg-Vert: 1790 – sans fin connue (catalogue:invented); département Valombre: 1790 – sans fin connue (catalogue:invented); pays FR: sans début connu – sans fin connue (catalogue:invented)</desc>\n<line class=\"grid\" x1=\"299.4\" y1=\"8\" x2=\"299.4\" y2=\"84\"/><line class=\"tick\" x1=\"299.4\" y1=\"84\" x2=\"299.4\" y2=\"89\"/><text class=\"tick-label\" x=\"299.4\" y=\"102\" text-anchor=\"middle\">1782</text>\n<line class=\"grid\" x1=\"348.8\" y1=\"8\" x2=\"348.8\" y2=\"84\"/><line class=\"tick\" x1=\"348.8\" y1=\"84\" x2=\"348.8\" y2=\"89\"/><text class=\"tick-label\" x=\"348.8\" y=\"102\" text-anchor=\"middle\">1784</text>\n<line class=\"grid\" x1=\"398.2\" y1=\"8\" x2=\"398.2\" y2=\"84\"/><line class=\"tick\" x1=\"398.2\" y1=\"84\" x2=\"398.2\" y2=\"89\"/><text class=\"tick-label\" x=\"398.2\" y=\"102\" text-anchor=\"middle\">1786</text>\n<line class=\"grid\" x1=\"447.6\" y1=\"8\" x2=\"447.6\" y2=\"84\"/><line class=\"tick\" x1=\"447.6\" y1=\"84\" x2=\"447.6\" y2=\"89\"/><text class=\"tick-label\" x=\"447.6\" y=\"102\" text-anchor=\"middle\">1788</text>\n<line class=\"grid\" x1=\"497.0\" y1=\"8\" x2=\"497.0\" y2=\"84\"/><line class=\"tick\" x1=\"497.0\" y1=\"84\" x2=\"497.0\" y2=\"89\"/><text class=\"tick-label\" x=\"497.0\" y=\"102\" text-anchor=\"middle\">1790</text>\n<line class=\"grid\" x1=\"546.4\" y1=\"8\" x2=\"546.4\" y2=\"84\"/><line class=\"tick\" x1=\"546.4\" y1=\"84\" x2=\"546.4\" y2=\"89\"/><text class=\"tick-label\" x=\"546.4\" y=\"102\" text-anchor=\"middle\">1792</text>\n<line class=\"grid\" x1=\"595.8\" y1=\"8\" x2=\"595.8\" y2=\"84\"/><line class=\"tick\" x1=\"595.8\" y1=\"84\" x2=\"595.8\" y2=\"89\"/><text class=\"tick-label\" x=\"595.8\" y=\"102\" text-anchor=\"middle\">1794</text>\n<line class=\"grid\" x1=\"645.2\" y1=\"8\" x2=\"645.2\" y2=\"84\"/><line class=\"tick\" x1=\"645.2\" y1=\"84\" x2=\"645.2\" y2=\"89\"/><text class=\"tick-label\" x=\"645.2\" y=\"102\" text-anchor=\"middle\">1796</text>\n<line class=\"grid\" x1=\"694.6\" y1=\"8\" x2=\"694.6\" y2=\"84\"/><line class=\"tick\" x1=\"694.6\" y1=\"84\" x2=\"694.6\" y2=\"89\"/><text class=\"tick-label\" x=\"694.6\" y=\"102\" text-anchor=\"middle\">1798</text>\n<line class=\"grid\" x1=\"744.0\" y1=\"8\" x2=\"744.0\" y2=\"84\"/><line class=\"tick\" x1=\"744.0\" y1=\"84\" x2=\"744.0\" y2=\"89\"/><text class=\"tick-label\" x=\"744.0\" y=\"102\" text-anchor=\"middle\">1800</text>\n<line class=\"axis\" x1=\"250\" y1=\"84\" x2=\"744\" y2=\"84\"/>\n<g class=\"row\"><title>commune Bourg-Vert: 1790 – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"24\" text-anchor=\"end\">commune Bourg-Vert</text><rect class=\"bar\" x=\"497.0\" y=\"14\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,14 743.0,20 737.0,26\"/></g>\n<g class=\"row\"><title>département Valombre: 1790 – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"46\" text-anchor=\"end\">département Valombre</text><rect class=\"bar\" x=\"497.0\" y=\"36\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,36 743.0,42 737.0,48\"/></g>\n<g class=\"row\"><title>pays FR: sans début connu – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"68\" text-anchor=\"end\">pays FR</text><rect class=\"bar\" x=\"250.0\" y=\"58\" width=\"494.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"257.0,58 251.0,64 257.0,70\"/><polyline class=\"open\" points=\"737.0,58 743.0,64 737.0,70\"/></g>\n</svg>\n</figure>\n<p><strong>Juridictions</strong></p>\n<table>\n<thead>\n<tr>\n<th>Niveau</th>\n<th>Nom</th>\n<th>Du</th>\n<th>Au</th>\n<th>Source</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>commune</td>\n<td>Bourg-Vert</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n<tr>\n<td>département</td>\n<td>Valombre</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented (department VB)</td>\n</tr>\n<tr>\n<td>pays</td>\n<td>FR</td>\n<td>…</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Dépôts</strong></p>\n<table>\n<thead>\n<tr>\n<th>Dépôt</th>\n<th>Fonds</th>\n<th>Note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Archives départementales de Valombre (<code>ad_valombre</code>)</td>\n<td>naissances 1792–1936 (3 E 41), decennial_table 1802–1932 (3 E 41/TD), recensements 1836–1936 (6 M)</td>\n<td></td>\n</tr>\n<tr>\n<td>Archives communales de Bourg-Vert (<code>ac_bourg_vert</code>)</td>\n<td>naissances 1792–1936 (1 E)</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Guide établi le 4 septembre 2026 à partir de : catalogue:invented, catalogue:archives.</p>\n</section>\n</section>",
+    "generated": "3 septembre 2026",
+    "head": "<meta name=\"generator\" content=\"Probandia\">\n<meta name=\"dcterms.modified\" content=\"2026-09-03T09:03:00Z\">\n<title>Quand et où est né Henri MARCHAND, et de qui ?</title>",
+    "manual": "<section class=\"manual\"><h2>À lire à la main</h2><ul>\n<li>familysearch : https://www.familysearch.org/ark:/61903/3:1:EXAMPLE — non consulté, une connexion est requise</li>\n</ul></section>",
+    "research": "2026-09-04-birth-of-henri-marchand",
+    "title": "<h1>Quand et où est né Henri MARCHAND, et de qui ?</h1>",
+    "toc": "<nav aria-labelledby=\"toc-title\"><h2 id=\"toc-title\">Sommaire</h2>\n<ol>\n<li><a href=\"#s-pass-1\">1 Passe 1 — La naissance d&#x27;Henri</a>\n</li>\n<li><a href=\"#s-pass-2\">2 Passe 2 — Synthèse</a>\n</li>\n<li><a href=\"#s-errata\">3 Errata</a>\n</li>\n<li><a href=\"#s-method\">4 Méthode</a>\n<ol>\n<li><a href=\"#s-coverage-q1\">4.1 Couverture des sources de Q1</a>\n</li>\n<li><a href=\"#s-coverage-q2\">4.2 Couverture des sources de Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-questions\">5 Questions</a>\n<ol>\n<li><a href=\"#s-standard-q1\">5.1 Q1 : les éléments du Genealogical Proof Standard</a>\n</li>\n<li><a href=\"#s-standard-q2\">5.2 Q2 : les éléments du Genealogical Proof Standard</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-proofs\">6 Arguments de preuve</a>\n<ol>\n<li><a href=\"#s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">6.1 Argument de preuve pour Q1</a>\n</li>\n<li><a href=\"#s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">6.2 Argument de preuve pour Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-evidence\">7 Preuves et analyse</a>\n<ol>\n<li><a href=\"#s-analysis-an-henri-marchand-1870-birth\">7.1 Henri MARCHAND : naissance</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-timelines\">8 Chronologies</a>\n<ol>\n<li><a href=\"#s-timeline-henri-marchand-1870\">8.1 Chronologie de Henri MARCHAND</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-sources\">9 Sources</a>\n</li>\n<li><a href=\"#s-guides\">10 Guides de localité</a>\n<ol>\n<li><a href=\"#s-guide-bourg-vert\">10.1 Bourg-Vert</a>\n</li>\n</ol>\n</li>\n</ol>\n</nav>"
+   },
+   "end": {
+    "body": "<section id=\"s-pass-1\">\n<span id=\"s-01ja000000000000000000gps1\"></span>\n<h2>1 Passe 1 — La naissance d&#x27;Henri</h2>\n<p>L'acte de naissance d'Henri, au registre de la mairie, donne 1870<sup class=\"status-record\"><a href=\"#fn-1\">1</a></sup> ; la table décennale, recopiée après l'incendie de 1871, donne 1871<sup class=\"status-index\"><a href=\"#fn-2\">2</a></sup>. L'acte fait foi.</p>\n</section>\n<section id=\"s-pass-2\">\n<span id=\"s-01ja000000000000000000dsg1\"></span>\n<h2>2 Passe 2 — Synthèse</h2>\n<p>Les faits établis : Louis MARCHAND, naissance, 1898, Bourg-Vert<sup class=\"status-record\"><a href=\"#fn-3\">3</a></sup>, Louis MARCHAND, décès, 1970<sup class=\"status-index\"><a href=\"#fn-4\">4</a></sup>, Louise PERRIN, naissance, vers 1818, Bourg-Vert<sup class=\"status-hypothesis\"><a href=\"#fn-5\">5</a></sup>.</p>\n<table>\n<thead>\n<tr>\n<th>Personne</th>\n<th>Statut</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Louis MARCHAND</td>\n<td>acte</td>\n</tr>\n<tr>\n<td>Henri MARCHAND</td>\n<td>index</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-errata\">\n<h2>3 Errata</h2>\n<ul>\n<li><strong>Erratum E1</strong> — Passe 2: vers 1870 → 1871. Cause: erreur de lecture. Détecté par: relecture de l'acte.</li>\n</ul>\n</section>\n<section id=\"s-method\">\n<h2>4 Méthode</h2>\n<p>Rédigé avec l'aide d'agents d'IA : chaque fait cite sa source, et le moteur vérifie les citations et les règles de preuve ; relire les sources reste le travail du lecteur.</p>\n<table>\n<thead>\n<tr>\n<th>Passe</th>\n<th>Environnement</th>\n<th>Agent</th>\n<th>Modèle</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n<tr>\n<td>2</td>\n<td>cli</td>\n<td>session</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-coverage-q1\">\n<h3>4.1 Couverture des sources de Q1</h3>\n<table>\n<thead>\n<tr>\n<th>Type de source</th>\n<th>Lieux</th>\n<th>Années</th>\n<th>État</th>\n<th>Recherches, lacunes ou raison</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>état civil</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>tables décennales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>recensements</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n</tbody>\n</table>\n</section>\n<section id=\"s-coverage-q2\">\n<h3>4.2 Couverture des sources de Q2</h3>\n<table>\n<thead>\n<tr>\n<th>Type de source</th>\n<th>Lieux</th>\n<th>Années</th>\n<th>État</th>\n<th>Recherches, lacunes ou raison</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>état civil</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ac_bourg_vert: “MARCHAND Bourg-Vert naissances 1870”</td>\n</tr>\n<tr>\n<td>tables décennales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND tables décennales Bourg-Vert 1863-1872”</td>\n</tr>\n<tr>\n<td>recensements</td>\n<td>Bourg-Vert</td>\n<td>1869–1870</td>\n<td>consulté</td>\n<td>ad_valombre: “MARCHAND recensement Bourg-Vert 1872”</td>\n</tr>\n<tr>\n<td>minutes notariales</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>l'acte de naissance nomme les deux parents ; aucun acte notarié n'est attendu pour un nouveau-né</td>\n</tr>\n<tr>\n<td>registres matricules</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>Henri, de la classe 1890, n'a pas de matricule dans la fenêtre 1869-1871</td>\n</tr>\n<tr>\n<td>enregistrement et successions</td>\n<td>Bourg-Vert</td>\n<td>1869–1871</td>\n<td>sans objet</td>\n<td>aucune mutation ni succession n'est attendue pour la naissance d'un enfant</td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-questions\">\n<h2>5 Questions</h2>\n<table>\n<thead>\n<tr>\n<th>N°</th>\n<th>Question</th>\n<th>Statut</th>\n<th>Conclusion ou raison</th>\n<th>Confiance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Q1</td>\n<td>Quand et où est né Henri MARCHAND ?</td>\n<td>répondue</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>prouvé</td>\n</tr>\n<tr>\n<td>Q2</td>\n<td>Qui sont les parents d'Henri MARCHAND ?</td>\n<td>répondue</td>\n<td><code>henri-marchand-1870.birth</code></td>\n<td>prouvé</td>\n</tr>\n</tbody>\n</table>\n<section id=\"s-standard-q1\">\n<h3>5.1 Q1 : les éléments du Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Éléments du Genealogical Proof Standard établis : 5 sur 5</strong></p>\n<p><em>Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste.</em></p>\n<p>Confiance dans la conclusion : prouvé</p>\n<table>\n<thead>\n<tr>\n<th>Élément</th>\n<th>État</th>\n<th>Ce qui manque</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Recherche raisonnablement exhaustive</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Citations complètes et exactes</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Analyse et corrélation</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Preuves contradictoires résolues</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Conclusion argumentée</td>\n<td>établi</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n<section id=\"s-standard-q2\">\n<h3>5.2 Q2 : les éléments du Genealogical Proof Standard</h3>\n<aside class=\"standard\" role=\"note\" style=\"border: 1px solid var(--note-rule, currentColor); background: var(--note, transparent); padding: .5rem 1rem; margin: 1rem 0\"><p><strong>Éléments du Genealogical Proof Standard établis : 5 sur 5</strong></p>\n<p><em>Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste.</em></p>\n<p>Confiance dans la conclusion : prouvé</p>\n<table>\n<thead>\n<tr>\n<th>Élément</th>\n<th>État</th>\n<th>Ce qui manque</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Recherche raisonnablement exhaustive</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Citations complètes et exactes</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Analyse et corrélation</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Preuves contradictoires résolues</td>\n<td>établi</td>\n<td></td>\n</tr>\n<tr>\n<td>Conclusion argumentée</td>\n<td>établi</td>\n<td></td>\n</tr>\n</tbody>\n</table></aside>\n</section>\n</section>\n<section id=\"s-proofs\">\n<h2>6 Arguments de preuve</h2>\n<section id=\"s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">\n<h3>6.1 Argument de preuve pour Q1</h3>\n<p><strong>Question.</strong> Quand et où est né Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870) ; la table décennale 1863-1872.</p>\n<p><strong>Analyse.</strong> L'acte est un original dressé par l'officier d'état civil sur la déclaration du père ; la table est une copie dressée après l'incendie de 1871.</p>\n<p><strong>Corrélation.</strong> Le recensement de 1872 donne à Henri deux ans, ce qui s'accorde avec 1870.</p>\n<p><strong>Conflits résolus.</strong> La table donne 1871 : une erreur de copie, l'acte original fait foi.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est né à Bourg-Vert le 14 mars 1870.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Relu par le contradicteur, de façon indépendante.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Réponse : La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n<section id=\"s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">\n<h3>6.2 Argument de preuve pour Q2</h3>\n<p><strong>Question.</strong> Qui sont les parents d'Henri MARCHAND ?</p>\n<p><strong>Sources.</strong> L'acte de naissance du registre de la mairie (1870).</p>\n<p><strong>Analyse.</strong> Le père déclare lui-même la naissance et nomme la mère : information primaire.</p>\n<p><strong>Corrélation.</strong> Le recensement de 1872 montre Henri au foyer de Pierre et de Marie.</p>\n<p><strong>Conflits résolus.</strong> La table décennale ne contredit que l'année, pas la filiation.</p>\n<p><strong>Conclusion.</strong> Henri MARCHAND est le fils de Pierre MARCHAND et de Marie LEBRUN.</p>\n<p><a href=\"#s-analysis-an-henri-marchand-1870-birth\">§ 7.1</a></p>\n<p><em>Relu par le contradicteur, de façon indépendante.</em></p>\n<blockquote>\n<p><strong>Objection 1</strong> (<code>henri-marchand-1870.birth</code>) — Un autre Henri MARCHAND est né à Bourg-Vert vers 1870. Réponse : La table 1863-1872 ne compte qu'un Henri MARCHAND.</p>\n</blockquote>\n</section>\n</section>\n<section id=\"s-evidence\">\n<h2>7 Preuves et analyse</h2>\n<section id=\"s-analysis-an-henri-marchand-1870-birth\">\n<h3>7.1 Henri MARCHAND : naissance</h3>\n<table>\n<thead>\n<tr>\n<th>Affirme</th>\n<th>Informateur</th>\n<th>Source</th>\n<th>Nature de la source</th>\n<th>Information</th>\n<th>Preuve</th>\n<th>Fait, note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td>le père, à la déclaration</td>\n<td>Bourg-Vert, état civil, naissances, 1870, 1 E 12, acte de naissance n° 31, 14 mars 1870 ; Archives communales de Bourg-Vert.</td>\n<td>originale</td>\n<td>primaire</td>\n<td>directe</td>\n<td><code>henri-marchand-1870.birth</code></td>\n</tr>\n<tr>\n<td>1871</td>\n<td>le greffier qui dressa la table, après l'incendie</td>\n<td>Bourg-Vert, tables décennales, 1863-1872, 3 E 41/TD 7, p. 4 ; Archives départementales de Valombre.</td>\n<td>dérivée</td>\n<td>secondaire</td>\n<td>directe</td>\n<td><code>henri-marchand-1870.birth.2</code></td>\n</tr>\n</tbody>\n</table>\n<p>Résolution : 1870 (<code>henri-marchand-1870.birth</code>). L'acte fut dressé à la mairie le jour de la déclaration, par le père ; la table, recopiée après l'incendie de 1871, est dérivée et se trompe d'année</p>\n</section>\n</section>\n<section id=\"s-timelines\">\n<h2>8 Chronologies</h2>\n<section id=\"s-timeline-henri-marchand-1870\">\n<h3>8.1 Chronologie de Henri MARCHAND</h3>\n<figure class=\"timeline\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"tl\" viewBox=\"0 0 760 166\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Chronologie de Henri MARCHAND\">\n<style>\n  .tl { --record: #1d6b3a; --index: #2a5d9f; --hypothesis: #8a6100; --clash: #b00020; --ink: #1b1b1b;\n    --paper: #ffffff; --line: #555555; }\n  .tl text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .tl .axis { stroke: var(--line); stroke-width: 1.5; }\n  .tl .tick { stroke: var(--line); stroke-width: 1; }\n  .tl .tick-label, .tl .kin { font-size: 11px; fill: #444444; }\n  .tl .stem { stroke: #999999; stroke-width: 1; }\n  .tl .mark { stroke-width: 2; }\n  .tl .record .mark { fill: var(--record); stroke: var(--record); }\n  .tl .index .mark { fill: var(--paper); stroke: var(--index); }\n  .tl .hypothesis .mark { fill: var(--paper); stroke: var(--hypothesis); stroke-dasharray: 3 2; }\n  .tl .clash .mark { fill: var(--paper); stroke: var(--clash); stroke-width: 3; stroke-dasharray: none; }\n  .tl .clash text.sign { font-weight: bold; fill: var(--clash); }\n  .tl .clash text.label { fill: var(--clash); font-weight: 600; }\n  .tl .landmark { fill: #777777; }\n</style>\n<title>Chronologie de Henri MARCHAND</title>\n<desc>naissance 1870; naissance 1871; mariage 1896; décès 1931; enfant: naissance 1898; père: décès 1899; mère: décès 1902; conjoint: décès 1950</desc>\n<line class=\"axis\" x1=\"36\" y1=\"72\" x2=\"724\" y2=\"72\"/>\n<line class=\"tick\" x1=\"63.8\" y1=\"68\" x2=\"63.8\" y2=\"76\"/><text class=\"tick-label\" x=\"63.8\" y=\"89\" text-anchor=\"middle\">1870</text>\n<line class=\"tick\" x1=\"142.9\" y1=\"68\" x2=\"142.9\" y2=\"76\"/><text class=\"tick-label\" x=\"142.9\" y=\"89\" text-anchor=\"middle\">1880</text>\n<line class=\"tick\" x1=\"221.9\" y1=\"68\" x2=\"221.9\" y2=\"76\"/><text class=\"tick-label\" x=\"221.9\" y=\"89\" text-anchor=\"middle\">1890</text>\n<line class=\"tick\" x1=\"301.0\" y1=\"68\" x2=\"301.0\" y2=\"76\"/><text class=\"tick-label\" x=\"301.0\" y=\"89\" text-anchor=\"middle\">1900</text>\n<line class=\"tick\" x1=\"380.0\" y1=\"68\" x2=\"380.0\" y2=\"76\"/><text class=\"tick-label\" x=\"380.0\" y=\"89\" text-anchor=\"middle\">1910</text>\n<line class=\"tick\" x1=\"459.0\" y1=\"68\" x2=\"459.0\" y2=\"76\"/><text class=\"tick-label\" x=\"459.0\" y=\"89\" text-anchor=\"middle\">1920</text>\n<line class=\"tick\" x1=\"538.1\" y1=\"68\" x2=\"538.1\" y2=\"76\"/><text class=\"tick-label\" x=\"538.1\" y=\"89\" text-anchor=\"middle\">1930</text>\n<line class=\"tick\" x1=\"617.1\" y1=\"68\" x2=\"617.1\" y2=\"76\"/><text class=\"tick-label\" x=\"617.1\" y=\"89\" text-anchor=\"middle\">1940</text>\n<line class=\"tick\" x1=\"696.2\" y1=\"68\" x2=\"696.2\" y2=\"76\"/><text class=\"tick-label\" x=\"696.2\" y=\"89\" text-anchor=\"middle\">1950</text>\n<g class=\"record\"><title>naissance 1870</title><line class=\"stem\" x1=\"63.8\" y1=\"57\" x2=\"63.8\" y2=\"64\"/><circle class=\"mark\" cx=\"63.8\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"63.8\" y=\"54\" text-anchor=\"middle\">naissance 1870</text></g>\n<g class=\"index\"><title>naissance 1871</title><line class=\"stem\" x1=\"71.7\" y1=\"41\" x2=\"71.7\" y2=\"64\"/><circle class=\"mark\" cx=\"71.7\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"71.7\" y=\"38\" text-anchor=\"middle\">naissance 1871</text></g>\n<g class=\"index\"><title>mariage 1896</title><line class=\"stem\" x1=\"269.3\" y1=\"57\" x2=\"269.3\" y2=\"64\"/><circle class=\"mark\" cx=\"269.3\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"269.3\" y=\"54\" text-anchor=\"middle\">mariage 1896</text></g>\n<g class=\"index\"><title>décès 1931</title><line class=\"stem\" x1=\"546.0\" y1=\"57\" x2=\"546.0\" y2=\"64\"/><circle class=\"mark\" cx=\"546.0\" cy=\"72\" r=\"6\"/><text class=\"label\" x=\"546.0\" y=\"54\" text-anchor=\"middle\">décès 1931</text></g>\n<g><title>enfant: naissance 1898 — Louis MARCHAND</title><polygon class=\"landmark\" points=\"285.1,96 289.1,103 281.1,103\"/><text class=\"kin\" x=\"285.1\" y=\"118\" text-anchor=\"middle\">enfant: naissance 1898</text></g>\n<g><title>père: décès 1899 — Pierre MARCHAND</title><polygon class=\"landmark\" points=\"293.0,96 297.0,103 289.0,103\"/><text class=\"kin\" x=\"293.0\" y=\"132\" text-anchor=\"middle\">père: décès 1899</text></g>\n<g><title>mère: décès 1902 — Marie LEBRUN</title><polygon class=\"landmark\" points=\"316.8,96 320.8,103 312.8,103\"/><text class=\"kin\" x=\"316.8\" y=\"146\" text-anchor=\"middle\">mère: décès 1902</text></g>\n<g><title>conjoint: décès 1950 — Jeanne ROUSSEL</title><polygon class=\"landmark\" points=\"696.2,96 700.2,103 692.2,103\"/><text class=\"kin\" x=\"696.2\" y=\"118\" text-anchor=\"middle\">conjoint: décès 1950</text></g>\n</svg>\n</figure>\n<table>\n<thead>\n<tr>\n<th>Année</th>\n<th>Âge</th>\n<th>Événement</th>\n<th>Lieu</th>\n<th>Dates en conflit</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1870</td>\n<td></td>\n<td>naissance</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1871</td>\n<td></td>\n<td>naissance</td>\n<td>Bourg-Vert</td>\n<td></td>\n</tr>\n<tr>\n<td>1896</td>\n<td>26</td>\n<td>mariage</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1898</td>\n<td></td>\n<td>enfant — Louis MARCHAND: naissance</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1899</td>\n<td></td>\n<td>père — Pierre MARCHAND: décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1902</td>\n<td></td>\n<td>mère — Marie LEBRUN: décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1931</td>\n<td>61</td>\n<td>décès</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1950</td>\n<td></td>\n<td>conjoint — Jeanne ROUSSEL: décès</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</section>\n</section>\n<section id=\"s-sources\">\n<h2>9 Sources</h2>\n<ul>\n<li>Bourg-Vert. État civil, naissances, 1870, 1 E 12. Archives communales de Bourg-Vert.</li>\n<li>Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li>Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li>Bourg-Vert. Tables décennales, 1863-1872, 3 E 41/TD 7. Archives départementales de Valombre.</li>\n</ul>\n</section>\n<section id=\"s-guides\">\n<h2>10 Guides de localité</h2>\n<section id=\"s-guide-bourg-vert\">\n<h3>10.1 Bourg-Vert</h3>\n<figure class=\"timeline guide\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ju\" viewBox=\"0 0 760 112\" width=\"100%\" style=\"max-width:760px;height:auto\" role=\"img\" aria-label=\"Juridictions — Bourg-Vert\">\n<style>\n  .ju { --bar: #2a5d9f; --derived: #8a6100; --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }\n  .ju text { font: 12px system-ui, -apple-system, \"Segoe UI\", sans-serif; fill: var(--ink); }\n  .ju .axis { stroke: var(--line); stroke-width: 1.5; }\n  .ju .tick { stroke: var(--line); stroke-width: 1; }\n  .ju .grid { stroke: #dddddd; stroke-width: 1; }\n  .ju .tick-label { font-size: 11px; fill: #444444; }\n  .ju .bar { fill: var(--bar); fill-opacity: 0.25; stroke: var(--bar); stroke-width: 1.5; }\n  .ju .derived .bar { fill: var(--derived); stroke: var(--derived); stroke-dasharray: 5 3; }\n  .ju .open { fill: none; stroke: var(--line); stroke-width: 1.5; }\n</style>\n<title>Juridictions — Bourg-Vert</title>\n<desc>commune Bourg-Vert: 1790 – sans fin connue (catalogue:invented); département Valombre: 1790 – sans fin connue (catalogue:invented); pays FR: sans début connu – sans fin connue (catalogue:invented)</desc>\n<line class=\"grid\" x1=\"299.4\" y1=\"8\" x2=\"299.4\" y2=\"84\"/><line class=\"tick\" x1=\"299.4\" y1=\"84\" x2=\"299.4\" y2=\"89\"/><text class=\"tick-label\" x=\"299.4\" y=\"102\" text-anchor=\"middle\">1782</text>\n<line class=\"grid\" x1=\"348.8\" y1=\"8\" x2=\"348.8\" y2=\"84\"/><line class=\"tick\" x1=\"348.8\" y1=\"84\" x2=\"348.8\" y2=\"89\"/><text class=\"tick-label\" x=\"348.8\" y=\"102\" text-anchor=\"middle\">1784</text>\n<line class=\"grid\" x1=\"398.2\" y1=\"8\" x2=\"398.2\" y2=\"84\"/><line class=\"tick\" x1=\"398.2\" y1=\"84\" x2=\"398.2\" y2=\"89\"/><text class=\"tick-label\" x=\"398.2\" y=\"102\" text-anchor=\"middle\">1786</text>\n<line class=\"grid\" x1=\"447.6\" y1=\"8\" x2=\"447.6\" y2=\"84\"/><line class=\"tick\" x1=\"447.6\" y1=\"84\" x2=\"447.6\" y2=\"89\"/><text class=\"tick-label\" x=\"447.6\" y=\"102\" text-anchor=\"middle\">1788</text>\n<line class=\"grid\" x1=\"497.0\" y1=\"8\" x2=\"497.0\" y2=\"84\"/><line class=\"tick\" x1=\"497.0\" y1=\"84\" x2=\"497.0\" y2=\"89\"/><text class=\"tick-label\" x=\"497.0\" y=\"102\" text-anchor=\"middle\">1790</text>\n<line class=\"grid\" x1=\"546.4\" y1=\"8\" x2=\"546.4\" y2=\"84\"/><line class=\"tick\" x1=\"546.4\" y1=\"84\" x2=\"546.4\" y2=\"89\"/><text class=\"tick-label\" x=\"546.4\" y=\"102\" text-anchor=\"middle\">1792</text>\n<line class=\"grid\" x1=\"595.8\" y1=\"8\" x2=\"595.8\" y2=\"84\"/><line class=\"tick\" x1=\"595.8\" y1=\"84\" x2=\"595.8\" y2=\"89\"/><text class=\"tick-label\" x=\"595.8\" y=\"102\" text-anchor=\"middle\">1794</text>\n<line class=\"grid\" x1=\"645.2\" y1=\"8\" x2=\"645.2\" y2=\"84\"/><line class=\"tick\" x1=\"645.2\" y1=\"84\" x2=\"645.2\" y2=\"89\"/><text class=\"tick-label\" x=\"645.2\" y=\"102\" text-anchor=\"middle\">1796</text>\n<line class=\"grid\" x1=\"694.6\" y1=\"8\" x2=\"694.6\" y2=\"84\"/><line class=\"tick\" x1=\"694.6\" y1=\"84\" x2=\"694.6\" y2=\"89\"/><text class=\"tick-label\" x=\"694.6\" y=\"102\" text-anchor=\"middle\">1798</text>\n<line class=\"grid\" x1=\"744.0\" y1=\"8\" x2=\"744.0\" y2=\"84\"/><line class=\"tick\" x1=\"744.0\" y1=\"84\" x2=\"744.0\" y2=\"89\"/><text class=\"tick-label\" x=\"744.0\" y=\"102\" text-anchor=\"middle\">1800</text>\n<line class=\"axis\" x1=\"250\" y1=\"84\" x2=\"744\" y2=\"84\"/>\n<g class=\"row\"><title>commune Bourg-Vert: 1790 – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"24\" text-anchor=\"end\">commune Bourg-Vert</text><rect class=\"bar\" x=\"497.0\" y=\"14\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,14 743.0,20 737.0,26\"/></g>\n<g class=\"row\"><title>département Valombre: 1790 – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"46\" text-anchor=\"end\">département Valombre</text><rect class=\"bar\" x=\"497.0\" y=\"36\" width=\"247.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"737.0,36 743.0,42 737.0,48\"/></g>\n<g class=\"row\"><title>pays FR: sans début connu – sans fin connue (catalogue:invented)</title><text x=\"242\" y=\"68\" text-anchor=\"end\">pays FR</text><rect class=\"bar\" x=\"250.0\" y=\"58\" width=\"494.0\" height=\"12\" rx=\"3\"/><polyline class=\"open\" points=\"257.0,58 251.0,64 257.0,70\"/><polyline class=\"open\" points=\"737.0,58 743.0,64 737.0,70\"/></g>\n</svg>\n</figure>\n<p><strong>Juridictions</strong></p>\n<table>\n<thead>\n<tr>\n<th>Niveau</th>\n<th>Nom</th>\n<th>Du</th>\n<th>Au</th>\n<th>Source</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>commune</td>\n<td>Bourg-Vert</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n<tr>\n<td>département</td>\n<td>Valombre</td>\n<td>1790</td>\n<td>…</td>\n<td>catalogue:invented (department VB)</td>\n</tr>\n<tr>\n<td>pays</td>\n<td>FR</td>\n<td>…</td>\n<td>…</td>\n<td>catalogue:invented</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Dépôts</strong></p>\n<table>\n<thead>\n<tr>\n<th>Dépôt</th>\n<th>Fonds</th>\n<th>Note</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Archives départementales de Valombre (<code>ad_valombre</code>)</td>\n<td>naissances 1792–1936 (3 E 41), decennial_table 1802–1932 (3 E 41/TD), recensements 1836–1936 (6 M)</td>\n<td></td>\n</tr>\n<tr>\n<td>Archives communales de Bourg-Vert (<code>ac_bourg_vert</code>)</td>\n<td>naissances 1792–1936 (1 E)</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Guide établi le 4 septembre 2026 à partir de : catalogue:invented, catalogue:archives.</p>\n</section>\n</section>",
+    "generated": "3 septembre 2026",
+    "head": "<meta name=\"generator\" content=\"Probandia\">\n<meta name=\"dcterms.modified\" content=\"2026-09-03T09:03:00Z\">\n<title>Quand et où est né Henri MARCHAND, et de qui ?</title>",
+    "manual": "<section class=\"manual\"><h2>À lire à la main</h2><ul>\n<li>familysearch : https://www.familysearch.org/ark:/61903/3:1:EXAMPLE — non consulté, une connexion est requise</li>\n</ul></section>",
+    "notes": "<section class=\"notes\" aria-label=\"Notes\"><ol>\n<li id=\"fn-1\" class=\"status-record\">Acte. Bourg-Vert, état civil, naissances, 1870, 1 E 12, acte de naissance n° 31, 14 mars 1870 ; Archives communales de Bourg-Vert. « N° 31 Marchand Henri L'an mil huit cent soixante-dix, le quatorze mars, à dix heures du matin, par devant nous maire de Bourg-Vert, est comparu Pierre Marchand, cultivateur, âgé de vingt-neuf ans, lequel nous a présenté un enfant du sexe masculin né ce jour, » (lignes 1 à 4 de la transcription)</li>\n<li id=\"fn-2\" class=\"status-index\">Index. Bourg-Vert, tables décennales, 1863-1872, 3 E 41/TD 7, p. 4 ; Archives départementales de Valombre. « MARCHAND Henri, 14 mars 1871 » (page lue le 4 septembre 2026)</li>\n<li id=\"fn-3\" class=\"status-record\">Acte. Archives départementales de Valombre, État civil, Bourg-Vert, 3 E 41/12, acte 57, image 33, https://archives.valombre.example/ec/41/12/33 (consulted on 2026-09-01).</li>\n<li id=\"fn-4\" class=\"status-index\">Index. Archives départementales de Valombre, Recensements, Bourg-Vert, 6 M 120, 1846, p. 3 (consulted on 2026-09-02).</li>\n<li id=\"fn-5\" class=\"status-hypothesis\">Hypothèse.</li>\n</ol></section>",
+    "research": "2026-09-04-birth-of-henri-marchand",
+    "title": "<h1>Quand et où est né Henri MARCHAND, et de qui ?</h1>",
+    "toc": "<nav aria-labelledby=\"toc-title\"><h2 id=\"toc-title\">Sommaire</h2>\n<ol>\n<li><a href=\"#s-pass-1\">1 Passe 1 — La naissance d&#x27;Henri</a>\n</li>\n<li><a href=\"#s-pass-2\">2 Passe 2 — Synthèse</a>\n</li>\n<li><a href=\"#s-errata\">3 Errata</a>\n</li>\n<li><a href=\"#s-method\">4 Méthode</a>\n<ol>\n<li><a href=\"#s-coverage-q1\">4.1 Couverture des sources de Q1</a>\n</li>\n<li><a href=\"#s-coverage-q2\">4.2 Couverture des sources de Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-questions\">5 Questions</a>\n<ol>\n<li><a href=\"#s-standard-q1\">5.1 Q1 : les éléments du Genealogical Proof Standard</a>\n</li>\n<li><a href=\"#s-standard-q2\">5.2 Q2 : les éléments du Genealogical Proof Standard</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-proofs\">6 Arguments de preuve</a>\n<ol>\n<li><a href=\"#s-proof-pf-q1-2026-09-04-birth-of-henri-marchand\">6.1 Argument de preuve pour Q1</a>\n</li>\n<li><a href=\"#s-proof-pf-q2-2026-09-04-birth-of-henri-marchand\">6.2 Argument de preuve pour Q2</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-evidence\">7 Preuves et analyse</a>\n<ol>\n<li><a href=\"#s-analysis-an-henri-marchand-1870-birth\">7.1 Henri MARCHAND : naissance</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-timelines\">8 Chronologies</a>\n<ol>\n<li><a href=\"#s-timeline-henri-marchand-1870\">8.1 Chronologie de Henri MARCHAND</a>\n</li>\n</ol>\n</li>\n<li><a href=\"#s-sources\">9 Sources</a>\n</li>\n<li><a href=\"#s-guides\">10 Guides de localité</a>\n<ol>\n<li><a href=\"#s-guide-bourg-vert\">10.1 Bourg-Vert</a>\n</li>\n</ol>\n</li>\n</ol>\n</nav>"
+   }
+  }
+ }
+}

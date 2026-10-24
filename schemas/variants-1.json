@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/variants-1.json",
+  "title": "variants.yaml",
+  "description": "Family index: attested name forms.",
+  "type": "object",
+  "required": [
+    "schema"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "surnames": {
+      "$ref": "#/$defs/variant_map"
+    },
+    "given": {
+      "$ref": "#/$defs/variant_map"
+    }
+  },
+  "$defs": {
+    "variant_map": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "form"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "form": {
+              "type": "string"
+            },
+            "source": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

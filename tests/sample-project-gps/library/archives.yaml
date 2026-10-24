@@ -1,0 +1,45 @@
+schema: 1
+archives:
+- id: ad_valombre
+  name: Archives départementales de Valombre
+  nature: image
+  reliability: civil registers, ten-year indexes and censuses (images); the registers of 1870-1872 burned
+    in 1871
+  coverage:
+    types:
+    - birth
+    - marriage
+    - death
+    - decennial_table
+    - census
+    years:
+    - 1792
+    - 1936
+    places:
+    - FR-VB
+  access:
+    mode: browser
+    third_party: forbidden
+    hosts:
+    - archives.valombre.example
+  image_rights: free
+- id: ac_bourg_vert
+  name: Archives communales de Bourg-Vert
+  nature: image
+  reliability: the town hall's copy of the civil registers
+  coverage:
+    types:
+    - birth
+    - marriage
+    - death
+    years:
+    - 1792
+    - 1936
+    places:
+    - FR-VB
+  access:
+    mode: browser
+    third_party: forbidden
+    hosts:
+    - mairie.bourg-vert.example
+  image_rights: free

@@ -1,0 +1,74 @@
+Probandia
+Copyright 2026 DevOhMyCode
+
+Probandia is licensed under the Apache License, Version 2.0 (the file LICENSE).
+It carries the following third-party works, each under its own licence. Every
+licence text named below is distributed with Probandia: in the repository, in
+the sdist and in the wheel (where report-templates/ and vendor-js/ sit under
+probandia/_data/).
+
+
+1. Python libraries vendored in src/probandia/_vendor (pure-Python copies, so
+   that the engine needs no pip install; versions pinned in vendor.txt)
+
+   PyYAML 6.0.3           MIT    Copyright (c) 2017-2021 Ingy döt Net
+                                 Copyright (c) 2006-2016 Kirill Simonov
+                                 src/probandia/_vendor/licenses/PyYAML-LICENSE
+   tomlkit 0.15.1         MIT    Copyright (c) 2018 Sébastien Eustace
+                                 src/probandia/_vendor/licenses/tomlkit-LICENSE
+   markdown-it-py 4.2.0   MIT    Copyright (c) 2020 ExecutableBookProject
+                                 Copyright (c) 2014 Vitaly Puzrin, Alex Kocharin
+                                 src/probandia/_vendor/licenses/markdown-it-py-LICENSE
+                                 src/probandia/_vendor/licenses/markdown-it-py-LICENSE.markdown-it
+   mdurl 0.1.2            MIT    Copyright (c) 2015 Vitaly Puzrin, Alex Kocharin
+                                 Copyright (c) 2021 Taneli Hukkinen
+                                 src/probandia/_vendor/licenses/mdurl-LICENSE
+
+   See also src/probandia/_vendor/LICENSES.md.
+
+
+2. JavaScript inlined in each tree.html, from vendor-js/ (unchanged copies of
+   the npm packages)
+
+   family-chart 0.9.0     MIT    Copyright (c) 2021 Donat Soric
+                                 vendor-js/family-chart/LICENSE.txt
+   d3 7.9.0               ISC    Copyright 2010-2023 Mike Bostock
+                                 vendor-js/d3/LICENSE
+
+   See also vendor-js/README.md.
+
+
+3. Fonts embedded in report-templates/habillage.html (latin subsets, as
+   data: URIs in WOFF2), each under the SIL Open Font License, Version 1.1
+
+   Bodoni Moda            Copyright 2020 The Bodoni Moda Project Authors
+                          (https://github.com/indestructible-type/Bodoni)
+                          report-templates/licenses/BodoniModa-OFL.txt
+   Grenze Gotisch         Copyright 2020 The Grenze Gotisch Project Authors
+                          (https://github.com/Omnibus-Type/Grenze-Gotisch)
+                          report-templates/licenses/GrenzeGotisch-OFL.txt
+   Probandia Mono         a modified version (latin subset) of IBM Plex Mono
+                          Regular 2.3, renamed: the original's licence
+                          reserves the name "Plex", which a modified version
+                          may not use (OFL 1.1, condition 3). Only the name
+                          table changed; glyphs, metrics and weight are those
+                          of IBM Plex Mono.
+                          Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+                          (https://github.com/IBM/plex)
+                          report-templates/licenses/IBMPlexMono-OFL.txt
+   Spectral               Copyright 2017 The Spectral Project Authors
+                          (https://github.com/productiontype/Spectral)
+                          report-templates/licenses/Spectral-OFL.txt
+
+   The four licence files are those of the fonts' folders in the Google Fonts
+   repository (https://github.com/google/fonts, ofl/bodonimoda, ofl/grenzegotisch,
+   ofl/ibmplexmono and ofl/spectral, OFL.txt), read on 17 October 2026. A report
+   written with this template embeds the fonts; it is a copy of them, under the
+   same licence. Every one is a subset, so a modified version; IBM Plex Mono
+   is the only one whose licence declares a Reserved Font Name, so the only
+   one renamed (tests/unit/test_packaging.py, Fonts, keeps it so).
+
+
+4. Records of the example family, in examples/hugo (repository and sdist only)
+
+   Each file's source, rights and credit are in examples/hugo/manifest.yaml.

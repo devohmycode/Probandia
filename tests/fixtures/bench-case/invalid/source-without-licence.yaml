@@ -1,0 +1,12 @@
+# expect: $.sources[0].licence
+schema: 1
+id: birth-of-yves-tanguy-1815
+title: The birth of Yves TANGUY, 1815
+question: Quand et où est né Yves TANGUY ?
+family: tanguy
+research: 2026-10-05-birth-of-yves-tanguy
+expected:
+- person: Yves TANGUY
+  type: birth
+sources:
+- id: src-01JA0000000000000000000101

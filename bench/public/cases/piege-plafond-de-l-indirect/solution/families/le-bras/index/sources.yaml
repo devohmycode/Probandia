@@ -1,0 +1,29 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000401
+  type: civil-registration
+  repository: Archives communales de Prémoulin
+  collection: État civil, Prémoulin, décès 1850
+  jurisdiction: Prémoulin
+  act_no: '3'
+  act_date: '1850-01-15'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000401.md
+  citation: Prémoulin, décès 1850, acte n° 3
+- id: src-01JT0000000000000000000402
+  type: census
+  repository: Archives départementales de Valombre
+  collection: Recensement de 1836, Prémoulin
+  jurisdiction: Prémoulin
+  act_date: '1836-06-01'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000402.md
+  citation: Prémoulin, recensement de 1836, le bourg, maison 14
+- id: src-01JT0000000000000000000403
+  type: other
+  repository: Archives communales de Prémoulin
+  collection: Inventaire des registres de Prémoulin
+  act_date: '1901-03-01'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000403.md
+  citation: Prémoulin, inventaire des registres, 1901

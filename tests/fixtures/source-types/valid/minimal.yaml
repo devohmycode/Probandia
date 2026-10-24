@@ -1,0 +1,29 @@
+schema: 1
+types:
+  - id: civil_registers
+    names: {en: "civil registers", fr: "état civil"}
+    coverage: [birth, marriage, death]
+    answers: [birth, marriage, death, parents]
+    rules:
+      - country: FR
+        from: 1792
+        to: null
+        held_by: ["town hall"]
+        references:
+          - {title: "Loi du 20 septembre 1792"}
+        exceptions:
+          - places: [FR-73]
+            from: 1816
+            to: 1860
+            effect: replaced
+            by: parish_registers
+            note: "Sardinian rule"
+            references:
+              - {title: "a guide", url: "https://example.org/guide"}
+  - id: parish_registers
+    names: {en: "parish registers", fr: "registres paroissiaux"}
+    coverage: [baptism]
+    answers: [birth]
+    rules:
+      - {country: FR, from: 1539, to: 1792, held_by: ["departmental archives"],
+         references: [{title: "Ordonnance de Villers-Cotterêts, août 1539"}]}

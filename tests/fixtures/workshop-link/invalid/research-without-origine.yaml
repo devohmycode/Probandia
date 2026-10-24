@@ -1,0 +1,10 @@
+# expect: $.researches["2026-10-06-x"].origine
+schema: 1
+adapter: prototype
+root: ../atelier
+families: {}
+persons: {}
+facts: {}
+researches:
+  2026-10-06-x: {rapport: paris-1822}
+synced: {sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef, at: "2026-10-06T10:00:00Z"}

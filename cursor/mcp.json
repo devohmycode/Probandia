@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "probandia": {
+      "command": "python",
+      "args": [
+        "${CURSOR_PLUGIN_ROOT}/run_probandia.py",
+        "mcp"
+      ],
+      "env": {
+        "PROBANDIA_HARNESS": "cursor"
+      }
+    }
+  }
+}

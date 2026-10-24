@@ -1,0 +1,22 @@
+{
+  "note": "not a live answer: built from the OpenWeb Ninja documentation read on 2 October 2026; to check against a real call once an account is open. The error body is a guess: only the status code is documented",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-news-data/search?query=%22Hugo%22+Besan%C3%A7on+1802&limit=5",
+    "headers": {
+      "x-api-key": "KEY"
+    }
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "ERROR",
+    "request_id": "e401",
+    "error": {
+      "message": "Invalid API key. Go to https://app.openwebninja.com to get yours.",
+      "code": 401
+    }
+  }
+}

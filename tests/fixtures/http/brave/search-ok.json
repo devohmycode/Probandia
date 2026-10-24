@@ -1,0 +1,169 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search?q=%22Hugo%22+Besan%C3%A7on+1802&country=ALL&search_lang=fr&count=10",
+    "headers": {
+      "X-Subscription-Token": "KEY",
+      "Accept": "application/json"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "X-RateLimit-Limit": "1, 15000",
+    "X-RateLimit-Policy": "1;w=1, 15000;w=2592000",
+    "X-RateLimit-Remaining": "0, 14523",
+    "X-RateLimit-Reset": "1, 1234567"
+  },
+  "body": {
+    "type": "search",
+    "query": {
+      "original": "\"Hugo\" Besançon 1802",
+      "show_strict_warning": false,
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "all",
+      "bad_results": false,
+      "should_fallback": false,
+      "more_results_available": false
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Charles Hugo (1826 - 1871) - Genealogy - Example Genealogy",
+          "url": "https://genealogy.example.org/people/Charles-Hugo/6000000041872239112",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Genealogy for Charles <strong>Hugo</strong> (1826 - 1871) family tree on Example Genealogy, son of Victor <strong>Hugo</strong> and Adèle Foucher ...",
+          "profile": {
+            "name": "Example Genealogy",
+            "url": "https://genealogy.example.org/people/Charles-Hugo/6000000041872239112",
+            "long_name": "genealogy.example.org",
+            "img": "https://imgs.search.brave.com/favicon-genealogy.example.org.png"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "genealogy.example.org",
+            "hostname": "genealogy.example.org",
+            "favicon": "https://imgs.search.brave.com/favicon-genealogy.example.org.png",
+            "path": " › people › Charles-Hugo"
+          }
+        },
+        {
+          "title": "Naissance Hugo, Nancy, 1800 - Example Families",
+          "url": "https://families.example.org/records/births/nancy/1800/hugo",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Registre d'état civil de Nancy, année 1800 : acte de naissance d'Eugène <strong>Hugo</strong>, fils de Léopold <strong>Hugo</strong> et de Sophie Trébuchet ...",
+          "profile": {
+            "name": "Example Families",
+            "url": "https://families.example.org/records/births/nancy/1800/hugo",
+            "long_name": "families.example.org",
+            "img": "https://imgs.search.brave.com/favicon-families.example.org.png"
+          },
+          "language": "fr",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "families.example.org",
+            "hostname": "families.example.org",
+            "favicon": "https://imgs.search.brave.com/favicon-families.example.org.png",
+            "path": " › records › births"
+          },
+          "page_age": "2019-02-14T00:00:00",
+          "age": "February 14, 2019"
+        },
+        {
+          "title": "France, Mariages - Hugo - Example Records",
+          "url": "https://records.example.org/ark:/61903/1:1:XYZ1-8QK",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Name: Léopold <strong>Hugo</strong>; Event Type: Marriage; Event Date: 1797; Event Place: Paris, France; Spouse's Name ...",
+          "profile": {
+            "name": "Example Records",
+            "url": "https://records.example.org/ark:/61903/1:1:XYZ1-8QK",
+            "long_name": "records.example.org",
+            "img": "https://imgs.search.brave.com/favicon-records.example.org.png"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "records.example.org",
+            "hostname": "records.example.org",
+            "favicon": "https://imgs.search.brave.com/favicon-records.example.org.png",
+            "path": " › ark: › 61903"
+          }
+        },
+        {
+          "title": "Famille Hugo de Nancy - Généalogie lorraine",
+          "url": "https://genealogie.example.org/familles/hugo-nancy",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Descendance de Joseph <strong>Hugo</strong> (mort en 1789), menuisier à Nancy ; son fils Léopold, ses petits-fils Abel, Eugène et Victor ...",
+          "profile": {
+            "name": "genealogie.example.org",
+            "url": "https://genealogie.example.org/familles/hugo-nancy",
+            "long_name": "genealogie.example.org",
+            "img": "https://imgs.search.brave.com/favicon-genealogie.example.org.png"
+          },
+          "language": "fr",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "genealogie.example.org",
+            "hostname": "genealogie.example.org",
+            "favicon": "https://imgs.search.brave.com/favicon-genealogie.example.org.png",
+            "path": " › familles › hugo-nancy"
+          },
+          "page_age": "2021-06-03T00:00:00",
+          "age": "June 3, 2021"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

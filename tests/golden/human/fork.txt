@@ -1,0 +1,9 @@
+✓ OK
+  research     <today>-perrin-line
+  family       marchand
+  forked from  2026-09-01-ancestors-of-louis-marchand
+  at           2
+  rendered     OK
+  pass         3
+
+  • pass 3 is open; next: digest, then plan

@@ -1,0 +1,109 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-news-data/search?query=Hugo+Besan%C3%A7on&limit=5"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "6f5a9a22-7da2-48af-9597-18f463e4f8ba",
+    "data": [
+      {
+        "article_id": "CBMiqAFBVV95cUxPM3FiSUpUdXY3WVo4OHFsYUNCQnhVWDA4dEsweVQ5bUEtRjhadmJnLUZFTUZZTFZubmwzY1NORGp5YURlSFFKU0RUWmFYU2ZzWjBGdlV0bjhkZ2RYUXNiVFZSdHpoZjJUSHBFVnR3WTc4ZmZzT1lkcUlZRkJLbGR4eVEyLTRYRWt6cHhQV0FuMUNkdjh0Sy1BWFJfV29nVzVxVm1rdTRGUTE",
+        "title": "40-year tradition: Luxembourgish roots celebrated at Luxembourg Fest in Wisconsin, USA",
+        "link": "https://today.rtl.lu/news/world/luxembourgish-roots-celebrated-at-luxembourg-fest-in-wisconsin-2028413523",
+        "snippet": "Luxembourgers and their descendants from across the United States gathered over the weekend in the village of Belgium, Wisconsin, to celebrate ...",
+        "photo_url": "https://static-prod.rtl.lu/dims4/default/818340f/2147483647/strip/true/crop/1820x1023+0+0/resize/1224x688!/quality/90/?url=https%3A%2F%2Frtl-luxembourg-new-production-web.s3.eu-central-1.amazonaws.com%2Fbrightspot%2Ffc%2Fe3%2Fbb663ae94698b564e142253e1033%2F0000-3469295-0000.jpg",
+        "thumbnail_url": "https://news.google.com/api/attachments/CC8iK0NnNXJVRmR3ZFhaZmJrUlBVRXhUVFJDZkF4ampCU2dLTWdZQlFaWXRvUWc=-w200-h200-p-df-rw",
+        "published_datetime_utc": "2026-08-10T07:00:00.000Z",
+        "authors": [
+          "Raphaelle Dickes",
+          "Philip Crowther"
+        ],
+        "source_url": "https://today.rtl.lu",
+        "source_name": "RTL Today",
+        "source_logo_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://today.rtl.lu&client=NEWS_360&size=256&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_favicon_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://today.rtl.lu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_publication_id": "CAAqJggKIiBDQklTRWdnTWFnNEtESFJ2WkdGNUxuSjBiQzVzZFNnQVAB",
+        "related_topics": [
+          {
+            "topic_id": "CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZ4Ym1OamVuWjVaeElDWlc0b0FBUAE",
+            "topic_name": "Raphaelle Dickes"
+          },
+          {
+            "topic_id": "CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZqTnpOcVpteGlaeElDWlc0b0FBUAE",
+            "topic_name": "Philip Crowther"
+          }
+        ]
+      },
+      {
+        "article_id": "CBMisAFBVV95cUxNQ3g4eTV1eVpId1lCaEVtYl9IdGFlejNqcjBjTGVPbnpTZWRXb3Q4T3pkeDRyVWZqc195VFdtcWNYT01GcDd3YVhSUy1LTV8tZ0NsRU9lU3B3REdabk1pd3V0THhVUzkzdlB6M0pOSmpmWTQyWEd5akxFYlFkVUowUXREdTRzWUNtV3hPWV9NOThjSWJBelVNMXpoV2JOWF82dG8waDlBX3paX1NES0Y4RA",
+        "title": "The Grand Est Region inaugurates new trains for the Sillon Lorrain rail corridor",
+        "link": "https://www.railwaypro.com/wp/the-grand-est-region-inaugurates-new-trains-for-the-sillon-lorrain-rail-corridor/",
+        "snippet": "The Grand Est Region, in northeastern France, has officially inaugurated the new five-car bilevel trains to operate the Fluo Grand Est ...",
+        "photo_url": "https://www.railwaypro.com/wp/wp-content/uploads/2026/05/Grtand-est.jpg",
+        "thumbnail_url": "https://news.google.com/api/attachments/CC8iK0NnNXVTV1ZUUjFodGNuWmxha3d6VFJDZkF4ampCU2dLTWdZQllKQWdNUWM=-w200-h200-p-df-rw",
+        "published_datetime_utc": "2026-05-08T07:00:00.000Z",
+        "authors": [],
+        "source_url": "https://www.railwaypro.com",
+        "source_name": "Railway PRO",
+        "source_logo_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.railwaypro.com&client=NEWS_360&size=256&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_favicon_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.railwaypro.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_publication_id": "CAAqKQgKIiNDQklTRkFnTWFoQUtEbkpoYVd4M1lYbHdjbTh1WTI5dEtBQVAB",
+        "related_topics": []
+      },
+      {
+        "article_id": "CBMiogFBVV95cUxORVhfcmY1UmpKMmRUZVZQZUZaV2ZOX0M2X3BwWl9tb3htVXpxTlNtQXFRbDVyVjY3MllwUkoyTjJFcEtzbS1OYVVFcVNucG1UYVQ0ZFp0eGMzR29pYy16d0Zkb2d5bEdMRUpycVdaTnpFNnBzQlpUYktHMm5zMzI1VFdlM0hTRE5Tby1ScEI3UHFPMlowQ2d1eDc1dXVNblhLa1E",
+        "title": "Future-proof EU pharma innovation needs regulatory testing zones",
+        "link": "https://www.euractiv.com/interview/future-proof-eu-pharma-innovation-needs-regulatory-testing-zones/",
+        "snippet": "We advocate for a “future-proof” regulatory environment that embraces “regulatory sandboxes” and risk-based approaches. In practice, these ...",
+        "photo_url": "https://www.euractiv.com/content/uploads/sites/2/2026/02/240430-Roche-Portraits-0320-1182x788.jpg",
+        "thumbnail_url": "https://news.google.com/api/attachments/CC8iI0NnNVdiV1p1ZEVNeE5raFZjVUUwVFJERUF4aW1CU2dLTWdB=-w200-h200-p-df-rw",
+        "published_datetime_utc": "2026-02-20T08:00:00.000Z",
+        "authors": [],
+        "source_url": "https://www.euractiv.com",
+        "source_name": "rapporteur.com",
+        "source_logo_url": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.euractiv.com&client=NEWS_360&size=256&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_favicon_url": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.euractiv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_publication_id": "CAAqJggKIiBDQklTRWdnTWFnNEtER1YxY21GamRHbDJMbU52YlNnQVAB",
+        "related_topics": []
+      },
+      {
+        "article_id": "CBMiqAFBVV95cUxOQzBpWS03MXVWeW5QVDhSdTdVWnF2Q2V2REUtYU9sZ1BZcm9RUXhMTVluRjJINFBhVDBXVE1NQlYwX0dtWDZYQUpEeUZOMzF6bk1yVHQtM0RQWFJBcDNQSU9EVUl0NnVpbDI2TUlPZzZZbkhLZHBJR2ZnMGtiQWRsZmNDbTc2dnk1dm9zQVhYR29FS2ZkZ3doNWxBWnNkVURaMVA3bko3bHI",
+        "title": "Vianden remembers Victor Hugo, its guest of 1862, 1865 and 1871",
+        "link": "https://news.example.org/articles/11206509-vianden-remembers-victor-hugo",
+        "snippet": "The town of Vianden, in the north of the Grand Duchy, recalls the three stays of Victor Hugo, in 1862, 1865 and 1871.",
+        "photo_url": "https://news.example.org/img/64e8e5e5ad76f.png?width=650&quality=80",
+        "thumbnail_url": "https://news.google.com/api/attachments/CC8iK0NnNDFhVXB4WmtOblZYWkJjMXBSVFJEdEFoaUtCU2dLTWdZRmNJcmxMZ2c=-w200-h200-p-df-rw",
+        "published_datetime_utc": "2023-08-25T07:00:00.000Z",
+        "authors": [],
+        "source_url": "https://news.example.org",
+        "source_name": "Example News",
+        "source_logo_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://news.example.org&client=NEWS_360&size=256&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_favicon_url": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://news.example.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_publication_id": "CAAqJggKIiBDQklTRWdnTWFnNEtER1pzYjJKcGEyVnpMbU52YlNnQVAB",
+        "related_topics": []
+      },
+      {
+        "article_id": "CBMiqgFBVV95cUxPTzJQM1VhWUN2dmF4SU1NZHFIckV2VGNqc2lDbEYzOUxmaDhPM09aTmVnNUlETzREUVN4ODhpQVFIdUpHc213NENuX2FYeXNZV0haVTU3ekVGZ3JOZXM4dnV4RUNKUmozSElzRmVhLWs5d0VhNl9uX1dmYWlhTzhORDl5RVRZQm1DcnUyQ011bTFJcnpWUXVOV2d6ZERVTldSbUY5ZUktVVdtQQ",
+        "title": "Luxembourg’s delicious dessert wines",
+        "link": "https://www.luxtimes.lu/yourluxembourg/foodandnightlife/luxembourgs-delicious-dessert-wines/115106877.html",
+        "snippet": "The sweet nectars offer such a wealth of aromas, such a complex interplay of fruit and spice, that they can replace any dessert.",
+        "photo_url": "https://img.luxtimes.lu/public/luxembourg/x349se-93.jpeg/alternates/SIXTEEN_NINE_1024/93.jpeg",
+        "thumbnail_url": "https://news.google.com/api/attachments/CC8iK0NnNVViSHBKZURKVlYxWkNkVEpzVFJDZkF4ampCU2dLTWdZUkJvS0hBZ3c=-w200-h200-p-df-rw",
+        "published_datetime_utc": "2025-12-20T08:00:00.000Z",
+        "authors": [],
+        "source_url": "https://www.luxtimes.lu",
+        "source_name": "Luxembourg Times",
+        "source_logo_url": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.luxtimes.lu&client=NEWS_360&size=256&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_favicon_url": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.luxtimes.lu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "source_publication_id": "CAAqJQgKIh9DQklTRVFnTWFnMEtDMngxZUhScGJXVnpMbXgxS0FBUAE",
+        "related_topics": []
+      }
+    ]
+  }
+}

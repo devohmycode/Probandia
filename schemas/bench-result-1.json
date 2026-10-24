@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/bench-result-1.json",
+  "title": "results.json",
+  "description": "What bench/run.py --json writes: the scores of one run of the benchmark, one entry per case, with what each was played with. It names no person, no key and no absolute path, so it can be published. bench/run.py --compare reads several of them.",
+  "type": "object",
+  "required": [
+    "schema",
+    "probandia",
+    "date",
+    "cases"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "probandia": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the version of the Probandia that scored the run"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "$defs": {
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "kinds": {
+      "type": "object",
+      "required": [
+        "input",
+        "output",
+        "cache_read",
+        "cache_write",
+        "cache_write_5m",
+        "weighted"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "input": {
+          "$ref": "#/$defs/count"
+        },
+        "output": {
+          "$ref": "#/$defs/count"
+        },
+        "cache_read": {
+          "$ref": "#/$defs/count"
+        },
+        "cache_write": {
+          "$ref": "#/$defs/count",
+          "description": "every token written to the cache"
+        },
+        "cache_write_5m": {
+          "$ref": "#/$defs/count",
+          "description": "the part of cache_write written to the five-minute cache"
+        },
+        "weighted": {
+          "$ref": "#/$defs/count",
+          "description": "input-equivalent tokens: each kind at its relative price (bench/METRICS.md)"
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "required": [
+        "id",
+        "harness",
+        "model",
+        "effort",
+        "mode",
+        "duration_s",
+        "passes",
+        "metrics",
+        "tokens",
+        "by_model"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "the question's or the case's id"
+        },
+        "observed": {
+          "type": "boolean",
+          "description": "an observed case: it informs and blocks nothing"
+        },
+        "harness": {
+          "type": "object",
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "--harness, else the harness of the main thread's tokens"
+            },
+            "version": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "--harness-version: the project does not record it"
+            }
+          }
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "--model, else the research's run.model, else the model of the main thread's tokens"
+        },
+        "effort": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "--effort, else the run.effort of the research's passes"
+        },
+        "mode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "the run.mode of the research's passes: session, subagent or team"
+        },
+        "duration_s": {
+          "$ref": "#/$defs/count",
+          "description": "the sum of the duration_s of the research's pass.ended events"
+        },
+        "passes": {
+          "$ref": "#/$defs/count"
+        },
+        "metrics": {
+          "type": "object",
+          "required": [
+            "findings",
+            "expected",
+            "false_promotions",
+            "false_count",
+            "uncited",
+            "abstentions",
+            "abstain_expected",
+            "quoted",
+            "facts",
+            "proven",
+            "duplicates",
+            "native",
+            "paid"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "findings": {
+              "$ref": "#/$defs/count"
+            },
+            "expected": {
+              "$ref": "#/$defs/count"
+            },
+            "false_promotions": {
+              "type": "number",
+              "minimum": 0,
+              "description": "per 100 proven facts"
+            },
+            "false_count": {
+              "$ref": "#/$defs/count"
+            },
+            "uncited": {
+              "$ref": "#/$defs/count"
+            },
+            "abstentions": {
+              "$ref": "#/$defs/count"
+            },
+            "abstain_expected": {
+              "$ref": "#/$defs/count"
+            },
+            "quoted": {
+              "$ref": "#/$defs/count",
+              "description": "findings quoting their passage, found again"
+            },
+            "facts": {
+              "$ref": "#/$defs/count"
+            },
+            "proven": {
+              "$ref": "#/$defs/count"
+            },
+            "duplicates": {
+              "$ref": "#/$defs/count",
+              "description": "proven facts that prove again an event of a person already proven (bench/METRICS.md)"
+            },
+            "native": {
+              "$ref": "#/$defs/count"
+            },
+            "paid": {
+              "type": "number",
+              "minimum": 0
+            },
+            "checks": {
+              "$ref": "#/$defs/count",
+              "description": "the checks the expected answers ask for (date, axes, confidence_max, uncertain_reading, distinct)"
+            },
+            "checks_judged": {
+              "$ref": "#/$defs/count",
+              "description": "those whose answer was found, so that they could be judged"
+            },
+            "checks_passed": {
+              "$ref": "#/$defs/count"
+            }
+          }
+        },
+        "tokens": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "required": [
+            "weighted"
+          ],
+          "additionalProperties": false,
+          "description": "null when neither the stop hooks nor the question's run.tokens give any",
+          "properties": {
+            "weighted": {
+              "$ref": "#/$defs/count"
+            },
+            "kinds": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/kinds"
+                }
+              ],
+              "description": "null when the weighted sum comes from the question's run.tokens"
+            }
+          }
+        },
+        "by_model": {
+          "type": "array",
+          "description": "the tokens per (harness, model) pair, the heaviest first",
+          "items": {
+            "type": "object",
+            "required": [
+              "harness",
+              "model",
+              "tokens"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "harness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "model": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tokens": {
+                "$ref": "#/$defs/kinds"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# expect: $.hypotheses[0].evidence[0].marks.a
+schema: 1
+hypotheses:
+- id: h-father-of-victor
+  question: Who was the father of Victor Hugo?
+  hypotheses:
+  - id: a
+    statement: Léopold Hugot
+    status: open
+  - id: b
+    statement: another Hugo of Besançon
+    status: open
+  evidence:
+  - ref: victor-hugo-1802.birth
+    marks:
+      a: strong
+      b: neutral
+  discriminating: the birth record's father line
+  opened: '2026-09-30'
+  closed: null
+  outcome: null
+- id: h-closed-one
+  question: Was Victor born in Nancy?
+  hypotheses:
+  - id: a
+    statement: 'yes'
+    status: rejected
+  evidence: []
+  discriminating: null
+  opened: '2026-09-30'
+  closed: '2026-09-30'
+  outcome: 'no'

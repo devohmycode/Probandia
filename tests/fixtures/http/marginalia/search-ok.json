@@ -1,0 +1,105 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api2.marginalia-search.com/search?query=%22Hugo%22+Besan%C3%A7on+1802&count=5",
+    "headers": {
+      "API-Key": "KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "API-Remaining-Daily-Capacity": "998",
+    "API-Event-Type": "UnderLimit"
+  },
+  "body": {
+    "license": "CC-BY-NC-SA 4.0",
+    "query": "\"Hugo\" Besançon 1802",
+    "page": 1,
+    "pages": 1,
+    "results": [
+      {
+        "url": "https://families.example.org/genealogy/families/hugo.html",
+        "title": "The Hugo family of Nancy - Example Families",
+        "description": "Descendants of Joseph Hugo (died 1789), joiner at Nancy. His grandson Victor Hugo was born at Besançon on 26 February 1802.",
+        "quality": -2.5,
+        "format": "html",
+        "resultsFromDomain": 1,
+        "details": [
+          [
+            {
+              "keyword": "hugo",
+              "count": 6,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "besançon",
+              "count": 2,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "1802",
+              "count": 1,
+              "flagsUnstableAPI": []
+            }
+          ]
+        ]
+      },
+      {
+        "url": "http://notes.example.org/hugo/notes.htm",
+        "title": "Notes on the Hugo line (Lorraine)",
+        "description": "Transcriptions of baptisms and marriages, parishes of Nancy, 1760-1800, including the Hugo family.",
+        "quality": -4.0,
+        "format": "html",
+        "resultsFromDomain": 2,
+        "details": [
+          [
+            {
+              "keyword": "hugo",
+              "count": 4,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "besançon",
+              "count": 3,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "1802",
+              "count": 2,
+              "flagsUnstableAPI": []
+            }
+          ]
+        ]
+      },
+      {
+        "url": "https://lists.example.org/~doubs/emigrants1836.html",
+        "title": "Emigrants from the Doubs to America, 1836",
+        "description": "Passenger list extracts: Hugot, Nicolas, 34, Besançon; Hugot, Jeanne, 31; departure from Le Havre, 1836.",
+        "quality": -6.0,
+        "format": "html",
+        "resultsFromDomain": 1,
+        "details": [
+          [
+            {
+              "keyword": "hugo",
+              "count": 2,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "besançon",
+              "count": 4,
+              "flagsUnstableAPI": []
+            },
+            {
+              "keyword": "1802",
+              "count": 3,
+              "flagsUnstableAPI": []
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

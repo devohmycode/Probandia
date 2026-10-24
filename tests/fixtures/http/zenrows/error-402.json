@@ -1,0 +1,19 @@
+{
+  "note": "not a live answer: built from the ZenRows documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/?apikey=KEY&url=https%3A%2F%2Fexample.org%2Fregistre-1851&response_type=markdown&original_status=true"
+  },
+  "status": 402,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "code": "AUTH004",
+    "detail": "This account has reached its usage limit. Purchase a new subscription to continue using the service.",
+    "instance": "/v1",
+    "status": 402,
+    "title": "Usage exceeded (AUTH004)",
+    "type": "https://docs.zenrows.com/api-error-codes#AUTH004"
+  }
+}

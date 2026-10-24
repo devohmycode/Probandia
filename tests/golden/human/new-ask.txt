@@ -1,0 +1,14 @@
+? question
+  question     run_mode
+  prompt       Who runs this research?
+  choices      session|subagent|team
+  allow other  no
+  default      session
+  tool         none
+  option       --mode
+  difficulty   medium
+
+  • ask the user these questions together and never answer them yourself; then run the command
+    again with: --mode <run_mode>
+
+  difficulty  medium score=3 type:parents open-hypotheses:1 conflict: suggested session, effort high

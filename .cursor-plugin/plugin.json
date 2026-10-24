@@ -1,0 +1,92 @@
+{
+  "name": "probandia",
+  "version": "1.0.0",
+  "description": "Genealogy research for AI coding agents, on free resources only: nothing is concluded until it is proven.",
+  "author": {
+    "name": "DevOhMyCode"
+  },
+  "keywords": [
+    "genealogy",
+    "research",
+    "gedcom",
+    "family-history"
+  ],
+  "homepage": "https://github.com/devohmycode/probandia",
+  "repository": "https://github.com/devohmycode/probandia",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "agents": "./cursor/agents/",
+  "commands": "./cursor/commands/",
+  "hooks": "./hooks/cursor.json",
+  "mcpServers": "./cursor/mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "language": {
+        "type": "string",
+        "title": "Report language",
+        "default": "auto"
+      },
+      "report_mode": {
+        "type": "string",
+        "title": "Report mode",
+        "default": "journal",
+        "enum": [
+          "journal",
+          "living"
+        ]
+      },
+      "report_numbering": {
+        "type": "string",
+        "title": "Numbering",
+        "default": "arabic",
+        "enum": [
+          "arabic",
+          "roman",
+          "roman-outline"
+        ]
+      },
+      "report_formats": {
+        "type": "string",
+        "title": "Report formats (comma-separated: md, html, json)",
+        "default": "md,html"
+      },
+      "tree_format": {
+        "type": "string",
+        "title": "Tree file format",
+        "default": "all",
+        "enum": [
+          "html",
+          "md",
+          "all"
+        ]
+      },
+      "run_mode": {
+        "type": "string",
+        "title": "Who runs a research",
+        "default": "ask",
+        "enum": [
+          "ask",
+          "session",
+          "subagent",
+          "team"
+        ]
+      },
+      "search_max_parallel": {
+        "type": "number",
+        "title": "Parallel web searches",
+        "default": 3
+      },
+      "grade": {
+        "type": "string",
+        "title": "Settings grade",
+        "default": "essential",
+        "enum": [
+          "essential",
+          "advanced",
+          "expert"
+        ]
+      }
+    }
+  }
+}

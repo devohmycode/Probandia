@@ -1,0 +1,46 @@
+schema: 1
+id: piege-homonymes-meme-prenom-d-epouse
+title: 'Piège : deux homonymes mariés chacun à une Marie'
+question: Qui est le père de Pierre MARTIN, baptisé à Bourg-Vert le 12 mars 1790 ? Les actes connus sont
+  dans le projet (evidence/transcriptions).
+language: fr
+family: martin
+research: 2026-10-14-pere-de-pierre-martin
+observed: true
+offline: true
+expected:
+- label: mariage-leroy
+  person: Jean MARTIN
+  type: marriage
+  year: 1784
+  place: Bourg-Vert
+- label: mariage-penhoat
+  person: Jean MARTIN
+  type: marriage
+  year: 1787
+  place: Saint-Aubry
+  distinct: mariage-leroy
+- label: bapteme
+  person: Pierre MARTIN
+  type: baptism
+  year: 1790
+  place: Bourg-Vert
+  date: '1790-03-12'
+  fact: pierre-martin-1790.baptism
+sources:
+- id: src-01JT0000000000000000000201
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000202
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000203
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000204
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'Le baptême ne nomme la mère que « Marie » : le prénom de l''épouse ne départage pas les deux Jean
+  MARTIN. Le parrain, aïeul maternel, est Louis PENHOAT : c''est l''entourage (FAN) qui désigne l''époux
+  de Marie PENHOAT, et la mère est une relation déduite. La notation vérifie que les deux Jean restent
+  deux personnes ; elle ne lit pas encore le père choisi (attendu : l''époux de Marie PENHOAT).'

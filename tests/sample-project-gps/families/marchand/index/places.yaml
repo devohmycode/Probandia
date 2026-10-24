@@ -1,0 +1,81 @@
+schema: 1
+places:
+- id: bourg-vert
+  names_as_written:
+  - Bourg-Vert
+  - Bourgvert
+  current_name: Bourg-Vert
+  type: commune
+  jurisdictions:
+  - level: commune
+    name: Bourg-Vert
+    from: '1790'
+    to: null
+    source: catalogue:invented
+  - level: department
+    name: Valombre
+    from: '1790'
+    to: null
+    source: catalogue:invented
+    note: department VB
+  - level: country
+    name: FR
+    from: null
+    to: null
+    source: catalogue:invented
+  repositories:
+  - name: Archives départementales de Valombre
+    archive: ad_valombre
+    source: catalogue:archives
+    holdings:
+    - type: birth
+      years:
+      - 1792
+      - 1936
+      reference: 3 E 41
+    - type: decennial_table
+      years:
+      - 1802
+      - 1932
+      reference: 3 E 41/TD
+    - type: census
+      years:
+      - 1836
+      - 1936
+      reference: 6 M
+  - name: Archives communales de Bourg-Vert
+    archive: ac_bourg_vert
+    source: catalogue:archives
+    holdings:
+    - type: birth
+      years:
+      - 1792
+      - 1936
+      reference: 1 E
+  guide:
+    built: '2026-09-04'
+    sources:
+    - catalogue:invented
+    - catalogue:archives
+- id: saint-aubry
+  names_as_written:
+  - Saint-Aubry
+  - St Aubry
+  current_name: Saint-Aubry
+  type: commune
+- id: les-ormes
+  names_as_written:
+  - Les Ormes
+  current_name: Les Ormes
+  type: parish
+- id: premoulin
+  names_as_written:
+  - Prémoulin
+  - Premoulin
+  current_name: Prémoulin
+  type: commune
+- id: valombre
+  names_as_written:
+  - Valombre
+  current_name: Valombre
+  type: county

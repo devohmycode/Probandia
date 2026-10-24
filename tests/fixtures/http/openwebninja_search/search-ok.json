@@ -1,0 +1,114 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-web-search/search?q=%22Hugo%22+Besan%C3%A7on+1802&num=5"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "66dafaa2-e3a4-4985-8ebe-89397d161186",
+    "parameters": {
+      "q": "\"Hugo\" Besançon 1802",
+      "nfpr": "0",
+      "nhr": "0",
+      "start": 0,
+      "num": 5,
+      "gl": "us",
+      "hl": "en",
+      "device": "desktop",
+      "fetch_ai_overviews": false,
+      "return_organic_result_video_thumbnail": false,
+      "deduplicate": false
+    },
+    "data": {
+      "total_organic_results": null,
+      "organic_results": [
+        {
+          "title": "Victor Hugo (1802-1885) | Example FREE Family Tree",
+          "snippet": "Victor Hugo (1802-1885). Born 26 Feb 1802 in Besançon, Doubs, France ... Brother of Abel Hugo and Eugène Hugo ...",
+          "url": "https://familytree.example.org/wiki/Hugo-1802",
+          "domain": "familytree.example.org",
+          "position": 1,
+          "rank": 1
+        },
+        {
+          "title": "Léopold Hugo (1773–1828)",
+          "snippet": "When Léopold Hugo was born on 15 November 1773, in Nancy, France, his father, Joseph Hugo, was a joiner.",
+          "url": "https://ancestors.example.org/en/KJZV-FPT/leopold-hugo-1773-1828",
+          "domain": "ancestors.example.org",
+          "position": 2,
+          "rank": 2
+        },
+        {
+          "title": "Hugo, Victor - Bibliothèque d'exemple - Luxembourg",
+          "snippet": "Letters and prints. Victor Hugo (1802–1885) stayed at Vianden, in the Grand Duchy, in 1862, 1865 and 1871.",
+          "url": "https://library.example.org/en/fonds/archives/hugo-victor.html",
+          "domain": "library.example.org",
+          "position": 3,
+          "rank": 3
+        },
+        {
+          "title": "Hugo - Trébuchet Family: an example family history",
+          "snippet": "Léopold Hugo and Sophie Trébuchet were married in Paris on 15 November 1797 (25 brumaire an VI).",
+          "url": "https://shop.example.com/Hugo-Trebuchet-Family/dp/B009AOR9N8",
+          "domain": "shop.example.com",
+          "position": 4,
+          "rank": 4
+        },
+        {
+          "title": "Victor Hugo (1802-1885) - city info",
+          "snippet": "Victor Hugo est né à Besançon le 26 février 1802 ; mort en 1885 à Paris, il est le fils de Léopold Hugo et de Sophie Trébuchet, ...",
+          "url": "https://www.example.com/city-info/hugo/",
+          "domain": "www.example.com",
+          "position": 5,
+          "rank": 5
+        },
+        {
+          "title": "Victor Hugo",
+          "snippet": "Victor Hugo, né le 26 février 1802 à Besançon et mort le 22 mai 1885 à Paris, est un écrivain français ...",
+          "url": "https://fr.wikipedia.org/wiki/Victor_Hugo",
+          "domain": "fr.wikipedia.org",
+          "position": 6,
+          "rank": 6
+        },
+        {
+          "title": "Nicolas Hugot Family History Records",
+          "snippet": "Nicolas Hugot historical records. Discover people, photos ... Birth: 1802 Besançon, Doubs, France.",
+          "url": "https://records.example.com/genealogy/records/results?firstName=nicolas&lastName=hugot",
+          "domain": "records.example.com",
+          "position": 7,
+          "rank": 7
+        },
+        {
+          "title": "Victor Hugo : Family tree by exemple",
+          "snippet": "Victor Hugo. Born February 26, 1802 (Friday) - Besançon, Doubs, France; Deceased May 22, 1885 (Friday) - Paris, aged 83 years ...",
+          "url": "https://tree.example.org/exemple?lang=en&n=hugo&p=victor",
+          "domain": "tree.example.org",
+          "position": 8,
+          "rank": 8
+        },
+        {
+          "title": "Victor Hugo à Vianden : 1862, 1865, 1871",
+          "snippet": "Victor Hugo (1802-1885) : ses séjours à Vianden. Victor Hugo (1802-1885) : ses séjours à Vianden.",
+          "url": "https://catalogue.example.org/discovery/fulldisplay?vid=352LUX_BNL%3ABIBNET_UNION&docid=alma990000052030107252&context=L",
+          "domain": "catalogue.example.org",
+          "position": 9,
+          "rank": 9
+        },
+        {
+          "title": "Exposition Victor HUGO à Vianden ...",
+          "snippet": "Exposition Victor HUGO : les séjours de 1862, 1865 et 1871 à Vianden. Heures d'ouverture : ...",
+          "url": "https://social.example.com/groups/exemple/posts/9052570834867784/",
+          "domain": "social.example.com",
+          "position": 10,
+          "rank": 10
+        }
+      ],
+      "has_ai_overviews": false
+    }
+  }
+}

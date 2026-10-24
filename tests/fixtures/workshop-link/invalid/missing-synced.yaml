@@ -1,0 +1,8 @@
+# expect: $.synced
+schema: 1
+adapter: prototype
+root: ../atelier
+families: {}
+persons: {}
+facts: {}
+researches: {}

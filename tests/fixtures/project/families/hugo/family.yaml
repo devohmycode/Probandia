@@ -1,0 +1,14 @@
+schema: 1
+id: hugo
+name: HUGO
+surnames:
+- Hugo
+- Hugot
+- Hugues
+places:
+- Besançon
+- Nancy
+period:
+- 1750
+- 1950
+language: fr

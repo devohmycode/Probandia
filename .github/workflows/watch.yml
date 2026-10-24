@@ -1,0 +1,51 @@
+name: watch
+
+# TRUST4-T6: every Monday, the source watch (probandia watch) and its issues (tools/watch_issues.py).
+# A witness that fails 3 watches in a row opens its issue; one that passes again closes it. The streak
+# needs the previous watch.json: it comes back from a cache whose key changes every run (a cache is
+# never overwritten) and is restored by its prefix, the newest first. Nothing is ever paid: no key here.
+# Actions are pinned by commit SHA; the comment names the release.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14"
+      - name: The previous watch
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: watch-state
+          key: watch-${{ github.run_id }}
+          restore-keys: watch-
+      - name: Watch the sources
+        run: python run_probandia.py watch --out watch-state --output-format human
+      - name: Keep this watch for the next one
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: watch-state
+          key: watch-${{ github.run_id }}
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: watch
+          path: watch-state
+      - name: Open, update and close the issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create watch --force --color FBCA04 --description "the source watch (tools/watch_issues.py)"
+          python tools/watch_issues.py watch-state/watch.json

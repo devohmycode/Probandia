@@ -1,0 +1,40 @@
+{
+  "note": "not a live answer: built from the OpenWeb Ninja documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/usage?api_id=realtime_news_data",
+    "headers": {
+      "x-api-key": "KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "c1f2e9a0-usage",
+    "data": {
+      "api_id": "realtime_news_data",
+      "plan": {
+        "id": "price_free",
+        "key": "basic",
+        "nickname": "Basic",
+        "is_free": true
+      },
+      "status": "exceeded",
+      "term": "month",
+      "period_start": "2026-09-20T00:00:00Z",
+      "period_end": "2026-10-20T00:00:00Z",
+      "quotas": [
+        {
+          "name": "Requests",
+          "limit": 100,
+          "used": 100,
+          "remaining": 0,
+          "reset_at": "2026-10-20T00:00:00Z"
+        }
+      ]
+    }
+  }
+}

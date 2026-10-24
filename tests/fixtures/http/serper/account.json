@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://google.serper.dev/account",
+    "headers": {
+      "X-API-KEY": "KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "balance": 2458,
+    "rateLimit": 50
+  }
+}

@@ -1,0 +1,24 @@
+schema: 1
+id: birth-of-yves-tanguy-1815
+title: The birth of Yves TANGUY, 1815
+question: Quand et où est né Yves TANGUY, mort aux Ormes en 1879 ?
+language: fr
+family: tanguy
+research: 2026-10-05-birth-of-yves-tanguy
+expected:
+- person: Yves TANGUY
+  type: birth
+  year: 1815
+  place: Les Ormes
+  fact: yves-tanguy-1815.birth
+- person: Hervé TANGUY
+  type: death
+  abstain: true
+sources:
+- id: src-01JA0000000000000000000101
+  licence: Licence Ouverte 2.0
+  terms: https://archives.valombre.example/conditions
+reviewed:
+  by: the user
+  date: '2026-10-05'
+note: An invented example, for the tests of the tools.

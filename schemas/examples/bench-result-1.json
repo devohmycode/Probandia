@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "probandia": "0.9.41",
+  "date": "2026-10-13",
+  "cases": [
+    {
+      "id": "parents-question",
+      "harness": {
+        "name": "claude-code",
+        "version": "2.1.287"
+      },
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "mode": "session",
+      "duration_s": 1800,
+      "passes": 2,
+      "metrics": {
+        "findings": 1,
+        "expected": 1,
+        "false_promotions": 0.0,
+        "false_count": 0,
+        "uncited": 0,
+        "abstentions": 0,
+        "abstain_expected": 0,
+        "quoted": 0,
+        "facts": 17,
+        "proven": 17,
+        "duplicates": 0,
+        "native": 0,
+        "paid": 0.0
+      },
+      "tokens": {
+        "weighted": 806929,
+        "kinds": {
+          "input": 100,
+          "output": 33591,
+          "cache_read": 3826769,
+          "cache_write": 154603,
+          "cache_write_5m": 70679,
+          "weighted": 806929
+        }
+      },
+      "by_model": [
+        {
+          "harness": "claude-code",
+          "model": "claude-sonnet-5-5",
+          "tokens": {
+            "input": 60,
+            "output": 23240,
+            "cache_read": 2104300,
+            "cache_write": 70679,
+            "cache_write_5m": 70679,
+            "weighted": 415039
+          }
+        },
+        {
+          "harness": "claude-code",
+          "model": "claude-opus-5-5",
+          "tokens": {
+            "input": 40,
+            "output": 10351,
+            "cache_read": 1722469,
+            "cache_write": 83924,
+            "cache_write_5m": 0,
+            "weighted": 391890
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+schema: 1
+id: 2026-09-01-ancestors-of-louis-marchand
+family: marchand
+question: Who were the ancestors of Louis MARCHAND?
+language: fr
+mode: journal
+numbering: roman
+formats:
+- md
+- html
+created: '2026-09-01T09:00:00Z'
+created_by:
+  harness: cli
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: open
+passes: 2

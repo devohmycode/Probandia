@@ -1,0 +1,22 @@
+✓ 1 family · 1 research · no lock held
+
+Families
+  family    researches
+  ────────────────────
+  marchand           1
+
+Researches
+  research                                status  passes    mode     language  last activity
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  2026-09-01-ancestors-of-louis-marchand  open    2 passes  journal  fr        30 d ago
+
+Lowest accounts
+  account                             left  pays for
+  ─────────────────────────────────────────────────────────────────────
+  Apify                               90 %  989 searches or 1,730 pages
+  Firecrawl                           90 %  450 searches or 900 pages
+  Jina Reader                         90 %  900 searches or 3,000 pages
+  OpenWeb Ninja Real-Time Books Data  90 %  90 searches
+  OpenWeb Ninja Real-Time News Data   90 %  90 searches
+
+→ probandia -u  every free quota

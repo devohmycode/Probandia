@@ -1,0 +1,23 @@
+# The Catholic diocese of each French department since the Concordat (GPS-D9).
+# Written by the Probandia project from public knowledge of the Concordat map of 1802
+# and of the dioceses created since; every entry is a rule, marked "derived" in a guide.
+# Before 1790 a parish's diocese does not follow the department: the guide leaves it
+# unknown unless a source gives it. A department missing here gives no diocese.
+# department: the INSEE code; from, to: years or days (null: open).
+# A department split between dioceses has one entry per diocese, with a note.
+schema: 1
+dioceses:
+  - {department: "14", diocese: "Bayeux", from: "1802", to: null, note: "diocese of Bayeux and Lisieux"}
+  - {department: "22", diocese: "Saint-Brieuc", from: "1802", to: null, note: "diocese of Saint-Brieuc and Tréguier"}
+  - {department: "25", diocese: "Besançon", from: "1802", to: null,
+     note: "an archdiocese; the pays de Montbéliard is in the diocese of Belfort-Montbéliard since 1979"}
+  - {department: "27", diocese: "Évreux", from: "1802", to: null}
+  - {department: "29", diocese: "Quimper", from: "1802", to: null, note: "diocese of Quimper and Léon"}
+  - {department: "35", diocese: "Rennes", from: "1802", to: null, note: "an archdiocese since 1859"}
+  - {department: "44", diocese: "Nantes", from: "1802", to: null}
+  - {department: "50", diocese: "Coutances", from: "1802", to: null, note: "diocese of Coutances and Avranches"}
+  - {department: "56", diocese: "Vannes", from: "1802", to: null}
+  - {department: "57", diocese: "Metz", from: "1802", to: null}
+  - {department: "61", diocese: "Sées", from: "1802", to: null}
+  - {department: "76", diocese: "Rouen", from: "1802", to: null,
+     note: "the arrondissement of Le Havre forms the diocese of Le Havre since 1974"}

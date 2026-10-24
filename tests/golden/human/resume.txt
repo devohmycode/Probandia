@@ -1,0 +1,27 @@
+✓ OK
+  research      2026-09-01-ancestors-of-louis-marchand
+  pass          3
+  run mode      session
+  digest lines  16
+  digest        full
+
+  • LEADS:
+  •   grandparents found
+  •   the Perrin line is open
+  •   h-father-of-louise-perrin: the baptism of Louise in Les Ormes
+  • HYPOTHESES:
+  •   h-father-of-louise-perrin Who was the father of Louise PERRIN? — a: Étienne PERRIN (open);
+    b: another Perrin of Bourg-Vert (open)
+  • QUOTAS:
+  •   jina 9,000,000 left
+  •   zenrows 4,500 left
+  •   serper 2,250 left
+  •   firecrawl 900 left
+  •   scraperapi 900 left
+
+  research     2026-09-01-ancestors-of-louis-marchand FAMILY=marchand PASS=3 MODE=journal LANG=fr
+  question     Who were the ancestors of Louis MARCHAND?
+  instruction  
+  next         known, then plan; follow the lead: grandparents found
+
+details: families/marchand/research/2026-09-01-ancestors-of-louis-marchand/work/digest-3.txt

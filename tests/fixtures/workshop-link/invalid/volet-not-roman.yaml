@@ -1,0 +1,10 @@
+# expect: $.persons["sophie-trebuchet-1772"].volet
+schema: 1
+adapter: prototype
+root: ../atelier
+families: {}
+persons:
+  sophie-trebuchet-1772: {workshop: sophie-trebuchet-1772, volet: "2"}
+facts: {}
+researches: {}
+synced: {sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef, at: "2026-10-06T10:00:00Z"}

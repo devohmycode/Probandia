@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.staan.ai/v2/search/web?q=%22Hugo%22+Besan%C3%A7on+1802&market=fr-fr",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": null
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "message": "Unauthorized",
+    "statusCode": 401
+  }
+}

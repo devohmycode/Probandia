@@ -1,0 +1,42 @@
+schema: 1
+id: piege-axes-age-au-mariage
+title: 'Piège : les axes d''une naissance lue dans un acte de mariage'
+question: Quand est né Joseph RIOU, marié à Saint-Aubry en 1825 ? Les actes connus sont dans le projet
+  (evidence/transcriptions).
+language: fr
+family: riou
+research: 2026-10-14-naissance-de-joseph-riou
+observed: true
+offline: true
+expected:
+- label: naissance
+  person: Joseph RIOU
+  type: birth
+  year: 1801
+  place: Saint-Aubry
+  axes:
+    source: original
+    information: secondary
+    evidence: indirect
+  confidence_max: probable
+- label: mariage
+  person: Joseph RIOU
+  type: marriage
+  year: 1825
+  place: Saint-Aubry
+  date: '1825-05-10'
+  axes:
+    source: original
+    information: primary
+    evidence: direct
+  fact: joseph-riou-1801.marriage
+sources:
+- id: src-01JT0000000000000000000101
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000102
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'L''âge au mariage donne l''année de naissance : l''acte est original, mais l''information est secondaire
+  (les comparants l''ont dite) et la preuve indirecte (l''acte ne rapporte pas la naissance). Le mariage,
+  lui, est direct et primaire. La notation lit les axes des faits proposés et la confiance de la question.'

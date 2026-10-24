@@ -1,0 +1,29 @@
+✓ OK
+  research         2026-09-01-ancestors-of-louis-marchand
+  pass             3
+  type             parents
+  names            5
+  places           3
+  window           1813-1823
+  window basis     about
+  calls            13
+  removed          6
+  native left      40
+  native parallel  3
+  focus            hypothesis h-father-of-louise-perrin
+  login needed     none
+  difficulty       medium
+  reads            18
+  matrix todo      0
+
+  difficulty    score=3 type:parents open-hypotheses:1 conflict suggests session, effort high
+  focus         Who was the father of Louise PERRIN? the baptism of Louise in Les Ormes [louise-perrin-1818]
+  names         PERRIN, PERRYN, PERIN, PERRINE, PERRINS
+  places        Les Ormes, Bourg-Vert, Bourgvert
+  record types  birth, baptism, marriage
+  estimate      marginalia 3
+  estimate      serpapi 3
+  estimate      firecrawl 18 read
+  removed       matchid birth,baptism,marriage out-of-coverage 1970-2026
+
+details: families/marchand/research/2026-09-01-ancestors-of-louis-marchand/work/plan-3.yaml

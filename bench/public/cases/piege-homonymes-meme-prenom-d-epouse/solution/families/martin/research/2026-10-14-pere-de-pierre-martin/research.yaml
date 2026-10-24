@@ -1,0 +1,29 @@
+schema: 1
+id: 2026-10-14-pere-de-pierre-martin
+family: martin
+question: Qui est le père de Pierre MARTIN, baptisé à Bourg-Vert le 12 mars 1790 ? Les actes connus sont
+  dans le projet (evidence/transcriptions).
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+created: '2026-10-14T09:00:00Z'
+created_by:
+  harness: cli
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: closed
+passes: 1
+questions:
+- id: Q1
+  text: Qui est le père de Pierre MARTIN ?
+  type: parents
+  persons:
+  - pierre-martin-1790
+  status: answered
+  conclusion:
+  - pierre-martin-1790.baptism

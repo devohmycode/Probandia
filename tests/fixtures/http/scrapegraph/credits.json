@@ -1,0 +1,24 @@
+{
+  "_source": "made from docs.scrapegraphai.com/api-reference/endpoint/credits, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "GET",
+    "url": "https://v2-api.scrapegraphai.com/api/credits",
+    "headers": {
+      "SGAI-APIKEY": "KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "remaining": 485,
+    "used": 15,
+    "plan": "Free",
+    "jobs": {
+      "crawl": {"used": 0, "limit": 1},
+      "monitor": {"used": 0, "limit": 1}
+    }
+  }
+}

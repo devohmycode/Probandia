@@ -1,0 +1,19 @@
+{
+  "note": "not a live answer: built from the ZenRows documentation read on 2 October 2026; to check against a real call once an account is open. The error body follows ZenRows' RFC 7807 shape, from its error codes page",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/?apikey=KEY&url=https%3A%2F%2Fexample.org%2Fregistre-1851&response_type=markdown&original_status=true"
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "code": "AUTH006",
+    "detail": "Too many concurrent requests.",
+    "instance": "/v1",
+    "status": 429,
+    "title": "Concurrency limit exceeded (AUTH006)",
+    "type": "https://docs.zenrows.com/api-error-codes#AUTH006"
+  }
+}

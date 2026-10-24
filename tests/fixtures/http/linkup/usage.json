@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.linkup.so/v1/credits/balance",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "balance": 123.456
+  }
+}

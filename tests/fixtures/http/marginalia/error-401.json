@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api2.marginalia-search.com/search?query=%22Hugo%22+Besan%C3%A7on+1802&count=5",
+    "headers": {
+      "API-Key": "KEY"
+    },
+    "json": null
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "text/plain;charset=utf-8"
+  },
+  "body": ""
+}

@@ -1,0 +1,72 @@
+schema: 1
+places:
+- id: auxon-dessous
+  names_as_written:
+  - Auxon-Dessous
+  current_name: Les Auxons
+  type: commune
+  parent: null
+  insee:
+    code: '25034'
+    valid_from: null
+    valid_to: '2014-12-31'
+  jurisdictions:
+  - level: parish
+    name: Auxon-Dessous
+    from: null
+    to: '1790'
+    source: rule:parish-1790
+    derived: true
+    note: the commune of 1790 follows the parish of the same name
+  - level: commune
+    name: Auxon-Dessous
+    from: '1790'
+    to: '2014-12-31'
+    source: insee-cog
+  - level: commune
+    name: Les Auxons
+    from: '2015-01-01'
+    to: null
+    source: insee-cog
+  - level: canton
+    name: Audeux
+    from: null
+    to: '2015-03-21'
+    source: wikidata:Q1475879
+  - level: canton
+    name: Besançon-3
+    from: '2015-03-22'
+    to: null
+    source: insee-cog
+  - level: department
+    name: Doubs
+    from: '1790'
+    to: null
+    source: insee-cog
+  - level: diocese
+    name: Besançon
+    from: '1802'
+    to: null
+    source: catalogue:dioceses-fr
+    derived: true
+  repositories:
+  - name: Archives départementales du Doubs
+    archive: ad25
+    holdings:
+    - type: baptism
+      years: [1550, 1792]
+    - type: birth
+      years: [1793, 1925]
+      reference: État civil
+  - name: Open Archives (openarchives.nl)
+    archive: openarchives
+    holdings:
+    - type: marriage
+      years: [1500, 1950]
+  guide:
+    built: '2026-10-04'
+    sources:
+    - insee-cog
+    - wikidata
+    - catalogue:dioceses-fr
+    - catalogue:archives

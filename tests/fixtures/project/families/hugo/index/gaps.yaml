@@ -1,0 +1,16 @@
+schema: 1
+gaps:
+- archive: Archives municipales de Besançon
+  reference: EC-1799
+  window:
+    from: 1797
+    to: 1799
+  kind: destroyed
+  source: null
+- archive: Gallica
+  reference: null
+  window:
+    from: 1900
+    to: 1910
+  kind: lacunary
+  source: null

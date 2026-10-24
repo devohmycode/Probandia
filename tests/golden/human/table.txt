@@ -1,0 +1,9 @@
+✓ OK
+  providers  3
+
+accounts
+  provider                       left  pays for                   resets
+  ──────────────────────────────────────────────────────────────────────
+  SerpApi · Google                199  199 searches               1 Nov
+  Jina Reader               8,814,000  2,938 pages                never
+  Apify · search and read…       4.19  761 searches or 1,676 pa…  1 Nov

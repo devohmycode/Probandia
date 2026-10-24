@@ -1,0 +1,51 @@
+persons:
+- id: paul-roy-1800
+  names:
+    surname: ROY
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: paul-roy-1800.birth
+    type: birth
+    date:
+      value: '1800'
+      qualifier: exact
+    status: record
+    source: null
+  - id: paul-roy-1800.marriage
+    type: marriage
+    date:
+      value: '1825'
+      qualifier: exact
+    status: record
+    source: null
+  - id: paul-roy-1800.death
+    type: death
+    date:
+      value: '1870'
+      qualifier: exact
+    status: record
+    source: null
+- id: anne-roy-1830
+  names:
+    surname: ROY
+  parents:
+    father: paul-roy-1800
+    mother: null
+  facts:
+  - id: anne-roy-1830.birth
+    type: birth
+    date:
+      value: '1830'
+      qualifier: exact
+    status: record
+    source: null
+  - id: anne-roy-1830.death
+    type: death
+    date:
+      value: '1820'
+      qualifier: exact
+    status: hypothesis
+    source: null
+expect: []

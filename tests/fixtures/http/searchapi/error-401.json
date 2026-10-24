@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.searchapi.io/api/v1/search?engine=google&q=%22Hugo%22+Besan%C3%A7on+1802&gl=lu&hl=fr",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    }
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "error": "Invalid API key."
+  }
+}

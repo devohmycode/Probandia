@@ -1,0 +1,28 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000801
+  type: decennial-table
+  repository: Archives départementales de Valombre
+  collection: Tables décennales, Saint-Aubry, mariages 1813-1822
+  act_date: '1823-01-10'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000801.md
+  citation: Saint-Aubry, tables décennales des mariages 1813-1822
+- id: src-01JT0000000000000000000802
+  type: civil-registration
+  repository: Archives communales de Saint-Aubry
+  collection: État civil, Saint-Aubry, naissances 1825
+  jurisdiction: Saint-Aubry
+  act_no: '12'
+  act_date: '1825-03-02'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000802.md
+  citation: Saint-Aubry, naissances 1825, acte n° 12
+- id: src-01JT0000000000000000000803
+  type: decennial-table
+  repository: Archives départementales de Valombre
+  collection: Tables décennales, Saint-Aubry, décès 1853-1892
+  act_date: '1893-01-12'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000803.md
+  citation: Saint-Aubry, tables décennales des décès 1853-1892

@@ -1,0 +1,12 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://gallica.bnf.fr/services/ContentSearch?ark=bpt6k5356122w&query=Besan%C3%A7on"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/xml;charset=UTF-8"
+ },
+ "note": "not a live answer: the hit of the word in the ALTO of page 2 (04.json), in the form of a recorded ContentSearch answer",
+ "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<results ResultsGenerationSearchTime=\"0:00:00.150\" countResults=\"1\" searchTime=\"150\">\n<query>Besançon</query>\n<items>\n<item>\n<altoid/>\n<p_id>PAG_2</p_id>\n<p_width/>\n<p_height/>\n<content>&lt;span class='highlight'&gt;Besançon&lt;/span&gt;</content>\n<events/>\n</item>\n</items>\n</results>"
+}

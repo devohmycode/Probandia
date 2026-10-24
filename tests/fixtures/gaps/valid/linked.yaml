@@ -1,0 +1,19 @@
+schema: 1
+gaps:
+- archive: Archives nationales de Luxembourg
+  reference: EC-1848
+  window:
+    from: 1846
+    to: 1848
+  kind: destroyed
+  source: null
+- id: G2
+  archive: ad56
+  reference: 2 E 260
+  window:
+    from: 1793
+    to: 1802
+  kind: missing
+  place: besancon
+  types: [decennial_tables]
+  justification: "the finding aid of the series lists no table before 1803"

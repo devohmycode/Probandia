@@ -1,0 +1,7 @@
+✓ 0 conflicts without an analysis · 0 open analyses · 1 resolved · 2026-09-30-parents-of-victor-hugo
+
+  ✓ an-victor-hugo-1802-birth  resolved · victor-hugo-1802 · birth
+    evidence                  2
+    kept                      1802-02-26
+    question                  Q1
+    without their three axes  2

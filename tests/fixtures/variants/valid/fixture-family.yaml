@@ -1,0 +1,11 @@
+schema: 1
+surnames:
+  HUGO:
+  - form: Hugot
+    source: src-01J9ZK3M4X0000000000000002
+  - form: Hugues
+    source: null
+given:
+  Victor:
+  - form: Victorius
+    source: null

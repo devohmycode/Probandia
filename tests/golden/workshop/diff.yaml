@@ -1,0 +1,3 @@
+# commun/personnes.yaml, before line 67
+    deces: {date: "27 juin 1821", annee: 1821, lieu: "Paris", statut: acte, volet: III, chapitre: I,
+            rapport: paris-1822}

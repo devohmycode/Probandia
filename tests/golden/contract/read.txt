@@ -1,0 +1,9 @@
+STATUS=OK
+URL=https://example.org/acte
+STEP=reader
+CACHE=miss
+CHARS=83
+PASSAGES=1
+TRIED=http:blocked reader:jina:ok
+- passage=Acte de naissance de Louis Marchand, né à Bourg-Vert le 2 mars 1898, fils de Henri.
+DETAILS=.probandia/details/read-<ulid>.md

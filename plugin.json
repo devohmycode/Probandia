@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "probandia",
+  "version": "1.0.0",
+  "description": "Genealogy research for AI coding agents, on free resources only: nothing is concluded until it is proven.",
+  "author": {
+    "name": "DevOhMyCode"
+  },
+  "keywords": [
+    "genealogy",
+    "research",
+    "gedcom",
+    "family-history"
+  ],
+  "homepage": "https://github.com/devohmycode/probandia",
+  "repository": "https://github.com/devohmycode/probandia",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/codex.json",
+      "interface": {
+        "displayName": "Probandia",
+        "shortDescription": "Genealogy research for AI coding agents, on free resources only: nothing is concluded until it is proven.",
+        "developerName": "DevOhMyCode",
+        "category": "Productivity",
+        "capabilities": []
+      }
+    }
+  }
+}

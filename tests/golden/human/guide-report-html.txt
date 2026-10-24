@@ -1,0 +1,141 @@
+<section id="s-guides">
+<h2>5 Guides de localité</h2>
+<section id="s-guide-auxon-dessous">
+<h3>5.1 Auxon-Dessous, aujourd&#x27;hui Les Auxons</h3>
+<figure class="timeline guide"><svg xmlns="http://www.w3.org/2000/svg" class="ju" viewBox="0 0 760 200" width="100%" style="max-width:760px;height:auto" role="img" aria-label="Juridictions — Auxon-Dessous, aujourd'hui Les Auxons">
+<style>
+  .ju { --bar: #2a5d9f; --derived: #8a6100; --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }
+  .ju text { font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink); }
+  .ju .axis { stroke: var(--line); stroke-width: 1.5; }
+  .ju .tick { stroke: var(--line); stroke-width: 1; }
+  .ju .grid { stroke: #dddddd; stroke-width: 1; }
+  .ju .tick-label { font-size: 11px; fill: #444444; }
+  .ju .bar { fill: var(--bar); fill-opacity: 0.25; stroke: var(--bar); stroke-width: 1.5; }
+  .ju .derived .bar { fill: var(--derived); stroke: var(--derived); stroke-dasharray: 5 3; }
+  .ju .open { fill: none; stroke: var(--line); stroke-width: 1.5; }
+</style>
+<title>Juridictions — Auxon-Dessous, aujourd'hui Les Auxons</title>
+<desc>paroisse Auxon-Dessous: sans début connu – 1790 (rule:parish-1790); commune Auxon-Dessous: 1790 – 31 décembre 2014 (insee-cog); commune Les Auxons: 1er janvier 2015 – sans fin connue (insee-cog); canton Audeux: sans début connu – 21 mars 2015 (wikidata:Q1475879); canton Besançon-3: 22 mars 2015 – sans fin connue (insee-cog); département Doubs: 1790 – sans fin connue (insee-cog); diocèse Besançon: 1802 – sans fin connue (catalogue:dioceses-fr)</desc>
+<line class="grid" x1="320.6" y1="8" x2="320.6" y2="172"/><line class="tick" x1="320.6" y1="172" x2="320.6" y2="177"/><text class="tick-label" x="320.6" y="190" text-anchor="middle">1800</text>
+<line class="grid" x1="408.8" y1="8" x2="408.8" y2="172"/><line class="tick" x1="408.8" y1="172" x2="408.8" y2="177"/><text class="tick-label" x="408.8" y="190" text-anchor="middle">1850</text>
+<line class="grid" x1="497.0" y1="8" x2="497.0" y2="172"/><line class="tick" x1="497.0" y1="172" x2="497.0" y2="177"/><text class="tick-label" x="497.0" y="190" text-anchor="middle">1900</text>
+<line class="grid" x1="585.2" y1="8" x2="585.2" y2="172"/><line class="tick" x1="585.2" y1="172" x2="585.2" y2="177"/><text class="tick-label" x="585.2" y="190" text-anchor="middle">1950</text>
+<line class="grid" x1="673.4" y1="8" x2="673.4" y2="172"/><line class="tick" x1="673.4" y1="172" x2="673.4" y2="177"/><text class="tick-label" x="673.4" y="190" text-anchor="middle">2000</text>
+<line class="axis" x1="250" y1="172" x2="744" y2="172"/>
+<g class="row derived"><title>paroisse Auxon-Dessous: sans début connu – 1790 (rule:parish-1790)</title><text x="242" y="24" text-anchor="end">paroisse Auxon-Dessous</text><rect class="bar" x="250.0" y="14" width="52.9" height="12" rx="3"/><polyline class="open" points="257.0,14 251.0,20 257.0,26"/></g>
+<g class="row"><title>commune Auxon-Dessous: 1790 – 31 décembre 2014 (insee-cog)</title><text x="242" y="46" text-anchor="end">commune Auxon-Dessous</text><rect class="bar" x="302.9" y="36" width="395.2" height="12" rx="3"/></g>
+<g class="row"><title>commune Les Auxons: 1er janvier 2015 – sans fin connue (insee-cog)</title><text x="242" y="68" text-anchor="end">commune Les Auxons</text><rect class="bar" x="699.9" y="58" width="44.1" height="12" rx="3"/><polyline class="open" points="737.0,58 743.0,64 737.0,70"/></g>
+<g class="row"><title>canton Audeux: sans début connu – 21 mars 2015 (wikidata:Q1475879)</title><text x="242" y="90" text-anchor="end">canton Audeux</text><rect class="bar" x="250.0" y="80" width="449.9" height="12" rx="3"/><polyline class="open" points="257.0,80 251.0,86 257.0,92"/></g>
+<g class="row"><title>canton Besançon-3: 22 mars 2015 – sans fin connue (insee-cog)</title><text x="242" y="112" text-anchor="end">canton Besançon-3</text><rect class="bar" x="699.9" y="102" width="44.1" height="12" rx="3"/><polyline class="open" points="737.0,102 743.0,108 737.0,114"/></g>
+<g class="row"><title>département Doubs: 1790 – sans fin connue (insee-cog)</title><text x="242" y="134" text-anchor="end">département Doubs</text><rect class="bar" x="302.9" y="124" width="441.1" height="12" rx="3"/><polyline class="open" points="737.0,124 743.0,130 737.0,136"/></g>
+<g class="row derived"><title>diocèse Besançon: 1802 – sans fin connue (catalogue:dioceses-fr)</title><text x="242" y="156" text-anchor="end">diocèse Besançon</text><rect class="bar" x="324.1" y="146" width="419.9" height="12" rx="3"/><polyline class="open" points="737.0,146 743.0,152 737.0,158"/></g>
+</svg>
+</figure>
+<p><strong>Juridictions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Niveau</th>
+<th>Nom</th>
+<th>Du</th>
+<th>Au</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paroisse*</td>
+<td>Auxon-Dessous</td>
+<td>…</td>
+<td>1790</td>
+<td>rule:parish-1790 (the commune of 1790 follows the parish of the same name)</td>
+</tr>
+<tr>
+<td>commune</td>
+<td>Auxon-Dessous</td>
+<td>1790</td>
+<td>31 décembre 2014</td>
+<td>insee-cog</td>
+</tr>
+<tr>
+<td>commune</td>
+<td>Les Auxons</td>
+<td>1er janvier 2015</td>
+<td>…</td>
+<td>insee-cog</td>
+</tr>
+<tr>
+<td>canton</td>
+<td>Audeux</td>
+<td>…</td>
+<td>21 mars 2015</td>
+<td>wikidata:Q1475879</td>
+</tr>
+<tr>
+<td>canton</td>
+<td>Besançon-3</td>
+<td>22 mars 2015</td>
+<td>…</td>
+<td>insee-cog</td>
+</tr>
+<tr>
+<td>département</td>
+<td>Doubs</td>
+<td>1790</td>
+<td>…</td>
+<td>insee-cog</td>
+</tr>
+<tr>
+<td>diocèse*</td>
+<td>Besançon</td>
+<td>1802</td>
+<td>…</td>
+<td>catalogue:dioceses-fr</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>déduit d'une règle ou d'un catalogue, non d'un document du lieu</em></p>
+<p><strong>Dépôts</strong></p>
+<table>
+<thead>
+<tr>
+<th>Dépôt</th>
+<th>Fonds</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archives départementales du Doubs (<code>ad25</code>)</td>
+<td>baptêmes 1550–1792, naissances 1793–1925 (État civil)</td>
+<td></td>
+</tr>
+<tr>
+<td>Open Archives (openarchives.nl) (<code>openarchives</code>)</td>
+<td>mariages 1500–1950</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lacunes connues</strong></p>
+<table>
+<thead>
+<tr>
+<th>Archive</th>
+<th>Années</th>
+<th>Nature</th>
+<th>Cote</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ad25</td>
+<td>1793–1799</td>
+<td>registres lacunaires</td>
+<td>3 E 150</td>
+</tr>
+</tbody>
+</table>
+<p>Guide établi le 4 octobre 2026 à partir de : insee-cog, wikidata, catalogue:dioceses-fr, catalogue:archives.</p>
+</section>
+</section>

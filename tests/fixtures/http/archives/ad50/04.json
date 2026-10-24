@@ -1,0 +1,11 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://www.archives-manche.fr/recherche/registres-paroissiaux-et-detat-civil?detail=607643"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8"
+ },
+ "body": "<html><body>t;refUniqueMoteur&quot;:&quot;arko_default_635b873d1f4a7&quot;,&quot;position&quot;:null,&quot;idArkoFile&quot;:1918347,&quot;mediaType&quot;:&quot;image&quot;}\" data-visionneuse-url=\"/_recherche-api/visionneuse-infos/arko_default_635b873d1f4a7/arko_fiche_6577247d2bb77/arko_default_635fc9f729278/image/1918347\" aria-label=\"Ouvrir l'image dans la visionneuse\" </body></html>"
+}

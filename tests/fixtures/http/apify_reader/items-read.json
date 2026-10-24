@@ -1,0 +1,31 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. Markdown cut",
+  "request": {
+    "method": "GET",
+    "url": "https://api.apify.com/v2/datasets/phDbiI8xzYC4Ox3jI/items?clean=true&format=json"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": [
+    {
+      "crawl": {
+        "httpStatusCode": 200,
+        "httpStatusMessage": "OK",
+        "loadedAt": "2026-10-02T11:07:27.470Z",
+        "uniqueKey": "Znh0c9oFwc",
+        "requestStatus": "handled"
+      },
+      "metadata": {
+        "title": "Luxembourg City - Wikipedia",
+        "languageCode": "en",
+        "url": "https://en.wikipedia.org/wiki/Luxembourg_City",
+        "redirectedUrl": "https://en.wikipedia.org/wiki/Luxembourg_City",
+        "canonicalUrl": "https://en.wikipedia.org/wiki/Luxembourg_City"
+      },
+      "query": "https://en.wikipedia.org/wiki/Luxembourg_City",
+      "markdown": "Luxembourg City - Wikipedia\n\n[Jump to content](https://en.wikipedia.org/wiki/Luxembourg_City#bodyContent)\n\n  [![](/static/images/icons/enwiki-25.svg) ![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg) ![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](https://en.wikipedia.org/wiki/Main_Page)\n\n[Search](https://en.wikipedia.org/wiki/Special:Search \"Search Wikipedia [f]\")\n\nSearch\n\n# Luxembourg City\n\n 154 languages\n\n*   [Afrikaans](https://af.wikipedia.org/wiki/Luxemburg_\\(stad\\) \"Luxemburg (stad) – Afrikaans\")\n*   [Alemannisch](https://als.wikipedia.org/wiki/Luxemburg_\\(Stadt\\) \"Luxemburg (Stadt) – Alemannic\")\n*   [አማርኛ](https://am.wikipedia.org/wiki/%E1%88%89%E1%8A%AD%E1%88%B0%E1%88%9D%E1%89%A0%E1%88%AD%E1%8C%8D_\\(%E1%8A%A8%E1%89%B0%E1%88%9B\\) \"ሉክሰምበርግ (ከተማ) – Amharic\")\n*   [Aragonés](https://an.wikipedia.org/wiki/Luxemburgo_\\(ciudat\\) \"Luxemburgo (ciudat) – Aragonese\")\n*   [العربية](https://ar.wikipedia.org/wiki/%D9%84%D9%88%D9%83%D8%B3%D9%85%D8%A8%D9%88%D8%B1%D8%BA_\\(%D9%85%D8%AF%D9%8A%D9%86%D8%A9\\) \"لوكسمبورغ (مدينة) – Arabic\")\n*   [الدارجة](https://ary.wikipedia.org/wiki/%D9%84%D9%88%D9%83%D8%B3%D9%85%D8%A8%D9%88%D8%B1%DD%A3_\\(%D9%85%D8%AF%D9%8A%D9%86%D8%A9\\) \"لوكسمبورݣ (مدينة) – Moroccan Arabic\")\n*   [مصرى](https://arz.wikipedia.org/wiki/%D9%85%D8%AF%D9%8A%D9%86%D9%87_%D9%84%D9%88%D9%83%D8%B3%D9%85%D8%A8%D9%88%D8%B1%D8%AC \"مدينه لوكسمبورج – Egyptian Arabic\")\n*   [Asturianu](https://ast.wikipedia.org/wiki/Luxemburgu_\\(ciud%C3%A1\\) \"Luxemburgu (ciudá) – Asturian\")\n*   [Авар](https://av.wikipedia.org/wiki/%D0%9B%D1%8E%D0%BA%D1%81%D0%B5%D0%BC%D0%B1%D1%83%D1%80%D0%B3_\\(%D1%88%D0%B0%D0%B3%D1%8C%D0%B0%D1%80\\) \"Люксембург (шагьар) – Avaric\")\n*   [Kotava](https://avk.wikipedia.org/wiki/Luxemburg \"Luxemburg – Kotava\")\n*   [Azərbaycanca](https://az.wikipedia.org/wiki/L%C3%BCksemburq_\\(%C5%9F%C9%99h%C9%99r\\) \"Lüksemburq (şəhər) – Azerbaijani\")\n*   [Basa Bali](https://ban.wikipedia.org/wiki/Luksemburg_\\(kota\\) \"Luksemburg (kota) – Balinese\")\n*   [Беларуская (тарашкевіца)](https://be-tarask.wikipedia.org/wiki/%D0%9B%D1%8E%D0%BA%D1%81%D1%8D%D0%BC%D0%B1%D1%83%D1%80%D0%B3_\\(%D0%B3%D0%BE%D1%80%D0%B0%D0%B4\\) \"Люксэмбург (горад) – Belarusian (Taraškievica orthography)\")\n*   [Беларуская](https://be.wikipedia.org/wiki/%D0%9B%D1%8E%D0%BA%D1%81%D0%B5%D0%BC%D0%B1%D1%83%D1%80%D0%B3_\\(%D0%B3%D0%BE%D1%80%D0%B0%D0%B4\\) \"Люксембург (горад) – Belarusian\")\n*   [Български](https://bg.wikipedia.org/wiki/%D0%9B%D1%8E%D0%BA%D1%81%D0%B5%D0%BC%D0%B1%D1%83%D1%80%D0%B3_\\(%D0%B3%D1%80%D0%B0%D0%B4\\) \"Люксембург (град) – Bulgarian\")\n*   [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%B2%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A6%AC%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%97_%E0%A6%B6%E0%A6%B9%E0%A6%B0 \"লুক্সেমবুর্গ শহর – Bangla\")\n*   [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%A3%E0%BD%B4%E0%BC%8B%E0%BD%A6%E0%BD%BA%E0%BD%98%E0%BC%8B%E0%BD%96%E0%BD%A0%E0%BD%B4%E0%BD%A2%E0%BD%82_\\(%E0%BD%82%E0%BE%B2%E0%BD%BC%E0%BD%84%E0%BC%8B%E0%BD%A2%E0%BE%A1%E0%BD%A3%E0%BC%8D\\) \"ལུ་སེམ་བའུརག (གྲོང་རྡལ།) – Tibetan\")\n*   [Brezhoneg](https://br.wikipedia.org/wiki/Luksembourg_\\(k%C3%AAr\\) \"Luksembourg (kêr) – Breton\")\n*   [Bosanski](https://bs.wikipedia.org/wiki/Luxembourg \"Luxembourg – Bosnian\")\n*   [Català](https://ca.wikipedia.org/wiki/Ciutat_de_Luxemburg \"Ciutat de Luxemburg – Catalan\")\n*   [閩東語 / Mìng-dĕ̤ng-ngṳ̄](https://cdo.wikipedia.org/wiki/Luxembourg_Ch%C3%AA \"Luxembourg Chê – Mindong\")\n*   [Нохчийн](https://ce.wikipedia.org/wiki/%D0%9B%D1%8E%D0%BA%D1%81%D0%B5%D0%BC%D0%B1%D1%83%D1%80%D0%B3_\\(%D0%B3%D3%80%D0%B0%D0%BB%D0%B0\\) \"Люксембург (гӀала) – Chechen\")\n*   [Cebuano](https://ceb.wikipedia.org/wiki/Luxembourg_\\(ulohang_dakbayan_sa_Lugsemburg\\) \"Luxembourg (ulohang dakbayan sa Lugsemburg) – Cebuano\")\n*   [کوردی](https://ckb.wikipedia.org/wiki/%D9%84%D9%88%DA%A9%D8%B3%DB%95%D9%85%D8%A8%D9%88%D8%B1%DA%AF_\\(%D8%B4%D8%A7%D8%B1\\) \"لوکسەمبورگ (شار) – Central Kurdish\")\n*   [Čeština](https://cs.wikipedia.org/wiki/Luc\n[cut]"
+    }
+  ]
+}

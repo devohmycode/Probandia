@@ -1,0 +1,11 @@
+STATUS=OK
+PROPOSAL=<ulid>
+FACTS=0
+SOURCES=0
+SEARCHES=0
+PERSONS=0
+- normalized=research, pass, author (none) -> 2026-09-01-ancestors-of-louis-marchand, 3, session
+- facts=0
+- adds=persons:0 sources:0 searches:0 negatives:0 hypotheses:1 errata:0 sections:0
+- verdict=would-apply reasons=0 conflicts=0 citations=0 negatives=0 persons_touched=0
+DETAILS=families/marchand/research/2026-09-01-ancestors-of-louis-marchand/work/proposals/<ulid>.yaml

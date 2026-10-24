@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.parallel.ai/v1/search",
+    "headers": {
+      "x-api-key": "KEY"
+    },
+    "json": {
+      "objective": "Find genealogical records of people named Hugo in Besançon around 1802 (births, marriages, emigration).",
+      "search_queries": [
+        "\"Hugo\" Besançon 1802",
+        "Hugo Besançon 1802 genealogy"
+      ],
+      "mode": "fast",
+      "advanced_settings": {
+        "max_results": 5
+      }
+    }
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "type": "error",
+    "error": {
+      "ref_id": "search_9e8d7c6b5a4f43e2a1b0c9d8e7f6a5b4",
+      "message": "Rate limit exceeded"
+    }
+  }
+}

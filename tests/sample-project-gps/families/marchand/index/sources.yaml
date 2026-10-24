@@ -1,0 +1,79 @@
+schema: 1
+sources:
+- id: src-01JA0000000000000000000001
+  repository: Archives départementales de Valombre
+  collection: État civil, Bourg-Vert
+  reference: 3 E 41/12
+  item: acte 57
+  image_no: '33'
+  url: https://archives.valombre.example/ec/41/12/33
+  accessed: '2026-09-01'
+  rights: free
+  image: evidence/images/bourg-vert-1898-57.jpg
+- id: src-01JA0000000000000000000002
+  repository: Archives départementales de Valombre
+  collection: État civil, Saint-Aubry
+  reference: 3 E 77/4
+  item: acte 12
+  image_no: '8'
+  accessed: '2026-09-01'
+  rights: free
+- id: src-01JA0000000000000000000003
+  repository: Archives départementales de Valombre
+  collection: Registres paroissiaux, Les Ormes
+  reference: 1 MI 88
+  item: f. 14
+  accessed: '2026-09-02'
+  rights: restricted
+- id: src-01JA0000000000000000000004
+  repository: Cercle généalogique de Valombre
+  collection: Relevés des mariages
+  reference: R-1801-1850
+  accessed: '2026-09-02'
+  rights: free
+- id: src-01JA0000000000000000000005
+  repository: Archives départementales de Valombre
+  collection: Recensements, Bourg-Vert
+  reference: 6 M 120
+  item: 1846, p. 3
+  accessed: '2026-09-02'
+  rights: free
+- id: src-01JA0000000000000000000006
+  repository: Archives communales de Prémoulin
+  collection: Registres paroissiaux
+  reference: GG 3
+  item: f. 41
+  accessed: '2026-09-03'
+  rights: free
+- id: src-01JA0000000000000000000007
+  type: civil-registration
+  jurisdiction: Bourg-Vert
+  register: naissances, 1870
+  repository: Archives communales de Bourg-Vert
+  reference: 1 E 12
+  act: naissance
+  act_no: '31'
+  act_date: '1870-03-14'
+  accessed: '2026-09-04'
+  rights: free
+  transcription: evidence/transcriptions/src-01JA0000000000000000000007.md
+- id: src-01JA0000000000000000000008
+  type: decennial-table
+  jurisdiction: Bourg-Vert
+  register: 1863-1872
+  repository: Archives départementales de Valombre
+  reference: 3 E 41/TD 7
+  page: '4'
+  url: https://archives.valombre.example/td/41/7/4
+  accessed: '2026-09-04'
+  rights: free
+  sha256: 6401bb9fe50009cf6b99ce513eb01f200a6b11c3658d5143270e11f3c163adff
+- id: src-01JA0000000000000000000009
+  type: census
+  jurisdiction: Bourg-Vert
+  act_date: '1872'
+  repository: Archives départementales de Valombre
+  reference: 6 M 121
+  item: p. 5
+  accessed: '2026-09-04'
+  rights: free

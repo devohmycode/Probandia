@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "headers": {
+      "x-api-key": "KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "type": "auto",
+      "numResults": 5,
+      "userLocation": "LU",
+      "contents": {
+        "highlights": true
+      }
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "requestId": "4c2a9e81d03b47f5a6e8b1c2d3f40a59",
+    "resolvedSearchType": "",
+    "results": [],
+    "searchTime": 642.1,
+    "costDollars": {
+      "total": 0.007,
+      "search": {
+        "neural": 0.007
+      }
+    }
+  }
+}

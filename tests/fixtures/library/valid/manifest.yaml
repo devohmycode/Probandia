@@ -1,0 +1,42 @@
+schema: 1
+scripts:
+- id: ad25-client
+  kind: connector
+  path: connectors/ad25_client.py
+  purpose: Read the Doubs archives portal
+  inputs:
+    query: str
+    year: int
+  outputs: JSON list of notices
+  target:
+    hosts:
+    - archives.doubs.fr
+    formats: []
+  env: []
+  witness:
+    args:
+      query: Hugo
+      year: 1802
+    expect: at least 1 notice
+  author:
+    harness: claude-code
+    model: claude-opus-5-5
+  created: '2026-09-30T19:10:00Z'
+  updated: '2026-09-30T19:10:00Z'
+  version: 1
+  sha256: '0000000000000000000000000000000000000000000000000000000000000000'
+  status: draft
+  runs:
+    ok: 0
+    failed: 0
+    last_ok: null
+- id: hugo-births-recipe
+  kind: recipe
+  path: ''
+  purpose: Births of the Hugos
+  status: tested
+  version: 2
+  query_template: '{surname} {place}'
+  question_type: birth
+  archive: openarchives
+  hits: 4

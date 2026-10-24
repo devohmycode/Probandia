@@ -1,0 +1,18 @@
+{
+  "_source": "made from docs.tavily.com/documentation/api-reference/endpoint/extract, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/extract",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"urls": "https://families.example.org/hugo", "extract_depth": "basic", "format": "markdown", "include_usage": true}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "results": [],
+    "failed_results": [{"url": "https://families.example.org/hugo", "error": "Failed to fetch url"}],
+    "response_time": 0.4,
+    "usage": {"credits": 0},
+    "request_id": "123e4567-e89b-12d3-a456-426614174114"
+  }
+}

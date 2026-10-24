@@ -1,0 +1,9 @@
+# expect: $.gaps[0].justification
+schema: 1
+gaps:
+- archive: ad56
+  window:
+    from: 1793
+    to: 1802
+  kind: missing
+  justification: ""

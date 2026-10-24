@@ -1,0 +1,37 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000201
+  type: parish-register
+  repository: Archives communales de Bourg-Vert
+  collection: Registres paroissiaux, Bourg-Vert, 1784
+  jurisdiction: Bourg-Vert
+  act_date: '1784-02-10'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000201.md
+  citation: Bourg-Vert, registre paroissial 1784, mariage du 10 février
+- id: src-01JT0000000000000000000202
+  type: parish-register
+  repository: Archives communales de Saint-Aubry
+  collection: Registres paroissiaux, Saint-Aubry, 1787
+  jurisdiction: Saint-Aubry
+  act_date: '1787-06-02'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000202.md
+  citation: Saint-Aubry, registre paroissial 1787, mariage du 2 juin
+- id: src-01JT0000000000000000000203
+  type: parish-register
+  repository: Archives communales de Bourg-Vert
+  collection: Registres paroissiaux, Bourg-Vert, 1790
+  jurisdiction: Bourg-Vert
+  act_date: '1790-03-12'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000203.md
+  citation: Bourg-Vert, registre paroissial 1790, baptême du 12 mars
+- id: src-01JT0000000000000000000204
+  type: decennial-table
+  repository: Archives départementales de Valombre
+  collection: Tables décennales, Bourg-Vert, décès 1813-1862
+  act_date: '1863-01-20'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000204.md
+  citation: Bourg-Vert, tables décennales des décès 1813-1862

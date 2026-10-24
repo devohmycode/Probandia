@@ -1,0 +1,97 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://serpapi.com/search.json?engine=google&q=%22Hugo%22+Besan%C3%A7on+1802&hl=fr&gl=lu&api_key=KEY",
+    "headers": {}
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "search_metadata": {
+      "id": "66fbb2e0c4a7d91f3b2e5a10",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/66fbb2e0c4a7d91f3b2e5a10.json",
+      "created_at": "2026-10-01 08:12:44 UTC",
+      "processed_at": "2026-10-01 08:12:44 UTC",
+      "google_url": "https://www.google.com/search?q=%22Hugo%22+Besan%C3%A7on+1802&oq=%22Hugo%22+Besan%C3%A7on+1802&hl=fr&gl=lu&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/66fbb2e0c4a7d91f3b2e5a10.html",
+      "total_time_taken": 1.84
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "\"Hugo\" Besançon 1802",
+      "google_domain": "google.com",
+      "hl": "fr",
+      "gl": "lu",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "\"Hugo\" Besançon 1802",
+      "total_results": 1240,
+      "time_taken_displayed": 0.31,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Charles Hugo (1826 - 1871) - Genealogy - Example Genealogy",
+        "link": "https://genealogy.example.org/people/Charles-Hugo/6000000041872239112",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://genealogy.example.org/people/Charles-Hugo/6000000041872239112",
+        "displayed_link": "https://genealogy.example.org › people",
+        "favicon": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/images/favicon-1.png",
+        "snippet": "Genealogy for Charles Hugo (1826 - 1871) family tree on Example Genealogy, son of Victor Hugo and Adèle Foucher ...",
+        "snippet_highlighted_words": [
+          "Hugo",
+          "1802"
+        ],
+        "source": "Example Genealogy"
+      },
+      {
+        "position": 2,
+        "title": "Naissance Hugo, Nancy, 1800 - Example Families",
+        "link": "https://families.example.org/records/births/nancy/1800/hugo",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://families.example.org/records/births/nancy/1800/hugo",
+        "displayed_link": "https://families.example.org › records",
+        "favicon": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/images/favicon-2.png",
+        "snippet": "Registre d'état civil de Nancy, année 1800 : acte de naissance d'Eugène Hugo, fils de Léopold Hugo et de Sophie Trébuchet ...",
+        "snippet_highlighted_words": [
+          "Hugo",
+          "1802"
+        ],
+        "source": "Example Families",
+        "date": "14 févr. 2019"
+      },
+      {
+        "position": 3,
+        "title": "France, Mariages - Hugo - Example Records",
+        "link": "https://records.example.org/ark:/61903/1:1:XYZ1-8QK",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://records.example.org/ark:/61903/1:1:XYZ1-8QK",
+        "displayed_link": "https://records.example.org › ark:",
+        "favicon": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/images/favicon-3.png",
+        "snippet": "Name: Léopold Hugo; Event Type: Marriage; Event Date: 1797; Event Place: Paris, France; Spouse's Name ...",
+        "snippet_highlighted_words": [
+          "Hugo",
+          "1802"
+        ],
+        "source": "Example Records"
+      },
+      {
+        "position": 4,
+        "title": "Famille Hugo de Nancy - Généalogie lorraine",
+        "link": "https://genealogie.example.org/familles/hugo-nancy",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://genealogie.example.org/familles/hugo-nancy",
+        "displayed_link": "https://genealogie.example.org › familles",
+        "favicon": "https://serpapi.com/searches/8a1f0c2e7b4d93a5/images/favicon-4.png",
+        "snippet": "Descendance de Joseph Hugo (mort en 1789), menuisier à Nancy ; son fils Léopold, ses petits-fils Abel, Eugène et Victor ...",
+        "snippet_highlighted_words": [
+          "Hugo",
+          "1802"
+        ],
+        "source": "genealogie.example.org",
+        "date": "3 juin 2021"
+      }
+    ]
+  }
+}

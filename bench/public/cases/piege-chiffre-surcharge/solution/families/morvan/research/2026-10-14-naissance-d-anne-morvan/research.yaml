@@ -1,0 +1,28 @@
+schema: 1
+id: 2026-10-14-naissance-d-anne-morvan
+family: morvan
+question: Quand est née Anne MORVAN, à Bourg-Vert en 1803 ? Les actes connus sont dans le projet (evidence/transcriptions).
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+created: '2026-10-14T09:00:00Z'
+created_by:
+  harness: cli
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: closed
+passes: 1
+questions:
+- id: Q1
+  text: Quand est née Anne MORVAN ?
+  type: birth
+  persons:
+  - anne-morvan-1803
+  status: answered
+  conclusion:
+  - anne-morvan-1803.birth

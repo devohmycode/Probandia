@@ -1,0 +1,110 @@
+schema: 1
+# Victor HUGO, his parents, two of his grandfathers, his wife and two of his children: public facts only.
+# The HUGOT family at the end is invented and unrelated to the Hugos: it holds the presumed-living
+# person and the long given name the tests need.
+persons:
+- id: victor-hugo-1802
+  names: {given: Victor, surname: HUGO}
+  sex: M
+  living: auto
+  parents: {father: leopold-hugo-1773, mother: sophie-trebuchet-1772}
+  spouses: [{person: adele-foucher-1803, marriage: victor-hugo-1802.marriage}]
+  facts:
+  - {id: victor-hugo-1802.birth, type: birth, status: record, date: {value: '1802-02-26', qualifier: exact}}
+  - {id: victor-hugo-1802.marriage, type: marriage, status: record, date: {value: '1822-10-12', qualifier: exact}}
+  - {id: victor-hugo-1802.death, type: death, status: record, date: {value: '1885-05-22', qualifier: exact}}
+- id: adele-foucher-1803
+  names: {given: Adèle, surname: FOUCHER}
+  sex: F
+  living: auto
+  parents: {father: null, mother: null}
+  spouses: [{person: victor-hugo-1802, marriage: victor-hugo-1802.marriage}]
+  facts:
+  - {id: adele-foucher-1803.birth, type: birth, status: index, date: {value: '1803', qualifier: exact}}
+  - {id: adele-foucher-1803.death, type: death, status: index, date: {value: '1868', qualifier: exact}}
+- id: leopold-hugo-1773
+  names: {given: Léopold, surname: HUGO}
+  sex: M
+  living: false
+  parents: {father: joseph-hugo, mother: null}
+  spouses: []
+  facts:
+  - {id: leopold-hugo-1773.birth, type: birth, status: hypothesis, date: {value: '1773', qualifier: about}}
+- id: sophie-trebuchet-1772
+  names: {given: Sophie, surname: TRÉBUCHET}
+  sex: F
+  living: false
+  parents: {father: jean-francois-trebuchet, mother: null}
+  spouses: []
+  facts:
+  - {id: sophie-trebuchet-1772.birth, type: birth, status: index, date: {value: '1772', qualifier: exact}}
+- id: joseph-hugo
+  names: {given: Joseph, surname: HUGO}
+  sex: M
+  living: false
+  parents: {father: null, mother: null}
+  spouses: []
+  facts:
+  - {id: joseph-hugo.death, type: death, status: record, date: {value: '1789', qualifier: exact}}
+- id: jean-francois-trebuchet
+  names: {given: Jean-François, surname: TRÉBUCHET}
+  sex: M
+  living: false
+  parents: {father: null, mother: null}
+  spouses: []
+  facts:
+  # refuted: he died in 1783
+  - {id: jean-francois-trebuchet.birth, type: birth, status: refuted, date: {value: '1798', qualifier: exact}}
+- id: leopoldine-hugo-1824
+  names: {given: Léopoldine, surname: HUGO}
+  sex: F
+  living: auto
+  parents: {father: victor-hugo-1802, mother: adele-foucher-1803}
+  spouses: []
+  facts:
+  - {id: leopoldine-hugo-1824.birth, type: birth, status: record, date: {value: '1824', qualifier: exact}}
+  - {id: leopoldine-hugo-1824.death, type: death, status: record, date: {value: '1843', qualifier: exact}}
+- id: adele-hugo-1830
+  names: {given: Adèle, surname: HUGO}
+  sex: F
+  living: auto
+  parents: {father: victor-hugo-1802, mother: adele-foucher-1803}
+  spouses: []
+  facts:
+  - {id: adele-hugo-1830.birth, type: birth, status: hypothesis, date: {value: '1830', qualifier: about}}
+  - {id: adele-hugo-1830.death, type: death, status: index, date: {value: '1915', qualifier: exact}}
+- id: nicolas-hugot-1850
+  names: {given: Nicolas, surname: HUGOT}
+  sex: M
+  living: false
+  parents: {father: null, mother: null}
+  spouses: []
+  facts:
+  - {id: nicolas-hugot-1850.birth, type: birth, status: record, date: {value: '1850', qualifier: exact}}
+  - {id: nicolas-hugot-1850.death, type: death, status: record, date: {value: '1911', qualifier: exact}}
+- id: jean-baptiste-hugot-1879
+  names: {given: Jean-Baptiste Joseph Anatole, surname: HUGOT}
+  sex: M
+  living: auto
+  parents: {father: nicolas-hugot-1850, mother: null}
+  spouses: []
+  facts:
+  - {id: jean-baptiste-hugot-1879.birth, type: birth, status: record, date: {value: '1879-02-01', qualifier: exact}}
+  - {id: jean-baptiste-hugot-1879.death, type: death, status: record, date: {value: '1960', qualifier: exact}}
+- id: marthe-hugot-1882
+  names: {given: Marthe, surname: HUGOT}
+  sex: F
+  living: auto
+  parents: {father: nicolas-hugot-1850, mother: null}
+  spouses: []
+  facts:
+  - {id: marthe-hugot-1882.birth, type: birth, status: hypothesis, date: {value: '1882', qualifier: about}}
+  - {id: marthe-hugot-1882.death, type: death, status: index, date: {value: '1950', qualifier: exact}}
+- id: camille-hugot-1932
+  names: {given: Camille, surname: HUGOT}
+  sex: M
+  living: auto
+  parents: {father: jean-baptiste-hugot-1879, mother: null}
+  spouses: []
+  facts:
+  - {id: camille-hugot-1932.birth, type: birth, status: record, date: {value: '1932-06-30', qualifier: exact}}

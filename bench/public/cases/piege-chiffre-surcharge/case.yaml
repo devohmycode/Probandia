@@ -1,0 +1,29 @@
+schema: 1
+id: piege-chiffre-surcharge
+title: 'Piège : un chiffre surchargé dans la date'
+question: Quand est née Anne MORVAN, à Bourg-Vert en 1803 ? Les actes connus sont dans le projet (evidence/transcriptions).
+language: fr
+family: morvan
+research: 2026-10-14-naissance-d-anne-morvan
+observed: true
+offline: true
+expected:
+- label: naissance
+  person: Anne MORVAN
+  type: birth
+  year: 1803
+  place: Bourg-Vert
+  date: '1803-04-07'
+  tolerance_days: 6
+  uncertain_reading: true
+  fact: anne-morvan-1803.birth
+sources:
+- id: src-01JT0000000000000000000701
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000702
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'Le jour de naissance est écrit en chiffres, et le second est récrit sur un autre : 17 ou 11 germinal
+  an XI (7 ou 1er avril 1803). Le fait doit porter la lecture incertaine ; l''un ou l''autre jour est
+  accepté.'

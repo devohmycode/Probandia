@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+    "headers": {
+      "x-goog-api-key": "KEY"
+    },
+    "json": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Recherche généalogique : \"Hugo\" Besançon 1802. Cite les sources en ligne (actes, arbres, registres) concernant des personnes nommées Hugo à Besançon en 1802."
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "google_search": {}
+        }
+      ]
+    }
+  },
+  "status": 400,
+  "headers": {
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "error": {
+      "code": 400,
+      "message": "API key not valid. Please pass a valid API key.",
+      "status": "INVALID_ARGUMENT",
+      "details": [
+        {
+          "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+          "reason": "API_KEY_INVALID",
+          "domain": "googleapis.com",
+          "metadata": {
+            "service": "generativelanguage.googleapis.com"
+          }
+        },
+        {
+          "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+          "locale": "en-US",
+          "message": "API key not valid. Please pass a valid API key."
+        }
+      ]
+    }
+  }
+}

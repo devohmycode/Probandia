@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Design documents stay out of version control.
+docs/
+
+# Keys
+.env
+
+# local data that must never be versioned (the author's own research)
+private/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# The launcher the engine writes when it runs on a sample project
+tests/sample-project*/.probandia/

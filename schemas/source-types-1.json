@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/source-types-1.json",
+  "title": "source-types.yaml",
+  "description": "The kinds of records a search is expected to consult (GPS3): for each, by country, the years it was kept, its exceptions, the questions it answers and the archive coverage that carries it. Every rule cites its references.",
+  "type": "object",
+  "required": [
+    "schema",
+    "types"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/type"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1000,
+      "maximum": 2999
+    },
+    "region": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}(-[0-9A-Z]{1,3})?$"
+    },
+    "question_type": {
+      "enum": [
+        "birth",
+        "marriage",
+        "death",
+        "parents",
+        "children",
+        "residence",
+        "migration",
+        "identity",
+        "negative",
+        "general"
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "the law, or the guide of the national or departmental archives"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "type": {
+      "type": "object",
+      "required": [
+        "id",
+        "names",
+        "coverage",
+        "answers",
+        "rules"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "names": {
+          "type": "object",
+          "required": [
+            "en",
+            "fr"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "en": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fr": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "coverage": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "the coverage types of catalogues/archives.yaml that carry these records",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "answers": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "the question types these records can answer",
+          "items": {
+            "$ref": "#/$defs/question_type"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/rule"
+          }
+        }
+      }
+    },
+    "rule": {
+      "type": "object",
+      "required": [
+        "country",
+        "from",
+        "to",
+        "held_by",
+        "references"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "from": {
+          "$ref": "#/$defs/year"
+        },
+        "to": {
+          "description": "the last year; null while the records are still kept",
+          "anyOf": [
+            {
+              "$ref": "#/$defs/year"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "held_by": {
+          "type": "array",
+          "minItems": 1,
+          "description": "where the records are kept, in plain words",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": "string"
+        },
+        "references": {
+          "$ref": "#/$defs/references"
+        },
+        "exceptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/exception"
+          }
+        }
+      }
+    },
+    "exception": {
+      "type": "object",
+      "required": [
+        "places",
+        "from",
+        "to",
+        "effect",
+        "note",
+        "references"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "places": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/region"
+          }
+        },
+        "from": {
+          "$ref": "#/$defs/year"
+        },
+        "to": {
+          "$ref": "#/$defs/year"
+        },
+        "effect": {
+          "enum": [
+            "absent",
+            "destroyed",
+            "extended",
+            "replaced"
+          ],
+          "description": "absent: not made; destroyed: lost, in part rebuilt; extended: kept there beyond the general years; replaced: another type stands in its place"
+        },
+        "by": {
+          "$ref": "#/$defs/id",
+          "description": "replaced: the type that stands in its place"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "references": {
+          "$ref": "#/$defs/references"
+        }
+      }
+    }
+  }
+}

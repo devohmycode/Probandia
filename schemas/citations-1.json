@@ -1,0 +1,292 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/citations-1.json",
+  "title": "catalogues/citations/<lang>.yaml",
+  "description": "Citation models of one language: three forms per source type, a model per layer.",
+  "type": "object",
+  "required": [
+    "schema",
+    "lang",
+    "dates",
+    "terms",
+    "layer_join",
+    "page",
+    "types",
+    "layers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "lang": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "dates": {
+      "type": "object",
+      "required": [
+        "months",
+        "day",
+        "month"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "months": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "day": {
+          "type": "string",
+          "minLength": 1
+        },
+        "month": {
+          "type": "string",
+          "minLength": 1
+        },
+        "first_day": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "terms": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "layer_join": {
+      "type": "string",
+      "minLength": 1
+    },
+    "page": {
+      "$ref": "#/$defs/template"
+    },
+    "types": {
+      "type": "object",
+      "required": [
+        "civil-registration",
+        "parish-register",
+        "decennial-table",
+        "census",
+        "notarial-act",
+        "military-register",
+        "registration",
+        "newspaper",
+        "database",
+        "book",
+        "online-tree",
+        "other"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "civil-registration": {
+          "$ref": "#/$defs/model"
+        },
+        "parish-register": {
+          "$ref": "#/$defs/model"
+        },
+        "decennial-table": {
+          "$ref": "#/$defs/model"
+        },
+        "census": {
+          "$ref": "#/$defs/model"
+        },
+        "notarial-act": {
+          "$ref": "#/$defs/model"
+        },
+        "military-register": {
+          "$ref": "#/$defs/model"
+        },
+        "registration": {
+          "$ref": "#/$defs/model"
+        },
+        "newspaper": {
+          "$ref": "#/$defs/model"
+        },
+        "database": {
+          "$ref": "#/$defs/model"
+        },
+        "book": {
+          "$ref": "#/$defs/model"
+        },
+        "online-tree": {
+          "$ref": "#/$defs/model"
+        },
+        "other": {
+          "$ref": "#/$defs/model"
+        }
+      }
+    },
+    "layers": {
+      "type": "object",
+      "required": [
+        "online-image",
+        "microfilm",
+        "database",
+        "index",
+        "transcription",
+        "abstract",
+        "publication"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "online-image": {
+          "$ref": "#/$defs/layer"
+        },
+        "microfilm": {
+          "$ref": "#/$defs/layer"
+        },
+        "database": {
+          "$ref": "#/$defs/layer"
+        },
+        "index": {
+          "$ref": "#/$defs/layer"
+        },
+        "transcription": {
+          "$ref": "#/$defs/layer"
+        },
+        "abstract": {
+          "$ref": "#/$defs/layer"
+        },
+        "publication": {
+          "$ref": "#/$defs/layer"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "template": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "object",
+      "required": [
+        "required",
+        "recommended",
+        "series",
+        "full",
+        "first",
+        "short"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "repository",
+              "collection",
+              "reference",
+              "item",
+              "page",
+              "image_no",
+              "url",
+              "iiif",
+              "accessed",
+              "rights",
+              "image",
+              "transcription",
+              "archived_url",
+              "sha256",
+              "jurisdiction",
+              "act",
+              "register",
+              "folio",
+              "act_no",
+              "act_date",
+              "names",
+              "notary",
+              "class",
+              "matricule",
+              "title",
+              "author",
+              "publisher",
+              "published",
+              "issue_date"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "recommended": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "repository",
+              "collection",
+              "reference",
+              "item",
+              "page",
+              "image_no",
+              "url",
+              "iiif",
+              "accessed",
+              "rights",
+              "image",
+              "transcription",
+              "archived_url",
+              "sha256",
+              "jurisdiction",
+              "act",
+              "register",
+              "folio",
+              "act_no",
+              "act_date",
+              "names",
+              "notary",
+              "class",
+              "matricule",
+              "title",
+              "author",
+              "publisher",
+              "published",
+              "issue_date"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "series": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z_]+$"
+        },
+        "full": {
+          "$ref": "#/$defs/template"
+        },
+        "first": {
+          "$ref": "#/$defs/template"
+        },
+        "short": {
+          "$ref": "#/$defs/template"
+        }
+      }
+    },
+    "layer": {
+      "type": "object",
+      "required": [
+        "full",
+        "first"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "full": {
+          "$ref": "#/$defs/template"
+        },
+        "first": {
+          "$ref": "#/$defs/template"
+        }
+      }
+    }
+  }
+}

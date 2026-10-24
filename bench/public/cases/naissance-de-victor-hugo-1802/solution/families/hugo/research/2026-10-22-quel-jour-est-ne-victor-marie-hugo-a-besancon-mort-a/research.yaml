@@ -1,0 +1,38 @@
+schema: 1
+id: 2026-10-22-quel-jour-est-ne-victor-marie-hugo-a-besancon-mort-a
+family: hugo
+question: Quel jour est né Victor Marie HUGO, à Besançon, mort à Paris le 22 mai 1885 ? Le fac-similé
+  de son acte de naissance est dans le projet (families/hugo/evidence/images).
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+- html
+created: '2026-10-22T16:34:13Z'
+created_by:
+  harness: claude-code
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: closed
+passes: 1
+questions:
+- id: Q1
+  text: Quel jour est né Victor Marie HUGO, à Besançon, mort à Paris le 22 mai 1885 ? Le fac-similé de
+    son acte de naissance est dans le projet (families/hugo/evidence/images).
+  type: birth
+  status: answered
+  persons:
+  - victor-marie-hugo-1802
+  window:
+    from: 1785
+    to: 1870
+  places:
+  - besancon
+  standard: l'acte de naissance de Victor Marie HUGO, lu sur son image, avec le jour de la naissance
+  updated: '2026-10-22T16:34:24Z'
+  conclusion:
+  - victor-marie-hugo-1802.birth

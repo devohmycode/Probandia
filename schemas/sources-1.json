@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/sources-1.json",
+  "title": "sources.yaml",
+  "description": "Family index: sources.yaml.",
+  "type": "object",
+  "required": [
+    "schema",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "nday": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/sourceid"
+        },
+        "repository": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "collection": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "image_no": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "iiif": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accessed": {
+          "$ref": "#/$defs/nday"
+        },
+        "rights": {
+          "enum": [
+            "free",
+            "restricted"
+          ]
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "images": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "every view of the act, in order (T247): an act on two pages, its margin on another view; the first is image"
+        },
+        "transcription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "archived_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "enum": [
+            "civil-registration",
+            "parish-register",
+            "decennial-table",
+            "census",
+            "notarial-act",
+            "military-register",
+            "registration",
+            "newspaper",
+            "database",
+            "book",
+            "online-tree",
+            "other"
+          ]
+        },
+        "jurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "act": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "register": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "folio": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "act_no": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "act_date": {
+          "$ref": "#/$defs/sday"
+        },
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "notary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}$"
+        },
+        "matricule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publisher": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "published": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "issue_date": {
+          "$ref": "#/$defs/sday"
+        },
+        "layers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/layer"
+          }
+        },
+        "citation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "derived_from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^src-[0-7][0-9A-HJKMNP-TV-Z]{25}$",
+          "description": "the source this one indexes, transcribes or copies: the two are one piece of evidence, not two"
+        }
+      }
+    },
+    "sourceid": {
+      "type": "string",
+      "pattern": "^src-[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "layer": {
+      "type": "object",
+      "required": [
+        "form"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "form": {
+          "enum": [
+            "online-image",
+            "microfilm",
+            "database",
+            "index",
+            "transcription",
+            "abstract",
+            "publication"
+          ]
+        },
+        "by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "image_no": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accessed": {
+          "$ref": "#/$defs/nday"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "sday": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+    }
+  }
+}

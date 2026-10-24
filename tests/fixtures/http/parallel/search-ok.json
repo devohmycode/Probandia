@@ -1,0 +1,61 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.parallel.ai/v1/search",
+    "headers": {
+      "x-api-key": "KEY"
+    },
+    "json": {
+      "objective": "Find genealogical records of people named Hugo in Besançon around 1802 (births, marriages, emigration).",
+      "search_queries": [
+        "\"Hugo\" Besançon 1802",
+        "Hugo Besançon 1802 genealogy"
+      ],
+      "mode": "fast",
+      "advanced_settings": {
+        "max_results": 5
+      }
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "search_id": "search_3f9c2a7e1b5d4c08a6e2f1d0b9c8a7e6",
+    "results": [
+      {
+        "url": "https://records.example.org/ark:/61903/1:1:X2QH-7KM",
+        "title": "Eugène Hugo, France, Civil Registration - Example Records",
+        "publish_date": null,
+        "excerpts": [
+          "Name: Eugène Hugo\nEvent Type: Birth\nEvent Date: 1800\nEvent Place: Nancy, France\nFather's Name: Léopold Hugo\nMother's Name: Sophie Trébuchet"
+        ]
+      },
+      {
+        "url": "https://tree.example.org/familles?lang=fr&n=hugot&oc=0&p=nicolas",
+        "title": "Nicolas HUGOT - Arbre généalogique - Example Trees",
+        "publish_date": null,
+        "excerpts": [
+          "Nicolas HUGOT\nNé en 1802 - Besançon, Doubs\nMenuisier\nMarié le 12 février 1826 avec Jeanne BRUNET"
+        ]
+      },
+      {
+        "url": "https://families.example.org/genealogy/families/hugo.html",
+        "title": "The Hugo family of Nancy - Example Families",
+        "publish_date": "2014-03-11",
+        "excerpts": [
+          "Section Title: Descendants of Joseph Hugo\nContent:\nVictor Hugo, born 26 February 1802 at Besançon, grandson of Joseph Hugo, joiner at Nancy.\n\n... (content truncated)"
+        ]
+      }
+    ],
+    "warnings": null,
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "session_id": "session_3f9c2a7e1b5d4c08a6e2f1d0b9c8a7e6"
+  }
+}

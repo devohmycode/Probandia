@@ -1,0 +1,12 @@
+✓ Brave Search API (brave) · card required
+
+  role                search
+  index family        Br
+  free tier           1000 request · a month
+  costs               search 1
+  key                 BRAVE_API_KEY
+  card required       yes
+  reuses the content  no
+  checked             2026-10-23 (2 days ago)
+  pricing             https://brave.com/search/api/
+  terms               https://api-dashboard.search.brave.com/terms-of-service

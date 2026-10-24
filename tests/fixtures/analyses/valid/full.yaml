@@ -1,0 +1,30 @@
+schema: 1
+analyses:
+  - id: an-victor-hugo-1802-birth
+    question: Q1
+    research: 2026-09-30-parents-of-victor-hugo
+    person: victor-hugo-1802
+    fact_kind: birth
+    items:
+      - source: src-01J9ZK3M4X0000000000000001
+        fact: victor-hugo-1802.birth
+        asserts: "1802-02-26"
+        informant: the father, at the declaration
+        axes: {source: original, information: primary, evidence: direct}
+      - source: src-01J9ZK3M4X0000000000000002
+        fact: victor-hugo-1802.birth.2
+        asserts: "1801"
+        informant: the declarant of the death
+        axes: {source: original, information: secondary, evidence: direct}
+        note: the age at death, 83, gives 1801 or 1802
+    resolution:
+      value: "1802-02-26"
+      fact: victor-hugo-1802.birth
+      reasoning: the birth record was made the day after the birth by the father; the age at death is secondary
+    status: resolved
+  - id: an-jean-martin-1849-death
+    person: jean-martin-1849
+    fact_kind: death
+    items:
+      - asserts: Nancy
+    status: open

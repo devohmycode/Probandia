@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "limit": 5,
+      "sources": [
+        "web"
+      ],
+      "country": "LU"
+    }
+  },
+  "status": 402,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "success": false,
+    "error": "Insufficient credits"
+  }
+}

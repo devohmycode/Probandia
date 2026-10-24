@@ -1,0 +1,35 @@
+{
+  "_source": "made from docs.firecrawl.dev/api-reference/endpoint/crawl-get, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "GET",
+    "url": "https://api.firecrawl.dev/v2/crawl/0b6e1f9a-3c41-4d2e-9b7a-5f2c8d1e4a10",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": null
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "status": "completed",
+    "total": 3,
+    "completed": 3,
+    "creditsUsed": 3,
+    "expiresAt": "2026-10-15T10:00:00Z",
+    "data": [
+      {
+        "markdown": "# Naissances 1802\n\nLe 26 février 1802 naît Victor Hugo, fils de Léopold Hugo, à Besançon.",
+        "metadata": {"title": "Naissances 1802", "sourceURL": "https://registres.example.org/naissances/1802",
+                     "url": "https://registres.example.org/naissances/1802", "statusCode": 200, "error": null}
+      },
+      {
+        "markdown": "# Naissances 1803\n\nAucune naissance du nom de Hugo.",
+        "metadata": {"title": ["Naissances 1803"], "sourceURL": "https://registres.example.org/naissances/1803",
+                     "url": "https://registres.example.org/naissances/1803", "statusCode": 200, "error": null}
+      },
+      {
+        "markdown": "",
+        "metadata": {"title": "Page introuvable", "sourceURL": "https://registres.example.org/naissances/1804",
+                     "url": "https://registres.example.org/naissances/1804", "statusCode": 404, "error": null}
+      }
+    ]
+  }
+}

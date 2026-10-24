@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/matrix-1.json",
+  "title": "matrix.yaml",
+  "description": "The exhaustiveness matrix of a research (GPS3, GPS-D2): for each question, the source types expected and their state. Written by the engine.",
+  "type": "object",
+  "required": [
+    "schema",
+    "research",
+    "updated",
+    "questions",
+    "not_applicable"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "research": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "updated": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    },
+    "not_applicable": {
+      "type": "array",
+      "description": "the source types the orchestrator declared without object for a question (matrix justify)",
+      "items": {
+        "type": "object",
+        "required": [
+          "question",
+          "type",
+          "ts"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "question": {
+            "$ref": "#/$defs/qid"
+          },
+          "type": {
+            "$ref": "#/$defs/type"
+          },
+          "reason": {
+            "type": "string",
+            "description": "required by matrix justify; a hole when missing"
+          },
+          "ts": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "agent": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
+    "qid": {
+      "type": "string",
+      "pattern": "^Q[1-9][0-9]*$"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "years": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "integer"
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "status",
+        "window",
+        "unknown",
+        "rows"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/qid"
+        },
+        "type": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "window": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "from",
+                "to"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "from": {
+                  "type": "integer"
+                },
+                "to": {
+                  "type": "integer"
+                }
+              }
+            }
+          ]
+        },
+        "unknown": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "window",
+              "places"
+            ]
+          }
+        },
+        "notes": {
+          "type": "array",
+          "description": "countries of the question whose source types the catalogue does not know",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/row"
+          }
+        }
+      }
+    },
+    "row": {
+      "type": "object",
+      "required": [
+        "type",
+        "state",
+        "places",
+        "years"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/type"
+        },
+        "state": {
+          "enum": [
+            "consulted",
+            "gap",
+            "not_applicable",
+            "unjustified_gap",
+            "todo"
+          ]
+        },
+        "places": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "years": {
+          "$ref": "#/$defs/years"
+        },
+        "repositories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "archive": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "searches": {
+          "type": "array",
+          "description": "the searches of searches.yaml that consulted it",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "description": "the gaps of gaps.yaml that cross it: their id, else their archive",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

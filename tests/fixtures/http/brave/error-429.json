@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.search.brave.com/res/v1/web/search?q=%22Hugo%22+Besan%C3%A7on+1802&country=ALL&search_lang=fr&count=10",
+    "headers": {
+      "X-Subscription-Token": "KEY",
+      "Accept": "application/json"
+    }
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json",
+    "X-RateLimit-Limit": "1, 2000",
+    "X-RateLimit-Policy": "1;w=1, 2000;w=2592000",
+    "X-RateLimit-Remaining": "0, 1963",
+    "X-RateLimit-Reset": "1, 1234560"
+  },
+  "body": {
+    "type": "ErrorResponse",
+    "error": {
+      "id": "0a1b2c3d-4e5f-4a6b-9c7d-8e9f0a1b2c3d",
+      "status": 429,
+      "code": "RATE_LIMITED",
+      "detail": "Request rate limit exceeded for plan",
+      "meta": {
+        "plan": "Free",
+        "rate_limit": 1,
+        "rate_current": 1,
+        "quota_limit": 2000,
+        "quota_current": 37
+      }
+    },
+    "time": 1790845201
+  }
+}

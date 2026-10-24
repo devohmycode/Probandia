@@ -1,0 +1,9 @@
+schema: 1
+gaps:
+- archive: ad-valombre
+  reference: 3 E 41
+  window:
+    from: 1870
+    to: 1872
+  kind: destroyed
+  source: fire of 1871

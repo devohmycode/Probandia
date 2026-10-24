@@ -1,0 +1,51 @@
+schema: 1
+sources:
+- id: src-01J9ZK3M4X0000000000000001
+  repository: Archives municipales de Besançon
+  collection: État civil, Besançon
+  reference: E-1802-N
+  item: acte 112
+  page: null
+  image_no: '45'
+  url: https://example.org/amb/e-1802-n/45
+  iiif: null
+  accessed: '2026-09-30'
+  rights: free
+  image: evidence/images/e-1802-n-45.jpg
+  transcription: null
+  archived_url: null
+  sha256: null
+  citation: Archives municipales de Besançon, État civil, Besançon, E-1802-N, acte 112, image 45,
+    https://example.org/amb/e-1802-n/45 (consulted on 2026-09-30).
+- id: src-01J9ZK3M4X0000000000000002
+  repository: Open Archives
+  collection: Index of births
+  reference: null
+  item: null
+  page: null
+  image_no: null
+  url: https://example.org/oa/1
+  iiif: null
+  accessed: '2026-09-30'
+  rights: free
+  image: null
+  transcription: null
+  archived_url: null
+  sha256: null
+  citation: null
+- id: src-01J9ZK3M4X0000000000000003
+  repository: Archives départementales du Doubs
+  collection: Registres paroissiaux
+  reference: 3 E 260
+  item: null
+  page: null
+  image_no: null
+  url: null
+  iiif: null
+  accessed: '2026-09-30'
+  rights: restricted
+  image: null
+  transcription: work/transcriptions/3e260.md
+  archived_url: null
+  sha256: null
+  citation: null

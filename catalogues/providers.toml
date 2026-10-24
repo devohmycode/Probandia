@@ -1,0 +1,605 @@
+# Free tiers of the providers Probandia may use. Nothing here is ever paid for.
+# Values checked on 2026-10-23 (T217); entries marked "to confirm" are re-read when an
+# account is opened. `doctor` warns when a `checked` date is more than 90 days old.
+#
+# family: G | B | Br | E | M | Ma | X | P | Px | opaque — keyword: may count for a negative
+# free.period: monthly | daily | once — free.reset: billing | utc-midnight | 1-28
+# free.expires_months: a one-off tier that expires, counted from the first use
+# quota: the id of the entry whose quota this one draws on (same account)
+# introspection.method: endpoint | headers | response | none
+# cache_ttl: seconds; absent: the cache.days setting; 0: the current pass only
+#
+# costs: units per operation (search, read, map, crawl, extract). Reading tiers, cheapest first:
+#   read, then read_js (scripts rendered or awaited). The reader goes one tier up
+#   only when the page came back unrendered; a tier not priced costs the one below.
+#   Anti-bot tiers (premium or residential proxy, stealth, CAPTCHA) are never used.
+#   map, crawl and extract are priced per call, except those listed in per_page:
+#   a price per URL returned (map) or per page read (crawl).
+# mcp_tools: the tools of the provider's own MCP server, each with the operation of
+#   `costs` it makes (T49): the hooks know a server named by a UUID (a claude.ai
+#   connector) by these names, and count its calls; a server whose name holds the
+#   provider's id (word by word: `claude_ai_Exa`, not `hexagon`) is known by that name.
+#   Only names that belong to the provider are listed (`firecrawl_scrape`, not `read_url`).
+# unblocker: a reader of the reading ladder's last resort (decision 1.1): after
+#   the readers of reading.readers, never on an archive portal or a genealogy database.
+# limits: ceilings sent with each call to a provider that takes them (Apify:
+#   maxTotalChargeUsd, maxItems, timeout, memory); max_units also caps the units
+#   one call may spend, never more than the quota left.
+#
+# One key, several entries: a platform that counts each of its APIs apart (OpenWeb
+# Ninja) gets one entry per API, each with its own free quota, all with the same
+# auth.env and the same `platform`. The ledger counts each entry alone; doctor
+# checks the key once; quota show lists the entries together:
+#   [openwebninja_search]
+#   platform = "openwebninja"
+#   auth = { header = "x-api-key", env = "OPENWEBNINJA_API_KEY" }
+#   free = { amount = 100, period = "monthly" }
+
+# Web search: Google index
+
+[serpapi]
+name = "SerpApi"
+family = "G"
+kind = "search"
+keyword = true
+base_url = "https://serpapi.com/search.json"
+auth = { param = "api_key", env = "SERPAPI_API_KEY" }
+unit = "search"
+costs = { search = 1 }
+free = { amount = 250, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://serpapi.com/account.json", fields = ["plan_searches_left", "this_month_usage"] }
+rate = "50/h"                # pricing: 50 searches an hour on the free plan
+terms_url = "https://serpapi.com/legal"
+source_url = "https://serpapi.com/pricing"
+checked = 2026-10-23
+
+[serpapi_bing]
+name = "SerpApi (Bing engine)"
+platform = "serpapi"
+quota = "serpapi"         # draws on the SerpApi account: one search each, same 250
+family = "B"
+kind = "search"
+keyword = true
+base_url = "https://serpapi.com/search.json"
+auth = { param = "api_key", env = "SERPAPI_API_KEY" }
+unit = "search"
+costs = { search = 1 }
+free = { amount = 250, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://serpapi.com/account.json", fields = ["plan_searches_left", "this_month_usage"] }
+rate = "50/h"                # the SerpApi account's free throughput
+terms_url = "https://serpapi.com/legal"
+source_url = "https://serpapi.com/bing-search-api"
+checked = 2026-10-23
+
+[serper]
+name = "Serper"
+family = "G"
+kind = "search"
+keyword = true
+base_url = "https://google.serper.dev/search"
+auth = { header = "X-API-KEY", env = "SERPER_API_KEY" }
+unit = "credit"
+costs = { search = 1 }
+free = { amount = 2500, period = "once", expires_months = 6, note = "expires 6 months after sign-up; counted from the first use, and Serper's refusal marks it exhausted if earlier" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://google.serper.dev/account", fields = ["balance"] }
+rate = "5/s"
+terms_url = "https://serper.dev/terms"
+source_url = "https://serper.dev/"
+checked = 2026-10-23
+
+[searchapi]
+name = "SearchApi.io"
+family = "G"
+kind = "search"
+keyword = true
+base_url = "https://www.searchapi.io/api/v1/search"
+auth = { header = "Authorization", scheme = "Bearer", env = "SEARCHAPI_API_KEY" }
+unit = "search"
+costs = { search = 1 }
+free = { amount = 100, period = "once" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://www.searchapi.io/api/v1/me", fields = ["account.remaining_credits"] }
+rate = "20/h"                # 20 % of the plan's credits an hour (pricing)
+terms_url = "https://www.searchapi.io/legal/terms"
+source_url = "https://www.searchapi.io/pricing"
+checked = 2026-10-23
+
+# OpenWeb Ninja: one key, one entry per API, each with its own free quota
+# (decision 1.2). The pay-per-request access it offers agents (x402) is never used.
+# Retained for genealogy: web search, news (obituaries, notices), Google Books
+# (printed genealogies, directories, armorials). Left out: shopping, jobs, maps,
+# LLM relays, and web_unblocker (a reader: decided with ZenRows and ScraperAPI).
+
+[openwebninja_search]
+name = "OpenWeb Ninja Real-Time Web Search"
+platform = "openwebninja"
+api_id = "realtime_web_search"
+family = "G"
+kind = "search"
+keyword = true
+base_url = "https://api.openwebninja.com/realtime-web-search/search"
+auth = { header = "x-api-key", env = "OPENWEBNINJA_API_KEY" }
+unit = "request"
+costs = { search = 1 }
+free = { amount = 100, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.openwebninja.com/usage", fields = ["data.quotas.0.remaining", "data.period_start", "data.status"] }
+rate = "1/s"
+terms_url = "https://app.openwebninja.com/tos"
+source_url = "https://www.openwebninja.com/api/real-time-web-search"
+checked = 2026-10-23
+
+[openwebninja_news]
+name = "OpenWeb Ninja Real-Time News Data"
+platform = "openwebninja"
+api_id = "realtime_news_data"
+family = "G"
+kind = "search"
+keyword = false           # Google News: a vertical of the same index, not a family of its own
+base_url = "https://api.openwebninja.com/realtime-news-data/search"
+auth = { header = "x-api-key", env = "OPENWEBNINJA_API_KEY" }
+unit = "request"
+costs = { search = 1 }
+free = { amount = 100, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.openwebninja.com/usage", fields = ["data.quotas.0.remaining", "data.period_start", "data.status"] }
+rate = "1/s"
+terms_url = "https://app.openwebninja.com/tos"
+source_url = "https://www.openwebninja.com/api/google-news"
+checked = 2026-10-23
+
+[openwebninja_books]
+name = "OpenWeb Ninja Real-Time Books Data"
+platform = "openwebninja"
+api_id = "realtime_books_data"
+family = "G"
+kind = "search"
+keyword = false           # Google Books: a vertical of the same index
+base_url = "https://api.openwebninja.com/realtime-books-data/search"
+auth = { header = "x-api-key", env = "OPENWEBNINJA_API_KEY" }
+unit = "request"
+costs = { search = 1 }
+free = { amount = 100, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.openwebninja.com/usage", fields = ["data.quotas.0.remaining", "data.period_start", "data.status"] }
+rate = "1000/h"
+terms_url = "https://app.openwebninja.com/tos"
+source_url = "https://www.openwebninja.com/api/real-time-books-data"
+checked = 2026-10-23
+
+[gemini_grounding]
+name = "Gemini grounding with Google Search"
+family = "G"
+kind = "search"
+keyword = false
+base_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+auth = { header = "x-goog-api-key", env = "GEMINI_API_KEY" }
+unit = "search"
+costs = { search = 1 }
+free = { amount = 500, period = "daily", reset = "utc-midnight", note = "Gemini 2.5 Flash only; resets at midnight Pacific; EEA users: paid services only (terms)"}
+card_required = false
+content_reuse = true      # the free tier may use the prompts sent: opt-in, never with living persons
+non_commercial = false
+introspection = { method = "none" }
+rate = "10/min"              # not published: AI Studio shows the project's limits
+terms_url = "https://ai.google.dev/gemini-api/terms"
+source_url = "https://ai.google.dev/gemini-api/docs/google-search"
+cache_ttl = 0                 # the terms forbid caching Grounded Results
+checked = 2026-10-23
+
+# Web search: other keyword indexes
+
+[brave]
+name = "Brave Search API"
+family = "Br"
+kind = "search"
+keyword = true
+base_url = "https://api.search.brave.com/res/v1/web/search"
+auth = { header = "X-Subscription-Token", env = "BRAVE_API_KEY" }
+unit = "request"
+costs = { search = 1 }
+free = { amount = 1000, period = "monthly", reset = "billing" }   # $5 of credit a month, at $5 per 1,000
+card_required = true      # billed beyond the monthly credit
+content_reuse = false
+non_commercial = false
+# credit plans answer a monthly limit of 0 (no count to read): the local count rules then
+introspection = { method = "headers", fields = ["X-RateLimit-Remaining", "X-RateLimit-Limit"] }
+rate = "50/s"
+cache_ttl = 0                 # terms §3(b)(i): results kept only transiently
+terms_url = "https://api-dashboard.search.brave.com/terms-of-service"
+source_url = "https://brave.com/search/api/"
+checked = 2026-10-23
+
+[staan]
+name = "Staan"
+family = "E"
+kind = "search"
+keyword = true
+base_url = "https://api.staan.ai/v2/search/web"
+auth = { header = "Authorization", scheme = "Bearer", env = "STAAN_API_KEY" }
+unit = "request"
+costs = { search = 1 }
+free = { amount = 1000, period = "monthly", reset = 1 }
+card_required = false     # not stated
+content_reuse = false
+non_commercial = false
+introspection = { method = "none" }
+rate = "20/s"
+terms_url = "https://staan.ai/privacy-policy"   # no public API terms (staan.ai/terms is 404)
+source_url = "https://staan.ai/"
+checked = 2026-10-23
+
+[marginalia]
+name = "Marginalia Search"
+family = "Ma"
+kind = "search"
+keyword = true
+base_url = "https://api2.marginalia-search.com/search"
+auth = { header = "API-Key", env = "MARGINALIA_API_KEY", default = "public" }
+key_optional = true       # the shared "public" key works, with a shared limit
+unit = "request"
+costs = { search = 1 }
+free = { period = "daily", note = "free for non-commercial use; 429 when the shared limit is reached" }
+card_required = false
+content_reuse = false
+non_commercial = true
+licence = "CC BY-NC-SA 4.0"
+introspection = { method = "headers", fields = ["API-Remaining-Daily-Capacity"] }
+rate = "1/s"
+terms_url = "https://about.marginalia-search.com/article/api/"
+source_url = "https://about.marginalia-search.com/article/api/"
+checked = 2026-10-23
+
+# Web search: semantic and answer engines
+
+[exa]
+name = "Exa"
+family = "X"
+kind = "search"
+keyword = false
+base_url = "https://api.exa.ai/search"
+auth = { header = "x-api-key", env = "EXA_API_KEY" }
+unit = "dollar"
+# exa.ai/pricing, read on 2026-10-14: search fast or auto $7 per 1,000 requests (up to
+# 10 results), highlights $1 per 1,000 pages; the adapter asks highlights for each
+# result: 0.007 + 10 × 0.001. What Exa reports (costDollars.total) is what is counted.
+# exa.ai/pricing, read on 2026-10-20: the same, and type deep $12 per 1,000 requests
+# (search --depth advanced): 0.012 + 10 × 0.001.
+costs = { search = 0.017, search_advanced = 0.022 }
+# github.com/exa-labs/exa-mcp-server, read on 2026-10-14: web_fetch_exa (crawling_exa
+# in earlier versions) reads pages
+mcp_tools = { web_search_exa = "search", web_search_advanced_exa = "search", web_fetch_exa = "read", crawling_exa = "read" }
+# exa.ai/pricing, 2026-10-14: "The Free Tier gives you $10 in credits", the balance
+# "resets to $10 on the first of every month", no payment method required; the
+# one-time $10 bonus after onboarding is left out (counted only once Exa reports it).
+free = { amount = 10, period = "monthly", reset = 1, note = "a one-time $10 bonus after onboarding is not counted" }
+card_required = false
+content_reuse = true      # terms §1.2(c): a licence on user input and output to improve its products
+non_commercial = false
+introspection = { method = "response", fields = ["costDollars.total"] }
+rate = "10/s"                # deep types: 5/s
+terms_url = "https://exa.ai/terms"
+source_url = "https://exa.ai/pricing"
+checked = 2026-10-23
+
+[parallel]
+name = "Parallel Search"
+family = "P"
+kind = "search"
+keyword = false
+base_url = "https://api.parallel.ai/v1/search"
+# POST /v1/extract gives a page's full text (Markdown): a read, as Tavily's /extract
+extract_url = "https://api.parallel.ai/v1/extract"
+auth = { header = "x-api-key", env = "PARALLEL_API_KEY" }
+unit = "dollar"
+# docs.parallel.ai, read on 2026-10-20: search fast $1 per 1,000 requests (10 results),
+# advanced $5 (search --depth advanced), +$1 per 1,000 results beyond; extract $1 per
+# 1,000 results. The API's mode is advanced when none is sent: the adapter sends fast.
+costs = { search = 0.001, search_advanced = 0.005, read = 0.001 }
+# "$5 in free credits per month" (and up to $80 once, at signup: not counted)
+free = { amount = 5, period = "monthly", reset = "billing" }   # about 5,000 fast searches
+card_required = false
+content_reuse = true      # customer terms §4(b): may train its models on queries
+non_commercial = false
+introspection = { method = "none" }
+rate = "10/s"
+terms_url = "https://parallel.ai/customer-terms"
+source_url = "https://parallel.ai/pricing"
+checked = 2026-10-23
+
+[tavily]
+name = "Tavily"
+family = "opaque"
+kind = "search"
+keyword = false
+base_url = "https://api.tavily.com/search"
+# docs.tavily.com/documentation/api-reference/endpoint, read on 2026-10-14: POST /map
+# and POST /crawl, both answered at once (no job to follow)
+map_url = "https://api.tavily.com/map"
+crawl_url = "https://api.tavily.com/crawl"
+# POST /extract gives a page's text: the reading ladder's reader after Firecrawl (T232)
+extract_url = "https://api.tavily.com/extract"
+auth = { header = "Authorization", scheme = "Bearer", env = "TAVILY_API_KEY" }
+unit = "credit"
+# docs.tavily.com/documentation/api-credits, read on 2026-10-14:
+# - search: basic 1 credit a request, advanced 2;
+# - extract (basic): "Every 5 successful URL extractions cost 1 API credit": 0.2 a URL;
+#   it gives a page's text, so it is priced as `read` (T232), never as an `extract`;
+# - map: "Every 10 successful pages returned cost 1 API credit": 0.1 a URL returned;
+# - crawl: "Mapping Cost + Extraction Cost": 0.1 + 0.2 = 0.3 a page (basic, no instructions).
+# Failed extractions and failed requests are not billed.
+costs = { search = 1, search_advanced = 2, read = 0.2, map = 0.1, crawl = 0.3 }
+per_page = ["map", "crawl"]
+# github.com/tavily-ai/tavily-mcp, read on 2026-10-14: tavily-search and tavily-extract
+# (a hyphen counts as an underscore), a map and a crawl tool; the connectors' names
+mcp_tools = { tavily_search = "search", tavily_extract = "read", tavily_map = "map", tavily_crawl = "crawl" }
+# the same page: "You get 1,000 free API Credits every month"
+free = { amount = 1000, period = "monthly", reset = 1 }
+card_required = false
+content_reuse = true      # terms §6.5 (May 2026): queries may train its AI models, no opt-out
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.tavily.com/usage", fields = ["account.plan_usage", "account.plan_limit"] }
+rate = "1/s"
+terms_url = "https://tavily.com/terms"
+source_url = "https://docs.tavily.com/documentation/api-credits"
+checked = 2026-10-23
+
+[linkup]
+name = "Linkup"
+family = "opaque"
+kind = "search"
+keyword = false
+base_url = "https://api.linkup.so/v1/search"
+auth = { header = "Authorization", scheme = "Bearer", env = "LINKUP_API_KEY" }
+unit = "dollar"
+costs = { search = 0.005, search_advanced = 0.05 }   # depth deep: search --depth advanced
+free = { amount = 20, period = "monthly", reset = "billing", note = "refilled monthly; needs a work e-mail" }
+card_required = false
+content_reuse = true      # terms of use Art. 6.5 (Aug. 2025): prompts used for training
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.linkup.so/v1/credits/balance", fields = ["balance"] }
+rate = "1/s"
+terms_url = "https://www.linkup.so/terms-of-use"
+source_url = "https://www.linkup.so/pricing"
+checked = 2026-10-23
+
+# Page reading (and search)
+
+[jina]
+name = "Jina Reader"
+family = "opaque"
+kind = "read"
+keyword = false
+base_url = "https://r.jina.ai/"
+search_url = "https://s.jina.ai/"
+auth = { header = "Authorization", scheme = "Bearer", env = "JINA_API_KEY" }
+key_optional = true       # works without a key, at a low rate
+unit = "token"
+# jina.ai/reader, read on 2026-10-14: a read is charged "based on content length" (the
+# tokens of the answer, which the adapter counts); a search costs "a fixed number of
+# tokens, starting from 10,000 tokens". 3,000 is only the estimate made before a read.
+costs = { read = 3000, search = 10000 }
+# the same page: "Every new API key comes with 10M free tokens!"; it names no monthly
+# renewal (more tokens are bought once they are used): a one-time grant per key.
+free = { amount = 10000000, period = "once" }
+card_required = false
+content_reuse = false
+# the CC BY-NC 4.0 licence the same page names covers the model weights (ReaderLM-v2,
+# jina-vlm), not the use of the API; jina.ai/legal could not be read (scripted page):
+# jina.ai/legal (May 2026), read on 2026-10-23: §10.4, request data never used to train; §4.3, no
+# restriction on the output; the non-commercial licence covers the model weights only.
+non_commercial = false
+introspection = { method = "none" }
+rate = "20/min"
+terms_url = "https://jina.ai/legal"
+source_url = "https://jina.ai/reader"
+checked = 2026-10-23
+
+[firecrawl]
+name = "Firecrawl"
+family = "opaque"
+kind = "read"
+keyword = false
+base_url = "https://api.firecrawl.dev/v2/scrape"
+search_url = "https://api.firecrawl.dev/v2/search"
+# docs.firecrawl.dev/api-reference/endpoint, read on 2026-10-14: POST /v2/map; POST
+# /v2/crawl starts a job, GET /v2/crawl/{id} reads it, DELETE cancels it; the
+# extraction is the JSON format of /v2/scrape
+map_url = "https://api.firecrawl.dev/v2/map"
+crawl_url = "https://api.firecrawl.dev/v2/crawl"
+extract_url = "https://api.firecrawl.dev/v2/scrape"
+auth = { header = "Authorization", scheme = "Bearer", env = "FIRECRAWL_API_KEY" }
+unit = "credit"
+# docs.firecrawl.dev/billing, read on 2026-10-14:
+# - scrape "1 credit / page"; search "2 credits / 10 results";
+# - map "1 credit / call" (www.firecrawl.dev/pricing writes "1 / page": the call is
+#   what the billing page bills, one call returns the whole list);
+# - crawl "1 credit / page";
+# - JSON format (LLM extraction) "+4 credits per page" on top of the scrape: 5 a page.
+#   The extraction of the engine is that JSON format of /v2/scrape, not /v2/extract.
+costs = { read = 1, search = 2, map = 1, crawl = 1, extract = 5 }
+per_page = ["crawl"]
+# github.com/firecrawl/firecrawl-mcp-server, read on 2026-10-14 (firecrawl_extract and
+# firecrawl_batch_scrape: earlier versions); its other tools get what their name says
+mcp_tools = { firecrawl_scrape = "read", firecrawl_batch_scrape = "read", firecrawl_parse = "read", firecrawl_search = "search", firecrawl_map = "map", firecrawl_crawl = "crawl", firecrawl_extract = "extract" }
+# docs.firecrawl.dev/billing and www.firecrawl.dev/pricing, 2026-10-14: 1,000 credits a
+# month, "The allotment resets at the start of each monthly cycle", no rollover,
+# "no credit card required".
+free = { amount = 1000, period = "monthly", reset = "billing" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.firecrawl.dev/v2/team/credit-usage", fields = ["data.remainingCredits", "data.planCredits", "data.billingPeriodStart", "data.billingPeriodEnd"] }
+rate = "10/min"              # free plan: 10/min scrape, map, search; 2/min crawl
+terms_url = "https://www.firecrawl.dev/terms-of-service"
+source_url = "https://docs.firecrawl.dev/billing"
+checked = 2026-10-23
+
+# Structured extraction (read --extract): a page turned into JSON after an
+# instruction. Never search, never read: `kind = "extract"`.
+
+[scrapegraph]
+name = "ScrapeGraphAI"
+family = "opaque"
+kind = "extract"
+keyword = false
+base_url = "https://v2-api.scrapegraphai.com/api/extract"
+auth = { header = "SGAI-APIKEY", env = "SGAI_API_KEY" }
+unit = "credit"
+# docs.scrapegraphai.com/knowledge-base/account/pricing and scrapegraphai.com/pricing,
+# read on 2026-10-14: Extract (structured data extraction) "5 credits" a call; the
+# stealth option (+5) is never used.
+costs = { extract = 5 }
+# github.com/ScrapeGraphAI/scrapegraph-mcp, read on 2026-10-14: its tools now have
+# common names (scrape, extract, search, crawl_start…), known by the server's name only,
+# and all of them extract (the entry's kind); the names of earlier versions are its own
+mcp_tools = { smartscraper = "extract", searchscraper = "extract", markdownify = "extract", smartcrawler_initiate = "extract", agentic_scrapper = "extract" }
+# the two official pages disagree: the pricing page says "500 API credits, one-time",
+# the documentation "500 API credits / month". To confirm on an account: the one-time
+# grant is kept, the one that can never be overspent.
+free = { amount = 500, period = "once", note = "one-time on the pricing page, monthly in the documentation (2026-10-23): the smaller kept" }
+card_required = false     # not stated on the pricing page (2026-10-23)
+# scrapegraphai.com/terms, section 9, read on 2026-10-14: on the free plan, the data
+# sent, the pages and the outputs may be used for "model training, model fine-tuning".
+content_reuse = true
+non_commercial = false
+# GET /api/credits costs no credits (docs.scrapegraphai.com/api-reference/endpoint/credits)
+introspection = { method = "endpoint", url = "https://v2-api.scrapegraphai.com/api/credits", fields = ["remaining", "used", "plan"] }
+rate = "10/min"
+terms_url = "https://scrapegraphai.com/terms"
+source_url = "https://docs.scrapegraphai.com/knowledge-base/account/pricing"
+checked = 2026-10-23
+
+# Unblocking readers (decision 1.1): without their anti-bot options (premium or
+# residential proxy, stealth mode, CAPTCHA), and never on an archive portal.
+
+[zenrows]
+name = "ZenRows Universal Scraper API"
+family = "opaque"
+kind = "read"
+unblocker = true          # after the readers of reading.readers; never on an archive portal
+keyword = false
+base_url = "https://api.zenrows.com/v1/"
+auth = { param = "apikey", env = "ZENROWS_API_KEY" }
+unit = "credit"
+costs = { read = 1, read_js = 5 }   # premium proxy (10, 25 with JS) never used
+free = { amount = 5000, period = "monthly", reset = "billing" }   # free plan, not a trial
+card_required = false
+content_reuse = false
+non_commercial = false
+billed_errors = [404, 410]          # ZenRows bills a page the target says is gone
+introspection = { method = "endpoint", url = "https://api.zenrows.com/v1/subscriptions/self/details", fields = ["credit_limit", "usage_credits", "api_key.caps.0.remaining_credits", "period_starts_at"] }
+rate = "5 concurrent"
+terms_url = "https://www.zenrows.com/legal/terms"
+source_url = "https://docs.zenrows.com/fetch/api-reference"
+checked = 2026-10-23
+
+[scraperapi]
+name = "ScraperAPI"
+family = "opaque"
+kind = "read"
+unblocker = true          # after the readers of reading.readers; never on an archive portal
+keyword = false
+base_url = "https://api.scraperapi.com/"
+cost_url = "https://api.scraperapi.com/account/urlcost"
+auth = { param = "api_key", env = "SCRAPERAPI_API_KEY" }
+unit = "credit"
+costs = { read = 1, read_js = 10 }  # premium (10, 25 with render) and ultra_premium never used
+free = { amount = 1000, period = "monthly", reset = "billing" }   # the 7-day trial of 5,000 is ignored (decision 1.2)
+card_required = false
+content_reuse = false
+non_commercial = false
+billed_errors = [404]               # ScraperAPI bills 200 and 404 answers only
+introspection = { method = "endpoint", url = "https://api.scraperapi.com/account", fields = ["requestCount", "requestLimit"] }
+rate = "5 concurrent"
+terms_url = "https://www.scraperapi.com/terms/"
+source_url = "https://docs.scraperapi.com/getting-started/quick-start/credits-and-requests-costs"
+checked = 2026-10-23
+
+# Apify: only the actors listed in `actors`, never one that targets an archive
+# portal or a genealogy database, never a residential proxy. Each run carries the
+# ceilings of `limits`; its real cost (usageTotalUsd) is what is counted.
+
+[apify]
+name = "Apify (Google Search Scraper)"
+platform = "apify"
+family = "G"
+kind = "search"
+keyword = true
+base_url = "https://api.apify.com/v2/acts/"
+auth = { header = "Authorization", scheme = "Bearer", env = "APIFY_TOKEN" }
+unit = "dollar"
+costs = { search = 0.00455 }   # a results page (0.0045 $, free tier) and the start (0.00005 $ per GB), since 2026-10-07
+free = { amount = 5.0, period = "monthly", reset = "billing", note = "platform credit, no carry-over" }
+actors = { search = ["apify~google-search-scraper"] }
+limits = { timeout = 120, memory = 1024, max_units = 0.5 }   # Apify refuses a run capped below 0.50 $
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.apify.com/v2/users/me/limits", fields = ["data.current.monthlyUsageUsd", "data.limits.maxMonthlyUsageUsd", "data.monthlyUsageCycle.startAt"] }
+rate = "60/s"
+terms_url = "https://docs.apify.com/legal/general-terms-and-conditions"
+source_url = "https://apify.com/pricing"
+checked = 2026-10-23
+
+[apify_reader]
+name = "Apify (RAG Web Browser)"
+platform = "apify"
+quota = "apify"                     # the same account and the same 5 $
+family = "opaque"
+kind = "read"
+unblocker = true          # after the readers of reading.readers; never on an archive portal
+keyword = false
+base_url = "https://api.apify.com/v2/acts/"
+auth = { header = "Authorization", scheme = "Bearer", env = "APIFY_TOKEN" }
+unit = "dollar"
+costs = { read = 0.0026, read_js = 0.01 }   # rag-web-browser: fetch 0.00228 $ + start 0.000225 $/GB, per event since 2026-10-02; read_js not verified
+free = { amount = 5.0, period = "monthly", reset = "billing", note = "platform credit, no carry-over" }
+actors = { read = ["apify~rag-web-browser", "apify~website-content-crawler"] }
+limits = { timeout = 60, memory = 1024, max_units = 0.02 }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://api.apify.com/v2/users/me/limits", fields = ["data.current.monthlyUsageUsd", "data.limits.maxMonthlyUsageUsd", "data.monthlyUsageCycle.startAt"] }
+rate = "60/s"
+terms_url = "https://docs.apify.com/legal/general-terms-and-conditions"
+source_url = "https://apify.com/apify/rag-web-browser"
+checked = 2026-10-23
+
+# Models
+
+[openrouter]
+name = "OpenRouter"
+family = "opaque"
+kind = "model"
+keyword = false
+base_url = "https://openrouter.ai/api/v1"
+auth = { header = "Authorization", scheme = "Bearer", env = "OPENROUTER_API_KEY" }
+unit = "request"
+costs = { complete = 1 }
+free = { amount = 50, period = "daily", reset = "utc-midnight", note = "1,000 a day once 10 credits are bought" }
+card_required = false
+content_reuse = false
+non_commercial = false
+introspection = { method = "endpoint", url = "https://openrouter.ai/api/v1/key", fields = ["data.free_model_daily_requests.remaining", "data.free_model_daily_requests.limit"] }
+rate = "20/min"
+terms_url = "https://openrouter.ai/terms"
+source_url = "https://openrouter.ai/docs/api_reference/limits"
+checked = 2026-10-23

@@ -1,0 +1,111 @@
+schema: 1
+sources:
+- id: src-01JA0000000000000000000001
+  type: parish-register
+  repository: Archives départementales du Doubs
+  jurisdiction: Châtillon-le-Duc
+  act: baptism
+  register: Baptêmes, mariages, sépultures, 1780-1792
+  reference: 3 E 160/4
+  folio: 12 v°
+  act_date: '1785-03-14'
+  names:
+  - Nicolas Hugot
+  - Pierre Hugot
+  - Marie Vernier
+  layers:
+  - form: online-image
+    by: Archives départementales du Doubs
+    title: Registres paroissiaux et d'état civil
+    image_no: '27'
+    url: https://archives.doubs.fr/ark:/12345/example
+    accessed: '2026-10-04'
+- id: src-01JA0000000000000000000002
+  type: civil-registration
+  repository: Archives municipales de Besançon
+  jurisdiction: Besançon
+  act: birth
+  register: Naissances, 1802
+  act_no: '112'
+  act_date: '1802-02-27'
+  names:
+  - Victor Hugo
+- id: src-01JA0000000000000000000003
+  type: decennial-table
+  repository: Archives départementales du Doubs
+  jurisdiction: Auxon-Dessus
+  register: 1803-1812
+  reference: 3 E 245/12
+- id: src-01JA0000000000000000000004
+  type: census
+  repository: Archives départementales du Doubs
+  jurisdiction: Auxon-Dessous
+  reference: 6 M 412
+  act_date: '1836'
+  page: '4'
+  names:
+  - Nicolas Hugot
+- id: src-01JA0000000000000000000005
+  type: notarial-act
+  repository: Archives départementales du Doubs
+  notary: Maître Girardot, Besançon
+  act: marriage contract
+  reference: 6 E 1234
+  act_date: '1784-11-02'
+  names:
+  - Pierre Hugot
+  - Marie Vernier
+- id: src-01JA0000000000000000000006
+  type: military-register
+  repository: Archives départementales du Doubs
+  jurisdiction: bureau de Besançon
+  class: '1890'
+  matricule: '1432'
+  reference: R 1875
+  names:
+  - Joseph Hugot
+- id: src-01JA0000000000000000000007
+  type: registration
+  repository: Archives départementales du Doubs
+  jurisdiction: Besançon
+  register: Table des successions et absences
+  reference: 3 Q 22/41
+  act_date: '1842-06'
+- id: src-01JA0000000000000000000008
+  type: newspaper
+  title: Le Petit Comtois
+  issue_date: '1902-07-14'
+  page: '3'
+  layers:
+  - form: online-image
+    by: Gallica
+    url: https://gallica.bnf.fr/ark:/12148/example
+    accessed: '2026-10-04'
+- id: src-01JA0000000000000000000009
+  type: database
+  title: Relevés des mariages du Doubs
+  publisher: Centre d'entraide généalogique de Franche-Comté
+  url: https://example.org/cegfc/mariages
+  accessed: '2026-10-04'
+  item: Hugot x Vernier, 1785
+- id: src-01JA000000000000000000000A
+  type: book
+  title: Histoire des Auxons
+  author: Paul Vernier
+  publisher: Presses de Franche-Comté
+  published: '1978'
+  page: '112'
+- id: src-01JA000000000000000000000B
+  type: online-tree
+  title: Famille Hugot
+  author: jdupont
+  publisher: Geneanet
+  url: https://gw.geneanet.org/example
+  accessed: '2026-10-04'
+- id: src-01JA000000000000000000000C
+  type: other
+  repository: Collection familiale
+  title: Livret de famille Hugot
+  layers:
+  - form: transcription
+    note: Transcrite par la famille en 1990.

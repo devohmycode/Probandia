@@ -1,0 +1,7 @@
+# expect: $.sources[0].act_date
+schema: 1
+sources:
+- id: src-01JA0000000000000000000001
+  type: civil-registration
+  repository: Archives municipales de Besançon
+  act_date: 26 février 1802

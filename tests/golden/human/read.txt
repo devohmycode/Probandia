@@ -1,0 +1,10 @@
+✓ Read at step 5: a reading service (jina) · jina 3,000 units
+
+  page        https://example.org/acte
+  characters  83
+  cache       miss
+
+1 useful passage
+    Acte de naissance de Louis Marchand, né à Bourg-Vert le 2 mars 1898, fils de Henri.
+
+full text: .probandia/details/read-<ulid>.md

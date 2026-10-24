@@ -1,0 +1,59 @@
+schema: 1
+persons:
+- id: anne-morvan-1803
+  names:
+    given: Anne
+    surname: MORVAN
+  sex: F
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: anne-morvan-1803.birth
+    type: birth
+    date:
+      value: '1803-04-07'
+      qualifier: exact
+      calendar: republican
+      original: 17[?] germinal an XI
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: record
+    source: src-01JT0000000000000000000701
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 4
+      text: Du dix-huit germinal an onze, acte de naissance de Anne Morvan, fille de Louis Morvan, tisserand,
+        et de Marie Kernec, son épouse, née le 17[?] de ce mois en leur maison au bourg ; témoins
+      sha256: e686a1e9b6649ad5b4096b1f1b1d88078205c0e8aced45cd9d0e28e5f53d8698
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    uncertain_reading: 'line 4: ''17''[?] or ''11'' : le second chiffre est récrit sur un autre (surcharge)'
+    research: 2026-10-14-naissance-d-anne-morvan
+    pass: 1
+  - id: anne-morvan-1803.death
+    type: death
+    date:
+      value: '1871-05-30'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: index
+    source: src-01JT0000000000000000000702
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 2
+      text: Morvan Anne, fileuse, 30 mai 1871
+      sha256: 74c757d2758680edb64c445afcd60ec7ddf4097ed6f35465b0e513bee2c8c482
+    research: 2026-10-14-naissance-d-anne-morvan
+    pass: 1

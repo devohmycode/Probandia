@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/library-2.json",
+  "title": "library/manifest.yaml",
+  "description": "The store of learned scripts, recipes, skills and sub-agents: a project's (library/) or the user's (library/ next to config.toml).",
+  "type": "object",
+  "required": [
+    "schema",
+    "scripts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 2
+    },
+    "scripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "purpose",
+          "status",
+          "version"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/slug"
+          },
+          "kind": {
+            "enum": [
+              "connector",
+              "helper",
+              "recipe",
+              "skill",
+              "agent"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "outputs": {
+            "type": "string"
+          },
+          "target": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "hosts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "formats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "env": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "witness": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "author": {
+            "type": "object"
+          },
+          "created": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "updated": {
+            "$ref": "#/$defs/timestamp"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "tested",
+              "trusted"
+            ]
+          },
+          "runs": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ok": {
+                "type": "integer"
+              },
+              "failed": {
+                "type": "integer"
+              },
+              "last_ok": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "query_template": {
+            "type": "string"
+          },
+          "question_type": {
+            "type": "string"
+          },
+          "archive": {
+            "type": "string"
+          },
+          "hits": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "trigger": {
+            "type": "string",
+            "description": "skill and agent: when a harness should load or start it"
+          },
+          "scope": {
+            "enum": [
+              "project",
+              "user"
+            ]
+          },
+          "harnesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effort": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "installed": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "harness",
+                "scope",
+                "paths"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "harness": {
+                  "type": "string"
+                },
+                "scope": {
+                  "enum": [
+                    "project",
+                    "user"
+                  ]
+                },
+                "paths": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sha256": {
+                  "type": "string"
+                },
+                "ts": {
+                  "$ref": "#/$defs/timestamp"
+                }
+              }
+            }
+          },
+          "used": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "last_used": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "imported": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "where an imported element came from"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/subscriptions/self/details"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "TRIALING",
+    "period_starts_at": "2026-10-02T05:51:02Z",
+    "period_ends_at": "2026-11-02T05:51:02Z",
+    "usage": 0.002,
+    "usage_credits": 2,
+    "credit_limit": 5000,
+    "usage_percent": 0,
+    "plan": {
+      "name": "Free",
+      "price": 5,
+      "unit_cost": 0.001,
+      "recurrence": "MONTHLY",
+      "products": {
+        "api": {
+          "concurrency": {
+            "limit": 5,
+            "usage": 0
+          },
+          "name": "WebScraping API",
+          "usage": 0.002,
+          "usage_credits": 2
+        },
+        "data_apis": {
+          "name": "Data APIs",
+          "usage": 0,
+          "usage_credits": 0
+        },
+        "extract": {
+          "name": "Extract",
+          "usage": 0,
+          "usage_credits": 0
+        },
+        "proxy_residential": {
+          "name": "Residential Proxies",
+          "usage": 0,
+          "usage_credits": 0
+        },
+        "scraping_browser": {
+          "name": "Scraping Browser",
+          "usage": 0,
+          "usage_credits": 0
+        }
+      }
+    },
+    "top_ups": []
+  }
+}

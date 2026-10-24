@@ -1,0 +1,103 @@
+# expect: $.persons[0].facts[0].excerpt.sha256
+schema: 1
+persons:
+- id: victor-hugo-1802
+  names:
+    given: Victor
+    surname: HUGO
+    at_birth: HUGO
+    usual: Victor
+  sex: M
+  living: auto
+  parents:
+    father: leopold-hugo-1773
+    mother: null
+  spouses: []
+  facts:
+  - id: victor-hugo-1802.birth
+    type: birth
+    date:
+      value: '1802-02-26'
+      qualifier: exact
+      end: null
+      calendar: gregorian
+      original: null
+    place:
+      id: besancon
+      as_written: Besançon
+    status: record
+    source: src-01J9ZK3M4X0000000000000001
+    evidence: null
+    excerpt:
+      kind: transcription
+      lines: [3, 4]
+      text: Le sept ventôse an dix, est né Victor Marie
+    uncertain_reading: null
+    note: ''
+    research: 2026-09-30-parents-of-victor-hugo
+    pass: 1
+    event: 01J9ZK4B2Q0000000000000001
+- id: leopold-hugo-1773
+  names:
+    given: Léopold
+    surname: HUGOT
+    at_birth: null
+    usual: null
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: leopold-hugo-1773.birth
+    type: birth
+    date:
+      value: '1773'
+      qualifier: about
+      end: null
+      calendar: gregorian
+      original: null
+    place:
+      id: null
+      as_written: Nanzig
+    status: index
+    source: src-01J9ZK3M4X0000000000000002
+    evidence: null
+    uncertain_reading: null
+    note: ''
+    research: 2026-09-30-parents-of-victor-hugo
+    pass: 1
+    event: 01J9ZK4B2Q0000000000000001
+- id: jean-martin-1849
+  names:
+    given: Jean
+    surname: MARTIN
+    at_birth: null
+    usual: null
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: jean-martin-1849.birth
+    type: birth
+    date:
+      value: '1849'
+      qualifier: exact
+      end: null
+      calendar: gregorian
+      original: null
+    place:
+      id: null
+      as_written: Nancy
+    status: index
+    source: src-01J9ZK3M4X0000000000000002
+    evidence: null
+    uncertain_reading: null
+    note: ''
+    research: 2026-09-30-parents-of-victor-hugo
+    pass: 1
+    event: 01J9ZK4B2Q0000000000000001

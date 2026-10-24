@@ -1,0 +1,6 @@
+✓ 1 hypothesis
+
+Hypotheses
+  hypothesis                 family    question                              state  opened
+  ────────────────────────────────────────────────────────────────────────────────────────────
+  h-father-of-louise-perrin  marchand  Who was the father of Louise PERRIN?  open   2026-09-02

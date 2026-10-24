@@ -1,0 +1,11 @@
+✓ 6 sources
+
+Sources
+  source                          family    citation                          accessed    rights
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  src-01JA0000000000000000000001  marchand  Archives départementales de Val…  2026-09-01  free
+  src-01JA0000000000000000000002  marchand  Archives départementales de Val…  2026-09-01  free
+  src-01JA0000000000000000000003  marchand  Archives départementales de Val…  2026-09-02  restricted
+  src-01JA0000000000000000000004  marchand  Cercle généalogique de Valombre…  2026-09-02  free
+  src-01JA0000000000000000000005  marchand  Archives départementales de Val…  2026-09-02  free
+  src-01JA0000000000000000000006  marchand  Archives communales de Prémouli…  2026-09-03  free

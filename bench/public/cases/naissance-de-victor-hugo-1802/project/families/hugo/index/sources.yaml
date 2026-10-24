@@ -1,0 +1,14 @@
+schema: 1
+sources:
+- id: src-01M5J76SWR2KRH5DDX8WF2C9JW
+  image: evidence/images/death-1885-paris-16-546.jpg
+  transcription: evidence/transcriptions/src-01M5J76SWR2KRH5DDX8WF2C9JW.md
+  type: civil-registration
+  jurisdiction: Paris, 16e arrondissement
+  register: Décès 1885
+  repository: Archives de Paris
+  act_no: '546'
+  act_date: '1885-05-23'
+  url: https://commons.wikimedia.org/wiki/File:Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg
+  rights: free
+  citation: Paris, 16e arrondissement, civil registration, Décès 1885, 23 May 1885; Archives de Paris.

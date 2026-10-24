@@ -1,0 +1,43 @@
+✓ Family MARCHAND · 1780-1970
+
+  • surnames: Marchand, Marchant
+  • places: Bourg-Vert, Saint-Aubry
+
+Persons
+  person                  name               born        died
+  ───────────────────────────────────────────────────────────
+  louis-marchand-1898     Louis MARCHAND     1898        1970
+  henri-marchand-1870     Henri MARCHAND     1870        1931
+  jeanne-roussel-1874     Jeanne ROUSSEL     1874        1950
+  pierre-marchand-1841    Pierre MARCHAND    1841        1899
+  marie-lebrun-1845       Marie LEBRUN       1845        1902
+  auguste-roussel-1840    Auguste ROUSSEL    1840        1910
+  rose-tanguy-1848        Rose TANGUY        1848        1919
+  jean-marchand-1812      Jean MARCHAND      1812        1880
+  anne-guibert-1815       Anne GUIBERT       1815        1871
+  joseph-lebrun-1810      Joseph LEBRUN      1810        1860
+  louise-perrin-1818      Louise PERRIN      about:1818     —
+  mathurin-roussel-1808   Mathurin ROUSSEL   1808        1874
+  perrine-blanchet-1811   Perrine BLANCHET   1811        1868
+  yves-tanguy-1815        Yves TANGUY        1815        1879
+  catherine-le-roux-1820  Catherine LE ROUX  about:1820     —
+  francois-marchand-1785  François MARCHAND  1785        1842
+  julienne-hamel-1788     Julienne HAMEL     1788        1850
+  rene-guibert-1784       René GUIBERT       1784        1840
+  marguerite-collet-1790  Marguerite COLLET  about:1790     —
+  guillaume-lebrun-1780   Guillaume LEBRUN   1780        1838
+  jeanne-morin-1784       Jeanne MORIN       about:1784     —
+  etienne-perrin-1790     Étienne PERRIN     about:1790     —
+  jacques-roussel-1780    Jacques ROUSSEL    1780        1835
+  helene-duval-1783       Hélène DUVAL       about:1783     —
+  olivier-blanchet-1785   Olivier BLANCHET   1785           —
+  anne-corre-1787         Anne CORRE         about:1787     —
+  herve-tanguy-1788       Hervé TANGUY       1788        1850
+  marie-le-gall-1792      Marie LE GALL      about:1792     —
+  yvon-le-roux-1793       Yvon LE ROUX       about:1793     —
+  anne-prigent-1796       Anne PRIGENT       about:1796     —
+
+Researches
+  research                                status  question
+  ─────────────────────────────────────────────────────────────────────────────────────────
+  2026-09-01-ancestors-of-louis-marchand  open    Who were the ancestors of Louis MARCHAND?

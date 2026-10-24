@@ -1,0 +1,15 @@
+id: 01M3V7T5PX72PDYY6T6CNEBQE5
+ts: '2026-09-30T18:40:00Z'
+pass: 1
+actor:
+  harness: claude-code
+  agent: session
+type: pass.started
+payload:
+  n: 1
+  run:
+    mode: session
+  instructions: []
+refs: []
+supersedes: null
+prev: null

@@ -1,0 +1,17 @@
+- gisement: ad25
+  cote: "3 E 81"
+  fenetre: "1880-1895, Besançon"
+  question: "décès de Victor Hugo"
+  resultat: negatif
+  vues: 180
+  date: "2026-08-14"
+- gisement: am-besancon
+  cote: "1 E 12"
+  fenetre: "1802, Besançon"
+  question: "naissance de Victor Hugo"
+  resultat: positif
+  vues: 45
+- gisement: inconnu
+  fenetre: "1900"
+  question: "?"
+  resultat: peut-être

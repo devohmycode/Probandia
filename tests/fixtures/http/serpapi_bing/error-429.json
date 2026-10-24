@@ -1,0 +1,14 @@
+{
+  "note": "not a live answer: built from the SerpApi Bing Search API documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://serpapi.com/search.json?engine=bing&q=%22Hugo%22+Besan%C3%A7on+1802&count=5"
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "error": "Your account has run out of searches."
+  }
+}

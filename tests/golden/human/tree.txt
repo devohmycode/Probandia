@@ -1,0 +1,11 @@
+✓ OK
+  family   marchand
+  root     louis-marchand-1898
+  persons  30
+  lang     fr
+  files    4
+
+  file  families/marchand/trees/tree.html
+  file  families/marchand/trees/ancestors.svg
+  file  families/marchand/trees/descendants.svg
+  file  families/marchand/trees/tree.md

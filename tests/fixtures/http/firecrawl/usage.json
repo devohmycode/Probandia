@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.firecrawl.dev/v2/team/credit-usage",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "success": true,
+    "data": {
+      "remainingCredits": 1000,
+      "planCredits": 500000,
+      "billingPeriodStart": "2026-10-01T00:00:00Z",
+      "billingPeriodEnd": "2026-10-31T23:59:59Z"
+    }
+  }
+}

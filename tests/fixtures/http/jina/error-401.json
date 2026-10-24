@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://s.jina.ai/?q=%22Hugo%22+Besan%C3%A7on+1802&num=5&gl=lu&hl=fr",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "json": null
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": null,
+    "code": 401,
+    "name": "AuthenticationRequiredError",
+    "status": 40103,
+    "message": "Authentication is required to use this endpoint. Please provide a valid API key via Authorization header.",
+    "readableMessage": "AuthenticationRequiredError: Authentication is required to use this endpoint. Please provide a valid API key via Authorization header."
+  }
+}

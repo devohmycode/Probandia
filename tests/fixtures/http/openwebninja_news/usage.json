@@ -1,0 +1,37 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/usage?api_id=realtime_news_data"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "661da516-2636-46bc-b403-c24b7c9b3ec7",
+    "data": {
+      "api_id": "realtime_news_data",
+      "plan": {
+        "id": "68b949b7c42daa1d4cade358",
+        "key": "basic",
+        "nickname": "Basic",
+        "is_free": true
+      },
+      "status": "active",
+      "term": "month",
+      "period_start": "2026-10-02T13:32:00.000Z",
+      "period_end": "2026-11-02T13:32:00.000Z",
+      "quotas": [
+        {
+          "name": "Requests",
+          "limit": 100,
+          "used": 0,
+          "remaining": 100,
+          "reset_at": "2026-11-02T13:32:00.000Z"
+        }
+      ]
+    }
+  }
+}

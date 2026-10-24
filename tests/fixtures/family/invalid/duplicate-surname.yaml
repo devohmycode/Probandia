@@ -1,0 +1,8 @@
+# expect: $.surnames[1]
+schema: 1
+id: hugo
+name: HUGO
+surnames: [Hugo, Hugo]
+places: [Besançon, Nancy]
+period: [1750, 1950]
+language: fr

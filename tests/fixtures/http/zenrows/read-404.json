@@ -1,0 +1,21 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. Billed: 1 credit (usage_credits went from 0 to 2 over both reads)",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/?apikey=KEY&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FProbandia_no_such_page_404&response_type=markdown&original_status=true"
+  },
+  "status": 404,
+  "headers": {
+    "Content-Type": "application/problem+json",
+    "X-Request-Cost": "0.001",
+    "X-Request-Credits": "1"
+  },
+  "body": {
+    "code": "RESP002",
+    "detail": "The requested URL page returned a 404 HTTP Status Code. Please make sure this URL exists and retry your request.",
+    "instance": "/v1",
+    "status": 404,
+    "title": "Page not found (RESP002)",
+    "type": "https://docs.zenrows.com/api-error-codes#RESP002"
+  }
+}

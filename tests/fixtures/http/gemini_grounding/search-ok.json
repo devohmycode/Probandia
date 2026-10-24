@@ -1,0 +1,119 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+    "headers": {
+      "x-goog-api-key": "KEY"
+    },
+    "json": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Recherche généalogique : \"Hugo\" Besançon 1802. Cite les sources en ligne (actes, arbres, registres) concernant des personnes nommées Hugo à Besançon en 1802."
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "google_search": {}
+        }
+      ]
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Plusieurs sources mentionnent des Hugo à Besançon en 1802. Victor Hugo est né le 26 février 1802 à Besançon, fils de Léopold Hugo et de Sophie Trébuchet. Un Nicolas Hugot figure dans les registres d'état civil de Besançon pour une naissance en 1802."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "webSearchQueries": [
+            "Hugo Besançon 1802",
+            "Hugo naissance 1802 Besançon généalogie"
+          ],
+          "searchEntryPoint": {
+            "renderedContent": "<style>.container{display:flex}</style><div class=\"container\"><a class=\"chip\" href=\"https://www.google.com/search?q=Hugo+Besan%C3%A7on+1802\">Hugo Besançon 1802</a></div>"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1k3hugo01",
+                "title": "genealogy.example.org"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1k3hugo02",
+                "title": "records.example.org"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1k3hugo03",
+                "title": "tree.example.org"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "startIndex": 61,
+                "endIndex": 161,
+                "text": "Victor Hugo est né le 26 février 1802 à Besançon, fils de Léopold Hugo et de Sophie Trébuchet."
+              },
+              "groundingChunkIndices": [
+                0
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 162,
+                "endIndex": 259,
+                "text": "Un Nicolas Hugot figure dans les registres d'état civil de Besançon pour une naissance en 1802."
+              },
+              "groundingChunkIndices": [
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 48,
+      "candidatesTokenCount": 92,
+      "toolUsePromptTokenCount": 612,
+      "thoughtsTokenCount": 210,
+      "totalTokenCount": 962,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 48
+        }
+      ],
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 612
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "q3TdaO2xFpe8nvgP4u7JgQs"
+  }
+}

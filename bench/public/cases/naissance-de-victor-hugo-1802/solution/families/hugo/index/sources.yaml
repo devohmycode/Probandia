@@ -1,0 +1,27 @@
+schema: 1
+sources:
+- id: src-01M5J76SWR2KRH5DDX8WF2C9JW
+  image: evidence/images/death-1885-paris-16-546.jpg
+  transcription: evidence/transcriptions/src-01M5J76SWR2KRH5DDX8WF2C9JW.md
+  type: civil-registration
+  jurisdiction: Paris, 16e arrondissement
+  register: Décès 1885
+  repository: Archives de Paris
+  act_no: '546'
+  act_date: '1885-05-23'
+  url: https://commons.wikimedia.org/wiki/File:Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg
+  rights: free
+  citation: Paris, 16e arrondissement, civil registration, Décès 1885, 23 May 1885; Archives de Paris.
+- id: src-01M5J7D4FW617QC51H1KWWEKZG
+  image: evidence/images/birth-1802-besancon-facsimile.jpg
+  transcription: evidence/transcriptions/src-01M5J7D4FW617QC51H1KWWEKZG.md
+  type: civil-registration
+  jurisdiction: Besançon
+  register: Naissances an X
+  repository: Maison de Victor Hugo - Hauteville House (Paris Musées), fac-similé imprimé, n° d'inventaire
+    2017.0.3553.1
+  act_date: '1802-02-27'
+  url: https://commons.wikimedia.org/wiki/File:Extrait_de_Naissance_de_Victor_Hugo,_2017.0.3553.1.jpg
+  rights: free
+  citation: Besançon, civil registration, Naissances an X, 27 February 1802; Maison de Victor Hugo - Hauteville
+    House (Paris Musées), fac-similé imprimé, n° d'inventaire 2017.0.3553.1.

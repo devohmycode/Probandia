@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/report-1.json",
+  "title": "report.json",
+  "description": "The report model rendered by render.",
+  "type": "object",
+  "required": [
+    "schema",
+    "research",
+    "lang",
+    "mode",
+    "numbering",
+    "generated",
+    "sections"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema": {
+      "const": 1
+    },
+    "research": {
+      "$ref": "#/$defs/slug"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "journal",
+        "living"
+      ]
+    },
+    "numbering": {
+      "enum": [
+        "arabic",
+        "roman",
+        "roman-outline"
+      ]
+    },
+    "generated": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "through_pass": {
+      "type": "integer"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "errata": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erratum"
+      }
+    },
+    "revisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pass",
+          "changes"
+        ],
+        "properties": {
+          "pass": {
+            "type": "integer"
+          },
+          "changes": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "trees": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "method": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "pass"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "pass": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "template": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "sha256"
+      ],
+      "description": "The template the HTML was rendered with (optimize 4.6)",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "cause": {
+      "enum": [
+        "misreading",
+        "homonym",
+        "faulty-index",
+        "outdated-negative",
+        "wrong-inference",
+        "tool-failure",
+        "missing-source",
+        "other"
+      ]
+    },
+    "erratum": {
+      "type": "object",
+      "required": [
+        "target",
+        "wrong",
+        "correction",
+        "cause"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^E[0-9]+$"
+        },
+        "target": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "section": {
+              "$ref": "#/$defs/nulid"
+            },
+            "fact": {
+              "$ref": "#/$defs/nfactid"
+            }
+          }
+        },
+        "wrong": {
+          "type": "string"
+        },
+        "correction": {
+          "type": "string"
+        },
+        "cause": {
+          "$ref": "#/$defs/cause"
+        },
+        "detection": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pass": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "refuted": {
+          "type": "boolean",
+          "description": "a refutation (FL-D10): wrong is the status the fact had"
+        },
+        "volet": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "the volet the refutation belongs to"
+        }
+      }
+    },
+    "nfactid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"
+    },
+    "nulid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "section": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "number",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kind": {
+          "enum": [
+            "chapter",
+            "section",
+            "subsection"
+          ]
+        },
+        "number": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body_md": {
+          "type": "string"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pass": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/section"
+          }
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    }
+  }
+}

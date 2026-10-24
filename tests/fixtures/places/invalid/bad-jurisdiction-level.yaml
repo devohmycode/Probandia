@@ -1,0 +1,7 @@
+# expect: $.places[0].jurisdictions[0].level
+schema: 1
+places:
+- id: auxon-dessous
+  jurisdictions:
+  - level: county-palatine
+    name: Auxon-Dessous

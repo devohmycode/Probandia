@@ -1,0 +1,16 @@
+schema: 1
+id: 2026-09-30-parents-of-victor-hugo
+family: hugo
+question: "Who were the parents of Victor Hugo, born about 1802 in Besançon?"
+language: fr
+mode: journal
+numbering: arabic
+formats: [md, html]
+created: 2026-09-30T18:40:00Z
+created_by: {harness: claude-code, agent: session, model: claude-opus-5-5}
+forked_from: null
+run: {mode: team, max_agents: 3, effort: high, max_passes: 2}
+instructions:
+  - {pass: 1, ts: 2026-09-30T18:40:00Z, text: "Start with the Besançon sources."}
+status: open
+passes: 1

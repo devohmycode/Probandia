@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://s.jina.ai/?q=%22Hugo%22+Besan%C3%A7on+1802&num=5&gl=lu&hl=fr",
+    "headers": {
+      "Authorization": "Bearer KEY",
+      "Accept": "application/json"
+    },
+    "json": null
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Retry-After": "60"
+  },
+  "body": {
+    "data": null,
+    "code": 429,
+    "name": "RateLimitTriggeredError",
+    "status": 42903,
+    "message": "Per UID rate limit exceeded, please retry after 60 seconds.",
+    "readableMessage": "RateLimitTriggeredError: Per UID rate limit exceeded, please retry after 60 seconds.",
+    "retryAfter": 60
+  }
+}

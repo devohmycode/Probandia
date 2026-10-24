@@ -1,0 +1,13 @@
+schema: 1
+id: marchand
+name: MARCHAND
+surnames:
+- Marchand
+- Marchant
+places:
+- Bourg-Vert
+- Saint-Aubry
+period:
+- 1780
+- 1970
+language: fr

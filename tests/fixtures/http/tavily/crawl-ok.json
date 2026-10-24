@@ -1,0 +1,25 @@
+{
+  "_source": "made from docs.tavily.com/documentation/api-reference/endpoint/crawl, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/crawl",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"url": "https://registres.example.org/naissances", "limit": 2}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "base_url": "registres.example.org",
+    "results": [
+      {"url": "https://registres.example.org/naissances/1802",
+       "raw_content": "# Naissances 1802\n\nLe 26 février 1802 naît Victor Hugo, fils de Léopold Hugo, à Besançon."},
+      {"url": "https://registres.example.org/naissances/1803",
+       "raw_content": "# Naissances 1803\n\nAucune naissance du nom de Hugo."},
+      {"url": "https://registres.example.org/naissances/1804",
+       "raw_content": "# Naissances 1804"}
+    ],
+    "response_time": 2.5,
+    "usage": {"credits": 1},
+    "request_id": "123e4567-e89b-12d3-a456-426614174112"
+  }
+}

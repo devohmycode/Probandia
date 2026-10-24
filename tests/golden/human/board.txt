@@ -1,0 +1,14 @@
+Probandia <version> · project <project> · 1 family · 1 research
+
+In progress
+ · marchand  2026-09-01-ancestors-of-louis-marchand  2 passes done
+
+To review
+ ▸ 1 proposal waiting (marchand, 2026-09-01-ancestors-of-louis-marchand)
+
+Lowest quotas
+ ▸ Apify 989 searches or 1,730 pages · Firecrawl 450 searches or 900 pages · Jina Reader 900 searches or 3,000 pages   probandia -u
+
+Next
+ → probandia apply <proposal>                                review the proposals waiting
+ → /probandia:resume 2026-09-01-ancestors-of-louis-marchand  in your agent, for the next pass

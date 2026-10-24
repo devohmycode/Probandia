@@ -1,0 +1,3 @@
+# expect: $.name
+schema: 1
+id: hugo

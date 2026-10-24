@@ -1,0 +1,6 @@
+✓ 1 gap
+
+Gaps in the archives
+  archive      family    reference  window     kind       cause
+  ────────────────────────────────────────────────────────────────────
+  ad-valombre  marchand  3 E 41     1870-1872  destroyed  fire of 1871

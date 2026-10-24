@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/analyses-1.json",
+  "title": "analyses.yaml",
+  "description": "The analyses of disputed conclusions (GPS4, PRD P-10): for one fact of one person, every piece of evidence side by side, what each asserts, its three axes, and the resolution kept.",
+  "type": "object",
+  "required": [
+    "schema",
+    "analyses"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "analyses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/analysis"
+      }
+    }
+  },
+  "$defs": {
+    "analysis": {
+      "type": "object",
+      "required": [
+        "id",
+        "person",
+        "fact_kind",
+        "items",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug",
+          "description": "an-<person>-<fact kind>, or any slug"
+        },
+        "question": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]*$",
+          "description": "the research question it serves (research.yaml)"
+        },
+        "research": {
+          "$ref": "#/$defs/slug"
+        },
+        "person": {
+          "$ref": "#/$defs/slug"
+        },
+        "fact_kind": {
+          "enum": [
+            "birth",
+            "baptism",
+            "marriage",
+            "death",
+            "burial",
+            "residence",
+            "occupation",
+            "census",
+            "military",
+            "emigration",
+            "naturalisation",
+            "other"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "resolution": {
+          "type": "object",
+          "required": [
+            "value",
+            "reasoning"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fact": {
+              "$ref": "#/$defs/factid",
+              "description": "the fact kept"
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "open",
+            "resolved",
+            "divergent"
+          ],
+          "description": "divergent: the sources disagree and the question is left unresolved on purpose (FL-D9)"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "description": "divergent: why the divergence is left unresolved"
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "asserts"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^src-[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "fact": {
+          "$ref": "#/$defs/factid"
+        },
+        "asserts": {
+          "type": "string",
+          "minLength": 1,
+          "description": "what this evidence says, such as 1851-03-12 or Hautbois"
+        },
+        "informant": {
+          "type": "string",
+          "description": "who gave the information, such as the father, the priest, the deceased's son"
+        },
+        "axes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "enum": [
+                "original",
+                "derivative",
+                "authored"
+              ]
+            },
+            "information": {
+              "enum": [
+                "primary",
+                "secondary",
+                "undetermined"
+              ]
+            },
+            "evidence": {
+              "enum": [
+                "direct",
+                "indirect",
+                "negative"
+              ]
+            }
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 96
+    },
+    "factid": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# expect: $.gaps[0].kind
+schema: 1
+gaps:
+- archive: Archives nationales de Luxembourg
+  reference: EC-1848
+  window:
+    from: 1846
+    to: 1848
+  kind: burnt
+  source: null
+- archive: Gallica
+  reference: null
+  window:
+    from: 1900
+    to: 1910
+  kind: lacunary
+  source: null

@@ -1,0 +1,8 @@
+# Déclaration du rapport d'essai « Le mariage de Victor Hugo », tout juste créé : pas encore de rapport.html.
+slug: le-mariage-de-victor-hugo
+titre: Le mariage de Victor Hugo
+visibilite: family
+
+# Les faits découverts ici portent `rapport: paris-1822`.
+origine: false
+herite_de: [hugo-besancon]

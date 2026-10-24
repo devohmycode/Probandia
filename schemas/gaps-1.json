@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/gaps-1.json",
+  "title": "gaps.yaml",
+  "description": "Family index: gaps.yaml.",
+  "type": "object",
+  "required": [
+    "schema",
+    "gaps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gap"
+      }
+    }
+  },
+  "$defs": {
+    "gap": {
+      "type": "object",
+      "required": [
+        "archive",
+        "window",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^G[1-9][0-9]*$",
+          "description": "given by the engine when the gap is applied (GPS3-T2)"
+        },
+        "archive": {
+          "type": "string"
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "window": {
+          "type": "object",
+          "required": [
+            "from",
+            "to"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "from": {
+              "type": "integer"
+            },
+            "to": {
+              "type": "integer"
+            }
+          }
+        },
+        "kind": {
+          "enum": [
+            "destroyed",
+            "missing",
+            "lacunary"
+          ]
+        },
+        "source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "place": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "maxLength": 64,
+          "description": "the place (places.yaml) whose records are missing"
+        },
+        "types": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "the source types (catalogues/source-types.yaml) the gap concerns",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          }
+        },
+        "justification": {
+          "type": "string",
+          "minLength": 1,
+          "description": "how the gap is known: the finding aid, the archivist's answer, the inventory"
+        }
+      }
+    }
+  }
+}

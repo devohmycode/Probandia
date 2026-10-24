@@ -1,0 +1,64 @@
+schema: 1
+persons:
+- id: herve-kernec-1773
+  names:
+    given: Hervé
+    surname: KERNEC
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: herve-kernec-1773.birth
+    type: birth
+    date:
+      value: '1773'
+      qualifier: about
+    place: null
+    status: record
+    source: src-01JT0000000000000000000502
+    excerpt:
+      kind: transcription
+      lines:
+      - 1
+      - 3
+      text: Du douze août mil huit cent quarante-cinq, a comparu Yves Kernec, tisserand à Bourg-Vert,
+        fils et seul héritier de Hervé Kernec, né en mil sept cent soixante-treize suivant sa déclaration,
+        décédé le trois février
+      sha256: 8d370a770f3e87b4d2682067537ef3e2e688ac8765b99f770ae8e48caa940de4
+    evidence:
+      source: original
+      information: secondary
+      evidence: direct
+    note: '1773 selon Yves Kernec, son fils : le même informateur donne l''âge de 72 ans au décès ; une
+      seule voix, pas deux'
+    research: 2026-10-14-naissance-de-herve-kernec
+    pass: 1
+  - id: herve-kernec-1773.death
+    type: death
+    date:
+      value: '1845-02-03'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Bourg-Vert
+    status: record
+    source: src-01JT0000000000000000000501
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 5
+      text: L'an mil huit cent quarante-cinq, le trois février, par-devant nous maire de Bourg-Vert, ont
+        comparu Yves Kernec, tisserand, fils du défunt, et Louis Morvan, voisin, qui nous ont déclaré
+        que Hervé Kernec, tisserand, âgé de soixante-douze ans, veuf de Anne Corre, est décédé ce jour
+        en sa maison.
+      sha256: 7666372c8a46d64adb5618f3fe38ec217b995447e8ad9b7fdaa7278124e2cb3e
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    research: 2026-10-14-naissance-de-herve-kernec
+    pass: 1

@@ -1,0 +1,69 @@
+# Known dates: the text as written, and what dates must read.
+readable:
+  # French Republican calendar
+  - {text: "18 brumaire an VIII", iso: "1799-11-09", calendar: republican}
+  - {text: "18 brumaire an 8", iso: "1799-11-09", calendar: republican}
+  - {text: "1er vendémiaire an II", iso: "1793-09-22", calendar: republican}
+  - {text: "12 floréal an VII", iso: "1799-05-01", calendar: republican}
+  - {text: "le 30 ventôse an XII", iso: "1804-03-21", calendar: republican}
+  - {text: "10 nivôse an XIV", iso: "1805-12-31", calendar: republican}
+  - {text: "5e jour complémentaire an XII", iso: "1804-09-22", calendar: republican}
+  - {text: "6e jour complémentaire an XI", iso: "1803-09-23", calendar: republican}
+  - {text: "jour de la révolution an III", iso: "1795-09-22", calendar: republican}
+  - {text: "an VIII", iso: "1799-09-23", end: "1800-09-22", qualifier: between, calendar: republican}
+  # Latin
+  - {text: "die decima quinta mensis martii anno 1782", iso: "1782-03-15"}
+  - {text: "die vigesima prima decembris anno domini millesimo septingentesimo octogesimo secundo", iso: "1782-12-21"}
+  - {text: "die 3 mensis januarii anno 1700", iso: "1700-01-03"}
+  - {text: "die prima mensis maii anno 1750", iso: "1750-05-01"}
+  - {text: "die trigesima prima augusti anno 1760", iso: "1760-08-31"}
+  # month names and abbreviations
+  - {text: "12 mars 1851", iso: "1851-03-12"}
+  - {text: "le 1er mai 1820", iso: "1820-05-01"}
+  - {text: "douze mars mil huit cent cinquante et un", iso: "1851-03-12"}
+  - {text: "March 12, 1851", iso: "1851-03-12"}
+  - {text: "12th March 1851", iso: "1851-03-12"}
+  - {text: "12. März 1851", iso: "1851-03-12"}
+  - {text: "3. Jänner 1802", iso: "1802-01-03"}
+  - {text: "12 9bre 1780", iso: "1780-11-12"}
+  - {text: "12 7bris 1780", iso: "1780-09-12"}
+  - {text: "8bre 1781", iso: "1781-10"}
+  - {text: "3 Xbris 1790", iso: "1790-12-03"}
+  - {text: "mars 1851", iso: "1851-03"}
+  # numeric forms
+  - {text: "1851-03-12", iso: "1851-03-12"}
+  - {text: "12/03/1851", iso: "1851-03-12"}
+  - {text: "12.3.1851", iso: "1851-03-12"}
+  - {text: "1851", iso: "1851"}
+  # qualifiers
+  - {text: "vers 1851", iso: "1851", qualifier: about}
+  - {text: "ca. 1851", iso: "1851", qualifier: about}
+  - {text: "um 1851", iso: "1851", qualifier: about}
+  - {text: "avant le 3 mai 1820", iso: "1820-05-03", qualifier: before}
+  - {text: "after 1840", iso: "1840", qualifier: after}
+  - {text: "entre 1840 et 1845", iso: "1840", end: "1845", qualifier: between}
+  - {text: "between March 1850 and June 1851", iso: "1850-03", end: "1851-06", qualifier: between}
+  # feasts
+  - {text: "Saint-Martin 1820", iso: "1820-11-11"}
+  - {text: "la Toussaint 1789", iso: "1789-11-01"}
+  - {text: "Martini 1820", iso: "1820-11-11"}
+  - {text: "Pâques 1820", iso: "1820-04-02"}
+  - {text: "Ostern 1700", iso: "1700-04-11"}
+  - {text: "Pentecôte 1820", iso: "1820-05-21"}
+  - {text: "Ascension 1850", iso: "1850-05-09"}
+  - {text: "Pâques 1820", calendar: julian, read_as: julian, iso: "1820-04-09"}
+
+# Forms that must never be guessed: exit code 1, REASON=unrecognized.
+unreadable:
+  - "12/03/51"
+  - "30 février 1851"
+  - "31 avril 1820"
+  - "6e jour complémentaire an XII"
+  - "31 brumaire an VIII"
+  - "18 brumaire an XX"
+  - "hier"
+  - "le 5 de mai"
+  - "quelque part en 1850"
+  - "12 13 1851"
+  - "Saint-Inconnu 1820"
+  - "vers entre 1840 et 1845"

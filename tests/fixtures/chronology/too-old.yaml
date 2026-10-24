@@ -1,0 +1,24 @@
+persons:
+- id: pierre-roy-1700
+  names:
+    surname: ROY
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: pierre-roy-1700.birth
+    type: birth
+    date:
+      value: '1700'
+      qualifier: exact
+    status: record
+    source: null
+  - id: pierre-roy-1700.death
+    type: death
+    date:
+      value: '1830'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- pierre-roy-1700.death

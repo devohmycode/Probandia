@@ -1,0 +1,26 @@
+{
+  "_source": "made from docs.firecrawl.dev/features/llm-extract and docs.firecrawl.dev/billing, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/scrape",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"url": "https://registres.example.org/inventaire", "formats": [{"type": "json", "prompt": "the registers: cote, commune, years"}], "onlyMainContent": true}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "success": true,
+    "creditsUsed": 5,
+    "data": {
+      "json": {
+        "registres": [
+          {"cote": "3E 56/1", "commune": "Besançon", "years": "1800-1802"},
+          {"cote": "3E 56/2", "commune": "Besançon", "years": "1803-1805"},
+          {"cote": "3E 412/1", "commune": "Les Auxons", "years": "1793-1802"}
+        ]
+      },
+      "metadata": {"title": "Inventaire des registres", "sourceURL": "https://registres.example.org/inventaire",
+                   "statusCode": 200}
+    }
+  }
+}

@@ -1,0 +1,8 @@
+When the free quotas run out · at the pace of the last 7 days
+2026-10-25 14:00 · the reserve is kept
+
+                     left  a day  runs out
+ ⚠ SerpApi             49     20  on 27 October 2026
+ ✓ Tavily             875      1  not before it starts again, 1 November 2026
+ ✓ Exa              $9.00  $0.00  no use in these days
+ ✓ Jina Reader  9,000,000      0  no use in these days

@@ -1,0 +1,36 @@
+<a id="s-guides"></a>
+
+## 5 Guides de localité
+
+<a id="s-guide-auxon-dessous"></a>
+
+### 5.1 Auxon-Dessous, aujourd'hui Les Auxons
+
+**Juridictions**
+
+| Niveau | Nom | Du | Au | Source |
+|---|---|---|---|---|
+| paroisse\* | Auxon-Dessous | … | 1790 | rule:parish-1790 (the commune of 1790 follows the parish of the same name) |
+| commune | Auxon-Dessous | 1790 | 31 décembre 2014 | insee-cog |
+| commune | Les Auxons | 1er janvier 2015 | … | insee-cog |
+| canton | Audeux | … | 21 mars 2015 | wikidata:Q1475879 |
+| canton | Besançon-3 | 22 mars 2015 | … | insee-cog |
+| département | Doubs | 1790 | … | insee-cog |
+| diocèse\* | Besançon | 1802 | … | catalogue:dioceses-fr |
+
+\* *déduit d'une règle ou d'un catalogue, non d'un document du lieu*
+
+**Dépôts**
+
+| Dépôt | Fonds | Note |
+|---|---|---|
+| Archives départementales du Doubs (`ad25`) | baptêmes 1550–1792, naissances 1793–1925 (État civil) |  |
+| Open Archives (openarchives.nl) (`openarchives`) | mariages 1500–1950 |  |
+
+**Lacunes connues**
+
+| Archive | Années | Nature | Cote |
+|---|---|---|---|
+| ad25 | 1793–1799 | registres lacunaires | 3 E 150 |
+
+Guide établi le 4 octobre 2026 à partir de : insee-cog, wikidata, catalogue:dioceses-fr, catalogue:archives.

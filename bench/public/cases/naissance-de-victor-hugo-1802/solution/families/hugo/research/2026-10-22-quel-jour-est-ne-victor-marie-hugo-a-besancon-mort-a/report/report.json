@@ -1,0 +1,221 @@
+{
+  "$schema": "https://probandia.replit.app/schemas/report-1.json",
+  "errata": [],
+  "generated": "2026-10-22T16:34:24Z",
+  "lang": "fr",
+  "log": [
+    {
+      "id": "01M5J7D3AFWQQQ2SQN046YVEKM",
+      "pass": 1,
+      "type": "pass.started"
+    },
+    {
+      "id": "01M5J7D3MFSEMD24H5BVQ2A064",
+      "pass": 1,
+      "type": "plan.made"
+    },
+    {
+      "id": "01M5J7D699V2EHKM5H9YP7V1RD",
+      "pass": 1,
+      "type": "evidence.recorded"
+    },
+    {
+      "id": "01M5J7D699V2EHKM5H9YP7V1RE",
+      "pass": 1,
+      "type": "search.logged"
+    },
+    {
+      "id": "01M5J7D699V2EHKM5H9YP7V1RF",
+      "pass": 1,
+      "type": "fact.asserted"
+    },
+    {
+      "id": "01M5J7D699V2EHKM5H9YP7V1RH",
+      "pass": 1,
+      "type": "section.added"
+    },
+    {
+      "id": "01M5J7DA572HKXMDXNAAZ0BDR1",
+      "pass": 1,
+      "type": "question.updated"
+    },
+    {
+      "id": "01M5J7DAW5EAMA1J6VG2PPRTPF",
+      "pass": 1,
+      "type": "matrix.justified"
+    },
+    {
+      "id": "01M5J7DBNGZXEWJM63FC8XMA1F",
+      "pass": 1,
+      "type": "matrix.justified"
+    },
+    {
+      "id": "01M5J7DCG0EDN6P7GAE30F5W68",
+      "pass": 1,
+      "type": "matrix.justified"
+    },
+    {
+      "id": "01M5J7DD7DNXPG9NE3CRN4ETE3",
+      "pass": 1,
+      "type": "matrix.justified"
+    },
+    {
+      "id": "01M5J7DEESX3VKS23J0T1VESPE",
+      "pass": 1,
+      "type": "question.updated"
+    }
+  ],
+  "method": [
+    {
+      "agent": "session",
+      "harness": "claude-code",
+      "model": null,
+      "pass": 1,
+      "run": {
+        "mode": "session"
+      }
+    }
+  ],
+  "mode": "journal",
+  "numbering": "arabic",
+  "research": "2026-10-22-quel-jour-est-ne-victor-marie-hugo-a-besancon-mort-a",
+  "revisions": [],
+  "schema": 1,
+  "sections": [
+    {
+      "aliases": [
+        "01M5J7D699V2EHKM5H9YP7V1RG"
+      ],
+      "body_md": "Le fac-similé de l'acte, conservé à la Maison de Victor Hugo, est daté « du huitième du mois de ventôse l'an Dix de la République » et dit Victor Marie Hugo « né le jour d'hier à dix heures demie du soir » : le 7 ventôse an X, soit le 26 février 1802 [[f:victor-marie-hugo-1802.birth]]. Son père, Joseph Léopold Sigisbert Hugo, chef de bataillon de la 20e demi-brigade, le présente ; les parents demeurent à Besançon. C'est un fac-similé imprimé, une copie : le registre de Besançon n'a pas été consulté.",
+      "children": [],
+      "facts": [
+        "victor-marie-hugo-1802.birth"
+      ],
+      "id": "pass-1",
+      "kind": "chapter",
+      "number": "1",
+      "pass": 1,
+      "path": "1",
+      "title": "Passe 1 — La naissance de Victor Marie Hugo"
+    },
+    {
+      "aliases": [],
+      "body_md": "Rédigé avec l'aide d'agents d'IA : chaque fait cite sa source, et le moteur vérifie les citations et les règles de preuve ; relire les sources reste le travail du lecteur.\n\n| Passe | Environnement | Agent | Modèle |\n|---|---|---|---|\n| 1 | claude-code | session |  |",
+      "children": [
+        {
+          "aliases": [],
+          "body_md": "| Type de source | Lieux | Années | État | Recherches, lacunes ou raison |\n|---|---|---|---|---|\n| registres paroissiaux | Besançon | 1785–1792 | sans objet | en l'an X (1802), l'état civil a remplacé les registres paroissiaux depuis 1792 ; l'acte d'état civil est celui qui donne le jour |\n| état civil | Besançon | 1792–1870 | sans objet | l'acte de l'état civil est lu sur son fac-similé imprimé (Maison de Victor Hugo) ; le projet ne contient pas le registre de Besançon, qui reste à voir pour lire l'original |\n| tables décennales | Besançon | 1793–1870 | sans objet | une table décennale n'est qu'un index de l'acte, ici lu lui-même |\n| recensements | Besançon | 1836–1870 | sans objet | un recensement ne donne pas le jour de la naissance |",
+          "children": [],
+          "facts": [],
+          "id": "coverage-q1",
+          "kind": "section",
+          "number": "2.1",
+          "pass": null,
+          "path": "2.1",
+          "title": "Couverture des sources de Q1"
+        }
+      ],
+      "facts": [],
+      "id": "method",
+      "kind": "chapter",
+      "number": "2",
+      "pass": null,
+      "path": "2",
+      "title": "Méthode"
+    },
+    {
+      "aliases": [],
+      "body_md": "| N° | Question | Ce qui vaudra réponse | Statut | Conclusion ou raison | Confiance |\n|---|---|---|---|---|---|\n| Q1 | Quel jour est né Victor Marie HUGO, à Besançon, mort à Paris le 22 mai 1885 ? Le fac-similé de son acte de naissance est dans le projet (families/hugo/evidence/images). | l'acte de naissance de Victor Marie HUGO, lu sur son image, avec le jour de la naissance | répondue | `victor-marie-hugo-1802.birth` | prouvé |",
+      "children": [
+        {
+          "aliases": [],
+          "body_md": "**Éléments du Genealogical Proof Standard établis : 4 sur 4**\n\n*Probandia vérifie que chaque élément est documenté dans les données ; la solidité du raisonnement relève du jugement du généalogiste.*\n\nConfiance dans la conclusion : prouvé\n\n| Élément | État | Ce qui manque |\n|---|---|---|\n| Recherche raisonnablement exhaustive | établi |  |\n| Citations complètes et exactes | établi |  |\n| Analyse et corrélation | établi |  |\n| Preuves contradictoires résolues | établi |  |\n| Conclusion argumentée | sans objet |  |",
+          "children": [],
+          "facts": [],
+          "id": "standard-q1",
+          "kind": "section",
+          "number": "3.1",
+          "pass": null,
+          "path": "3.1",
+          "title": "Q1 : les éléments du Genealogical Proof Standard"
+        }
+      ],
+      "facts": [],
+      "id": "questions",
+      "kind": "chapter",
+      "number": "3",
+      "pass": null,
+      "path": "3",
+      "title": "Questions"
+    },
+    {
+      "aliases": [],
+      "body_md": "",
+      "children": [
+        {
+          "aliases": [],
+          "body_md": "| Année | Âge | Événement | Lieu | Dates en conflit |\n|---|---|---|---|---|\n| 1802 |  | naissance | Besançon (les parents y demeurent ; l'acte y est constaté) |  |\n| 1885 | 83 | décès | Paris, en son domicile, avenue Victor Hugo 50 |  |",
+          "children": [],
+          "facts": [],
+          "id": "timeline-victor-marie-hugo-1802",
+          "kind": "section",
+          "number": "4.1",
+          "pass": null,
+          "path": "4.1",
+          "title": "Chronologie de Victor Marie HUGO"
+        }
+      ],
+      "facts": [],
+      "id": "timelines",
+      "kind": "chapter",
+      "number": "4",
+      "pass": null,
+      "path": "4",
+      "title": "Chronologies"
+    },
+    {
+      "aliases": [],
+      "body_md": "- Besançon. État civil, Naissances an X. Maison de Victor Hugo - Hauteville House (Paris Musées), fac-similé imprimé, n° d'inventaire 2017.0.3553.1.",
+      "children": [],
+      "facts": [],
+      "id": "sources",
+      "kind": "chapter",
+      "number": "5",
+      "pass": null,
+      "path": "5",
+      "title": "Sources"
+    },
+    {
+      "aliases": [],
+      "body_md": "",
+      "children": [
+        {
+          "aliases": [],
+          "body_md": "**Juridictions**\n\n| Niveau | Nom | Du | Au | Source |\n|---|---|---|---|---|\n| département | Doubs | … | … | gazetteer-label (department 25) |\n\n**Dépôts**\n\n| Dépôt | Fonds | Note |\n|---|---|---|\n| Archives départementales du Doubs (`ad25`) | naissances 1550–1925, baptêmes 1550–1925, mariages 1550–1925, décès 1550–1925, sépultures 1550–1925, recensements 1550–1925 | decennial tables of the commune first (ten years of births, marriages and deaths on one page), then the register of the year; before 1793, the parish registers (baptisms, marriages, burials), year by year |\n| Arolsen Archives (`arolsen`) | persecution 1933–1951, displacement 1933–1951, military 1933–1951 | read in a browser |\n| Europeana newspapers and texts (`europeana`) | presse 1600–1950, livres 1600–1950 |  |\n| FamilySearch (`familysearch`) | naissances 1500–1950, baptêmes 1500–1950, mariages 1500–1950, décès 1500–1950, sépultures 1500–1950, recensements 1500–1950, actes notariés 1500–1950 | read in a browser |\n| Gallica (Bibliothèque nationale de France) (`gallica`) | presse 1500–1960, livres 1500–1960, manuscrits 1500–1960, annuaires 1500–1960 |  |\n| HathiTrust Digital Library (`hathitrust`) | livres 1500–1960, presse 1500–1960 | read in a browser |\n| Base Léonore (Archives nationales) (`leonore`) | military 1802–1976, biography 1802–1976 | read in a browser |\n| matchID (French deaths since 1970, INSEE files) (`matchid`) | décès 1970–2026 |  |\n| Mémoire des hommes (`memoiredeshommes`) | military, décès | read in a browser |\n| Persée (scholarly journals) (`persee`) | presse 1800–2020, livres 1800–2020 | read in a browser |\n| SocFace name base (FranceArchives) (`socface`) | recensements 1836–1936 | read in a browser |\n\nGuide établi le 22 octobre 2026 à partir de : catalogue:archives.",
+          "children": [],
+          "facts": [],
+          "id": "guide-besancon",
+          "kind": "section",
+          "number": "6.1",
+          "pass": null,
+          "path": "6.1",
+          "title": "Besançon"
+        }
+      ],
+      "facts": [],
+      "id": "guides",
+      "kind": "chapter",
+      "number": "6",
+      "pass": null,
+      "path": "6",
+      "title": "Guides de localité"
+    }
+  ],
+  "template": {
+    "id": "default",
+    "sha256": "6cd6e217adaa023f5bb7a6f6b1dc6d60d6d175e3087261e8b195587ab912316e",
+    "version": "1"
+  },
+  "through_pass": 1,
+  "trees": []
+}

@@ -1,0 +1,65 @@
+schema: 1
+persons:
+- id: perrine-le-bras-1780
+  names:
+    given: Perrine
+    surname: LE BRAS
+  sex: F
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: perrine-le-bras-1780.birth
+    type: birth
+    date:
+      value: '1780'
+      qualifier: calculated
+    place:
+      id: null
+      as_written: Prémoulin
+    status: record
+    source: src-01JT0000000000000000000401
+    excerpt:
+      kind: transcription
+      lines:
+      - 4
+      - 5
+      text: Collet, voisin, lesquels nous ont déclaré que Perrine Le Bras, âgée de soixante-dix ans, née
+        en cette commune, veuve de Guillaume Hamon, est
+      sha256: 04b5aba091941f3557b0630924baff638eab87a22b72bcaa38c2fde2509cff66
+    evidence:
+      source: original
+      information: secondary
+      evidence: indirect
+    note: '70 ans à son décès en janvier 1850, 56 ans au recensement de 1836 : vers 1780 ; le registre
+      des baptêmes de 1780 a brûlé'
+    research: 2026-10-14-naissance-de-perrine-le-bras
+    pass: 1
+  - id: perrine-le-bras-1780.death
+    type: death
+    date:
+      value: '1850-01-14'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Prémoulin
+    status: record
+    source: src-01JT0000000000000000000401
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 6
+      text: L'an mil huit cent cinquante, le quinze janvier, sont comparus devant nous maire de Prémoulin
+        Yves Hamon, cultivateur, fils de la défunte, et Jean Collet, voisin, lesquels nous ont déclaré
+        que Perrine Le Bras, âgée de soixante-dix ans, née en cette commune, veuve de Guillaume Hamon,
+        est décédée hier en sa demeure au bourg ; et ont signé avec nous.
+      sha256: df427b2a6202f241f32c077bef06ccf19bb4c5778c49e82c745f5d61b204275d
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    research: 2026-10-14-naissance-de-perrine-le-bras
+    pass: 1

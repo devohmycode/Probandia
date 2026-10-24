@@ -1,0 +1,25 @@
+schema: 1
+id: naissance-de-victor-hugo-1802
+title: La naissance de Victor Marie HUGO, an X (1802)
+question: Quel jour est né Victor Marie HUGO, à Besançon, mort à Paris le 22 mai 1885 ? Le fac-similé de son acte de naissance est dans le projet (families/hugo/evidence/images).
+language: fr
+family: hugo
+research: 2026-10-22-quel-jour-est-ne-victor-marie-hugo-a-besancon-mort-a
+offline: true
+expected:
+- person: Victor Marie HUGO
+  type: birth
+  year: 1802
+  date: '1802-02-26'
+  place: Besançon
+  axes: {source: derivative, evidence: direct}
+  fact: victor-marie-hugo-1802.birth
+sources:
+- id: src-01M5J7D4FW617QC51H1KWWEKZG
+  licence: CC0 1.0
+  terms: https://commons.wikimedia.org/wiki/File:Extrait_de_Naissance_de_Victor_Hugo,_2017.0.3553.1.jpg (Maison de Victor Hugo - Hauteville House, Paris Musées, via Wikimedia Commons)
+- id: src-01M5J76SWR2KRH5DDX8WF2C9JW
+  licence: public domain
+  terms: https://commons.wikimedia.org/wiki/File:Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg (Archives de Paris, via Wikimedia Commons, PD-old-70)
+reviewed: {by: DevOhMyCode, date: 2026-10-22}
+note: "Un vrai acte, lu sur un fac-similé imprimé de la fin du XIXe siècle (Maison de Victor Hugo, CC0) : une copie, non le registre. L'acte est daté du 8 ventôse an X et dit l'enfant né « le jour d'hier » : la date attendue est le 7 ventôse an X, soit le 26 février 1802, que le moteur convertit (dates). Le projet de départ est la solution du cas deces-de-victor-hugo-1885 sans sa recherche : la personne y a déjà son décès prouvé, que le corpus exige."

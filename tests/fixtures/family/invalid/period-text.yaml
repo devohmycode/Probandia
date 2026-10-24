@@ -1,0 +1,8 @@
+# expect: $.period[1]
+schema: 1
+id: hugo
+name: HUGO
+surnames: [Hugo, Hugot, Hugues]
+places: [Besançon, Nancy]
+period: [1750, later]
+language: fr

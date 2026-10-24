@@ -1,0 +1,34 @@
+{
+  "note": "not a live answer: built from the OpenWeb Ninja documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-books-data/search?query=%22Hugo%22+Besan%C3%A7on+1802",
+    "headers": {
+      "x-api-key": "KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "r-books",
+    "data": [
+      {
+        "id": "V_l_CwAAQBAJ",
+        "title": "Annuaire des familles de Besançon",
+        "subtitle": "P. Durand · 1895",
+        "view_url": "https://books.google.com/books?id=V_l_CwAAQBAJ",
+        "publication_year": 1895,
+        "book_authors": [
+          {
+            "name": "P. Durand"
+          }
+        ],
+        "position": 1,
+        "rank": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+schema: 1
+searches:
+- id: s-01J9ZK5A000000000000000001
+  ts: '2026-09-30T18:05:00Z'
+  research: 2026-09-30-parents-of-victor-hugo
+  pass: 1
+  kind: archive
+  engine: openarchives
+  family: null
+  query: Hugo Besançon
+  variants:
+  - Hugo
+  - Hugot
+  - Hugues
+  filters: null
+  window:
+    from: 1797
+    to: 1807
+    places:
+    - Besançon
+  results: 0
+  result: negative
+  failure: null
+  support: index
+  witness: &id001
+    operation: openarchives.search
+    args:
+      name: Martin
+    expected: 1 or more
+    passed: true
+    ts: '2026-09-30T18:00:00Z'
+  source_state: complete
+  recheck_if: null
+  recheck_after: '2099-01-01'
+  units: 1
+  proves: result
+- id: s-01J9ZK5A000000000000000002
+  ts: '2020-01-10T10:00:00Z'
+  research: 2026-09-30-parents-of-victor-hugo
+  pass: 1
+  kind: provider
+  engine: serpapi
+  family: G
+  query: '"Hugot" Nancy'
+  variants:
+  - Hugot
+  filters: null
+  window:
+    from: 1763
+    to: 1783
+    places:
+    - Nancy
+  results: 0
+  result: negative
+  failure: null
+  support: index
+  witness: *id001
+  source_state: null
+  recheck_if: null
+  recheck_after: null
+  units: 1
+  proves: result
+- id: s-01J9ZK5A000000000000000003
+  ts: '2026-09-30T18:10:00Z'
+  research: 2026-09-30-parents-of-victor-hugo
+  pass: 1
+  kind: archive
+  engine: gallica
+  family: null
+  query: Martin Nancy
+  variants: []
+  filters: null
+  window: null
+  results: 3
+  result: positive
+  failure: null
+  support: index
+  witness: null
+  source_state: null
+  recheck_if: null
+  recheck_after: null
+  units: 1
+  proves: null

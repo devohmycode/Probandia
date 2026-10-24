@@ -1,0 +1,19 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-web-search/search?q=%22Hugo%22+Besan%C3%A7on+1802&num=5"
+  },
+  "status": 403,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "ERROR",
+    "request_id": "cce60eea-a2e2-43e2-9b5d-0946e85e5800",
+    "error": {
+      "message": "You are not subscribed to this API",
+      "code": 403
+    }
+  }
+}

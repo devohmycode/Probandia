@@ -1,0 +1,143 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://serpapi.com/search.json?engine=bing&q=%22Hugo%22+Besan%C3%A7on+1802&count=5&api_key=KEY"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "search_metadata": {
+      "id": "6abf902aff596e0572cf668a",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/EgUGAUXa0fxWITjgYL257EiPFbhHx6zVCOZe-2Ggzv4/6abf902aff596e0572cf668a.json",
+      "markdown_endpoint": "https://serpapi.com/searches/EgUGAUXa0fxWITjgYL257EiPFbhHx6zVCOZe-2Ggzv4/6abf902aff596e0572cf668a.md",
+      "created_at": "2026-10-02 11:06:18 UTC",
+      "processed_at": "2026-10-02 11:06:18 UTC",
+      "bing_url": "https://www.bing.com/search?q=%22Hugo%22+Besan%C3%A7on+1802",
+      "raw_html_file": "https://serpapi.com/searches/EgUGAUXa0fxWITjgYL257EiPFbhHx6zVCOZe-2Ggzv4/6abf902aff596e0572cf668a.html",
+      "total_time_taken": 11.29
+    },
+    "search_parameters": {
+      "q": "\"Hugo\" Besançon 1802",
+      "device": "desktop",
+      "engine": "bing"
+    },
+    "search_information": {
+      "total_results": 216000
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "ChatGPT: Chat, Work, Create & Code with AI",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=61b1bfff5d689b04f8d3027a4fdbe5d531b4a153a53f19c0b72f4f4a3f051a1bJmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9jaGF0Z3B0LmNvbS8&ntb=1",
+        "link": "https://chatgpt.com/",
+        "displayed_link": "https://chatgpt.com",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+      },
+      {
+        "position": 2,
+        "title": "ChatGPT",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=422651c5311c80221b6da8652bf1680aa3be931999d4884dec37893118ab8918JmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9jaGF0Z3B0LmNvbS9mZWF0dXJlcw&ntb=1",
+        "link": "https://chatgpt.com/features",
+        "displayed_link": "https://chatgpt.com › features",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+      },
+      {
+        "position": 3,
+        "title": "Introducing ChatGPT - OpenAI",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=6623fe7efeed651cdf0d62a66451f543cddb6d9645d82e2f1feba20aa49a0b55JmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4L2NoYXRncHQv&ntb=1",
+        "link": "https://openai.com/index/chatgpt/",
+        "date": "Nov 30, 2022",
+        "displayed_link": "https://openai.com › index › chatgpt",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=92&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible …"
+      },
+      {
+        "position": 4,
+        "title": "GPT-4 | OpenAI",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=4f4f01624481aa3b41358f48ba825e57f933399af0549f0b75fabfdcbc571c40JmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4L2dwdC00Lw&ntb=1",
+        "link": "https://openai.com/index/gpt-4/",
+        "date": "Mar 14, 2023",
+        "displayed_link": "https://openai.com › index",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=93&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and …"
+      },
+      {
+        "position": 5,
+        "title": "ChatGPT - Wikipedia",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=19a9a068ab9badb2d81cf2412e3422bdf1194d530162753e43ff21586736719eJmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2hhdEdQVA&ntb=1",
+        "link": "https://en.wikipedia.org/wiki/ChatGPT",
+        "displayed_link": "https://en.wikipedia.org › wiki › ChatGPT",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=94&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large language …"
+      },
+      {
+        "position": 6,
+        "title": "ChatGPT on the web | ChatGPT Learn",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=b1f5f900d8dc624569383c08c2d539c9c5f68aa734f408aece01dbbe8b89254dJmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9sZWFybi5jaGF0Z3B0LmNvbS9kb2NzL3dlYg&ntb=1",
+        "link": "https://learn.chatgpt.com/docs/web",
+        "displayed_link": "https://learn.chatgpt.com › docs › web",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=95&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "ChatGPT on the web Research, analyze, and create in your browser Ask a question, research a topic, or describe a multi-step task. …"
+      },
+      {
+        "position": 7,
+        "title": "Use ChatGPT | ChatGPT Learn",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=e0b18e9d010705b4eb15aab068bc6a237555be0d0888b800a98a7a828fb07f47JmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9sZWFybi5jaGF0Z3B0LmNvbS9kb2NzL3VzZS1jaGF0Z3B0&ntb=1",
+        "link": "https://learn.chatgpt.com/docs/use-chatgpt",
+        "displayed_link": "https://learn.chatgpt.com › docs › use-chatgpt",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=96&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Use Chat to ask questions, brainstorm, draft or revise text, summarize files, compare options, or clarify a larger task. In Codex, point …"
+      },
+      {
+        "position": 8,
+        "title": "Get started | ChatGPT",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=7eaf6ec16eb5fa00fd7c1d224d723a6d4b5ef5c9b2abb1f19698d7dc73ecfc3aJmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9jaGF0Z3B0LmNvbS9hdXRoL2xvZ2lu&ntb=1",
+        "link": "https://chatgpt.com/auth/login",
+        "displayed_link": "https://chatgpt.com › auth › login",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=97&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Log in or sign up to ChatGPT"
+      },
+      {
+        "position": 9,
+        "title": "ChatGPT Plan | Free",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=222eeef46bb419666c4e0e53658229578b9e7c00b4c9cd203bb652e2ff06906fJmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9jaGF0Z3B0LmNvbS9wbGFucy9mcmVlLw&ntb=1",
+        "link": "https://chatgpt.com/plans/free/",
+        "displayed_link": "https://chatgpt.com › plans › free",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=98&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Try ChatGPT Free today and use AI to write, learn, plan, and get quick answers—at no cost."
+      },
+      {
+        "position": 10,
+        "title": "Download ChatGPT",
+        "tracking_link": "https://www.bing.com/ck/a?!&&p=944e36c4753efded64847a9d749e72885f3b7f9bc4bd4c1418c6a58bd3361405JmltdHM9MTc5MDg5OTIwMA&ptn=3&ver=2&hsh=4&fclid=046b9618-eda8-6138-30cf-81feec7d60cf&psq=%22Hugo%22+Besan%C3%A7on+1802&u=a1aHR0cHM6Ly9jaGF0Z3B0LmNvbS9kb3dubG9hZC8&ntb=1",
+        "link": "https://chatgpt.com/download/",
+        "displayed_link": "https://chatgpt.com › download",
+        "thumbnail": "https://th.bing.com/th/id/ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F?w=32&h=32&qlt=99&pcl=fffffa&o=6&pid=1.2",
+        "snippet": "Download the ChatGPT app for Windows, Mac, iPhone, and Android. Access ChatGPT Work and Codex, use voice conversations, …"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.bing.com/search?q=%22Hugo%22+Besan%C3%A7on+1802&cvid=E394FEC4F01E4426B9611C52BAD6B4DB&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDM3NTdqMGoxqAIAsAIA&rdr=1&rdrig=9465EB09DC674C35B0DADDE09B4D816D&FPIG=D50853631B264E4BB8B626519F0C9758&first=11&FORM=PORE",
+      "other_pages": {
+        "2": "https://www.bing.com/search?q=%22Hugo%22+Besan%C3%A7on+1802&cvid=E394FEC4F01E4426B9611C52BAD6B4DB&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDM3NTdqMGoxqAIAsAIA&rdr=1&rdrig=9465EB09DC674C35B0DADDE09B4D816D&FPIG=D50853631B264E4BB8B626519F0C9758&first=11&FORM=PERE",
+        "3": "https://www.bing.com/search?q=%22Hugo%22+Besan%C3%A7on+1802&cvid=E394FEC4F01E4426B9611C52BAD6B4DB&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDM3NTdqMGoxqAIAsAIA&rdr=1&rdrig=9465EB09DC674C35B0DADDE09B4D816D&FPIG=D50853631B264E4BB8B626519F0C9758&first=21&FORM=PERE1"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=bing&first=11&q=%22Hugo%22+Besan%C3%A7on+1802",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=bing&first=11&q=%22Hugo%22+Besan%C3%A7on+1802",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=bing&first=11&q=%22Hugo%22+Besan%C3%A7on+1802",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=bing&first=21&q=%22Hugo%22+Besan%C3%A7on+1802"
+      }
+    }
+  }
+}

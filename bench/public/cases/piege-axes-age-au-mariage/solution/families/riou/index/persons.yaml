@@ -1,0 +1,83 @@
+schema: 1
+persons:
+- id: joseph-riou-1801
+  names:
+    given: Joseph
+    surname: RIOU
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: joseph-riou-1801.birth
+    type: birth
+    date:
+      value: '1801'
+      qualifier: calculated
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: record
+    source: src-01JT0000000000000000000101
+    excerpt:
+      kind: transcription
+      lines:
+      - 3
+      - 4
+      text: par-devant nous maire de Saint-Aubry, sont comparus Joseph Riou, laboureur, âgé de vingt-quatre
+        ans, né en cette commune, fils de
+      sha256: a1f65c671f4176deb25ac4851193eab04448de48de63c44ee28ae593c27c89b1
+    evidence:
+      source: original
+      information: secondary
+      evidence: indirect
+    note: 'âgé de 24 ans à son mariage du 10 mai 1825 : né entre mai 1800 et mai 1801'
+    research: 2026-10-14-naissance-de-joseph-riou
+    pass: 1
+  - id: joseph-riou-1801.marriage
+    type: marriage
+    date:
+      value: '1825-05-10'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: record
+    source: src-01JT0000000000000000000101
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 6
+      text: L'an mil huit cent vingt-cinq, le dix mai, à dix heures du matin, par-devant nous maire de
+        Saint-Aubry, sont comparus Joseph Riou, laboureur, âgé de vingt-quatre ans, né en cette commune,
+        fils de feu Julien Riou et de Jeanne Le Goff, sa veuve, ici présente et consentante, et Marie
+        Cariou, fileuse, âgée de vingt ans, fille de Yves Cariou et de
+      sha256: dcce29257b191ddf71d5d3ea92792c6a61c4581f323a5674a4674688f8504698
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    research: 2026-10-14-naissance-de-joseph-riou
+    pass: 1
+  - id: joseph-riou-1801.death
+    type: death
+    date:
+      value: '1868-03-03'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: index
+    source: src-01JT0000000000000000000102
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 2
+      text: Riou Joseph, cultivateur, 3 mars 1868
+      sha256: ff84a1aa40294187394125103c90d82d91df43d04b15470136ca38029026a88f
+    research: 2026-10-14-naissance-de-joseph-riou
+    pass: 1

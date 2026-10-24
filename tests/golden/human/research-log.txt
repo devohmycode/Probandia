@@ -1,0 +1,20 @@
+✓ 15 events · 2026-09-01-ancestors-of-louis-marchand
+
+Events
+  time              pass  type           what
+  ──────────────────────────────────────────────────────────────────────────────────
+  2026-09-02 10:00     2  pass.started   n=2
+  2026-09-02 10:01     2  plan.made      work/plan-2.yaml
+  2026-09-02 10:02     2  search.logged  s-01JA00000000000000000SRC02
+  2026-09-02 10:03     2  fact.asserted  pierre-marchand-1841.birth [record]
+  2026-09-02 10:04     2  fact.asserted  pierre-marchand-1841.death [index]
+  2026-09-02 10:05     2  fact.asserted  pierre-marchand-1841.marriage [index]
+  2026-09-02 10:06     2  fact.asserted  marie-lebrun-1845.birth [index]
+  2026-09-02 10:07     2  fact.asserted  marie-lebrun-1845.death [index]
+  2026-09-02 10:08     2  fact.asserted  auguste-roussel-1840.birth [record]
+  2026-09-02 10:09     2  fact.asserted  auguste-roussel-1840.death [index]
+  2026-09-02 10:10     2  fact.asserted  auguste-roussel-1840.marriage [index]
+  2026-09-02 10:11     2  fact.asserted  rose-tanguy-1848.birth [index]
+  2026-09-02 10:12     2  fact.asserted  rose-tanguy-1848.death [index]
+  2026-09-02 10:40     2  section.added  Les grands-parents
+  2026-09-02 10:50     2  pass.ended     grandparents found; the Perrin line is open

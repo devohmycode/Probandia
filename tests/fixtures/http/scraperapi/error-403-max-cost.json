@@ -1,0 +1,13 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. Not billed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.scraperapi.com/?api_key=KEY&url=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DHugo&output_format=markdown&max_cost=1"
+  },
+  "status": 403,
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "sa-credit-cost": "25"
+  },
+  "body": "This request exceeds your max_cost. You can view the cost per request in your response header or in the API Playground on the dashboard."
+}

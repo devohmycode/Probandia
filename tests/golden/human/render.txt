@@ -1,0 +1,15 @@
+✓ OK
+  research         2026-09-01-ancestors-of-louis-marchand
+  lang             fr
+  lang source      research
+  mode             journal
+  through pass     2
+  files            5
+  template         default
+  template origin  default built-in
+
+  file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/report.json
+  file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/report.md
+  file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/report.html
+  file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/../trees/pass-1.md
+  file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/../trees/pass-1.svg

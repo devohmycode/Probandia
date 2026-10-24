@@ -1,0 +1,8 @@
+# expect: $.places[0].jurisdictions[0].from
+schema: 1
+places:
+- id: auxon-dessous
+  jurisdictions:
+  - level: commune
+    name: Auxon-Dessous
+    from: 'about 1790'

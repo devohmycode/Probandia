@@ -1,0 +1,11 @@
+# expect: $.surnames.HUGO[0].form
+schema: 1
+surnames:
+  HUGO:
+  - spelling: Hugot
+  - form: Hugues
+    source: null
+given:
+  Victor:
+  - form: Victorius
+    source: null

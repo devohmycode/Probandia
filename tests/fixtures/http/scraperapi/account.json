@@ -1,0 +1,18 @@
+{
+  "note": "not a live answer: built from the ScraperAPI documentation read on 2 October 2026; to check against a real call once an account is open. Field names from a third-party SDK, not from the docs",
+  "request": {
+    "method": "GET",
+    "url": "https://api.scraperapi.com/account?api_key=KEY"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "concurrencyLimit": 5,
+    "concurrentRequests": 0,
+    "failedRequestCount": 12,
+    "requestCount": 588,
+    "requestLimit": "1000"
+  }
+}

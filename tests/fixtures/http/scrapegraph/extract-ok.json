@@ -1,0 +1,21 @@
+{
+  "_source": "made from docs.scrapegraphai.com/api-reference/endpoint/extract, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://v2-api.scrapegraphai.com/api/extract",
+    "headers": {"SGAI-APIKEY": "KEY"},
+    "json": {"url": "https://registres.example.org/inventaire", "prompt": "the registers: cote, commune, years"}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "id": "8c34fc03-17be-4fcc-a7ce-6ebcab23ad43",
+    "raw": null,
+    "json": [
+      {"cote": "3E 56/1", "commune": "Besançon", "years": "1800-1802"},
+      {"cote": "3E 412/1", "commune": "Les Auxons", "years": "1793-1802"}
+    ],
+    "usage": {"promptTokens": 361, "completionTokens": 92},
+    "metadata": {"chunker": {"chunks": [{"size": 33}]}, "fetch": {}}
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/non-links-1.json",
+  "title": "non-links.yaml",
+  "description": "Family index: non-links.yaml.",
+  "type": "object",
+  "required": [
+    "schema",
+    "non_links"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "non_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonlink"
+      }
+    }
+  },
+  "$defs": {
+    "day": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "nonlink": {
+      "type": "object",
+      "required": [
+        "a",
+        "b",
+        "reason"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "a": {
+          "$ref": "#/$defs/slug"
+        },
+        "b": {
+          "$ref": "#/$defs/slug"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "deciding_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decided": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "date": {
+                  "$ref": "#/$defs/day"
+                },
+                "by": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    }
+  }
+}

@@ -1,0 +1,32 @@
+schema: 1
+id: piege-plafond-de-l-indirect
+title: 'Piège : une naissance qui ne repose que sur des âges'
+question: Quand est née Perrine LE BRAS, morte à Prémoulin en 1850 ? Les actes connus sont dans le projet
+  (evidence/transcriptions).
+language: fr
+family: le-bras
+research: 2026-10-14-naissance-de-perrine-le-bras
+observed: true
+offline: true
+expected:
+- label: naissance
+  person: Perrine LE BRAS
+  type: birth
+  year: 1780
+  place: Prémoulin
+  axes:
+    evidence: indirect
+  confidence_max: probable
+sources:
+- id: src-01JT0000000000000000000401
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000402
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000403
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'Deux âges concordent (70 ans au décès, 56 ans en 1836), mais aucun acte ne rapporte la naissance
+  : le registre de 1780 a brûlé. Une preuve indirecte, même concordante, ne monte pas à « prouvé » sans
+  argument relu. La notation lit l''axe de la preuve et la confiance de la question.'

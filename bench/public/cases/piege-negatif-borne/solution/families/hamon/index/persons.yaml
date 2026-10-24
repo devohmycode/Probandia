@@ -1,0 +1,117 @@
+schema: 1
+persons:
+- id: guillaume-hamon-1858
+  names:
+    given: Guillaume
+    surname: HAMON
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: guillaume-hamon-1858.death
+    type: death
+    date:
+      value: '1858-12-11'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: index
+    source: src-01JT0000000000000000000803
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 2
+      text: Hamon Guillaume, journalier, 11 décembre 1858
+      sha256: ef541122d3b13375995b36c019f3121d53d8c8acf2a653308ac3ffa4eeacbdac
+    research: 2026-10-14-mariage-de-guillaume-hamon
+    pass: 1
+- id: julienne-collet-1861
+  names:
+    given: Julienne
+    surname: COLLET
+  sex: F
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: julienne-collet-1861.death
+    type: death
+    date:
+      value: '1861-04-25'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: index
+    source: src-01JT0000000000000000000803
+    excerpt:
+      kind: transcription
+      lines:
+      - 3
+      - 3
+      text: Collet Julienne, veuve Hamon, 25 avril 1861
+      sha256: 946200a5d5628978495689f62c700bcf18aa156a461ba52502025f51d01a6f0e
+    research: 2026-10-14-mariage-de-guillaume-hamon
+    pass: 1
+- id: yves-hamon-1825
+  names:
+    given: Yves
+    surname: HAMON
+  sex: M
+  living: false
+  parents:
+    father: guillaume-hamon-1858
+    mother: julienne-collet-1861
+  spouses: []
+  facts:
+  - id: yves-hamon-1825.birth
+    type: birth
+    date:
+      value: '1825-03-02'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: record
+    source: src-01JT0000000000000000000802
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 4
+      text: L'an mil huit cent vingt-cinq, le deux mars, a comparu Guillaume Hamon, journalier, lequel
+        nous a présenté un enfant mâle né ce jour de lui et de Julienne Collet, son épouse, auquel il
+        a donné le prénom d'Yves.
+      sha256: 012eb03047c0c83513f588cd395e942a7f82d44652b78fe911932cad9beb1379
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    research: 2026-10-14-mariage-de-guillaume-hamon
+    pass: 1
+  - id: yves-hamon-1825.death
+    type: death
+    date:
+      value: '1890-02-02'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: index
+    source: src-01JT0000000000000000000803
+    excerpt:
+      kind: transcription
+      lines:
+      - 4
+      - 4
+      text: Hamon Yves, cultivateur, 2 février 1890
+      sha256: 44f4958873712f0cba0633135d06213885a599281384aff50256396ccab9b3c0
+    research: 2026-10-14-mariage-de-guillaume-hamon
+    pass: 1

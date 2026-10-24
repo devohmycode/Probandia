@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/scrape",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "url": "https://tree.example.org/hugo?lang=en&n=hugo&p=victor",
+      "formats": [
+        "markdown"
+      ],
+      "onlyMainContent": true
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "success": true,
+    "data": {
+      "markdown": "# Victor HUGO\n\n- Born 26 February 1802 - Besançon, Doubs, France\n- Deceased 22 May 1885 - Paris, France, aged 83 years old\n- Writer\n\n## Parents\n\n- Léopold HUGO 1773-1828\n- Sophie TRÉBUCHET 1772-1821\n\n## Spouses and children\n\n- Married 12 October 1822, Paris, France, to Adèle FOUCHER 1803-1868\n",
+      "metadata": {
+        "title": "Victor HUGO : family tree by hugo - Example Trees",
+        "description": "Family tree of Victor HUGO, born 26 February 1802 in Besançon, Doubs, France.",
+        "language": "en",
+        "sourceURL": "https://tree.example.org/hugo?lang=en&n=hugo&p=victor",
+        "url": "https://tree.example.org/hugo?lang=en&n=hugo&p=victor",
+        "statusCode": 200,
+        "contentType": "text/html; charset=utf-8"
+      }
+    }
+  }
+}

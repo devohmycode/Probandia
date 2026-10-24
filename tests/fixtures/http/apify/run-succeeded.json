@@ -1,0 +1,244 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "POST",
+    "url": "https://api.apify.com/v2/acts/apify~google-search-scraper/runs?waitForFinish=60&maxItems=1&timeout=120&memory=1024&maxTotalChargeUsd=0.5",
+    "json": {
+      "queries": "\"Hugo\" Besançon 1802",
+      "maxPagesPerQuery": 1
+    }
+  },
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": {
+      "id": "4nXVSsFkEhPtV4RMN",
+      "actId": "nFJndFXA5zjCTuudP",
+      "startedAt": "2026-10-02T11:08:13.692Z",
+      "finishedAt": "2026-10-02T11:08:38.487Z",
+      "status": "SUCCEEDED",
+      "statusMessage": "Processed 1 queries on 1 pages. Extracted: 9 organicResults, 4 relatedQueries, 1 aiOverviews, 1 itemsPushed",
+      "isStatusMessageTerminal": true,
+      "meta": {
+        "origin": "API"
+      },
+      "stats": {
+        "inputBodyLen": 730,
+        "migrationCount": 0,
+        "rebootCount": 0,
+        "restartCount": 0,
+        "durationMillis": 24608,
+        "resurrectCount": 0,
+        "runTimeSecs": 24.608,
+        "metamorph": 0,
+        "computeUnits": 0.006835555555555556,
+        "memAvgBytes": 93628912.22535232,
+        "memMaxBytes": 114978816,
+        "memCurrentBytes": 0,
+        "cpuAvgUsage": 8.702541133538759,
+        "cpuMaxUsage": 96.78716740929345,
+        "cpuCurrentUsage": 0,
+        "netRxBytes": 382490,
+        "netTxBytes": 291681
+      },
+      "options": {
+        "build": "latest",
+        "timeoutSecs": 120,
+        "memoryMbytes": 1024,
+        "maxItems": 1,
+        "maxTotalChargeUsd": 0.5,
+        "isMaxTotalChargeUsdSetByUser": true,
+        "diskMbytes": 2048
+      },
+      "exitCode": 0,
+      "defaultKeyValueStoreId": "sgoeisl2A0qip82bA",
+      "defaultDatasetId": "hF1TaBuQfK2opu2HW",
+      "defaultRequestQueueId": "3GCtPbE8CtkbbDUQB",
+      "storageIds": {
+        "keyValueStores": {
+          "default": "sgoeisl2A0qip82bA"
+        },
+        "datasets": {
+          "default": "hF1TaBuQfK2opu2HW",
+          "linkProspecting": "5YhqJTgn9Gd1ZfX95"
+        },
+        "requestQueues": {
+          "default": "3GCtPbE8CtkbbDUQB"
+        }
+      },
+      "pricingInfo": {
+        "minimalMaxTotalChargeUsd": 0.5,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": false,
+        "createdAt": "2026-08-20T11:50:53.921Z",
+        "startedAt": "2026-08-20T11:50:53.921Z",
+        "apifyMarginPercentage": 0.2,
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "search-page-scraped": {
+              "eventTitle": "Scraped search result page",
+              "eventDescription": "Cost per page of Google Search results successfully scraped.",
+              "isOneTimeEvent": false,
+              "isPrimaryEvent": true,
+              "eventPriceUsd": 0.0045
+            },
+            "actor-start": {
+              "eventTitle": "Actor start",
+              "eventDescription": "Flat fee for starting an Actor run.",
+              "isOneTimeEvent": true,
+              "eventPriceUsd": 0.001
+            },
+            "ai-overview-scraped": {
+              "eventTitle": "Add-on: Google AI Overview",
+              "eventDescription": "Extra cost per query when an AI Overview is successfully captured. Uses a specialized proxy to increase the probability of getting one.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.003
+            },
+            "ai-mode-result-scraped": {
+              "eventTitle": "Add-on: Google AI Mode",
+              "eventDescription": "Extra cost for using Google AI Mode per search query. This cost is applied when a successful Google AI Mode request is returned.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.2
+            },
+            "perplexity-ai-result-scraped": {
+              "eventTitle": "Add-on: Perplexity AI search",
+              "eventDescription": "Extra cost for using Perplexity AI search per search query. This cost is applied when a successful Perplexity AI search request is returned.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.2
+            },
+            "chatgpt-result-scraped": {
+              "eventTitle": "Add-on: ChatGPT search",
+              "eventDescription": "Extra cost for using ChatGPT search per search query. This cost is applied when a successful ChatGPT search request is returned.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.2
+            },
+            "copilot-result-scraped": {
+              "eventTitle": "Add-on: Copilot search",
+              "eventDescription": "Extra cost for using Copilot search per search query. This cost is applied when a successful Copilot search request is returned.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.2
+            },
+            "gemini-result-scraped": {
+              "eventTitle": "Add-on: Gemini search",
+              "eventDescription": "Extra cost for using Gemini search per search query. This cost is applied when a successful Gemini search request is returned.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.2
+            },
+            "lead-scraped": {
+              "eventTitle": "Add-on: Business leads enrichment",
+              "eventDescription": "Cost per successfully extracted business lead. Get key prospect details: full name, work email, phone number, job title, and LinkedIn profile. Business leads are extracted based on the found web domains.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.1
+            },
+            "lead-email-verified": {
+              "eventTitle": "Add-on: Email verification",
+              "eventDescription": "Cost per decisive email verification (valid, invalid, or disposable). You are not charged for catch-all, unknown, or error results.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.1
+            },
+            "ads-scraped": {
+              "eventTitle": "Add-on: Paid results (ads) extraction",
+              "eventDescription": "Extra cost per page for attempting to extract paid results (ads) from Google Search. This applies when the ads extraction feature is enabled, regardless of whether ads are found on the specific page.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.0065
+            },
+            "website-content-scraped": {
+              "eventTitle": "Add-on: Full website page scraped",
+              "eventDescription": "Cost per website page successfully scraped.",
+              "isOneTimeEvent": false,
+              "eventPriceUsd": 0.008
+            }
+          }
+        }
+      },
+      "chargedEventCounts": {
+        "search-page-scraped": 0,
+        "actor-start": 1,
+        "ai-overview-scraped": 0,
+        "ai-mode-result-scraped": 0,
+        "perplexity-ai-result-scraped": 0,
+        "chatgpt-result-scraped": 0,
+        "copilot-result-scraped": 0,
+        "gemini-result-scraped": 0,
+        "lead-scraped": 0,
+        "lead-email-verified": 0,
+        "ads-scraped": 0,
+        "website-content-scraped": 0
+      },
+      "platformUsageBillingModel": "DEVELOPER",
+      "accountedChargedEventCounts": {
+        "search-page-scraped": 0,
+        "actor-start": 1,
+        "ai-overview-scraped": 0,
+        "ai-mode-result-scraped": 0,
+        "perplexity-ai-result-scraped": 0,
+        "chatgpt-result-scraped": 0,
+        "copilot-result-scraped": 0,
+        "gemini-result-scraped": 0,
+        "lead-scraped": 0,
+        "lead-email-verified": 0,
+        "ads-scraped": 0,
+        "website-content-scraped": 0
+      },
+      "standby": null,
+      "generalAccess": "FOLLOW_USER_SETTING",
+      "usageTotalUsd": 0.001,
+      "eventUsage": {
+        "search-page-scraped": {
+          "eventTitle": "Scraped search result page",
+          "eventTotalUsd": 0
+        },
+        "actor-start": {
+          "eventTitle": "Actor start",
+          "eventTotalUsd": 0.001
+        },
+        "ai-overview-scraped": {
+          "eventTitle": "Add-on: Google AI Overview",
+          "eventTotalUsd": 0
+        },
+        "ai-mode-result-scraped": {
+          "eventTitle": "Add-on: Google AI Mode",
+          "eventTotalUsd": 0
+        },
+        "perplexity-ai-result-scraped": {
+          "eventTitle": "Add-on: Perplexity AI search",
+          "eventTotalUsd": 0
+        },
+        "chatgpt-result-scraped": {
+          "eventTitle": "Add-on: ChatGPT search",
+          "eventTotalUsd": 0
+        },
+        "copilot-result-scraped": {
+          "eventTitle": "Add-on: Copilot search",
+          "eventTotalUsd": 0
+        },
+        "gemini-result-scraped": {
+          "eventTitle": "Add-on: Gemini search",
+          "eventTotalUsd": 0
+        },
+        "lead-scraped": {
+          "eventTitle": "Add-on: Business leads enrichment",
+          "eventTotalUsd": 0
+        },
+        "lead-email-verified": {
+          "eventTitle": "Add-on: Email verification",
+          "eventTotalUsd": 0
+        },
+        "ads-scraped": {
+          "eventTitle": "Add-on: Paid results (ads) extraction",
+          "eventTotalUsd": 0
+        },
+        "website-content-scraped": {
+          "eventTitle": "Add-on: Full website page scraped",
+          "eventTotalUsd": 0
+        }
+      },
+      "output": {
+        "dataset": "https://api.apify.com/v2/datasets/hF1TaBuQfK2opu2HW/items?signature=MC4wLjV3OUx5Q1lCR01keEtmRWN1UlJG",
+        "linkProspectingDataset": "https://api.apify.com/v2/datasets/5YhqJTgn9Gd1ZfX95/items"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+schema: 1
+proofs:
+- id: pf-q1-2026-09-04-birth-of-henri-marchand
+  research: 2026-09-04-birth-of-henri-marchand
+  question: Q1
+  conclusion:
+  - henri-marchand-1870.birth
+  analyses:
+  - an-henri-marchand-1870-birth
+  parts:
+    question: Quand et où est né Henri MARCHAND ?
+    sources: L'acte de naissance du registre de la mairie (1870) ; la table décennale 1863-1872.
+    analysis: L'acte est un original dressé par l'officier d'état civil sur la déclaration du père ; la
+      table est une copie dressée après l'incendie de 1871.
+    correlation: Le recensement de 1872 donne à Henri deux ans, ce qui s'accorde avec 1870.
+    conflicts: 'La table donne 1871 : une erreur de copie, l''acte original fait foi.'
+    conclusion: Henri MARCHAND est né à Bourg-Vert le 14 mars 1870.
+  review:
+    state: accepted
+    rounds:
+    - date: '2026-09-04T11:06:00Z'
+      reviewer: contradictor
+      returned: 'objection: un autre Henri MARCHAND est né à Bourg-Vert vers 1870.'
+      objections:
+      - n: 1
+        text: Un autre Henri MARCHAND est né à Bourg-Vert vers 1870.
+        fact: henri-marchand-1870.birth
+        would_settle: la table décennale, qui ne nomme qu'un Henri MARCHAND
+        answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.
+        state: answered
+- id: pf-q2-2026-09-04-birth-of-henri-marchand
+  research: 2026-09-04-birth-of-henri-marchand
+  question: Q2
+  conclusion:
+  - henri-marchand-1870.birth
+  analyses:
+  - an-henri-marchand-1870-birth
+  parts:
+    question: Qui sont les parents d'Henri MARCHAND ?
+    sources: L'acte de naissance du registre de la mairie (1870).
+    analysis: 'Le père déclare lui-même la naissance et nomme la mère : information primaire.'
+    correlation: Le recensement de 1872 montre Henri au foyer de Pierre et de Marie.
+    conflicts: La table décennale ne contredit que l'année, pas la filiation.
+    conclusion: Henri MARCHAND est le fils de Pierre MARCHAND et de Marie LEBRUN.
+  review:
+    state: accepted
+    rounds:
+    - date: '2026-09-04T11:07:00Z'
+      reviewer: contradictor
+      returned: 'objection: un autre Henri MARCHAND est né à Bourg-Vert vers 1870.'
+      objections:
+      - n: 1
+        text: Un autre Henri MARCHAND est né à Bourg-Vert vers 1870.
+        fact: henri-marchand-1870.birth
+        would_settle: la table décennale, qui ne nomme qu'un Henri MARCHAND
+        answer: La table 1863-1872 ne compte qu'un Henri MARCHAND.
+        state: answered

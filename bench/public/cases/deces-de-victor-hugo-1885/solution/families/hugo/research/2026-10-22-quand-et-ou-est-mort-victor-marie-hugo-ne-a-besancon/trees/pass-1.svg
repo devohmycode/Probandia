@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 56" width="180" height="56" role="img" aria-label="Ancestors of Victor Marie HUGO">
+<style>
+  :root { --record: #1d6b3a; --index: #2a5d9f; --hypothesis: #8a6100; --living: #666666;
+    --ink: #1b1b1b; --paper: #ffffff; --line: #555555; }
+  .box rect { fill: var(--paper); stroke-width: 1.5; }
+  .record rect { stroke: var(--record); stroke-width: 2.5; }
+  .index rect { stroke: var(--index); }
+  .hypothesis rect { stroke: var(--hypothesis); stroke-dasharray: 5 4; }
+  .living rect { stroke: var(--living); fill: #eeeeee; }
+  text { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink); }
+  .years { font-size: 11px; fill: #444444; }
+  .link { fill: none; stroke: var(--line); stroke-width: 1.2; }
+  .link.hypothesis { stroke-dasharray: 4 4; }
+</style>
+<g class="box hypothesis" transform="translate(0,4)"><title>Victor Marie HUGO, † 1885</title><rect width="180" height="48" rx="6"/><text x="8" y="20">Victor Marie HUGO</text><text class="years" x="8" y="38">† 1885</text></g>
+</svg>

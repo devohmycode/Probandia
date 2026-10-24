@@ -1,0 +1,7 @@
+✓ Research <today>-who-were-the-parents-of-henri-marchand created (family marchand)
+
+  run by    session
+  report    journal · md,html
+  language  en
+
+→ In your agent: /probandia:resume <today>-who-were-the-parents-of-henri-marchand

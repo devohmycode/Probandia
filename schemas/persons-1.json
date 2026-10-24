@@ -1,0 +1,444 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/persons-1.json",
+  "title": "persons.yaml",
+  "description": "Family index: persons.yaml.",
+  "type": "object",
+  "required": [
+    "schema",
+    "persons"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "persons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "object",
+      "required": [
+        "value"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "#/$defs/gendate"
+        },
+        "qualifier": {
+          "enum": [
+            "exact",
+            "about",
+            "before",
+            "after",
+            "between",
+            "calculated"
+          ]
+        },
+        "end": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/gendate"
+            }
+          ]
+        },
+        "calendar": {
+          "enum": [
+            "gregorian",
+            "julian",
+            "republican"
+          ]
+        },
+        "original": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/factid"
+        },
+        "type": {
+          "enum": [
+            "birth",
+            "baptism",
+            "marriage",
+            "death",
+            "burial",
+            "residence",
+            "occupation",
+            "census",
+            "military",
+            "emigration",
+            "naturalisation",
+            "other"
+          ]
+        },
+        "date": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/date"
+            }
+          ]
+        },
+        "place": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "$ref": "#/$defs/nslug"
+                },
+                "as_written": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "record",
+            "index",
+            "hypothesis",
+            "refuted"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/nsourceid"
+        },
+        "evidence": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "source": {
+                  "enum": [
+                    "original",
+                    "derivative",
+                    "authored"
+                  ]
+                },
+                "information": {
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "undetermined"
+                  ]
+                },
+                "evidence": {
+                  "enum": [
+                    "direct",
+                    "indirect",
+                    "negative"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "excerpt": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "kind",
+                "text",
+                "sha256"
+              ],
+              "additionalProperties": false,
+              "description": "the passage of the source this fact reads (TRUST1): lines of the transcription, or a place in a page read",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "transcription",
+                    "page"
+                  ]
+                },
+                "lines": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "description": "transcription: the first and last lines cited, from 1"
+                },
+                "offset": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "page: where the passage starts in the page's text, whitespace normalised"
+                },
+                "length": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 500,
+                  "description": "the passage itself"
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$",
+                  "description": "of the text, whitespace normalised"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "page: the page read"
+                },
+                "captured": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+                  "description": "page: the day it was read"
+                },
+                "region": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^([1-9][0-9]*:)?(pct:)?[0-9]+(\\.[0-9]+)?(,[0-9]+(\\.[0-9]+)?){3}$",
+                  "description": "where the act is on its view (T247): x,y,w,h as iiif.region or image crop take it, in pixels, fractions of the view or pct:; n: before it, on the n-th of the source's images"
+                }
+              }
+            }
+          ]
+        },
+        "uncertain_reading": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "research": {
+          "$ref": "#/$defs/nslug"
+        },
+        "pass": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "event": {
+          "$ref": "#/$defs/nulid"
+        },
+        "volet": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "the volet open when the fact was applied (FL-D8); set by the engine, never dated back"
+        },
+        "refuted_in": {
+          "type": "object",
+          "required": [
+            "pass"
+          ],
+          "additionalProperties": false,
+          "description": "where the fact was refuted (FL-D10); set by the engine",
+          "properties": {
+            "pass": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "volet": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "event": {
+              "$ref": "#/$defs/nulid"
+            }
+          }
+        }
+      }
+    },
+    "factid": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"
+    },
+    "gendate": {
+      "type": "string",
+      "pattern": "^-?[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+    },
+    "nfactid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"
+    },
+    "nslug": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "nsourceid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^src-[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "nulid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+    },
+    "person": {
+      "type": "object",
+      "required": [
+        "id",
+        "names"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug"
+        },
+        "names": {
+          "type": "object",
+          "required": [
+            "surname"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "given": {
+              "type": "string"
+            },
+            "surname": {
+              "type": "string"
+            },
+            "at_birth": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "usual": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "sex": {
+          "enum": [
+            "M",
+            "F",
+            "U"
+          ]
+        },
+        "living": {
+          "enum": [
+            "auto",
+            true,
+            false
+          ]
+        },
+        "parents": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "father": {
+              "$ref": "#/$defs/nslug"
+            },
+            "mother": {
+              "$ref": "#/$defs/nslug"
+            }
+          }
+        },
+        "spouses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "person"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "person": {
+                "$ref": "#/$defs/slug"
+              },
+              "marriage": {
+                "$ref": "#/$defs/nfactid"
+              }
+            }
+          }
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
+        }
+      }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    }
+  }
+}

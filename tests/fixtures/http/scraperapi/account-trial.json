@@ -1,0 +1,25 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. During the 7-day trial",
+  "request": {
+    "method": "GET",
+    "url": "https://api.scraperapi.com/account?api_key=KEY"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "burst": 0,
+    "concurrencyLimit": 5,
+    "concurrentRequests": 0,
+    "failedRequestCount": 0,
+    "requestCount": 1,
+    "requestLimit": 5000,
+    "creditsLeft": 4999,
+    "payAsYouGoEnabled": false,
+    "autoUpgradeEnabled": false,
+    "subscriptionDate": "2026-10-02T00:00:00.000Z",
+    "lastBillingDate": "2026-10-02T05:51:47.000Z",
+    "nextBillingDate": "2026-11-02T06:51:47.000Z"
+  }
+}

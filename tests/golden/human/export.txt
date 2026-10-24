@@ -1,0 +1,10 @@
+✓ Exported to exports/marchand-<today>.gdz
+
+  format    gedcom7
+  family    marchand
+  persons   30
+  families  14
+  sources   6
+  media     1
+
+→ probandia export gedcom7 --open-folder  opens exports

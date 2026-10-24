@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "headers": {
+      "x-api-key": "KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "type": "auto",
+      "numResults": 5,
+      "userLocation": "LU",
+      "contents": {
+        "highlights": true
+      }
+    }
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "requestId": "dad0183b70aa1701b8aa0825296595c2",
+    "error": "Invalid API key. Provide a valid key using 'Authorization: Bearer <key>' or 'x-api-key: <key>'. Create a key at https://dashboard.exa.ai/api-keys",
+    "tag": "INVALID_API_KEY"
+  }
+}

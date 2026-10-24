@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "search_depth": "basic",
+      "max_results": 5,
+      "topic": "general",
+      "country": "luxembourg",
+      "include_answer": false,
+      "include_raw_content": false,
+      "include_usage": true
+    }
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json",
+    "Retry-After": "60"
+  },
+  "body": {
+    "detail": {
+      "error": "Your request has been blocked due to excessive requests. Please reduce the rate of requests."
+    }
+  }
+}

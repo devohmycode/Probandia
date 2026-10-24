@@ -1,0 +1,22 @@
+schema: 1
+id: deces-de-victor-hugo-1885
+title: Le décès de Victor Marie HUGO, 1885
+question: Quand et où est mort Victor Marie HUGO, né à Besançon en 1802 ? L'acte de décès est dans le projet (families/hugo/evidence/images).
+language: fr
+family: hugo
+research: 2026-10-22-quand-et-ou-est-mort-victor-marie-hugo-ne-a-besancon
+offline: true
+expected:
+- person: Victor Marie HUGO
+  type: death
+  year: 1885
+  date: '1885-05-22'
+  place: Paris
+  axes: {source: original, information: primary, evidence: direct}
+  fact: victor-marie-hugo-1802.death
+sources:
+- id: src-01M5J76SWR2KRH5DDX8WF2C9JW
+  licence: public domain
+  terms: https://commons.wikimedia.org/wiki/File:Acte_de_d%C3%A9c%C3%A8s_-_Victor_Hugo.jpg (Archives de Paris, via Wikimedia Commons, PD-old-70)
+reviewed: {by: DevOhMyCode, date: 2026-10-22}
+note: "Un vrai acte, celui du décès de Victor Hugo (Archives de Paris, 16e arrondissement, 1885, n° 546). L'acte est dressé le 23 mai et dit le décès survenu « hier au soir, à une heure et demie » : la date attendue est le 22 mai 1885, non celle de l'acte. Le projet de départ ne contient que l'image ; la solution la transcrit et cite les lignes 9 à 12."

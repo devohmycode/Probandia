@@ -1,0 +1,33 @@
+# expect: $.prev
+id: 01M3V7T5PX72PDYY6T6CNEBQE6
+ts: '2026-09-30T18:41:00Z'
+pass: 1
+actor:
+  harness: claude-code
+  agent: session
+type: fact.asserted
+payload:
+  fact:
+    id: victor-hugo-1802.birth
+    type: birth
+    date:
+      value: '1802-02-26'
+      qualifier: exact
+      end: null
+      calendar: gregorian
+      original: null
+    place:
+      id: besancon
+      as_written: Besançon
+    status: record
+    source: src-01J9ZK3M4X0000000000000001
+    evidence: null
+    uncertain_reading: null
+    note: ''
+    research: 2026-09-30-parents-of-victor-hugo
+    pass: 1
+    event: 01J9ZK4B2Q0000000000000001
+refs:
+- victor-hugo-1802.birth
+supersedes: null
+prev: md5:abc

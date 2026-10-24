@@ -1,0 +1,297 @@
+# Archives Probandia knows, with their coverage, their access and their witness.
+# nature: image | index | catalogue | press | tree
+# access.mode: api | sru | iiif | html | browser
+# access.third_party: forbidden — third-party readers (Jina, Firecrawl…) are never used on its hosts
+# image_rights: free | restricted | mixed
+schema: 1
+archives:
+  - id: gallica
+    name: "Gallica (Bibliothèque nationale de France)"
+    nature: press
+    reliability: "digitised originals; OCR text is a reading aid, the image is the source"
+    coverage: {types: [press, book, manuscript, directory], years: [1500, 1960], places: [FR, EU]}
+    access: {mode: sru, connector: gallica, hosts: [gallica.bnf.fr]}
+    witness: {operation: search, args: {query: Hugo, type: fascicule}, expect: {min_results: 1}}
+    terms: "free reuse for non-commercial purposes; commercial reuse under licence"
+    image_rights: mixed
+    rate: "5/min"
+    state: {checked: 2026-10-01, note: "SRU, ContentSearch, ALTO, raw text and IIIF answered",
+            witness_refused: "2026-10-12: HTTP 403 to the witness and to a plain curl; the site refuses, nothing is bypassed"}
+  - id: matchid
+    name: "matchID (French deaths since 1970, INSEE files)"
+    nature: index
+    reliability: "the INSEE death files: an index, to check against the civil record"
+    coverage: {types: [death], years: [1970, 2026], places: [FR]}
+    access: {mode: api, connector: matchid, hosts: [deces.matchid.io]}
+    witness: {operation: search, args: {name: Hugo}, expect: {min_results: 1}}
+    terms: "open data (Licence Ouverte)"
+    image_rights: free
+    rate: "1/s"
+    state: {checked: 2026-10-01}
+  - id: openarchives
+    name: "Open Archives (openarchieven.nl)"
+    nature: index
+    reliability: "indexes made by archives and volunteers: leads, with links to the scans"
+    # not FR: its one French source is INSEE's death files since 1970, as matchID (C5)
+    coverage: {types: [birth, baptism, marriage, death, burial, census, notarial], years: [1500, 1950],
+               places: [NL, BE, DE]}
+    access: {mode: api, connector: openarchives, hosts: [api.openarch.nl]}
+    witness: {operation: search, args: {name: Hugo}, expect: {min_results: 1}}
+    terms: "free consultation; scans belong to each archive"
+    image_rights: mixed
+    rate: "4/s"
+    state: {checked: 2026-10-10, note: "stats/archives: 209 archives, Dutch and Belgian; for France only INSEE (deaths since 1970)"}
+  - id: wikitree
+    name: "WikiTree"
+    nature: tree
+    reliability: "a shared tree: a lead, never a source"
+    coverage: {types: [tree], years: [1000, 2026], places: [EU, US]}
+    access: {mode: api, connector: wikitree, hosts: [api.wikitree.com]}
+    witness: {operation: profile, args: {key: Lincoln-7}, expect: {contains: Lincoln}}
+    terms: "read only; no writing into the tree"
+    image_rights: restricted
+    rate: "1/s"
+    state: {checked: 2026-10-01}
+  - id: europeana
+    name: "Europeana newspapers and texts"
+    nature: press
+    reliability: "digitised texts of European libraries"
+    coverage: {types: [press, book], years: [1600, 1950], places: [EU]}
+    access: {mode: api, connector: europeana, hosts: [api.europeana.eu]}
+    witness: {operation: search, args: {query: Luxembourg}, expect: {min_results: 1}}
+    terms: "API key required (a public demonstration key works at a low rate)"
+    image_rights: mixed
+    rate: "1/s"
+    state: {checked: 2026-10-01}
+  - id: loc
+    name: "Chronicling America (Library of Congress)"
+    nature: press
+    reliability: "American newspaper pages, with OCR"
+    coverage: {types: [press], years: [1756, 1963], places: [US]}
+    access: {mode: api, connector: loc, hosts: [www.loc.gov]}
+    witness: {operation: search, args: {query: "Victor Hugo"}, expect: {min_results: 1}}
+    terms: "public domain pages"
+    image_rights: free
+    rate: "20/min"
+    state: {checked: 2026-10-01, note: "behind a Cloudflare challenge that day: fixtures from the documentation",
+            witness_refused: "2026-10-12: HTTP 403 to the witness; the site refuses, nothing is bypassed"}
+  - id: wayback
+    name: "Internet Archive Wayback Machine"
+    nature: catalogue
+    reliability: "captures of web pages as they were"
+    coverage: {types: [web], years: [1996, 2026], places: [EU, US]}
+    access: {mode: api, connector: wayback, hosts: [web.archive.org]}
+    witness: {operation: cdx, args: {url: "gallica.bnf.fr/", max: 3}, expect: {min_results: 1}}
+    terms: "Save Page Now only for a page cited as a source"
+    image_rights: mixed
+    rate: "60/min"
+    state: {checked: 2026-10-01, note: "temporarily offline that day: fixtures from the documentation"}
+  - id: bnl
+    name: "BnL open data: Luxembourg newspapers"
+    nature: press
+    reliability: "OCR of Luxembourg newspapers, downloaded and searched locally"
+    coverage: {types: [press], years: [1841, 1950], places: [LU]}
+    access: {mode: api, connector: bnl, hosts: [data.bnl.lu, open-data.bnl.lu]}
+    witness: {operation: search, args: {query: Luxembourg}, expect: {min_results: 1}}
+    terms: "open data (CC0)"
+    image_rights: free
+    rate: "1/2s"
+    state: {checked: 2026-10-01}
+  - id: geonames
+    name: "GeoNames"
+    nature: catalogue
+    reliability: "current places and coordinates"
+    coverage: {types: [place], years: [1900, 2026], places: [EU, US]}
+    access: {mode: api, connector: geonames, hosts: [api.geonames.org]}
+    witness: {operation: search, args: {name: Octeville, country: FR}, expect: {min_results: 1}}
+    terms: "free account (GEONAMES_USERNAME); CC BY 4.0"
+    image_rights: free
+    rate: "1000/h"
+    state: {checked: 2026-10-01}
+  - id: gov
+    name: "GOV historical gazetteer"
+    nature: catalogue
+    reliability: "historical places, their names and their hierarchy"
+    coverage: {types: [place], years: [800, 2026], places: [DE, FR, LU, BE, NL]}
+    access: {mode: html, connector: gov, hosts: [gov.genealogy.net]}
+    witness: {operation: search, args: {name: Octeville}, expect: {min_results: 1}}
+    terms: "free consultation"
+    image_rights: free
+    rate: "1/s"
+    state: {checked: 2026-10-01,
+            witness_refused: "2026-10-12: a challenge page, already on 2026-10-05; nothing is bypassed"}
+  - id: insee_cog
+    name: "INSEE Code officiel géographique (local files)"
+    nature: catalogue
+    reliability: "the official history of French communes since 1943"
+    coverage: {types: [place], years: [1943, 2026], places: [FR]}
+    access: {mode: api, connector: insee_cog, hosts: []}
+    witness: {operation: commune, args: {name: Octeville, year: 1900}, expect: {contains: Cherbourg-en-Cotentin}}
+    terms: "open data (Licence Ouverte)"
+    image_rights: free
+    state: {checked: 2026-10-01}
+  - id: iiif
+    name: "Any IIIF image server"
+    nature: image
+    reliability: "the images themselves"
+    coverage: {types: [image], years: [1000, 2026], places: [EU, US]}
+    access: {mode: iiif, connector: iiif, hosts: []}
+    # T121: the reference image of the IIIF Consortium (cookbook recipe 0005), not Gallica, which refuses
+    witness: {operation: info, args: {url: "https://iiif.io/api/image/3.0/example/reference/918ecd18c2592080851777620de9bcb5-gottingen"}, expect: {min_results: 1}}
+    terms: "the rights of each image server apply"
+    image_rights: mixed
+    state: {checked: 2026-10-17, note: "witness made after the IIIF Image API 3.0 and recipe 0005, read on 2026-10-17"}
+  - id: ddb
+    name: "Deutsche Digitale Bibliothek"
+    nature: catalogue
+    reliability: "institutional descriptions: leads to the holding institution and its originals"
+    coverage: {types: [press, book, manuscript, birth, baptism, marriage, death, burial], places: [DE]}
+    access: {mode: api, connector: ddb, third_party: forbidden, hosts: [api.deutsche-digitale-bibliothek.de, www.deutsche-digitale-bibliothek.de]}
+    witness: {operation: search, args: {query: Goethe, max: 1}, expect: {min_results: 1, contains: Goethe}}
+    terms: "CC0 metadata; check each object's rights. Public v2 GET search, no key. https://api.deutsche-digitale-bibliothek.de/2/q/openapi"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "public v2 search witness answered; response recorded"}
+  # Archives read through the browser or a learned script: third-party readers are forbidden.
+  - id: matricula
+    name: "Matricula Online"
+    nature: image
+    reliability: "parish register images; the image is the source"
+    coverage: {types: [baptism, marriage, burial], places: [DE, AT, LU, SI, RS, PL]}
+    access: {mode: browser, third_party: forbidden, hosts: [data.matricula-online.eu], note: "https://data.matricula-online.eu/en/; no documented public search API verified"}
+    terms: "Images CC BY-NC-ND 2.0; notify the holding archive for publications; civil-status and privacy limits apply. https://data.matricula-online.eu/en/nutzungsbedingungen/"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "terms reviewed; browser access, no API witness claimed"}
+  - id: delpher
+    name: "Delpher (KB, Dutch newspapers)"
+    nature: press
+    reliability: "digitised newspapers; OCR is an aid, check the page image"
+    coverage: {types: [press, book], years: [1618, 1995], places: [NL]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.delpher.nl, delpher.nl, jsru.kb.nl], note: "https://www.delpher.nl/; SRU/OAI access requires prior KB authorisation"}
+    terms: "Check item rights; no bulk download of protected works; API manuals only after authorised access through KB. https://www.delpher.nl/over-delpher/gebruiksvoorwaarden ; https://www.kb.nl/en/research-find/datasets/delpher-newspapers"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "terms and KB API access policy reviewed; browser only"}
+  - id: memoiredeshommes
+    name: "Mémoire des hommes"
+    nature: index
+    reliability: "military indexes and digitised records; check the original record"
+    coverage: {types: [military, death], places: [FR]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.memoiredeshommes.defense.gouv.fr, memoiredeshommes.defense.gouv.fr, www.memoiredeshommes.sga.defense.gouv.fr], note: "https://www.memoiredeshommes.defense.gouv.fr/; new portal, no documented public API verified"}
+    terms: "Consultation under site CGU and collection-specific rights; private use only; prior authorisation of the site for any reproduction or publication; commercial use prohibited, notably of the executed soldiers' records. https://www.memoiredeshommes.defense.gouv.fr/cgu ; https://www.memoiredeshommes.defense.gouv.fr/droits-de-consultation"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-10-23, note: "CGU re-read on 2026-10-23 (version-1.0.0 T217): private use only, prior authorisation to reproduce or publish, no commercial use; executed soldiers: commercial reuse forbidden (CNIL 2014); browser only"}
+  - id: leonore
+    name: "Base Léonore (Archives nationales)"
+    nature: index
+    reliability: "Légion d'honneur files; individual documents support the proof"
+    coverage: {types: [military, biography], years: [1802, 1976], places: [FR]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.leonore.archives-nationales.culture.gouv.fr, leonore.archives-nationales.culture.gouv.fr], note: "https://www.leonore.archives-nationales.culture.gouv.fr/; no documented public API verified"}
+    terms: "Public communicable records reusable with archival credit; private records, third-party copyright and personal data remain restricted. https://www.archives-nationales.culture.gouv.fr/quelles-sont-les-modalites-de-reproduction-et-de-reutilisation"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "official portal and Archives nationales reuse policy reviewed"}
+  - id: arolsen
+    name: "Arolsen Archives"
+    nature: index
+    reliability: "Nazi persecution records, including copies held elsewhere; check provenance"
+    coverage: {types: [persecution, displacement, military], years: [1933, 1951], places: [EU]}
+    access: {mode: browser, third_party: forbidden, hosts: [collections.arolsen-archives.org, digitalcollections.its-arolsen.org, arolsen-archives.org], note: "https://collections.arolsen-archives.org/en/; no documented public API verified"}
+    terms: "Sensitive personal data; accept online archive terms; copies may require the original owner's permission for publication. https://collections.arolsen-archives.org/en/search/ ; https://arolsen-archives.org/en/materials/terms-of-use/"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "online archive notice and official terms reviewed; browser only"}
+  - id: arch_be
+    name: "Archives de l'État en Belgique (AGATHA)"
+    nature: image
+    reliability: "civil and parish register originals and archival inventories"
+    coverage: {types: [birth, baptism, marriage, death, burial, notarial], places: [BE]}
+    access: {mode: browser, third_party: forbidden, hosts: [agatha.arch.be, genealogie.arch.be, search.arch.be, arch.be, www.arch.be], note: "https://agatha.arch.be/fr/; free user account required for images"}
+    login: {required: true, url: "https://agatha.arch.be/fr/"}
+    terms: "Free registration for images; downloads for personal use, maximum 100 acts/day; publication may incur a fee and is outside this connector. https://agatha.arch.be/fr/help/"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-05, note: "official help and reuse restrictions reviewed; user opens the session"}
+  - id: socface
+    name: "SocFace name base (FranceArchives)"
+    nature: index
+    reliability: "HTR, 15 to 20 % errors announced: a lead, never a source"
+    coverage: {types: [census], years: [1836, 1936], places: [FR], absent: [FR-50, FR-2A, FR-2B, FR-49, FR-64]}
+    access: {mode: html, third_party: forbidden, hosts: [francearchives.gouv.fr], note: "script redirect with a cookie to replay"}
+    witness: {operation: search, args: {name: MARTIN, place: "Besançon"}, expect: {min_results: 100}}
+    terms: "free consultation; no mass harvesting"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-09-15, note: "Manche absent"}
+  - id: familysearch
+    name: "FamilySearch"
+    nature: image
+    reliability: "registers filmed by the Genealogical Society of Utah, and indexes made by volunteers: the image is the source, the index a lead"
+    coverage: {types: [birth, baptism, marriage, death, burial, census, notarial], years: [1500, 1950], places: [EU, US]}
+    access: {mode: browser, third_party: forbidden, hosts: [www.familysearch.org, familysearch.org]}
+    login:
+      required: true
+      url: "https://www.familysearch.org/auth/familysearch/login"
+      hosts: [ident.familysearch.org]
+      logged_in: ["Sign Out", "Se déconnecter"]
+      logged_out: ["Sign In to FamilySearch", "Se connecter à FamilySearch"]
+      session_hours: 12
+    terms: "free account required; the agent drives the browser with the session the user opened (decision 3.1)"
+    image_rights: restricted
+    rate: "1/5s"
+    state: {checked: 2026-10-03, note: "markers to confirm on the live site"}
+  - id: eluxemburgensia
+    name: "eluxemburgensia (BnL)"
+    nature: press
+    reliability: "digitised Luxembourg newspapers; the search page needs a browser"
+    coverage: {types: [press], years: [1841, 1950], places: [LU]}
+    access: {mode: browser, hosts: [eluxemburgensia.lu, viewer.eluxemburgensia.lu, iiif.eluxemburgensia.lu]}
+    guide:
+      - "The viewer is a JavaScript app, but its services are open, with no sign-in: https://viewer.eluxemburgensia.lu/api/viewer2/<ark> gives metadata, pages, table of contents and a word search with coordinates."
+      - "Page images by IIIF: https://iiif.eluxemburgensia.lu/image/iiif/2/ark%3A70795%2F<id>%2Fpages%2F<n> (archive run iiif.region)."
+      - "The ark is the simple ark:70795/<id>; the doubled ark:70795/70795/<id> that a-z.lu prints gives 404."
+      - "Read rights.code of each issue (publicdomain or copyright) before keeping an image: a tile served is not a licence."
+    terms: "free consultation; images kept only for a publicdomain issue"
+    image_rights: restricted
+    rate: "1/2s"
+    state: {checked: 2026-10-09, note: "the search page is a Nuxt shell (detector D3); viewer2 and both IIIF paths (/image/iiif/2/ and /iiif/2/) answered 200 on 2026-10-09"}
+  - id: persee
+    name: "Persée (scholarly journals)"
+    nature: press
+    reliability: "digitised French scholarly journals and society bulletins; the page image is the source"
+    coverage: {types: [press, book], years: [1800, 2020], places: [FR, EU]}
+    access: {mode: browser, hosts: [www.persee.fr]}
+    guide:
+      - "No gate on https://www.persee.fr/doc/<id>, but the text is not in the page, and docAsPDF answers 403 (ALTCHA)."
+      - "Read the page image in the browser: https://www.persee.fr/renderPage/<id-lowercase>/<ID-UPPERCASE>_T1_<PAGE4>_0000_710.jpg. Never pose as a browser to fetch it."
+      - "A scraper's render of an article is empty: an empty render is not an empty page."
+    terms: "free consultation; reuse per Persée's terms"
+    image_rights: mixed
+    rate: "1/2s"
+    state: {checked: 2026-09-12, note: "measured in a real workshop (scraping-web-mcp, persee-lire-un-article)"}
+  - id: hathitrust
+    name: "HathiTrust Digital Library"
+    nature: press
+    reliability: "digitised books and periodicals from research libraries; full text only where the rights allow"
+    coverage: {types: [book, press], years: [1500, 1960], places: [US, EU]}
+    access: {mode: browser, third_party: forbidden, hosts: [babel.hathitrust.org, catalog.hathitrust.org]}
+    guide:
+      - "Try archive.org first. robots.txt refuses third-party readers and a plain request gets 403: the user's browser only."
+      - "Full-text search from a page of babel.hathitrust.org: fetch('/cgi/pt/search?q1=<term>&id=<id>'); CORS blocks it from catalog.hathitrust.org."
+      - "From France a volume after 1900 is search-only: a count of hits, no text. Query in pairs, about 11 s apart, always with a witness word."
+    terms: "rights per volume; search-only volumes give hit counts, not text"
+    image_rights: mixed
+    rate: "1/11s"
+    state: {checked: 2026-09-12, note: "measured in a real workshop; query in pairs with a witness word"}
+  - id: geneanet
+    name: "Geneanet"
+    nature: tree
+    reliability: "family trees and volunteer indexes: a lead, never a record"
+    coverage: {types: [tree], years: [1500, 2026], places: [FR, EU]}
+    access: {mode: browser, hosts: [www.geneanet.org, gw.geneanet.org, en.geneanet.org]}
+    terms: "free and premium content; reuse of trees per their authors"
+    image_rights: restricted
+    rate: "1/5s"
+    state: {checked: 2026-09-12, note: "its Cloudflare gate was down when measured in a real workshop: MCP scrapers got through; check again before relying on it"}

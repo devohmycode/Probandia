@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+    "headers": {
+      "x-goog-api-key": "KEY"
+    },
+    "json": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Recherche généalogique : \"Hugo\" Besançon 1802. Cite les sources en ligne (actes, arbres, registres) concernant des personnes nommées Hugo à Besançon en 1802."
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "google_search": {}
+        }
+      ]
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Je n'ai trouvé aucune source en ligne mentionnant une personne nommée Hugo à Besançon en 1802."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 48,
+      "candidatesTokenCount": 27,
+      "totalTokenCount": 75,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 48
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "x9TdaKv3Ccq7nvgPq5a3sQ4"
+  }
+}

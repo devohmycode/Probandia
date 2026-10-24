@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://google.serper.dev/search?q=%22Hugo%22+Besan%C3%A7on+1802&gl=lu&hl=fr&num=10",
+    "headers": {
+      "X-API-KEY": "KEY"
+    }
+  },
+  "status": 403,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "message": "Unauthorized.",
+    "statusCode": 403
+  }
+}

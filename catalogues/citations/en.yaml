@@ -1,0 +1,138 @@
+# Citation models, in English (GPS6, GPS-D6, GPS-D7).
+#
+# Probandia follows the principles of Elizabeth Shown Mills, Evidence Explained:
+# Citing History Sources from Artifacts to Cyberspace (3rd ed., Baltimore, 2017):
+# three forms (source list entry, first reference note, subsequent short note), a
+# layered citation when a reproduction was consulted, the elements each type needs.
+# The models below are written by the Probandia project in its own words; no example
+# of the book is reproduced. The book stays the reference: cite it, do not copy it.
+#
+# A model is a template: {field} takes a field of the source (see schemas/sources-1.json),
+# [ ... ] is dropped when a field inside it is empty, groups may nest. Derived fields:
+# {name} is the first of names, {names} all of them, {act} goes through terms, dates
+# (act_date, issue_date, accessed) are written with dates. "required" lists the fields
+# a citation cannot do without, those that find the record (GPS-D10): reported when
+# missing, never invented; only they may stand outside [ ]. "recommended" lists the
+# fields a complete citation gives: their absence is a warning, never a failure.
+# "series" names the series of catalogues/source-types.yaml the record belongs to
+# (GPS-D12); null for what is not an archive series (a database, a book, a tree).
+# Each layer (a reproduction consulted) is written after the source in the first note
+# and the source list entry; the short note leaves it out.
+schema: 1
+lang: en
+dates:
+  months: [January, February, March, April, May, June, July, August, September, October,
+           November, December]
+  day: '{d} {month} {y}'
+  month: '{month} {y}'
+terms: {}
+layer_join: '; '
+# page: what is proper to the record, for the PAGE of a GEDCOM citation (GPS6-T6).
+page: '[folio {folio}][, entry {act_no}][, {act}][, {name}][, {act_date}][, class {class}][, no. {matricule}][, page {page}][, {item}][, image {image_no}]'
+types:
+  civil-registration:
+    required: [jurisdiction, register, repository]
+    recommended: [act, act_date]
+    series: civil_registers
+    full: '{jurisdiction}. Civil registration, {register}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, civil registration, {register}[, {reference}][, folio {folio}][, {act}[ no. {act_no}][ of {name}]][, {act_date}]; {repository}.'
+    short: '{jurisdiction}, {register}[, {act}[ no. {act_no}]][, {name}][, {act_date}].'
+  parish-register:
+    required: [jurisdiction, register, repository]
+    recommended: [act, act_date]
+    series: parish_registers
+    full: '{jurisdiction} parish. {register}[, {reference}]. {repository}.'
+    first: '{jurisdiction} parish, {register}[, {reference}][, folio {folio}][, entry {act_no}][, {act}[ of {name}]][, {act_date}]; {repository}.'
+    short: '{jurisdiction} parish, {register}[, folio {folio}][, {act}][, {name}][, {act_date}].'
+  decennial-table:
+    required: [jurisdiction, register, repository]
+    recommended: []
+    series: decennial_tables
+    full: '{jurisdiction}. Ten-year index, {register}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, ten-year index, {register}[, {reference}][, page {page}][, entry for {name}]; {repository}.'
+    short: '{jurisdiction}, ten-year index, {register}[, {name}].'
+  census:
+    required: [jurisdiction, act_date, repository]
+    recommended: []
+    series: census
+    full: '{jurisdiction}. Census of {act_date}[, {reference}]. {repository}.'
+    first: '{jurisdiction}, census of {act_date}[, {reference}][, page {page}][, household of {name}]; {repository}.'
+    short: '{jurisdiction}, census of {act_date}[, page {page}][, {name}].'
+  notarial-act:
+    required: [notary, repository]
+    recommended: [act, act_date, reference]
+    series: notarial
+    full: 'Notarial records, {notary}[, {reference}]. {repository}.'
+    first: '{notary}, notary[, {act}[ of {names}]][, {act_date}][, {reference}][, no. {act_no}]; {repository}.'
+    short: '{notary}[, {act}][, {name}][, {act_date}].'
+  military-register:
+    required: [jurisdiction, class, matricule, repository]
+    recommended: []
+    series: military_registers
+    full: 'Military service registers, {jurisdiction}, class of {class}[, {reference}]. {repository}.'
+    first: 'Military service register, {jurisdiction}, class of {class}, no. {matricule}[ ({name})][, {reference}]; {repository}.'
+    short: 'Service register, {jurisdiction}, class {class}, no. {matricule}[, {name}].'
+  registration:
+    required: [jurisdiction, register, repository]
+    recommended: [act_date]
+    series: registration
+    full: 'Registration office of {jurisdiction}. {register}[, {reference}]. {repository}.'
+    first: 'Registration office of {jurisdiction}, {register}[, {reference}][, folio {folio}][, entry {act_no}][, {act}][ of {names}][, {act_date}]; {repository}.'
+    short: 'Registration, {jurisdiction}, {register}[, {name}][, {act_date}].'
+  newspaper:
+    required: [title, issue_date]
+    recommended: [page]
+    series: press
+    full: '{title}. Newspaper[, {jurisdiction}].'
+    first: '{title}[ ({jurisdiction})], {issue_date}[, page {page}][, item on {names}].'
+    short: '{title}, {issue_date}[, page {page}].'
+  database:
+    required: [title, publisher]
+    recommended: [url, accessed]
+    series: null
+    full: '{publisher}. {title}. Database.[ {url}.]'
+    first: '{publisher}, {title}, database[, entry {item}][ ({url}[, accessed {accessed}])].'
+    short: '{title}[, {item}].'
+  book:
+    required: [title, author]
+    recommended: [published, publisher]
+    series: null
+    full: '{author}. {title}[. {publisher}][, {published}].'
+    first: '{author}, {title}[ ([{publisher}, ]{published})][, page {page}].'
+    short: '{author}, {title}[, page {page}].'
+  online-tree:
+    required: [title, publisher]
+    recommended: [author, url, accessed]
+    series: null
+    full: '[{author}. ]{title}. Online tree, {publisher}.[ {url}.]'
+    first: '[{author}, ]{title}, online tree, {publisher}[ ({url}[, accessed {accessed}])][, entry for {name}].'
+    short: '[{author}, ]{title}[, {name}].'
+  other:
+    required: [title]
+    recommended: [repository]
+    series: null
+    full: '[{author}. ]{title}.[ {repository}.]'
+    first: '[{author}, ]{title}[, {reference}][, page {page}][; {repository}].'
+    short: '{title}[, page {page}].'
+layers:
+  online-image:
+    full: 'Online images[, {title}][, {by}][, {url}].'
+    first: 'online images[, {title}][, {by}][ ({url}[, accessed {accessed}])][, image {image_no}]'
+  microfilm:
+    full: 'Microfilm[, {reference}][, {by}].'
+    first: 'microfilm[ {reference}][, {by}][, item {item}][, image {image_no}]'
+  database:
+    full: 'Database[, {title}][, {by}][, {url}].'
+    first: 'indexed in[ {title}][, {by}][ ({url}[, accessed {accessed}])][, entry {item}]'
+  index:
+    full: 'Index[, {title}][, {by}].'
+    first: 'index[, {title}][, {by}][, {reference}][, entry {item}]'
+  transcription:
+    full: 'Transcription[, {by}][, {title}].'
+    first: 'transcription[ by {by}][, {title}][, {note}]'
+  abstract:
+    full: 'Abstract[, {by}][, {title}].'
+    first: 'abstract[ by {by}][, {title}][, {reference}][, {note}]'
+  publication:
+    full: 'Published in[ {title}][, {by}].'
+    first: 'published in[ {title}][, {by}][, {reference}][, page {item}]'

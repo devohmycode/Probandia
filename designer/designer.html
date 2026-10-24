@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probandia — report template designer</title>
+<style>
+:root { --ink: #1b1b1b; --muted: #555; --paper: #fff; --panel: #f4f4f2; --rule: #d0d0cc; --accent: #0b4f9c;
+  --bad: #a00000; --good: #1d6b3a; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink);
+  background: var(--paper); height: 100vh; display: grid; grid-template-columns: 360px 1fr; }
+aside#panel { background: var(--panel); border-right: 1px solid var(--rule); overflow-y: auto; padding: .8rem 1rem 3rem; }
+main { display: flex; flex-direction: column; min-width: 0; }
+.bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; padding: .5rem .8rem;
+  border-bottom: 1px solid var(--rule); }
+.bar .grow { flex: 1; }
+iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+h1 { font-size: 1.05rem; margin: .2rem 0 .6rem; }
+details { border-top: 1px solid var(--rule); padding: .4rem 0; }
+summary { font-weight: 600; cursor: pointer; padding: .2rem 0; }
+label.f { display: grid; grid-template-columns: 1fr 1.2fr; gap: .5rem; align-items: center; margin: .35rem 0; }
+label.f input[type=text], label.f input[type=number], label.f select { width: 100%; padding: .2rem .3rem; font: inherit; }
+label.f input[type=color] { width: 100%; height: 1.8rem; padding: 0; border: 1px solid var(--rule); }
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
+.gallery button { text-align: left; padding: .4rem .5rem; border: 1px solid var(--rule); background: #fff; cursor: pointer;
+  font: inherit; border-radius: 4px; }
+.gallery button small { display: block; color: var(--muted); }
+.gallery button[aria-pressed=true] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
+button.act { font: inherit; padding: .35rem .7rem; border: 1px solid var(--accent); background: var(--accent); color: #fff;
+  border-radius: 4px; cursor: pointer; }
+button.act.light { background: #fff; color: var(--accent); }
+button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent);
+  outline-offset: 2px; }
+table.contrast { width: 100%; border-collapse: collapse; font-size: .85rem; margin-top: .4rem; }
+table.contrast td { padding: .15rem .3rem; border-bottom: 1px solid var(--rule); }
+.ok { color: var(--good); font-weight: 600; }
+.bad { color: var(--bad); font-weight: 600; }
+.note { color: var(--muted); font-size: .85rem; }
+#raw { width: 100%; min-height: 18rem; font: 12px/1.4 ui-monospace, Consolas, monospace; }
+#message { min-height: 1.2rem; }
+.hidden { display: none; }
+@media (max-width: 800px) { body { grid-template-columns: 1fr; grid-template-rows: auto 70vh; height: auto; } }
+</style>
+</head>
+<body>
+<aside id="panel" aria-label="Settings">
+  <h1 data-t="title">Report template designer</h1>
+  <p class="note" data-t="intro">Everything stays on this computer: no network, no server.</p>
+  <div id="fields"></div>
+  <details id="raw-box" class="hidden" open>
+    <summary data-t="raw">Template made by hand</summary>
+    <p class="note" data-t="rawNote">This template was not made with the designer: edit its text; the preview follows.</p>
+    <textarea id="raw" spellcheck="false" aria-label="Template"></textarea>
+  </details>
+</aside>
+<main>
+  <div class="bar">
+    <label><span data-t="lang">Preview language</span>
+      <select id="lang"><option value="en">English</option><option value="fr">Français</option></select></label>
+    <span class="grow" id="message" role="status" aria-live="polite"></span>
+    <button class="act light" id="open" type="button" data-t="open">Open a template…</button>
+    <input type="file" id="file" accept=".html,text/html" class="hidden">
+    <button class="act light" id="sample" type="button" data-t="sample">Download the sample report</button>
+    <button class="act" id="save" type="button" data-t="save">Download the template</button>
+  </div>
+  <iframe id="preview" title="Preview" sandbox=""></iframe>
+</main>
+<script>
+/*@@DATA@@*/
+</script>
+<script>
+/*@@CODE@@*/
+</script>
+<script>
+"use strict";
+(function () {
+  const D = window.Designer;
+  const UI = {
+    en: {
+      title: "Report template designer", intro: "Everything stays on this computer: no network, no server.",
+      lang: "Preview language", open: "Open a template…", sample: "Download the sample report",
+      save: "Download the template", raw: "Template made by hand",
+      rawNote: "This template was not made with the designer: edit its text; the preview follows.",
+      gallery: "Templates", identity: "Name", colors: "Colours", typography: "Typography", layout: "Width and margins",
+      titlePage: "Title page", headerFooter: "Header and footer", toc: "Contents", statuses: "Statuses",
+      errata: "Errata", notes: "Notes", tree: "Tree colours", print: "Printing",
+      id: "Id (file name)", name: "Name", version: "Version", description: "Description",
+      ink: "Text", muted: "Secondary text", paper: "Paper", link: "Links", rule: "Rules", heading: "Headings",
+      note: "Errata background", noteRule: "Errata rule", body: "Text font", headings: "Heading font",
+      same: "Same as the text", size: "Size (px)", lineHeight: "Line height", font: "Free font (.woff2)",
+      removeFont: "No embedded font", width: "Text width (rem)", marginX: "Side margin (rem)",
+      marginTop: "Top margin (rem)", enabled: "A title page", subtitle: "Subtitle", logo: "Coat of arms or logo",
+      removeLogo: "No image", headerText: "Header text", headerResearch: "Research id in the header",
+      footerGenerated: "Date of the report in the footer", footerText: "Footer text", position: "Position",
+      top: "At the top", none: "None", depth: "Depth", color: "colour", mark: "mark",
+      record: "Record", index: "Index", hypothesis: "Hypothesis", refuted: "Refuted",
+      style: "Style", box: "Box", ruleStyle: "Rules above and below", plain: "Italic only",
+      end: "All at the end", chapter: "After each chapter", treeLine: "Links", paperSize: "Paper",
+      pageMargin: "Page margin (mm)", chapterBreak: "Each chapter on a new page",
+      contrastOk: "contrast", contrastBad: "too low: WCAG AA asks 4.5:1",
+      markNeeded: "a status needs a mark as well as a colour", saved: "Template downloaded: run probandia template import",
+      opened: "Template opened", notTemplate: "This file is not a template", copyOf: "Default is copied: give the copy its own id",
+    },
+    fr: {
+      title: "Générateur de modèles de rapport", intro: "Tout reste sur cet ordinateur : pas de réseau, pas de serveur.",
+      lang: "Langue de l'aperçu", open: "Ouvrir un modèle…", sample: "Télécharger le rapport exemple",
+      save: "Télécharger le modèle", raw: "Modèle fait à la main",
+      rawNote: "Ce modèle n'a pas été fait avec le générateur : modifiez son texte, l'aperçu suit.",
+      gallery: "Modèles", identity: "Nom", colors: "Couleurs", typography: "Typographie", layout: "Largeur et marges",
+      titlePage: "Page de titre", headerFooter: "En-tête et pied de page", toc: "Table des matières",
+      statuses: "Statuts", errata: "Errata", notes: "Notes", tree: "Couleurs de l'arbre", print: "Impression",
+      id: "Identifiant (nom du fichier)", name: "Nom", version: "Version", description: "Description",
+      ink: "Texte", muted: "Texte secondaire", paper: "Papier", link: "Liens", rule: "Filets", heading: "Titres",
+      note: "Fond des errata", noteRule: "Filet des errata", body: "Police du texte", headings: "Police des titres",
+      same: "Celle du texte", size: "Taille (px)", lineHeight: "Interligne", font: "Police libre (.woff2)",
+      removeFont: "Pas de police embarquée", width: "Largeur du texte (rem)", marginX: "Marge latérale (rem)",
+      marginTop: "Marge du haut (rem)", enabled: "Une page de titre", subtitle: "Sous-titre", logo: "Blason ou logo",
+      removeLogo: "Pas d'image", headerText: "Texte de l'en-tête", headerResearch: "Identifiant de la recherche en en-tête",
+      footerGenerated: "Date du rapport en pied de page", footerText: "Texte du pied de page", position: "Position",
+      top: "En haut", none: "Aucune", depth: "Profondeur", color: "couleur", mark: "pictogramme",
+      record: "Acte", index: "Index", hypothesis: "Hypothèse", refuted: "Réfuté",
+      style: "Style", box: "Encadré", ruleStyle: "Filets dessus et dessous", plain: "Italique seulement",
+      end: "Toutes à la fin", chapter: "Après chaque chapitre", treeLine: "Liens", paperSize: "Papier",
+      pageMargin: "Marge de page (mm)", chapterBreak: "Chaque chapitre sur une nouvelle page",
+      contrastOk: "contraste", contrastBad: "trop faible : WCAG AA demande 4,5:1",
+      markNeeded: "un statut a besoin d'un pictogramme en plus de sa couleur",
+      saved: "Modèle téléchargé : lancez probandia template import", opened: "Modèle ouvert",
+      notTemplate: "Ce fichier n'est pas un modèle", copyOf: "Default est copié : donnez un identifiant à la copie",
+    },
+  };
+  let lang = "en";
+  let settings = D.defaults();
+  let raw = null;            // the text of a hand-made template, or null
+  let chosen = null;
+  const tr = (key) => (UI[lang] && UI[lang][key]) || UI.en[key] || key;
+  const $ = (id) => document.getElementById(id);
+
+  function get(path) { return path.split(".").reduce((o, k) => (o == null ? o : o[k]), settings); }
+  function set(path, value) {
+    const keys = path.split(".");
+    let o = settings;
+    for (const k of keys.slice(0, -1)) o = o[k];
+    o[keys[keys.length - 1]] = value;
+  }
+
+  const fontOptions = () => Object.keys(D.FONTS).map((k) => [k, k]);
+  const SECTIONS = [
+    ["identity", [["id", "id", "text"], ["name", "name", "text"], ["version", "version", "text"],
+                  ["description", "description", "text"]]],
+    ["colors", [["colors.ink", "ink", "color"], ["colors.muted", "muted", "color"], ["colors.paper", "paper", "color"],
+                ["colors.link", "link", "color"], ["colors.heading", "heading", "color"], ["colors.rule", "rule", "color"],
+                ["colors.note", "note", "color"], ["colors.noteRule", "noteRule", "color"]], "contrast"],
+    ["typography", [["font.body", "body", "select", fontOptions],
+                    ["font.headings", "headings", "select", () => [["same", tr("same")]].concat(fontOptions())],
+                    ["font.size", "size", "number", null, 12, 24, 1], ["font.lineHeight", "lineHeight", "number", null, 1.1, 2.2, 0.05],
+                    ["font.embedded", "font", "font"]]],
+    ["layout", [["layout.width", "width", "number", null, 28, 80, 1], ["layout.marginX", "marginX", "number", null, 0, 6, 0.25],
+                ["layout.marginTop", "marginTop", "number", null, 0, 8, 0.25]]],
+    ["titlePage", [["titlePage.enabled", "enabled", "check"], ["titlePage.subtitle", "subtitle", "text"],
+                   ["titlePage.logo", "logo", "image"]]],
+    ["headerFooter", [["header.text", "headerText", "text"], ["header.research", "headerResearch", "check"],
+                      ["footer.generated", "footerGenerated", "check"], ["footer.text", "footerText", "text"]]],
+    ["toc", [["toc.position", "position", "select", () => [["top", tr("top")], ["none", tr("none")]]],
+             ["toc.depth", "depth", "number", null, 1, 3, 1]]],
+    ["statuses", D.STATUSES.flatMap((k) => [[`statuses.${k}.color`, k, "color", null, null, null, null, "color"],
+                                             [`statuses.${k}.mark`, k, "text", null, null, null, null, "mark"]])],
+    ["errata", [["errata.style", "style", "select", () => [["box", tr("box")], ["rule", tr("ruleStyle")], ["plain", tr("plain")]]]]],
+    ["notes", [["notes", "notes", "select", () => [["end", tr("end")], ["chapter", tr("chapter")]]]]],
+    ["tree", [["tree.record", "record", "color"], ["tree.index", "index", "color"], ["tree.hypothesis", "hypothesis", "color"],
+              ["tree.line", "treeLine", "color"]]],
+    ["print", [["print.paper", "paperSize", "select", () => [["A4", "A4"], ["Letter", "Letter"]]],
+               ["print.margin", "pageMargin", "number", null, 5, 40, 1], ["print.chapterBreak", "chapterBreak", "check"]]],
+  ];
+
+  function readFile(file, asData) {
+    return new Promise((resolve, reject) => {
+      const r = new FileReader();
+      r.onload = () => resolve(r.result);
+      r.onerror = () => reject(r.error);
+      if (asData) r.readAsDataURL(file); else r.readAsText(file, "utf-8");
+    });
+  }
+
+  function control(path, key, type, options, min, max, step, suffix) {
+    const wrap = document.createElement("label");
+    wrap.className = "f";
+    const name = document.createElement("span");
+    name.textContent = tr(key) + (suffix ? " — " + tr(suffix) : "");
+    wrap.appendChild(name);
+    let input;
+    if (type === "select") {
+      input = document.createElement("select");
+      for (const [value, text] of options()) {
+        const o = document.createElement("option");
+        o.value = value; o.textContent = text;
+        input.appendChild(o);
+      }
+      input.value = String(get(path));
+      input.addEventListener("change", () => { set(path, input.value); update(); });
+    } else if (type === "check") {
+      input = document.createElement("input");
+      input.type = "checkbox";
+      input.checked = !!get(path);
+      input.addEventListener("change", () => { set(path, input.checked); update(); });
+    } else if (type === "image" || type === "font") {
+      input = document.createElement("div");
+      const file = document.createElement("input");
+      file.type = "file";
+      file.accept = type === "image" ? "image/png,image/jpeg,image/svg+xml,image/webp" : ".woff2,.woff,.ttf,.otf";
+      file.addEventListener("change", async () => {
+        if (!file.files[0]) return;
+        const url = await readFile(file.files[0], true);
+        if (type === "image") set(path, url);
+        else set(path, { name: file.files[0].name.replace(/\.[^.]+$/, "").replace(/[^A-Za-z0-9 _-]/g, "") || "Embedded",
+                         dataUrl: url.replace(/^data:[^;,]*/, "data:font/" + (file.files[0].name.split(".").pop() || "woff2")) });
+        update();
+      });
+      const none = document.createElement("button");
+      none.type = "button"; none.className = "act light";
+      none.textContent = tr(type === "image" ? "removeLogo" : "removeFont");
+      none.addEventListener("click", () => { set(path, null); update(); });
+      input.append(file, none);
+    } else {
+      input = document.createElement("input");
+      input.type = type;
+      if (min != null) input.min = min;
+      if (max != null) input.max = max;
+      if (step != null) input.step = step;
+      input.value = get(path) == null ? "" : String(get(path));
+      input.addEventListener("input", () => {
+        let v = type === "number" ? Number(input.value) : input.value;
+        if (type === "number" && !isFinite(v)) return;
+        if (suffix === "mark" && !String(v).trim()) { message(tr("markNeeded"), true); return; }
+        if (path === "id") v = String(v).toLowerCase().replace(/[^a-z0-9-]+/g, "-").replace(/^-+|-+$/g, "");
+        set(path, v);
+        update(false);
+      });
+    }
+    wrap.appendChild(input);
+    return wrap;
+  }
+
+  function gallery() {
+    const box = document.createElement("details");
+    box.open = true;
+    const sum = document.createElement("summary");
+    sum.textContent = tr("gallery");
+    box.appendChild(sum);
+    const grid = document.createElement("div");
+    grid.className = "gallery";
+    for (const [id, text] of Object.entries(DATA.builtin)) {
+      const meta = D.metas(text);
+      const b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(chosen === id));
+      b.innerHTML = "";
+      const strong = document.createElement("strong");
+      strong.textContent = meta.name || id;
+      const small = document.createElement("small");
+      small.textContent = meta.description || "";
+      b.append(strong, small);
+      b.addEventListener("click", () => {
+        chosen = id;
+        raw = null;
+        settings = D.read(text) || D.merge(D.defaults(), { id: id + "-copy", name: (meta.name || id) + " (copy)" });
+        if (!D.read(text)) message(tr("copyOf"));
+        render();
+      });
+      grid.appendChild(b);
+    }
+    box.appendChild(grid);
+    return box;
+  }
+
+  function contrastTable() {
+    const table = document.createElement("table");
+    table.className = "contrast";
+    for (const p of D.contrastPairs(settings)) {
+      const tr_ = document.createElement("tr");
+      const a = document.createElement("td");
+      a.textContent = p.name;
+      const b = document.createElement("td");
+      b.textContent = p.ratio === null ? "?" : p.ratio.toFixed(2) + ":1";
+      b.className = p.ok ? "ok" : "bad";
+      b.title = p.ok ? tr("contrastOk") : tr("contrastBad");
+      tr_.append(a, b);
+      table.appendChild(tr_);
+    }
+    return table;
+  }
+
+  function render() {
+    for (const el of document.querySelectorAll("[data-t]")) el.textContent = tr(el.dataset.t);
+    document.documentElement.lang = lang;
+    const fields = $("fields");
+    fields.innerHTML = "";
+    fields.appendChild(gallery());
+    $("raw-box").classList.toggle("hidden", raw === null);
+    if (raw !== null && $("raw").value !== raw) $("raw").value = raw;
+    if (raw === null) {
+      for (const [title, list, extra] of SECTIONS) {
+        const box = document.createElement("details");
+        box.open = title === "identity" || title === "colors";
+        const sum = document.createElement("summary");
+        sum.textContent = tr(title);
+        box.appendChild(sum);
+        for (const f of list) box.appendChild(control(...f));
+        if (extra === "contrast") { const holder = document.createElement("div"); holder.id = "contrast"; box.appendChild(holder); }
+        fields.appendChild(box);
+      }
+    }
+    update();
+  }
+
+  function template() {
+    return raw !== null ? raw : D.build(settings);
+  }
+
+  function preview() {
+    const tpl = template();
+    const notes = (D.metas(tpl).notes === "chapter") ? "chapter" : "end";
+    return D.fill(tpl, DATA.slots[lang][notes], DATA.labels, lang);
+  }
+
+  function update() {
+    const holder = $("contrast");
+    if (holder) { holder.innerHTML = ""; holder.appendChild(contrastTable()); }
+    $("preview").srcdoc = preview();
+  }
+
+  let timer = null;
+  function message(text, bad) {
+    const el = $("message");
+    el.textContent = text;
+    el.className = "grow " + (bad ? "bad" : "");
+    clearTimeout(timer);
+    timer = setTimeout(() => { el.textContent = ""; }, 6000);
+  }
+
+  function download(name, text) {
+    const blob = new Blob([text], { type: "text/html;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+
+  $("lang").addEventListener("change", () => { lang = $("lang").value; render(); });
+  $("save").addEventListener("click", () => {
+    const tpl = template();
+    download((D.metas(tpl).id || "template") + ".html", tpl);
+    message(tr("saved"));
+  });
+  $("sample").addEventListener("click", () => download("sample-report-" + lang + ".html", preview()));
+  $("open").addEventListener("click", () => $("file").click());
+  $("file").addEventListener("change", async () => {
+    const f = $("file").files[0];
+    if (!f) return;
+    const text = (await readFile(f, false)).replace(/\r\n/g, "\n");
+    if (!D.metas(text).id) { message(tr("notTemplate"), true); return; }
+    const s = D.read(text);
+    chosen = null;
+    if (s) { settings = s; raw = null; } else { raw = text; }
+    message(tr("opened"));
+    render();
+  });
+  $("raw").addEventListener("input", () => { raw = $("raw").value; update(); });
+  const start = (navigator.language || "en").slice(0, 2) === "fr" ? "fr" : "en";
+  lang = start;
+  $("lang").value = start;
+  render();
+})();
+</script>
+</body>
+</html>

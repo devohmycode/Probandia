@@ -1,0 +1,56 @@
+✓ 2026-09-01-ancestors-of-louis-marchand · Who were the ancestors of Louis MARCHAND?
+
+  • verify failed on V-1, V-8
+
+Passes
+  pass  duration  units  native searches  summary
+  ───────────────────────────────────────────────────────────────────────────────────
+     1  15 min    —                    0  parents found; look for the grandparents
+     2  15 min    —                    0  grandparents found; the Perrin line is open
+
+Facts
+  fact                           date        place        status  source
+  ──────────────────────────────────────────────────────────────────────────────────────────────
+  louis-marchand-1898.birth      1898        bourg-vert   record  src-01JA0000000000000000000001
+  louis-marchand-1898.death      1970        ?            index   src-01JA0000000000000000000005
+  henri-marchand-1870.birth      1870        bourg-vert   record  src-01JA0000000000000000000002
+  henri-marchand-1870.death      1931        ?            index   src-01JA0000000000000000000005
+  henri-marchand-1870.marriage   about:1896  bourg-vert   index   src-01JA0000000000000000000004
+  jeanne-roussel-1874.birth      1874        saint-aubry  record  src-01JA0000000000000000000002
+  jeanne-roussel-1874.death      1950        ?            index   src-01JA0000000000000000000005
+  pierre-marchand-1841.birth     1841        bourg-vert   record  src-01JA0000000000000000000003
+  pierre-marchand-1841.death     1899        ?            index   src-01JA0000000000000000000005
+  pierre-marchand-1841.marriage  about:1867  bourg-vert   index   src-01JA0000000000000000000004
+  marie-lebrun-1845.birth        1845        bourg-vert   index   src-01JA0000000000000000000005
+  marie-lebrun-1845.death        1902        ?            index   src-01JA0000000000000000000005
+  auguste-roussel-1840.birth     1840        saint-aubry  record  src-01JA0000000000000000000003
+  auguste-roussel-1840.death     1910        ?            index   src-01JA0000000000000000000005
+  auguste-roussel-1840.marriage  about:1866  saint-aubry  index   src-01JA0000000000000000000004
+  rose-tanguy-1848.birth         1848        les-ormes    index   src-01JA0000000000000000000005
+  rose-tanguy-1848.death         1919        ?            index   src-01JA0000000000000000000005
+
+Negatives
+  search                        state  query
+  ──────────────────────────────────────────────────────────
+  s-01JA00000000000000000SRC02  valid  PERRIN Les Ormes 1818
+
+Hypotheses
+  hypothesis                 question
+  ───────────────────────────────────────────────────────────────
+  h-father-of-louise-perrin  Who was the father of Louise PERRIN?
+
+Gaps in the archives
+  archive      reference  window     kind
+  ────────────────────────────────────────────
+  ad-valombre  3 E 41     1870-1872  destroyed
+
+Rules that failed at the last verify
+  rule  status
+  ────────────
+  V-1   FAIL
+  V-8   FAIL
+
+Tokens of the last pass, by role
+  role        pass  input  output  weighted
+  ─────────────────────────────────────────
+  researcher     2   1200     300      2700

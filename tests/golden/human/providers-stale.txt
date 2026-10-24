@@ -1,0 +1,27 @@
+⚠ 23 entries checked more than 90 days ago
+
+  provider             checked     where to read it again
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  serpapi              2026-10-23  https://serpapi.com/pricing
+  serpapi_bing         2026-10-23  https://serpapi.com/bing-search-api
+  serper               2026-10-23  https://serper.dev/
+  searchapi            2026-10-23  https://www.searchapi.io/pricing
+  openwebninja_search  2026-10-23  https://www.openwebninja.com/api/real-time-web-search
+  openwebninja_news    2026-10-23  https://www.openwebninja.com/api/google-news
+  openwebninja_books   2026-10-23  https://www.openwebninja.com/api/real-time-books-data
+  gemini_grounding     2026-10-23  https://ai.google.dev/gemini-api/docs/google-search
+  brave                2026-10-23  https://brave.com/search/api/
+  staan                2026-10-23  https://staan.ai/
+  marginalia           2026-10-23  https://about.marginalia-search.com/article/api/
+  exa                  2026-10-23  https://exa.ai/pricing
+  parallel             2026-10-23  https://parallel.ai/pricing
+  tavily               2026-10-23  https://docs.tavily.com/documentation/api-credits
+  linkup               2026-10-23  https://www.linkup.so/pricing
+  jina                 2026-10-23  https://jina.ai/reader
+  firecrawl            2026-10-23  https://docs.firecrawl.dev/billing
+  scrapegraph          2026-10-23  https://docs.scrapegraphai.com/knowledge-base/account/pricing
+  zenrows              2026-10-23  https://docs.zenrows.com/fetch/api-reference
+  scraperapi           2026-10-23  https://docs.scraperapi.com/getting-started/quick-start/credits-…
+  apify                2026-10-23  https://apify.com/pricing
+  apify_reader         2026-10-23  https://apify.com/apify/rag-web-browser
+  openrouter           2026-10-23  https://openrouter.ai/docs/api_reference/limits

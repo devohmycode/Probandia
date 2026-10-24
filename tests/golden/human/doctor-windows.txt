@@ -1,0 +1,36 @@
+✓ Probandia is ready
+
+Python
+  ✓ Python 3.12.4
+
+Harness
+  ✓ codex (found by --harness), support: first-class
+    web search               web_search
+    subagents                no
+    question tool            request_user_input
+    messages between agents  send_message
+    hooks                    yes
+    MCP server               yes
+    effort levels            low, medium, high, xhigh, max
+  ⚠ no subagents in plugins: roles run as skills, or as agent files installed apart
+
+Keys
+  ✓ 10 set: BRAVE_API_KEY, TAVILY_API_KEY, EXA_API_KEY, SERPAPI_API_KEY, SERPER_API_KEY,
+    OPENWEBNINJA_API_KEY, FIRECRAWL_API_KEY, ZENROWS_API_KEY, SCRAPERAPI_API_KEY, APIFY_TOKEN
+    12 other keys not set; probandia -u shows what each one adds
+    SERPAPI_API_KEY: one key for 2 entries (serpapi, serpapi_bing), present
+    OPENWEBNINJA_API_KEY: one key for 3 entries (openwebninja_search, openwebninja_news, openwebninja_books), present
+    APIFY_TOKEN: one key for 2 entries (apify, apify_reader), present
+    no .env file: keys can go in ~/.config/probandia/.env, or in .env at the root of a project
+
+Optional tools
+  ✓ playwright  headless browser for pages that need one
+  ⚠ tesseract   OCR of printed records
+                install: winget install UB-Mannheim.TesseractOCR
+                or: scoop install tesseract
+  ⚠ pillow      sheets of views, crops and turns of images
+                install: python -m pip install "Pillow>=12,<13"
+                or: uv pip install --python python "Pillow>=12,<13"
+
+Free-tier catalogue
+  ✓ 2 entries, the oldest checked 40 days ago

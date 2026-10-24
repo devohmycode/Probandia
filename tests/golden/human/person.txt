@@ -1,0 +1,21 @@
+✓ Henri MARCHAND (1870-1931) · marchand
+
+Facts
+  fact      date        place       status  source                       citation
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  birth     1870        bourg-vert  record  src-01JA000000000000000000…  Archives départementales d…
+  death     1931        ?           index   src-01JA000000000000000000…  Archives départementales d…
+  marriage  about:1896  bourg-vert  index   src-01JA000000000000000000…  Cercle généalogique de Val…
+
+Relatives
+  relation  person                name
+  ───────────────────────────────────────────────
+  father    pierre-marchand-1841  Pierre MARCHAND
+  mother    marie-lebrun-1845     Marie LEBRUN
+  spouse    jeanne-roussel-1874   Jeanne ROUSSEL
+  child     louis-marchand-1898   Louis MARCHAND
+
+Gaps in the archives
+  archive      reference  window     kind
+  ────────────────────────────────────────────
+  ad-valombre  3 E 41     1870-1872  destroyed

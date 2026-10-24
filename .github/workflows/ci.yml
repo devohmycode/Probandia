@@ -1,0 +1,135 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+# Actions are pinned by commit SHA; the comment names the release.
+# tools/ci_local.py replays these jobs on the development machine (Windows, and Ubuntu through WSL):
+# tests/unit/test_ci_local.py reads this file, so a step it does not understand fails the suite.
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        python: ["3.11", "3.14"]
+        exclude:
+          - os: macos-latest
+            python: "3.11"
+          # macOS on master only: anywhere else, this entry removes it
+          - os: ${{ github.ref == 'refs/heads/master' && 'none' || 'macos-latest' }}
+        include:
+          - os: ubuntu-latest
+            python: "3.12"
+          - os: ubuntu-latest
+            python: "3.13"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Help runs with no package installed
+        run: python -I run_probandia.py --help
+      - name: Install development dependencies (the dev extra of pyproject.toml)
+        run: python -m pip install --editable ".[dev]"
+      # tools/run_tests.py: the modules of `python -m unittest discover -s tests`, shared out between processes
+      - name: Unit and integration tests (golden files, sample project, pseudo-locale, fixtures)
+        shell: bash
+        run: |
+          python tools/run_tests.py -v 2>&1 | tee "$RUNNER_TEMP/unittest.log"
+          if grep -n "ResourceWarning" "$RUNNER_TEMP/unittest.log"; then
+            echo "::error::the test suite leaves a file open (ResourceWarning above)"
+            exit 1
+          fi
+      # a red step above does not hide the checks below
+      - name: Lint (ruff, the version pinned in the dev extra)
+        if: ${{ !cancelled() }}
+        run: python -m ruff check .
+      - name: The sample projects are what their generator writes
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          python tools/make_sample_project.py
+          drift="$(git status --porcelain -- tests/sample-project tests/sample-project-gps)"
+          if [ -n "$drift" ]; then
+            printf '%s\n' "$drift"
+            echo "::error::tools/make_sample_project.py does not write tests/sample-project and tests/sample-project-gps as committed"
+            exit 1
+          fi
+      - name: Generated manifests are up to date
+        if: ${{ !cancelled() }}
+        run: python run_probandia.py manifests check
+      - name: The installed command finds its data (wheel built, installed, run)
+        if: ${{ !cancelled() }}
+        run: python tools/check_wheel.py
+      - name: Startup time of the engine and of the guard (job summary)
+        if: ${{ !cancelled() }}
+        run: python tools/startup_time.py
+
+  tui:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        python: ["3.11", "3.14"]
+        exclude:
+          - os: macos-latest
+            python: "3.11"
+          # macOS on master only: anywhere else, this entry removes it
+          - os: ${{ github.ref == 'refs/heads/master' && 'none' || 'macos-latest' }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install the optional terminal interface
+        run: python -m pip install --editable ".[tui]"
+      - name: Terminal forms, application and dependency-free entry point, without network
+        shell: bash
+        run: |
+          python -c "import textual"
+          python tools/run_tests.py -v --pattern "test_tui*.py"
+
+  gedcom:
+    # GEDCOM 7 exports, re-read by python-gedcom7 and checked by js-gedcom (development tools only).
+    # tools/ci_local.py runs this job under Windows (Git Bash), where Node is installed.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+      - name: Tools
+        run: |
+          python -m pip install "gedcom7==1.2.0"
+          git clone https://github.com/gedcom7code/js-gedcom.git "$RUNNER_TEMP/js-gedcom"
+          git -C "$RUNNER_TEMP/js-gedcom" checkout 9296068bd6a461cdd93f9edc74d8457995897afe
+          curl -sSfL -o "$RUNNER_TEMP/g7validation.json" https://raw.githubusercontent.com/FamilySearch/GEDCOM-registries/7b11592f13f2d8ce8e180db36f896dd1c5426c6c/generated_files/g7validation.json
+      - name: Export the sample family
+        run: |
+          cp -r tests/fixtures/project "$RUNNER_TEMP/p"
+          cp tests/fixtures/tree/persons.yaml "$RUNNER_TEMP/p/families/hugo/index/persons.yaml"
+          PROBANDIA_SESSION=ci python run_probandia.py --project "$RUNNER_TEMP/p" export gedcom7
+          PROBANDIA_SESSION=ci python run_probandia.py --project "$RUNNER_TEMP/p" export gedcom7 --living exclude --include-refuted
+      - name: Re-read with python-gedcom7
+        run: python tools/check_gedcom7.py "$RUNNER_TEMP"/p/exports/*.gdz
+      - name: Validate with js-gedcom
+        run: |
+          for f in "$RUNNER_TEMP"/p/exports/*.gdz; do
+            node tools/validate_gedcom7.mjs "$RUNNER_TEMP/js-gedcom" "$RUNNER_TEMP/g7validation.json" "$f"
+          done
+      # version-1.0.0 T218, PRD N-9: Claude Code's own validator, which runs without an account (checked on
+      # 21 October 2026 with an empty configuration). Here because this job has Node. agy and grok have
+      # validators too, but no package to fetch here: their outputs are recorded in TESTS.md under T-13.
+      - name: Validate manifests
+        run: |
+          for target in . .claude-plugin/plugin.json skills agents commands; do
+            npx --yes @anthropic-ai/claude-code@2.1.304 plugin validate --strict "$target"
+          done

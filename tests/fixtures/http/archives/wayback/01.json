@@ -1,0 +1,11 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://web.archive.org/cdx/search/cdx?url=gallica.bnf.fr%2F&output=json&filter=statuscode%3A200&limit=3"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json"
+ },
+ "body": "[[\"urlkey\",\"timestamp\",\"original\",\"mimetype\",\"statuscode\",\"digest\",\"length\"],\n[\"fr,bnf,gallica)/\",\"19980213022257\",\"http://gallica.bnf.fr:80/\",\"text/html\",\"200\",\"PZZTL4X25WDEXRQBNVEUH3FCGZDFLCVL\",\"1125\"],\n[\"fr,bnf,gallica)/\",\"19980213022257\",\"http://gallica.bnf.fr:80/\",\"text/html\",\"200\",\"PZZTL4X25WDEXRQBNVEUH3FCGZDFLCVL\",\"1125\"],\n[\"fr,bnf,gallica)/\",\"19980423163813\",\"http://gallica.bnf.fr:80/\",\"text/html\",\"200\",\"PZZTL4X25WDEXRQBNVEUH3FCGZDFLCVL\",\"1124\"]]\n"
+}

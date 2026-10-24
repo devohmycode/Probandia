@@ -1,0 +1,11 @@
+✓ Where the settings come from, lowest layer first
+
+  1. ✓ default      built into the engine
+  2. · harness      --harness-options, or the options the harness remembered
+  3. ✓ user         <tmp>/u/config.toml
+  4. ✓ project      <tmp>/sample/probandia.toml
+  5. · local        <tmp>/sample/probandia.local.toml
+  6. ✓ environment  PROBANDIA_REPORT_MODE
+  7. · argument     the options of the command
+
+a higher layer wins; ✓ marks a layer that sets something here

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "probandia": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "${PLUGIN_ROOT}/run_probandia.py",
+        "mcp"
+      ],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

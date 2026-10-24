@@ -1,0 +1,10 @@
+# expect: $.facts["sophie-trebuchet-1772.birth"].index
+schema: 1
+adapter: prototype
+root: ../atelier
+families: {}
+persons: {}
+facts:
+  sophie-trebuchet-1772.birth: {person: sophie-trebuchet-1772, key: naissance}
+researches: {}
+synced: {sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef, at: "2026-10-06T10:00:00Z"}

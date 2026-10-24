@@ -1,0 +1,49 @@
+schema: 1
+id: 2026-09-04-birth-of-henri-marchand
+family: marchand
+question: Quand et où est né Henri MARCHAND, et de qui ?
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+- html
+created: '2026-09-04T09:00:00Z'
+created_by:
+  harness: cli
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: open
+passes: 1
+questions:
+- id: Q1
+  text: Quand et où est né Henri MARCHAND ?
+  type: birth
+  persons:
+  - henri-marchand-1870
+  window:
+    from: 1869
+    to: 1871
+  places:
+  - bourg-vert
+  status: answered
+  conclusion:
+  - henri-marchand-1870.birth
+  updated: '2026-09-04T11:10:00Z'
+- id: Q2
+  text: Qui sont les parents d'Henri MARCHAND ?
+  type: parents
+  persons:
+  - henri-marchand-1870
+  window:
+    from: 1869
+    to: 1871
+  places:
+  - bourg-vert
+  status: answered
+  conclusion:
+  - henri-marchand-1870.birth
+  updated: '2026-09-04T11:11:00Z'

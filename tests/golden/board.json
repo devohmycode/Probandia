@@ -1,0 +1,143 @@
+{
+ "status": "OK",
+ "values": {
+  "VERSION": "<version>",
+  "PROJECT": ".",
+  "FAMILIES": 1,
+  "RESEARCHES": 1,
+  "ALERTS": 0,
+  "RESEARCH": "2026-09-01-ancestors-of-louis-marchand"
+ },
+ "lines": [],
+ "details": null,
+ "data": {
+  "project": [
+   {
+    "families": [
+     "marchand"
+    ],
+    "counted_projects": 0
+   }
+  ],
+  "research": [
+   {
+    "research": "2026-09-01-ancestors-of-louis-marchand",
+    "family": "marchand",
+    "pass": 2,
+    "open": false,
+    "steps": [
+     {
+      "step": "plan",
+      "done": true
+     },
+     {
+      "step": "search",
+      "done": true
+     },
+     {
+      "step": "facts",
+      "done": true
+     },
+     {
+      "step": "report",
+      "done": true
+     },
+     {
+      "step": "verify",
+      "done": false
+     },
+     {
+      "step": "end",
+      "done": true
+     }
+    ],
+    "native": {
+     "used": 0,
+     "per_pass": 40,
+     "left": 40,
+     "session_left": null
+    },
+    "searches": [
+     {
+      "engine": "ad-valombre",
+      "query": "PERRIN Les Ormes 1818",
+      "result": "negative",
+      "ts": "2026-09-02T10:02:00Z"
+     },
+     {
+      "engine": "ad-valombre",
+      "query": "MARCHAND Bourg-Vert 1898",
+      "result": "positive",
+      "ts": "2026-09-01T10:02:00Z"
+     }
+    ],
+    "pending": 0,
+    "failed_rules": null
+   }
+  ],
+  "researches": [
+   {
+    "research": "2026-09-01-ancestors-of-louis-marchand",
+    "family": "marchand",
+    "status": "open",
+    "passes": 2,
+    "open_pass": null,
+    "open_since": null,
+    "run_mode": "session",
+    "agents": null,
+    "failed_rules": null,
+    "pending": 0,
+    "last_activity": "2026-09-02T10:50:00Z"
+   }
+  ],
+  "accounts": [
+   {
+    "account": "jina",
+    "name": "Jina Reader",
+    "platform": "jina",
+    "entries": [
+     "jina"
+    ],
+    "usable": [
+     "jina"
+    ],
+    "out": {},
+    "roles": [
+     "read"
+    ],
+    "section": "read",
+    "state": "ready",
+    "unit": "token",
+    "amount": 10000000,
+    "used": 0,
+    "reserve": 1000000,
+    "left": 9000000,
+    "cap": null,
+    "ceiling": 10000000,
+    "fraction": 0.9,
+    "pays": {
+     "search": 900,
+     "read": 3000
+    },
+    "period": "once",
+    "renewal": {
+     "kind": "never",
+     "at": null
+    },
+    "source": "local",
+    "synced_at": null,
+    "gap": null,
+    "balance": "none",
+    "key": "JINA_API_KEY"
+   }
+  ],
+  "alerts": [],
+  "next": [
+   {
+    "command": "/probandia:resume 2026-09-01-ancestors-of-louis-marchand",
+    "why": "in your agent, for the next pass",
+    "research": "2026-09-01-ancestors-of-louis-marchand"
+   }
+  ]
+ }
+}

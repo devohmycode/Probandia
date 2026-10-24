@@ -1,0 +1,6 @@
+# expect: $.sources[0].type
+schema: 1
+sources:
+- id: src-01JA0000000000000000000001
+  type: baptism
+  repository: Archives départementales du Doubs

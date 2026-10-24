@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://s.jina.ai/?q=%22Hugozzq%22+Besan%C3%A7on+1802&num=5&gl=lu&hl=fr",
+    "headers": {
+      "Authorization": "Bearer KEY",
+      "Accept": "application/json"
+    },
+    "json": null
+  },
+  "status": 422,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "data": null,
+    "code": 422,
+    "name": "AssertionFailureError",
+    "status": 42206,
+    "message": "No search results available for query \"Hugozzq\" Besançon 1802",
+    "readableMessage": "AssertionFailureError: No search results available for query \"Hugozzq\" Besançon 1802"
+  }
+}

@@ -1,0 +1,11 @@
+⚠ 1 question · 4 holes · 2026-09-30-parents-of-victor-hugo
+
+  ⚠ Q1  parents · 1890
+     source type                 state      years  repositories        searches, gaps, or what is left
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────
+  ✓  civil registers             consulted   1890  ad25, openarchives  s-01JB0000000000000000000001
+  ✗  ten-year indexes            to do       1890  —                   search: no repository known (1890)
+  ⚠  census lists                gap         1890  —                   G1
+  ✗  notarial records            to do       1890  —                   search: no repository known (1890)
+  ✗  military service registers  to do       1890  —                   search: no repository known (1890)
+  ✗  registration and estates    to do       1890  —                   search: no repository known (1890)

@@ -1,0 +1,146 @@
+schema: 1
+searches:
+- research: 2026-09-01-ancestors-of-louis-marchand
+  kind: archive
+  family: null
+  filters: null
+  support: image
+  source_state: ok
+  recheck_if: null
+  recheck_after: null
+  units: null
+  proves: null
+  failure: null
+  id: s-01JA00000000000000000SRC01
+  ts: '2026-09-01T10:02:00Z'
+  engine: ad-valombre
+  query: MARCHAND Bourg-Vert 1898
+  variants:
+  - Marchand
+  - Marchant
+  window:
+    from: 1897
+    to: 1899
+    places:
+    - Bourg-Vert
+  results: 1
+  result: positive
+  witness: null
+  pass: 1
+- research: 2026-09-01-ancestors-of-louis-marchand
+  kind: archive
+  family: null
+  filters: null
+  support: image
+  source_state: ok
+  recheck_if: ad-valombre covers 1818
+  recheck_after: null
+  units: null
+  proves: null
+  failure: null
+  id: s-01JA00000000000000000SRC02
+  ts: '2026-09-02T10:02:00Z'
+  engine: ad-valombre
+  query: PERRIN Les Ormes 1818
+  variants:
+  - Perrin
+  - Perin
+  window:
+    from: 1815
+    to: 1821
+    places:
+    - Les Ormes
+  results: 0
+  result: negative
+  witness:
+    operation: search
+    args:
+      q: TANGUY
+    expected: at least 1
+    passed: true
+    ts: '2026-09-02T09:50:00Z'
+  pass: 2
+- research: 2026-09-04-birth-of-henri-marchand
+  kind: archive
+  family: null
+  support: image
+  source_state: ok
+  recheck_if: null
+  recheck_after: null
+  units: null
+  proves: null
+  failure: null
+  variants: &id001
+  - Marchand
+  - Marchant
+  witness: null
+  result: positive
+  pass: 1
+  id: s-01JA00000000000000000SRC03
+  ts: '2026-09-04T10:02:00Z'
+  engine: ac_bourg_vert
+  query: MARCHAND Bourg-Vert naissances 1870
+  filters:
+    archive: ac_bourg_vert
+  window:
+    from: 1869
+    to: 1871
+    places:
+    - Bourg-Vert
+  results: 1
+- research: 2026-09-04-birth-of-henri-marchand
+  kind: archive
+  family: null
+  support: image
+  source_state: ok
+  recheck_if: null
+  recheck_after: null
+  units: null
+  proves: null
+  failure: null
+  variants: *id001
+  witness: null
+  result: positive
+  pass: 1
+  id: s-01JA00000000000000000SRC04
+  ts: '2026-09-04T10:03:00Z'
+  engine: ad_valombre
+  query: MARCHAND tables décennales Bourg-Vert 1863-1872
+  filters:
+    archive: ad_valombre
+    types:
+    - decennial_tables
+  window:
+    from: 1863
+    to: 1872
+    places:
+    - Bourg-Vert
+  results: 1
+- research: 2026-09-04-birth-of-henri-marchand
+  kind: archive
+  family: null
+  support: image
+  source_state: ok
+  recheck_if: null
+  recheck_after: null
+  units: null
+  proves: null
+  failure: null
+  variants: *id001
+  witness: null
+  result: positive
+  pass: 1
+  id: s-01JA00000000000000000SRC05
+  ts: '2026-09-04T10:04:00Z'
+  engine: ad_valombre
+  query: MARCHAND recensement Bourg-Vert 1872
+  filters:
+    archive: ad_valombre
+    types:
+    - census
+  window:
+    from: 1869
+    to: 1872
+    places:
+    - Bourg-Vert
+  results: 1

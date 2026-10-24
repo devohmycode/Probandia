@@ -1,0 +1,18 @@
+<a id="s-coverage-q1"></a>
+
+### 2.1 Couverture des sources de Q1
+
+| Type de source | Lieux | Années | État | Recherches, lacunes ou raison |
+|---|---|---|---|---|
+| état civil | Auxon-Dessous | 1890 | consulté | ad25: “Hugot Auxon-Dessous” |
+| tables décennales | Auxon-Dessous | 1890 | à faire |  |
+| recensements | Auxon-Dessous | 1890 | lacune | G1 |
+| minutes notariales | Auxon-Dessous | 1890 | sans objet | the family owned nothing: no notary would have been called |
+| registres matricules | Auxon-Dessous | 1890 | à faire |  |
+| enregistrement et successions | Auxon-Dessous | 1890 | lacune non justifiée | G2 |
+
+**Lacunes**
+
+- **G1** — ad25, 6 M 260, 1886–1891, registres manquants: the finding aid of 6 M lists no census of Auxon-Dessous for 1886 and 1891
+- **G2** — ad25, 1880–1900, registres lacunaires: *lacune non justifiée*
+

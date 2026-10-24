@@ -1,0 +1,20 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000101
+  type: civil-registration
+  repository: Archives départementales de Valombre
+  collection: État civil, Saint-Aubry, mariages 1825
+  jurisdiction: Saint-Aubry
+  act_no: '7'
+  act_date: '1825-05-10'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000101.md
+  citation: Saint-Aubry, mariages 1825, acte n° 7
+- id: src-01JT0000000000000000000102
+  type: decennial-table
+  repository: Archives départementales de Valombre
+  collection: Tables décennales, Saint-Aubry, décès 1863-1872
+  act_date: '1873-01-15'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000102.md
+  citation: Saint-Aubry, tables décennales des décès 1863-1872

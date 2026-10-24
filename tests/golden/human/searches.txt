@@ -1,0 +1,7 @@
+✓ 2 searches
+
+Searches
+  search                 family    date        engine       query                  result    results
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  s-01JA00000000000000…  marchand  2026-09-01  ad-valombre  MARCHAND Bourg-Vert …  positive        1
+  s-01JA00000000000000…  marchand  2026-09-02  ad-valombre  PERRIN Les Ormes 1818  negative        0

@@ -1,0 +1,37 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. /usage is free: the count moved only with the search",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/usage?api_id=realtime_web_search"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "65687498-179c-4ff6-9298-c517712fe3d9",
+    "data": {
+      "api_id": "realtime_web_search",
+      "plan": {
+        "id": "68b9493dcdafc4f4e0b728f4",
+        "key": "basic",
+        "nickname": "Basic",
+        "is_free": true
+      },
+      "status": "active",
+      "term": "month",
+      "period_start": "2026-10-02T13:31:00.000Z",
+      "period_end": "2026-11-02T13:31:00.000Z",
+      "quotas": [
+        {
+          "name": "Requests",
+          "limit": 100,
+          "used": 0,
+          "remaining": 100,
+          "reset_at": "2026-11-02T13:31:00.000Z"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/workshop-link-1.json",
+  "title": "workshop.yaml",
+  "description": "The link between a Probandia project and the workshop it lives in (docs/workshop-sync.md, WS1): which person, fact and research of Probandia stand for what in the workshop, and what the workshop needs back that Probandia's own records cannot hold.",
+  "type": "object",
+  "required": ["schema", "adapter", "root", "families", "persons", "facts", "researches", "synced"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": 1},
+    "adapter": {"enum": ["prototype"], "description": "the workshop's format"},
+    "root": {"type": "string", "minLength": 1, "description": "the workshop folder, relative to the project ('.' when they are the same)"},
+    "families": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/slug"},
+      "additionalProperties": {"type": "array", "items": {"$ref": "#/$defs/wid"}},
+      "description": "each family of Probandia, with the workshop ids of its persons"
+    },
+    "persons": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/slug"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["workshop"],
+        "additionalProperties": false,
+        "properties": {
+          "workshop": {"$ref": "#/$defs/wid"},
+          "generation": {"$ref": "#/$defs/nroman"},
+          "volet": {"$ref": "#/$defs/nroman"},
+          "chapitre": {"$ref": "#/$defs/nroman"}
+        }
+      },
+      "description": "Probandia's person id -> the workshop's, with the markers of the person"
+    },
+    "facts": {
+      "type": "object",
+      "propertyNames": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["person", "key", "index"],
+        "additionalProperties": false,
+        "properties": {
+          "person": {"$ref": "#/$defs/wid"},
+          "key": {"type": "string", "pattern": "^[a-z_]+$", "description": "naissance, deces…; unions for a union"},
+          "index": {"type": ["integer", "null"], "minimum": 0, "description": "the rank in a list (unions, or a key that holds a list); null for a single map"},
+          "annee": {"type": ["integer", "null"]},
+          "date_text": {"type": ["string", "null"], "description": "the date as the workshop wrote it"},
+          "volet": {"$ref": "#/$defs/nroman"},
+          "chapitre": {"$ref": "#/$defs/nroman"},
+          "rapport": {"type": ["string", "null"], "description": "null: the report of origin"}
+        }
+      },
+      "description": "Probandia's fact id -> where the fact is in the workshop, with the markers Probandia's facts cannot hold"
+    },
+    "researches": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/slug"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["rapport", "origine"],
+        "additionalProperties": false,
+        "properties": {
+          "rapport": {"type": "string", "pattern": "^[a-z0-9]+([-_][a-z0-9]+)*$", "description": "the folder of rapports/"},
+          "origine": {"type": "boolean", "description": "the report of origin: its facts carry no rapport key"},
+          "volet": {"$ref": "#/$defs/nroman"},
+          "chapitre": {"$ref": "#/$defs/nroman"}
+        }
+      },
+      "description": "each research written to the workshop, with its report and the markers of its new facts (WS-D5)"
+    },
+    "superseded": {
+      "type": "object",
+      "propertyNames": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.[a-z_]+(\\.[0-9]+)?$"},
+      "additionalProperties": {"type": "string"},
+      "description": "a fact of Probandia refuted by workshop pull -> the fact that took its place in the workshop's slot"
+    },
+    "synced": {
+      "type": "object",
+      "required": ["sha256", "at"],
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "of commun/personnes.yaml at the last import, push or pull"},
+        "at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+        "pushed": {"type": "integer", "minimum": 0},
+        "pulled": {"type": "integer", "minimum": 0}
+      }
+    }
+  },
+  "$defs": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 64},
+    "wid": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "an id of the workshop (its own rule, outils/validation.py)"},
+    "nroman": {"type": ["string", "null"], "pattern": "^[IVXLCDM]+$"}
+  }
+}

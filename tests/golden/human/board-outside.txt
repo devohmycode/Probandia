@@ -1,0 +1,9 @@
+Probandia <version> · no project here
+
+Lowest quotas
+ ▸ Apify 989 searches or 1,730 pages · Firecrawl 450 searches or 900 pages · Jina Reader 900 searches or 3,000 pages   probandia -u
+
+Next
+ → probandia new "<question>"  create a project here, with its first research
+ → probandia -p <folder>       work in a project elsewhere
+ → probandia -u                every free quota

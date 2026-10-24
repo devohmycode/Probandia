@@ -1,0 +1,40 @@
+schema: 1
+persons:
+- id: francois-le-bihan-1791
+  names:
+    given: François
+    surname: LE BIHAN
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: francois-le-bihan-1791.death
+    type: death
+    date:
+      value: '1813-11-30'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Mayence, hôpital militaire
+    status: record
+    source: src-01JT0000000000000000000301
+    excerpt:
+      kind: transcription
+      lines:
+      - 4
+      - 7
+      text: François Le Bihan, fusilier au soixante-dixième régiment de ligne, né aux Ormes le quatre
+        avril mil sept cent quatre-vingt-onze, fils de Hervé Le Bihan et de Marie Le Gall, est décédé
+        à l'hôpital militaire de Mayence le trente novembre mil huit cent treize, des suites de fièvre
+        ; extrait certifié conforme par le conseil
+      sha256: f30d4af5786bb77aa6cae5a76bc9db262efae72c9262e9b165dc2f81cbc27e73
+    evidence:
+      source: derivative
+      information: primary
+      evidence: direct
+    note: transcrit aux Ormes le 12 juin 1815, d'après l'extrait du régiment
+    research: 2026-10-14-deces-de-francois-le-bihan
+    pass: 1

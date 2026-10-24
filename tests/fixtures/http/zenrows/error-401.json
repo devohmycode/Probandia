@@ -1,0 +1,21 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/?apikey=invalid-key-probe&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLuxembourg_City"
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/problem+json",
+    "X-Request-Cost": "0",
+    "X-Request-Credits": "0"
+  },
+  "body": {
+    "code": "AUTH002",
+    "detail": "The apikey sent does not match the expected format. The apikey must match the following regular expression: /^[0-9][a-f]{40}$/",
+    "instance": "/v1",
+    "status": 401,
+    "title": "Invalid apikey provided (AUTH002)",
+    "type": "https://docs.zenrows.com/api-error-codes#AUTH002"
+  }
+}

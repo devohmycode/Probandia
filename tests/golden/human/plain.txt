@@ -1,0 +1,12 @@
+[!] warning
+  providers     3
+  keys missing  0
+  synced        yes
+  log           —
+
+  - the free quota of serper expires on 14 March 2027; nothing is paid
+    beyond it, and the next provider of the same family takes over
+
+  provider  serpapi ready left=199
+
+details: families/marchand/work/details/x.md

@@ -1,0 +1,20 @@
+{
+  "_source": "made from docs.firecrawl.dev/api-reference/endpoint/map, read on 2026-10-14; never a live answer",
+  "request": {
+    "method": "POST",
+    "url": "https://api.firecrawl.dev/v2/map",
+    "headers": {"Authorization": "Bearer KEY"},
+    "json": {"url": "https://registres.example.org/", "limit": 100, "sitemap": "include", "includeSubdomains": false}
+  },
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "success": true,
+    "links": [
+      {"url": "https://registres.example.org/", "title": "Registres de Besançon"},
+      {"url": "https://registres.example.org/naissances/1802", "title": "Naissances 1802"},
+      {"url": "https://registres.example.org/naissances/1803", "description": "Naissances 1803"},
+      {"url": "https://registres.example.org/mariages/1822"}
+    ]
+  }
+}

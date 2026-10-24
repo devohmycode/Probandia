@@ -1,0 +1,91 @@
+# A complete proposal, valid against schemas/proposal-1.json, on an invented family.
+# `propose --example <part>` prints one part of it: persons, facts, sources,
+# searches, hypotheses, errata, refutations, sections. Replace every id, date and text with
+# your own: an excerpt names lines of the source's transcription, or comes from
+# `read <url> --quote <n>`, never typed by hand.
+schema: 1
+id: 01J9ZM0000000000000000000A          # a ULID; leave it out and propose gives one
+research: 2026-09-30-parents-of-emile-marchand
+pass: 2
+author: {harness: claude-code, agent: session}
+persons:
+  # each person a fact names whom the family lacks yet (a new research's subject too); id <given>-<surname>-<year>
+  - id: louise-robin-1824
+    names: {given: Louise, surname: ROBIN}
+    sex: F
+    living: false
+    parents: {father: null, mother: null}
+    spouses:
+      - {person: pierre-marchand-1822, marriage: pierre-marchand-1822.marriage}   # {person, marriage}; marriage may be null
+    facts: []   # empty: their facts go in facts, whose ids name them
+facts:
+  # id <person>.<type>, then .2, .3 for a second fact of the same type
+  - id: emile-marchand-1851.birth
+    type: birth
+    date: {value: '1851-03-12', qualifier: exact, original: "12 mars 1851"}   # quote any text holding : [ ] { } #
+    place: {id: hautbois, as_written: "Hautbois (Holtzbach)"}             # null, or {id, as_written}: id null if not in places
+    status: record      # record: read on the image; index: an index or another's transcription; hypothesis, refuted
+    source: src-01J9ZM0000000000000000000B
+    excerpt: {source: src-01J9ZM0000000000000000000B, lines: 4-5}         # lines of its transcription: propose copies them
+    uncertain_reading: null   # a name, date or place read in doubt: transcribe check's UNCERTAIN_READING= text
+    note: ""
+  - id: louise-robin-1824.birth
+    type: birth
+    date: {value: '1824', qualifier: about}
+    place: null
+    status: hypothesis
+    source: null
+    note: "age of 27 at her son's birth"
+sources:
+  # id src-<ULID>; `cite --form --type <type>` lists the fields of a type
+  - id: src-01J9ZM0000000000000000000B
+    type: civil-registration
+    repository: Archives communales de Hautbois
+    collection: "État civil, Hautbois, naissances 1851"
+    act_no: "12"
+    act_date: '1851-03-13'
+    image: evidence/hautbois-1851-12.jpg
+    transcription: evidence/transcriptions/src-01J9ZM0000000000000000000B.md
+    citation: "Hautbois, naissances 1851, acte n° 12 (Archives communales de Hautbois)"
+searches:
+  # a negative needs its variants, its window and a witness passed within witness.max_age_hours
+  - id: s-01J9ZM0000000000000000000C
+    ts: '2026-09-30T10:00:00Z'
+    kind: archive
+    engine: openarchives
+    query: "MARCHAND mariage Hautbois"
+    variants: [MARCHAND, MARCHANT, MARCHAN]
+    window: {from: 1845, to: 1855, places: [Hautbois]}
+    filters: {register: "Hautbois, mariages 1845-1855", views: "4-24"}   # what was read, view by view
+    result: negative
+    support: index
+    source_state: complete               # the state of the source searched: a negative needs it (V-3)
+    witness: {operation: openarchives.witness, passed: true, ts: '2026-09-30T09:58:00Z'}
+hypotheses:
+  # two readings or more, kept open until a source tells them apart
+  - id: h-mother-of-emile
+    question: "Who was Émile's mother?"
+    hypotheses:
+      - {id: a, statement: "Louise ROBIN", status: open}
+      - {id: b, statement: "Marie LAMBERT", status: open}
+    evidence:
+      - {ref: emile-marchand-1851.birth, marks: {a: compatible, b: neutral}}
+errata:
+  # what an earlier pass got wrong: target a section or a fact
+  - target: {section: null, fact: emile-marchand-1851.birth}
+    wrong: "born on 2 March 1851"
+    correction: "born on 12 March 1851: the act reads « douze »"
+    cause: misreading                    # misreading, homonym, faulty-index, outdated-negative, wrong-inference, tool-failure, missing-source, other
+    detection: "Reading of the act itself, line 4"
+refutations:
+  # a fact of the family found wrong: it becomes refuted, never deleted; the engine dates it (pass, volet)
+  - fact: emile-marchand-1851.baptism
+    reason: "the index gave the baptism of a namesake, born in Vieilleville"
+    cause: homonym                       # the causes of errata
+sections:
+  # the report text: see the `report` skill; [[f:<fact id>]] cites a fact
+  - parent: null
+    kind: chapter
+    title: "La naissance d'Émile"
+    body_md: "Émile MARCHAND naît le 12 mars 1851 à Hautbois [[f:emile-marchand-1851.birth]]."
+    facts: [emile-marchand-1851.birth]

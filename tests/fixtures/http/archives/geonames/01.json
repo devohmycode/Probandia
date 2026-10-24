@@ -1,0 +1,12 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "http://api.geonames.org/searchJSON?q=Octeville&maxRows=10&username=USER&country=FR"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json;charset=UTF-8"
+ },
+ "note": "built from the documented searchJSON answer (www.geonames.org/export/geonames-search.html)",
+ "body": "{\"totalResultsCount\": 3, \"geonames\": [{\"adminCode1\": \"28\", \"lng\": \"-1.64332\", \"geonameId\": 2989082, \"toponymName\": \"Octeville\", \"countryId\": \"3017382\", \"fcl\": \"P\", \"population\": 0, \"countryCode\": \"FR\", \"name\": \"Octeville\", \"fclName\": \"city, village,...\", \"countryName\": \"France\", \"fcodeName\": \"populated place\", \"adminName1\": \"Normandy\", \"lat\": \"49.62613\", \"fcode\": \"PPL\"}, {\"adminCode1\": \"28\", \"lng\": \"0.11667\", \"geonameId\": 2989081, \"toponymName\": \"Octeville-sur-Mer\", \"countryId\": \"3017382\", \"fcl\": \"P\", \"population\": 5735, \"countryCode\": \"FR\", \"name\": \"Octeville-sur-Mer\", \"fclName\": \"city, village,...\", \"countryName\": \"France\", \"fcodeName\": \"populated place\", \"adminName1\": \"Normandy\", \"lat\": \"49.55\", \"fcode\": \"PPL\"}]}"
+}

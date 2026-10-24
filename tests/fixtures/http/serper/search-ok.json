@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://google.serper.dev/search?q=%22Hugo%22+Besan%C3%A7on+1802&gl=lu&hl=fr&num=10",
+    "headers": {
+      "X-API-KEY": "KEY"
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "searchParameters": {
+      "q": "\"Hugo\" Besançon 1802",
+      "gl": "lu",
+      "hl": "fr",
+      "num": 10,
+      "type": "search",
+      "engine": "google"
+    },
+    "organic": [
+      {
+        "title": "Charles Hugo (1826 - 1871) - Genealogy - Example Genealogy",
+        "link": "https://genealogy.example.org/people/Charles-Hugo/6000000041872239112",
+        "snippet": "Genealogy for Charles Hugo (1826 - 1871) family tree on Example Genealogy, son of Victor Hugo and Adèle Foucher ...",
+        "position": 1
+      },
+      {
+        "title": "Naissance Hugo, Nancy, 1800 - Example Families",
+        "link": "https://families.example.org/records/births/nancy/1800/hugo",
+        "snippet": "Registre d'état civil de Nancy, année 1800 : acte de naissance d'Eugène Hugo, fils de Léopold Hugo et de Sophie Trébuchet ...",
+        "date": "14 févr. 2019",
+        "position": 2
+      },
+      {
+        "title": "France, Mariages - Hugo - Example Records",
+        "link": "https://records.example.org/ark:/61903/1:1:XYZ1-8QK",
+        "snippet": "Name: Léopold Hugo; Event Type: Marriage; Event Date: 1797; Event Place: Paris, France; Spouse's Name ...",
+        "position": 3
+      },
+      {
+        "title": "Famille Hugo de Nancy - Généalogie lorraine",
+        "link": "https://genealogie.example.org/familles/hugo-nancy",
+        "snippet": "Descendance de Joseph Hugo (mort en 1789), menuisier à Nancy ; son fils Léopold, ses petits-fils Abel, Eugène et Victor ...",
+        "date": "3 juin 2021",
+        "position": 4
+      }
+    ],
+    "credits": 1
+  }
+}

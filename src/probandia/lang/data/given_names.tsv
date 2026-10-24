@@ -1,0 +1,404 @@
+# Given names: French, German, Latin nominative, Latin genitive (empty: the regular one).
+# Several forms in one column are separated by "/". One name per line.
+# Masculine
+Abel	Abel	Abel	Abelis
+Abraham	Abraham	Abrahamus
+Achille	Achilles	Achilles	Achillis
+Adam	Adam	Adamus
+Adolphe	Adolf/Adolph	Adolphus
+Adrien	Adrian	Adrianus
+Aimé	Amatus	Amatus
+Alain	Alan	Alanus
+Albert	Albert/Albrecht	Albertus
+Alexandre	Alexander	Alexander	Alexandri
+Alexis	Alexius	Alexius
+Alfred	Alfred	Alfredus
+Alphonse	Alfons	Alphonsus
+Amand	Amandus	Amandus
+Ambroise	Ambrosius	Ambrosius
+Amédée	Amadeus	Amadeus
+Anatole	Anatol	Anatolius
+André	Andreas	Andreas	Andreae
+Ange	Angelus	Angelus
+Anselme	Anselm	Anselmus
+Antoine	Anton/Antonius	Antonius
+Aristide	Aristides	Aristides	Aristidis
+Armand	Hermann	Armandus
+Arnaud/Arnould	Arnold	Arnoldus
+Arsène	Arsenius	Arsenius
+Arthur	Artur	Arturus
+Auguste	August	Augustus
+Augustin	Augustin	Augustinus
+Aurélien	Aurelian	Aurelianus
+Barthélemy	Bartholomäus/Bartel	Bartholomaeus
+Basile	Basilius	Basilius
+Benjamin	Benjamin	Benjaminus
+Benoît	Benedikt	Benedictus
+Bernard	Bernhard	Bernardus
+Bertrand	Bertram	Bertrandus
+Blaise	Blasius	Blasius
+Boniface	Bonifatius	Bonifacius
+Bruno	Bruno	Bruno	Brunonis
+Camille	Camillus	Camillus
+Casimir	Kasimir	Casimirus
+Célestin	Cölestin	Caelestinus
+César	Cäsar	Caesar	Caesaris
+Charles	Karl	Carolus
+Christian	Christian	Christianus
+Christophe	Christoph	Christophorus
+Claude	Claudius	Claudius
+Clément	Klemens	Clemens	Clementis
+Conrad	Konrad/Kurt	Conradus
+Constant	Konstantin	Constantius
+Corneille	Cornelius	Cornelius
+Damien	Damian	Damianus
+Daniel	Daniel	Daniel	Danielis
+David	David	David	Davidis
+Denis	Dionys	Dionysius
+Désiré	Desiderius	Desideratus
+Dieudonné	Deodat	Deodatus
+Dominique	Dominik	Dominicus
+Edmond	Edmund	Edmundus
+Édouard	Eduard	Eduardus
+Égide/Gilles	Ägidius	Aegidius
+Éloi	Eligius	Eligius
+Émile	Emil	Aemilius
+Emmanuel	Emanuel	Emmanuel	Emmanuelis
+Érasme	Erasmus	Erasmus
+Ernest	Ernst	Ernestus
+Étienne	Stefan/Stephan	Stephanus
+Eugène	Eugen	Eugenius
+Eusèbe	Eusebius	Eusebius
+Évrard	Eberhard	Everardus
+Fabien	Fabian	Fabianus
+Félix	Felix	Felix	Felicis
+Ferdinand	Ferdinand	Ferdinandus
+Fidèle	Fidelis	Fidelis	Fidelis
+Firmin	Firmin	Firminus
+Florent	Florentin	Florentius
+Florian	Florian	Florianus
+François	Franz	Franciscus
+Frédéric	Friedrich/Fritz	Fridericus
+Gabriel	Gabriel	Gabriel	Gabrielis
+Gaspard	Kaspar/Caspar	Gaspar	Gasparis
+Gauthier	Walter	Gualterus
+Geoffroy	Gottfried	Godefridus
+Georges	Georg/Jörg	Georgius
+Gérard	Gerhard	Gerardus
+Germain	German	Germanus
+Gervais	Gervasius	Gervasius
+Gilbert	Gilbert	Gilbertus
+Godefroy	Gottfried	Godefridus
+Grégoire	Gregor	Gregorius
+Guillaume	Wilhelm	Guilielmus/Wilhelmus
+Gustave	Gustav	Gustavus
+Henri	Heinrich	Henricus
+Herbert	Herbert	Herbertus
+Hilaire	Hilarius	Hilarius
+Hippolyte	Hippolyt	Hippolytus
+Honoré	Honorius	Honoratus
+Hubert	Hubert	Hubertus
+Hugues	Hugo	Hugo	Hugonis
+Ignace	Ignaz	Ignatius
+Isidore	Isidor	Isidorus
+Jacques	Jakob	Jacobus
+Jean	Johann/Johannes/Hans	Joannes/Johannes	Joannis
+Jean-Baptiste	Johann Baptist	Joannes Baptista	Joannis Baptistae
+Jérôme	Hieronymus	Hieronymus
+Joachim	Joachim	Joachimus
+Joseph	Josef/Joseph	Josephus
+Jules	Julius	Julius
+Julien	Julian	Julianus
+Juste	Justus	Justus
+Lambert	Lambert	Lambertus
+Laurent	Lorenz	Laurentius
+Léger	Leodegar	Leodegarius
+Léon	Leo	Leo	Leonis
+Léonard	Leonhard	Leonardus
+Léopold	Leopold	Leopoldus
+Louis	Ludwig	Ludovicus
+Luc	Lukas	Lucas	Lucae
+Lucien	Lucian	Lucianus
+Marc	Markus	Marcus
+Marcel	Marcel	Marcellus
+Martial	Martial	Martialis	Martialis
+Martin	Martin	Martinus
+Mathieu	Matthäus	Matthaeus
+Mathias	Matthias	Matthias	Matthiae
+Maurice	Moritz	Mauritius
+Maxime	Maximus	Maximus
+Maximilien	Maximilian	Maximilianus
+Médard	Medardus	Medardus
+Melchior	Melchior	Melchior	Melchioris
+Michel	Michael	Michael	Michaelis
+Napoléon	Napoleon	Napoleo	Napoleonis
+Nicolas	Nikolaus/Klaus	Nicolaus
+Noël	Natalis	Natalis	Natalis
+Norbert	Norbert	Norbertus
+Octave	Oktavian	Octavius
+Olivier	Oliver	Oliverius
+Oscar	Oskar	Oscarus
+Pancrace	Pankraz	Pancratius
+Pascal	Paschal	Paschalis	Paschalis
+Patrice	Patrick	Patricius
+Paul	Paul	Paulus
+Philibert	Philibert	Philibertus
+Philippe	Philipp	Philippus
+Pie	Pius	Pius
+Pierre	Peter	Petrus
+Prosper	Prosper	Prosper	Prosperi
+Quentin	Quintin	Quintinus
+Raphaël	Raphael	Raphael	Raphaelis
+Raymond	Raimund	Raymundus
+Régis	Regis	Regis	Regis
+Rémi	Remigius	Remigius
+Renaud	Reinhold	Reginaldus
+René	Renatus	Renatus
+Richard	Richard	Richardus
+Robert	Robert/Ruprecht	Robertus
+Roch	Rochus	Rochus
+Rodolphe	Rudolf	Rudolphus
+Roger	Rüdiger	Rogerius
+Roland	Roland	Rolandus
+Romain	Roman	Romanus
+Sébastien	Sebastian	Sebastianus
+Siméon	Simeon	Simeon	Simeonis
+Simon	Simon	Simon	Simonis
+Stanislas	Stanislaus	Stanislaus
+Sylvain	Silvan	Silvanus
+Sylvestre	Silvester	Silvester	Silvestri
+Théodore	Theodor	Theodorus
+Théophile	Gottlieb/Theophil	Theophilus
+Thibault	Theobald	Theobaldus
+Thierry	Dietrich	Theodoricus
+Thomas	Thomas	Thomas	Thomae
+Timothée	Timotheus	Timotheus
+Urbain	Urban	Urbanus
+Valentin	Valentin	Valentinus
+Victor	Viktor	Victor	Victoris
+Vincent	Vinzenz	Vincentius
+Wenceslas	Wenzel	Wenceslaus
+Xavier	Xaver	Xaverius
+Yves	Ivo	Ivo	Ivonis
+Zacharie	Zacharias	Zacharias	Zachariae
+Adalbert	Adalbert	Adalbertus
+Albin	Albin	Albinus
+Alois/Louis	Alois/Aloys	Aloysius
+Anastase	Anastasius	Anastasius
+Baptiste	Baptist	Baptista	Baptistae
+Bonaventure	Bonaventura	Bonaventura	Bonaventurae
+Calixte	Calixtus	Calixtus
+Candide	Candidus	Candidus
+Cyprien	Cyprian	Cyprianus
+Cyrille	Kyrill	Cyrillus
+Didier	Desiderius	Desiderius
+Engelbert	Engelbert	Engelbertus
+Eustache	Eustachius	Eustachius
+Évariste	Evaristus	Evaristus
+Fortuné	Fortunat	Fortunatus
+Fridolin	Fridolin	Fridolinus
+Gall	Gallus	Gallus
+Gérold	Gerold	Geroldus
+Gottlieb	Gottlieb	Theophilus
+Hermann	Hermann	Hermannus
+Isaac	Isaak	Isaacus
+Jonas	Jonas	Jonas	Jonae
+Jodoc/Josse	Jodok/Jost	Jodocus
+Kilian	Kilian	Kilianus
+Léandre	Leander	Leander	Leandri
+Lothaire	Lothar	Lotharius
+Ludger	Ludger	Ludgerus
+Magnus	Magnus	Magnus
+Marin	Marinus	Marinus
+Matthieu	Matthäus	Matthaeus
+Meinrad	Meinrad	Meinradus
+Modeste	Modestus	Modestus
+Narcisse	Narziss	Narcissus
+Nestor	Nestor	Nestor	Nestoris
+Oswald	Oswald	Oswaldus
+Othon	Otto	Otho	Othonis
+Pantaléon	Pantaleon	Pantaleon	Pantaleonis
+Pélagie	Pelagius	Pelagius
+Polycarpe	Polykarp	Polycarpus
+Rupert	Rupert	Rupertus
+Séverin	Severin	Severinus
+Sigismond	Sigmund	Sigismundus
+Tobie	Tobias	Tobias	Tobiae
+Ulrich	Ulrich	Udalricus
+Valère	Valerius	Valerius
+Wendelin	Wendelin	Wendelinus
+Wolfgang	Wolfgang	Wolfgangus
+# Feminine
+Adélaïde	Adelheid	Adelheidis	Adelheidis
+Adèle	Adele	Adela
+Agathe	Agathe	Agatha
+Agnès	Agnes	Agnes	Agnetis
+Albertine	Albertine	Albertina
+Alexandrine	Alexandrine	Alexandrina
+Alice	Alice	Alicia
+Amélie	Amalie	Amalia
+Anastasie	Anastasia	Anastasia
+Angèle	Angela	Angela
+Angélique	Angelika	Angelica
+Anne	Anna	Anna
+Anne-Marie	Anna Maria	Anna Maria	Annae Mariae
+Antoinette	Antonia	Antonia
+Apolline	Apollonia	Apollonia
+Augustine	Augustine	Augustina
+Barbe	Barbara	Barbara
+Béatrice	Beatrix	Beatrix	Beatricis
+Bernadette	Bernadette	Bernarda
+Berthe	Berta	Bertha
+Blanche	Blanka	Blanca
+Brigitte	Brigitte/Birgitta	Brigitta
+Camille	Kamilla	Camilla
+Catherine	Katharina/Käthe	Catharina
+Cécile	Cäcilia	Caecilia
+Céleste	Cölestine	Caelestina
+Charlotte	Charlotte	Carola
+Christine	Christina	Christina
+Claire	Klara	Clara
+Clémence	Klementine	Clementia
+Clotilde	Klothilde	Clotildis	Clotildis
+Constance	Konstanze	Constantia
+Dorothée	Dorothea	Dorothea
+Edwige	Hedwig	Hedwigis	Hedwigis
+Éléonore	Eleonore	Eleonora
+Élisabeth	Elisabeth/Elise	Elisabetha/Elisabeth
+Émilie	Emilie	Aemilia
+Ernestine	Ernestine	Ernestina
+Eugénie	Eugenie	Eugenia
+Euphrosine	Euphrosyne	Euphrosyna
+Ève	Eva	Eva
+Félicité	Felizitas	Felicitas	Felicitatis
+Florentine	Florentine	Florentina
+Françoise	Franziska	Francisca
+Frédérique	Friederike	Friderica
+Gabrielle	Gabriele	Gabriela
+Geneviève	Genoveva	Genovefa
+Gertrude	Gertrud	Gertrudis	Gertrudis
+Hélène	Helena/Lene	Helena
+Henriette	Henriette	Henrica
+Hortense	Hortensia	Hortensia
+Irène	Irene	Irena
+Isabelle	Isabella	Isabella
+Jacqueline	Jakobine	Jacoba
+Jeanne	Johanna	Joanna
+Joséphine	Josefine	Josepha
+Judith	Judith	Juditha
+Julie	Julia	Julia
+Julienne	Juliane	Juliana
+Justine	Justine	Justina
+Laure	Laura	Laura
+Léonie	Leonie	Leonia
+Louise	Luise	Ludovica/Aloysia
+Lucie	Lucia	Lucia
+Madeleine	Magdalena	Magdalena
+Marguerite	Margarete/Grete	Margaretha
+Marianne	Marianne	Mariana
+Marie	Maria	Maria
+Marie-Anne	Maria Anna	Maria Anna	Mariae Annae
+Marie-Josèphe	Maria Josepha	Maria Josepha	Mariae Josephae
+Marthe	Martha	Martha
+Mathilde	Mathilde	Mathildis	Mathildis
+Monique	Monika	Monica
+Odile	Odilia	Odilia
+Pauline	Pauline	Paulina
+Pélagie	Pelagia	Pelagia
+Pétronille	Petronella	Petronilla
+Philippine	Philippine	Philippina
+Rosalie	Rosalia	Rosalia
+Rose	Rosa	Rosa
+Sabine	Sabine	Sabina
+Salomé	Salome	Salome	Salomes
+Scholastique	Scholastika	Scholastica
+Sophie	Sophia	Sophia
+Suzanne	Susanna	Susanna
+Thérèse	Theresia	Theresia
+Ursule	Ursula	Ursula
+Valérie	Valerie	Valeria
+Véronique	Veronika	Veronica
+Victoire	Viktoria	Victoria
+Virginie	Virginia	Virginia
+Walburge	Walburga	Walburgis	Walburgis
+Wilhelmine	Wilhelmine	Wilhelmina
+Adrienne	Adriane	Adriana
+Aline	Aline	Adelina
+Anaïs	Anaïs	Anna
+Appoline	Apollonia	Apollonia
+Aurélie	Aurelia	Aurelia
+Bénédicte	Benedikta	Benedicta
+Céline	Celine	Coelina
+Colette	Colette	Nicoletta
+Delphine	Delphine	Delphina
+Elvire	Elvira	Elvira
+Emma	Emma	Emma
+Euphémie	Euphemia	Euphemia
+Eulalie	Eulalia	Eulalia
+Flore	Flora	Flora
+Gertrude	Gertraud	Gertrudis	Gertrudis
+Gudule	Gudula	Gudula
+Hedwige	Hedwig	Hedwigis	Hedwigis
+Hildegarde	Hildegard	Hildegardis	Hildegardis
+Honorine	Honorine	Honorina
+Huberte	Huberta	Huberta
+Ida	Ida	Ida
+Joséphine-Marie	Josefine Maria	Josepha Maria	Josephae Mariae
+Kunigonde	Kunigunde	Cunegundis	Cunegundis
+Léocadie	Leokadia	Leocadia
+Lydie	Lydia	Lydia
+Mélanie	Melanie	Melania
+Modestine	Modesta	Modesta
+Nathalie	Natalie	Natalia
+Octavie	Oktavia	Octavia
+Olympe	Olympia	Olympia
+Ottilie	Ottilie	Ottilia
+Perrine	Petra	Petronilla
+Reine	Regina	Regina
+Rosine	Rosina	Rosina
+Sidonie	Sidonia	Sidonia
+Stéphanie	Stefanie	Stephania
+Sylvie	Silvia	Silvia
+Thècle	Thekla	Thecla
+Valentine	Valentina	Valentina
+Victorine	Viktorine	Victorina
+Zélie	Zelia	Zelia
+Zoé	Zoe	Zoe	Zoes
+Benoîte	Benedikta	Benedicta
+Christiane	Christiane	Christiana
+Cunégonde	Kunigunde	Cunegundis	Cunegundis
+Dominique	Dominika	Dominica
+Élise	Elise	Elisa
+Estelle	Stella	Stella
+Fanny	Franziska	Francisca
+Germaine	Germana	Germana
+Gilberte	Gilberta	Gilberta
+Hermine	Hermine	Herminia
+Jeanne-Marie	Johanna Maria	Joanna Maria	Joannae Mariae
+Josette	Josepha	Josepha
+Léontine	Leontine	Leontina
+Lucienne	Luciana	Luciana
+Marcelle	Marcella	Marcella
+Martine	Martina	Martina
+Noémie	Noemi	Noemi
+Paule	Paula	Paula
+Philomène	Philomena	Philomena
+Prudence	Prudentia	Prudentia
+Radegonde	Radegund	Radegundis	Radegundis
+Solange	Solange	Solemnia
+Sophie-Marie	Sophia Maria	Sophia Maria	Sophiae Mariae
+Thècle-Marie	Thekla Maria	Thecla Maria	Theclae Mariae
+Yvonne	Ivonne	Ivona
+Agnès-Marie	Agnes Maria	Agnes Maria	Agnetis Mariae
+Albine	Albina	Albina
+Amandine	Amanda	Amanda
+Bertille	Bertilla	Bertilla
+Clarisse	Klarissa	Clarissa
+Ermelinde	Ermelinde	Ermelindis	Ermelindis
+Godelieve	Godelieve	Godeleva
+Hélène-Marie	Helena Maria	Helena Maria	Helenae Mariae
+Jacinthe	Hyazinthe	Hyacintha
+Mechtilde	Mechthild	Mechtildis	Mechtildis
+Osanne	Hosanna	Osanna
+Reinelde	Reinhilde	Reineldis	Reineldis
+Waudru	Waltraud	Waldetrudis	Waldetrudis

@@ -1,0 +1,15 @@
+# expect: $.types[0].rules[0].exceptions[0].note
+schema: 1
+types:
+  - id: civil_registers
+    names: {en: "civil registers", fr: "état civil"}
+    coverage: [birth]
+    answers: [birth]
+    rules:
+      - country: FR
+        from: 1792
+        to: null
+        held_by: ["town hall"]
+        references: [{title: "Loi du 20 septembre 1792"}]
+        exceptions:
+          - {places: [FR-75], from: 1792, to: 1859, effect: destroyed, references: [{title: "Archives de Paris"}]}

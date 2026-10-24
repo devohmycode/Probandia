@@ -1,0 +1,69 @@
+schema: 1
+persons:
+- id: victor-marie-hugo-1802
+  names:
+    given: Victor Marie
+    surname: HUGO
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: victor-marie-hugo-1802.death
+    type: death
+    date:
+      value: '1885-05-22'
+      qualifier: exact
+      original: hier au soir, à une heure et demie (acte du 23 mai 1885)
+    place:
+      id: null
+      as_written: Paris, en son domicile, avenue Victor Hugo 50
+    status: record
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    source: src-01M5J76SWR2KRH5DDX8WF2C9JW
+    excerpt:
+      kind: transcription
+      lines:
+      - 9
+      - 12
+      text: décédé à Paris, en son domicile, avenue Victor Hugo 50 hier au soir, à une heure et demie.
+        Fils du
+      sha256: 6c566767965cb417019269b8baaf62f77153449775a827711db43b4f384170d5
+    note: 'l''acte est daté du 23 mai 1885 et dit le décès survenu « hier au soir » : le 22 mai 1885'
+    research: 2026-10-22-quand-et-ou-est-mort-victor-marie-hugo-ne-a-besancon
+    pass: 1
+    event: 01M5J76V6FA6XQ6DRTPP9V7Y7J
+  - id: victor-marie-hugo-1802.birth
+    type: birth
+    date:
+      value: '1802-02-26'
+      qualifier: exact
+      original: le jour d'hier à dix heures demie du soir (acte du huitième du mois de ventôse l'an Dix)
+    place:
+      id: null
+      as_written: Besançon (les parents y demeurent ; l'acte y est constaté)
+    status: record
+    evidence:
+      source: derivative
+      information: primary
+      evidence: direct
+    source: src-01M5J7D4FW617QC51H1KWWEKZG
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 4
+      text: Naissance. Du huitième du mois de ventose l'an Dix de la République Acte de naissance de Victor,
+        Marie, hugo né le jour d'hier à dix heures demie du soir fils de joseph, léopold
+      sha256: e98e16104eeb1d670ea2640e9a9a0a5ae5d0ccb97c71d7fc1658655c0c898a44
+    note: 'l''acte est du 8 ventôse an X (27 février 1802) et dit l''enfant né « le jour d''hier » : le
+      7 ventôse an X, soit le 26 février 1802 (dates "7 ventôse an X" : ISO=1802-02-26). Lu sur un fac-similé
+      imprimé de la fin du XIXe siècle, non sur le registre.'
+    research: 2026-10-22-quel-jour-est-ne-victor-marie-hugo-a-besancon-mort-a
+    pass: 1
+    event: 01M5J7D699V2EHKM5H9YP7V1RF

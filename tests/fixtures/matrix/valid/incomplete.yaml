@@ -1,0 +1,38 @@
+schema: 1
+research: 2026-09-30-parents-of-victor-hugo
+updated: '2026-10-04T12:00:00Z'
+questions:
+- id: Q1
+  type: birth
+  status: open
+  window: {from: 1850, to: 1850}
+  unknown: []
+  notes: []
+  rows:
+  - type: civil_registers
+    state: consulted
+    places: [auxon-dessous]
+    years: [1850, 1850]
+    repositories: [{name: Archives départementales du Doubs, archive: ad25}]
+    searches: [s-01J9ZK5A000000000000000009]
+    gaps: []
+  - type: decennial_tables
+    state: todo
+    places: [auxon-dessous]
+    years: [1850, 1850]
+    repositories: []
+    searches: []
+    gaps: []
+  - type: census
+    state: not_applicable
+    places: [auxon-dessous]
+    years: [1850, 1850]
+    reason: "the child died before the census of 1851"
+- id: Q2
+  type: parents
+  status: open
+  window: null
+  unknown: [window]
+  rows: []
+not_applicable:
+- {question: Q1, type: census, reason: "the child died before the census of 1851", ts: '2026-10-04T11:00:00Z', agent: orchestrator}

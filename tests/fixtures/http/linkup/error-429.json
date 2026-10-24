@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.linkup.so/v1/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "q": "\"Hugo\" Besançon 1802",
+      "depth": "standard",
+      "outputType": "searchResults",
+      "maxResults": 5,
+      "includeImages": false
+    }
+  },
+  "status": 429,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "statusCode": 429,
+    "error": {
+      "code": "INSUFFICIENT_FUNDS_CREDITS",
+      "message": "You have run out of credit or you are sending too many concurrent requests",
+      "details": []
+    }
+  }
+}

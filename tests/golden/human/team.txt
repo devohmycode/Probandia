@@ -1,0 +1,8 @@
+✓ OK
+  research     2026-09-01-ancestors-of-louis-marchand
+  pass         2
+  max agents   1
+  native left  40
+  parallel     3
+
+  native  40

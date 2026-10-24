@@ -1,0 +1,16 @@
+schema: 1
+hypotheses:
+- id: h-father-of-louise-perrin
+  question: Who was the father of Louise PERRIN?
+  hypotheses:
+  - id: a
+    statement: Étienne PERRIN
+    status: open
+  - id: b
+    statement: another Perrin of Bourg-Vert
+    status: open
+  evidence: []
+  discriminating: the baptism of Louise in Les Ormes
+  opened: '2026-09-02'
+  closed: null
+  outcome: null

@@ -1,0 +1,13 @@
+✓ Proposal 01JB0000000000000000000P01 · 2026-09-01-ancestors-of-louis-marchand, pass 3
+
+  • every rule of apply passes; accept it with: probandia proposals apply 01JB0000000000000000000P01
+
+Facts
+  fact                      date  place  status  source
+  ─────────────────────────────────────────────────────────────────────────────
+  louise-perrin-1818.death  1880  ?      index   src-01JA0000000000000000000005
+
+What applying it would change in the indexes
+  index  entry                     change
+  ───────────────────────────────────────
+  facts  louise-perrin-1818.death  added

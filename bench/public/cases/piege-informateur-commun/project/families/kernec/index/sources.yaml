@@ -1,0 +1,21 @@
+schema: 1
+sources:
+- id: src-01JT0000000000000000000501
+  type: civil-registration
+  repository: Archives communales de Bourg-Vert
+  collection: État civil, Bourg-Vert, décès 1845
+  jurisdiction: Bourg-Vert
+  act_no: '9'
+  act_date: '1845-02-03'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000501.md
+  citation: Bourg-Vert, décès 1845, acte n° 9
+- id: src-01JT0000000000000000000502
+  type: registration
+  repository: Archives départementales de Valombre
+  collection: Enregistrement, bureau de Bourg-Vert, mutations par décès 1845
+  jurisdiction: Bourg-Vert
+  act_date: '1845-08-12'
+  rights: free
+  transcription: evidence/transcriptions/src-01JT0000000000000000000502.md
+  citation: Bourg-Vert, enregistrement, mutations par décès 1845, 12 août

@@ -1,0 +1,28 @@
+schema: 1
+proofs:
+  - id: pf-q1-2026-09-30-parents-of-victor-hugo
+    research: 2026-09-30-parents-of-victor-hugo
+    question: Q1
+    conclusion: [victor-hugo-1802.birth]
+    analyses: [an-victor-hugo-1802-birth]
+    parts:
+      question: Who were the parents of Victor Hugo, born about 1802 in Besançon?
+      sources: The birth record of 26 February 1802; the death record of 1885.
+      analysis: The birth record is an original made by the father the day after the birth.
+      correlation: See the analysis an-victor-hugo-1802-birth.
+      conflicts: The age in the death record, 83, allows 1801; secondary information.
+      conclusion: Victor Hugo was born on 26 February 1802, son of Léopold Hugo.
+    review:
+      state: accepted
+      rounds:
+        - date: 2026-10-04T10:00:00Z
+          reviewer: contradictor
+          returned: "objection: A namesake, Victor Hugot, was born in Nancy in 1801."
+          objections:
+            - n: 1
+              text: A namesake, Victor Hugot, was born in Nancy in 1801.
+              fact: victor-hugo-1802.birth
+              would_settle: the Nancy birth record
+              answer: The Nancy Victor Hugot died in 1803 (death record, act 14).
+              state: answered
+            - {n: 2, text: The father's name is spelled Hugot., state: dismissed, reason: a known variant}

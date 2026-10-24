@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.linkup.so/v1/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "q": "\"Hugo\" Besançon 1802",
+      "depth": "standard",
+      "outputType": "searchResults",
+      "maxResults": 5,
+      "includeImages": false
+    }
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "statusCode": 401,
+    "error": {
+      "code": "UNAUTHORIZED",
+      "message": "API Key is missing or invalid",
+      "details": []
+    }
+  }
+}

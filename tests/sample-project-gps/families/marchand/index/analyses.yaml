@@ -1,0 +1,30 @@
+schema: 1
+analyses:
+- id: an-henri-marchand-1870-birth
+  question: Q1
+  research: 2026-09-04-birth-of-henri-marchand
+  person: henri-marchand-1870
+  fact_kind: birth
+  items:
+  - source: src-01JA0000000000000000000007
+    fact: henri-marchand-1870.birth
+    asserts: '1870'
+    informant: le père, à la déclaration
+    axes:
+      source: original
+      information: primary
+      evidence: direct
+  - source: src-01JA0000000000000000000008
+    fact: henri-marchand-1870.birth.2
+    asserts: '1871'
+    informant: le greffier qui dressa la table, après l'incendie
+    axes:
+      source: derivative
+      information: secondary
+      evidence: direct
+  resolution:
+    value: '1870'
+    fact: henri-marchand-1870.birth
+    reasoning: L'acte fut dressé à la mairie le jour de la déclaration, par le père ; la table, recopiée
+      après l'incendie de 1871, est dérivée et se trompe d'année
+  status: resolved

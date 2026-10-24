@@ -1,0 +1,12 @@
+✓ report.mode
+  Report mode: a journal with errata, or a living report
+
+  value           journal
+  from            default built-in
+  default         journal
+  allowed         journal, living
+  type            enum
+  grade           essential
+  variable        PROBANDIA_REPORT_MODE
+  option          --report-mode
+  in the harness  report_mode

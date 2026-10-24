@@ -1,0 +1,13 @@
+# Pages and what the detector must say about them.
+- {file: anubis-challenge.html, url: "https://rechercher.patrimoines-archives.morbihan.fr/ark:/42067/4f8a", status: 200, expect: challenge}
+- {file: eluxemburgensia-search.html, url: "https://eluxemburgensia.lu/search?query=Hugo", status: 200, expect: template}
+- {file: francearchives-redirect.html, url: "https://francearchives.gouv.fr/fr/search?q=Hugo", status: 200, expect: redirect}
+- {file: jina-faq.md, url: "https://archives.example.org/fr/recherche/etat-civil/hugo-1802", status: 200, kind: reader, expect: wrong_page}
+- {file: morbihan-home.html, url: "https://patrimoines-archives.morbihan.fr/", status: 200, expect: ok}
+- {file: wikipedia-octeville.html, url: "https://fr.wikipedia.org/wiki/Octeville", status: 200, expect: ok}
+- {file: jina-ok.md, url: "https://example.org/besancon/ec-1802-n/45", status: 200, kind: reader, expect: ok}
+- {file: gov-anubis-challenge.html, url: "https://gov.genealogy.net/search/name?name=Octeville", status: 200, expect: challenge}  # live, 2026-10-01
+- {file: gallica-altcha-challenge.html, url: "https://gallica.bnf.fr/ark:/12148/bpt6k5356122w/f2.texteBrut", status: 200, expect: challenge}  # live, 2026-10-01
+- {file: familysearch-signin.html, url: "https://www.familysearch.org/ark:/61903/1:1:X", final_url: "https://ident.familysearch.org/cis-web/oauth2/v3/authorization", status: 200, login: familysearch, expect: login}
+- {file: familysearch-signin.html, url: "https://www.familysearch.org/ark:/61903/1:1:X", status: 200, login: familysearch, expect: login}
+- {file: generic-login.html, url: "https://members.example.org/record/12", status: 200, expect: login}

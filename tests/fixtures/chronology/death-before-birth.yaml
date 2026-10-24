@@ -1,0 +1,25 @@
+persons:
+- id: jean-dupont-1820
+  names:
+    surname: DUPONT
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: jean-dupont-1820.birth
+    type: birth
+    date:
+      value: '1820-05-01'
+      qualifier: exact
+    status: record
+    source: null
+  - id: jean-dupont-1820.death
+    type: death
+    date:
+      value: '1818-02-03'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- jean-dupont-1820.death
+- jean-dupont-1820.birth

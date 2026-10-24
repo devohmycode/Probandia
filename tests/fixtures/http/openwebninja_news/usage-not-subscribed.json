@@ -1,0 +1,19 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/usage?api_id=realtime_news_data"
+  },
+  "status": 404,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "ERROR",
+    "request_id": "85386078-862f-42fc-85d6-2b6b3a3b89b9",
+    "error": {
+      "message": "No active subscription for this API",
+      "code": 404
+    }
+  }
+}

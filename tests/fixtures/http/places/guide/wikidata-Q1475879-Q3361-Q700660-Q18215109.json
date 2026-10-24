@@ -1,0 +1,607 @@
+{
+ "entities": {
+  "Q1475879": {
+   "type": "item",
+   "id": "Q1475879",
+   "labels": {
+    "fr": {
+     "language": "fr",
+     "value": "canton d'Audeux"
+    },
+    "en": {
+     "language": "en",
+     "value": "canton of Audeux"
+    }
+   },
+   "claims": {
+    "P131": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "ff8ce0fa869df4d9a1da8d787913ba465529fbb9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 700660,
+         "id": "Q700660"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "qualifiers": {
+       "P582": [
+        {
+         "snaktype": "value",
+         "property": "P582",
+         "hash": "bf2e9b456316e06191c4ec4804af5b78f853755b",
+         "datavalue": {
+          "value": {
+           "time": "+2015-03-21T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "qualifiers-order": [
+       "P582"
+      ],
+      "id": "q1475879$9B48312B-FBCF-420C-8E93-00025454D467",
+      "rank": "normal",
+      "references": [
+       {
+        "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+        "snaks": {
+         "P143": [
+          {
+           "snaktype": "value",
+           "property": "P143",
+           "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+           "datavalue": {
+            "value": {
+             "entity-type": "item",
+             "numeric-id": 10000,
+             "id": "Q10000"
+            },
+            "type": "wikibase-entityid"
+           },
+           "datatype": "wikibase-item"
+          }
+         ]
+        },
+        "snaks-order": [
+         "P143"
+        ]
+       },
+       {
+        "hash": "ea5c39a78b7a60351f18b01ae4fe133618bccb99",
+        "snaks": {
+         "P248": [
+          {
+           "snaktype": "value",
+           "property": "P248",
+           "hash": "22622b2c3751862ed27344411675433ba1e4dffa",
+           "datavalue": {
+            "value": {
+             "entity-type": "item",
+             "numeric-id": 2981593,
+             "id": "Q2981593"
+            },
+            "type": "wikibase-entityid"
+           },
+           "datatype": "wikibase-item"
+          }
+         ],
+         "P577": [
+          {
+           "snaktype": "value",
+           "property": "P577",
+           "hash": "c7243fd6301b7194242ab748b1e267278172a2b2",
+           "datavalue": {
+            "value": {
+             "time": "+2014-01-01T00:00:00Z",
+             "timezone": 0,
+             "before": 0,
+             "after": 0,
+             "precision": 11,
+             "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "type": "time"
+           },
+           "datatype": "time"
+          }
+         ],
+         "P854": [
+          {
+           "snaktype": "value",
+           "property": "P854",
+           "hash": "db2e023b980a37d31fecf79acf3c4227f80b892a",
+           "datavalue": {
+            "value": "https://www.insee.fr/fr/information/2560563",
+            "type": "string"
+           },
+           "datatype": "url"
+          }
+         ]
+        },
+        "snaks-order": [
+         "P248",
+         "P577",
+         "P854"
+        ]
+       }
+      ]
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "5877ca0634ef3d2336e7624740e8024e80cd1338",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 3361,
+         "id": "Q3361"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q1475879$cb0ee8ab-4223-141a-d870-fcf24af0abd2",
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "5bc53070b5d11d8277448ab8362de20030a35dac",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 16394,
+         "id": "Q16394"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q1475879$2339c306-4e0b-57e4-421b-f7a19396e063",
+      "rank": "normal"
+     }
+    ],
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "a16d7cd496daf4de20bbf57b2cc47a7b95286e30",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 184188,
+         "id": "Q184188"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q1475879$5DCE447E-AD48-43D0-A8A2-6EDDAE822BE6",
+      "rank": "normal"
+     }
+    ],
+    "P576": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P576",
+       "hash": "414076527b9f6bbab38e741c990c9f514a8639e4",
+       "datavalue": {
+        "value": {
+         "time": "+2015-03-21T00:00:00Z",
+         "timezone": 0,
+         "before": 0,
+         "after": 0,
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        },
+        "type": "time"
+       },
+       "datatype": "time"
+      },
+      "type": "statement",
+      "id": "Q1475879$D01426EA-735C-467B-AA71-ECC0F6A0884B",
+      "rank": "normal"
+     }
+    ]
+   }
+  },
+  "Q3361": {
+   "type": "item",
+   "id": "Q3361",
+   "labels": {
+    "fr": {
+     "language": "fr",
+     "value": "Doubs"
+    },
+    "en": {
+     "language": "en",
+     "value": "Doubs"
+    }
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "d36f49ae340ba0cd320e5f7811fcfe76ba8c896e",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 6465,
+         "id": "Q6465"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q3361$56902493-777C-43DA-9810-B79F749CBA08",
+      "rank": "normal"
+     }
+    ],
+    "P131": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "92cd3a0eb7e1cf46c17935171d706c9b732744ad",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 18578267,
+         "id": "Q18578267"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "qualifiers": {
+       "P580": [
+        {
+         "snaktype": "value",
+         "property": "P580",
+         "hash": "479dea0ac22f3d69f900dc0bfeb501c69b27e8fa",
+         "datavalue": {
+          "value": {
+           "time": "+2016-01-01T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "qualifiers-order": [
+       "P580"
+      ],
+      "id": "q3361$D72C8D37-FD9E-4FDA-BE0B-7506BB456051",
+      "rank": "preferred"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "e21252fc913bfdb76dc596635c36b103c5e3f0a3",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 60846019,
+         "id": "Q60846019"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "qualifiers": {
+       "P582": [
+        {
+         "snaktype": "value",
+         "property": "P582",
+         "hash": "dd073dc6d1e20f0816f8d232df2dd14342f843a2",
+         "datavalue": {
+          "value": {
+           "time": "+2015-12-31T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "qualifiers-order": [
+       "P582"
+      ],
+      "id": "Q3361$d8437ad5-4410-6ff1-1171-835a117875b3",
+      "rank": "normal"
+     }
+    ],
+    "P571": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P571",
+       "hash": "b7c922893d56ffbd6d9add6041ebde6b87662df8",
+       "datavalue": {
+        "value": {
+         "time": "+1790-03-04T00:00:00Z",
+         "timezone": 0,
+         "before": 0,
+         "after": 0,
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        },
+        "type": "time"
+       },
+       "datatype": "time"
+      },
+      "type": "statement",
+      "id": "Q3361$A49778DE-FD4E-4F7C-9BDD-F9700D90D773",
+      "rank": "normal"
+     }
+    ]
+   }
+  },
+  "Q700660": {
+   "type": "item",
+   "id": "Q700660",
+   "labels": {
+    "fr": {
+     "language": "fr",
+     "value": "arrondissement de Besançon"
+    },
+    "en": {
+     "language": "en",
+     "value": "arrondissement of Besançon"
+    }
+   },
+   "claims": {
+    "P131": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "5877ca0634ef3d2336e7624740e8024e80cd1338",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 3361,
+         "id": "Q3361"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "q700660$35AE0F8D-F5D5-475B-849F-851700B3AF3E",
+      "rank": "normal",
+      "references": [
+       {
+        "hash": "732ec1c90a6f0694c7db9a71bf09fe7f2b674172",
+        "snaks": {
+         "P143": [
+          {
+           "snaktype": "value",
+           "property": "P143",
+           "hash": "9123b0de1cc9c3954366ba797d598e4e1ea4146f",
+           "datavalue": {
+            "value": {
+             "entity-type": "item",
+             "numeric-id": 10000,
+             "id": "Q10000"
+            },
+            "type": "wikibase-entityid"
+           },
+           "datatype": "wikibase-item"
+          }
+         ]
+        },
+        "snaks-order": [
+         "P143"
+        ]
+       }
+      ]
+     }
+    ],
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "2675186883c331293e5f31690285769d2b62e55a",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 194203,
+         "id": "Q194203"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q700660$D1907941-1ABA-44A2-8D31-58D70B3680AC",
+      "rank": "normal"
+     }
+    ]
+   }
+  },
+  "Q18215109": {
+   "type": "item",
+   "id": "Q18215109",
+   "labels": {
+    "fr": {
+     "language": "fr",
+     "value": "Les Auxons"
+    },
+    "en": {
+     "language": "en",
+     "value": "Les Auxons"
+    }
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "3041443888781d9fe3945eb1e821e351bb836e86",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 484170,
+         "id": "Q484170"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "qualifiers": {
+       "P580": [
+        {
+         "snaktype": "value",
+         "property": "P580",
+         "hash": "4ecf8c7e37511dd97c6acdc495532ded844e8288",
+         "datavalue": {
+          "value": {
+           "time": "+2015-01-01T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "qualifiers-order": [
+       "P580"
+      ],
+      "id": "Q18215109$AFB2D1F2-40AB-4C6B-B4BD-3CC4CBC8CFC5",
+      "rank": "normal"
+     }
+    ],
+    "P374": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P374",
+       "hash": "f7c13eec8060d2a2e9e844aa9ca4331f5bba7e14",
+       "datavalue": {
+        "value": "25035",
+        "type": "string"
+       },
+       "datatype": "external-id"
+      },
+      "type": "statement",
+      "id": "Q18215109$faa8c0a1-4abf-dd7b-16bf-2f41709187dc",
+      "rank": "normal"
+     }
+    ],
+    "P131": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "5877ca0634ef3d2336e7624740e8024e80cd1338",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 3361,
+         "id": "Q3361"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q18215109$c6e8780c-4e02-7988-089a-2f44c547b769",
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P131",
+       "hash": "ff8ce0fa869df4d9a1da8d787913ba465529fbb9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 700660,
+         "id": "Q700660"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "type": "statement",
+      "id": "Q18215109$1D0304C8-1298-4AB1-B1F5-4A5C0C610166",
+      "rank": "normal"
+     }
+    ],
+    "P571": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P571",
+       "hash": "d2c2d60d6caf92adbb751fe68d0b57cd0deab9b3",
+       "datavalue": {
+        "value": {
+         "time": "+2015-01-01T00:00:00Z",
+         "timezone": 0,
+         "before": 0,
+         "after": 0,
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        },
+        "type": "time"
+       },
+       "datatype": "time"
+      },
+      "type": "statement",
+      "id": "Q18215109$5efb2df5-9986-446b-a4d9-67ec6eeed58e",
+      "rank": "normal"
+     }
+    ]
+   }
+  }
+ },
+ "success": 1
+}

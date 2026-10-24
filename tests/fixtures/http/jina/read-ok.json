@@ -1,0 +1,68 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://r.jina.ai/https://en.wikipedia.org/wiki/Luxembourg_(city)",
+    "headers": {
+      "Authorization": "Bearer KEY",
+      "Accept": "application/json"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "x-usage-tokens": "29727"
+  },
+  "body": {
+    "code": 200,
+    "status": 20000,
+    "data": {
+      "title": "Luxembourg City",
+      "description": "",
+      "url": "https://en.wikipedia.org/wiki/Luxembourg_(city)",
+      "content": "| Luxembourg * _Lëtzebuerg_([Luxembourgish](https://en.wikipedia.org/wiki/Luxembourgish_language \"Luxembourgish language\")) * _Luxembourg_([French](https://en.wikipedia.org/wiki/French_language \"French language\")) * _Luxemburg_([German](https://en.wikipedia.org/wiki/German_language \"German language\")) |\n| --- |\n| [Capital city](https://en.wikipedia.org/wiki/Capital_city \"Capital city\") and [commune](https://en.wikipedia.org/wiki/List_of_communes_of_Luxembourg \"List of communes of Luxembourg\") |\n| Stad Lëtzebuerg |\n| [![Image 1](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Ville-Haute_vue_du_Fort_Verlorenkost_%28cropped%29.jpg/330px-Ville-Haute_vue_du_Fort_Verlorenkost_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](https://en.wikipedia.org/wiki/File:Ville-Haute_vue_du_Fort_Verlorenkost_(cropped).jpg) View of the [Ville Haute](https://en.wikipedia.org/wiki/Ville_Haute \"Ville Haute\"), including the remains of the [Fortress of Luxembourg](https://en.wikipedia.org/wiki/Fortress_of_Luxembourg \"Fortress of Luxembourg\"), [Notre-Dame Cathedral](https://en.wikipedia.org/wiki/Notre-Dame_Cathedral,_Luxembourg \"Notre-Dame Cathedral, Luxembourg\") and the [City History Museum](https://en.wikipedia.org/wiki/Luxembourg_City_History_Museum \"Luxembourg City History Museum\") [![Image 2](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Luxembourg_Grand_Ducal_Palace_01.jpg/250px-Luxembourg_Grand_Ducal_Palace_01.jpg?utm_source=en.wikipe",
+      "publishedTime": "2002-06-14T14:59:19Z",
+      "metadata": {
+        "lang": "en",
+        "ResourceLoaderDynamicStyles": "",
+        "generator": "MediaWiki 1.47.0-wmf.21",
+        "referrer": [
+          "origin",
+          "origin-when-cross-origin"
+        ],
+        "robots": "max-image-preview:standard",
+        "format-detection": "telephone=no",
+        "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Luxembourg_Grand_Ducal_Palace_01.jpg/1280px-Luxembourg_Grand_Ducal_Palace_01.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+        "og:image:width": "1200",
+        "og:image:height": "798",
+        "viewport": "width=1120",
+        "og:title": "Luxembourg City - Wikipedia",
+        "og:type": "website"
+      },
+      "external": {
+        "canonical": {
+          "https://en.wikipedia.org/wiki/Luxembourg_City": {}
+        },
+        "license": {
+          "https://creativecommons.org/licenses/by-sa/4.0/deed.en": {}
+        }
+      },
+      "httpStatus": 200,
+      "httpStatusText": "OK",
+      "usage": {
+        "outputTokens": 29727,
+        "measuredTokens": 29727,
+        "scaledTokens": 29727,
+        "tokens": 29727
+      }
+    },
+    "meta": {
+      "usage": {
+        "outputTokens": 29727,
+        "measuredTokens": 29727,
+        "scaledTokens": 29727,
+        "tokens": 29727
+      }
+    }
+  }
+}

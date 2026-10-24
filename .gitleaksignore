@@ -1,0 +1,12 @@
+# gitleaks dir (tools/release_snapshot.py): findings read one by one, none a real key (version-1.0.0 T144, T212).
+# Recorded answers: an Apify key-value store id, a page's configuration.
+tests/fixtures/http/apify/run-succeeded.json:generic-api-key:56
+tests/fixtures/http/apify_reader/run-succeeded.json:generic-api-key:63
+tests/fixtures/pages/wikipedia-octeville.html:generic-api-key:6
+# Fake keys the tests hide from the output.
+tests/unit/test_user_counter.py:generic-api-key:36
+tests/unit/test_memory.py:generic-api-key:101
+tests/unit/test_tui_config.py:generic-api-key:241
+tests/unit/test_views.py:generic-api-key:111
+tests/unit/test_tui_app.py:generic-api-key:850
+tests/unit/test_tui_app.py:generic-api-key:1290

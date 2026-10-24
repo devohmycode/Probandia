@@ -1,0 +1,60 @@
+schema: 1
+persons:
+- id: gabriel-guillou-1795
+  names:
+    given: Gabriel
+    surname: GUILLOU
+  sex: M
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts:
+  - id: gabriel-guillou-1795.birth
+    type: birth
+    date:
+      value: '1795-08-14'
+      qualifier: exact
+      calendar: republican
+      original: vingt-sept thermidor an trois
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: record
+    source: src-01JT0000000000000000000601
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 5
+      text: Aujourd'hui vingt-huit thermidor l'an trois de la République, devant moi officier public de
+        Saint-Aubry, a comparu Mathurin Guillou, meunier, lequel m'a présenté un enfant mâle né hier de
+        lui et de Jeanne Prigent, son épouse, auquel il a donné le prénom de Gabriel ; témoins Pierre
+        Prigent et Anne Riou.
+      sha256: f65bd01e8c65495d1ff4b9aa65253dee65b4a6fdf56b47289368e50230a9e336
+    evidence:
+      source: original
+      information: primary
+      evidence: direct
+    research: 2026-10-14-naissance-de-gabriel-guillou
+    pass: 1
+  - id: gabriel-guillou-1795.death
+    type: death
+    date:
+      value: '1860-10-06'
+      qualifier: exact
+    place:
+      id: null
+      as_written: Saint-Aubry
+    status: index
+    source: src-01JT0000000000000000000602
+    excerpt:
+      kind: transcription
+      lines:
+      - 2
+      - 2
+      text: Guillou Gabriel, meunier, 6 octobre 1860
+      sha256: 013c1d63a0c1f62d373422eccdff7ac0074e2dddfdd2c034b4c42a5a5c587cb7
+    research: 2026-10-14-naissance-de-gabriel-guillou
+    pass: 1

@@ -1,0 +1,46 @@
+{
+  "name": "probandia",
+  "version": "1.0.0",
+  "description": "Genealogy research for AI coding agents, on free resources only: nothing is concluded until it is proven.",
+  "author": {
+    "name": "DevOhMyCode"
+  },
+  "keywords": [
+    "genealogy",
+    "research",
+    "gedcom",
+    "family-history"
+  ],
+  "homepage": "https://github.com/devohmycode/probandia",
+  "repository": "https://github.com/devohmycode/probandia",
+  "license": "Apache-2.0",
+  "agents": [
+    "./.claude-plugin/agents/contradictor.md",
+    "./.claude-plugin/agents/harvester.md",
+    "./.claude-plugin/agents/investigator.md",
+    "./.claude-plugin/agents/orchestrator.md",
+    "./.claude-plugin/agents/reader.md",
+    "./.claude-plugin/agents/researcher.md",
+    "./.claude-plugin/agents/searcher.md"
+  ],
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Report language",
+      "description": "auto, or a language code such as en or fr",
+      "default": "auto"
+    },
+    "run_mode": {
+      "type": "string",
+      "title": "Who runs a research",
+      "description": "Who runs a research: ask, the session agent, a subagent or a team",
+      "options": [
+        "ask",
+        "session",
+        "subagent",
+        "team"
+      ],
+      "default": "ask"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.tavily.com/search",
+    "headers": {
+      "Authorization": "Bearer KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "search_depth": "basic",
+      "max_results": 5,
+      "topic": "general",
+      "country": "luxembourg",
+      "include_answer": false,
+      "include_raw_content": false,
+      "include_usage": true
+    }
+  },
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "detail": {
+      "error": "Unauthorized: missing or invalid API key."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+⚠ pf-q1-2026-09-30-parents-of-victor-hugo · objected · 2 objections open
+  reviewed by: the contradictor, independent
+
+Question
+  Who were the parents of Victor Hugo, born about 1802 in Besançon?
+
+Sources
+  - Archives municipales de Besançon, État civil, Besançon, E-1802-N, acte 112, image 45,
+  https://example.org/amb/e-1802-n/45 (consulted on 2026-09-30).
+
+Analysis
+  The birth record is an original, declared by the father.
+
+Correlation
+  No other evidence names a father.
+
+Conflicts resolved
+  None.
+
+Conclusion
+  Léopold Hugo is the father of Victor Hugo.
+
+Objections
+  ⚠ 1. A namesake, Victor Hugot, was born in Nancy in 1801.
+     fact             victor-hugo-1802.birth
+     would settle it  the Nancy birth record, and his death
+  ⚠ 2. The father's name is spelled Hugot in the birth record.
+     would settle it  the father's own signature

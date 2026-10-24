@@ -1,0 +1,11 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://api.openarch.nl/1.1/records/show.json?archive=abb&identifier=20e8ec51-bb23-cbd6-790d-817b40f3b63a&lang=en"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json; charset=utf-8"
+ },
+ "body": "{\"Person\":[{\"@pid\":\"Person1\",\"PersonName\":{\"PersonNameFirstName\":\"Joseph\",\"PersonNameLastName\":\"Bams\"},\"Gender\":\"Vrouw\",\"Origin\":{\"Country\":\"Allemagne\"},\"BirthDate\":{\"Year\":\"1860\",\"Month\":\"8\",\"Day\":\"1\"},\"BirthPlace\":{\"Place\":\"Eupen\"},\"Profession\":\"ouvrier\"},{\"@pid\":\"Person2\",\"PersonName\":{\"PersonNameFirstName\":\"%Hugo% Jh.\",\"PersonNameLastName\":\"Rams\"}}],\"Event\":{\"@eid\":\"Event1\",\"EventType\":\"other:Immigratie\",\"EventDate\":{\"Year\":\"1898\"},\"EventRemark\":[{\"@Key\":\"01 Dossiernummer\",\"Value\":\"634261\"},{\"@Key\":\"02 Bewaard\",\"Value\":\"Ja\"}]},\"RelationEP\":[{\"PersonKeyRef\":\"Person1\",\"EventKeyRef\":\"Event1\",\"RelationType\":\"Geregistreerde\"},{\"PersonKeyRef\":\"Person2\",\"EventKeyRef\":\"Event1\",\"RelationType\":\"other:Relatie\"}],\"Source\":{\"SourcePlace\":{\"Place\":\"Brussel\"},\"SourceIndexDate\":{\"From\":\"1835-01-01\",\"To\":\"1912-12-31\"},\"SourceType\":\"other:Vreemdelingendossiers\",\"SourceReference\":{\"InstitutionName\":\"Rijksarchief Belgi\\u00eb (Brussel)\",\"Collection\":\"Ministerie van Justitie. Bestuur Openbare Veiligheid. Dienst Vreemdelingenpolitie. Alfabetische Steekkaarten van de Individuele dossiers geopend tussen 1835 en 1912 (dossiers nrs. 1-999.999); archiefblokken 1538, 1534 en 1535 met T 413.\"},\"SourceLastChangeDate\":\"2020-12-16\",\"RecordIdentifier\":\"4139.0\",\"RecordGUID\":\"{20e8ec51-bb23-cbd6-790d-817b40f3b63a}\",\"SourceRemark\":[{\"@Key\":\"Opmerking\",\"Value\":\"origine: Allemagne + opvolging dossier: expulsion + V\"},{\"@Key\":\"Onderzoekshulp\",\"Value\":\"http:\\/\\/extranet.arch.be\\/pdf\\/immibel\\/NL\\/20180426_Immibel_Handleiding_DatabankVreemdelingendossiers_vdef.pdf\"},{\"@Key\":\"Vrijwilliger\",\"Value\":\"Sarah Heynssens (Rijksarchief Belgi\\u00eb)\"},{\"@Key\":\"Provenance\",\"Value\":\"gedownload via https:\\/\\/www.sodha.be\\/dataset.xhtml?persistentId=doi:10.34934\\/DVN\\/BZ6R5B (CC-BY)\"}]}}"
+}

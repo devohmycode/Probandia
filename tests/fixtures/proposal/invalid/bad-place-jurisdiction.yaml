@@ -1,0 +1,12 @@
+# expect: $.places[0].jurisdictions[0].name
+schema: 1
+id: 01J9ZM0000000000000000000C
+research: 2026-09-30-parents-of-victor-hugo
+pass: 1
+author:
+  harness: terminal
+  agent: session
+places:
+- id: auxon-dessous
+  jurisdictions:
+  - level: commune

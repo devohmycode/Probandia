@@ -1,0 +1,39 @@
+persons:
+- id: anne-hugot-1790
+  names:
+    surname: HUGOT
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: anne-hugot-1790.birth
+    type: birth
+    date:
+      value: '1790'
+      qualifier: exact
+    status: record
+    source: null
+  - id: anne-hugot-1790.death
+    type: death
+    date:
+      value: '1825'
+      qualifier: exact
+    status: record
+    source: null
+- id: rose-hugot-1830
+  names:
+    surname: HUGOT
+  parents:
+    father: null
+    mother: anne-hugot-1790
+  facts:
+  - id: rose-hugot-1830.birth
+    type: birth
+    date:
+      value: '1830'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- rose-hugot-1830.birth
+- anne-hugot-1790.death

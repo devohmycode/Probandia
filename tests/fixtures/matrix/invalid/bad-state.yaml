@@ -1,0 +1,13 @@
+# expect: $.questions[0].rows[0].state
+schema: 1
+research: 2026-09-30-parents-of-victor-hugo
+updated: '2026-10-04T12:00:00Z'
+questions:
+- id: Q1
+  type: birth
+  status: open
+  window: {from: 1850, to: 1850}
+  unknown: []
+  rows:
+  - {type: civil_registers, state: done, places: [auxon-dessous], years: [1850, 1850]}
+not_applicable: []

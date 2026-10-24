@@ -1,0 +1,12 @@
+{
+  "note": "not a live answer: built from the ScraperAPI documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://api.scraperapi.com/?api_key=KEY&url=https%3A%2F%2Fexample.org%2Fregistre-1851"
+  },
+  "status": 403,
+  "headers": {
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "body": "You have exhausted the API Credits available in this monthly cycle. You can upgrade your subscription or enable overages."
+}

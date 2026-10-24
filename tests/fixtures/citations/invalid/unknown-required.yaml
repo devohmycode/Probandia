@@ -1,0 +1,16 @@
+# expect: $.types.book.required[0]
+schema: 1
+lang: en
+dates: {months: [a, b, c, d, e, f, g, h, i, j, k, l], day: "{d} {month} {y}", month: "{month} {y}"}
+terms: {}
+layer_join: '; '
+page: '{page}'
+types:
+  book:
+    required: [isbn]
+    recommended: []
+    series: null
+    full: '{title}.'
+    first: '{title}.'
+    short: '{title}.'
+layers: {}

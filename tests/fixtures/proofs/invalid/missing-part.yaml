@@ -1,0 +1,8 @@
+# expect: $.proofs[0].parts.conclusion
+schema: 1
+proofs:
+  - id: pf-q1-r
+    research: r
+    question: Q1
+    parts: {question: q, sources: s, analysis: a, correlation: c, conflicts: x}
+    review: {state: draft, rounds: []}

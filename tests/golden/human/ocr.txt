@@ -1,0 +1,6 @@
+✓ 2 lines read by OCR from families/marchand/evidence/images/bourg-vert-1898-57.jpg
+
+  1  L'an mil huit cent
+  2  quatre-vingt-dix-huit
+
+OCR is a draft: check each line against the image

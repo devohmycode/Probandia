@@ -1,0 +1,7 @@
+# expect: $.not_applicable[0].ts
+schema: 1
+research: 2026-09-30-parents-of-victor-hugo
+updated: '2026-10-04T12:00:00Z'
+questions: []
+not_applicable:
+- {question: Q1, type: census, reason: "no census"}

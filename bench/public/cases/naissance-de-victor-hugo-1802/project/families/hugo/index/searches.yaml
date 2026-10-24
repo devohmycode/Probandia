@@ -1,0 +1,22 @@
+schema: 1
+searches:
+- kind: archive
+  engine: project
+  query: acte de décès de Victor Marie HUGO, Paris 16e, 1885
+  window:
+    from: 1885
+    to: 1885
+    places:
+    - Paris
+  filters:
+    archive: ad75
+    types:
+    - civil_registers
+    register: Paris 16e arrondissement, décès 1885
+    views: acte n° 546 (evidence/images/death-1885-paris-16-546.jpg)
+  result: positive
+  support: image
+  id: s-01M5J76V2BZEB8G2DNZ5ZVWE9C
+  ts: '2026-10-22T16:30:48Z'
+  research: 2026-10-22-quand-et-ou-est-mort-victor-marie-hugo-ne-a-besancon
+  pass: 1

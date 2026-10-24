@@ -1,0 +1,33 @@
+schema: 1
+id: 01J9ZM0000000000000000000B
+research: 2026-09-30-parents-of-victor-hugo
+pass: 1
+author:
+  harness: terminal
+  agent: session
+places:
+- id: auxon-dessous
+  current_name: Les Auxons
+  type: commune
+  insee:
+    code: '25034'
+  jurisdictions:
+  - level: commune
+    name: Auxon-Dessous
+    from: null
+    to: '2014-12-31'
+    source: insee-cog
+  - level: commune
+    name: Les Auxons
+    from: '2015-01-01'
+    to: null
+    source: insee-cog
+  repositories:
+  - name: Archives départementales du Doubs
+    archive: ad25
+    holdings:
+    - type: baptism
+      years: [1550, 1792]
+  guide:
+    built: '2026-10-04'
+    sources: [insee-cog, catalogue:archives]

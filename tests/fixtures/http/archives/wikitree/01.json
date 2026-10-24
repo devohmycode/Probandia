@@ -1,0 +1,11 @@
+{
+ "request": {
+  "method": "GET",
+  "url": "https://api.wikitree.com/api.php?action=getProfile&key=Lincoln-7&fields=Id%2CName%2CFirstName%2CMiddleName%2CLastNameAtBirth%2CLastNameCurrent%2CBirthDate%2CDeathDate%2CBirthLocation%2CDeathLocation%2CFather%2CMother"
+ },
+ "status": 200,
+ "headers": {
+  "Content-Type": "application/json; charset=utf-8"
+ },
+ "body": "[{\"page_name\":\"Lincoln-7\",\"profile\":{\"Id\":36674,\"Name\":\"Lincoln-7\",\"FirstName\":\"James\",\"MiddleName\":\"\",\"LastNameAtBirth\":\"Lincoln\",\"LastNameCurrent\":\"Lincoln\",\"BirthDate\":\"1681-10-26\",\"DeathDate\":\"0000-00-00\",\"BirthLocation\":\"Hingham, Suffolk, Massachusetts Bay Colony\",\"DeathLocation\":\"\",\"Father\":36672,\"Mother\":36673},\"status\":0}]"
+}

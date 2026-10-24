@@ -1,0 +1,86 @@
+[build-system]
+requires = ["hatchling>=1.27"]  # 1.27: license-files and License-Expression (PEP 639)
+build-backend = "hatchling.build"
+
+[project]
+name = "probandia"
+dynamic = ["version"]
+description = "Genealogy research plugin for AI coding agents: nothing is concluded until it is proven."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+# the wheel puts them under .dist-info/licenses/; the OFL texts also go with report-templates/
+license-files = ["LICENSE", "THIRD-PARTY-NOTICES", "report-templates/licenses/*.txt"]
+authors = [{ name = "DevOhMyCode" }]
+keywords = ["genealogy", "family-history", "gedcom", "genealogical-proof-standard", "research", "ai-agents",
+            "claude-code", "mcp"]
+# The systems are those of the CI's matrix (.github/workflows/ci.yml), macOS on master only.
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Natural Language :: English",
+  "Natural Language :: French",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Sociology :: Genealogy",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/devohmycode/probandia"
+Repository = "https://github.com/devohmycode/probandia"
+Changelog = "https://github.com/devohmycode/probandia/blob/master/CHANGELOG.md"
+Issues = "https://github.com/devohmycode/probandia/issues"
+
+[project.optional-dependencies]
+# everything the tests and the CI's lint need: python -m pip install --editable ".[dev]"
+dev = ["jsonschema>=4.18", "Pillow>=12,<13", "ruff==0.17.0"]
+tui = ["textual>=8.2,<9"]
+images = ["Pillow>=12,<13"]
+
+[project.scripts]
+probandia = "probandia.cli:main"
+
+# The version lives in src/probandia/__init__.py only.
+[tool.hatch.version]
+path = "src/probandia/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/probandia"]
+
+# The engine's data stays at the root of the repository, where the plugin reads
+# it; the wheel carries a copy under probandia/_data/ (see probandia.paths).
+[tool.hatch.build.targets.wheel.force-include]
+"catalogues" = "probandia/_data/catalogues"
+"locales" = "probandia/_data/locales"
+"schemas" = "probandia/_data/schemas"
+"vendor-js" = "probandia/_data/vendor-js"
+"report-templates" = "probandia/_data/report-templates"
+"designer" = "probandia/_data/designer"
+
+# The sdist carries what git tracks at the root, and nothing else: built from a working copy, it
+# would otherwise take the local notes (.remember/, .claude/, .cursor/plans/), which name the
+# author's own families. tests/unit/test_packaging.py keeps this list equal to the tracked entries.
+[tool.hatch.build.targets.sdist]
+only-include = [
+  ".agents", ".claude-plugin", ".codex-plugin", ".cursor-plugin", ".env.example", ".factory-plugin",
+  ".gitattributes", ".github", ".gitignore", ".gitleaksignore", "AGENTS.md", "CHANGELOG.md", "LICENSE", "README.md", "SECURITY.md", "STABILITY.md", "THIRD-PARTY-NOTICES", "agents", "bench", "catalogues",
+  "commands", "cursor", "designer", "droids", "examples", "guides", "hooks", "hooks.json", "locales",
+  "mcp.json", "mcp_config.json", "plugin.json", "pyproject.toml", "report-templates", "run_probandia.py",
+  "schemas", "site", "skills", "src", "tests", "tools", "vendor-js",
+]
+
+# python -m ruff check . (the version pinned in the dev extra); a step of the CI's test job
+[tool.ruff]
+extend-exclude = ["src/probandia/_vendor"]
+
+[tool.ruff.lint]
+select = ["F", "E9"]

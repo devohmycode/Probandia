@@ -1,0 +1,35 @@
+schema: 1
+id: piege-informateur-commun
+title: 'Piège : deux sources, un seul informateur'
+question: Quand est né Hervé KERNEC, mort à Bourg-Vert en 1845 ? Les actes connus sont dans le projet
+  (evidence/transcriptions).
+language: fr
+family: kernec
+research: 2026-10-14-naissance-de-herve-kernec
+observed: true
+offline: true
+expected:
+- label: naissance
+  person: Hervé KERNEC
+  type: birth
+  year: 1773
+  axes:
+    information: secondary
+  confidence_max: probable
+- label: deces
+  person: Hervé KERNEC
+  type: death
+  year: 1845
+  place: Bourg-Vert
+  date: '1845-02-03'
+  fact: herve-kernec-1773.death
+sources:
+- id: src-01JT0000000000000000000501
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+- id: src-01JT0000000000000000000502
+  licence: CC BY 4.0
+  terms: acte inventé pour le banc public de Probandia (bench/public/README.md)
+note: 'L''acte de décès (72 ans) et la déclaration de succession (né en 1773) concordent, mais les deux
+  tiennent l''information du même fils, Yves KERNEC : ils ne se confirment pas l''un l''autre. L''information
+  reste secondaire et la conclusion ne passe pas « prouvée ».'

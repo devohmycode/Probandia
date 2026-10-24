@@ -1,0 +1,47 @@
+$schema: https://probandia.replit.app/schemas/report-1.json
+schema: 1
+research: 2026-09-30-parents-of-victor-hugo
+lang: fr
+mode: journal
+numbering: arabic
+generated: '2026-09-30T19:02:11Z'
+through_pass: 1
+sections:
+- id: 01J9ZK6S000000000000000001
+  aliases: []
+  kind: chapter
+  number: '1'
+  path: '1'
+  title: Naissance
+  body_md: …
+  facts:
+  - victor-hugo-1802.birth
+  pass: 1
+  children:
+  - id: 01J9ZK6S000000000000000002
+    aliases: []
+    kind: section
+    number: '1.1'
+    path: '1.1'
+    title: L'acte
+    body_md: …
+    facts: []
+    pass: 1
+    children: []
+errata:
+- id: E1
+  target:
+    section: 01J9ZK6S000000000000000002
+    fact: null
+  wrong: '1801'
+  correction: '1802'
+  cause: misreading
+  detection: verify
+  pass: 1
+revisions: []
+trees: []
+method: []
+log:
+- id: 01M3V7T5PX72PDYY6T6CNEBQE5
+  type: pass.started
+  pass: 1

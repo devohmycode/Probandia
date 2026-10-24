@@ -1,0 +1,12 @@
+⚠ warning
+  family         hugo
+  persons        3
+  facts          5
+  sources        3
+  searches       2
+  hypotheses     1
+  researches     1
+  connectors     2
+  not converted  5
+
+details: work/import-report.md

@@ -1,0 +1,74 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://api.exa.ai/search",
+    "headers": {
+      "x-api-key": "KEY"
+    },
+    "json": {
+      "query": "\"Hugo\" Besançon 1802",
+      "type": "auto",
+      "numResults": 5,
+      "userLocation": "LU",
+      "contents": {
+        "highlights": true
+      }
+    }
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "requestId": "b7e1c0d94f2a4e6c8a3d5f1e2c9b0a47",
+    "resolvedSearchType": "",
+    "results": [
+      {
+        "id": "https://genealogy.example.org/people/Abel-Hugo/6000000041234567890",
+        "title": "Abel Hugo (1798 - 1855) - Genealogy",
+        "url": "https://genealogy.example.org/people/Abel-Hugo/6000000041234567890",
+        "publishedDate": "2019-08-02T00:00:00.000Z",
+        "author": null,
+        "highlights": [
+          "Abel Hugo was born in 1798, in Paris, France, to Léopold Hugo and Sophie Trébuchet."
+        ],
+        "highlightScores": [
+          0.41
+        ],
+        "favicon": "https://genealogy.example.org/favicon.ico"
+      },
+      {
+        "id": "https://records.example.org/ark:/61903/1:1:X2QH-7KM",
+        "title": "Eugène Hugo, \"France, Civil Registration\"",
+        "url": "https://records.example.org/ark:/61903/1:1:X2QH-7KM",
+        "highlights": [
+          "Name: Eugène Hugo. Event Type: Birth. Event Date: 1800. Event Place: Nancy, France. Father's Name: Léopold Hugo."
+        ],
+        "highlightScores": [
+          0.38
+        ],
+        "favicon": "https://records.example.org/favicon.ico"
+      },
+      {
+        "id": "https://families.example.org/genealogy/families/hugo.html",
+        "title": "The Hugo family of Nancy",
+        "url": "https://families.example.org/genealogy/families/hugo.html",
+        "publishedDate": "2014-03-11T00:00:00.000Z",
+        "author": "Example Families",
+        "highlights": [
+          "Léopold Hugo (1773-1828) married Sophie Trébuchet in 1797; their son Victor was born in 1802."
+        ],
+        "highlightScores": [
+          0.33
+        ]
+      }
+    ],
+    "searchTime": 1187.4,
+    "costDollars": {
+      "total": 0.007,
+      "search": {
+        "neural": 0.007
+      }
+    }
+  }
+}

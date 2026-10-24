@@ -1,0 +1,32 @@
+persons:
+- id: paul-martin-1800
+  names:
+    surname: MARTIN
+  parents:
+    father: null
+    mother: null
+  facts:
+  - id: paul-martin-1800.birth
+    type: birth
+    date:
+      value: '1800'
+      qualifier: exact
+    status: record
+    source: null
+- id: luc-martin-1795
+  names:
+    surname: MARTIN
+  parents:
+    father: paul-martin-1800
+    mother: null
+  facts:
+  - id: luc-martin-1795.birth
+    type: birth
+    date:
+      value: '1795'
+      qualifier: exact
+    status: record
+    source: null
+expect:
+- luc-martin-1795.birth
+- paul-martin-1800.birth

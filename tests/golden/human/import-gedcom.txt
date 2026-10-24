@@ -1,0 +1,13 @@
+✓ 2 persons read from the file (7.0), 0 matching the family
+
+  staged in work/import/tree-7.yaml
+
+To review: 1 proposal
+  proposal                    person                 why
+  ─────────────────────────────────────────────────────────────────────────
+  <ulid>  jean-hugot-1790        no match in the family
+                              sophie-trebuchet-1772  no match in the family
+
+  • every fact is a hypothesis; review the proposals, then apply them one by one
+
+→ probandia apply <proposal>

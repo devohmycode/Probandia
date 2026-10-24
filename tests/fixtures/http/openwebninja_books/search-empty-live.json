@@ -1,0 +1,23 @@
+{
+  "note": "recorded live on 2 October 2026; key, personal fields and most headers removed. Google Books answered no book even for the query genealogy: an empty answer is not trusted",
+  "request": {
+    "method": "GET",
+    "url": "https://api.openwebninja.com/realtime-books-data/search?query=genealogy"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "status": "OK",
+    "request_id": "4dc8bd94-b474-4318-b9b2-db3a418bee2e",
+    "parameters": {
+      "query": "genealogy",
+      "country": "us",
+      "language": "en",
+      "view_type": "any",
+      "document_type": "any"
+    },
+    "data": []
+  }
+}

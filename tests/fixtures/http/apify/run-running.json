@@ -1,0 +1,27 @@
+{
+  "note": "not a live answer: built from the Apify documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "POST",
+    "url": "https://api.apify.com/v2/acts/apify~google-search-scraper/runs"
+  },
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "id": "HG7ML7M8z78YcAPEB",
+      "actId": "apify~google-search-scraper",
+      "status": "RUNNING",
+      "defaultDatasetId": "wmKPijuyDnPZAPRMk",
+      "usageTotalUsd": 0.001,
+      "pricingInfo": {
+        "pricingModel": "PAY_PER_EVENT"
+      },
+      "chargedEventCounts": {
+        "actor-start": 1,
+        "search-page-scraped": 1
+      }
+    }
+  }
+}

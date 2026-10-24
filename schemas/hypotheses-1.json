@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://probandia.replit.app/schemas/hypotheses-1.json",
+  "title": "hypotheses.yaml",
+  "description": "Family index: hypotheses.yaml.",
+  "type": "object",
+  "required": [
+    "schema",
+    "hypotheses"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/hypothesis"
+      }
+    }
+  },
+  "$defs": {
+    "hypothesis": {
+      "type": "object",
+      "required": [
+        "id",
+        "question",
+        "hypotheses"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^h-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "question": {
+          "type": "string"
+        },
+        "hypotheses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "statement"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "statement": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "retained",
+                  "rejected"
+                ]
+              }
+            }
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "ref",
+              "marks"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "ref": {
+                "type": "string"
+              },
+              "marks": {
+                "type": "object",
+                "additionalProperties": {
+                  "enum": [
+                    "compatible",
+                    "incompatible",
+                    "neutral"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "discriminating": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "opened": {
+          "$ref": "#/$defs/nday"
+        },
+        "closed": {
+          "$ref": "#/$defs/nday"
+        },
+        "outcome": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "nday": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# expect: $.gaps[0].id
+schema: 1
+gaps:
+- id: gap-1
+  archive: ad56
+  window:
+    from: 1793
+    to: 1802
+  kind: missing

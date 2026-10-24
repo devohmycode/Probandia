@@ -1,0 +1,35 @@
+schema: 1
+id: 2026-10-14-mariage-de-guillaume-hamon
+family: hamon
+question: Où et quand Guillaume HAMON a-t-il épousé Julienne COLLET ? Les actes connus sont dans le projet
+  (evidence/transcriptions).
+language: fr
+mode: journal
+numbering: arabic
+formats:
+- md
+created: '2026-10-14T09:00:00Z'
+created_by:
+  harness: cli
+  agent: session
+forked_from: null
+run:
+  mode: session
+instructions: []
+status: closed
+passes: 1
+questions:
+- id: Q1
+  text: Où et quand Guillaume HAMON a-t-il épousé Julienne COLLET ?
+  type: marriage
+  persons:
+  - guillaume-hamon-1858
+  - julienne-collet-1861
+  status: unresolved
+  reason: aucun acte de mariage dans les registres fournis ; la table de Saint-Aubry 1813-1822 ne le contient
+    pas, ce qui ne dit rien des autres lieux ni d'avant 1813
+  window:
+    from: 1813
+    to: 1822
+  places:
+  - saint-aubry

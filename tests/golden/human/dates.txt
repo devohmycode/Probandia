@@ -1,0 +1,5 @@
+✓ 3 nivôse an XII  →  25 December 1803
+
+  ISO date   1803-12-25
+  qualifier  exact
+  read in    French Republican calendar

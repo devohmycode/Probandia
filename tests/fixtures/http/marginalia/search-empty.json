@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api2.marginalia-search.com/search?query=%22Hugo%22+Besan%C3%A7on+1802&count=5",
+    "headers": {
+      "API-Key": "KEY"
+    },
+    "json": null
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "API-Remaining-Daily-Capacity": "998",
+    "API-Event-Type": "NoResults"
+  },
+  "body": {
+    "license": "CC-BY-NC-SA 4.0",
+    "query": "\"Hugo\" Besançon 1802",
+    "page": 1,
+    "pages": 0,
+    "results": []
+  }
+}

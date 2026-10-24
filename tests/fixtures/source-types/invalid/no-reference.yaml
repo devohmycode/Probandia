@@ -1,0 +1,9 @@
+# expect: $.types[0].rules[0].references
+schema: 1
+types:
+  - id: civil_registers
+    names: {en: "civil registers", fr: "état civil"}
+    coverage: [birth]
+    answers: [birth]
+    rules:
+      - {country: FR, from: 1792, to: null, held_by: ["town hall"], references: []}

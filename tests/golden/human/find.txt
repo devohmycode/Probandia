@@ -1,0 +1,10 @@
+✓ 5 persons found for Marchant
+
+Persons
+  person                  family    name               born  died  match
+  ────────────────────────────────────────────────────────────────────────
+  francois-marchand-1785  marchand  François MARCHAND  1785  1842  variant
+  henri-marchand-1870     marchand  Henri MARCHAND     1870  1931  variant
+  jean-marchand-1812      marchand  Jean MARCHAND      1812  1880  variant
+  louis-marchand-1898     marchand  Louis MARCHAND     1898  1970  variant
+  pierre-marchand-1841    marchand  Pierre MARCHAND    1841  1899  variant

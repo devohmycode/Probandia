@@ -1,0 +1,14 @@
+{
+  "note": "not a live answer: built from the ZenRows documentation read on 2 October 2026; to check against a real call once an account is open",
+  "request": {
+    "method": "GET",
+    "url": "https://api.zenrows.com/v1/?apikey=KEY&url=https%3A%2F%2Fexample.org%2Fregistre-1851&response_type=markdown&original_status=true&js_render=true"
+  },
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/markdown; charset=utf-8",
+    "X-Request-Cost": "0.005",
+    "Zr-Final-Url": "https://example.org/registre-1851"
+  },
+  "body": "# Registre des naissances, 1851\n\nActe n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… Acte n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… Acte n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… Acte n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… Acte n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… Acte n° 112. Le trois janvier mil huit cent cinquante et un, est comparu Nicolas Hugot, menuisier, lequel nous a présenté un enfant du sexe masculin… "
+}

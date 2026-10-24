@@ -1,0 +1,47 @@
+schema: 1
+id: 01J9ZM0000000000000000000A
+research: 2026-09-30-parents-of-victor-hugo
+pass: 2
+author:
+  harness: claude-code
+  agent: researcher
+  model: claude-sonnet-5-5
+persons:
+- id: sophie-trebuchet-1772
+  names:
+    given: Sophie
+    surname: TRÉBUCHET
+  sex: F
+  living: false
+  parents:
+    father: null
+    mother: null
+  spouses: []
+  facts: []
+facts:
+- id: sophie-trebuchet-1772.birth
+  type: birth
+  date:
+    value: '1772'
+    qualifier: about
+  status: hypothesis
+  source: null
+sources: []
+searches: []
+hypotheses: []
+errata: []
+sections:
+- parent: null
+  kind: chapter
+  title: La mère
+  body_md: …
+  facts:
+  - sophie-trebuchet-1772.birth
+places: []
+variants:
+- kind: surname
+  name: TRÉBUCHET
+  form: Trebuchet
+  source: null
+non_links: []
+gaps: []

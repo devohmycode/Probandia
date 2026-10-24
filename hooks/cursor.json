@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook session --harness cursor",
+        "timeout": 10
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook guard --harness cursor",
+        "timeout": 10
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook guard --harness cursor",
+        "timeout": 10
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook log --harness cursor",
+        "timeout": 15
+      }
+    ],
+    "stop": [
+      {
+        "command": "python \"${CLAUDE_PLUGIN_ROOT}/run_probandia.py\" hook verify --harness cursor",
+        "timeout": 15
+      }
+    ]
+  }
+}

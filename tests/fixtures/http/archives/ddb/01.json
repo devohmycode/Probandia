@@ -1,0 +1,171 @@
+{
+  "provenance": "Recorded from the public DDB v2 API on 2026-10-05; CC0 metadata, object rights in license",
+  "request": {
+    "url": "https://api.deutsche-digitale-bibliothek.de/2/search/index/search/select?q=Goethe&rows=1&start=0&wt=json"
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "responseHeader": {
+      "zkConnected": true,
+      "status": 0,
+      "QTime": 248,
+      "params": {
+        "q": "Goethe",
+        "start": "0",
+        "rows": "1",
+        "wt": "json"
+      }
+    },
+    "response": {
+      "numFound": 97067,
+      "start": 0,
+      "maxScore": 19.03598,
+      "numFoundExact": true,
+      "docs": [
+        {
+          "id": "TNPFDKO2VDGBZ72RWC6RKDNZYZQZP3XK",
+          "category": "Kultur",
+          "place_fct": [
+            "Leipzig",
+            "Frankfurt am Main"
+          ],
+          "place": [
+            "Leipzig",
+            "Frankfurt am Main"
+          ],
+          "affiliate_fct": [
+            "Friedrich Pecht",
+            "Lazarus Gottlieb Sichling",
+            "Johann Wolfgang von Goethe"
+          ],
+          "affiliate": [
+            "Friedrich Pecht",
+            "Lazarus Gottlieb Sichling",
+            "Johann Wolfgang von Goethe"
+          ],
+          "keywords_fct": [
+            "Druckgraphik"
+          ],
+          "keywords": [
+            "Druckgraphik"
+          ],
+          "objecttype_fct": [
+            "Druckgraphik"
+          ],
+          "objecttype": [
+            "Druckgraphik"
+          ],
+          "type_fct": [
+            "mediatype_002"
+          ],
+          "type": [
+            "mediatype_002"
+          ],
+          "provider_fct": [
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum - Kunstsammlung / Museum",
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+          ],
+          "provider": [
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum - Kunstsammlung / Museum",
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+          ],
+          "dataprovider_fct": [
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum - Kunstsammlung / Museum"
+          ],
+          "sector_fct": "sec_06",
+          "last_update": "2025-06-16T10:24:14+0200",
+          "dataset_id": "2173834104634062sqCf",
+          "label": [
+            "Goethe"
+          ],
+          "view": [
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum",
+            "Druckgraphik",
+            "Brustbild Goethes in zeitgenössischer Tracht, dem Betrachter zugewandt, diesen jedoch nicht nicht direkt anschauend. Bezeichnet: Gestochen unter der Darstellung links \"Fr. Pecht gez\"; gestochen unter der Darstellung rechts \"L. Sichling gest\"; darunter mittig \"Goethe\", darunter \"Druck und Verlag von F.A. Brockhaus in Leipzig.\". Erschienen in: Pecht, Friedrich: Goethe-Galerie. Charaktere aus Goethe’s Werken, Leipzig 1864.",
+            "Stahlstich",
+            "Darstellung: 17,9 x 12,6 cm - Platte: 27,6 x ca. 19,0 cm - Blatt: 28,4 x 19,7 cm",
+            "Herstellung",
+            "Lazarus Gottlieb Sichling (1812-1863)",
+            "Leipzig",
+            "1864-1877",
+            "Druckplatte hergestellt",
+            "Friedrich Pecht (1814-1903)",
+            "Hergestellt",
+            "Johann Wolfgang von Goethe (1749-1832)",
+            "Gestochen unter der Darstellung links \"Fr. Pecht gez\"; gestochen unter der Darstellung rechts \"L. Sichling gest\"; darunter mittig \"Goethe\", darunter \"Druck und Verlag von F.A. Brockhaus in Leipzig.\".",
+            "Freies Deutsches Hochstift / Frankfurter Goethe-Museum, Frankfurt am Main",
+            "III-15547-001",
+            "Sammlung der Goethe-Illustrationen"
+          ],
+          "begin_time": [
+            680448
+          ],
+          "caption_1": [
+            "Goethe"
+          ],
+          "caption_2": [
+            "Rechtewahrnehmung: Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+          ],
+          "dataset_label": "Gesamtlieferung – LIDO",
+          "delivery_id": "14782787943127210DcBh",
+          "digitalisat": "true",
+          "end_time": [
+            685561
+          ],
+          "ingest_id": "2173834104634062sqCf",
+          "license": [
+            "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          ],
+          "license_group": [
+            "rights_002"
+          ],
+          "metadata_rights": [
+            "http://creativecommons.org/publicdomain/zero/1.0/"
+          ],
+          "mapping_version": "6.8",
+          "md_format": "lido",
+          "mimetype_fct": [
+            "image/jpeg"
+          ],
+          "preview": [
+            "Druckgraphik"
+          ],
+          "preview_store": "<preview xmlns=\"http://www.deutsche-digitale-bibliothek.de/cortex\" xmlns:crm=\"http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:ddb=\"http://www.ddb.de/\" xmlns:ddbObject=\"http://www.deutsche-digitale-bibliothek.de/ddbObject\" xmlns:edm=\"http://www.europeana.eu/schemas/edm/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:institution=\"http://www.deutsche-digitale-bibliothek.de/institution\" xmlns:ns14=\"http://www.deutsche-digitale-bibliothek.de/ns/cortex-item-source-description\" xmlns:ns15=\"http://www.deutsche-digitale-bibliothek.de/ns/cortex-item-source\" xmlns:ore=\"http://www.openarchives.org/ore/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:view=\"http://www.deutsche-digitale-bibliothek.de/item\" media=\"image\" type=\"Kultur\"> <title>Goethe</title> <subtitle>Druckgraphik</subtitle> <thumbnail href=\"57b9cf33-2325-4d9e-95c2-6b0fb3b42ba5\"/> </preview>",
+          "provider_id": [
+            "YNKIAG7DFC4HZOATBPG75IFEY5BUDYUS",
+            "99900860",
+            "6MZ5APQTMS5AH2UGHRWBKVAOZ7LSCCMS"
+          ],
+          "provider_item_id": "DE-MUS-046417/1173",
+          "dataprovider_id": [
+            "YNKIAG7DFC4HZOATBPG75IFEY5BUDYUS",
+            "99900860"
+          ],
+          "ranking": [
+            "Brustbild Goethes in zeitgenössischer Tracht, dem Betrachter zugewandt, diesen jedoch nicht nicht direkt anschauend. Bezeichnet: Gestochen unter der Darstellung links \"Fr. Pecht gez\"; gestochen unter der Darstellung rechts \"L. Sichling gest\"; darunter mittig \"Goethe\", darunter \"Druck und Verlag von F.A. Brockhaus in Leipzig.\". Erschienen in: Pecht, Friedrich: Goethe-Galerie. Charaktere aus Goethe’s Werken, Leipzig 1864.",
+            "Lazarus Gottlieb Sichling (1812-1863)",
+            "Friedrich Pecht (1814-1903)",
+            "Sichling, Lazarus Gottlieb",
+            "Lazarus Gottlieb Sichling",
+            "Зихлинг, Лазарус Готлиб",
+            "Pecht, Friedrich",
+            "Friedrich Pecht",
+            "Пехт, Фридрих",
+            "Johann Wolfgang von Goethe (1749-1832)"
+          ],
+          "source_format": "http://www.lido-schema.org/",
+          "supplier_id": "99900860",
+          "title": [
+            "Goethe"
+          ],
+          "revision_id": "22",
+          "_version_": 1858054135406919680,
+          "score": 19.03598
+        }
+      ]
+    }
+  }
+}

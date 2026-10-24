@@ -1,0 +1,16 @@
+# expect: $.cases[0].metrics.false_ids
+schema: 1
+probandia: 0.9.41
+date: '2026-10-13'
+cases:
+- id: parents-of-victor
+  harness: {name: claude-code, version: null}
+  model: claude-opus-5-5
+  effort: null
+  mode: session
+  duration_s: 1800
+  passes: 2
+  metrics: {findings: 1, expected: 2, false_promotions: 20.0, false_count: 1, false_ids: [victor-hugo-1802.birth],
+            uncited: 0, abstentions: 0, abstain_expected: 0, quoted: 0, facts: 6, proven: 5, duplicates: 0, native: 0, paid: 0}
+  tokens: null
+  by_model: []
