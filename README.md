@@ -56,18 +56,28 @@ Optional tools, which `probandia doctor` checks and installs nothing itself:
 
 ## Install the plugin
 
-The repository is both the plugin and its marketplace. Each harness installs it
-from the repository's folder (`<path>` below), or from its git URL,
-`https://github.com/devohmycode/probandia`, public from version 1.0.0.
+The repository, `https://github.com/devohmycode/probandia`, is both the plugin
+and its marketplace. Claude Code, Grok Build and Factory Droid install it
+straight from GitHub. Codex, Antigravity, OpenCode and Claude Desktop install it
+from a clone, whose folder is `<path>` below:
+
+```sh
+git clone https://github.com/devohmycode/probandia
+cd probandia
+```
+
+On Windows, clone it into a short folder (`C:\Users\<you>\probandia`, not a
+deep one): a few files of `bench/` have paths of 163 characters, and Windows
+refuses paths longer than 260.
 
 | Harness | Support | MCP server | Install |
 |---|---|---|---|
-| Claude Code (terminal, IDE, desktop app) | full | no: its skills call the engine through the shell | marketplace |
-| Grok Build | full | no: it reads `.claude-plugin/` | `grok plugin install` |
-| Codex | full | yes (`mcp.json`) | `install --harness codex` (plugin and seven agents) |
-| Cursor | full | yes (`cursor/mcp.json`) | local plugin folder |
-| Factory Droid | full | no: the plugin root is not expanded in its MCP settings | marketplace |
-| Antigravity | beta | yes (`mcp_config.json`) | `agy plugin install` |
+| Claude Code (terminal, IDE, desktop app) | full | no: its skills call the engine through the shell | `/plugin marketplace add devohmycode/probandia` |
+| Grok Build | full | no: it reads `.claude-plugin/` | `grok plugin install devohmycode/probandia --trust` |
+| Codex | full | yes (`mcp.json`) | `codex plugin marketplace add <path>`, then `install --harness codex` (plugin and seven agents) |
+| Cursor | full | yes (`cursor/mcp.json`) | `git clone` into `~/.cursor/plugins/local/probandia` |
+| Factory Droid | full | no: the plugin root is not expanded in its MCP settings | `droid plugin marketplace add https://github.com/devohmycode/probandia` |
+| Antigravity | beta | yes (`mcp_config.json`) | `agy plugin install <path>` |
 | OpenCode | reduced | yes, merged into `opencode.json` | `install --harness opencode` |
 | Claude Desktop (chat) | MCP server only | yes, the only part | `claude_desktop_config.json` |
 
@@ -81,15 +91,19 @@ Full support, without the MCP server. Verified on 21 October 2026 with Claude Co
 configuration of its own (`CLAUDE_CONFIG_DIR`): install from the repository's
 folder, a research run to its end, update and uninstall, which leaves
 `"enabledPlugins": {}` and Claude Code's copy of the plugin in its cache;
-the MCP server alone was listed connected, then removed. In a session (or the same words after `claude plugin` in a
-terminal):
+the MCP server alone was listed connected, then removed. Verified on 24 October
+2026 with Claude Code 2.1.306, from GitHub: marketplace added, plugin
+installed (1.0.0) and enabled, marketplace updated, then both removed. In a
+session (or the same words after `claude plugin` in a terminal):
 
-Install:
+Install, from GitHub:
 
 ```text
-/plugin marketplace add <path-or-git-url>
+/plugin marketplace add devohmycode/probandia
 /plugin install probandia@probandia
 ```
+
+From a clone, the first line is `/plugin marketplace add <path>`.
 
 Update:
 
@@ -136,14 +150,18 @@ repository's folder, `doctor` run in the harness names it, the status command
 answers `STATUS=OK`, and the uninstall leaves its configuration files as they
 were.
 
-Install:
+Install, from GitHub (`grok plugin install` takes a git URL, `user/repo` or a
+local path):
 
 ```sh
-grok plugin install <path-or-git-url> --trust
+grok plugin install devohmycode/probandia --trust
 ```
 
-Update: a local path is installed as a link, so `git pull` in `<path>` is
-enough; this command says so:
+From a clone: `grok plugin install <path> --trust`.
+
+Update: installed from GitHub, this command fetches the new version. A local
+path is installed as a link, so `git pull` in `<path>` is enough, and the same
+command says so:
 
 ```sh
 grok plugin update probandia
@@ -289,12 +307,14 @@ answers `STATUS=OK`, and the uninstall takes everything out but an empty
 `~/.factory/plugins/cache/`. The update was verified on 21 October 2026 with Factory
 Droid 0.245.1.
 
-Install:
+Install, from GitHub:
 
 ```sh
-droid plugin marketplace add <path-or-git-url>
+droid plugin marketplace add https://github.com/devohmycode/probandia
 droid plugin install probandia@probandia --scope user
 ```
+
+From a clone: `droid plugin marketplace add <path>`.
 
 Update:
 
