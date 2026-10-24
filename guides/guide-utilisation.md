@@ -55,17 +55,26 @@ Outils facultatifs, que `probandia doctor` vérifie sans rien installer lui-mêm
 
 ### 1.1 Le plugin dans votre agent
 
-Le dépôt est à la fois le plugin et sa marketplace. Chaque harnais l'installe depuis le dossier du dépôt (`<chemin>`
-ci-dessous), ou depuis son URL git, `https://github.com/devohmycode/probandia`, publique à partir de la version 1.0.0.
+Le dépôt, `https://github.com/devohmycode/probandia`, est à la fois le plugin et sa marketplace. Claude Code, Grok
+Build et Factory Droid l'installent directement depuis GitHub. Codex, Antigravity, OpenCode et Claude Desktop
+l'installent depuis un clone, dont le dossier est `<chemin>` ci-dessous :
+
+```sh
+git clone https://github.com/devohmycode/probandia
+cd probandia
+```
+
+Sous Windows, clonez-le dans un dossier court (`C:\Users\<vous>\probandia`, pas un dossier profond) : quelques
+fichiers de `bench/` ont des chemins de 163 caractères, et Windows refuse les chemins de plus de 260.
 
 | Harnais | Prise en charge | Serveur MCP | Installation |
 |---|---|---|---|
-| Claude Code (terminal, IDE, application de bureau) | complète | non : ses skills appellent le moteur par le shell | marketplace |
-| Grok Build | complète | non : il lit `.claude-plugin/` | `grok plugin install` |
-| Codex | complète | oui (`mcp.json`) | `install --harness codex` (plugin et sept agents) |
-| Cursor | complète | oui (`cursor/mcp.json`) | dossier de plugin local |
-| Factory Droid | complète | non : la racine du plugin n'est pas développée dans ses réglages MCP | marketplace |
-| Antigravity | bêta | oui (`mcp_config.json`) | `agy plugin install` |
+| Claude Code (terminal, IDE, application de bureau) | complète | non : ses skills appellent le moteur par le shell | `/plugin marketplace add devohmycode/probandia` |
+| Grok Build | complète | non : il lit `.claude-plugin/` | `grok plugin install devohmycode/probandia --trust` |
+| Codex | complète | oui (`mcp.json`) | `codex plugin marketplace add <chemin>`, puis `install --harness codex` (plugin et sept agents) |
+| Cursor | complète | oui (`cursor/mcp.json`) | `git clone` dans `~/.cursor/plugins/local/probandia` |
+| Factory Droid | complète | non : la racine du plugin n'est pas développée dans ses réglages MCP | `droid plugin marketplace add https://github.com/devohmycode/probandia` |
+| Antigravity | bêta | oui (`mcp_config.json`) | `agy plugin install <chemin>` |
 | OpenCode | réduite | oui, fusionné dans `opencode.json` | `install --harness opencode` |
 | Claude Desktop (conversation) | serveur MCP seul | oui, la seule partie | `claude_desktop_config.json` |
 
@@ -78,14 +87,18 @@ de la recherche sont traduits du README.
 Prise en charge complète, sans le serveur MCP. Vérifié le 21 octobre 2026 avec Claude Code 2.1.304 et 2.1.306,
 dans une configuration à part (`CLAUDE_CONFIG_DIR`) : installation depuis le dossier du dépôt, une recherche menée
 jusqu'au bout, mise à jour et désinstallation, qui laisse `"enabledPlugins": {}` et la copie du plugin dans le
-cache de Claude Code ; le serveur MCP seul a été listé connecté, puis retiré. Dans une session (ou les mêmes mots après `claude plugin` dans un terminal) :
+cache de Claude Code ; le serveur MCP seul a été listé connecté, puis retiré. Vérifié le 24 octobre 2026 avec
+Claude Code 2.1.306, depuis GitHub : marketplace ajoutée, plugin installé (1.0.0) et activé, marketplace mise à
+jour, puis l'un et l'autre retirés. Dans une session (ou les mêmes mots après `claude plugin` dans un terminal) :
 
-Installer :
+Installer, depuis GitHub :
 
 ```text
-/plugin marketplace add <chemin-ou-url-git>
+/plugin marketplace add devohmycode/probandia
 /plugin install probandia@probandia
 ```
+
+Depuis un clone, la première ligne est `/plugin marketplace add <chemin>`.
 
 Mettre à jour :
 
@@ -127,14 +140,16 @@ Ses options de plugin (`/config`) sont ignorées : les réglages viennent des fi
 dossier du dépôt, `doctor` lancé dans le harnais le nomme, la commande de statut répond `STATUS=OK`, et la
 désinstallation laisse ses fichiers de configuration tels qu'ils étaient.
 
-Installer :
+Installer, depuis GitHub (`grok plugin install` accepte une URL git, `utilisateur/dépôt` ou un chemin local) :
 
 ```sh
-grok plugin install <chemin-ou-url-git> --trust
+grok plugin install devohmycode/probandia --trust
 ```
 
-Mettre à jour : un chemin local est installé comme un lien, `git pull` dans `<chemin>` suffit ; cette commande le
-dit :
+Depuis un clone : `grok plugin install <chemin> --trust`.
+
+Mettre à jour : installé depuis GitHub, cette commande va chercher la nouvelle version. Un chemin local est installé
+comme un lien, `git pull` dans `<chemin>` suffit, et la même commande le dit :
 
 ```sh
 grok plugin update probandia
@@ -267,12 +282,14 @@ harnais le nomme, la commande de statut répond `STATUS=OK`, et la désinstallat
 `"enabledPlugins": {}` vide dans `~/.factory/settings.json` et des dossiers vides dans `~/.factory/plugins/cache/`. La mise à jour a été vérifiée le 21 octobre 2026 avec
 Factory Droid 0.245.1.
 
-Installer :
+Installer, depuis GitHub :
 
 ```sh
-droid plugin marketplace add <chemin-ou-url-git>
+droid plugin marketplace add https://github.com/devohmycode/probandia
 droid plugin install probandia@probandia --scope user
 ```
+
+Depuis un clone : `droid plugin marketplace add <chemin>`.
 
 Mettre à jour :
 
