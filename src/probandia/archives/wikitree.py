@@ -4,6 +4,7 @@ from probandia.archives import ConnectorError, Operation, OperationResult
 ARCHIVE = "wikitree"
 HOSTS = ["api.wikitree.com"]
 API = "https://api.wikitree.com/api.php"
+APP_ID = "Probandia"  # without an appId, the API answers 429 "Limit exceeded." from the first request
 FIELDS = "Id,Name,FirstName,MiddleName,LastNameAtBirth,LastNameCurrent,BirthDate,DeathDate," \
          "BirthLocation,DeathLocation,Father,Mother"
 OPERATIONS = {
@@ -26,10 +27,10 @@ def _row(p):
 
 def run(operation, args, ctx):
     if operation == "profile":
-        params = {"action": "getProfile", "key": args["key"], "fields": FIELDS}
+        params = {"action": "getProfile", "key": args["key"], "fields": FIELDS, "appId": APP_ID}
     else:  # getAncestors and getDescendants are deprecated in favour of getPeople
         params = {"action": "getPeople", "keys": args["key"], operation: args.get("depth", 2),
-                  "fields": FIELDS}
+                  "fields": FIELDS, "appId": APP_ID}
     data, resp = ctx.json(API, params, archive=ARCHIVE)
     if not isinstance(data, list) or not data:
         raise ConnectorError("wikitree: unexpected answer", values={"URL": resp.url})

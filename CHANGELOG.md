@@ -117,6 +117,8 @@ in [STABILITY.md](https://github.com/devohmycode/probandia/blob/master/STABILITY
 
 ### Fixed
 
+- WikiTree: every request carries an `appId`; without one, its API answered
+  429 "Limit exceeded." from the first request, and the witness failed.
 - A key in a URL is never written; `.env` is born with mode 0600; a learned
   script escaping its confinement is refused; an injected page writes nothing;
   the guard normalises paths and knows PowerShell writes and inline

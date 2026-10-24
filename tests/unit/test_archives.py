@@ -339,6 +339,8 @@ class Operations(Base):
         anc = archives.run(archives.load("wikitree"), "ancestors", {"key": "Lincoln-7", "depth": 1},
                            self.context("wikitree"))
         self.assertEqual(sorted(r["id"] for r in anc.rows), ["Hawke-3", "Lincoln-6"])
+        # without an appId, WikiTree answers 429 "Limit exceeded." from the first request
+        self.assertIn("appId=Probandia", self.replay.calls[-1])
 
     def test_a_challenge_is_not_a_zero(self):
         gov = archives.run(archives.load("gov"), "search", {"name": "Octeville"},
