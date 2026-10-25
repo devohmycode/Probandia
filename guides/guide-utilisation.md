@@ -45,11 +45,38 @@ Il y a deux choses à installer, indépendantes : le **plugin**, dans votre agen
 - Rien d'autre : le moteur n'utilise que la bibliothèque standard et embarque ses quelques dépendances dans
   `src/probandia/_vendor`.
 
+#### Sous Windows, depuis PowerShell
+
+Python et Git for Windows (qui apporte Git Bash), puis fermez et rouvrez PowerShell pour qu'il relise le `PATH` :
+
+```powershell
+winget install -e --id Python.Python.3.14
+winget install -e --id Git.Git --source winget
+python --version
+```
+
+Si `python` ouvre le Microsoft Store, ouvrez *Alias d'exécution d'application* depuis le menu Démarrer et
+désactivez les alias de Python. Sans winget, les installateurs de
+[python.org](https://www.python.org/downloads/windows/) (cochez « Add python.exe to PATH ») et de
+[git-scm.com](https://git-scm.com/install/windows) font de même.
+
+Puis la CLI de votre harnais, chacune d'après sa documentation (lue le 25 octobre 2026) :
+
+| CLI de l'agent | Installation sous Windows (PowerShell) | Documentation |
+|---|---|---|
+| Claude Code | `irm https://claude.ai/install.ps1 \| iex`, ou `winget install Anthropic.ClaudeCode` | [code.claude.com](https://code.claude.com/docs/en/setup) |
+| Codex | `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 \| iex"`, ou `npm install -g @openai/codex` | [github.com/openai/codex](https://github.com/openai/codex) |
+| Cursor (CLI) | `irm 'https://cursor.com/install?win32=true' \| iex` | [cursor.com](https://cursor.com/docs/cli/installation) |
+| Factory Droid | `irm https://app.factory.ai/cli/windows \| iex` | [github.com/Factory-AI/factory](https://github.com/Factory-AI/factory) |
+| Grok Build | `irm https://x.ai/cli/install.ps1 \| iex` | [docs.x.ai](https://docs.x.ai/build/overview) |
+| Antigravity | `irm https://antigravity.google/cli/install.ps1 \| iex` | [github.com/google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) |
+| OpenCode | `npm install -g opencode-ai` (Node.js d'abord : `winget install OpenJS.NodeJS.LTS`), ou `scoop install opencode` ; sa documentation conseille WSL sous Windows | [opencode.ai](https://opencode.ai/docs/) |
+
 Outils facultatifs, que `probandia doctor` vérifie sans rien installer lui-même :
 
 | Outil | Pour quoi | Installation |
 |---|---|---|
-| Playwright | un navigateur sans fenêtre, pour les pages qui en demandent un | `python -m pip install playwright && python -m playwright install chromium` |
+| Playwright | un navigateur sans fenêtre, pour les pages qui en demandent un, quand votre agent ne pilote aucun navigateur à vous (§ 9, « Archives derrière une connexion ») | `python -m pip install playwright && python -m playwright install chromium` |
 | Tesseract | l'OCR des actes imprimés (`transcribe ocr`) | Windows : `winget install UB-Mannheim.TesseractOCR` ou `scoop install tesseract` ; Linux : `sudo apt install tesseract-ocr tesseract-ocr-fra` ; macOS : `brew install tesseract tesseract-lang` |
 | Pillow | planches de vues, recadrages et rotations d'images (`image`) | `python -m pip install "Pillow>=12,<13"`, ou l'option `images` (§ 1.2) |
 
@@ -772,6 +799,21 @@ connexion, préférences, pièges d'une source) sont consignées dans une sectio
   n'est payé.
 - `probandia watch --print-schedule` affiche la commande `schtasks` (ou la ligne crontab) pour la lancer chaque
   lundi ; exécutez-la vous-même.
+
+### Archives derrière une connexion
+
+Certaines archives (FamilySearch…) ne montrent leurs actes qu'à un utilisateur connecté. Vous vous connectez
+vous-même ; l'agent ne tape jamais de mot de passe. Le plus simple est de laisser l'agent piloter **votre propre
+navigateur**, où vous vous connectez une fois : rien à installer dans Probandia, pas besoin de Playwright.
+
+| Agent | Votre navigateur, piloté par l'agent | Vos connexions |
+|---|---|---|
+| Claude Code | [Claude in Chrome](https://code.claude.com/docs/en/chrome) : l'extension Chrome, puis `claude --chrome`, ou `/chrome` dans une session (Chrome ou Edge ; offre Pro, Max, Team ou Enterprise ; pas sous WSL) | partagées |
+| Codex, Factory Droid, Grok Build, OpenCode | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) avec `--autoConnect` (Chrome 144 ou plus récent, débogage à distance activé dans `chrome://inspect/#remote-debugging`), par exemple `codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest --autoConnect` (sous Windows, `cmd /c npx` au lieu de `npx`) | partagées : l'agent voit toutes les fenêtres ouvertes de ce Chrome |
+| Cursor, Antigravity | leur navigateur intégré | son propre profil : connectez-vous-y |
+
+L'agent s'arrête sur la page de connexion et vous attend. Sinon, `probandia browser login <archive>` ouvre le
+navigateur du moteur, qui demande Playwright (§ 1, Prérequis).
 
 ## 10. La commande dans un terminal
 

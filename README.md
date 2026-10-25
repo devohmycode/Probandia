@@ -46,11 +46,40 @@ Contents: [Requirements](#requirements) ·
 - Nothing else is needed: the engine uses the standard library and carries its
   few dependencies in `src/probandia/_vendor`.
 
+### On Windows, from PowerShell
+
+Python and Git for Windows (which brings Git Bash), then close and reopen
+PowerShell so that the `PATH` is read again:
+
+```powershell
+winget install -e --id Python.Python.3.14
+winget install -e --id Git.Git --source winget
+python --version
+```
+
+If `python` opens the Microsoft Store instead, open *Manage app execution
+aliases* from the Start menu and turn off the Python aliases. Without winget, the installers of
+[python.org](https://www.python.org/downloads/windows/) (tick "Add python.exe
+to PATH") and [git-scm.com](https://git-scm.com/install/windows) do the same.
+
+Then the CLI of your harness, each from its own documentation (read on 25
+October 2026):
+
+| Agent CLI | Install on Windows (PowerShell) | Documentation |
+|---|---|---|
+| Claude Code | `irm https://claude.ai/install.ps1 \| iex`, or `winget install Anthropic.ClaudeCode` | [code.claude.com](https://code.claude.com/docs/en/setup) |
+| Codex | `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 \| iex"`, or `npm install -g @openai/codex` | [github.com/openai/codex](https://github.com/openai/codex) |
+| Cursor (CLI) | `irm 'https://cursor.com/install?win32=true' \| iex` | [cursor.com](https://cursor.com/docs/cli/installation) |
+| Factory Droid | `irm https://app.factory.ai/cli/windows \| iex` | [github.com/Factory-AI/factory](https://github.com/Factory-AI/factory) |
+| Grok Build | `irm https://x.ai/cli/install.ps1 \| iex` | [docs.x.ai](https://docs.x.ai/build/overview) |
+| Antigravity | `irm https://antigravity.google/cli/install.ps1 \| iex` | [github.com/google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) |
+| OpenCode | `npm install -g opencode-ai` (Node.js first: `winget install OpenJS.NodeJS.LTS`), or `scoop install opencode`; its documentation advises WSL on Windows | [opencode.ai](https://opencode.ai/docs/) |
+
 Optional tools, which `probandia doctor` checks and installs nothing itself:
 
 | Tool | What for | Install |
 |---|---|---|
-| Playwright | a headless browser, for pages that need one | `python -m pip install playwright && python -m playwright install chromium` |
+| Playwright | a headless browser, for pages that need one, when your agent drives no browser of yours (see [Archives behind a sign-in](#archives-behind-a-sign-in)) | `python -m pip install playwright && python -m playwright install chromium` |
 | Tesseract | OCR of printed records (`transcribe ocr`) | Windows: `winget install UB-Mannheim.TesseractOCR` or `scoop install tesseract`; Linux: `sudo apt install tesseract-ocr tesseract-ocr-fra`; macOS: `brew install tesseract tesseract-lang` |
 | Pillow | sheets of views, crops and turns of images (`image`) | `python -m pip install "Pillow>=12,<13"`, or the `images` extra (below) |
 
@@ -574,6 +603,23 @@ Extras combine: `"<path>[tui,images]"`.
 
    It answers `ISO=1802-02-26`. The records, their rights and their credit are in
    [`examples/hugo/README.md`](https://github.com/devohmycode/probandia/blob/master/examples/hugo/README.md).
+
+### Archives behind a sign-in
+
+Some archives (FamilySearch…) show their records only to a signed-in user.
+You sign in yourself; the agent never types a password. The simplest way is to
+let the agent drive **your own browser**, where you sign in once: nothing to
+install in Probandia, and Playwright is not needed.
+
+| Agent | Your browser, driven by the agent | Your sign-ins |
+|---|---|---|
+| Claude Code | [Claude in Chrome](https://code.claude.com/docs/en/chrome): the Chrome extension, then `claude --chrome`, or `/chrome` in a session (Chrome or Edge; a Pro, Max, Team or Enterprise plan; not in WSL) | shared |
+| Codex, Factory Droid, Grok Build, OpenCode | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) with `--autoConnect` (Chrome 144 or later, remote debugging turned on at `chrome://inspect/#remote-debugging`), for example `codex mcp add chrome-devtools -- npx chrome-devtools-mcp@latest --autoConnect` (on Windows, `cmd /c npx` instead of `npx`) | shared: the agent sees every open window of that Chrome |
+| Cursor, Antigravity | their built-in browser | its own profile: sign in there |
+
+The agent stops on the sign-in page and waits for you. Otherwise
+`probandia browser login <archive>` opens the engine's own browser, which needs
+Playwright (see [Requirements](#requirements)).
 
 ## Use the command
 
