@@ -8713,6 +8713,10 @@ msgid "View of the act: {citation}"
 msgstr ""
 
 #: probandia/report/labels.py
+msgid "Private use: its rights do not allow sharing it"
+msgstr ""
+
+#: probandia/report/labels.py
 msgid "View not shown, its rights do not allow a copy: {file}"
 msgstr ""
 

@@ -1008,16 +1008,23 @@ resource from the network, which you can print as it is.
   each chapter) and `high-contrast`.
 - **The views of the acts.** After the list of the sources, the report shows
   the view of each act that proves a fact (a fact read on its image), reduced
-  to 1,200 pixels (with Pillow; without it, the file as it is). The rule is
-  the GEDCOM export's: no act of a living person, and only a source whose
-  `rights` are `free`; a view left out is named, with its file and why. The
+  to 1,200 pixels (with Pillow; without it, the file as it is). Never the act
+  of a living person; a view left out is named, with its file and why. The
   setting `report.images` says where they go:
   - `folder` (the default): files of `report/views/`, next to `report.html`,
-    which calls them by a relative path. As many views as the research has;
-    copy the `report/` folder whole to share the report;
+    which calls them by a relative path. As many views as the research has.
+    It is your private copy: a view whose source's `rights` are not `free`
+    (the case of most archives, whose reuse follows their own rules) is
+    shown too, marked "Private use"; read the archive's rules before you
+    share the `report/` folder;
   - `inline`: inside `report.html`, as `data:`, while the page stays under
-    1 MB (the limit of a template): one file, but a few views only;
+    1 MB (the limit of a template): one file, made to travel, so only the
+    views whose source has `rights: free`;
   - `off`: none.
+
+  The GEDCOM export keeps the strict rule: only the views of a source with
+  `rights: free`. Set `rights: free` on a source (in
+  `families/<family>/index/sources.yaml`) once the archive's rules allow it.
 - `probandia template designer` opens the designer in your browser, offline:
   colours (with their WCAG contrast), fonts, width, title page and logo,
   header and footer, contents, status marks, errata, notes, tree colours,

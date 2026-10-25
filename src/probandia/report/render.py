@@ -113,10 +113,12 @@ def _used_sources(persons, research_id, events):
 
 def act_views(persons, sources, used, living, family_dir):
     """The views of the acts that prove a fact of the report (status ``record``), source by source in the
-    order of their citations: [{"citation", "file" (relative to the family folder), "path", "withheld"}].
-    The rule is the GEDCOM export's: no living person's act, only a source whose ``rights`` are ``free``,
-    a view that is a file of the family folder; ``withheld`` says why a view is left out (``rights``,
-    ``missing``), and the HTML adds ``size`` when the report would pass its limit."""
+    order of their citations: [{"citation", "file" (relative to the family folder), "path", "free", "withheld"}].
+    No living person's act, a view that is a file of the family folder; ``free`` when the source's
+    ``rights`` are ``free``. A view whose rights are not free goes only to ``report/views/``, a private copy
+    in the user's project marked as such, never into a page that travels alone (``inline``) nor into an
+    export (decision of 25 October 2026). ``withheld`` says why a view is left out (``missing``); the HTML
+    adds ``rights`` and ``size``."""
     from probandia.images import views as views_of
 
     out, seen = [], set()
@@ -131,12 +133,9 @@ def act_views(persons, sources, used, living, family_dir):
                 continue
             seen.add(image)
             path = os.path.join(family_dir, image) if family_dir else None
-            withheld = None
-            if src.get("rights") != "free":
-                withheld = "rights"
-            elif path is None or not os.path.isfile(path):
-                withheld = "missing"
-            out.append({"citation": src.get("citation") or sid, "file": image, "path": path, "withheld": withheld})
+            withheld = "missing" if path is None or not os.path.isfile(path) else None
+            out.append({"citation": src.get("citation") or sid, "file": image, "path": path,
+                        "free": src.get("rights") == "free", "withheld": withheld})
     return out
 
 
@@ -557,11 +556,12 @@ def _view_name(file, ext, taken):
 def act_figures(views, t, budget=None):
     """(the HTML of the views of the acts, [(file name, bytes)]): a figure per view, then a line per view
     left out, with its file and the reason. With a ``budget`` in bytes, the views go in the page as
-    ``data:`` while they fit; without one, each becomes a file of ``views/``."""
+    ``data:`` while they fit, those whose rights are free only; without one, each becomes a file of
+    ``views/``, a view whose rights are not free marked for private use."""
     esc = html.escape
     out, left, files, taken = [], [], [], set()
     for v in views:
-        reason = v["withheld"]
+        reason = v["withheld"] or (None if v.get("free") or budget is None else "rights")
         got = _view_bytes(v["path"]) if reason is None else None
         if reason is None and got is None:
             reason = "missing"
@@ -574,7 +574,9 @@ def act_figures(views, t, budget=None):
                 src = f"data:{mime};base64,{base64.b64encode(data).decode()}"
             fig = (f'<figure class="act-view"><img src="{src}" loading="lazy" '
                    f'alt="{esc(t(L.ACT_VIEW).format(citation=v["citation"]))}" style="max-width: 100%; height: auto">'
-                   f'<figcaption>{esc(v["citation"])}</figcaption></figure>')
+                   f'<figcaption>{esc(v["citation"])}'
+                   + ("" if v.get("free") else f' <strong class="private">{esc(t(L.PRIVATE_VIEW))}</strong>')
+                   + '</figcaption></figure>')
             if budget is None:
                 out.append(fig)
                 files.append((name, data))

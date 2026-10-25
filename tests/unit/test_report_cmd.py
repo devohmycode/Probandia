@@ -110,20 +110,33 @@ class Report(unittest.TestCase):
         with open(self.html, encoding="utf-8") as fh:
             self.assertNotIn("act-view", fh.read())
 
-    def test_a_view_whose_rights_are_not_free_is_named_never_copied(self):
+    def test_a_view_whose_rights_are_not_free_stays_a_private_copy(self):
+        # decision of 25 October 2026: in views/ of the project, marked for private use; never in a page that
+        # travels alone (inline), nor in an export
         from probandia.util import yamlio
 
-        path = os.path.join(self.dir, "families", "marchand", "index", "sources.yaml")
+        family = os.path.join(self.dir, "families", "marchand")
+        path = os.path.join(family, "index", "sources.yaml")
         doc = yamlio.load(path)
         doc["sources"][0]["rights"] = "restricted"
         yamlio.dump(path, doc)
+        view = os.path.join(family, "evidence", "images", "bourg-vert-1898-57.jpg")
+        os.makedirs(os.path.dirname(view), exist_ok=True)
+        with open(view, "wb") as fh:
+            fh.write(b"\xff\xd8\xff\xe0 a view of the act")
         out = self.call("render", RESEARCH, "--formats", "html")
-        self.assertNotIn("VIEWS", out["values"])
+        self.assertEqual(out["values"]["VIEWS"], 1)
+        with open(self.html, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn('<img src="views/bourg-vert-1898-57.jpg"', page)
+        self.assertIn("Usage privé : ses droits n&#x27;en permettent pas la diffusion", page)
+        self.call("config", "set", "report.images", "inline")
+        self.call("render", RESEARCH, "--formats", "html")
         with open(self.html, encoding="utf-8") as fh:
             page = fh.read()
         self.assertIn("Vue non reproduite, ses droits n&#x27;en permettent pas la copie : "
                       "evidence/images/bourg-vert-1898-57.jpg", page)
-        self.assertNotIn("<img", page)
+        self.assertNotIn("data:image/jpeg", page)
 
     def test_completion_knows_the_shortcut(self):
         from probandia.cli.completion import candidates

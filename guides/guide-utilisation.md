@@ -754,13 +754,19 @@ Ces commandes lisent les index des familles, sans rien écrire :
   - Modèles fournis (`probandia template list`) : `habillage`, le modèle par défaut, puis `default` (le plus sobre),
     `family-book`, `high-contrast`, `print`.
   - **Les vues des actes.** Après la liste des sources, le rapport montre la vue de chaque acte qui prouve un fait
-    (un fait lu sur son image), réduite à 1 200 pixels (avec Pillow ; sans lui, le fichier tel quel). La règle est
-    celle de l'export GEDCOM : aucun acte d'une personne vivante, et seulement une source dont les `rights` valent
-    `free` ; une vue écartée est nommée, avec son fichier et la raison. Le réglage `report.images` dit où elles
-    vont : `folder` (par défaut), des fichiers de `report/views/`, à côté de `report.html`, qui les appelle par un
-    chemin relatif, autant que la recherche en a (copiez le dossier `report/` entier pour partager le rapport) ;
-    `inline`, dans `report.html` en `data:`, tant que la page reste sous 1 Mo (la limite d'un modèle) : un seul
-    fichier, mais quelques vues seulement ; `off`, aucune.
+    (un fait lu sur son image), réduite à 1 200 pixels (avec Pillow ; sans lui, le fichier tel quel). Jamais l'acte
+    d'une personne vivante ; une vue écartée est nommée, avec son fichier et la raison. Le réglage `report.images`
+    dit où elles vont :
+    - `folder` (par défaut) : des fichiers de `report/views/`, à côté de `report.html`, qui les appelle par un
+      chemin relatif, autant que la recherche en a. C'est votre copie privée : une vue dont la source n'a pas
+      `rights: free` (le cas de la plupart des archives, dont la réutilisation suit leur propre règlement) y figure
+      aussi, marquée « Usage privé » ; lisez le règlement de l'archive avant de partager le dossier `report/` ;
+    - `inline` : dans `report.html` en `data:`, tant que la page reste sous 1 Mo (la limite d'un modèle) : un seul
+      fichier, fait pour circuler, donc les seules vues des sources en `rights: free` ;
+    - `off` : aucune.
+
+    L'export GEDCOM garde la règle stricte : seules les vues d'une source en `rights: free`. Posez `rights: free`
+    sur une source (dans `families/<famille>/index/sources.yaml`) quand le règlement de l'archive le permet.
   - `probandia template designer` ouvre l'éditeur de modèles dans le navigateur, hors ligne ; téléchargez le modèle
     puis `probandia template import mon-modele.html`.
   - `probandia template use family-book` le choisit pour le projet (`--level family`, `research` ou `user` pour une

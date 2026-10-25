@@ -8714,6 +8714,10 @@ msgid "View of the act: {citation}"
 msgstr "Vue de l'acte : {citation}"
 
 #: probandia/report/labels.py
+msgid "Private use: its rights do not allow sharing it"
+msgstr "Usage privé : ses droits n'en permettent pas la diffusion"
+
+#: probandia/report/labels.py
 msgid "View not shown, its rights do not allow a copy: {file}"
 msgstr "Vue non reproduite, ses droits n'en permettent pas la copie : {file}"
 
