@@ -8126,6 +8126,10 @@ msgid "Template of the HTML report: an id of template list"
 msgstr "Modèle du rapport HTML : un identifiant de template list"
 
 #: probandia/config/registry.py
+msgid "Views of the acts in the HTML report: files of a views folder next to it, embedded in the file, or none"
+msgstr "Vues des actes dans le rapport HTML : fichiers d'un dossier views à côté de lui, intégrées au fichier, ou aucune"
+
+#: probandia/config/registry.py
 msgid "Saving the scripts that agents write"
 msgstr "Enregistrement des scripts écrits par les agents"
 
@@ -8700,6 +8704,26 @@ msgstr "Méthode"
 #: probandia/report/labels.py
 msgid "web {web} · MCP {mcp} · archives {archive} · engine {engine}"
 msgstr "web {web} · MCP {mcp} · archives {archive} · moteur {engine}"
+
+#: probandia/report/labels.py
+msgid "Views of the acts"
+msgstr "Vues des actes"
+
+#: probandia/report/labels.py
+msgid "View of the act: {citation}"
+msgstr "Vue de l'acte : {citation}"
+
+#: probandia/report/labels.py
+msgid "View not shown, its rights do not allow a copy: {file}"
+msgstr "Vue non reproduite, ses droits n'en permettent pas la copie : {file}"
+
+#: probandia/report/labels.py
+msgid "View not found in the family folder: {file}"
+msgstr "Vue introuvable dans le dossier de la famille : {file}"
+
+#: probandia/report/labels.py
+msgid "View not shown, the report would pass its size limit: {file}"
+msgstr "Vue non reproduite, le rapport dépasserait sa taille limite : {file}"
 
 #: probandia/report/labels.py
 msgid "Revision history"

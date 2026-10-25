@@ -80,6 +80,51 @@ class Report(unittest.TestCase):
         self.assertEqual(out["values"]["RESEARCH"], RESEARCH)
         self.assertTrue(os.path.isfile(os.path.join(self.research, "report", "report.json")))
 
+    def test_the_views_of_the_acts(self):
+        # T-08: the view of an act that proves a fact goes with the report: a file of views/ (the default),
+        # data: in the page, or nothing; a view whose rights are not free is named, never copied
+        family = os.path.join(self.dir, "families", "marchand")
+        view = os.path.join(family, "evidence", "images", "bourg-vert-1898-57.jpg")
+        os.makedirs(os.path.dirname(view), exist_ok=True)
+        with open(view, "wb") as fh:
+            fh.write(b"\xff\xd8\xff\xe0 a view of the act")   # not an image Pillow reads: copied as it is
+        views = os.path.join(self.research, "report", "views")
+        out = self.call("render", RESEARCH, "--formats", "html")
+        self.assertEqual(out["values"]["TEMPLATE"], "habillage")
+        self.assertEqual(out["values"]["VIEWS"], 1)
+        self.assertEqual(os.listdir(views), ["bourg-vert-1898-57.jpg"])
+        with open(self.html, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn('<img src="views/bourg-vert-1898-57.jpg"', page)
+        self.assertIn("<h3>Vues des actes</h3>", page)   # the research is in French
+        self.call("config", "set", "report.images", "inline")
+        out = self.call("render", RESEARCH, "--formats", "html")
+        self.assertNotIn("VIEWS", out["values"])
+        self.assertFalse(os.path.exists(views))   # the files of the last render are gone
+        with open(self.html, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn('<img src="data:image/jpeg;base64,', page)
+        self.assertLessEqual(len(page.encode("utf-8")), 1024 * 1024)
+        self.call("config", "set", "report.images", "off")
+        self.call("render", RESEARCH, "--formats", "html")
+        with open(self.html, encoding="utf-8") as fh:
+            self.assertNotIn("act-view", fh.read())
+
+    def test_a_view_whose_rights_are_not_free_is_named_never_copied(self):
+        from probandia.util import yamlio
+
+        path = os.path.join(self.dir, "families", "marchand", "index", "sources.yaml")
+        doc = yamlio.load(path)
+        doc["sources"][0]["rights"] = "restricted"
+        yamlio.dump(path, doc)
+        out = self.call("render", RESEARCH, "--formats", "html")
+        self.assertNotIn("VIEWS", out["values"])
+        with open(self.html, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn("Vue non reproduite, ses droits n&#x27;en permettent pas la copie : "
+                      "evidence/images/bourg-vert-1898-57.jpg", page)
+        self.assertNotIn("<img", page)
+
     def test_completion_knows_the_shortcut(self):
         from probandia.cli.completion import candidates
 

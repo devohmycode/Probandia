@@ -6,8 +6,8 @@ footer, where the notes go. Probandia ships `default`, `print`,
 (`templates.dir`) can add their own.
 
 Which one: `render --template <id>`, else the research's `template`, the
-family's, the setting `report.template` (project, then user), else `default`.
-`render` says `TEMPLATE=` and `TEMPLATE_ORIGIN=`.
+family's, the setting `report.template` (project, then user), else `habillage`.
+`render` says `TEMPLATE=`, `TEMPLATE_ORIGIN=`, and `VIEWS=` (files of `views/`).
 
 | Command | Does |
 |---|---|

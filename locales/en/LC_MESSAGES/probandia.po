@@ -8126,6 +8126,10 @@ msgid "Template of the HTML report: an id of template list"
 msgstr ""
 
 #: probandia/config/registry.py
+msgid "Views of the acts in the HTML report: files of a views folder next to it, embedded in the file, or none"
+msgstr ""
+
+#: probandia/config/registry.py
 msgid "Saving the scripts that agents write"
 msgstr ""
 
@@ -8699,6 +8703,26 @@ msgstr ""
 
 #: probandia/report/labels.py
 msgid "web {web} · MCP {mcp} · archives {archive} · engine {engine}"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "Views of the acts"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "View of the act: {citation}"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "View not shown, its rights do not allow a copy: {file}"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "View not found in the family folder: {file}"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "View not shown, the report would pass its size limit: {file}"
 msgstr ""
 
 #: probandia/report/labels.py

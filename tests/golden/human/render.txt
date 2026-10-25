@@ -5,8 +5,9 @@
   mode             journal
   through pass     2
   files            5
-  template         default
+  template         habillage
   template origin  default built-in
+  views            1
 
   file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/report.json
   file  families/marchand/research/2026-09-01-ancestors-of-louis-marchand/report/report.md

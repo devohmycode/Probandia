@@ -33,7 +33,8 @@ REQUIRED_SLOTS = ("head", "title", "body", "notes", "manual")
 OPTIONAL_SLOTS = ("toc", "generated", "research")
 SLOTS = REQUIRED_SLOTS + OPTIONAL_SLOTS
 REQUIRED_META = ("id", "name", "version", "contract")
-BUILTIN = "default"
+BUILTIN = "default"     # the plainest template, the base of builtin()
+DEFAULT = "habillage"   # the template a report takes when nothing chooses one
 ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 SLOT = re.compile(r"<!-- probandia:slot ([a-z-]+) -->(.*?)<!-- /probandia:slot -->", re.S)
@@ -199,7 +200,7 @@ def find(template_id, project=None, config=None, environ=None):
 def choose(explicit=None, research_meta=None, family_meta=None, config=None):
     """(template id, where it was chosen), from the most precise level to the most
     general: ``--template``, the research, the family, the setting ``report.template``
-    (its own layers: local, project, user), then ``default``."""
+    (its own layers: local, project, user), then ``habillage``, the default since T-08."""
     if explicit:
         return explicit, "--template"
     for level, meta in (("research", research_meta), ("family", family_meta)):
@@ -210,7 +211,7 @@ def choose(explicit=None, research_meta=None, family_meta=None, config=None):
         value = config.get("report.template")
         if value:
             return str(value), str(config.origin("report.template"))
-    return BUILTIN, "default built-in"
+    return DEFAULT, "default built-in"
 
 
 # checks (4.4)

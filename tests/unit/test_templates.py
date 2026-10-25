@@ -112,12 +112,12 @@ class Base(TR.ReportProject):
 
 
 class Resolution(Base):
-    """4.3: from --template to default, each level in turn."""
+    """4.3: from --template to the default (habillage since T-08), each level in turn."""
 
     def test_each_level(self):
         code, out = self.call("render", "--formats", "html")
         self.assertEqual((self.values(out)["TEMPLATE"], self.values(out)["TEMPLATE_ORIGIN"]),
-                         ("default", "default built-in"))
+                         ("habillage", "default built-in"))
         self.put(os.path.join(self.user, "templates"), "mine")
         self.call("config", "set", "report.template", "mine", "--user")
         out = self.call("render", "--formats", "html")[1]
@@ -200,7 +200,7 @@ class Commands(Base):
         code, out = self.call("template", "list")
         self.assertEqual(code, 0, out)
         self.assertIn("TEMPLATES=5", out)
-        self.assertIn("* default [builtin]", out)
+        self.assertIn("* habillage [builtin]", out)
         code, out = self.call("template", "show", "family-book")
         self.assertIn("NOTES=chapter", out)
         self.assertIn("CHECK=ok", out)
@@ -263,7 +263,7 @@ class Mass(Base):
         self.assertEqual(code, 0, out)
         self.assertIn("RESEARCHES=1", out)
         data = json.loads(self.read("report.json"))
-        self.assertEqual(data["template"], T.builtin().fingerprint())
+        self.assertEqual(data["template"], T.builtin(T.DEFAULT).fingerprint())
         self.assertEqual(R.validate(data), [])
         self.put(os.path.join(self.dir, "templates"), "ours")
         self.call("template", "use", "ours")

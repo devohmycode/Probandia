@@ -3,8 +3,11 @@
 The same events and indexes always give the same bytes: sorted JSON keys, a
 stable order, and one timestamp only, ``generated``, the time of the last event.
 """
+import base64
 import html
+import io
 import json
+import os
 import re
 from dataclasses import dataclass
 
@@ -41,6 +44,7 @@ class Report:
     timeline_svg: dict = None  # person id -> SVG timeline, for HTML (GPS7)
     guide_svg: dict = None  # place id -> SVG of its jurisdictions over time, for HTML (GPS2)
     fingerprints: dict = None  # journal mode: pass -> sha256 of its rendered text (PRD criterion 6, T226)
+    views: list = None      # the views of the acts that prove a fact, for HTML: see act_views()
 
 
 MARK = re.compile(r" †E\d+")
@@ -105,6 +109,35 @@ def _used_sources(persons, research_id, events):
             if f.get("source") and (f.get("research") == research_id or f["id"] in cited):
                 used.add(f["source"])
     return used
+
+
+def act_views(persons, sources, used, living, family_dir):
+    """The views of the acts that prove a fact of the report (status ``record``), source by source in the
+    order of their citations: [{"citation", "file" (relative to the family folder), "path", "withheld"}].
+    The rule is the GEDCOM export's: no living person's act, only a source whose ``rights`` are ``free``,
+    a view that is a file of the family folder; ``withheld`` says why a view is left out (``rights``,
+    ``missing``), and the HTML adds ``size`` when the report would pass its limit."""
+    from probandia.images import views as views_of
+
+    out, seen = [], set()
+    facts = [(p, f) for p in persons for f in p.get("facts", [])
+             if f.get("status") == "record" and f.get("source") in used]
+    for sid in sorted({f["source"] for _p, f in facts}, key=lambda s: (sources.get(s) or {}).get("citation") or s):
+        src = sources.get(sid)
+        if not src or all(p["id"] in living for p, f in facts if f["source"] == sid):
+            continue
+        for image in views_of(src):
+            if image in seen:
+                continue
+            seen.add(image)
+            path = os.path.join(family_dir, image) if family_dir else None
+            withheld = None
+            if src.get("rights") != "free":
+                withheld = "rights"
+            elif path is None or not os.path.isfile(path):
+                withheld = "missing"
+            out.append({"citation": src.get("citation") or sid, "file": image, "path": path, "withheld": withheld})
+    return out
 
 
 def _notices(model, ctx, t):
@@ -249,11 +282,13 @@ def _standard(found, living, t):
 
 
 def build_report(meta, events, docs, lang, t, numbering_style="arabic", pattern="", today=None,
-                 living_years=100, trees=True, timelines="main", matrix=None, standard=None, checks=None):
+                 living_years=100, trees=True, timelines="main", matrix=None, standard=None, checks=None,
+                 family_dir=None):
     """The whole report. ``docs``: the family indexes, as loaded; ``matrix``: the research's
     exhaustiveness matrix (``proof.matrix.build``), for the source coverage of its questions;
     ``standard``: its questions' conformity to the GPS (``proof.standard.assess``); ``checks``: what
-    persons looked at, by fact (``factcheck.of_family``), else those of ``events``."""
+    persons looked at, by fact (``factcheck.of_family``), else those of ``events``; ``family_dir``: the
+    family folder, where the views of the acts are (none are shown without it)."""
     research_id = meta["id"]
     mode = meta.get("mode") or "journal"
     persons = docs["persons"].get("persons", [])
@@ -340,7 +375,8 @@ def build_report(meta, events, docs, lang, t, numbering_style="arabic", pattern=
     return Report(model=model, ctx=ctx, title=title, research=research_id, numbering=numbering_style,
                   resolved=resolved, notes=list(ctx.notes), data=data, unresolved=list(ctx.unresolved),
                   tree_svg=tree_svg, tree_mermaid=tree_mermaid, timeline_svg=timeline_svg, guide_svg=guide_svg,
-                  fingerprints=fingerprints(model, resolved, ctx.notes, tree_md) if mode == "journal" else None)
+                  fingerprints=fingerprints(model, resolved, ctx.notes, tree_md) if mode == "journal" else None,
+                  views=act_views(persons, sources, used, living, family_dir) if family_dir else [])
 
 
 # JSON
@@ -450,16 +486,118 @@ STANDARD_BOX = ("border: 1px solid var(--note-rule, currentColor); background: v
 
 
 def to_html(report, t, template=None):
-    """The HTML report, in ``template`` (the built-in ``default`` when None)."""
+    """The HTML report, in ``template`` (the built-in ``default`` when None), its views as ``data:``."""
+    return render_html(report, t, template)[0]
+
+
+VIEWS_DIR = "views"   # next to report.html, in ``folder`` mode
+IMAGES = ("folder", "inline", "off")
+
+
+def render_html(report, t, template=None, images="inline"):
+    """(the HTML page, [(file name, bytes)] to write in ``views/``). ``images`` says where the views of the
+    acts go (setting ``report.images``): ``folder``, files of ``views/`` that the page calls by a relative
+    path, as many as there are; ``inline``, ``data:`` in the page, in what it leaves of a template's limit
+    (``template.MAX_BYTES``); ``off``, none."""
     from probandia.report import template as T
 
     template = template or T.builtin()
-    return T.fill(template, html_slots(report, t, template.notes), t, report.model.lang)
+    page = T.fill(template, html_slots(report, t, template.notes), t, report.model.lang)
+    if not report.views or images == "off":
+        return page, []
+    budget = T.MAX_BYTES - len(page.encode("utf-8")) if images == "inline" else None
+    figures, files = act_figures(report.views, t, budget)
+    return T.fill(template, html_slots(report, t, template.notes, figures), t, report.model.lang), files
 
 
-def html_slots(report, t, notes="end"):
+VIEW_MAX_PX = 1200   # the long side of a view in the report, when Pillow can shrink it
+VIEW_QUALITY = 80
+MIMES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp",
+         ".gif": "image/gif"}
+
+
+def _view_bytes(path):
+    """(bytes, media type, extension) of a view: shrunk to VIEW_MAX_PX as WebP (JPEG where Pillow lacks
+    WebP) when Pillow is there, else as the file holds them; None for a file of another type."""
+    ext = os.path.splitext(path)[1].lower()
+    if ext not in MIMES:
+        return None
+    try:
+        from PIL import Image
+    except ImportError:
+        Image = None
+    if Image is not None:
+        try:
+            with Image.open(path) as im:
+                im.thumbnail((VIEW_MAX_PX, VIEW_MAX_PX))
+                rgb = im.convert("RGB")
+                for fmt, mime, out_ext in (("WEBP", "image/webp", ".webp"), ("JPEG", "image/jpeg", ".jpg")):
+                    buf = io.BytesIO()
+                    try:
+                        rgb.save(buf, fmt, quality=VIEW_QUALITY)
+                    except (KeyError, OSError):
+                        continue
+                    return buf.getvalue(), mime, out_ext
+        except (OSError, ValueError):
+            pass
+    with open(path, "rb") as fh:
+        return fh.read(), MIMES[ext], ext
+
+
+def _view_name(file, ext, taken):
+    """A file name of ``views/`` for a view: its own stem, in letters, digits, dots and dashes, unique."""
+    stem = re.sub(r"[^A-Za-z0-9._-]+", "-", os.path.splitext(os.path.basename(file))[0]).strip("-.") or "view"
+    name, n = stem + ext, 2
+    while name in taken:
+        name, n = f"{stem}-{n}{ext}", n + 1
+    taken.add(name)
+    return name
+
+
+def act_figures(views, t, budget=None):
+    """(the HTML of the views of the acts, [(file name, bytes)]): a figure per view, then a line per view
+    left out, with its file and the reason. With a ``budget`` in bytes, the views go in the page as
+    ``data:`` while they fit; without one, each becomes a file of ``views/``."""
+    esc = html.escape
+    out, left, files, taken = [], [], [], set()
+    for v in views:
+        reason = v["withheld"]
+        got = _view_bytes(v["path"]) if reason is None else None
+        if reason is None and got is None:
+            reason = "missing"
+        if reason is None:
+            data, mime, ext = got
+            if budget is None:
+                name = _view_name(v["file"], ext, taken)
+                src = f"{VIEWS_DIR}/{name}"
+            else:
+                src = f"data:{mime};base64,{base64.b64encode(data).decode()}"
+            fig = (f'<figure class="act-view"><img src="{src}" loading="lazy" '
+                   f'alt="{esc(t(L.ACT_VIEW).format(citation=v["citation"]))}" style="max-width: 100%; height: auto">'
+                   f'<figcaption>{esc(v["citation"])}</figcaption></figure>')
+            if budget is None:
+                out.append(fig)
+                files.append((name, data))
+                continue
+            if len(fig.encode("utf-8")) <= budget:
+                out.append(fig)
+                budget -= len(fig.encode("utf-8"))
+                continue
+            reason = "size"
+        left.append(f"<li>{esc(t(L.VIEW_LEFT_OUT[reason]).format(file=v['file']))}</li>")
+    if not out and not left:
+        return "", []
+    html_out = [f'<section class="act-views"><h3>{esc(t(L.ACT_VIEWS))}</h3>'] + out
+    if left:
+        html_out.append(f'<ul class="act-views-left">{"".join(left)}</ul>')
+    html_out.append("</section>")
+    return "\n".join(html_out), files
+
+
+def html_slots(report, t, notes="end", figures=""):
     """What the engine writes into each slot of a template: ``notes`` is ``end`` (all
-    the notes after the report) or ``chapter`` (each chapter's notes after it)."""
+    the notes after the report) or ``chapter`` (each chapter's notes after it); ``figures``, the
+    views of the acts (``act_figures``), go after the list of the sources."""
     md = _markdown()
     esc = html.escape
     status = report.ctx.note_status if report.ctx is not None else {}
@@ -508,6 +646,8 @@ def html_slots(report, t, notes="end"):
                        f'{calls(md.render(body)).rstrip()}</aside>')
         elif body:
             out.append(calls(md.render(body)).rstrip())
+        if figures and node.generated and node.id == "sources":
+            out.append(figures)
         for child in node.children:
             section(child, depth + 1)
         for text in node.notices:

@@ -460,6 +460,26 @@
    "en": "Variants",
    "fr": "Variantes"
   },
+  "View not found in the family folder: {file}": {
+   "en": "View not found in the family folder: {file}",
+   "fr": "Vue introuvable dans le dossier de la famille : {file}"
+  },
+  "View not shown, its rights do not allow a copy: {file}": {
+   "en": "View not shown, its rights do not allow a copy: {file}",
+   "fr": "Vue non reproduite, ses droits n'en permettent pas la copie : {file}"
+  },
+  "View not shown, the report would pass its size limit: {file}": {
+   "en": "View not shown, the report would pass its size limit: {file}",
+   "fr": "Vue non reproduite, le rapport dépasserait sa taille limite : {file}"
+  },
+  "View of the act: {citation}": {
+   "en": "View of the act: {citation}",
+   "fr": "Vue de l'acte : {citation}"
+  },
+  "Views of the acts": {
+   "en": "Views of the acts",
+   "fr": "Vues des actes"
+  },
   "What changed": {
    "en": "What changed",
    "fr": "Modification"

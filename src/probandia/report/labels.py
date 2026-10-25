@@ -13,6 +13,11 @@ DETECTED_BY = N_("Detected by")
 METHOD = N_("Method")
 TOOLS = N_("web {web} · MCP {mcp} · archives {archive} · engine {engine}")
 SOURCES = N_("Sources")
+ACT_VIEWS = N_("Views of the acts")
+ACT_VIEW = N_("View of the act: {citation}")
+VIEW_LEFT_OUT = {"rights": N_("View not shown, its rights do not allow a copy: {file}"),
+                 "missing": N_("View not found in the family folder: {file}"),
+                 "size": N_("View not shown, the report would pass its size limit: {file}")}
 REVISION_HISTORY = N_("Revision history")
 LIVING_PERSON = N_("Living person")
 GENERATED = N_("Generated")

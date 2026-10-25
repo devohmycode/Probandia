@@ -749,9 +749,18 @@ Ces commandes lisent les index des familles, sans rien écrire :
   (`report.html`, `report.md`, `report.json`).
 - `probandia export` exporte en GEDCOM 7, en GEDCOM 5.5.1 ou vers Gramps Web, dans `exports/` ; les personnes
   présumées vivantes sont masquées par défaut (`--living mask`), ou écartées (`export gedcom7 --living exclude`).
-- Le rapport HTML suit un **modèle** : un fichier `.html` autonome, sans script ni ressource externe, imprimable tel
+- Le rapport HTML suit un **modèle** : un fichier `.html` sans script ni ressource venue du réseau, imprimable tel
   quel.
-  - Modèles fournis (`probandia template list`) : `default`, `family-book`, `habillage`, `high-contrast`, `print`.
+  - Modèles fournis (`probandia template list`) : `habillage`, le modèle par défaut, puis `default` (le plus sobre),
+    `family-book`, `high-contrast`, `print`.
+  - **Les vues des actes.** Après la liste des sources, le rapport montre la vue de chaque acte qui prouve un fait
+    (un fait lu sur son image), réduite à 1 200 pixels (avec Pillow ; sans lui, le fichier tel quel). La règle est
+    celle de l'export GEDCOM : aucun acte d'une personne vivante, et seulement une source dont les `rights` valent
+    `free` ; une vue écartée est nommée, avec son fichier et la raison. Le réglage `report.images` dit où elles
+    vont : `folder` (par défaut), des fichiers de `report/views/`, à côté de `report.html`, qui les appelle par un
+    chemin relatif, autant que la recherche en a (copiez le dossier `report/` entier pour partager le rapport) ;
+    `inline`, dans `report.html` en `data:`, tant que la page reste sous 1 Mo (la limite d'un modèle) : un seul
+    fichier, mais quelques vues seulement ; `off`, aucune.
   - `probandia template designer` ouvre l'éditeur de modèles dans le navigateur, hors ligne ; téléchargez le modèle
     puis `probandia template import mon-modele.html`.
   - `probandia template use family-book` le choisit pour le projet (`--level family`, `research` ou `user` pour une

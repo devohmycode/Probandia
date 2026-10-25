@@ -160,8 +160,10 @@ def render_research(ctx, research):
         atomic_write_text(os.path.join(folder, "report.md"), R.to_markdown(report, noted))
         written.append("report.md")
     if "html" in formats:
-        atomic_write_text(os.path.join(folder, "report.html"), R.to_html(report, noted, tpl))
+        page, views = R.render_html(report, noted, tpl, ctx.config.get("report.images") or "folder")
+        atomic_write_text(os.path.join(folder, "report.html"), page)
         written.append("report.html")
+        views_written = _write_views(folder, views)   # counted, not listed: the contract keeps its 40 lines
     if report.tree_mermaid:  # step 4: then the trees, one per branch.added
         trees_dir = os.path.join(research.folder, "trees")
         os.makedirs(trees_dir, exist_ok=True)
@@ -175,6 +177,8 @@ def render_research(ctx, research):
     if "html" in formats:
         values["TEMPLATE"] = tpl.id
         values["TEMPLATE_ORIGIN"] = origin
+        if views_written:
+            values["VIEWS"] = len(views_written)
     claims = prose.check(events.read(research.events_path),
                          FamilyIndexes(ctx.project, research.family).items("persons"))   # T252
     status = "WARN" if report.unresolved or claims else "OK"
@@ -221,6 +225,28 @@ def render_research(ctx, research):
         if len(claims) > PROSE_LINES:
             r.line(_("{n} more claims to check in the sections").format(n=len(claims) - PROSE_LINES))
     return r
+
+
+def _write_views(folder, views):
+    """The views of the acts in ``report/views/`` (``report.images = folder``): each file written, and the
+    files a render before left there removed, so the folder holds what the page calls and nothing else."""
+    from probandia.report.render import VIEWS_DIR
+    from probandia.util.fs import atomic_write_bytes
+
+    where = os.path.join(folder, VIEWS_DIR)
+    names = {name for name, _data in views}
+    if os.path.isdir(where):
+        for old in os.listdir(where):
+            if old not in names and os.path.isfile(os.path.join(where, old)):
+                os.remove(os.path.join(where, old))
+    if not views:
+        if os.path.isdir(where) and not os.listdir(where):
+            os.rmdir(where)
+        return []
+    os.makedirs(where, exist_ok=True)
+    for name, data in views:
+        atomic_write_bytes(os.path.join(where, name), data)
+    return [f"{VIEWS_DIR}/{name}" for name, _data in views]
 
 
 def _target(lang):
@@ -284,7 +310,8 @@ def _build(ctx, research, meta, lang, t, tpl=None):
                             timelines=ctx.config.get("report.timeline"), matrix=found,
                             standard=standard.of_research(ctx.project, research, meta, docs=docs, matrix_doc=found,
                                                           strict=ctx.config.get("proof.standard") == "strict"),
-                            checks=factcheck.of_family(ctx.project, research.family))   # T248
+                            checks=factcheck.of_family(ctx.project, research.family),   # T248
+                            family_dir=os.path.join(ctx.project, "families", research.family))
     report.manual = logins.manual_tasks(ctx.project, research.id)
     if tpl is not None:
         report.data["template"] = tpl.fingerprint()

@@ -584,7 +584,8 @@ Extras combine: `"<path>[tui,images]"`.
 
 6. **What it writes**, in the project folder:
    - the report: `families/<family>/research/<research>/report/report.html`
-     (and `report.md`, `report.json`); `probandia report open` opens it;
+     (and `report.md`, `report.json`, and `views/`, the views of the acts it
+     shows); `probandia report open` opens it;
    - the tree: `families/<family>/trees/tree.html` (and `tree.md`,
      `ancestors.svg`, `descendants.svg`), written by `probandia tree`;
    - the export: `exports/<family>-<date>.gdz` (GEDCOM 7 with its media), by
@@ -998,13 +999,25 @@ Droid and OpenCode read `AGENTS.md`; Claude Code reads it too, or through one
 
 ## Report templates
 
-The HTML report follows a template: one self-contained `.html` file, with no
-script and no external resource, which you can print as it is.
+The HTML report follows a template: an `.html` file with no script and no
+resource from the network, which you can print as it is.
 
-- Shipped: `default`, `print` (serif, a chapter per page), `family-book`
-  (title page, notes after each chapter), `high-contrast` and `habillage`
-  (grey paper, Bodoni titles, madder red, dark on a dark screen; its fonts
-  are embedded).
+- Shipped: `habillage`, the default (grey paper, Bodoni titles, madder red,
+  dark on a dark screen; its fonts are embedded), `default` (the plainest),
+  `print` (serif, a chapter per page), `family-book` (title page, notes after
+  each chapter) and `high-contrast`.
+- **The views of the acts.** After the list of the sources, the report shows
+  the view of each act that proves a fact (a fact read on its image), reduced
+  to 1,200 pixels (with Pillow; without it, the file as it is). The rule is
+  the GEDCOM export's: no act of a living person, and only a source whose
+  `rights` are `free`; a view left out is named, with its file and why. The
+  setting `report.images` says where they go:
+  - `folder` (the default): files of `report/views/`, next to `report.html`,
+    which calls them by a relative path. As many views as the research has;
+    copy the `report/` folder whole to share the report;
+  - `inline`: inside `report.html`, as `data:`, while the page stays under
+    1 MB (the limit of a template): one file, but a few views only;
+  - `off`: none.
 - `probandia template designer` opens the designer in your browser, offline:
   colours (with their WCAG contrast), fonts, width, title page and logo,
   header and footer, contents, status marks, errata, notes, tree colours,
