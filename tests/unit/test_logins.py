@@ -85,6 +85,8 @@ class LoginRequired(Base):
                               ("OPTION", "--login"), ("BROWSER_LOGIN", "probandia browser login familysearch")):
             self.assertEqual(self.value(out, key), expected, out)
         self.assertTrue(self.value(out, "LOGIN_URL").startswith("https://www.familysearch.org/auth/"))
+        # T-08: the user's own browser comes first, without Playwright
+        self.assertIn("run login confirm familysearch and read the page in that browser: nothing to install", out)
         self.assertEqual(logins.pending(self.dir), ["familysearch"])
         # the user signed in: the same command again, with the answer
         code, out = self.call("read", URL, "--login", "connected")
@@ -300,7 +302,8 @@ class Documents(unittest.TestCase):
         skill = text("skills", "browser", "SKILL.md")
         for needle in ("never type a username or a password", "never create an account",
                        "BROWSER_LOGIN=", "login confirm <archive>", "--login connected", "after two tries",
-                       "LOGIN_NEEDED=", "login_required <archive> <url>", "MANUAL_TASKS:"):
+                       "LOGIN_NEEDED=", "login_required <archive> <url>", "MANUAL_TASKS:",
+                       "First, the user's own browser", "never install it yourself"):
             self.assertIn(needle, skill)
 
     def test_references(self):

@@ -14,14 +14,17 @@ identity, and a page that challenges it is read here, in a browser.
 
 ## Which browser
 
-- **`read`** uses the engine's own browser, whose cookies are its own: a
-  session opened in the user's Chrome does not reach it. Ask the user to run
-  `BROWSER_LOGIN=` (`probandia browser login <archive>`) at their terminal: a
-  window opens, they sign in, press Enter; the engine keeps the session.
-- **A browser tool you drive** (Claude in Chrome, Playwright MCP…): stop on the
-  sign-in screen, give the user `LOGIN_URL=`, let them sign in in that window.
-  Once you see the logged-in marker (`login check <archive>` lists it), run
-  `login confirm <archive>`.
+- **First, the user's own browser, if you drive one** (Claude in Chrome, a
+  browser MCP attached to the user's Chrome…): nothing to install. Open
+  `LOGIN_URL=` there, stop on the sign-in screen, let the user sign in in that
+  window. Once you see the logged-in marker (`login check <archive>` lists it),
+  run `login confirm <archive>`, then read the record in that browser.
+- **Else `read`**, which uses the engine's own browser, whose cookies are its
+  own: a session opened in the user's Chrome does not reach it. It needs
+  Playwright (`doctor` says when it is missing; never install it yourself). Ask
+  the user to run `BROWSER_LOGIN=` (`probandia browser login <archive>`) at
+  their terminal: a window opens, they sign in, press Enter; the engine keeps
+  the session.
 
 ## The question
 

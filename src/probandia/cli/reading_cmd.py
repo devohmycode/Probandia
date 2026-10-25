@@ -467,6 +467,10 @@ def _login_required(ctx, project, result, tried):
         r.set("EXPIRED", True)
     if tried:
         r.set("TRIED", tried)
+    # T-08: Playwright is optional; an agent that drives the user's browser needs nothing more
+    r.line(_("if you drive the user's own browser (Claude in Chrome, a browser MCP), open LOGIN_URL there, let the "
+             "user sign in, run login confirm {archive} and read the page in that browser: nothing to install").format(
+        archive=archive))
     r.line(_("read uses the engine's own browser, not the user's: ask the user to sign in with BROWSER_LOGIN at "
              "their terminal; wait for their answer, never sign in for them; then run the command again with "
              "--login connected, skip or stop"))

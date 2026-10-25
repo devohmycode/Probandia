@@ -4166,6 +4166,10 @@ msgid "{archive} needs you to sign in. Sign in, in the browser window, then say 
 msgstr "{archive} vous demande de vous connecter. Connectez-vous dans la fenêtre du navigateur, puis dites-le ici."
 
 #: probandia/cli/reading_cmd.py
+msgid "if you drive the user's own browser (Claude in Chrome, a browser MCP), open LOGIN_URL there, let the user sign in, run login confirm {archive} and read the page in that browser: nothing to install"
+msgstr "si vous pilotez le navigateur de l'utilisateur (Claude in Chrome, un MCP de navigateur), ouvrez-y LOGIN_URL, laissez l'utilisateur se connecter, lancez login confirm {archive} et lisez la page dans ce navigateur : rien à installer"
+
+#: probandia/cli/reading_cmd.py
 msgid "read uses the engine's own browser, not the user's: ask the user to sign in with BROWSER_LOGIN at their terminal; wait for their answer, never sign in for them; then run the command again with --login connected, skip or stop"
 msgstr "read utilise le navigateur propre au moteur, pas celui de l'utilisateur : demandez à l'utilisateur de se connecter avec BROWSER_LOGIN dans son terminal ; attendez sa réponse, ne vous connectez jamais à sa place ; puis relancez la commande avec --login connected, skip ou stop"
 
