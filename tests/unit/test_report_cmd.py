@@ -110,6 +110,34 @@ class Report(unittest.TestCase):
         with open(self.html, encoding="utf-8") as fh:
             self.assertNotIn("act-view", fh.read())
 
+    def test_the_act_of_a_living_person_stays_in_the_private_copy(self):
+        # decision of 25 October 2026 (report.living_views = private, the default): in views/, marked; with off,
+        # or in a page that travels alone (inline), it is left out and not even named
+        from probandia.util import yamlio
+
+        family = os.path.join(self.dir, "families", "marchand")
+        path = os.path.join(family, "index", "persons.yaml")
+        doc = yamlio.load(path)
+        louis = next(p for p in doc["persons"] if p["id"] == "louis-marchand-1898")
+        louis["living"] = True
+        yamlio.dump(path, doc)
+        view = os.path.join(family, "evidence", "images", "bourg-vert-1898-57.jpg")
+        os.makedirs(os.path.dirname(view), exist_ok=True)
+        with open(view, "wb") as fh:
+            fh.write(b"\xff\xd8\xff\xe0 a view of the act")
+        out = self.call("render", RESEARCH, "--formats", "html")
+        self.assertEqual(out["values"]["VIEWS"], 1)
+        with open(self.html, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn('<img src="views/bourg-vert-1898-57.jpg"', page)
+        self.assertIn("Personne vivante : ne pas diffuser", page)
+        for key, value in (("report.living_views", "off"), ("report.images", "inline")):
+            self.call("config", "set", key, value)
+            out = self.call("render", RESEARCH, "--formats", "html")
+            self.assertNotIn("VIEWS", out["values"])
+            with open(self.html, encoding="utf-8") as fh:
+                self.assertNotIn("bourg-vert-1898-57", fh.read(), key)
+
     def test_a_view_whose_rights_are_not_free_stays_a_private_copy(self):
         # decision of 25 October 2026: in views/ of the project, marked for private use; never in a page that
         # travels alone (inline), nor in an export

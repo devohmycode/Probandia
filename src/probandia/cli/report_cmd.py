@@ -160,7 +160,8 @@ def render_research(ctx, research):
         atomic_write_text(os.path.join(folder, "report.md"), R.to_markdown(report, noted))
         written.append("report.md")
     if "html" in formats:
-        page, views = R.render_html(report, noted, tpl, ctx.config.get("report.images") or "folder")
+        page, views = R.render_html(report, noted, tpl, ctx.config.get("report.images") or "folder",
+                                    ctx.config.get("report.living_views") or "private")
         atomic_write_text(os.path.join(folder, "report.html"), page)
         written.append("report.html")
         views_written = _write_views(folder, views)   # counted, not listed: the contract keeps its 40 lines

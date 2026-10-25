@@ -8130,6 +8130,10 @@ msgid "Views of the acts in the HTML report: files of a views folder next to it,
 msgstr "Vues des actes dans le rapport HTML : fichiers d'un dossier views à côté de lui, intégrées au fichier, ou aucune"
 
 #: probandia/config/registry.py
+msgid "Acts of living persons in the report's views folder, marked not to share, or none; never in a file that travels alone nor in an export"
+msgstr "Actes des personnes vivantes dans le dossier views du rapport, marqués à ne pas diffuser, ou aucun ; jamais dans un fichier fait pour circuler ni dans un export"
+
+#: probandia/config/registry.py
 msgid "Saving the scripts that agents write"
 msgstr "Enregistrement des scripts écrits par les agents"
 
@@ -8716,6 +8720,10 @@ msgstr "Vue de l'acte : {citation}"
 #: probandia/report/labels.py
 msgid "Private use: its rights do not allow sharing it"
 msgstr "Usage privé : ses droits n'en permettent pas la diffusion"
+
+#: probandia/report/labels.py
+msgid "Living person: do not share"
+msgstr "Personne vivante : ne pas diffuser"
 
 #: probandia/report/labels.py
 msgid "View not shown, its rights do not allow a copy: {file}"

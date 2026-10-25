@@ -236,6 +236,10 @@ SETTINGS = [
     S("report.images", "enum", "folder", 2,
       N_("Views of the acts in the HTML report: files of a views folder next to it, embedded in the file, or none"),
       values=("folder", "inline", "off")),
+    S("report.living_views", "enum", "private", 2,
+      N_("Acts of living persons in the report's views folder, marked not to share, or none; never in a file "
+         "that travels alone nor in an export"),
+      values=("private", "off")),
     S("library.save", "enum", "ask", 2, N_("Saving the scripts that agents write"),
       values=("ask", "auto", "off")),
     S("http.contact", "str", "", 2, N_("Contact sent in the User-Agent of web requests"),

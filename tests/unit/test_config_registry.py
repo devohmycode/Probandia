@@ -45,6 +45,7 @@ ADVANCED = [
     ("report.timeline", "enum", "main", None),
     ("report.template", "str", "habillage", None),
     ("report.images", "enum", "folder", None),
+    ("report.living_views", "enum", "private", None),
     ("library.save", "enum", "ask", None),
     ("http.contact", "str", "", None),
     ("tui.theme", "str", "dark", None),

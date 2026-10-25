@@ -113,12 +113,13 @@ def _used_sources(persons, research_id, events):
 
 def act_views(persons, sources, used, living, family_dir):
     """The views of the acts that prove a fact of the report (status ``record``), source by source in the
-    order of their citations: [{"citation", "file" (relative to the family folder), "path", "free", "withheld"}].
-    No living person's act, a view that is a file of the family folder; ``free`` when the source's
-    ``rights`` are ``free``. A view whose rights are not free goes only to ``report/views/``, a private copy
-    in the user's project marked as such, never into a page that travels alone (``inline``) nor into an
-    export (decision of 25 October 2026). ``withheld`` says why a view is left out (``missing``); the HTML
-    adds ``rights`` and ``size``."""
+    order of their citations: [{"citation", "file" (relative to the family folder), "path", "free", "living",
+    "withheld"}]. A view that is a file of the family folder; ``free`` when the source's ``rights`` are
+    ``free``; ``living`` when every fact it proves is of a person presumed living. A view whose rights are
+    not free, or a living person's, goes only to ``report/views/``, a private copy in the user's project
+    marked as such, never into a page that travels alone (``inline``) nor into an export (decisions of
+    25 October 2026; ``report.living_views`` keeps the living out). ``withheld`` says why a view is left out
+    (``missing``); the HTML adds ``rights`` and ``size``."""
     from probandia.images import views as views_of
 
     out, seen = [], set()
@@ -126,8 +127,9 @@ def act_views(persons, sources, used, living, family_dir):
              if f.get("status") == "record" and f.get("source") in used]
     for sid in sorted({f["source"] for _p, f in facts}, key=lambda s: (sources.get(s) or {}).get("citation") or s):
         src = sources.get(sid)
-        if not src or all(p["id"] in living for p, f in facts if f["source"] == sid):
+        if not src:
             continue
+        of_living = all(p["id"] in living for p, f in facts if f["source"] == sid)
         for image in views_of(src):
             if image in seen:
                 continue
@@ -135,7 +137,7 @@ def act_views(persons, sources, used, living, family_dir):
             path = os.path.join(family_dir, image) if family_dir else None
             withheld = "missing" if path is None or not os.path.isfile(path) else None
             out.append({"citation": src.get("citation") or sid, "file": image, "path": path,
-                        "free": src.get("rights") == "free", "withheld": withheld})
+                        "free": src.get("rights") == "free", "living": of_living, "withheld": withheld})
     return out
 
 
@@ -493,11 +495,12 @@ VIEWS_DIR = "views"   # next to report.html, in ``folder`` mode
 IMAGES = ("folder", "inline", "off")
 
 
-def render_html(report, t, template=None, images="inline"):
+def render_html(report, t, template=None, images="inline", living_views="private"):
     """(the HTML page, [(file name, bytes)] to write in ``views/``). ``images`` says where the views of the
     acts go (setting ``report.images``): ``folder``, files of ``views/`` that the page calls by a relative
     path, as many as there are; ``inline``, ``data:`` in the page, in what it leaves of a template's limit
-    (``template.MAX_BYTES``); ``off``, none."""
+    (``template.MAX_BYTES``); ``off``, none. ``living_views`` (setting ``report.living_views``): ``private``
+    shows the acts of living persons in ``views/``, marked; ``off`` leaves them out, unnamed."""
     from probandia.report import template as T
 
     template = template or T.builtin()
@@ -505,7 +508,9 @@ def render_html(report, t, template=None, images="inline"):
     if not report.views or images == "off":
         return page, []
     budget = T.MAX_BYTES - len(page.encode("utf-8")) if images == "inline" else None
-    figures, files = act_figures(report.views, t, budget)
+    # a living person's act is never named outside the private copy: its file name often holds the name
+    views = [v for v in report.views if not v.get("living") or (budget is None and living_views == "private")]
+    figures, files = act_figures(views, t, budget)
     return T.fill(template, html_slots(report, t, template.notes, figures), t, report.model.lang), files
 
 
@@ -576,6 +581,7 @@ def act_figures(views, t, budget=None):
                    f'alt="{esc(t(L.ACT_VIEW).format(citation=v["citation"]))}" style="max-width: 100%; height: auto">'
                    f'<figcaption>{esc(v["citation"])}'
                    + ("" if v.get("free") else f' <strong class="private">{esc(t(L.PRIVATE_VIEW))}</strong>')
+                   + (f' <strong class="private">{esc(t(L.LIVING_VIEW))}</strong>' if v.get("living") else "")
                    + '</figcaption></figure>')
             if budget is None:
                 out.append(fig)

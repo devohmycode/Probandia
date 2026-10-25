@@ -8129,6 +8129,10 @@ msgid "Views of the acts in the HTML report: files of a views folder next to it,
 msgstr ""
 
 #: probandia/config/registry.py
+msgid "Acts of living persons in the report's views folder, marked not to share, or none; never in a file that travels alone nor in an export"
+msgstr ""
+
+#: probandia/config/registry.py
 msgid "Saving the scripts that agents write"
 msgstr ""
 
@@ -8714,6 +8718,10 @@ msgstr ""
 
 #: probandia/report/labels.py
 msgid "Private use: its rights do not allow sharing it"
+msgstr ""
+
+#: probandia/report/labels.py
+msgid "Living person: do not share"
 msgstr ""
 
 #: probandia/report/labels.py

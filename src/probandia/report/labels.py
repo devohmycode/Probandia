@@ -16,6 +16,7 @@ SOURCES = N_("Sources")
 ACT_VIEWS = N_("Views of the acts")
 ACT_VIEW = N_("View of the act: {citation}")
 PRIVATE_VIEW = N_("Private use: its rights do not allow sharing it")
+LIVING_VIEW = N_("Living person: do not share")
 VIEW_LEFT_OUT = {"rights": N_("View not shown, its rights do not allow a copy: {file}"),
                  "missing": N_("View not found in the family folder: {file}"),
                  "size": N_("View not shown, the report would pass its size limit: {file}")}
