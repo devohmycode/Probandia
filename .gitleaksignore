@@ -8,5 +8,3 @@ tests/unit/test_user_counter.py:generic-api-key:36
 tests/unit/test_memory.py:generic-api-key:101
 tests/unit/test_tui_config.py:generic-api-key:241
 tests/unit/test_views.py:generic-api-key:111
-tests/unit/test_tui_app.py:generic-api-key:850
-tests/unit/test_tui_app.py:generic-api-key:1290

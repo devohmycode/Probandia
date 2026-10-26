@@ -848,7 +848,7 @@ class Guards(AppCase):
     async def test_no_key_on_any_screen(self):
         from textual.widgets import DataTable
 
-        secret = "fixture-secret-9876543210"
+        secret = "fixture-secret-9876543210"  # gitleaks:allow (a fake key the screen must hide)
         self.env.update(SERPER_API_KEY=secret, TAVILY_API_KEY="tvly-" + secret)
         app = self.app()
         async with app.run_test(size=self.SIZE) as pilot:
@@ -1288,7 +1288,7 @@ class Functions(AppCase):
         from probandia.providers import adapters, catalogue
         from probandia.providers.base import ProviderError
 
-        secret = "fixture-secret-0123456789"
+        secret = "fixture-secret-0123456789"  # gitleaks:allow (a fake key the screen must hide)
         self.env["SERPER_API_KEY"] = secret
         app = self.app()
         async with app.run_test(size=self.SIZE) as pilot:
