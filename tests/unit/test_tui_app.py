@@ -469,6 +469,8 @@ class FamilyAndProposals(AppCase):
         async with app.run_test(size=self.SIZE) as pilot:
             await pilot.press("4", "slash", *"Marchant", "enter")
             await self.settle(pilot)
+            # the search runs in a thread: its rows come a turn or more after the settle, under load
+            await self.until(pilot, lambda: len(self.table(app, "#family-found")) == 5, tries=2000)
             found = self.table(app, "#family-found")
             self.assertEqual(len(found), 5)
             self.assertTrue(all(r[4] == "variant" for r in found))
