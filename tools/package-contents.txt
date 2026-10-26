@@ -1596,6 +1596,7 @@ probandia-{version}/tests/unit/test_i18n.py
 probandia-{version}/tests/unit/test_ids.py
 probandia-{version}/tests/unit/test_images.py
 probandia-{version}/tests/unit/test_indexes.py
+probandia-{version}/tests/unit/test_isolation.py
 probandia-{version}/tests/unit/test_json_data.py
 probandia-{version}/tests/unit/test_keyboard.py
 probandia-{version}/tests/unit/test_keys.py

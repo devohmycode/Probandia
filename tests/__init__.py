@@ -24,6 +24,17 @@ import atexit  # noqa: E402
 import shutil  # noqa: E402
 import tempfile  # noqa: E402
 
+from probandia.project import search_upwards  # noqa: E402
+
+# Nor into a project of the user's: a test "outside a project" works in a temporary folder or in the
+# checkout, and the engine looks for probandia.toml upwards from there. A project above them (at the
+# root of the home folder, 26 October 2026) took the tests' writes and failed some hundred of them.
+for _start in (tempfile.gettempdir(), ROOT):
+    _above = search_upwards(_start)
+    if _above:
+        raise RuntimeError(f"a Probandia project ({os.path.join(_above, 'probandia.toml')}) holds {_start}: "
+                           "the tests would write into it; move it, or point TMP/TEMP elsewhere")
+
 from probandia import paths  # noqa: E402
 
 if paths.FALLBACK_DATA_DIR is None:
