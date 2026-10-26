@@ -510,7 +510,8 @@ class FamilyAndProposals(AppCase):
             self.assertEqual(type(app.screen).__name__, "ConfirmScreen")
             await pilot.press("y")
             await self.settle(pilot)
-            self.assertEqual(self.table(app, "#proposals-list"), [])
+            # the list is read again after the command's thread: a turn or more after the settle, under load
+            await self.until(pilot, lambda: self.table(app, "#proposals-list") == [], tries=2000)
         louise = next(p for p in yamlio.load(persons_file(self))["persons"] if p["id"] == "louise-perrin-1818")
         self.assertIn("louise-perrin-1818.death", [f["id"] for f in louise["facts"]])
 
@@ -528,7 +529,7 @@ class FamilyAndProposals(AppCase):
             await self.asked(pilot)   # asked once: the first time, no reason
             await pilot.press("y")
             await self.settle(pilot)
-            self.assertEqual(self.table(app, "#proposals-list"), [])
+            await self.until(pilot, lambda: self.table(app, "#proposals-list") == [], tries=2000)
 
 
 class OtherScreens(AppCase):
