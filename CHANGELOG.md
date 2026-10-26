@@ -13,7 +13,7 @@ relies on: a key of the `KEY=value` contract or of `--json`, a schema of
 What 1.x keeps stable, and how such a change is deprecated first, is written
 in [STABILITY.md](https://github.com/devohmycode/probandia/blob/master/STABILITY.md).
 
-## [1.0.0] - 2026-10-24
+## [1.0.0] - 2026-10-26
 
 ### Breaking changes
 
