@@ -156,8 +156,10 @@ def private_names(paths, local=None):
 
 
 def relative_links(text):
-    """The targets of the Markdown links of ``text`` that are neither a URL nor an anchor."""
-    return [t for t in re.findall(r"\]\(([^)\s]+)\)", text) if not re.match(r"[a-z][a-z0-9+.-]*:|#", t)]
+    """The targets of the Markdown links and of the images (``src``, ``srcset``) of ``text`` that are
+    neither a URL nor an anchor."""
+    targets = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'\b(?:src|srcset)="([^"]+)"', text)
+    return [t for t in targets if not re.match(r"[a-z][a-z0-9+.-]*:|#", t)]
 
 
 def metadata_lines():

@@ -11,6 +11,8 @@ from tests import ROOT
 README = os.path.join(ROOT, "README.md")
 # The repository's page: its links work on GitHub and on PyPI, which shows the README too.
 REPOSITORY = "https://github.com/devohmycode/probandia"
+# Where the README's images are served from, for GitHub and PyPI alike.
+RAW = "https://raw.githubusercontent.com/devohmycode/probandia/master/"
 
 # The harnesses of the README's table, by the name it gives them; None: no plugin, the MCP server only.
 HARNESSES = {"Claude Code": "claude-code", "Grok Build": "grok", "Codex": "codex", "Cursor": "cursor",
@@ -93,6 +95,45 @@ def cited_commands(text):
                 found.setdefault(word.strip("\"'"), m.group(0))
                 break
     return found
+
+
+def headings(text):
+    """The headings of ``text`` outside its fenced blocks: [(level, title)]."""
+    return [(len(m.group(1)), m.group(2))
+            for m in re.finditer(r"^(#+) (.+)$", re.sub(FENCE, "", text, flags=re.S | re.M), re.M)]
+
+
+def images(text):
+    """The paths of the images (``src`` and ``srcset`` of ``<img>`` and ``<source>``)."""
+    return re.findall(r'\b(?:src|srcset)="([^"]+)"', text)
+
+
+def check_links(case, text):
+    """Each link or image to a file of the repository (relative, or to its GitHub page) reaches a file
+    that is there and not ignored by git; each anchor, a heading."""
+    import subprocess
+
+    links = re.findall(r"\]\(([^)\s]+)\)", text) + images(text)
+    case.assertTrue(links)
+    anchors = {re.sub(r"[^\w\- ]", "", h).strip().lower().replace(" ", "-") for _level, h in headings(text)}
+    files = []
+    for link in links:
+        if link.startswith("#"):
+            case.assertIn(link[1:], anchors)
+        elif link.startswith(REPOSITORY + "/blob/master/"):
+            files.append(link[len(REPOSITORY + "/blob/master/"):])
+        elif link.startswith(RAW):
+            files.append(link[len(RAW):])
+        elif not re.match(r"[a-z]+:", link):
+            files.append(link)
+    case.assertTrue(files)
+    for rel in files:
+        case.assertTrue(os.path.exists(os.path.join(ROOT, rel)), rel)
+    try:
+        ignored = subprocess.run(["git", "check-ignore", *files], cwd=ROOT, capture_output=True, text=True)
+    except OSError:
+        case.skipTest("git is not available")
+    case.assertEqual(ignored.stdout.split(), [])
 
 
 class Readme(unittest.TestCase):
@@ -382,30 +423,7 @@ class Readme(unittest.TestCase):
     # T190: links
 
     def test_links_reach_tracked_files(self):
-        """Each link to a file of the repository (relative, or to its GitHub page) reaches a file that is
-        there and not ignored by git; each anchor, a heading."""
-        import subprocess
-
-        links = re.findall(r"\]\(([^)\s]+)\)", self.text)
-        self.assertTrue(links)
-        anchors = {re.sub(r"[^\w\- ]", "", h).strip().lower().replace(" ", "-")
-                   for h in re.findall(r"^#+ (.+)$", re.sub(FENCE, "", self.text, flags=re.S | re.M), re.M)}
-        files = []
-        for link in links:
-            if link.startswith("#"):
-                self.assertIn(link[1:], anchors)
-            elif link.startswith(REPOSITORY + "/blob/master/"):
-                files.append(link[len(REPOSITORY + "/blob/master/"):])
-            elif not re.match(r"[a-z]+:", link):
-                files.append(link)
-        self.assertTrue(files)
-        for rel in files:
-            self.assertTrue(os.path.exists(os.path.join(ROOT, rel)), rel)
-        try:
-            ignored = subprocess.run(["git", "check-ignore", *files], cwd=ROOT, capture_output=True, text=True)
-        except OSError:
-            self.skipTest("git is not available")
-        self.assertEqual(ignored.stdout.split(), [])
+        check_links(self, self.text)
 
     # T191: development
 
@@ -418,6 +436,37 @@ class Readme(unittest.TestCase):
             command = line.split("  #")[0].strip()
             if command:
                 self.assertIn(command, body)
+
+
+class ReadmeFr(unittest.TestCase):
+    """README.fr.md is the whole README in French: the same outline, code and diagrams; the tests of
+    Readme keep its content equal to the code, these keep the translation equal to the README."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "README.fr.md"), encoding="utf-8") as fh:
+            self.text = fh.read()
+        self.english = readme()
+
+    def test_links_reach_tracked_files(self):
+        check_links(self, self.text)
+
+    def test_each_readme_links_the_other(self):
+        self.assertIn(f"]({REPOSITORY}/blob/master/README.fr.md)", self.english)
+        self.assertIn(f"]({REPOSITORY}/blob/master/README.md)", self.text)
+
+    def test_same_outline(self):
+        self.assertEqual([level for level, _h in headings(self.text)],
+                         [level for level, _h in headings(self.english)])
+
+    def test_same_code_blocks(self):
+        """The fenced blocks hold the same lines, comments aside."""
+        def lines(text):
+            return [re.sub(r"\s+(?:#|//).*$", "", line).rstrip()
+                    for block in re.findall(FENCE, text, re.S | re.M) for line in block.splitlines()]
+        self.assertEqual(lines(self.text), lines(self.english))
+
+    def test_same_diagrams_in_french(self):
+        self.assertEqual(images(self.text), [path.replace(".en.", ".fr.") for path in images(self.english)])
 
 
 if __name__ == "__main__":

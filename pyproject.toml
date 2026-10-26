@@ -72,7 +72,7 @@ packages = ["src/probandia"]
 [tool.hatch.build.targets.sdist]
 only-include = [
   ".agents", ".claude-plugin", ".codex-plugin", ".cursor-plugin", ".env.example", ".factory-plugin",
-  ".gitattributes", ".github", ".gitignore", ".gitleaksignore", "AGENTS.md", "CHANGELOG.md", "LICENSE", "README.md", "SECURITY.md", "STABILITY.md", "THIRD-PARTY-NOTICES", "agents", "bench", "catalogues",
+  ".gitattributes", ".github", ".gitignore", ".gitleaksignore", "AGENTS.md", "CHANGELOG.md", "LICENSE", "README.fr.md", "README.md", "SECURITY.md", "STABILITY.md", "THIRD-PARTY-NOTICES", "agents", "bench", "catalogues",
   "commands", "cursor", "designer", "droids", "examples", "guides", "hooks", "hooks.json", "locales",
   "mcp.json", "mcp_config.json", "plugin.json", "pyproject.toml", "report-templates", "run_probandia.py",
   "schemas", "site", "skills", "src", "tests", "tools", "vendor-js",

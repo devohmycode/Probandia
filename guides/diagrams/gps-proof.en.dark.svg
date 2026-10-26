@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="probandia-gps-title probandia-gps-desc" id="gps-proof-en-dark-root">
+        <title id="probandia-gps-title">The five GPS elements in Probandia</title>
+        <desc id="probandia-gps-desc">For each of the five elements of the Genealogical Proof Standard, the Probandia commands that build it, the data they produce and the verify rule that checks it.</desc>
+        <defs>
+      <style>#gps-proof-en-dark-root { color-scheme: dark;
+      --c-paper: #070606;
+      --c-ink: #efe9dc;
+      --c-muted: #989186;
+      --c-soft: #7e786d;
+      --c-card: #151413;
+      --c-accent: #b59eff;
+      --c-link: #80e3f5;
+      --c-holo-1: #7fe3f5;
+      --c-holo-2: #b49cff;
+      --c-holo-3: #ff9fd8;
+      --c-ink-02: rgba(239,233,220,0.02);
+      --c-ink-05: rgba(239,233,220,0.05);
+      --c-ink-08: rgba(239,233,220,0.08);
+      --c-ink-10: rgba(239,233,220,0.10);
+      --c-ink-40: rgba(239,233,220,0.40);
+      --c-muted-10: rgba(152,145,134,0.10);
+      --c-muted-50: rgba(152,145,134,0.50);
+      --c-soft-40: rgba(126,120,109,0.40);
+      --c-accent-08: rgba(181,158,255,0.10);
+      --c-accent-50: rgba(181,158,255,0.50);
+      --c-ink-06: rgba(239,233,220,0.06);
+      --c-ink-20: rgba(239,233,220,0.20);
+      --c-ink-22: rgba(239,233,220,0.22);
+      --holo:          linear-gradient(120deg, var(--c-holo-1), var(--c-holo-2), var(--c-holo-3));
+      --font-sans:     system-ui, -apple-system, "Segoe UI", ui-sans-serif, sans-serif;
+      --font-mono:     "JetBrains Mono", ui-monospace, monospace; }
+      #gps-proof-en-dark-root { font-family: var(--font-sans); color: var(--c-ink); }
+      #gps-proof-en-dark-root .diagram-container { width: 100%; overflow-x: auto; }
+      #gps-proof-en-dark-root .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+      #gps-proof-en-dark-root .theme-toggle { font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--c-ink);
+      background: var(--c-card);
+      border: 1px solid var(--c-ink-10);
+      border-radius: 6px;
+      padding: 0.45rem 0.75rem;
+      cursor: pointer;
+      white-space: nowrap; }
+      #gps-proof-en-dark-root .theme-toggle:hover { border-color: var(--c-accent); }
+      #gps-proof-en-dark-root .theme-switch { position: absolute; width: 1px; height: 1px; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+      #gps-proof-en-dark-root .theme-switch:focus-visible + .theme-toggle { outline: 2px solid var(--c-accent); outline-offset: 2px; }</style>
+          <pattern id="gps-proof-en-dark-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.9" style="fill:var(--c-ink-08)"/>
+          </pattern>
+          <linearGradient id="gps-proof-en-dark-holo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" style="stop-color:var(--c-holo-1)"/>
+            <stop offset="0.5" style="stop-color:var(--c-holo-2)"/>
+            <stop offset="1" style="stop-color:var(--c-holo-3)"/>
+          </linearGradient>
+          <marker id="gps-proof-en-dark-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" style="fill:var(--c-muted)"/></marker>
+        </defs>
+
+        <rect width="100%" height="100%" style="fill:var(--c-paper)"/>
+        <rect width="100%" height="100%" fill="url(#gps-proof-en-dark-dots)" opacity="0.55"/>
+
+        <!-- Slot labels -->
+        <g font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="0.14em" style="fill:var(--c-soft)">
+          <text x="40" y="96">ELEMENT</text>
+          <text x="40" y="200">COMMANDS</text>
+          <text x="40" y="304">DATA</text>
+          <text x="40" y="392">VERIFY RULE</text>
+        </g>
+
+        <!-- Handoffs between elements -->
+        <g stroke-width="1.2" marker-end="url(#gps-proof-en-dark-arrow)" style="stroke:var(--c-muted)">
+          <line x1="376" y1="92" x2="400" y2="92"/>
+          <line x1="588" y1="92" x2="612" y2="92"/>
+          <line x1="800" y1="92" x2="824" y2="92"/>
+          <line x1="1012" y1="92" x2="1036" y2="92"/>
+        </g>
+
+        <!-- Element headers -->
+        <g text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" style="fill:var(--c-ink)">
+          <rect x="188" y="56" width="188" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="282" y="90">Exhaustive</text><text x="282" y="106">search</text>
+          <rect x="400" y="56" width="188" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="494" y="90">Complete</text><text x="494" y="106">citations</text>
+          <rect x="612" y="56" width="188" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="706" y="90">Analysis and</text><text x="706" y="106">correlation</text>
+          <rect x="824" y="56" width="188" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="918" y="90">Conflicts</text><text x="918" y="106">resolved</text>
+          <rect x="1036" y="56" width="188" height="72" rx="6" stroke="url(#gps-proof-en-dark-holo)" stroke-width="1.6" style="fill:var(--c-accent-08)"/>
+          <text x="1130" y="90">Reasoned</text><text x="1130" y="106">conclusion</text>
+        </g>
+        <g text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="0.08em">
+          <rect x="196" y="64" width="16" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/><text x="204" y="76" style="fill:var(--c-ink)">1</text>
+          <rect x="408" y="64" width="16" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/><text x="416" y="76" style="fill:var(--c-ink)">2</text>
+          <rect x="620" y="64" width="16" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/><text x="628" y="76" style="fill:var(--c-ink)">3</text>
+          <rect x="832" y="64" width="16" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/><text x="840" y="76" style="fill:var(--c-ink)">4</text>
+          <rect x="1044" y="64" width="16" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-accent-50)"/><text x="1052" y="76" style="fill:var(--c-accent)">5</text>
+        </g>
+
+        <!-- Cells: commands -->
+        <g stroke-width="0.8" style="fill:var(--c-ink-02);stroke:var(--c-ink-10)">
+          <rect x="188" y="152" width="188" height="88" rx="6"/><rect x="400" y="152" width="188" height="88" rx="6"/>
+          <rect x="612" y="152" width="188" height="88" rx="6"/><rect x="824" y="152" width="188" height="88" rx="6"/>
+          <rect x="1036" y="152" width="188" height="88" rx="6"/>
+          <rect x="188" y="256" width="188" height="88" rx="6"/><rect x="400" y="256" width="188" height="88" rx="6"/>
+          <rect x="612" y="256" width="188" height="88" rx="6"/><rect x="824" y="256" width="188" height="88" rx="6"/>
+          <rect x="1036" y="256" width="188" height="88" rx="6"/>
+          <rect x="188" y="360" width="188" height="56" rx="6"/><rect x="400" y="360" width="188" height="56" rx="6"/>
+          <rect x="612" y="360" width="188" height="56" rx="6"/><rect x="824" y="360" width="188" height="56" rx="6"/>
+          <rect x="1036" y="360" width="188" height="56" rx="6"/>
+        </g>
+        <g text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" style="fill:var(--c-ink)">
+          <text x="282" y="180">matrix</text><text x="282" y="198">plan · search</text><text x="282" y="216">search --negative</text>
+          <text x="494" y="180">cite --form --type</text><text x="494" y="198">propose</text>
+          <text x="706" y="180">correlate open</text>
+          <text x="918" y="180">correlate resolve</text><text x="918" y="198">apply</text>
+          <text x="1130" y="180">proof draft · submit</text><text x="1130" y="198">proof review</text><text x="1130" y="216">proof accept</text>
+        </g>
+        <!-- Cells: data -->
+        <g text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" style="fill:var(--c-ink)">
+          <text x="282" y="286">expected source types</text><text x="282" y="304">negatives with a witness</text>
+          <text x="494" y="286">a status for each fact</text><text x="494" y="304">typed source, required fields</text>
+          <text x="706" y="286">three axes per evidence</text><text x="706" y="304">consistent dates</text>
+          <text x="918" y="286">each analysis resolved</text><text x="918" y="304">before the answer</text>
+          <text x="1130" y="286">argument reviewed by</text><text x="1130" y="304">the contradictor</text>
+        </g>
+        <!-- Cells: verify rules -->
+        <g text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" style="fill:var(--c-ink)">
+          <text x="282" y="392">V-18</text>
+          <text x="494" y="392">V-2 · V-17</text>
+          <text x="706" y="392">V-15 · V-14</text>
+          <text x="918" y="392">V-15</text>
+          <text x="1130" y="392" style="fill:var(--c-accent)">V-16</text>
+        </g>
+
+        <!-- Callouts -->
+        <g font-family="'JetBrains Mono', monospace" font-size="11" font-style="italic" style="fill:var(--c-soft)">
+          <text x="188" y="468">Each question is conform, partial or not_conform (verify --standard).</text>
+          <text x="188" y="490">With proof.standard strict, a question that does not conform keeps the research open.</text>
+        </g>
+
+        <!-- Legend strip -->
+        <line x1="40" y1="608" x2="1240" y2="608" stroke-width="0.8" style="stroke:var(--c-ink-10)"/>
+        <text x="40" y="628" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.14em" style="fill:var(--c-muted)">LEGEND</text>
+        <rect x="40" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+        <text x="60" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">GPS element</text>
+        <rect x="168" y="644" width="14" height="10" rx="2" stroke="url(#gps-proof-en-dark-holo)" stroke-width="1.2" style="fill:var(--c-accent-08)"/>
+        <text x="188" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">Reviewed by the contradictor</text>
+        <rect x="344" y="644" width="14" height="10" rx="2" stroke-width="0.8" style="fill:var(--c-ink-02);stroke:var(--c-ink-10)"/>
+        <text x="364" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">What Probandia does and checks</text>
+      </svg>

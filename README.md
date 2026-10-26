@@ -12,9 +12,9 @@ an MCP server (not in Claude Code, Grok Build and Factory Droid, whose skills
 call the engine through the shell); the [plugin surface](#the-plugin-surface)
 lists them all. Its engine, `run_probandia.py`, needs only Python 3.11 or later.
 
-En français : [guide d'utilisation](https://github.com/devohmycode/probandia/blob/master/guides/guide-utilisation.md).
+English · [Français](https://github.com/devohmycode/probandia/blob/master/README.fr.md) · French user guide: [guide d'utilisation](https://github.com/devohmycode/probandia/blob/master/guides/guide-utilisation.md).
 
-Contents: [Requirements](#requirements) ·
+Contents: [How it works](#how-it-works) · [Requirements](#requirements) ·
 [Install the plugin](#install-the-plugin) ·
 [Install the command](#install-the-command) ·
 [First research](#first-research) · [Use the command](#use-the-command) ·
@@ -26,6 +26,17 @@ Contents: [Requirements](#requirements) ·
 [Proving a conclusion](#proving-a-conclusion-the-genealogical-proof-standard) ·
 [Providers](#providers) · [The terminal interface](#the-terminal-interface) ·
 [Development](#development)
+
+## How it works
+
+Your coding agent loads the plugin; its commands, skills and agents call the engine through the
+`probandia` command, or through its MCP server. The engine plans, proves and verifies; it writes
+the research project, searches the archives through its providers and renders the report.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/architecture.en.dark.svg">
+  <img alt="The coding agent loads the Probandia plugin, which calls the GPS proof engine through the CLI or the MCP server; the engine reads and writes the project, queries online archives through its providers and renders the report." src="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/architecture.en.light.svg">
+</picture>
 
 ## Requirements
 
@@ -547,6 +558,22 @@ Extras combine: `"<path>[tui,images]"`.
 
 ## First research
 
+A research runs in passes. In each pass, the field agents search, read and propose; only the
+orchestrator (or the session itself) applies what they propose, then ends the pass:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/pass-sequence.en.dark.svg">
+  <img alt="The session opens the pass and gives the orchestrator a brief; in each wave the field agents search, read and propose, and the reader transcribes a register's views; only the orchestrator applies the proposals, then ends the pass." src="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/pass-sequence.en.light.svg">
+</picture>
+
+Between passes, `resume` opens the next one, and `close` closes the research once every
+question is settled:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/research-lifecycle.en.dark.svg">
+  <img alt="A research created by new runs pass after pass: the open pass applies its proposals, then ends with pass end; resume opens the next one, a pass cut off is continued or closed, and close closes the research, which resume can reopen." src="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/research-lifecycle.en.light.svg">
+</picture>
+
 1. **A project folder.** Make an empty folder and open your harness in it:
    `/probandia:new` makes it a project (`probandia.toml`) on its first run.
    At a terminal, `probandia init` does it alone, and asks the essential
@@ -787,6 +814,11 @@ marked `[engine]` in `probandia --help --all`.
 `export`, `import`, `import-gedcom`, `watch`. Each runs the engine command of
 the same name with your arguments.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/agents.en.dark.svg">
+  <img alt="The session hands the pass to the orchestrator, which shares the work between three groups: search (researcher, investigator, searcher), read and extract (reader, harvester) and challenge (contradictor); only the orchestrator and the session apply proposals." src="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/agents.en.light.svg">
+</picture>
+
 **Agents** (`agents/`; `droids/` and `cursor/agents/` hold their copies for
 Factory Droid and Cursor):
 
@@ -926,6 +958,11 @@ evidence resolved, a soundly reasoned conclusion. Each research holds its
 questions (`question`); `places guide`, `matrix`, `cite`, `correlate` and
 `proof` build each element, rules V-14 to V-18 of `verify` check them, and
 `close` settles the research.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/gps-proof.en.dark.svg">
+  <img alt="For each of the five elements of the Genealogical Proof Standard, the Probandia commands that build it, the data they produce and the verify rule that checks it." src="https://raw.githubusercontent.com/devohmycode/probandia/master/guides/diagrams/gps-proof.en.light.svg">
+</picture>
 
 `probandia verify <research> --standard` shows, for each question, the five
 elements, established, partial or missing, and what each lacks; the report

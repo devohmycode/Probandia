@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="probandia-architecture-title probandia-architecture-desc" id="architecture-fr-root">
+        <title id="probandia-architecture-title">Architecture de Probandia</title>
+        <desc id="probandia-architecture-desc">L'agent de code charge le plugin Probandia, qui appelle le moteur de preuve GPS par la CLI ou le serveur MCP ; le moteur lit et écrit le projet, interroge les archives en ligne par ses fournisseurs et rend le rapport.</desc>
+        <defs>
+      <style>#architecture-fr-root { color-scheme: light;
+      --c-paper: #f2ede3;
+      --c-ink: #1a1714;
+      --c-muted: #59544a;
+      --c-soft: #5f5a50;
+      --c-card: #faf7f0;
+      --c-accent: #5132cd;
+      --c-link: #096d81;
+      --c-holo-1: #0a7a90;
+      --c-holo-2: #5a3fd0;
+      --c-holo-3: #b02f7b;
+      --c-ink-02: rgba(26,23,20,0.02);
+      --c-ink-05: rgba(26,23,20,0.05);
+      --c-ink-08: rgba(26,23,20,0.08);
+      --c-ink-10: rgba(26,23,20,0.10);
+      --c-ink-40: rgba(26,23,20,0.40);
+      --c-muted-10: rgba(89,84,74,0.10);
+      --c-muted-50: rgba(89,84,74,0.50);
+      --c-soft-40: rgba(95,90,80,0.40);
+      --c-accent-08: rgba(81,50,205,0.08);
+      --c-accent-50: rgba(81,50,205,0.50);
+      --c-ink-06: rgba(26,23,20,0.06);
+      --c-ink-20: rgba(26,23,20,0.20);
+      --c-ink-22: rgba(26,23,20,0.22);
+      --holo:          linear-gradient(120deg, var(--c-holo-1), var(--c-holo-2), var(--c-holo-3));
+      --font-sans:     system-ui, -apple-system, "Segoe UI", ui-sans-serif, sans-serif;
+      --font-mono:     "JetBrains Mono", ui-monospace, monospace; }
+      #architecture-fr-root { font-family: var(--font-sans); color: var(--c-ink); }
+      #architecture-fr-root .diagram-container { width: 100%; overflow-x: auto; }
+      #architecture-fr-root .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+      #architecture-fr-root .theme-toggle { font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--c-ink);
+      background: var(--c-card);
+      border: 1px solid var(--c-ink-10);
+      border-radius: 6px;
+      padding: 0.45rem 0.75rem;
+      cursor: pointer;
+      white-space: nowrap; }
+      #architecture-fr-root .theme-toggle:hover { border-color: var(--c-accent); }
+      #architecture-fr-root .theme-switch { position: absolute; width: 1px; height: 1px; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+      #architecture-fr-root .theme-switch:focus-visible + .theme-toggle { outline: 2px solid var(--c-accent); outline-offset: 2px; }</style>
+          <pattern id="architecture-fr-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.9" style="fill:var(--c-ink-08)"/>
+          </pattern>
+          <linearGradient id="architecture-fr-holo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" style="stop-color:var(--c-holo-1)"/>
+            <stop offset="0.5" style="stop-color:var(--c-holo-2)"/>
+            <stop offset="1" style="stop-color:var(--c-holo-3)"/>
+          </linearGradient>
+          <marker id="architecture-fr-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" style="fill:var(--c-muted)"/></marker>
+          <marker id="architecture-fr-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" style="fill:var(--c-accent)"/></marker>
+          <marker id="architecture-fr-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" style="fill:var(--c-link)"/></marker>
+        </defs>
+
+        <rect width="100%" height="100%" style="fill:var(--c-paper)"/>
+        <rect width="100%" height="100%" fill="url(#architecture-fr-dots)" opacity="0.55"/>
+
+        <!-- Zone: entry points -->
+        <rect x="480" y="160" width="208" height="296" rx="8"
+              stroke-width="0.8" style="fill:var(--c-ink-02);stroke:var(--c-ink-10)"/>
+        <rect x="520" y="164" width="128" height="16" rx="2" style="fill:var(--c-paper)"/>
+        <text x="584" y="176" font-size="11" font-family="'JetBrains Mono', monospace"
+              text-anchor="middle" letter-spacing="0.1em" style="fill:var(--c-soft)">POINTS D'ENTRÉE</text>
+
+        <!-- Arrows first (behind boxes) -->
+        <line x1="208" y1="316" x2="264" y2="316" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <path d="M 440,304 H 460 Q 468,304 468,296 V 244 Q 468,236 476,236 H 496"
+              fill="none" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <path d="M 440,328 H 460 Q 468,328 468,336 V 388 Q 468,396 476,396 H 496"
+              fill="none" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <path d="M 672,236 H 700 Q 708,236 708,244 V 296 Q 708,304 716,304 H 744"
+              fill="none" stroke-width="1.4" marker-end="url(#architecture-fr-arrow-accent)" style="stroke:var(--c-accent)"/>
+        <path d="M 672,396 H 700 Q 708,396 708,388 V 336 Q 708,328 716,328 H 744"
+              fill="none" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <path d="M 840,280 V 164 Q 840,156 848,156 H 1032"
+              fill="none" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <line x1="936" y1="316" x2="1032" y2="316" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <line x1="840" y1="352" x2="840" y2="488" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+        <line x1="1132" y1="352" x2="1132" y2="488" stroke-width="1.2" marker-end="url(#architecture-fr-arrow-link)" style="stroke:var(--c-link)"/>
+
+        <!-- Arrow labels, 11px, masked -->
+        <g font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" letter-spacing="0.06em">
+          <rect x="892" y="132" width="96" height="16" rx="2" style="fill:var(--c-paper)"/><text x="940" y="144" style="fill:var(--c-muted)">LIT · ÉCRIT</text>
+          <rect x="952" y="292" width="64" height="16" rx="2" style="fill:var(--c-paper)"/><text x="984" y="304" style="fill:var(--c-muted)">CHERCHE</text>
+          <rect x="848" y="412" width="52" height="16" rx="2" style="fill:var(--c-paper)"/><text x="874" y="424" style="fill:var(--c-muted)">REND</text>
+          <rect x="1140" y="412" width="48" height="16" rx="2" style="fill:var(--c-paper)"/><text x="1164" y="424" style="fill:var(--c-link)">HTTPS</text>
+        </g>
+
+        <!-- Nodes: tag 11px at the top left, name 12px, sublabel 11px -->
+        <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+          <rect x="40" y="280" width="168" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="40" y="280" width="168" height="72" rx="6" stroke-width="1" style="fill:var(--c-muted-10);stroke:var(--c-soft)"/>
+          <rect x="48" y="288" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-soft-40)"/>
+          <text x="66" y="300" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-soft)">EXT</text>
+          <text x="124" y="322" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Agent de code</text>
+          <text x="124" y="340" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">Claude · Codex · Cursor</text>
+
+          <rect x="264" y="280" width="176" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="264" y="280" width="176" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <rect x="272" y="288" width="56" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/>
+          <text x="300" y="300" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-ink)">PLUGIN</text>
+          <text x="352" y="322" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Surface plugin</text>
+          <text x="352" y="340" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">agents · skills · hooks</text>
+
+          <rect x="496" y="200" width="176" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="496" y="200" width="176" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <rect x="504" y="208" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/>
+          <text x="522" y="220" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-ink)">CLI</text>
+          <text x="584" y="242" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Commande probandia</text>
+          <text x="584" y="260" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">contrat KEY=value · JSON</text>
+
+          <rect x="496" y="360" width="176" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="496" y="360" width="176" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <rect x="504" y="368" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/>
+          <text x="522" y="380" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-ink)">MCP</text>
+          <text x="584" y="402" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Serveur MCP</text>
+          <text x="584" y="420" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">stdio · probandia mcp</text>
+
+          <rect x="744" y="280" width="192" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="744" y="280" width="192" height="72" rx="6" stroke="url(#architecture-fr-holo)" stroke-width="1.6" style="fill:var(--c-accent-08)"/>
+          <rect x="752" y="288" width="56" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-accent-50)"/>
+          <text x="780" y="300" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-accent)">MOTEUR</text>
+          <text x="840" y="322" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Moteur de preuve GPS</text>
+          <text x="840" y="340" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">proof · verify · research</text>
+
+          <rect x="744" y="488" width="192" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="744" y="488" width="192" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <rect x="752" y="496" width="44" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/>
+          <text x="774" y="508" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-ink)">HTML</text>
+          <text x="840" y="530" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Rapport</text>
+          <text x="840" y="548" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">report-templates/</text>
+
+          <rect x="1032" y="120" width="200" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="1032" y="120" width="200" height="72" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="1040" y="128" width="48" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="1064" y="140" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">STORE</text>
+          <text x="1132" y="162" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Projet de recherche</text>
+          <text x="1132" y="180" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">probandia.toml · families/</text>
+
+          <rect x="1032" y="280" width="200" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="1032" y="280" width="200" height="72" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <rect x="1040" y="288" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-ink-40)"/>
+          <text x="1058" y="300" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-ink)">SRC</text>
+          <text x="1132" y="322" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Fournisseurs</text>
+          <text x="1132" y="340" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">providers · quotas</text>
+
+          <rect x="1032" y="488" width="200" height="72" rx="6" style="fill:var(--c-paper)"/>
+          <rect x="1032" y="488" width="200" height="72" rx="6" stroke-width="1" style="fill:var(--c-muted-10);stroke:var(--c-soft)"/>
+          <rect x="1040" y="496" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-soft-40)"/>
+          <text x="1058" y="508" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-soft)">EXT</text>
+          <text x="1132" y="530" font-size="12" font-weight="600" text-anchor="middle" style="fill:var(--c-ink)">Archives en ligne</text>
+          <text x="1132" y="548" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">état civil · registres</text>
+        </g>
+
+        <!-- Legend strip, 11px -->
+        <line x1="40" y1="600" x2="1240" y2="600" stroke-width="0.8" style="stroke:var(--c-ink-10)"/>
+        <text x="40" y="624" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.14em" style="fill:var(--c-muted)">LÉGENDE</text>
+        <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" style="fill:var(--c-muted)">
+          <rect x="40" y="644" width="14" height="10" rx="2" stroke="url(#architecture-fr-holo)" stroke-width="1.2" style="fill:var(--c-accent-08)"/>
+          <text x="60" y="653">Cœur / focal</text>
+          <rect x="164" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="184" y="653">Composant</text>
+          <rect x="280" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <text x="300" y="653">Données du projet</text>
+          <rect x="436" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-muted-10);stroke:var(--c-soft)"/>
+          <text x="456" y="653">Externe</text>
+          <line x1="536" y1="649" x2="564" y2="649" stroke-width="1.4" marker-end="url(#architecture-fr-arrow-accent)" style="stroke:var(--c-accent)"/>
+          <text x="572" y="653">Flux principal</text>
+          <line x1="688" y1="649" x2="716" y2="649" stroke-width="1.2" marker-end="url(#architecture-fr-arrow)" style="stroke:var(--c-muted)"/>
+          <text x="724" y="653">Appel interne</text>
+          <line x1="840" y1="649" x2="868" y2="649" stroke-width="1.2" marker-end="url(#architecture-fr-arrow-link)" style="stroke:var(--c-link)"/>
+          <text x="876" y="653">Requête HTTP</text>
+        </g>
+      </svg>

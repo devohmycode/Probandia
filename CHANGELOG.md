@@ -13,6 +13,15 @@ relies on: a key of the `KEY=value` contract or of `--json`, a schema of
 What 1.x keeps stable, and how such a change is deprecated first, is written
 in [STABILITY.md](https://github.com/devohmycode/probandia/blob/master/STABILITY.md).
 
+## [Unreleased]
+
+### Added
+
+- Five diagrams (architecture, a research pass, the life of a research, the
+  agents, the GPS proof) in `README.md` and in a new `README.fr.md`, the whole
+  README in French; light and dark SVG in `guides/diagrams/`, their sources in
+  `guides/diagrams/src/`.
+
 ## [1.0.0] - 2026-10-26
 
 ### Breaking changes

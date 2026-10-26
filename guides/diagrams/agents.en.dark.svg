@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="probandia-agents-title probandia-agents-desc" id="agents-en-dark-root">
+        <title id="probandia-agents-title">The seven Probandia agents</title>
+        <desc id="probandia-agents-desc">The session hands the pass to the orchestrator, which shares the work between three groups: search (researcher, investigator, searcher), read and extract (reader, harvester) and challenge (contradictor); only the orchestrator and the session apply proposals.</desc>
+        <defs>
+      <style>#agents-en-dark-root { color-scheme: dark;
+      --c-paper: #070606;
+      --c-ink: #efe9dc;
+      --c-muted: #989186;
+      --c-soft: #7e786d;
+      --c-card: #151413;
+      --c-accent: #b59eff;
+      --c-link: #80e3f5;
+      --c-holo-1: #7fe3f5;
+      --c-holo-2: #b49cff;
+      --c-holo-3: #ff9fd8;
+      --c-ink-02: rgba(239,233,220,0.02);
+      --c-ink-05: rgba(239,233,220,0.05);
+      --c-ink-08: rgba(239,233,220,0.08);
+      --c-ink-10: rgba(239,233,220,0.10);
+      --c-ink-40: rgba(239,233,220,0.40);
+      --c-muted-10: rgba(152,145,134,0.10);
+      --c-muted-50: rgba(152,145,134,0.50);
+      --c-soft-40: rgba(126,120,109,0.40);
+      --c-accent-08: rgba(181,158,255,0.10);
+      --c-accent-50: rgba(181,158,255,0.50);
+      --c-ink-06: rgba(239,233,220,0.06);
+      --c-ink-20: rgba(239,233,220,0.20);
+      --c-ink-22: rgba(239,233,220,0.22);
+      --holo:          linear-gradient(120deg, var(--c-holo-1), var(--c-holo-2), var(--c-holo-3));
+      --font-sans:     system-ui, -apple-system, "Segoe UI", ui-sans-serif, sans-serif;
+      --font-mono:     "JetBrains Mono", ui-monospace, monospace; }
+      #agents-en-dark-root { font-family: var(--font-sans); color: var(--c-ink); }
+      #agents-en-dark-root .diagram-container { width: 100%; overflow-x: auto; }
+      #agents-en-dark-root .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+      #agents-en-dark-root .theme-toggle { font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--c-ink);
+      background: var(--c-card);
+      border: 1px solid var(--c-ink-10);
+      border-radius: 6px;
+      padding: 0.45rem 0.75rem;
+      cursor: pointer;
+      white-space: nowrap; }
+      #agents-en-dark-root .theme-toggle:hover { border-color: var(--c-accent); }
+      #agents-en-dark-root .theme-switch { position: absolute; width: 1px; height: 1px; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+      #agents-en-dark-root .theme-switch:focus-visible + .theme-toggle { outline: 2px solid var(--c-accent); outline-offset: 2px; }</style>
+          <pattern id="agents-en-dark-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.9" style="fill:var(--c-ink-08)"/>
+          </pattern>
+          <linearGradient id="agents-en-dark-holo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" style="stop-color:var(--c-holo-1)"/>
+            <stop offset="0.5" style="stop-color:var(--c-holo-2)"/>
+            <stop offset="1" style="stop-color:var(--c-holo-3)"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="100%" height="100%" style="fill:var(--c-paper)"/>
+        <rect width="100%" height="100%" fill="url(#agents-en-dark-dots)" opacity="0.55"/>
+
+        <!-- Reporting lines: vertical drop, horizontal bus, vertical drops -->
+        <g fill="none" stroke-width="1.2" style="stroke:var(--c-muted)">
+          <line x1="640" y1="104" x2="640" y2="144"/>
+          <path d="M 640,216 V 244 M 340,272 V 252 Q 340,244 348,244 H 1132 Q 1140,244 1140,252 V 272 M 840,244 V 272"/>
+          <path d="M 340,328 V 364 M 140,400 V 372 Q 140,364 148,364 H 532 Q 540,364 540,372 V 400 M 340,364 V 400"/>
+          <path d="M 840,328 V 364 M 740,400 V 372 Q 740,364 748,364 H 932 Q 940,364 940,372 V 400"/>
+          <line x1="1140" y1="328" x2="1140" y2="400"/>
+        </g>
+
+        <!-- Front door: the session -->
+        <rect x="536" y="40" width="208" height="64" rx="6" style="fill:var(--c-paper)"/>
+        <rect x="536" y="40" width="208" height="64" rx="6" stroke-width="1" style="fill:var(--c-muted-10);stroke:var(--c-soft)"/>
+        <text x="640" y="68" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" text-anchor="middle" style="fill:var(--c-ink)">Session</text>
+        <text x="640" y="86" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">main agent · RUN_MODE</text>
+
+        <!-- Focal: the orchestrator -->
+        <rect x="528" y="144" width="224" height="72" rx="6" style="fill:var(--c-paper)"/>
+        <rect x="528" y="144" width="224" height="72" rx="6" stroke="url(#agents-en-dark-holo)" stroke-width="1.6" style="fill:var(--c-accent-08)"/>
+        <rect x="536" y="152" width="48" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-accent-50)"/>
+        <text x="560" y="164" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" letter-spacing="0.08em" style="fill:var(--c-accent)">APPLY</text>
+        <text x="640" y="184" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" text-anchor="middle" style="fill:var(--c-ink)">Orchestrator</text>
+        <text x="640" y="202" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" style="fill:var(--c-muted)">plans · delegates · applies</text>
+
+        <!-- Groups -->
+        <g text-anchor="middle">
+          <rect x="252" y="272" width="176" height="56" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="340" y="296" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">Search</text>
+          <text x="340" y="314" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">a wave in the field</text>
+
+          <rect x="752" y="272" width="176" height="56" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="840" y="296" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">Read and extract</text>
+          <text x="840" y="314" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">registers · tables</text>
+
+          <rect x="1052" y="272" width="176" height="56" rx="6" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+          <text x="1140" y="296" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">Challenge</text>
+          <text x="1140" y="314" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">before concluding</text>
+        </g>
+
+        <!-- Agents: name, tools, scope -->
+        <g text-anchor="middle">
+          <rect x="52" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="60" y="408" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="78" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">WEB</text>
+          <text x="140" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">researcher</text>
+          <text x="140" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">archives · web · propose</text>
+          <text x="140" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">one closed task</text>
+
+          <rect x="252" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="260" y="408" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="278" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">WEB</text>
+          <text x="340" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">investigator</text>
+          <text x="340" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">archives · web · propose</text>
+          <text x="340" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">the hard cases</text>
+
+          <rect x="452" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="460" y="408" width="36" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="478" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">WEB</text>
+          <text x="540" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">searcher</text>
+          <text x="540" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">native web searches</text>
+          <text x="540" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">runs and logs</text>
+
+          <rect x="652" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="660" y="408" width="64" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="692" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">NO WEB</text>
+          <text x="740" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">reader</text>
+          <text x="740" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">views · transcribe new</text>
+          <text x="740" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">finds, transcribes the act</text>
+
+          <rect x="852" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="860" y="408" width="64" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="892" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">NO WEB</text>
+          <text x="940" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">harvester</text>
+          <text x="940" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">no judgement</text>
+          <text x="940" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">pages, sifts, counts</text>
+
+          <rect x="1052" y="400" width="176" height="96" rx="6" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+          <rect x="1060" y="408" width="72" height="16" rx="2" fill="none" stroke-width="0.8" style="stroke:var(--c-muted-50)"/>
+          <text x="1096" y="420" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.08em" style="fill:var(--c-muted)">READ-ONLY</text>
+          <text x="1140" y="442" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">contradictor</text>
+          <text x="1140" y="458" font-size="11" font-family="'JetBrains Mono', monospace" style="fill:var(--c-muted)">proof review</text>
+          <text x="1140" y="478" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-ink)">argues against a conclusion</text>
+        </g>
+
+        <!-- Callouts -->
+        <g font-family="'JetBrains Mono', monospace" font-size="11" font-style="italic" style="fill:var(--c-soft)">
+          <text x="52" y="548">Only the orchestrator and the session apply; the others propose in work/.</text>
+          <text x="52" y="570">In session mode, the session does everything itself but read the views.</text>
+        </g>
+
+        <!-- Legend strip -->
+        <line x1="40" y1="608" x2="1240" y2="608" stroke-width="0.8" style="stroke:var(--c-ink-10)"/>
+        <text x="40" y="628" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="0.14em" style="fill:var(--c-muted)">LEGEND</text>
+        <rect x="40" y="644" width="14" height="10" rx="2" stroke="url(#agents-en-dark-holo)" stroke-width="1.2" style="fill:var(--c-accent-08)"/>
+        <text x="60" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">Takes the pass, applies</text>
+        <rect x="224" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-muted-10);stroke:var(--c-soft)"/>
+        <text x="244" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">Harness agent</text>
+        <rect x="364" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-card);stroke:var(--c-ink)"/>
+        <text x="384" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">Group</text>
+        <rect x="440" y="644" width="14" height="10" rx="2" stroke-width="1" style="fill:var(--c-ink-05);stroke:var(--c-muted)"/>
+        <text x="460" y="652" font-size="11" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" style="fill:var(--c-muted)">Agent (agents/*.md, droids/*.md)</text>
+      </svg>
