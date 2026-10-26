@@ -165,7 +165,7 @@ from the project's folder:
 claude mcp add probandia -- python <path>/run_probandia.py mcp
 ```
 
-Once 1.0.0 is on PyPI, without the repository:
+Without the repository, from PyPI:
 `claude mcp add probandia -- uvx probandia mcp` (on Windows, `cmd /c uvx`
 instead of `uvx`). `claude mcp remove probandia` takes it out.
 
@@ -518,7 +518,7 @@ The plugin needs nothing installed: agents run the engine through
 | uv, editable | `uv tool install --editable <path>` | nothing to do; after a change to `pyproject.toml`: `uv tool install --editable --force <path>` | `uv tool uninstall probandia` |
 | pipx | `pipx install <path>` | `pipx install --force <path>` | `pipx uninstall probandia` |
 | pip, in a virtual environment | `python -m venv .venv`, then `.venv/bin/python -m pip install <path>` (Windows: `.venv\Scripts\python`; Debian or Ubuntu: `sudo apt install python3-venv` first) | `python -m pip install --upgrade <path>` | `python -m pip uninstall probandia` |
-| from PyPI, once 1.0.0 is published | `uv tool install probandia`, `pipx install probandia` or `python -m pip install probandia`; `uvx probandia` runs it without installing | `uv tool upgrade probandia`, `pipx upgrade probandia`, `python -m pip install --upgrade probandia` | `uv tool uninstall probandia`, `pipx uninstall probandia`, `python -m pip uninstall probandia` |
+| from PyPI | `uv tool install probandia`, `pipx install probandia` or `python -m pip install probandia`; `uvx probandia` runs it without installing | `uv tool upgrade probandia`, `pipx upgrade probandia`, `python -m pip install --upgrade probandia` | `uv tool uninstall probandia`, `pipx uninstall probandia`, `python -m pip uninstall probandia` |
 
 Then:
 

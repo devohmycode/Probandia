@@ -156,7 +156,7 @@ slash, skills, agents ni hooks. Déclarez-le depuis le dossier du projet :
 claude mcp add probandia -- python <chemin>/run_probandia.py mcp
 ```
 
-Une fois la 1.0.0 publiée sur PyPI, sans le dépôt : `claude mcp add probandia -- uvx probandia mcp` (sous Windows,
+Sans le dépôt, depuis PyPI : `claude mcp add probandia -- uvx probandia mcp` (sous Windows,
 `cmd /c uvx` au lieu de `uvx`). `claude mcp remove probandia` le retire.
 
 #### Grok Build
@@ -477,7 +477,7 @@ l'une de ces façons (`<chemin>` est le dossier du dépôt) :
 | uv, éditable | `uv tool install --editable <chemin>` | rien à faire ; après une modification de `pyproject.toml` : `uv tool install --editable --force <chemin>` | `uv tool uninstall probandia` |
 | pipx | `pipx install <chemin>` | `pipx install --force <chemin>` | `pipx uninstall probandia` |
 | pip, dans un environnement virtuel | `python -m venv .venv`, puis `.venv/bin/python -m pip install <chemin>` (Windows : `.venv\Scripts\python` ; Debian ou Ubuntu : `sudo apt install python3-venv` d'abord) | `python -m pip install --upgrade <chemin>` | `python -m pip uninstall probandia` |
-| depuis PyPI, une fois la 1.0.0 publiée | `uv tool install probandia`, `pipx install probandia` ou `python -m pip install probandia` ; `uvx probandia` la lance sans l'installer | `uv tool upgrade probandia`, `pipx upgrade probandia`, `python -m pip install --upgrade probandia` | `uv tool uninstall probandia`, `pipx uninstall probandia`, `python -m pip uninstall probandia` |
+| depuis PyPI | `uv tool install probandia`, `pipx install probandia` ou `python -m pip install probandia` ; `uvx probandia` la lance sans l'installer | `uv tool upgrade probandia`, `pipx upgrade probandia`, `python -m pip install --upgrade probandia` | `uv tool uninstall probandia`, `pipx uninstall probandia`, `python -m pip uninstall probandia` |
 
 Ensuite :
 
